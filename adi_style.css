@@ -1,0 +1,34 @@
+ <style>
+    header {
+          background-color:white;
+          color:black;
+          text-align:left;
+          padding:10px;	
+          font-family:courier;
+      }
+      nav {
+          line-height:30px;
+          background-color:white;
+          height:500px;
+          width:100px;
+          float:left;
+          padding:10px;
+          font-family:calibri;
+      }
+      section {
+          position: absolute;
+          left: 143px; 
+          width:800px;
+          padding:10px;	
+          font-family:calibri;
+      }
+      footer {
+          background-color:white;
+          color:#eeeeee;
+          clear:both;
+          text-align:center;
+          padding:5px;
+          float:bottom;
+          font-family:calibri;
+      }
+  </style>
