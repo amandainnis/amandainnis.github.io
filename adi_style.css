@@ -24,19 +24,19 @@
       #nav {
           line-height:30px;
           background-color:white;
-          height: 50px;
-          width: auto;
+          height: 600px;
+          width: 100px;
           padding: 40px;
           font-family: courier;
           border: 5px solid black;
       }
-      #homepageimage {
+      /*#homepageimage {
           position: relative;
           float: right;
           width: 461px;
           height: 600px;
           padding:10px;
-          border: 5px solid black;	
+          border: 5px solid black; */	
           
       }
       footer {
