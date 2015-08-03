@@ -18,7 +18,8 @@
           position: relative;
           width: 461px;
           height: 600px;
-          vertical-align: top;
+          padding-right: 100px;
+          margin-top: 10px;
           padding:10px;	
           
       }
