@@ -12,7 +12,7 @@
       }
       h1 {
         font: courier;
-        border: 5 px solid black}
+        border: 5px solid black}
       a {
         font-family: courier;
       }
@@ -23,7 +23,7 @@
           width: auto;
           padding: 40px;
           font-family: courier;
-          border: 5 px solid black
+          border: 5px solid black
       }
       #homepageimage {
           position: relative;
@@ -32,7 +32,7 @@
           padding-right: 100px;
           margin-top: 50px;
           padding:10px;
-          border: 5 px solid black	
+          border: 5px solid black	
           
       }
       footer {
@@ -43,5 +43,5 @@
           padding:5px;
           float:bottom;
           font-family: courier;
-          border: 5 px solid black
+          border: 5px solid black
       }
