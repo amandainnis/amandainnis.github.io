@@ -15,7 +15,8 @@
           font-family: courier;
       }
       #homepageimage {
-          position: static;
+          position: absolute; /* sorry joe, it didn't work with static*/
+          left: 0px;
           width: 856px; 
           vertical-align: top;
           padding:10px;	
@@ -30,4 +31,3 @@
           float:bottom;
           font-family: courier;
       }
-  </style>
