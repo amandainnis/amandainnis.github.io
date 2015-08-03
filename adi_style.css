@@ -3,7 +3,7 @@
           color:black;
           text-align:left;
           padding:10px;	
-          font-family:courier;
+          font-family: courier;
       }
       #nav {
           line-height:30px;
@@ -15,9 +15,9 @@
           font-family: courier;
       }
       #homepageimage {
-          float: right;
-          right: 0px;
-          width: 856px; 
+          position: relative;
+          right: 10px;
+          left: 130px;
           vertical-align: top;
           padding:10px;	
           
