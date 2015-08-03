@@ -4,6 +4,10 @@
           text-align:left;
           padding:10px;	
           font-family: courier;
+
+      }
+      a {
+        font-family: courier;
       }
       #nav {
           line-height:30px;
