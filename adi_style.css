@@ -16,6 +16,8 @@
       }
       #homepageimage {
           position: relative;
+          width: 461px;
+          height: 600px;
           right: 10px;
           left: 130px;
           vertical-align: top;
