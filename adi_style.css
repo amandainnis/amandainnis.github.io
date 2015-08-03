@@ -29,6 +29,10 @@
           padding: 40px;
           font-family: courier;
           border: 5px solid black;
+      img {
+        display: inline;
+      }
+      
       }
       /*#homepageimage {
           position: relative;
