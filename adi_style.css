@@ -9,6 +9,7 @@
           font-family: courier;
 
       }
+      body {font: courier;}
       a {
         font-family: courier;
       }
