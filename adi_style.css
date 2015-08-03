@@ -15,6 +15,7 @@
         border: 5px solid black}
       a {
         font-family: courier;
+        text-decoration: none;
       }
       #nav {
           line-height:30px;
