@@ -11,8 +11,8 @@
 
       }
       h1 {
-        font: courier;
-        border: 5px solid black}
+        font-family: courier;
+        border: 5px solid black;}
       a {
         font-family: courier;
         text-decoration: none;
@@ -24,16 +24,15 @@
           width: auto;
           padding: 40px;
           font-family: courier;
-          border: 5px solid black
+          border: 5px solid black;
       }
       #homepageimage {
           position: relative;
+          float: right;
           width: 461px;
           height: 600px;
-          padding-right: 100px;
-          margin-top: 50px;
           padding:10px;
-          border: 5px solid black	
+          border: 5px solid black;	
           
       }
       footer {
