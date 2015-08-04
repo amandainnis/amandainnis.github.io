@@ -28,10 +28,8 @@
       }
       #homepageimage {
           position: absolute;
-          float: right;
-          clear: both;
+          right: 0px;
           width: 461px;
-          height: 600px;
           padding:10px;
           
       }
