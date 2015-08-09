@@ -8,8 +8,9 @@
         }
       
       #wrapper {
-        width: 600px;/*constrains the width of what the div is*/
-        margin: 0 auto;/*this centers the div, auto means calculate based on whatever 
+        width: 800px;/*constrains the width of what the div is*/
+        margin: 0 auto;/*this centers the div, auto means 
+        calculate based on whatever 
         i have on browser*/
       }
       #nav {
@@ -31,6 +32,7 @@
       #homepageimage {
           float: right;
           padding:10px;
+          height: 400px;
           
       }
       footer {
