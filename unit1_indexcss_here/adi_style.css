@@ -3,17 +3,20 @@
     } 
 
       h1 {
-        text-align: left;
-        padding: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 1px;
+        padding-top: 11px;
+        font-size: 44px;
         }
       
-      #wrapper {
-        width: 800px;/*constrains the width of what the div is*/
+      /*#wrapper {
+        width: 800px;/*constrains the width of what the div is
         margin: 0 auto;/*this centers the div, auto means 
         calculate based on whatever 
-        i have on browser*/
+        i have on browser
       }
-      #nav {
+      /*#nav {
           float: left;
           line-height:30px;
           background-color:white;
@@ -22,17 +25,24 @@
           padding: 10px;
           font-family: courier;
       
+      }*/
+      #nav {
+        /*border: 1px solid #666666;*/
+        text-align: center;
+        
+        
+        
       }
       a {
         text-decoration: none;
         color: #666666;
       }
-      ul {list-style-type: none;
-      }
+      
       #homepageimage {
-          float: right;
+          /*float: right;*/
           padding:10px;
-          height: 400px;
+          height: 700px;
+          text-align: center;
           
       }
       footer {
