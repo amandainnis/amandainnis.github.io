@@ -10,12 +10,16 @@
         font-size: 44px;
         }
       
-      /*#wrapper {
-        width: 800px;/*constrains the width of what the div is
+      #wrapper {
+        padding-top: 5%;
+        width: 80%; 
+        margin: 0 auto; 
+        }
+        /*constrains the width of what the div is
         margin: 0 auto;/*this centers the div, auto means 
         calculate based on whatever 
         i have on browser
-      }
+    
       /*#nav {
           float: left;
           line-height:30px;
@@ -29,9 +33,7 @@
       #nav {
         /*border: 1px solid #666666;*/
         text-align: center;
-        
-        
-        
+     
       }
       a {
         text-decoration: none;
@@ -43,8 +45,28 @@
           padding:10px;
           height: 700px;
           text-align: center;
-          
+        }
+      div.thumbs {
+        width: 20%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        float: left;
       }
+
+
+      div.thumbs img {
+        width: 100%;
+      }
+     /*  div imag is 100% of the parent element */
+
+      p {
+        text-align: center;
+      }
+
+     /* #image1 {
+        float: left;
+      } */
+
       footer {
           background-color:white;
           color:#eeeeee;
