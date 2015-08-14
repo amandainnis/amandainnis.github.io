@@ -13,7 +13,10 @@
       #wrapper {
         padding-top: 5%;
         width: 80%; 
-        margin: 0 auto; 
+        height: 100%;
+        margin: 0 auto;
+        border: 1px solid black; 
+        padding-right: 5%;
         }
         /*constrains the width of what the div is
         margin: 0 auto;/*this centers the div, auto means 
