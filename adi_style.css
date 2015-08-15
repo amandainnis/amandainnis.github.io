@@ -1,13 +1,63 @@
-   * {
-    font-family: courier;
-    } 
+     
+     /* 
+all
+     font-family: 'Source Code Pro', ;
+     font-family: 'Open Sans', sans-serif;
+     font-family: 'Source Sans Pro', sans-serif; 400 700
+      font-family: 'Montserrat', sans-serif;  400 700
+      font-family: 'Droid Sans', sans-serif;  400 700
+      font-family: 'Muli', sans-serif;
+      font-family: 'Inconsolata', ;  400 700
+      font-family: 'Varela', sans-serif;
+     
+      [font-family: ‘Inconsolata’; font-weight: 400; */
+      
+
+      h1, h2 {
+        font-family:'Source Code Pro'; /*or Droid Sans*/
+        font-weight: 700;}
+
+      #nav_p {
+        font-family: 'Inconsolata';
+        font-weight: 400;
+        }
+        
+        #nav {
+        text-align: center;}
+     
+      a {
+        color: gray;
+        text-decoration: none;
+      }
+/*a:visited{
+        color: blue;
+      } */
+      
+      a:hover {color: orange;}
+
+       p {
+        font-family: 'Inconsolata';
+        text-align: center;
+      } /*these are tags*/
+
+        
+        /* b4 all the switcheroo
+
+        h1, h2 {
+        font-family:'Arial', sans-serif;}
+       p {
+        font-family: 'Source Code Pro';
+        } 
+    
+      #nav_p {
+        font-family: 'Source Code Pro';} b4 all the switcheroo*/
 
       h1 {
         text-align: center;
         padding: 5px;
         margin-bottom: 1px;
         padding-top: 11px;
-        font-size: 44px;
+        font-size: 2.8em;
         }
       
       #wrapper {
@@ -16,8 +66,10 @@
         height: 100%;
         margin: 0 auto;
         border: 1px solid black; 
-        padding-right: 5%;
+        padding-left: 4%;
         }
+
+       
         /*constrains the width of what the div is
         margin: 0 auto;/*this centers the div, auto means 
         calculate based on whatever 
@@ -31,20 +83,10 @@
           width: 80px;
           padding: 10px;
           font-family: courier;
-      
       }*/
-      #nav {
-        /*border: 1px solid #666666;*/
-        text-align: center;
      
-      }
-      a {
-        text-decoration: none;
-        color: #666666;
-      }
       
       #homepageimage {
-          /*float: right;*/
           padding:10px;
           height: 700px;
           text-align: center;
@@ -62,13 +104,32 @@
       }
      /*  div imag is 100% of the parent element */
 
-      p {
-        text-align: center;
-      }
 
-     /* #image1 {
-        float: left;
-      } */
+       #statement_wrapper {
+        width: 80%; 
+        height: 100%;
+        border: 1px solid black; 
+        padding: 2%;
+        margin: 0 auto;}
+
+         .statement_text {
+          font-family: 'Inconsolata';
+          text-align: left;
+          font-size: .9em;
+          line-height: 1.2em;}
+    
+
+        #left_column {
+          float: left;
+          width: 35%;
+          height: 100%;}
+        
+
+        #right_column {
+        float: right;
+        width: 65%;
+        height: 600px; 
+        overflow: scroll;} 
 
       footer {
           background-color:white;
@@ -77,5 +138,5 @@
           text-align: center;
           padding: 5px;
           float:bottom;
-          font-family: courier;
+          
       }
