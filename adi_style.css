@@ -63,7 +63,7 @@ all
         margin: 0 auto;
         border: 1px solid black; 
         padding-left: 4%;
-        overflow: scroll;}
+        /*overflow: scroll;*/}
 
        
         /*constrains the width of what the div is
