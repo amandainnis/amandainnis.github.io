@@ -18,6 +18,10 @@ all
         
         #nav {
         text-align: center;}
+
+      span {
+        text-decoration: underline;
+      }
      
       a {
         color: gray;
