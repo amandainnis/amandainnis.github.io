@@ -25,10 +25,10 @@ all
         border-bottom: 1px solid black;
         border-top: 1px solid black;}
 
-      span {
+     /* span {
         text-decoration: underline;
         font-weight: 700;
-      }
+      }*/
      
       a {
         color: gray;
