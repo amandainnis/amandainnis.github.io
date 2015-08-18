@@ -21,7 +21,8 @@ all
         text-align: center;
         padding-bottom: .1em;
         padding-top: .1em;
-        background: #f6f6f6;}
+        /*background: #f6f6f6;*/
+        border-bottom: 1px dashed black;}
 
       span {
         text-decoration: underline;
