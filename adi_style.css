@@ -14,9 +14,10 @@ all
       #nav_p {
         font-family: 'Inconsolata';
         font-weight: 400;
+        font-size: 16px;
         }
         
-        #nav {
+        nav {
         text-align: center;}
 
       span {
