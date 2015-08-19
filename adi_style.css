@@ -111,7 +111,7 @@ all
        #statement_wrapper {
         width: 80%; 
         height: 100%;
-        border: 1px solid black; 
+        /*border: 1px solid black;*/ 
         padding: 2%;
         margin: 0 auto;}
 
@@ -132,7 +132,7 @@ all
         float: right;
         width: 65%;
         height: 600px; 
-        overflow: scroll;} 
+        /*overflow: scroll;*/} 
 
       footer {
           background-color:white;
