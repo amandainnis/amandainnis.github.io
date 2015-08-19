@@ -54,11 +54,13 @@ all
       #nav_p {
         font-family: 'Source Code Pro';} b4 all the switcheroo*/
 
-      h1 {
+      h1, h2 {
         text-align: center;
         padding: .1em;
         margin-bottom: 0em;
         padding-top: .3em;
+        }
+        h1 {
         font-size: 2.8em;
         /*border: 1px solid black;*/
         }
