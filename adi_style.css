@@ -25,10 +25,10 @@ all
         border-bottom: 1px solid black;
         border-top: 1px solid black;}
 
-     /* span {
-        text-decoration: underline;
+      span {
         font-weight: 700;
-      }*/
+        font-family:'Source Code Pro';
+      }
      
       a {
         color: gray;
@@ -40,6 +40,7 @@ all
        p {
         font-family: 'Inconsolata';
         text-align: center;
+
       } /*these are tags*/
 
         
@@ -78,17 +79,8 @@ all
         /*constrains the width of what the div is
         margin: 0 auto;/*this centers the div, auto means 
         calculate based on whatever 
-        i have on browser
-    
-      /*#nav {
-          float: left;
-          line-height:30px;
-          background-color:white;
-          height: 400px;
-          width: 80px;
-          padding: 10px;
-          font-family: courier;
-      }*/
+        i have on browser*/
+
      
       
       #homepageimage {
