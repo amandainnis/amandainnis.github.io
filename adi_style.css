@@ -17,18 +17,10 @@ all
         width: 80%;
         text-align: left;
         margin: 0 auto;
-        /*padding-bottom: -.01em;
-        padding-top: -.01em;*/
-        /*background: #f6f6f6;*/
         border-bottom: 1px solid black;
         border-top: 1px solid black;
         font-size: 16px;
         letter-spacing: 2px;}
-
-      span {
-        font-weight: 700;
-        color: black;
-      }
      
       a {
         color: gray;
@@ -36,7 +28,7 @@ all
       }
       
       a:hover {color: orange;}
-
+      a:active {color: black;}
       p {
         font-family: 'Inconsolata';
         text-align: left;
@@ -46,16 +38,16 @@ all
         
 
       h1 {
-    text-align: left;
-    padding-bottom: .6em;
-    padding-top: .3em;
-    margin: 0 auto;
-    padding-left: 4%;
-    width: 80%;
-    font-size: 2em;
-    margin-bottom: 0em;
-    /* border: 1px solid black; */
-}
+        text-align: left;
+        padding-bottom: .6em;
+        padding-top: .3em;
+        margin: 0 auto;
+        padding-left: 4%;
+        width: 80%;
+        font-size: 2em;
+        margin-bottom: 0em;
+        /* border: 1px solid black; */
+    }
       
       
       #wrapper {
