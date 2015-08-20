@@ -5,9 +5,7 @@ all
       font-family: 'Droid Sans', sans-serif;  400 700
       font-family: 'Inconsolata', ;  400 700
       */
-      h1 {
-        padding-bottom: 2em;
-      }
+
 
       h1, h2, nav {
         font-family:'Source Code Pro'; /*or Droid Sans*/
@@ -65,7 +63,7 @@ all
 
       h1 {
         text-align: left;
-        padding: .1em;
+        padding-bottom: .5em;
         padding-top: .3em;
         margin: 0 auto;
         padding-left: 4%;
