@@ -80,7 +80,10 @@ all
           padding-left: 4%;
           margin: 1em auto;
         }
-
+      
+      #homepageimage img {
+        width: 100%;
+      }
       div.thumbs {
         width: 20%;
         margin-right: 5%;
