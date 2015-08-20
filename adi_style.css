@@ -89,7 +89,9 @@ all
       }
      /*  div imag is 100% of the parent element */
 
-
+      #digital_background
+        {float: left;}
+        
        #statement_wrapper { 
         height: 100%;
         /*border: 1px solid black;*/ 
