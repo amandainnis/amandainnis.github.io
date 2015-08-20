@@ -108,8 +108,7 @@ all
      /*  div imag is 100% of the parent element */
 
 
-       #statement_wrapper {
-        width: 80%; 
+       #statement_wrapper { 
         height: 100%;
         /*border: 1px solid black;*/ 
         padding: 2%;
@@ -122,16 +121,17 @@ all
           line-height: 1.2em;}
     
 
-        #left_column {
+        /*#left_column {
           float: left;
-          width: 35%;
-          height: 100%;}
+          width: 200px;
+          height: 100%;}*/
         
 
         #right_column {
-        float: right;
-        width: 65%;
-        height: 600px; 
+        float: left;
+        width: 50%;
+        padding-left: 10%;
+        /*height: 600px;*/ 
         /*overflow: scroll;*/} 
 
       footer {
