@@ -17,8 +17,8 @@ all
         width: 80%;
         text-align: left;
         margin: 0 auto;
-        padding-bottom: .01em;
-        padding-top: .01em;
+        /*padding-bottom: -.01em;
+        padding-top: -.01em;*/
         /*background: #f6f6f6;*/
         border-bottom: 1px solid black;
         border-top: 1px solid black;
