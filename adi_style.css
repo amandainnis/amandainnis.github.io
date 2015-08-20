@@ -5,12 +5,14 @@ all
       font-family: 'Droid Sans', sans-serif;  400 700
       font-family: 'Inconsolata', ;  400 700
       */
-      
+      h1 {
+        padding-bottom: .5em;
+      }
 
       h1, h2, nav {
         font-family:'Source Code Pro'; /*or Droid Sans*/
         font-weight: 700;
-        padding-bottom: .5em;}
+      }
 
      /* #nav_p {
         font-family: 'Inconsolata';
