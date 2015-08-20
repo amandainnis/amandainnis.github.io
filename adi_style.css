@@ -11,12 +11,6 @@ all
         font-family:'Source Code Pro'; /*or Droid Sans*/
         font-weight: 700;
       }
-
-     /* #nav_p {
-        font-family: 'Inconsolata';
-        font-weight: 700;
-        
-        }*/
         
         nav {
         padding-left: 4%;
@@ -50,16 +44,6 @@ all
       } /*these are tags*/
 
         
-        /* b4 all the switcheroo
-
-        h1, h2 {
-        font-family:'Arial', sans-serif;}
-       p {
-        font-family: 'Source Code Pro';
-        } 
-    
-      #nav_p {
-        font-family: 'Source Code Pro';} b4 all the switcheroo*/
 
       h1 {
         text-align: left;
@@ -72,13 +56,10 @@ all
         margin-bottom: 0em;
         /*border: 1px solid black;*/
         }
-       /* h2 {
-        font-size: 2.8em;  
-        margin-bottom: .5em;
-      }*/
+      
       
       #wrapper {
-        padding-top: 5%;
+        padding-top: 3%;
         width: 80%; 
         height: 100%;
         margin: 0 auto;
@@ -92,13 +73,13 @@ all
         calculate based on whatever 
         i have on browser*/
 
-     
       
       #homepageimage {
-          padding:10px;
-          height: 700px;
-          text-align: center;
+          width: 80%; 
+          height: 100%;
+          padding-left: 4%;
         }
+
       div.thumbs {
         width: 20%;
         margin-right: 5%;
