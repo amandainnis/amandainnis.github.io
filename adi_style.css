@@ -19,7 +19,10 @@ all
         }
         
         nav {
-        text-align: center;
+        /*padding-left: 4%;*/
+        width: 80%;
+        text-align: left;
+        margin: 0 auto;
         padding-bottom: .01em;
         padding-top: .01em;
         /*background: #f6f6f6;*/
@@ -40,7 +43,7 @@ all
 
       p {
         font-family: 'Inconsolata';
-        text-align: center;
+        text-align: left;
 
       } /*these are tags*/
 
@@ -56,21 +59,21 @@ all
       #nav_p {
         font-family: 'Source Code Pro';} b4 all the switcheroo*/
 
-      h1, h2 {
-        text-align: center;
+      h1 {
+        text-align: left;
         padding: .1em;
         padding-top: .3em;
-        }
-
-        h1 {
+        margin: 0 auto;
+        padding-left: 4%;
+        width: 80%;
         font-size: 2.8em;
         margin-bottom: 0em;
         /*border: 1px solid black;*/
         }
-        h2 {
+       /* h2 {
         font-size: 2.8em;  
         margin-bottom: .5em;
-      }
+      }*/
       
       #wrapper {
         padding-top: 5%;
