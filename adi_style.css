@@ -7,16 +7,15 @@ all
       */
       
 
-      h1, h2 {
+      h1, h2, nav {
         font-family:'Source Code Pro'; /*or Droid Sans*/
         font-weight: 700;}
 
-      #nav_p {
+     /* #nav_p {
         font-family: 'Inconsolata';
         font-weight: 700;
-        font-size: 16px;
-        letter-spacing: 2px;
-        }
+        
+        }*/
         
         nav {
         padding-left: 4%;
@@ -27,7 +26,9 @@ all
         padding-top: .01em;
         /*background: #f6f6f6;*/
         border-bottom: 1px solid black;
-        border-top: 1px solid black;}
+        border-top: 1px solid black;
+        font-size: 16px;
+        letter-spacing: 2px;}
 
       span {
         font-weight: 700;
