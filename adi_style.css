@@ -89,9 +89,9 @@ all
       }
      /*  div imag is 100% of the parent element */
 
-      #digital_background
-        {float: left;}
-        
+      body#digital_background {
+        background-image: url ("http://amandainnis.github.io/images/pattern_trial.gif");}
+       
        #statement_wrapper { 
         height: 100%;
         /*border: 1px solid black;*/ 
