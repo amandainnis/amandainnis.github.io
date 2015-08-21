@@ -90,7 +90,7 @@ all
      /*  div imag is 100% of the parent element */
 
       body#digital_background {
-        background-image: url ("http://amandainnis.github.io/images/pattern_trial.gif");}
+        background-image: url("images/pattern_trial.gif");}
        
        #statement_wrapper { 
         height: 100%;
