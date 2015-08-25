@@ -11,14 +11,19 @@ all
         padding: 0;
         box-sizing: border-box;
       }
-      
+     
+
       h1, h2, nav {
         font-family:'Source Code Pro'; /*or Droid Sans*/
         font-weight: 700;
       }
         
+     
+        
         nav {
         padding-left: 4%;
+        padding-top: 4px;
+        padding-bottom: 4px;
         width: 80%;
         text-align: left;
         margin: 0 auto;
@@ -72,15 +77,14 @@ all
 
       
       #homepageimage {
-          width: 80%; 
-          height: 100%;
-          padding-left: 4%;
-          margin: 1em auto;
-        }
-      
-      /*#homepageimage img {
-        width: 100%;
-      }*/
+    width: 80%;
+    height: 100%;
+    padding-left: 4%;
+    margin: 0 auto;
+    padding-top: 3%;
+    /*margin-left: 10em;*/
+}
+    
       div.thumbs {
         width: 20%;
         margin-right: 5%;
@@ -110,10 +114,6 @@ all
           line-height: 1.2em;}
     
 
-        /*#left_column {
-          float: left;
-          width: 200px;
-          height: 100%;}*/
         
 
         #right_column {
