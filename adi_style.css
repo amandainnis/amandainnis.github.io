@@ -6,7 +6,12 @@ all
       font-family: 'Inconsolata', ;  400 700
       */
 
-
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
       h1, h2, nav {
         font-family:'Source Code Pro'; /*or Droid Sans*/
         font-weight: 700;
