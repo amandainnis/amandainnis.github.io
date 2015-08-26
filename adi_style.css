@@ -91,6 +91,9 @@ all
         border: 1px black solid;
       }
     
+      div#row2 {
+        clear: both;
+      }
     
       div.thumbs {
         width: 20%;
