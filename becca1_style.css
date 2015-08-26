@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Work+Sans:400,600,700|
+	Montserrat:400,700|Roboto+Slab:400,300,700|Lora:400,700|Droid+Serif:400,700);
+
+	/*font-family: 'Work Sans', sans-serif; 
+	font-family: 'Montserrat', sans-serif; 
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Lora', serif;
+	font-family: 'Droid Serif', serif;   */
+
+	*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+      	background: #F0FFF0;
+      }
+      
+      #wrapper {
+      	width: 80%;
+      	height: 100%;
+      	border: 1px black solid;
+      	margin: 0 auto;
+      	padding: 4% 4% 4% 8%;}
+
+      h1 {
+      	font-family: 'Work Sans', sans-serif;}
+
+
+      div {
+      	width: 20%;
+      	height: 20%;
+      	border: 1px black solid;
+      	float: left;
+      	/*margin: 0 auto;*/
+      }
+     
+      footer {
+      	clear: both;
+      	float: bottom;
+      }

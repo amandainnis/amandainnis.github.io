@@ -59,6 +59,14 @@ all
         /* border: 1px solid black; */
     }
       
+      #homepageimage {
+          width: 80%;
+          height: 100%;
+          padding-left: 4%;
+          margin: 0 auto;
+          padding-top: 3%;
+          /*margin-left: 10em;*/
+}
       
       #wrapper {
         padding-top: 3%;
@@ -75,15 +83,14 @@ all
         calculate based on whatever 
         i have on browser*/
 
-      
-      #homepageimage {
-    width: 80%;
-    height: 100%;
-    padding-left: 4%;
-    margin: 0 auto;
-    padding-top: 3%;
-    /*margin-left: 10em;*/
-}
+      div.row {
+        width: 80%;
+        margin-right: 5%;
+       /* margin-bottom: 4%;*/
+        height: 40%;
+        border: 1px black solid;
+      }
+    
     
       div.thumbs {
         width: 20%;
