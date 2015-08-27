@@ -55,6 +55,7 @@
      
       div#homepageimage {				/*why isn't this working?*/
           width: 60%;
+          height: 100%;
           padding-left: 4%;
           margin: 0 auto;
           padding-top: 3%;
