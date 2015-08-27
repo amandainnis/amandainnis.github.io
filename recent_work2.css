@@ -82,61 +82,52 @@ all
         calculate based on whatever 
         i have on browser*/
 
-      div.row {
-        width: 80%;
-        margin-right: 5%;
-       /* margin-bottom: 4%;   rare to specify height!!!!!!!!*/
-        border: 1px black solid;
-      }
-    
-      div.row#row2, div.row#row3 {
-        clear: both;
-      }
-    
-      div.thumbs {
-        width: 20%;
-        margin-right: 5%;
-        margin-bottom: 4%;
+     #fatcolumn {
         float: left;
+        width: 65%;
+        padding-left: 10%;}
+
+      #skinnycolumn {
+        float: right;
+        width: 35%;
+      }
+    
+      div.fatthumbs {
+        width: 60%;
+        margin-bottom: 4%;
+        
       }
 
+      div.skinnythumbs {
+        width: 60%;
+        margin-bottom: 4%;
+        /*margin-right: 5%;
+        margin-bottom: 4%;
+        float: left;*/
+      }
 
-      div.thumbs img {
+      div.fatthumbs img, div.skinnythumbs img {
         width: 100%;
       }
      /*  div imag is 100% of the parent element */
 
-      body#digital_background {
-        background-image: url("images/pattern_trial.gif");}
-       
-       #statement_wrapper { 
-        height: 100%;
-        /*border: 1px solid black;*/ 
-        padding: 2%;
-        margin: 0 auto;}
+/*wrapper slideshow experiement begins!*/
 
-         .statement_text {
-          font-family: 'Inconsolata';
-          text-align: left;
-          font-size: .9em;
-          line-height: 1.2em;}
-    
+    div#wrapperslideshow {
+        padding-top: 3%;
+        width: 80%; 
+        /*height: 100%;*/
+        margin: 0 auto;
+        /*border: 1px solid black*/; 
+        padding-left: 4%;
+       /* overflow: scroll;*/}
 
-        
-
-        #right_column {
+      div.slide {
+        width: 60%;
         float: left;
-        width: 50%;
-        padding-left: 10%;
-        /*height: 600px;*/ 
-        /*overflow: scroll;*/} 
-
-      footer {
-          background-color:white;
-          color:#eeeeee;
-          clear:both;
-          text-align: center;
-          padding: 5px;
-          float:bottom;
-          
+        margin-bottom: 4%;
       }
+      div.slide img {
+        width: 100%;
+      }
+     
