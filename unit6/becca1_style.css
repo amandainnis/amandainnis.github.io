@@ -11,14 +11,38 @@
       }
       
       body {
-      	background: #F0FFF0;
+      	/*background: #F0FFF0;*/
+      }
+
+      header {
+      	width: 80%;
+      	margin: 7% auto;
+      }
+      
+       h1 {
+      	font-family: 'Merriweather';
+      	font-weight: 300;
+      	border: 1px black solid;
+      	width: 30%;
+      	/*margin: 0 auto;*/
+      	float: left;
       }
 
       nav {
-      	width: 80%; 
-        height: 20%;
-      	margin: 0 auto;
+      	width: 60%; 
+     	float: right;
       	border: 1px black solid;
+      	font-family: 'Raleway';
+      }
+
+      div#missionstatement {
+      	clear: both;
+      	width: 80%;
+      	margin: 0 auto;
+      }
+
+      p {
+      	font-family: 'Raleway';
       }
 
       div#wrapper {
@@ -29,15 +53,11 @@
       	padding: 4% 4% 4% 8%;
       }
 
-      h1 {
-      	font-family: 'Work Sans', sans-serif;
-      	border: 1px black solid;
-      }
+     
 
 
       div.boxes {
       	width: 20%;
-      	height: 20%;
       	border: 1px black solid;
       	float: left;
       	/*margin: 0 auto;*/
