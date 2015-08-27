@@ -10,9 +10,6 @@
         box-sizing: border-box;
       }
       
-      body {
-      	/*background: #F0FFF0;*/
-      }
 
       header {
       	width: 80%;
@@ -30,7 +27,7 @@
 
       nav {
       	width: 60%; 
-     	float: right;
+     	      float: right;
       	border: 1px black solid;
       	font-family: 'Raleway';
       }
@@ -42,7 +39,7 @@
       }
 
       p {
-      	font-family: 'Raleway';
+      font-family: 'Raleway';
       }
 
       div#wrapper {
