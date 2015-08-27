@@ -54,14 +54,14 @@
       }
 
      
-
-
-      div.boxes {
-      	width: 20%;
-      	border: 1px black solid;
-      	float: left;
-      	/*margin: 0 auto;*/
+      div#homepageimage {
+          width: 80%;
+          padding-left: 4%;
+          margin: 0 auto;
+          padding-top: 3%;
       }
+
+     
      
       footer {
       	clear: both;
