@@ -48,12 +48,12 @@
       div#wrapper {
       	width: 80%;
       	border: 1px black solid;
-      	margin: 0 auto;				/*why isn't this working?*/
+      	margin: 0 auto;				
       	padding: 4% 4% 4% 8%;
       }
 
      
-      div#wrapper img {
+      div#homepageimage {				/*why isn't this working?*/
           width: 60%;
           padding-left: 4%;
           margin: 0 auto;
@@ -61,6 +61,9 @@
          
       }
      
+     div#homepageimage img {
+     	width: 100%;
+     }
      
       footer {
       	clear: both;
