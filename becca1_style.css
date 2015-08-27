@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Merriweather:400,300|Merriweather+Sans:400,300);
+
+	/*font-family: 'Raleway', sans-serif; 
+	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather Sans', sans-serif;   */
+
+	* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+      	/*background: #F0FFF0;*/
+      }
+
+      header {
+      	width: 80%;
+      	margin: 7% auto;
+      }
+      
+       h1 {
+      	font-family: 'Merriweather';
+      	font-weight: 300;
+      	border: 1px black solid;
+      	width: 30%;
+      	/*margin: 0 auto;*/
+      	float: left;
+      }
+
+      nav {
+      	width: 60%; 
+     	float: right;
+      	border: 1px black solid;
+      	font-family: 'Raleway';
+      }
+
+      div#missionstatement {
+      	clear: both;
+      	width: 80%;
+      	margin: 0 auto;
+      }
+
+      p {
+      	font-family: 'Raleway';
+      }
+
+      div#wrapper {
+      	width: 80%;
+      	height: 100%;
+      	border: 1px black solid;
+      	margin: 0 auto;				/*why isn't this working?*/
+      	padding: 4% 4% 4% 8%;
+      }
+
+     
+      #homepageimage {
+          width: 60%;
+          padding-left: 4%;
+          margin: 0 auto;
+          padding-top: 3%;
+      }
+     
+      footer {
+      	clear: both;
+      	float: bottom;
+      }
