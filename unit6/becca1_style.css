@@ -47,13 +47,12 @@
       	height: 100%;
       	border: 1px black solid;
       	margin: 0 auto;				/*why isn't this working?*/
-      	padding: 4% 4% 4% 8%;
+      	padding: 4% 4% 4% 4%;
       }
 
      
       div#homepageimage {
           width: 80%;
-          padding-left: 4%;
           margin: 0 auto;
           padding-top: 3%;
       }
