@@ -54,12 +54,14 @@
       }
 
      
-      #homepageimage {
+      div#homepageimage {
           width: 60%;
           padding-left: 4%;
           /*margin: 0 auto;*/
           padding-top: 3%;
+          float: left;
       }
+     
      div#homepageimage img {
      	width: 100%;
      }
