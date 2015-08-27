@@ -44,7 +44,6 @@
 
       div#wrapper {
       	width: 80%;
-      	height: 100%;
       	border: 1px black solid;
       	margin: 0 auto;				/*why isn't this working?*/
       	padding: 4% 4% 4% 4%;
@@ -52,9 +51,10 @@
 
      
       div#homepageimage {
-          width: 80%;
+          width: 50%;
           margin: 0 auto;
-          padding-top: 3%;
+          padding: 3%;
+          background: black;
       }
 
      div#homepageimage img {
@@ -62,6 +62,10 @@
      }
      
       footer {
-      	clear: both;
+      	width: 80%;
+            clear: both;
       	float: bottom;
+            margin: 0 auto;
+            text-align: center;
+            font-family: 'Raleway';
       }
