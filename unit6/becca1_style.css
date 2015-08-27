@@ -58,7 +58,9 @@
           padding-top: 3%;
       }
 
-     
+     div#homepageimage img {
+      width: 100%;
+     }
      
       footer {
       	clear: both;
