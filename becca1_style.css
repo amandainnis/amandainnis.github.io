@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway|Merriweather:400,300|Merriweather+Sans:400,300);
+
+	/*font-family: 'Raleway', sans-serif; 
+	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather Sans', sans-serif;   */
+
+	* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+      	background: #F0FFF0;
+      }
+
+      nav {
+      	width: 80%; 
+        height: 20%;
+      	margin: 0 auto;
+      	border: 1px black solid;
+      }
+
+      div#wrapper {
+      	width: 80%;
+      	height: 100%;
+      	border: 1px black solid;
+      	margin: 0 auto;				/*why isn't this working?*/
+      	padding: 4% 4% 4% 8%;
+      }
+
+      h1 {
+      	font-family: 'Work Sans', sans-serif;
+      	border: 1px black solid;
+      }
+
+
+      div.boxes {
+      	width: 20%;
+      	height: 20%;
+      	border: 1px black solid;
+      	float: left;
+      	/*margin: 0 auto;*/
+      }
+     
+      footer {
+      	clear: both;
+      	float: bottom;
+      }
