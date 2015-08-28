@@ -15,7 +15,10 @@
       	width: 80%;
       	margin: 7% auto;
       }
-      
+     
+       body {
+            background-image: url("uni6/becca_office.jpg");}
+            
        h1 {
       	font-family: 'Merriweather Sans';
       	font-weight: 700;
