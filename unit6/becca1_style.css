@@ -17,25 +17,31 @@
       }
       
        h1 {
-      	font-family: 'Merriweather';
-      	font-weight: 300;
-      	border: 1px black solid;
-      	width: 30%;
+      	font-family: 'Merriweather Sans';
+      	font-weight: 700;
+      	/*border: 1px black solid;*/
+      	width: 40%;
       	/*margin: 0 auto;*/
       	float: left;
       }
 
       nav {
-      	width: 60%; 
+      	width: 330px; 
      	      float: right;
       	border: 1px black solid;
       	font-family: 'Raleway';
+            text-align: right;
+            padding: 20px 42px;
       }
-
+      span {
+            color: white;
+      }
+      
       div#missionstatement {
       	clear: both;
       	width: 80%;
       	margin: 0 auto;
+            padding-top: 5%;
       }
 
       p {
@@ -44,21 +50,41 @@
 
       div#wrapper {
       	width: 80%;
-      	border: 1px black solid;
+      	/*border: 1px gray solid;*/
       	margin: 0 auto;				/*why isn't this working?*/
       	padding: 4% 4% 4% 4%;
       }
-
-      p.toggle {
+      div.left_tog_col {
+            width: 15%;
+            float: left;
+      }
+      div.right_tog_col {
+            width: 15%;
+            float: left;
+      }
+      p.toggle1 {
             font-family: 'Merriweather Sans';
             font-weight: 700;
-            font-size: 20pt;
+            font-size: 25pt;
+            color: black;
+            padding-top: 100%;
       }
+      p.toggle2 {
+            font-family: 'Merriweather Sans';
+            font-weight: 700;
+            font-size: 25pt;
+            color: black;
+            text-align: right;
+            padding-top: 100%;
+      }
+
       div#homepageimage {
-          width: 50%;
-          margin: 0 auto;
+          width: 70%;
+          float: left;
           padding: 3%;
           background: black;
+          margin: 0 auto;
+
       }
 
      div#homepageimage img {
