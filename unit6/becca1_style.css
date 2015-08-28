@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway|Merriweather:400,300|Merriweather+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway|Merriweather:400,300|Merriweather+Sans:400,300,700);
 
 	/*font-family: 'Raleway', sans-serif; 
 	font-family: 'Merriweather', serif;
@@ -49,7 +49,11 @@
       	padding: 4% 4% 4% 4%;
       }
 
-     
+      p.toggle {
+            font-family: 'Merriweather Sans';
+            font-weight: 700;
+            font-size: 20pt;
+      }
       div#homepageimage {
           width: 50%;
           margin: 0 auto;
