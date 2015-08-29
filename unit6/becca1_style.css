@@ -16,14 +16,14 @@
       	margin: 7% auto;
       }
      
-       body {
+       /*body {
             background-image: url("becca_office1400.gif");}
       
       body img {
             /*width: 80%;
-            height: 50%;*/
+            height: 50%;
             margin: 0 auto;
-      }
+      }*/
 
        h1 {
       	font-family: 'Merriweather Sans';
@@ -71,7 +71,7 @@
             width: 15%;
             float: left;
       }
-     /* p.toggle1 {
+      p.toggle1 {
             font-family: 'Merriweather Sans';
             font-weight: 700;
             font-size: 25pt;
@@ -98,7 +98,7 @@
 
      div#homepageimage img {
       width: 100%;
-     }*/
+     }
      
       footer {
       	width: 80%;
