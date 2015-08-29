@@ -26,14 +26,13 @@
       }
 
       nav {
-      	width: 330px; 
+      	    width: 330px; 
      	      float: right;
-      	border: 1px black solid;
-      	font-family: 'Raleway';
+          	border: 1px black solid;
+      	    font-family: 'Raleway';
             text-align: right;
             padding: 20px 42px;
-            word-spacing: 2em;
-      }
+            word-spacing: 2em;}
      
       
      
@@ -47,8 +46,11 @@
       	width: 80%;
       	margin: 0 auto;				
       }
-       
-       div#wrapper img{
+        div#displaydiv {
+          width: 90%;
+          margin: 3% auto;
+   }
+       div#displaydiv img{
         width: 100%;
         margin-top: 8%;
        }     
