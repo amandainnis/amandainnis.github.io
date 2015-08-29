@@ -37,29 +37,50 @@
       	/*margin: 0 auto;*/
       	float: left;
       }
+      h2#about {font-family: 'Merriweather Sans';
+            font-weight: 700;
+            text-align: center;
+            /*border: 1px black solid;*/
+            margin: 0 auto;
+            font-size: 2em;
+            padding: 1em 0 0 0;
+           background: #f3f2f0;
+            
+      }
+      
+      h2#contact {font-family: 'Merriweather Sans';
+            font-weight: 700;
+            text-align: center;
+            /*border: 1px black solid;*/
+            margin: 0 auto;
+            font-size: 2em;
+            padding: 1em;
+           background: #27a98d;
+            color: #ccffcc;
+      }
 
       nav {
       	width: 330px; 
      	      float: right;
       	border: 1px black solid;
-      	font-family: 'Raleway';
+      	font-family: 'Merriweather Sans';
+            font-weight: 700;
             text-align: right;
             padding: 20px 42px;
             word-spacing: 2em;
       }
-      span {
-            color: white;
-      }
+      
       
       div#missionstatement {
       	clear: both;
-      	width: 80%;
+      	width: 100%;
       	margin: 0 auto;
-            padding-top: 15%;
+            padding-top: 10%;
       }
 
       p {
       font-family: 'Raleway';
+      padding: 1em;
       }
 
 
@@ -95,7 +116,8 @@
 
          
       footer {
-      	width: 80%;
+      	background: #ccffcc;
+            width: 100%;
             clear: both;
       	float: bottom;
             margin: 0 auto;
