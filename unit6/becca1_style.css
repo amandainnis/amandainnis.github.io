@@ -13,17 +13,16 @@
 
       header {
       	width: 80%;
-      	margin: 7% auto;
+      	margin: 5% auto;
       }
      
-       /*body {
+       div#bodyviv {
+            width: 100%;
             background-image: url("becca_office1400.gif");}
       
-      body img {
-            /*width: 80%;
-            height: 50%;
-            margin: 0 auto;
-      }*/
+      #bodydiv img {
+            width: 80%;
+            margin: 0 auto;}
 
        h1 {
       	font-family: 'Merriweather Sans';
@@ -41,6 +40,7 @@
       	font-family: 'Raleway';
             text-align: right;
             padding: 20px 42px;
+            word-spacing: 2em;
       }
       span {
             color: white;
@@ -57,13 +57,15 @@
       font-family: 'Raleway';
       }
 
+
+
       div#wrapper {
       	width: 80%;
       	
-      	margin: 0 auto;				/*why isn't this working?*/
+      	margin: 0 auto;				
       	padding: 4% 4% 4% 4%;
       }
-      div.left_tog_col {
+     /* div.left_tog_col {
             width: 15%;
             float: left;
       }
@@ -85,9 +87,9 @@
             color: black;
             text-align: right;
             padding-top: 100%;
-      }
+      }*/
 
-      div#homepageimage {
+      /*div#homepageimage {
           width: 70%;
           float: left;
           padding: 3%;
@@ -98,8 +100,35 @@
 
      div#homepageimage img {
       width: 100%;
-     }
-     
+     }*/
+      
+      div#displaydiv {
+          width: 100%;
+          /*float: left;*/
+         /* padding: 3%;
+          background: black;*/
+          margin: 0 auto;
+   }
+      div#displaybox {
+            border: 3px black solid;
+            width: 100%;
+      }
+      div#homepageimage {
+            width: auto;
+            padding: 3%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+      }
+           
+
+            /*#myWorkContent a {     what is this part--a---in the guys code?????????????
+                display: inline-block;
+                vertical-align: middle;   
+            }
+
+            #myWorkContent img {border: 0;}*/
+
       footer {
       	width: 80%;
             clear: both;
