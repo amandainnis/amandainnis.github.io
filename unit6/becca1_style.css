@@ -36,6 +36,7 @@
       	width: 40%;
       	/*margin: 0 auto;*/
       	float: left;
+
       }
       h2#about {font-family: 'Merriweather Sans';
             font-weight: 700;
@@ -45,6 +46,7 @@
             font-size: 2em;
             padding: 1em 0 0 0;
            background: #f3f2f0;
+           text-transform: uppercase;
             
       }
       
@@ -57,6 +59,7 @@
             padding: 1em;
            background: #27a98d;
             color: #ccffcc;
+            text-transform: uppercase;
       }
 
       nav {
@@ -81,6 +84,7 @@
       p {
       font-family: 'Raleway';
       padding: 1em;
+      background: #f3f2f0;
       }
 
 
