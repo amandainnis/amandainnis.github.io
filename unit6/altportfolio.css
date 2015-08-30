@@ -90,8 +90,9 @@
         width: 45%;
       }
      div#logobox {
+        height: 10%;
         clear: both;
-        margin-top: 35%;
+        margin-top: 55%;
         padding: 5%;
         width: 100%;
         background: #f3f2f0;
