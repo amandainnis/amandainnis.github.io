@@ -7,20 +7,15 @@
 	* {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-      }
+        box-sizing: border-box;}
       
-/*
-      header {
-      	width: 80%;
-      	margin: 3% auto;
-      }*/
-     body {
-      background-image: url("becca_office_take7.gif");
-      background-repeat: no-repeat;
-      background-size: 100%;   
-      /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
-     }
+     
+      body {
+            background-image: url("becca_office_take4.gif");
+            background-repeat: no-repeat;
+            background-size: 100%;   
+            /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
+           }
 
       body img {
             /*z-index: -1;*/
@@ -31,11 +26,11 @@
 
        h1 {
             font-family: 'Merriweather Sans';
-          font-weight: 700;
-          float: left;
-          line-height: 2em;
-          padding-left: 1em;
-    }
+            font-weight: 700;
+            float: left;
+            line-height: 2em;
+            padding-left: 1em; }
+       
        div#aboutgray {
             width: 100%;
             background: #27a98d;
@@ -43,29 +38,7 @@
             display: block;
       }
 
-      h2#about {font-family: 'Merriweather Sans';
-            font-weight: 700;
-            text-align: center;
-            /*border: 1px black solid;*/
-            margin: 0 auto;
-            font-size: 2em;
-            padding: 1em 0 0 0;
-           background: #f3f2f0;
-           text-transform: uppercase;
-            display: block;}
-
-      h2#contact {font-family: 'Merriweather Sans';
-            font-weight: 700;
-            text-align: center;
-            /*border: 1px black solid;*/
-            margin: 0 auto;
-            font-size: 2em;
-            padding: 1em;
-           background: #27a98d;
-            color: #ccffcc;
-            text-transform: uppercase;
-            z-index: -1;
-      }
+      
 
       nav {
             float: right;
@@ -74,67 +47,110 @@
             font-weight: 700;
             line-height: 3em;}
 
-     a {text-decoration: none;
-            border: 1px black solid;
-            padding: 10px 20px;
-            /*text-align: center;*/}
-      a:link {color: black;}
-      a:hover {color: green;}
-      
-      div#missionstatement {
-      	clear: both;
-      	width: 100%;
-      	margin: 0 auto;
-            padding-top: 10%;
-            /*border: 5px red solid;*/
-      }
-      /*div#missiontext {
-            width: 60%;
-            margin: 0 auto;}
-            /*border: 5px yellow solid;*/
-      
-   
-      p {
-      font-family: 'Raleway';
-      padding: 4em;
-      background: #f3f2f0;
-      }
+           a {
+                  text-decoration: none;
+                  border: 1px black solid;
+                  padding: 10px 20px;
+                  /*text-align: center;*/}
+            
+
+            a:link {color: black;}
+            
+
+            a:hover {color: green;}
+            
+            div#missionstatement {
+            	/*clear: both;
+            	width: 100%;
+            	margin: 0 auto;
+                  padding-top: 10%;*/
+                  border: 5px red solid;
+            }
+            
+         
+            p {
+                  font-family: 'Raleway';
+                  padding: 4em;
+                  background: #f3f2f0;
+                  }
+
+            div#wrapper {
+            	width: 80%;
+            	margin: 0 auto;				
+            	padding: 3% 0% 0% 4%;
+            }
+         
+            div#displaydiv {
+                width: 100%;
+                margin: 14% auto;
+         }
+            
+            div#displaybox {
+                  background: black;
+                  width: 90%;
+                  margin-left: 2%;
+                  /*margin: 0 auto;*/
+                  -moz-box-shadow: 5px 5px 5px 5px #777777;
+                  -webkit-box-shadow: 5px 5px 5px 5px #777777;
+                  box-shadow: 5px 5px 5px 5px #777777;
+            }
+            div#homepageimage {
+                  width: auto;
+                 /* height: 600px;*/
+                  padding: 0 3% 0 0;
+                  overflow-x: scroll;
+                  overflow-y: hidden;
+                  white-space: nowrap;
+            }
 
 
+            .clearfix:after {
+                  visibility: hidden;
+                  display: block;
+                  font-size: 0;
+                  content: " ";
+                  clear: both;
+                  height: 0;}    
 
-      div#wrapper {
-      	width: 80%;
-      	
-      	margin: 0 auto;				
-      	padding: 3% 0% 0% 4%;
-      }
-   
-      div#displaydiv {
-          width: 100%;
-          /*float: left;*/
-         /* padding: 3%;
-          background: black;*/
-          margin: 3% auto;
-   }
-      div#displaybox {
-            border: 3px black solid;
-            background: black;
-            width: 90%;
-            margin-left: 2%;
-            /*margin: 0 auto;*/
-            -moz-box-shadow: 5px 5px 5px 5px #777777;
-            -webkit-box-shadow: 5px 5px 5px 5px #777777;
-            box-shadow: 5px 5px 5px 5px #777777;
-      }
-      div#homepageimage {
-            width: auto;
-            padding: 3%;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            white-space: nowrap;
-      }
+
+            section {
+                    margin: 8em 0;
+                    background: #27a98d;
+                    color: #fff;
+                    overflow: auto;
+                  }
+
+
+            div#logo {
+                    width: 2em;
+                    float: left;
+                    margin: 4%;
+                  }
+
            
+      h2#about {font-family: 'Merriweather Sans';
+            font-weight: 700;
+            text-align: center;
+            border: 1px black solid;
+            margin: 0 auto;
+            font-size: 2em;
+            padding: 1em 0 0 0;
+            background: #f3f2f0;
+            text-transform: uppercase;
+            display: block;}
 
+      h2#contact {font-family: 'Merriweather Sans';
+            font-weight: 700;
+            text-align: center;
+            border: 3px blue solid;
+            margin: 0 auto;
+            font-size: 2em;
+            padding: 1em;
+            background: #27a98d;
+            color: #ccffcc;
+            text-transform: uppercase;
+            z-index: -1;
+      }
          
       footer {
       	background: #ccffcc;

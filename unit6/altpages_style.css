@@ -26,13 +26,18 @@
       }
 
       nav {
-      	    width: 330px; 
-     	      float: right;
-          	border: 1px black solid;
-      	    font-family: 'Raleway';
-            text-align: right;
-            padding: 20px 42px;
-            word-spacing: 2em;}
+            float: right;
+            border: 1px black solid;
+            font-family: 'Merriweather Sans';
+            font-weight: 700;
+            line-height: 3em;}
+
+     a {text-decoration: none;
+            border: 1px black solid;
+            padding: 10px 20px;
+            /*text-align: center;*/}
+      a:link {color: black;}
+      a:hover {color: green;}
      
       
      

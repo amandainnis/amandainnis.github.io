@@ -15,34 +15,22 @@
       	width: 80%;
       	margin: 3% auto 5% auto;
       }
-     /*body {
-      background-image: url("becca_office_take6.gif");
-      background-repeat: no-repeat;
-      background-size: 100%;   
-      /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
-    /* }*/
-
-      body img {
-            /*z-index: -1;*/
-            width: 100%;
-            margin: 0 auto;}
-
-  
-
+   
+     
        h1 {
       	font-family: 'Merriweather Sans';
       	font-weight: 700;
       	/*border: 1px black solid;*/
       	width: 40%;
-      	/*margin: 0 auto;*/
+      	margin: 0 auto 3em auto;
       	float: left;
 
       }
        div#aboutgray {
             width: 100%;
             background: #27a98d;
-            /*border: 5px blue solid;*/
-            display: block;
+            /*border: 5px blue solid;
+            display: block;*/
       }
 
       h2#about {font-family: 'Merriweather Sans';
@@ -89,17 +77,40 @@
         float: right;
         width: 45%;
       }
+ .clearfix {
+  overflow: auto;
+ }    
+/*div{
+  font-size: 1.2em;
+  width: 46%;
+  padding: 2%;
+  display: inline-block;
+}
+
+#hero {
+  display: block;
+  width: 100%;
+  margin: 0; 
+  background: #fffebb;}*/
+
+section {
+  background: #222;
+  color: #fff;
+  overflow: auto;
+}
+
+
      div#logobox {
-     /*   height: 10%;*/
         clear: both;
-     /*   margin-top: 55%; */  /*why isnt this working*/
-        padding: 5%;
-        width: 70%;
+        padding: 4%;
+        width: 50%;
         margin: 0 auto;
         background: #27a98d;
     }
       div#logo {
-        width: 10%;
+        width: 15%;
+        float: left;
+        margin: 4%;
       }
 
       div.fatthumbs {
