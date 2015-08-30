@@ -11,7 +11,7 @@
       
      
       body {
-            background-image: url("becca_office_take4.gif");
+            background-image: url("laptop.gif");
             background-repeat: no-repeat;
             background-size: 100%;   
             /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
@@ -76,8 +76,9 @@
 
             div#wrapper {
             	width: 80%;
-            	margin: 0 auto;				
-            	padding: 3% 0% 0% 4%;
+                  padding: 3% 0 0 6%;
+            	/*margin: 0 auto;		this was for previous image		
+            	padding: 3% 0% 0% 4%;*/
             }
          
             div#displaydiv {
