@@ -90,12 +90,13 @@
         width: 45%;
       }
      div#logobox {
-        height: 10%;
+     /*   height: 10%;*/
         clear: both;
-        margin-top: 55%;
+     /*   margin-top: 55%; */  /*why isnt this working*/
         padding: 5%;
-        width: 100%;
-        background: #f3f2f0;
+        width: 70%;
+        margin: 0 auto;
+        background: #27a98d;
     }
       div#logo {
         width: 10%;
