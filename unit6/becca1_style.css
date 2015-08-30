@@ -88,12 +88,12 @@
             padding-top: 10%;
             /*border: 5px red solid;*/
       }
-      div#missiontext {
+      /*div#missiontext {
             width: 60%;
-            margin: 0 auto;
+            margin: 0 auto;}
             /*border: 5px yellow solid;*/
-      }
       
+   
       p {
       font-family: 'Raleway';
       padding: 4em;
