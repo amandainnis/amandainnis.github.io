@@ -10,11 +10,11 @@
         box-sizing: border-box;
       }
       
-
+/*
       header {
       	width: 80%;
       	margin: 3% auto;
-      }
+      }*/
      body {
       background-image: url("becca_office_take7.gif");
       background-repeat: no-repeat;
@@ -30,14 +30,12 @@
   
 
        h1 {
-      	font-family: 'Merriweather Sans';
-      	font-weight: 700;
-      	/*border: 1px black solid;*/
-      	width: 40%;
-      	/*margin: 0 auto;*/
-      	float: left;
-
-      }
+            font-family: 'Merriweather Sans';
+          font-weight: 700;
+          float: left;
+          line-height: 2em;
+          padding-left: 1em;
+    }
        div#aboutgray {
             width: 100%;
             background: #27a98d;
@@ -70,15 +68,16 @@
       }
 
       nav {
-      	width: 400px; 
-     	      float: right;
-      	border: 1px black solid;
-      	font-family: 'Merriweather Sans';
+            float: right;
+            border: 1px black solid;
+            font-family: 'Merriweather Sans';
             font-weight: 700;
-           /* text-align: right;*/
-            padding: 20px 42px;
-            word-spacing: 2em;}
-     a {text-decoration: none;}
+            line-height: 3em;}
+
+     a {text-decoration: none;
+            border: 1px black solid;
+            padding: 10px 20px;
+            /*text-align: center;*/}
       a:link {color: black;}
       a:hover {color: green;}
       
@@ -107,7 +106,7 @@
       	width: 80%;
       	
       	margin: 0 auto;				
-      	padding: 2% 0% 0% 4%;
+      	padding: 3% 0% 0% 4%;
       }
    
       div#displaydiv {
