@@ -13,7 +13,7 @@
 
       header {
       	width: 80%;
-      	margin: 3% auto;
+      	margin: 3% auto 5% auto;
       }
      /*body {
       background-image: url("becca_office_take6.gif");
@@ -89,7 +89,17 @@
         float: right;
         width: 45%;
       }
-    
+     div#logobox {
+        clear: both;
+        margin-top: 35%;
+        padding: 5%;
+        width: 100%;
+        background: #f3f2f0;
+    }
+      div#logo {
+        width: 10%;
+      }
+
       div.fatthumbs {
         width: 90%;
         margin-bottom: 4%;
