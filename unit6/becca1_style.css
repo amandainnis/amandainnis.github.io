@@ -28,7 +28,7 @@
             background-color: #f4fae6;
       }
        h1 {
-            font-family: 'Merriweather Sans';
+            font-family: 'Merriweather Sans', sans-serif;
             font-weight: 700;
             float: left;
             line-height: 2em;
@@ -37,19 +37,12 @@
             /*width: 70%;*/
             background: #f4fae6;}
 
-       /*div#aboutgray {
-            width: 100%;
-            background: #27a98d;
-            /*border: 5px blue solid;
-            display: block;
-      }*/
-
       
 
       nav {
             float: right;
-            border: 4px #e8feb7 solid;
-            font-family: 'Merriweather Sans';
+            border: 5px #e8feb7 solid;
+            font-family: 'Merriweather Sans', sans-serif;
             font-weight: 700;
             line-height: 3em;
             background-color: #888786;      /*dfc795*/
@@ -119,12 +112,7 @@
                   height: 0;}    
 
 
-            /*ul {
-                  list-style-type: none;
-                  font-family: 'Merriweather Sans';
-                  font-weight: 700;
-            }
-*/
+           
             section {
                     clear: both;
                     margin: 15% 0 0 0;
@@ -173,7 +161,7 @@
             /*color: #ac82a4;*/
             color: black;
             text-transform: uppercase;
-            padding-bottom: 7%;
+            padding-bottom: 9%;
             }
 
      
