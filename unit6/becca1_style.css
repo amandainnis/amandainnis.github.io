@@ -59,14 +59,7 @@
 
             a:hover {color: green;}
             
-            div#missionstatement {
-            	/*clear: both;
-            	width: 100%;
-            	margin: 0 auto;
-                  padding-top: 10%;*/
-                  border: 5px red solid;
-            }
-            
+           
          
             p {
                   font-family: 'Raleway';
@@ -90,10 +83,7 @@
                   background: black;
                   width: 91%;
                   margin-left: 2%;
-                  /*margin: 0 auto;*/
-                  /*-moz-box-shadow: 5px 5px 5px 5px #777777;
-                  -webkit-box-shadow: 5px 5px 5px 5px #777777;
-                  box-shadow: 5px 5px 5px 5px #777777;*/
+                 
             }
             div#homepageimage {
                   width: auto;
@@ -114,12 +104,15 @@
                   height: 0;}    
 
 
-            
-
-
+            /*ul {
+                  list-style-type: none;
+                  font-family: 'Merriweather Sans';
+                  font-weight: 700;
+            }
+*/
             section {
                     clear: both;
-                    margin: 8em 0;
+                    margin: 15% 0 5% 0;
                     background: #27a98d;
                     color: #fff;
                     overflow: auto;
@@ -127,6 +120,7 @@
             #column1 {
                   width: 50%;
                   float: left;
+                  padding-left: 5%;
             }
             #column2 {
                   width: 50%;
@@ -135,7 +129,7 @@
 
 
             div#logo {
-                    width: 4em;
+                    width: 15%;
                     float: left;
                     margin: 4%;
                   }
@@ -144,27 +138,15 @@
       h2#about {font-family: 'Merriweather Sans';
             font-weight: 700;
             text-align: center;
-            border: 1px black solid;
             margin: 0 auto;
             font-size: 2em;
             padding: 1em 0 0 0;
             background: #f3f2f0;
+            color: black;
             text-transform: uppercase;
             }
 
-     /* h2#contact {font-family: 'Merriweather Sans';
-            font-weight: 700;
-            text-align: center;
-            border: 3px blue solid;
-            margin: 0 auto;
-            font-size: 2em;
-            padding: 1em;
-            background: #27a98d;
-            color: #ccffcc;
-            text-transform: uppercase;
-            z-index: -1;
-      }*/
-         
+     
       footer {
       	background: #ccffcc;
             width: 100%;
