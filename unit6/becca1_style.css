@@ -119,7 +119,7 @@
                     background: #27a98d;
                     color: #fff;
                     overflow: auto;
-                    overflow-x: hidden;
+                    /*overflow-x: hidden;*/
                   }
            
             #column1 {
@@ -164,7 +164,16 @@
             padding-bottom: 9%;
             }
 
-     
+      #cola {
+            width: 50%;
+            float:left;
+      }
+      
+      #colb {width: 50%;
+            float: right;}
+            
+      #colb img {width: 50%;}
+
       footer {
             width: 100%;
             clear: both;
