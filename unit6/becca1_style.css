@@ -11,7 +11,7 @@
       
      
       body {
-            background-image: url("laptop4.gif");
+            background-image: url("laptop5.gif");
             background-repeat: no-repeat;
             background-size: 100%;   
             /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
@@ -65,7 +65,7 @@
                   font-family: 'Raleway';
                   padding: 4em;
                   background: #f3f2f0;
-                  color: #ac82a4;
+                  color: black;
                   }
 
             div#wrapper {
@@ -156,7 +156,8 @@
             font-size: 2em;
             padding: 1em 0 0 0;
             background: #f3f2f0;
-            color: #ac82a4;
+            /*color: #ac82a4;*/
+            color: black;
             text-transform: uppercase;
             }
 
