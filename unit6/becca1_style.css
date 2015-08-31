@@ -11,7 +11,7 @@
       
      
       body {
-            background-image: url("laptop.gif");
+            background-image: url("laptop2.gif");
             background-repeat: no-repeat;
             background-size: 100%;   
             /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
@@ -83,17 +83,17 @@
          
             div#displaydiv {
                 width: 100%;
-                margin: 14% auto;
+                margin: 9% auto;
          }
             
             div#displaybox {
                   background: black;
-                  width: 90%;
+                  width: 91%;
                   margin-left: 2%;
                   /*margin: 0 auto;*/
-                  -moz-box-shadow: 5px 5px 5px 5px #777777;
+                  /*-moz-box-shadow: 5px 5px 5px 5px #777777;
                   -webkit-box-shadow: 5px 5px 5px 5px #777777;
-                  box-shadow: 5px 5px 5px 5px #777777;
+                  box-shadow: 5px 5px 5px 5px #777777;*/
             }
             div#homepageimage {
                   width: auto;
