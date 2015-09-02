@@ -73,7 +73,12 @@
                   font-size: 0;
                   content: " ";
                   clear: both;
-                  height: 0;}    
+                  height: 0;}   
+          
+          img#allure {
+            width: 80%;
+            padding: 1em auto;
+          } 
 
        footer {
             width: 100%;
