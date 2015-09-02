@@ -65,6 +65,7 @@
                   padding: 3% 10% 25% 10%;
                   background: #f3f2f0;
                   color: black;
+                  height: 100%;  /*this is what Sarah added to counteract the whole messy div issue*/
                   }
 
             footer p {
@@ -170,6 +171,7 @@
       }
       
       #colb {width: 50%;
+            height: 100%;  /*this is what Sarah added to counteract the whole messy div issue*/
             float: right;}
             
       #colb img {width: 50%;}
@@ -177,7 +179,7 @@
       footer {
             width: 100%;
             clear: both;
-      	float: bottom;
+      	    float: bottom;
             margin: 0 auto;
             text-align: center;
             font-family: 'Raleway';
