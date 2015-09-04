@@ -27,6 +27,7 @@
             width: 100%;
             background-color: #f4fae6;
       }
+       
        h1 {
             font-family: 'Merriweather Sans', sans-serif;
             font-weight: 700;
@@ -83,8 +84,19 @@
                   padding-left: 8%;
                   /* background-color: black; */
                   clear: both;
+                  position: relative;   /*in order to relate to absolute in the child element*/
             }
          
+
+            #arrow {
+              font-size: 5em;
+              color: #fd4eef;
+              position: absolute;
+              bottom: -.5em;
+              left: .25em;    /*reference to parent container, an absolute thing*/
+            }
+
+
 /*            div#displaydiv {
                 width: 100%;
                 margin: 9% auto;
