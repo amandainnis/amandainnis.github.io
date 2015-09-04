@@ -21,6 +21,7 @@
             font-weight: 700;
             float: left;
             line-height: 2em;
+            font-size: 2em;
             padding-left: 1em;
             padding-right: 1em;
             /*width: 70%;*/
@@ -29,11 +30,11 @@
 
    nav {
             float: right;
-            border: 5px #e8feb7 solid;
+           /* border: 5px #e8feb7 solid;*/
             font-family: 'Merriweather Sans', sans-serif;
             font-weight: 700;
             line-height: 3em;
-            background-color: #888786;      /*dfc795*/
+            background-color: #cccccc;      /*#888786   dfc795*/
             }
 
            a {
@@ -63,8 +64,13 @@
                   padding: 4%;  
                   }
             div#wrapper {
-            	width: 80%;
-            	margin: 0 auto;				
+            	    width: 80%;
+                  clear: both;
+                  padding: 5em;
+                  margin: 0% auto;				
+            }
+            div#wrapper img {
+              width: 100%;
             }
 
         .clearfix:after {

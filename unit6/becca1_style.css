@@ -32,6 +32,7 @@
             font-weight: 700;
             float: left;
             line-height: 2em;
+            font-size: 2em;
             padding-left: 1em;
             padding-right: 1em;
             /*width: 70%;*/
@@ -77,30 +78,32 @@
             }
 
             div#wrapper {
-            	width: 80%;
-                  padding: 3% 0 0 6%;
-            	/*margin: 0 auto;		this was for previous image		
-            	padding: 3% 0% 0% 4%;*/
+            	    width: 73.8%;
+                  padding-top: 6%;
+                  padding-left: 8%;
+                  /* background-color: black; */
+                  clear: both;
             }
          
-            div#displaydiv {
+/*            div#displaydiv {
                 width: 100%;
                 margin: 9% auto;
-         }
+         }*/
             
             div#displaybox {
-                  background: black;
-                  width: 91%;
-                  margin-left: 2%;
-                 
+/*              margin-top: 9%;
+              background: black;
+              width: 91%;
+              margin-left: 2%;  */ 
             }
             div#homepageimage {
                   width: auto;
                  /* height: 600px;*/
-                  padding: 0 3% 0 0;
+                  /*padding: 0 3% 0 0;*/
                   overflow-x: scroll;
                   overflow-y: hidden;
                   white-space: nowrap;
+                  background-color: black;
             }
 
 
@@ -179,7 +182,6 @@
       footer {
             width: 100%;
             clear: both;
-      	    float: bottom;
             margin: 0 auto;
             text-align: center;
             font-family: 'Raleway';
