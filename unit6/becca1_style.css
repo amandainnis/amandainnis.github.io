@@ -132,7 +132,7 @@
             section {
                     clear: both;
                     margin: 15% 0 0 0;
-                    background: #27a98d;
+                   /* background: #27a98d;*/
                     color: #fff;
                     overflow: auto;
                     /*overflow-x: hidden;*/
@@ -145,6 +145,8 @@
                   width: 50%;
                   float: left;
                   padding-left: 5%;
+                   background: #27a98d;
+                   padding-bottom: 10em;
             }
             #column2 {
                   width: 50%;
@@ -194,7 +196,9 @@
             height: 100%;  /*this is what Sarah added to counteract the whole messy div issue*/
             float: right;
             background: #f3f2f0;
-            padding-bottom: 15.5em;}
+            padding-top: 1em;
+            padding-left: 2em;
+            padding-bottom: 14.5em;}
             
       #colb img {width: 50%;}
 
