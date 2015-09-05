@@ -11,7 +11,7 @@
       
      
       body {
-            background-image: url("laptop5.gif");
+            background-image: url("laptop2.gif");
             background-repeat: no-repeat;
             background-size: 100%;   
             /*background-size: this fixed everything!!!!!!!!!!!!!!!*/
@@ -90,7 +90,7 @@
 
             #arrow {
               font-size: 5em;
-              color: #fd4eef;
+              color: #db68d2;
               position: absolute;
               bottom: -.5em;
               left: .25em;    /*reference to parent container, an absolute thing*/
@@ -137,6 +137,9 @@
                     overflow: auto;
                     /*overflow-x: hidden;*/
                   }
+            section a{
+              padding: 0;
+            }
            
             #column1 {
                   width: 50%;
@@ -145,8 +148,7 @@
             }
             #column2 {
                   width: 50%;
-                  float: right;
-            }
+                  float: right;}
 
 
             div#logo {
@@ -184,10 +186,15 @@
             width: 50%;
             float:left;
       }
+      #cola p{
+        line-height: 2em;
+      }
       
       #colb {width: 50%;
             height: 100%;  /*this is what Sarah added to counteract the whole messy div issue*/
-            float: right;}
+            float: right;
+            background: #f3f2f0;
+            padding-bottom: 15.5em;}
             
       #colb img {width: 50%;}
 
