@@ -3,6 +3,10 @@
         padding: 0;
         box-sizing: border-box;}
 
+        body {background-image: url("paper_bw_1.png");
+            background-repeat: no-repeat;
+            background-size: 100%;   }
+
 
         nav div{
         	width: 100px;
