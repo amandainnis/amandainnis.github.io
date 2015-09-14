@@ -127,7 +127,11 @@
                   clear: both;
                   height: 0;}    
 
-
+            .animated.bounceIn,
+            .animated.bounceOut {
+              -webkit-animation-duration: .75s;
+              animation-duration: .75s;
+              }
            
             section {
                     clear: both;
