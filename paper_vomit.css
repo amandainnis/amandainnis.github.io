@@ -7,6 +7,9 @@
         nav div{
         	width: 100px;
         	height: 85px;
-        	float: right;
+        	float: left;
         	background: #e58c34;
+        	margin: 10px;
+        	text-align: center;
+        	line-height: 80px;
         }
