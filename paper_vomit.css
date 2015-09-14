@@ -1,0 +1,12 @@
+	* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+
+        nav div{
+        	width: 100px;
+        	height: 85px;
+        	float: right;
+        	background: #e58c34;
+        }
