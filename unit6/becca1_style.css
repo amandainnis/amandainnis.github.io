@@ -4,6 +4,23 @@
 	font-family: 'Merriweather', serif;
 	font-family: 'Merriweather Sans', sans-serif;   */
 
+
+
+/*@media screen and (device-width: 768px) and (deviceheight:
+1024px) and (-webkit-device-pixel-ratio: 1) 
+
+@media only screen and (max-width: 768px) {
+#column1, #column2 {
+  float: none;
+  width: auto;
+}
+
+@media only screen and (max-width: 480px) {
+#wrapper {
+  width: 80%;
+}
+*/
+
 	* {
         margin: 0;
         padding: 0;
@@ -89,13 +106,20 @@
          
 
             #arrow {
+              font-size: 500%;
+              color: #db68d2;
+              position: absolute;
+              bottom: -3.90%;
+              left: 0%;    /*reference to parent container, an absolute thing*/
+            }
+
+           /* #arrow {
               font-size: 5em;
               color: #db68d2;
               position: absolute;
               bottom: -.5em;
               left: .25em;    /*reference to parent container, an absolute thing*/
-            }
-
+           /* }*/
 
 /*            div#displaydiv {
                 width: 100%;
