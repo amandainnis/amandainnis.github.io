@@ -5,11 +5,11 @@
 
 }
 
-body    {background-image: url("img/home.jpg");
+body{background-image: url("img/home.jpg");
 	    background-repeat: no-repeat;
 	    background-size: 100%;}
 
-body img {
+body img{
         width: 100%;
         margin: 0 auto;}
 
