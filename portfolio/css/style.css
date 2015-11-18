@@ -15,7 +15,7 @@
         padding: 13%;
         padding-bottom: 23%;
         text-align: center;
-        font-size: 2.6em;
+        font-size: 2.4em;
         background: rgba(90,76,166,0.58);
 		background: -moz-linear-gradient(left, rgba(90,76,166,0.58) 0%, rgba(144,144,240,1) 100%);
 		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,76,166,0.58)), color-stop(100%, rgba(144,144,240,1)));
@@ -30,14 +30,13 @@
         nav {
         color: white;
         padding-left: 4%;
-        padding-top: 3%;
         padding-right: 2%;
         padding-bottom: 2%;
         width: 100%;
         text-align: right;
         margin: 0 auto;
         font-size: 16px;
-        letter-spacing: 2px;	
+        letter-spacing: 1px;	
         background: rgba(90,76,166,0.58);
 		background: -moz-linear-gradient(left, rgba(90,76,166,0.58) 0%, rgba(144,182,240,1) 100%);
 		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,76,166,0.58)), color-stop(100%, rgba(144,182,240,1)));
@@ -55,15 +54,18 @@
         text-decoration: none;
         font-family:'Roboto Condensed'; /*or Droid Sans*/
         font-weight: 200;
-        font-size: 1em;
-	    padding: 1em;
+       /* font-size: 1em;*/
+	    padding-top: .5em;
+	    padding-right: 1em;
+	    padding-left: 1em;
+	    padding-bottom: 1em;
       }
 
       .container{
 		width: 100%;}
 
 		body {
-		background-image: url("../img/home2.jpg");
+		background-image: url("../img/desktop_blank.jpg");
 		background-repeat: no-repeat;
 		 background-size: 100%;
 		}
@@ -73,51 +75,103 @@
 	        width: 100%;
 	        margin: 0 auto;}
 
-	    #header {
-		 	float: left;
-			width: 35%;
+	    .header {
+		 	/*float: left;*/
+			width: 33%;
 			margin-left: 13%;
 	    }
 
 
+	    h1#black {
+	    	color: black;
+	    	background: rgba(8,247,156,0.58);
+	    }
+
+	   /* #parallelogram {
+		width: 150px;
+		height: 100px;
+		-webkit-transform: skew(80deg);
+		   -moz-transform: skew(80deg);
+		     -o-transform: skew(80deg);
+		background: white;
+}*/
+		#quote {
+			width: 33%;
+			margin: 0 auto;
+			-webkit-transform: skew(-30deg);
+		   -moz-transform: skew(-30deg);
+		     -o-transform: skew(-30deg);
+		     background: white;
+		}
+		
+		#skew {
+			-webkit-transform: skew(30deg);
+		   -moz-transform: skew(30deg);
+		     -o-transform: skew(30deg);
+
+		}
+		
+		p {
+		margin-top: 3em;
+    	height: 2em;
+        font-family:'Roboto Condensed'; /*or Droid Sans*/
+        font-weight: 300;
+        color: black;
+        padding: 13%;
+        padding-bottom: 23%;
+        text-align: center;
+        font-size: 1em;
+    	/*background: white;*/
+    }	
 
 /* media queries media queries media queries*/
 
 	    @media only screen and (max-width: 960px) {
 		    h1 {
-		    font-size: 2.3em;
-		    margin-top: 2.5em;}
+		    font-size: 2em;
+		    margin-top: 2.4em;
+			height: 1.9em;}
 		    a {font-size: .8em;}
+		    .header {
+			width: 30%;
+			margin-left: 13%;
+	    }
 			}
 
-		@media only screen and (max-width: 780px) {
+		@media only screen and (max-width: 850px) {
 			h1 {
-			  font-size: 1.7em;
-			  margin-top: 2.5em;}
+			  font-size: 1.5em;
+			  margin-top: 2.3em;
+			  height: 1.8em;}
 		    a {font-size: .7em;}
+		    .header {width: 29%;
+			margin-left: 13%;}
 			}
 
-		@media only screen and (max-width: 580px) {
-			#wrapper {
-			  width: 80%;
-			  }
-			  h1 {font-size: 1.3em;
-			  	margin-top: 2.3em;}
+		@media only screen and (max-width: 650px) {
+			  h1 {font-size: 1.2em;
+			  	margin-top: 2.2em;
+			    height: 1.5em;}
 			  	a {font-size: .6em;}
+			  	.header {width: 28%;
+			    margin-left: 13%;}
 			}
 		
-		@media only screen and (max-width: 450px) {
-			#wrapper {
-			  width: 80%;
-			  }
+		@media only screen and (max-width: 550px) {
 			  h1 {font-size: 1em;
-			  	margin-top: 2em;}
-			  a {font-size: .5em;}	
+			  	margin-top: 2em;
+			  	height: 1.4em;}
+			  a {font-size: .5em;}
+			  .header {width: 27%;
+			margin-left: 13%;}	
 			}
 		
-		@media only screen and (max-width: 400px) {
-			#wrapper {
-			  width: 80%;
-			  }
-			  h1 {font-size: .8em}
+		@media only screen and (max-width: 480px) {
+			  h1 {font-size: .8em;
+			      margin-top: 1.8em;
+			      height: 1.2em;}
+			  a {display: none;}
+			  .header {width: 27%;
+			margin-left: 13%;}
+
 		}
