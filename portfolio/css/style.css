@@ -59,11 +59,8 @@
 	    padding: 1em;
       }
 
-      .navbar-inverse{
-		/*background-color:aliceblue;*/
-		/*border: green 5px dashed;*/
-		width: 100%;
-		/*display: block;*/}
+      .container{
+		width: 100%;}
 
 		body {
 		background-image: url("../img/home2.jpg");
