@@ -218,12 +218,12 @@
 			/*margin-top: 5%;*/
 			float: right;
 			clear: both;
-			width: 100%;
+			width: 70%;
 			height: 75px;
 			border: 1px gray solid;}
 
-		div#icon.responsive-img img {
-			width: 100%;
+		div#icon img {
+			height: 100%;
 		}
 
 		/*#icon h5,p {
