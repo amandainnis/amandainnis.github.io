@@ -244,13 +244,15 @@
     		margin-top: 10%;}*/
 
     	.title {padding: 5px;
-    		clear: both;}
+    		clear: both;
+    		font-weight: 500;}
 
     	.text {
     		background: white;
     		padding: 5px;
     		clear: both;
     		text-align: left;
+    		font-weight: 300;
     		}
 
     	.text p {
