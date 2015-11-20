@@ -68,11 +68,17 @@
 
 		body {
 		background-color: #F5F5F5;	
+		/*background-image: url("../img/Desktop_blank.jpg");
+		background-repeat: no-repeat;
+		 background-size: 100%;*/
+		}
+		
+		body#home {
+		background-color: #F5F5F5;	
 		background-image: url("../img/Desktop_blank.jpg");
 		background-repeat: no-repeat;
 		 background-size: 100%;
 		}
-		
 
 		body img{
 	        width: 100%;
