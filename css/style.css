@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Megrim|Lobster);
+@import url(https://fonts.googleapis.com/css?family=Megrim);
 *{
         margin: 0;
         padding: 0;
@@ -32,7 +32,7 @@
 
 
 		.purple {
-      	margin-top: 20em;
+      	margin-top: 2em;
     	height: 2em;
         font-family:'Roboto Condensed'; /*or Droid Sans*/
         font-weight: 500;
@@ -180,10 +180,14 @@
 
 	     .header {
 		 	/*float: left;*/
-			width: 60%;
+			width: 32%;
 			margin-left: 13%;
 	    }
 
+	    #teal {
+	    	margin-top: 60%;
+	    	border-radius: 4px;
+	    }
 
 	    h1#black {
 	    	color: black;
@@ -198,7 +202,7 @@
 
 	    .CTA
 	    {border-radius: 4px;
-	    	text-align: center;}
+	    text-align: center;}
 
 	   
 		#gotomyprojects {
@@ -897,8 +901,8 @@
 
 	    @media only screen and (max-width: 960px) {
 		    h1 {
-		    font-size: 2em;
-		    margin-top: 2.4em;
+		    font-size: 1.2em;
+		    margin-top: 2.3em;
 			height: 1.9em;}
 		    #nav_p {font-size: .9em;}
 		    p{font-size: 1.4em;}
@@ -911,7 +915,7 @@
 
 		@media only screen and (max-width: 860px) {
 			h1 {
-			  font-size: 1.4em;
+			  font-size: 1.2em;
 			  margin-top: 2.3em;
 			  height: 1.8em;}
 		    #nav_p {font-size: .8em;}
@@ -922,7 +926,7 @@
 			}
 
 		@media only screen and (max-width: 650px) {
-			  h1 {font-size: 1.2em;
+			  h1 {font-size: 1em;
 			  	margin-top: 2.2em;
 			    height: 1.5em;}
 			  	#nav_p {font-size: .7em;}
