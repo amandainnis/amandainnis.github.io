@@ -4,7 +4,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /*font-family:'Roboto Condensed'; */
+        font-family:'Roboto Condensed';
       }
      
 
@@ -139,9 +139,9 @@
         text-decoration: none;
         font-family:'Megrim'; /*or Droid Sans*/
         font-weight: 400;
-       font-size: 1.2em;
+        font-size: 1.2em;
 	    padding-top: .5em;
-	   padding-right: 1em;
+	    padding-right: 1em;
 	    padding-left: 1em;
 	    padding-bottom: 1em;
 	    display: inline-block;
@@ -205,7 +205,9 @@
 
 
 	    #top-row {
-	    	margin-top: 50em;
+	    	margin-top: 55em;
+	    	margin-bottom: 3em;
+	    	/*background-color: aliceblue;*/
 	    }
 	    .row_amanda {
 	    	height: 100%;
@@ -254,7 +256,9 @@
 			-webkit-transform: skew(-30deg);
 		   -moz-transform: skew(-30deg);
 		     -o-transform: skew(-30deg);
-		     background: white;}
+		     background: white;
+		     border: 1px rgba(114,251,217,.7); solid;
+			 /*background: rgba(98,0,234,.7);*/}
 		
 		#quote {
 			width: 40%;
@@ -354,12 +358,12 @@
 			/*margin-top: 5%;*/
 			float: right;
 			clear: both;
-			width: 30%;
+			width: 20%;
 			/*height: 75px;*/
 		/*	border: 1px gray solid;*/}
 
 		div#icon img {
-			height: 100%;
+			width: 100%;
 		}
 
 		/*#icon h5,p {
@@ -369,17 +373,23 @@
     /*	#writing {
     		margin-top: 10%;}*/
 
-    	.title {padding: 5px;
+    	.title {padding: 3%;
     		clear: both;
-    		font-weight: 500;}
+    		font-weight: 500;
+    		background: yellow;}
 
 
     	.text {
+    		font-family: Roboto Condensed;
+    		font-size: .9em;
+    		line-height: 1.5em;
+    		font-weight: 300;
     		background: white;
-    		padding: 5px;
+    		padding: 3%;
     		clear: both;
     		text-align: left;
     		font-weight: 300;
+    		color: black;
     		}
 
     	.text p {
@@ -996,7 +1006,7 @@ img.responsive-img, video.responsive-video {
 			#top-row {
 		 		margin-top: 30em;}
 			#icon {
-				width: 50%;
+				width: 40%;
 			}
 			}
 
