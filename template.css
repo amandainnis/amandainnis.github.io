@@ -57,14 +57,122 @@ table {
 		font-size: 16px;}	/*set body font size so media queries can be simpler*/
 
 
+		h1 {
+		font-size: 4em;
+		margin: .5em;
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+		color: purple;
+	}
+
+			#masthead {background: url("img/kickstarter-series.png") no-repeat center center fixed;
+		    /*    background-size: cover;*/
+		        background-size: 100%;
+		        width: 100%;
+		        padding: 8em;
+		      /*  position: fixed;*/
+		        margin: 0 auto;}
+
+		        .contact-btn {
+				width: 15%;
+				margin: 0 auto;
+				border: .15em solid #faf9f9;
+				background-color: rgba(255,39,82,.9);
+				text-align: center;
+			}
+
+			.contact-btn a {
+				margin: 0 auto;
+				/*background-color: yellow;*/
+				text-decoration: none;
+				text-align: center;
+				padding: 10px 20px;
+				display: inline-block;
+				font-family: 'Open Sans', sans-serif;
+				color: blue;
+				font-weight: 700;
+			}
+
+			   .wrap {
+				width: 80%;
+				margin: 1em auto;
+				padding: 1em;
+				/*border: .15em solid #faf9f9;*/
+			}
+
+			.overlay {
+				background-color: rgba(255,255,255,255);
+				width: 100%;
+				/*margin: 2em auto;*/
+				padding: 1em;
+				/*border: .15em solid #faf9f9;*/
+			}
+
+			#top-menu {
+				width: 45%;
+				float: 	right;
+				/*border-width: 	1px;
+				border-color: 	red;
+				border-style: 	solid;*/
+				text-align: center;
+
+			}
+
+			#logo img {
+				width: 20%;
+			}
+
+
+/*ABOVE IS NECESSARY TO TEMPLATE, BELOW IS FRIVOLITY I SO LOVE*/
+
 	a:hover {-webkit-box-shadow: 10px 10px 91px 0px rgba(39,242,208,0.39);
 			-moz-box-shadow: 10px 10px 91px 0px rgba(39,242,208,0.39);
 			box-shadow: 10px 10px 91px 0px rgba(39,242,208,0.39);}
 
+    h3 {font-size: 25px;}
+    
+    #header {
+  		margin: 10% auto;
+  		width: 100%;
+         background-color: yellow;
+     	height: 2em;}
+
+   nav {
+      	width: 13%;
+        position: fixed; top: 10px; left: 0px; 
+        /*display: block;*/
+   /*   	font-size: 1em;*/
+      	text-decoration: none;
+      	margin: 1% auto 1% 1%;
+      	background: rgba(13,29,69,0.58);
+      	/*background: rgba(90,76,166,0.58);*/}
+		
+	
+        #bloc_p {
+      	color: white;
+        text-decoration: none;
+        font-family:'Roboto Condensed'; /*or Droid Sans*/
+        font-weight: 200;
+        font-size: 1.2em;
+	    padding-top: 1.5em;
+	    padding-right: 1em;
+	    padding-left: 1em;
+	    padding-bottom: 1.5em;
+		border: 1px rgba(13,29,69,0.2) dashed;}
+	    /*display: inline-block;*/
+
+	    #bloc_p a{
+	    	text-decoration: none;
+	    }
+      
+      	nav a
+      	{text-decoration: none;}
+	    p {text-decoration: none;}
+
+	    #bloc_p:hover {color: #65FAC3;}
 
 
-
-
+/*necessary template*/
 
 	/* media queries media queries media queries*/
 		 @media only screen and (max-width: 1220px) {
