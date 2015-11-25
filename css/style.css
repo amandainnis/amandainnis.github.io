@@ -58,13 +58,7 @@ table {
     * {font-family:'Roboto Condensed';}
 
         
-      body#projects {
-		background-color: #F5F5F5;
-		background-image: url("../img/noise2.png");	
-	    background-repeat: repeat;
-		/* background-size: 100%;*/
-		 font-size: 16px;}
-		
+      
 
 
 		body#home {
@@ -73,12 +67,23 @@ table {
 		background-repeat: no-repeat;
 		background-size: 100%;
 		font-size: 16px;
+		max-width: 1200px;
 		}
 
 
 		body img{
         width: 100%;
         margin: 0 auto;}  
+
+        body#projects {
+        background-image: url("../img/pattern_of_triangles.jpg");		
+		background-color: #F5F5F5;
+		
+	    background-repeat: repeat;
+		/* background-size: 100%;*/
+		 font-size: 16px;
+		max-width: 1200px;}
+		
         
         h1 {
     	height: 1em;
@@ -125,55 +130,9 @@ table {
 	    #bloc_p:hover {color: #65FAC3;}
 
         
-        /*
-        nav {*/
-        /*color: white;
-        padding-left: 4%;
-        padding-right: 4%;*/
-      /*  padding-bottom: 1%;*/
-    /*    width: 100%;*/
-      /*  height: 60px;
-        text-align: right;*/
-      /*  margin: 0 auto;
-        font-size: 15px;
-        letter-spacing: 1px;}	*/
-        /*background: rgba(90,76,166,0.58);
-		background: -moz-linear-gradient(left, rgba(90,76,166,0.58) 0%, rgba(144,182,240,1) 100%);
-		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,76,166,0.58)), color-stop(100%, rgba(144,182,240,1)));
-		background: -webkit-linear-gradient(left, rgba(90,76,166,0.58) 0%, rgba(144,182,240,1) 100%);
-		background: -o-linear-gradient(left, rgba(90,76,166,0.58) 0%, rgba(144,182,240,1) 100%);
-		background: -ms-linear-gradient(left, rgba(90,76,166,0.58) 0%, rgba(144,182,240,1) 100%);
-		background: linear-gradient(to right, rgba(90,76,166,0.58) 0%, rgba(144,182,240,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a4ca6', endColorstr='#90b6f0', GradientType=1);
-        }
-	*/
-
+       
        
        span {float: left;}
-     
-
-      
-          
-      
-		#nav_p {
-        color: white;
-        text-decoration: none;
-        font-family:'Roboto Condensed'; /*or Droid Sans*/
-        font-weight: 500;
-        font-size: 1.2em;
-	    padding-top: 1em;
-	    padding-right: 1em;
-	    padding-left: 1em;
-	    padding-bottom: 1em;
-	    display: inline-block;
-	    text-align: right;
-	    float: right;
-      }
-
-      /*a:hover {color: orange;}
-      a:active {color: black;}*/
-      #nav_p:hover {color: #65FAC3;}
-
 
      
 
@@ -238,7 +197,9 @@ table {
 	    }
 
 	    #charlie:hover {
-	    	background: white;}
+	    	background: white;
+	    	transition: box-shadow .2s;
+		  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }  
 
 	    .row_amanda {
 	    	height: 100%;
@@ -316,6 +277,17 @@ table {
     	 	overflow: hidden;}
 
 
+    	 div#process {
+    	 	width: 80%;
+    	 	margin: 0 auto;
+    	 	height: 50%;
+    	 	background-image: url("../img/nyu_mind_map.png");
+    	 	background-color: aliceblue;
+    	 }
+
+    	 #process img {
+    	 	width: 100%;
+    	 }
 
 		#question {
 			/*margin-top: 5%;*/
@@ -371,20 +343,23 @@ table {
     		text-align: left;
     	}
 
-    	.card-panel.hoverable img {
-    		width: 100%;
-    	}
+    	
+    	section#charlieproj {
+    		width: 60%;
+    		margin: 2em auto;
+    		padding: 3em;
+    		background-image: url("../img/noise2.png");  center center
+		    background-repeat: no-repeat;}
 
-		 #orange{
-			background-color: orange;
-			-webkit-box-shadow: 10px 10px 91px 0px rgba(196,136,33,0.59);
-			-moz-box-shadow: 10px 10px 91px 0px rgba(196,136,33,0.59);
-			box-shadow: 10px 10px 91px 0px rgba(196,136,33,0.59);}
-
-		.orange_shadow {-webkit-box-shadow: 10px 10px 91px 0px rgba(196,136,33,0.59);
-			-moz-box-shadow: 10px 10px 91px 0px rgba(196,136,33,0.59);
-			box-shadow: 10px 10px 91px 0px rgba(196,136,33,0.59);}	
-
+		section#syneproj {
+			width: 60%;
+    		margin: 2em auto;
+    		padding: 20em;
+    		background-image: url("../img/syne2.png");  center center
+		    background-repeat: no-repeat;
+			background-size: 100%;}
+		
+		
 
 
 
