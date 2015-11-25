@@ -51,7 +51,9 @@ table {
 		height: 0;
 		}
 
-
+#charlie:hover {
+	    	background: white;
+	    	border: 8px inset rgba(151,255,221,0.5);}
 
 	body {
 		font-size: 16px;}	/*set body font size so media queries can be simpler*/

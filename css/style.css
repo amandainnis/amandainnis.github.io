@@ -58,12 +58,12 @@ table {
     * {font-family:'Roboto Condensed';}
 
         
-      body {
-		background-color: #F5F5F5;	
-		background-repeat: no-repeat;
-		 background-size: 100%;
-		 font-size: 16px;
-		}
+      body#projects {
+		background-color: #F5F5F5;
+		background-image: url("../img/noise2.png");	
+	    background-repeat: repeat;
+		/* background-size: 100%;*/
+		 font-size: 16px;}
 		
 
 
@@ -92,7 +92,7 @@ table {
         
         nav {
       	width: 13%;
-        position: fixed; top: 10px; left: 0px; 
+        position: fixed; top: 10%; left: 0px; 
         /*display: block;*/
    /*   	font-size: 1em;*/
       	text-decoration: none;
@@ -238,8 +238,7 @@ table {
 	    }
 
 	    #charlie:hover {
-	    	background: white;
-	    	border: 8px inset rgba(151,255,221,0.5);}
+	    	background: white;}
 
 	    .row_amanda {
 	    	height: 100%;
