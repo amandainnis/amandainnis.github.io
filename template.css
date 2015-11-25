@@ -125,6 +125,49 @@ table {
 			}
 
 
+			 div#toolz {
+    	 	width: 80%;
+    	 	margin: 0 auto;
+    	 	height: 50%;
+    	 	background-image: url("img/tools.jpg");
+    	 	background-color: aliceblue;
+    	 }
+
+    	 #toolz img {
+    	 	width: 100%;
+    	 }
+
+    	 .circle 
+    		{border-radius: 50%;
+    		width: 15%;
+    		height: 15%;
+	    	margin: 3% auto 3% auto;}
+
+	    .circle img {
+	    	width: 100%;
+	    }
+
+    	 #quote_solid {
+			width: 30%;
+			margin: 0 auto;
+			-webkit-transform: skew(-30deg);
+		    -moz-transform: skew(-30deg);
+		    -o-transform: skew(-30deg);
+		     background: white;
+		     border: 1px rgba(114,251,217,.7); solid;}
+		
+
+		#skew {
+        font-family:'Roboto Condensed'; 
+        font-weight: 500;
+        color: black;
+        padding: 5% 5% 5% 5%;
+        text-align: center;
+        font-size: 1em;
+		-webkit-transform: skew(30deg);
+	    -moz-transform: skew(30deg);
+        -o-transform: skew(30deg);}
+
 /*ABOVE IS NECESSARY TO TEMPLATE, BELOW IS FRIVOLITY I SO LOVE*/
 
 	a:hover {-webkit-box-shadow: 10px 10px 91px 0px rgba(39,242,208,0.39);

@@ -197,6 +197,7 @@ table {
 	    }
 
 	    #charlie:hover {
+	    	/*background: rgba(239,238,206,.7);*/
 	    	background: white;
 	    	transition: box-shadow .2s;
 		  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }  
@@ -289,6 +290,19 @@ table {
     	 	width: 100%;
     	 }
 
+
+    	 div#toolz {
+    	 	width: 80%;
+    	 	margin: 0 auto;
+    	 	height: 50%;
+    	 	background-image: url("../img/tools.jpg");
+    	 	background-color: aliceblue;
+    	 }
+
+    	 #toolz img {
+    	 	width: 100%;
+    	 }
+    	 
 		#question {
 			/*margin-top: 5%;*/
 			float: right;
