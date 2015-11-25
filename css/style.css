@@ -303,6 +303,22 @@ table {
     	 	width: 100%;
     	 }
     	 
+    	  div#cv {
+    	 	width: 80%;
+    	 	margin: 0 auto;
+    	 	height: 50%;
+    	 	background-image: url("../img/cv.png");
+    	 	background-color: aliceblue;
+    	 }
+
+    	 #cv img {
+    	 	width: 100%;
+    	 }
+
+
+
+
+
 		#question {
 			/*margin-top: 5%;*/
 			float: right;
