@@ -174,7 +174,7 @@ table {
 
 	    h1#black {
 	    	color: black;
-	    	background: rgba(8,247,156,0.58);
+	    	/*background: rgba(8,247,156,0.58);*/
 	    }
 
 
@@ -184,23 +184,24 @@ table {
 	  }
 	    .row {
 	    	height: auto;
-	    	padding-top: 3%;
+	    /*	padding-top: 3%;*/
 	    	margin: 3% auto 3% auto;
 	    /*	margin-bottom: 10%;*/
-	    	width: 100%;
+	    	width: 80%;   /*was 100%*/
 	    	clear: both;
 	    }
 
 	    .row#charlie {
 	    	margin: 0 auto;
 	    	background: none;
+	    	border-radius: 2%;
 	    }
 
 	    #charlie:hover {
 	    	/*background: rgba(239,238,206,.7);*/
 	    	background: white;
 	    	transition: box-shadow .2s;
-		  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }  
+		    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }  
 
 	    .row_amanda {
 	    	height: 100%;
@@ -306,8 +307,8 @@ table {
     	  div#cv {
     	 	width: 80%;
     	 	margin: 0 auto;
-    	 	height: 50%;
-    	 	background-image: url("../img/cv.png");
+    	 	/*height: 50%;*/
+    	 /*	background-image: url("../img/cv.png");*/
     	 	background-color: aliceblue;
     	 }
 
@@ -387,9 +388,13 @@ table {
     		padding: 20em;
     		background-image: url("../img/syne2.png");  center center
 		    background-repeat: no-repeat;
-			background-size: 100%;}
+			background-size: 70%;}
 		
-		
+		section#nyuproj {
+			width: 60%;
+    		margin: 2em auto;
+    		padding: 20em;
+		}
 
 
 
