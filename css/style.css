@@ -203,6 +203,13 @@ table {
 	    	transition: box-shadow .2s;
 		    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }  
 
+		   
+		    .row#process {
+	    	margin: 0 auto;
+	    	background: yellow;
+	    	border-radius: 2%;
+	    }
+
 	    .row_amanda {
 	    	height: 100%;
 	    	margin-top: 80%;
