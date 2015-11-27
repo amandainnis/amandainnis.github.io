@@ -226,6 +226,11 @@ table {
 		{width: 60%;
 		float: left;}
 
+		.col_s7 
+		{width: 70%;
+			margin-left: 20%;}
+
+
 		.col_s5 img {
 			width: 100%;
 		}
@@ -342,6 +347,19 @@ table {
 		/*	border: 1px gray solid;*/}
 
 		div#icon img {
+			width: 100%;
+		}
+
+		#icon2 {
+			margin-top: 2%;
+			float: right;
+			margin-right: 10%;
+			clear: both;
+			width: 30%;
+			/*height: 75px;*/
+		/*	border: 1px gray solid;*/}
+
+		div#icon2 img {
 			width: 100%;
 		}
 
