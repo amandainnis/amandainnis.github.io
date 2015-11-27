@@ -192,7 +192,7 @@ table {
 	    }
 
 	    .row#charlie {
-	    	margin: 0 auto;
+	    	margin: 10% auto;
 	    	background: none;
 	    	border-radius: 2%;
 	    }
@@ -205,9 +205,10 @@ table {
 
 		   
 		    .row#process {
-	    	margin: 0 auto;
-	    	background: yellow;
+	    	margin: 10% auto;
+	    	background: #F5FBBF;
 	    	border-radius: 2%;
+	    	border: 1em yellow inset;
 	    }
 
 	    .row_amanda {
@@ -318,7 +319,7 @@ table {
     	 
     	  div#cv {
     	 	width: 80%;
-    	 	margin: 0 auto;
+    	 	margin: 10% auto;
     	 	/*height: 50%;*/
     	 /*	background-image: url("../img/cv.png");*/
     	 	background-color: aliceblue;
