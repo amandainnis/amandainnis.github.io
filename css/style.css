@@ -63,7 +63,7 @@ table {
 
 
 		body#home {
-		background-color: #F5F5F5;	
+		background-color: #EEEEEE;	
 		background-image: url("../img/new_order2.png");
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -195,7 +195,7 @@ table {
 	    	margin: 10% auto;
 	    	background: #F5FBBF;
 	    	border-radius: 2%;
-	    	border: 1em yellow outset;
+	    	border: 1em yellow inset;
 	    }
 
 
@@ -224,6 +224,12 @@ table {
 	    #process_text li{
 	    	padding:0.2em;
 	    }
+
+	    p#footnote {
+	    	font-size: 0.5em;
+	    	display: block;
+	    	color: #9013FE;
+		}
 
 	    .row_amanda {
 	    	height: 100%;
@@ -347,8 +353,8 @@ table {
 /*section specific to project page*/
 		
 		 body#projects {
-	        background-image: url("../img/noise.png");		
-			background-color: #F5F5F5;
+	     /*   background-image: url("../img/noise.png");*/		
+			background-color: #EEEEEE;
 			
 		    background-repeat: repeat;
 			/* background-size: 100%;*/
