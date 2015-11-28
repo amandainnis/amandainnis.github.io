@@ -195,7 +195,7 @@ table {
 	    	margin: 10% auto;
 	    	background: #F5FBBF;
 	    	border-radius: 2%;
-	    	border: 1em yellow inset;
+	    	border: 1em yellow outset;
 	    }
 
 
