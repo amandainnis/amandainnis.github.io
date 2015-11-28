@@ -245,6 +245,11 @@ table {
 	    .col_s3
 	    {width: 30%;
 	    float: left;}
+
+	    .col_s4 {
+	    width: 40%;
+	    float: left;
+	    }
 		
 		.col_s5
 		{width: 50%;
@@ -379,6 +384,44 @@ table {
 				font-style: italic;
 				font-size: 2em;}
 
+
+
+			section#charlie_summary {
+				background-color: #3B3B3B;  /*#FFFDF3*/
+				padding-left: 1.5em;
+				padding-bottom: 2em;
+				margin: 0 auto;
+			}
+
+			#charlie_summary h3 {
+				font-size: 1.5em;
+				font-family: 'Source Sans Pro';
+				font-weight: 700;
+				padding: 1em 0 1em 0;
+				font-style: italic;
+				color: #21AAB9;
+				/*text-align: center;*/
+				/*background-color: blue;*/}
+
+			#cha_sum {
+				padding-left: 7%;
+			}
+			
+			#cha_sum ul {
+            list-style: square;
+            /*list-style-position: inside;*/
+             }
+
+
+			#cha_sum li {
+			font-family: Roboto Condensed;
+    		font-size: 0.9em;
+    		line-height: 1.2em;
+    		font-weight: 300;
+    		padding: 0 3% 3% 3%;
+    		color: #EEEEEE;
+
+			}
 
 			#charlie_section_title {
 			font-family: 'Source Sans Pro';
