@@ -901,7 +901,7 @@ table {
 
 			.container_center {
 			width: 90%;
-			margin: 0 auto 0 10%;}
+			margin: 0 auto;}
 		
 
 			.row.pagestyle {
@@ -967,14 +967,14 @@ table {
 
 			
 
-		/*#icon {
+		#icon3 {
 			margin-top: 2%;
 			float: right;
 			margin-right: 10%;
 			clear: both;
 			width: 30%;
 			/*height: 75px;*/
-		/*	border: 1px gray solid;*/
+		/*	border: 1px gray solid;*/}
 
 		div#icon img {
 			width: 100%;
