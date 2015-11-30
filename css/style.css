@@ -188,7 +188,7 @@ table {
 			position: fixed;
 			width: 2em;
 			top: .5em;
-			right: 0;
+			right: 1em;
 		/*position: absolute;
 			right: 1em;
 			top: 1em;*/
@@ -203,12 +203,17 @@ table {
 
 		nav {
       	width: 100%;
-      	position: relative;
+      	position: relative;  /*with position relative it has a shadow, without, it doesnt  WTF??*/
         /*position: fixed; top: 0%; left: 0%; */
       	text-decoration: none;
-      	margin: 0% auto;
-      	padding: 1em;
+      	
+      	padding: 1em 5em 1em 1em;
+      	text-align: right;
+      /*	margin-right: 10%;*/
       	background: rgba(13,29,69,0.58);
+      	-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box;
+      	box-sizing: border-box;
     }
 		
 	
@@ -218,6 +223,7 @@ table {
         font-family:'Roboto Condensed'; 
         font-weight: 200;
         font-size: 1.2em;
+       /* margin-right: 2em;*/
 	    padding-top: 1.5em;
 	    padding-right: 1em;
 	    padding-left: 1em;
@@ -1282,8 +1288,7 @@ img.responsive-img, video.responsive-video {
 		    p{font-size: 1.4em;}
 			#top-row {
 		 		margin-top: 38em;}
-			#icon {
-				width: 60%;}
+			
 	    
 			}
 
@@ -1298,9 +1303,7 @@ img.responsive-img, video.responsive-video {
 			p {font-size: 1.3em;}
 			#top-row {
 		 		margin-top: 30em;}
-			#icon {
-				width: 60%;
-			}
+			
 			}
 
 		@media only screen and (max-width: 650px) {
@@ -1313,8 +1316,7 @@ img.responsive-img, video.responsive-video {
 			    p {font-size: 1.2em;}
 			    #top-row {
 		 		margin-top: 25em;}
-			    #icon {
-				width: 70%;}
+			    
 			}
 		
 		@media only screen and (max-width: 550px) {
@@ -1324,8 +1326,7 @@ img.responsive-img, video.responsive-video {
 			    p {font-size: 1em;}
 				#top-row {
 		 		margin-top: 20em;}
-				#icon {
-					width: 75%;}	
+				
 			}
 		
 		@media only screen and (max-width: 480px) {
@@ -1336,8 +1337,7 @@ img.responsive-img, video.responsive-video {
 			  
 				#top-row {
 			 		margin-top: 15em;}
-				#icon {
-					width: 85%;}
+				
 
 		}
      
@@ -1349,7 +1349,6 @@ img.responsive-img, video.responsive-video {
 			  
 				#top-row {
 			 		margin-top: 15em;}
-				#icon {
-					width: 90%;}
+				
 
 		}
