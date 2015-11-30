@@ -10,19 +10,42 @@
     </head>
       
         <body id="home">
-       <!--  <header> ADI
-        </header> -->
-           
-       
-         <nav class="clearfix">
+ 
+ <!-- <header class="clearfix"><a>About Me</a><a>Process</a><a>Tools</a><a>Projects</a><div class="clearfix" id="icon"><img src="img/menu.svg"></div> </header>
+       -->
+<!-- tried it as header
+ -->
+     <!-- <div class="clearfix" id="header"><a>About Me</a><a>Process</a><a>Tools</a><a>Projects</a></div>
+     <div class="clearfix" id="icon"><img class="clearfix" src="img/menu.svg"></div>   -->
+<!-- DIV NOT NESTED -->
+
+      <!-- <div class="clearfix" id="header"><a>About Me</a><a>Process</a><a>Tools</a><a>Projects</a>
+     <div class="clearfix" id="icon"><img class="clearfix" src="img/menu.svg"></div></div>
+            ONE DIV INSIDE ANOTHER-->
+       <nav class="clearfix">
+         <span id="icon"><a href="index.html"><img src="img/menu.svg"></a></span> 
+            <a href="index.html#experiment" id="bloc_p">About Me</a>
+            <a href="index.html#process" id="bloc_p">Process</a>
+            <a href="index.html#tools" id="bloc_p">Tools</a>
+            <a href="projects.html" id="bloc_p">Projects</a>
+            <a href="index.html#contact" id="bloc_p">Contact</a>
+
+      </nav>
+            <span id="icon"><a href="index.html"><img src="img/menu.svg"></a></span> 
+
+            <a href="index.html"><div class="clearfix" id="icon"><img src="img/menu.svg"></div></a>
+      
+
+
+        <!--OLD NAV  <nav class="clearfix">
               <a href="index.html"><p id="bloc_p" style="font-family: Megrim" "font-size: 2.5em">ADI</p></a> 
-              <a href="index.html#circle_me"><p id="bloc_p">About Me</p></a>
-               <a href="#"><p id="bloc_p">Tools</p></a>
+              <a href="index.html#experiment"><p id="bloc_p">About Me</p></a>
               <a href="index.html#process"><p id="bloc_p">Process</p></a>
+               <a href="index.html#tools"><p id="bloc_p">Tools</p></a>
               <a href="projects.html"><p id="bloc_p">Projects</p></a>
-              <a href="#"><p id="bloc_p">Contact</p></a>
+              <a href="index.html#contact"><p id="bloc_p">Contact</p></a>
              
-          </nav>
+          </nav> -->
          
            
 <!-- -container -->          
@@ -46,7 +69,7 @@
                   <div class="col_s5 clearfix">
                     <div id="imgaboutme"><div id="textaboutme2">
                     <h2>About Me</h2>
-                    <p>Hi, I'm Amanda Innis and I'm a User Experience (UX) and User Interface Designer.</p><p>Included are examples of my work: my client for "Charlie," a marketing management site; "Syne," an event curation app; as well as other projects I completed in the User Experience Design Immersive program at General Assembly in New York City.</p><p>I have a background in art and design which helps me to question and clarify the presentation of information. I also love to create engaging layouts and icons. My empathy, openness to change and belief in the creative process helps me to iterate on my designs based on user needs and business goals.</p> 
+                    <p>Hi, I'm Amanda Innis and I'm a User Experience (UX) and User Interface Designer.</p><p>Included are examples of my work: my client project for "Charlie," a marketing management site; "Syne," an event curation app; as well as other projects I completed in the User Experience Design Immersive program at General Assembly in New York City.</p><p>I have a background in art and design which helps me to question and clarify the presentation of information. I also love to create engaging layouts and icons. My empathy, openness to change and belief in the creative process helps me to iterate on my designs based on user needs and business goals.</p> 
                     </div> <!-- imgaboutme -->
                     </div> <!-- col -->
                     </div> <!-- textaboutme  -->
@@ -57,10 +80,38 @@
               </div>  <!-- end of row -->
               </div> <!-- end of container -->
 
-<!--tools CONTAINER-->
+
+<!--PROCESS CONTAINER-->
 
               <div class="container clearfix">
-                  <div class="row clearfix" id="tools">
+              <section id="process">
+              <div class="row clearfix">
+              <h2>User Experience Design Process</h2>
+              </div>
+                  <div class="row clearfix">
+                       <div class="col_s6">
+                       <img src="img/process_flow.png"/>   
+                       </div>           
+                        <div class="col_s3" id="processtext">
+                        <h3>Gut Reactions</h3> <p>A unique part of my interview process is asking users about their intuitive responses to sites:  what makes a site credible, clear, delightful?  What is their gut reaction?  The responses I get are honest, enlightening and often funny.</p>
+                        <h3>Designing with Data</h3> <p>After my interviews, I compile responses and translate them into a sort of guidebook for that particular design process.  After all, a design solution is an intuitive solution for the user.  So I reach outside my own experience to find that clarity.</p> 
+                        </div> <!-- processtext -->          
+
+                  </div> <!-- row for process -->
+</section>
+ </div> <!-- container  end -->
+
+  <!--tools CONTAINER-->
+ <div class="row"> 
+             
+
+              <div class="container clearfix">
+                  <section id="tools">
+                  <div class="row clearfix">
+                  <h2>Tools</h2>
+                  </div>
+
+                  <div class="row clearfix">
 
                        <div class="col_s3b">
                        <img src="img/designtools.png"/>   
@@ -74,50 +125,111 @@
                        <img src="img/codetools.png"/>   
                        </div> <!-- col  -->                
                   </div> <!-- row for process -->
-
- </div> <!-- container  end -->
-<!--PROCESS CONTAINER-->
-
-              <div class="container clearfix">
-                  <div class="row clearfix" id="process">
-                      <div class="col_s3" id="processtext">
-                      <p>Gut Reactions. A unique part of my interview process is asking users about their intuitive responses to sites:  what makes a site credible, clear, delightful?  What is their gut reaction?  The responses I get are honest, enlightening and often funny.
-                      </p><p>Designing with Data. After my interviews, I compile responses and translate them into a sort of guidebook for that particular design process.  After all, a design solution is an intuitive solution for the user.  So I reach outside my own experience to find that clarity.</p> 
-                      </div> <!-- processtext -->
-                       <div class="col_s6">
-                       <img src="img/process_flow.png"/>   
-                       </div>           
-                                  
-
-                  </div> <!-- row for process -->
-
+</section>
  </div> <!-- container  end -->
 
 
         <div class="container clearfix">   
-              <div class="row"> <!--  id="top-row" -->
-             <!--  <div id="quote_solid"><div id="skew"> --><h2>PROJECTS</h2><!-- </div></div> -->
-              </div>
+              
+
               <div class="row clearfix cardstyle">
               <div id="charlie_title"><h3>charlie!</h3></div>
               <img src="img/charlie_story.png">
               </div> <!-- this is end of row -->
 
               <div class="row clearfix cardstyle"> <!-- style="border-color: rgba(74,74,74,0.3)" -->
-              <div id="charlie_title"><h3>Syne</h3></div>
+              <div id="syne_title" style="color: #438A91"><h3>Syne</h3></div>
               <img src="img/syne-iphone6.png">
               </div> <!-- this is end of row -->
 
               <div class="row clearfix cardstyle"> <!-- style="border-color: rgba(231,208,252,1)" -->
+              <div id="NYU_title" style="color: #438A91"><h3>NYU</h3></div>
               <img src="img/nyu_panel.png">
               </div> <!-- this is end of row -->
               
-    
 
-              </div> <!-- end of container -->
+  </div> <!-- end of container -->
 
- 
 
+<!-- The Great Slideshow Experiment Begins!!! -->
+
+
+<!-- <div id="slider1" class="csslider infinity clearfix">
+  <input type="radio" name="slides" id="slides_1">
+  <input type="radio" name="slides" checked="checked" id="slides_2">
+  <input type="radio" name="slides" id="slides_3">
+  <ul>
+    <li>
+      <h1>Slide 1</h1>
+      
+              <img src="img/charlie_story.png">
+              
+    </li>
+    <li>
+      <h1>Slide 2</h1>
+      <div class="row clearfix cardstyle">
+              <div id="charlie_title"><h3>charlie!</h3></div>
+              <img src="img/charlie_story.png">
+              </div> <!- this is end of row -->
+    <!-- </li>
+    <li>
+      <h1>Slide 3</h1>
+      <div class="row clearfix cardstyle">
+              <div id="charlie_title"><h3>charlie!</h3></div>
+              <img src="img/charlie_story.png">
+              </div>  --><!-- this is end of row -->
+    <!-- </li>
+  </ul>
+  <div class="arrows">
+    <label for="slides_1"></label>
+    <label for="slides_2"></label>
+    <label for="slides_3"></label>
+    <label for="slides_1" class="goto-first"></label>
+    <label for="slides_3" class="goto-last"></label>
+  </div>
+  <div class="navigation">
+    <div>
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+    </div>
+  </div>
+</div>
+ --> 
+
+<!-- The Great Slideshow Experiment Ends Here!!! -->
+
+
+
+
+
+
+ <!--Contact CONTAINER-->
+ <div class="row"> <!--  id="top-row" -->
+             
+
+              <div class="container clearfix">
+               <section id="contact">
+                  
+                  <div class="row clearfix">
+                  <h2>Contact</h2>
+                  </div>
+                  <div class="row clearfix">
+
+                       <div class="col_s3b">
+                       <p>amanda.innis@gmail.com</p>
+                       </div> <!-- col -->    
+
+                       <div class="col_s3b">
+                       <p> https://www.linkedin.com/in/amanda-innis-824b844</p>
+                       </div> <!-- col  -->                    
+
+                       <div class="col_s3b">
+                       <p> web presence, other things</p>
+                       </div> <!-- col  -->                
+                  </div> <!-- row for process -->
+</section>
+ </div> <!-- container  end -->
 
 
 
