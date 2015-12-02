@@ -151,6 +151,7 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 
          #icon {
         /* background-color: green;*/
+        	cursor: pointer;
 			position: fixed;
 			width: 2em;
 			top: .6em;
@@ -168,10 +169,14 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 
 	
 
-		nav {
+		nav.menu {
+		color: gray;
+		display: none;
+		background: white;
       	width: 100%;
-       position: relative; /*with position relative it has a shadow, without, it doesnt  WTF??*/
+        position: fixed; /*with position relative it has a shadow, without, it doesnt  WTF??*/
         /*position: fixed; top: 0%; left: 0%; */
+        top:0;
       	text-decoration: none;
       	margin: 0 auto;
       	padding: 1em 1em 1em 1em;
@@ -185,7 +190,7 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 		
 	
         a#bloc_p {
-      	color: rgba(249,255,240,0.7); /*#99AA99; */   /*#CFE4CF*/
+      	color: gray; /*#99AA99; */   /*#CFE4CF*//*rgba(249,255,240,0.7)*/
      	text-decoration: none;
         font-family:'Roboto Condensed'; 
         font-weight: 100;
@@ -464,31 +469,35 @@ box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
 			#allproj  {
 	    	background-color: white;    /*#9DD6D8*/
 		   	width: 100%;
-		   	-webkit-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
+		   	-webkit-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
+-moz-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
+box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
 		   /*	border-radius: 2%;*/
 		   }
 		   
 		    #allproj h2{
         	font-family: 'Roboto';
-        	color: #523F6C;  /*3B0D4B */ /*541C67*/
+        	color: black;   /*#523F6C*/
         	font-size: 2em;
         	margin-top: 1em;
         	padding: 1em;
-        	border-bottom: #555187 solid;   /*#685187*/
+        	border-bottom: gray solid;   /*#685187*/
         	font-weight: 700;
         }
 
 		   
 
-	    	#projimg img{
-	    	width: 70%;
+	    	#projimg {
+	    	width: 90%;
+	    	/*margin: 0 0 0 10%;*/
 	    	margin: 0 auto;
 	    	text-align: center;
-	    	padding-left: 2em;
+	    	/*padding-left: 4em;*/
 	    	}
 
+	    	#portrait {
+	    	padding: 1em;	
+	    	}
 
 /*////////////////////mini PROJECT SECTION///////////////////*/ 
 
@@ -566,19 +575,10 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
         	}
 
 
-        	.circle 
-    		{border-radius: 50%;
-    		width: 15%;
-    		height: 15%;
-	    	margin: 3% auto 3% 10%;}
-
-	    .circle img {
-	    	width: 100%;
-	    }
-
-    	 .circle_me img {
-    	 	width: 100%;
-    	 	overflow: hidden;}
+    	.col_s3c        /*this is the column for tools, will need to be queried*/
+	       {width: 30%;
+	       float: left;
+	   		margin: 0 0 0 2em;}
 
 		
 		
@@ -646,10 +646,14 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 
 
-		nav {
+		nav.projectMenu {
+		display: none;
+		background: white;
+		color: gray;
       	width: 100%;
-        position: relative; /*with position relative it has a shadow, without, it doesnt  WTF??*/
+        position: fixed; /*with position relative it has a shadow, without, it doesnt  WTF??*/
         /*position: fixed; top: 0%; left: 0%; */
+        top:0;
       	text-decoration: none;
       	margin: 0 auto;
       	padding: 1em 1em 1em 1em;
@@ -850,6 +854,35 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     		padding-bottom: 3em;
     	}
 
+
+
+
+    	#syneoverview {
+				background: honeydew;
+				padding-bottom: 2em;
+			}
+
+			#syneoverview h3 {
+				font-family: 'Roboto';
+				font-weight: 700;
+				font-style: italic;
+				text-align: center;
+				font-size: 2.5em;
+				padding: 1em 0 0 0;
+				/*border-bottom: .1em black solid;*/
+				margin: 0 auto;
+				width: 20%;
+			}
+				
+
+			#synelink {
+				text-align: center;
+				text-decoration: none;
+				padding-bottom: 2em;
+			}
+
+
+
 				div.storybox {
 					width: 28%;
 					padding: 1%;
@@ -858,18 +891,8 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 					background-color: yellow; 
 				}
 	    	
-			section#syneproj {
-				width: 60%;
-	    		margin: 2em auto;
-	    		padding: 20em;
-	    		background-image: url("../img/syne2.png");  center center
-			    background-repeat: no-repeat;
-				background-size: 70%;}
-			
-			section#nyuproj {
-				width: 60%;
-	    		margin: 2em auto;
-	    		padding: 20em;
+		#syneproj {
+				background: steelblue;
 			}
 
 

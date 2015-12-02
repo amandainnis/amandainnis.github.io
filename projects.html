@@ -9,12 +9,24 @@
 
     <!-- Custom styles for this template -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("#icon").on('click',function(){
+          if($('.projectMenu').css('display') === 'none'){
+            $('.projectMenu').css({"display":"block"});
+          }else{
+            $('.projectMenu').css({"display":"none"});
+          }
+        });
+      });
+    </script>
 
   </head>
   <body id="projects" class="clearfix">
-        
-           <nav class="clearfix">
-         <span id="icon"><a href="index.html"><img src="img/menu.svg"></a></span> 
+      
+      <nav class="projectMenu clearfix">
+         
             <a href="index.html#experiment" id="nav2">About Me</a>
             <a href="index.html#process" id="nav2">Process</a>
             <a href="index.html#tools" id="nav2">Tools</a>
@@ -22,7 +34,7 @@
             <a href="index.html#contact" id="nav2">Contact</a>
 
       </nav>
-        
+      <span id="icon"><img src="img/menu.svg"></span>  
           
 
 
@@ -182,12 +194,15 @@
 
 
 
-        
+      <div class="container_center"> <!-- -container -->  
 
-          <div class="row clearfix pagestyle">
-              <div id="charlie_title"><h3>Syne</h3></div>
+          <div class="row clearfix pagestyle" id="syneproj">
+          <img src="img/syne-iphone6.png">
+      <!--     </div> -->
+               <div class="row" id="syneoverview"><h3>Overview</h3>
               <img src="img/synesummary.png">
-              <a href="https://invis.io/6S552TCDV" target="-blank">Link to Prototype</a>
+              <a href="https://invis.io/6S552TCDV" target="-blank" id="synelink"><p>Link to Prototype</p></a>
+              </div>  <!-- overview row -->
               </div>  <!-- this is end of row -->
 
 

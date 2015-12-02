@@ -21,7 +21,7 @@
 
               <div class="rowmasthead">
                 <div id="masthead">
-                <nav class="clearfix">
+                <nav class="menu clearfix">
          
             <a href="index.html#experiment" id="bloc_p">About Me</a>
             <a href="index.html#process" id="bloc_p">Process</a>
@@ -31,9 +31,8 @@
           <!--   <span id="icon"><a href="index.html"><img src="img/menu.svg"></a></span>  -->
 
       </nav>
-            <span id="icon"><a href="index.html"><img src="img/menu.svg"></a></span> 
+            <span id="icon"><img src="img/menu.svg"></span> 
 
-            <a href="index.html"><div class="clearfix" id="icon"><img src="img/menu.svg"></div></a>
                 <div class="col_5 clearfix" id="mastcol">
                 <h1>Amanda<br>Innis</h1>
                 <h2>UX / UI Designer</h2>
@@ -127,7 +126,19 @@
 
                   <div class="row clearfix" id="projimg">
                   
-                  <img src="img/allproj.png">   
+                 
+                 
+                  <div class="col_s3" id="portrait">
+                  <img src="img/charlieportrait.png"> 
+                  </div>  
+                 
+                  <div class="col_s3" id="portrait">
+                  <img src="img/syneportrait.png"> 
+                  </div>  
+                  
+                  <div class="col_s3" id="portrait">
+                  <img src="img/nyuportrait.png"> 
+                  </div>  
                                    
                   </div> <!-- row for projects -->
 </section>
@@ -150,16 +161,16 @@
                   </div>
                   <div class="row clearfix">
 
-                       <div class="col_s3b">
+                       <div class="col_s3c">
                        <p>amanda.innis@gmail.com</p>
                        </div> <!-- col -->    
 
-                       <div class="col_s3b">
-                       <p> https://www.linkedin.com/in/amanda-innis-824b844</p>
+                       <div class="col_s3c">
+                       <p> linkedin.com/in/amandainnis</p>
                        </div> <!-- col  -->                    
 
-                       <div class="col_s3b">
-                        <div style="text-align: center" id="circle_me" class="clearfix"><img src="img/Innis_Amanda_sml.jpg" class="circle"> 
+                       <div class="col_s3c">
+                        <p>profiles.generalassemb.ly/amanda-innis</p> 
                 </div> <!-- circle me -->
                        </div> <!-- col  -->                
                   </div> <!-- row for process -->
@@ -178,7 +189,17 @@
 
   <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $("#icon").on('click',function(){
+            if($('.menu').css('display') === 'none'){
+              $('.menu').css({"display":"block"});
+            }else{
+              $('.menu').css({"display":"none"});
+            }
+          });
+        });
+      </script>
     </body>
     
     
