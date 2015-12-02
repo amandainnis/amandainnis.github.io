@@ -663,6 +663,37 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
       	box-sizing: border-box;
      /* background: #1D91A2;*/ }  /*#1D91A2;*//*#EEEEEE; */
 
+
+
+
+     .container_centerlaptop {
+     	background-image: url("../img/laptop-mockup.png");
+     	background-repeat: no-repeat;
+     	background-size: 100%;
+       position: relative;
+     	width: 90%;
+     	margin: 0 auto;
+     	height: 700px;}
+
+
+      #charlie_scroll {
+      position: absolute;
+      	top: 1em;
+      	width: 75.5%;
+     	overflow-y: scroll;
+        white-space: nowrap;
+        margin: 3% 0 5% 12.5%;
+        height: 500px;
+     }
+
+      .container_centerlaptop img{
+      	width: 100%;
+
+
+      	
+      }
+
+
        .row2 {
 	    	height: auto;
 	    /*	padding-top: 3%;*/
