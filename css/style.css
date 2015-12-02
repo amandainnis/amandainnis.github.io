@@ -120,7 +120,8 @@ table {
     		/*background-image: url("../img/graph4.png");*/
     		font-size: 16px;
     		background-color: #EEEEEE;
-    		/*max-width: 1200px;*/
+    		max-width: 1200px;
+    		margin: 0 auto;
     	}
 
 		body img{
@@ -217,7 +218,7 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
        #masthead {
        	width: 100%;
        	background-color: #1D91A2;
-       	background-image: url("../img/duotone_sketch.png");  
+       	background-image: url("../img/portfolio_duotone1sml2.png");  
        	background-repeat: no-repeat;
        	background-size: 100%;}
         
@@ -485,7 +486,6 @@ box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
         	font-weight: 700;
         }
 
-		   
 
 	    	#projimg {
 	    	width: 90%;
@@ -499,6 +499,10 @@ box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
 	    	padding: 1em;	
 	    	}
 
+	    	#portrait img:hover {
+	    	transition: box-shadow .2s;
+		    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } 
+
 /*////////////////////mini PROJECT SECTION///////////////////*/ 
 
 	    	.row.cardstyle {
@@ -508,11 +512,7 @@ box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
 	    	/*border: 0.5em outset;*/  /*#44C5C2*/
 	    }
 
-	    .cardstyle:hover {
-	    	/*background: rgba(239,238,206,.7);*/
-	    	background: white;
-	    	transition: box-shadow .2s;
-		    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }  
+	    
 
 
 		#charlie_title h3 {
@@ -701,7 +701,8 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 	     /*   background-image: url("../img/noise.png");*/		
 			background-color: #EEEEEE;
 			 font-size: 16px;
-			max-width: 1200px;}
+			max-width: 1200px;
+			margin: 0 auto;}
 
 
 			.container_center {
@@ -858,7 +859,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 
     	#syneoverview {
-				background: honeydew;
+				background: whitesmoke;
 				padding-bottom: 2em;
 			}
 
@@ -947,7 +948,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 
 		  
-					  .card-panel {
+					/*  .card-panel {
 					  transition: box-shadow .25s;
 					  padding: 20px;
 					  margin: 0.5rem 0 1rem 0;
@@ -1037,7 +1038,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 					    display: none; }
 					    .card .card-reveal .card-title {
 					      cursor: pointer;
-					      display: block; }
+					      display: block; }*/
 
 
 
