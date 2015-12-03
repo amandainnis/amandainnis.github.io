@@ -427,6 +427,13 @@ box-shadow: 12px 10px 37px -6px rgba(163,155,162,1);*/
 	    		line-height: 1.2em;
 	    	}
 
+	    	#processcol {
+	    		padding: 1em 2.5em 1em 2.5em;
+	    	}
+
+	    	#processcolb {
+	    		padding: 23em 0em 0em 3em;
+	    	}
 
 
 /*////////////////////TOOLS///////////////////*/   
@@ -515,15 +522,7 @@ box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
 	    
 
 
-		#charlie_title h3 {
-			font-family: 'Source Sans Pro';
-			font-weight: 700;
-			font-style: italic;
-			color: #438A91;
-			font-size: 2.5em;
-			margin-left: 2em;
-			padding-top: 1em;
-		}    
+		
 
 		#syne_title h3 {
 			font-family: 'Roboto Condensed';
@@ -672,8 +671,8 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
      	background-size: 100%;
        position: relative;
      	width: 90%;
-     	margin: 0 auto;
-     	height: 700px;}
+     	margin: 2% auto;
+     	height: 650px;}   /*i need to set this to percentage eventually??, but it wants to collapse*/
 
 
       #charlie_scroll {
@@ -682,17 +681,37 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
       	width: 75.5%;
      	overflow-y: scroll;
         white-space: nowrap;
-        margin: 3% 0 5% 12.5%;
+        margin: 3% 0 3% 12.5%;
         height: 500px;
      }
 
       .container_centerlaptop img{
       	width: 100%;
+}
 
 
-      	
-      }
 
+      #charlie_title h3 {
+			font-family: 'Source Sans Pro';
+			font-weight: 700;
+			font-style: italic;
+			color: #438A91;
+			font-size: 2.5em;
+			margin-left: 6rem;
+			padding-top: 1em;
+
+		}  
+
+		#scroll_title {font-family: 'Source Sans Pro';
+			font-weight: 500;
+			font-style: italic;
+			color: gray;
+			font-size: 2em;
+			margin-left: 6rem;
+			padding-top: 1rem;
+			/*position: absolute;
+			top: 700px;
+			left: -100px;*/} 
 
        .row2 {
 	    	height: auto;
@@ -887,10 +906,17 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     	}
 
 
+		#syneproj {
+				background-image: url("../img/nybackdrop.png");
+				background-size: 100%;
+			}
 
+		#syneproj img {
+			width: 90%;
+		}	
 
     	#syneoverview {
-				background: whitesmoke;
+				background-image: whitesmoke;
 				padding-bottom: 2em;
 			}
 
@@ -923,9 +949,46 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 					background-color: yellow; 
 				}
 	    	
-		#syneproj {
-				background: steelblue;
-			}
+		
+/*////////////////////////JOES EXPERIMENTAL SECTION////////////////////*/
+
+#wrapper {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#slides {
+  width: 3200px;
+  position: absolute;
+  right: 0px;
+}
+
+.slide {
+  width: 800px;
+  height: 400px;
+  float: left;
+}
+
+#slide1 {
+  background-color: red;
+}
+
+
+#slide2 {
+  background-color: orange;
+}
+
+#slide3 {
+  background-color: green;
+}
+
+#slide4 {
+  background-color: purple;
+}
+
 
 
 

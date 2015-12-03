@@ -65,9 +65,16 @@ table {
 		font-family: 'Open Sans', sans-serif;
 		text-align: center;
 		color: purple;
+		width: 30%;
+		background: yellow;
 	}
 
-			#masthead {background: url("img/kickstarter-series.png") no-repeat center center fixed;
+
+#peacock1 {
+	float: left;
+}
+
+			#masthead {background: url("rainbow.jpg") center;
 		    /*    background-size: cover;*/
 		        background-size: 100%;
 		        width: 100%;
@@ -79,7 +86,7 @@ table {
 				width: 15%;
 				margin: 0 auto;
 				border: .15em solid #faf9f9;
-				background-color: rgba(255,39,82,.9);
+				background-color: mediumvioletred;
 				text-align: center;
 			}
 
@@ -103,7 +110,14 @@ table {
 			}
 
 			.overlay {
-				background-color: rgba(255,255,255,255);
+				background: rgba(184,0,83,1);
+background: -moz-linear-gradient(left, rgba(184,0,83,1) 0%, rgba(184,138,0,0.97) 18%, rgba(0,184,12,0.92) 43%, rgba(0,135,184,0.95) 63%, rgba(101,0,184,0.97) 80%, rgba(237,73,237,0.98) 87%, rgba(143,112,143,1) 97%, rgba(143,112,143,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(184,0,83,1)), color-stop(18%, rgba(184,138,0,0.97)), color-stop(43%, rgba(0,184,12,0.92)), color-stop(63%, rgba(0,135,184,0.95)), color-stop(80%, rgba(101,0,184,0.97)), color-stop(87%, rgba(237,73,237,0.98)), color-stop(97%, rgba(143,112,143,1)), color-stop(100%, rgba(143,112,143,1)));
+background: -webkit-linear-gradient(left, rgba(184,0,83,1) 0%, rgba(184,138,0,0.97) 18%, rgba(0,184,12,0.92) 43%, rgba(0,135,184,0.95) 63%, rgba(101,0,184,0.97) 80%, rgba(237,73,237,0.98) 87%, rgba(143,112,143,1) 97%, rgba(143,112,143,1) 100%);
+background: -o-linear-gradient(left, rgba(184,0,83,1) 0%, rgba(184,138,0,0.97) 18%, rgba(0,184,12,0.92) 43%, rgba(0,135,184,0.95) 63%, rgba(101,0,184,0.97) 80%, rgba(237,73,237,0.98) 87%, rgba(143,112,143,1) 97%, rgba(143,112,143,1) 100%);
+background: -ms-linear-gradient(left, rgba(184,0,83,1) 0%, rgba(184,138,0,0.97) 18%, rgba(0,184,12,0.92) 43%, rgba(0,135,184,0.95) 63%, rgba(101,0,184,0.97) 80%, rgba(237,73,237,0.98) 87%, rgba(143,112,143,1) 97%, rgba(143,112,143,1) 100%);
+background: linear-gradient(to right, rgba(184,0,83,1) 0%, rgba(184,138,0,0.97) 18%, rgba(0,184,12,0.92) 43%, rgba(0,135,184,0.95) 63%, rgba(101,0,184,0.97) 80%, rgba(237,73,237,0.98) 87%, rgba(143,112,143,1) 97%, rgba(143,112,143,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b80053', endColorstr='#8f708f', GradientType=1 );;
 				width: 100%;
 				/*margin: 2em auto;*/
 				padding: 1em;
@@ -122,6 +136,7 @@ table {
 
 			#logo img {
 				width: 20%;
+				float: left;
 			}
 
 
@@ -129,7 +144,8 @@ table {
     	 	width: 80%;
     	 	margin: 0 auto;
     	 	height: 50%;
-    	 	background-image: url("img/tools.jpg");
+    	 	background-image: url("pinkheart.jpg");
+    	 	background-size: 100%; 
     	 	background-color: aliceblue;
     	 }
 
