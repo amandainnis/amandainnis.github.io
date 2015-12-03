@@ -635,8 +635,8 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
         top:0;
       	text-decoration: none;
       	margin: 0 auto;
-      	padding: 1em 1em 1em 1em;
-      	text-align: left;
+      	padding: 1em 5em 1em 1em;
+      	text-align: right;
       	-webkit-box-sizing: border-box; 
 		-moz-box-sizing: border-box;
       	box-sizing: border-box;
@@ -682,16 +682,28 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 		}  
 
-		#scroll_title {font-family: 'Source Sans Pro';
-			font-weight: 500;
+		#scroll_title {font-family: 'Roboto';
+			font-weight: 400;
 			font-style: italic;
 			color: gray;
-			font-size: 2em;
-			margin-left: 6rem;
+			font-size: 1.5em;
+			margin-right: 6rem;
 			padding-top: 1rem;
+			text-align: right;
 			/*position: absolute;
 			top: 700px;
 			left: -100px;*/} 
+
+			#scroll_title2 {font-family: 'Roboto';
+			font-weight: 400;
+			font-style: italic;
+			color: gray;
+			font-size: 1.5em;
+			padding-right: 6rem;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			text-align: right;
+			/*background-color: honeydew;*/} 
 
        .row2 {
 	    	height: auto;
@@ -752,9 +764,61 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 				font-style: italic;
 				font-size: 2em;}
 
-			#charlieoverview {
-				background: honeydew;
+			#wrapper1 {
+				/*width: auto; */
+				height: 70%;
+				
+			}	
+
+			.slydes {
+				height:700px;
+				width: 100%;
+				white-space: nowrap;
+				overflow-x: scroll;
+				overflow-y: hidden;
+				box-sizing: border-box;
 			}
+
+			.slyde {
+				/*float: left;*/
+			display: inline-block;
+			width: 100%;
+			background-color: white;
+
+			}
+			
+			#slyde1 {
+				background-color: honeydew;
+			}	
+
+			#slyde2 {
+				background-color: #248D5E;
+			}
+			
+			#slyde2 h3 {
+				background-color: #248D5E;
+			}
+			
+			#slyde2b {
+				background-color: white;
+			}
+
+			#slyde3 {
+				background-color: white;
+			}
+			.slyde h3 {
+				font-family: 'Roboto';
+				font-weight: 700;
+				font-style: italic;
+				text-align: center;
+				font-size: 2.5em;
+				padding: 1em 0 0 0;
+				/*border-bottom: .1em black solid;*/
+				margin: 0 auto;
+				width: 20%;
+
+			}
+
 
 			#charlieoverview h3 {
 				font-family: 'Roboto';
@@ -764,10 +828,14 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 				font-size: 2.5em;
 				padding: 1em 0 0 0;
 				/*border-bottom: .1em black solid;*/
-				
 				margin: 0 auto;
 				width: 20%;
 			}
+
+
+
+			
+			
 
 			section#charlie_summary {
 				background-color: #3B3B3B;  /*#FFFDF3*/
