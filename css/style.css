@@ -402,10 +402,10 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
         }
 
         #textaboutme2 p {
-        	font-family: 'Roboto Condensed';
+        	font-family: 'Roboto';
         	color: white;
         	font-size: 1em;
-        	padding: 1em;
+        	padding: 1em 1em 0 1em;
         	line-height: 1.3em;
         	text-align: left;
         }
@@ -418,6 +418,32 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
         	padding-top: 2em;
         	border-bottom: white solid;
         }
+         #textaboutme2 h3{
+        	font-family: 'Roboto';
+        	color: #ABFEFF;
+        	font-size: 1.4em;
+        	margin-top: .5em;
+        	padding: .5em 0em .7em 0.2em;
+        }
+        
+			
+			ul {
+            list-style: disc;
+            list-style-position: outside;
+            margin-left: 2.5em;
+             }
+
+
+			li {
+			font-family: 'Roboto';
+    		font-size: 1em;
+    		line-height: 1.3em;
+    		font-weight: 400;
+    		padding: .5em 0 0 0;
+    		color: white;
+    		text-align: left;
+
+			}
 
         #experiment {
         	background-image: url("../img/synthesis5b.png");
