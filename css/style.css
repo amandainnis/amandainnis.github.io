@@ -57,17 +57,12 @@ table {
 		}
     
     * {font-family:'Roboto Condensed';}
-		/*-webkit-box-sizing: border-box; tried adding this after i fixed the process container but it broke my code
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;*/
 
 /*standards row col container*//*standards row col container*//*standards row col container*/
 	     .row {
 	    	height: auto;
-	    /*	padding-top: 3%;*/
 	    	margin: 3% auto 3% auto;
-	    /*	margin-bottom: 10%;*/
-	    	width: 100%;   /*was 80%*/
+	    	width: 100%;   
 	    	clear: both;
 	    }
 
@@ -111,7 +106,9 @@ table {
 		 {width: 80%;
 		 float: left;}
 
-
+        .padleft2em {
+			padding-left: 2em;
+		}
 		 .padleft3em {
 			padding-left: 3em;
 		}
@@ -131,6 +128,12 @@ table {
 		.padbot1em {
 			padding-bottom: 1em;
 		}
+		
+		.iphoneunfloat2 {
+    		width: 20%;
+    		float: left;
+    	}
+
 		.iphoneunfloat3 {
     		width: 30%;
     		float: left;
@@ -165,12 +168,13 @@ table {
 		.container {
 		width: 90%;
 		margin: 0 auto;}
-		/*height: 100%;*/
+		
+
+
 /*standards row col container*//*standards row col container*//*standards row col container*/
 
         
       body#home {
-    		/*background-image: url("../img/graph4.png");*/
     		font-size: 16px;
     		background-color: #EEEEEE;
     		max-width: 1200px;
@@ -188,9 +192,9 @@ table {
        	width: 90%;
 		margin: 0 auto;
 		height: 100%;
-			-webkit-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
+		-webkit-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
+		-moz-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
+		box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
        }
      
 		.container #top-row
@@ -199,28 +203,13 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 		.container.row
 		{width: 100%;}
 
-	/*	span {
-        	float: right;
-        }*/
 
          #icon {
-        /* background-color: green;*/
         	cursor: pointer;
 			position: fixed;
 			width: 2em;
 			top: .6em;
-			right: 1em;
-		/*position: absolute;
-			right: 1em;
-			top: 1em;*/
-		}
-
-	/*    #icon img {
-			width: 100%;
-			z-index: 2;
-		}
-*/		
-
+			right: 1em;}
 	
 
 		nav.menu {
@@ -238,23 +227,21 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
       	-webkit-box-sizing: border-box; 
 		-moz-box-sizing: border-box;
       	box-sizing: border-box;
-     /* background: #1D91A2;*/ }  /*#1D91A2;*//*#EEEEEE; */
-
+      }  
       
 		
 	
         a#bloc_p {
-      	color: gray; /*#99AA99; */   /*#CFE4CF*//*rgba(249,255,240,0.7)*/
+      	color: gray; 
      	text-decoration: none;
         font-family:'Roboto Condensed'; 
         font-weight: 100;
         font-size: 1.2em;
-       /* margin-right: 2em;*/
 	    padding-top: 1.5em;
 	    padding-right: 1em;
 	    padding-left: 1em;
 	    padding-bottom: 1.5em;
-		/*border: 1px rgba(13,29,69,0.2) dashed;*/}
+		}
 	
 
 	    #bloc_p a{
@@ -263,8 +250,6 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 	    }
       
     
-	   
-
 	    #bloc_p:hover {color: #65FAC3;}  
 
 
@@ -296,10 +281,8 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 
     	 .rowmasthead {
 	    	height: auto;
-	    /*	padding-top: 3%;*/
 	    	margin: 0 auto;
-	    /*	margin-bottom: 10%;*/
-	    	width: 100%;   /*was 80%*/
+	    	width: 100%;   
 	    	clear: both;
 	    }
 
@@ -312,10 +295,9 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
         	font-family: 'Roboto';
         	font-weight: 700;
         	color: #E57DFB;
-        	/*padding: 2% auto 14% 15%;*/
         	font-size: 2.5em;
         	padding-bottom: 3em;
-        	/*margin-left: 1.3em;*/}
+        	}
 
        
         
@@ -331,7 +313,6 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
         	font-family: 'Roboto';
         	font-weight: 600;
         	color: black;
-        /*	padding-left: 5%;*/
         	font-size: 1.2em;
         	padding-bottom: 3em;
         	line-height: 1.5em;
@@ -351,13 +332,12 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
    			background-color: #1D91A2;
         	padding: 1.5em;
         	border-radius: 2%;
-        /*	border-top: black .5em solid;*/
         }
 
         #aboutme p {
         	font-size: 1em;
         	font-weight: 400;
-        	font-family: 'Roboto Condensed';   /*'Source Sans Pro'*//*Roboto Condensed*/
+        	font-family: 'Roboto Condensed';  
         	padding: .7em;
         	color: black;
         	line-height: 1.4em;
@@ -386,17 +366,10 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 
         }
 
-       /* #textaboutme 
-           {margin: 5em auto 1em auto;
-        	border-top: black .5em solid;
-        	width: 80%;
-
-        }*/
 
         #textaboutme2 
            {margin: 2em auto 1em auto;
            	background: rgba(18,18,18,.5);
-        /*	border-top: black .5em solid;*/
         	width: 70%;
 
         }
@@ -427,30 +400,26 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
         }
         
 			
-			ul {
+			.whiteul ul, li {
             list-style: disc;
             list-style-position: outside;
             margin-left: 2.6em;
-             }
-
-
-			li {
 			font-family: 'Roboto';
     		font-size: 1em;
     		line-height: 1.4em;
     		font-weight: 400;
-    		padding: .5em .5emg 0 0;
+    		padding: .5em .5em 0 0;
     		color: white;
     		text-align: left;
 
 			}
 
-        #experiment {
+           #experiment {
         	background-image: url("../img/synthesis5b.png");
         	background-size: 100%;
-        		-webkit-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+        	-webkit-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+			-moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+			box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
         }
 /*////////////////////PROCESS///////////////////*/
 
@@ -459,17 +428,10 @@ box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
 	    	/*margin: 2% auto;*/
 	    	background-color: snow;
 	    	-webkit-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
-	    	/*-webkit-box-shadow: 12px 10px 37px -6px rgba(163,155,162,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(163,155,162,1);
-box-shadow: 12px 10px 37px -6px rgba(163,155,162,1);*/
-	    	/*border-radius: 2%;*/
-	    	/*border: 1em yellow inset;  #F5FBBF
-	    	-webkit-box-sizing: border-box;
-		    -moz-box-sizing: border-box;
-	    	box-sizing: border-box;*/
-	    }
+			-moz-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
+			box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
+	       }
+
 	     #process h2{
         	font-family: 'Roboto';
         	color: black;
@@ -479,32 +441,6 @@ box-shadow: 12px 10px 37px -6px rgba(163,155,162,1);*/
         	border-bottom: #685187 solid;
         	font-weight: 700;
         }
-
-        	#gut img {
-        		width: 60%;
-        		margin-top: 30%;
-        	}
-
-	    	#processtext {
-	    		margin: 0 0 5% 0;
-	    		padding-top: 1.4em;
-	    	}
-
-	    	#processtext h3 {
-	    		font-family: 'Roboto';
-	    		font-weight: 500;
-	    		font-size: 1.5em;
-	    		font-style: italic;
-	    		padding-bottom: 1em;
-	    		padding-top: 1em;
-	    	}
-
-	    	#processtext p {
-	    		font-family: 'Roboto Condensed';
-	    		font-weight: 400;
-	    		font-size: 1em;
-	    		line-height: 1.2em;
-	    	}
 
 	    	#processcol {
 	    		padding: 1em 2.5em 1em 2.5em;
@@ -521,8 +457,8 @@ box-shadow: 12px 10px 37px -6px rgba(163,155,162,1);*/
 		   	background-color: #B1DBDD;    /*#9DD6D8*/
 		   	width: 100%;
 		   	-webkit-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
+			-moz-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
+			box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
 		   /*	border-radius: 2%;*/
 		   }
 		   
@@ -557,8 +493,8 @@ box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
 	    	background-color: white;    /*#9DD6D8*/
 		   	width: 100%;
 		   	-webkit-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
--moz-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
+			-moz-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
+			box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
 		   /*	border-radius: 2%;*/
 		   }
 		   
@@ -599,19 +535,14 @@ box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
 	    }
 
 	    
-
-
-		
-
 		
 
 /*////////////////////CONTACT///////////////////*/
 	    	#contact {
-	    		background-color: #E57DFB;
-	    		-webkit-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
-	    		/*border-radius: 2%;*/
+    		background-color: #E57DFB;
+    		-webkit-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
+			-moz-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
+			box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 	    	}
 		   
@@ -663,10 +594,6 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
         -o-transform: skew(30deg);}
 		
 		
-       
-		
-    	
-       
 
     	.circle 
     		{border-radius: 50%;
@@ -686,18 +613,13 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     	 
     	  div#cv {
     	 	width: 80%;
-    	 	margin: 10% auto;
-    	 	/*height: 50%;*/
-    	 /*	background-image: url("../img/cv.png");*/
+    	 	margin: 5% auto;
     	 	background-color: aliceblue;
     	 }
 
     	 #cv img {
     	 	width: 100%;
     	 }
-
-
-
 
 
 /*section specific to project page*/
@@ -845,12 +767,12 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 			#wrapper1 {
 				/*width: auto; */
-				height: 70%;
+				height: 100%;
 				
 			}	
 
 			.slydes {
-				height:700px;
+				/*height: 700px;*/
 				width: 100%;
 				white-space: nowrap;
 				overflow-x: scroll;
@@ -859,7 +781,6 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 			}
 
 			.slyde {
-				/*float: left;*/
 			display: inline-block;
 			width: 100%;
 			background-color: white;
@@ -872,6 +793,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 			#slyde2 {
 				background-color: #248D5E;
+				
 			}
 			
 			#slyde2 h3 {
@@ -936,8 +858,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 				padding: 1em 0 1em 0;
 				font-style: italic;
 				color: #21AAB9;
-				/*text-align: center;*/
-				/*background-color: blue;*/}
+				}
 
 			#cha_sum {
 				padding-left: 7%;
@@ -982,7 +903,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 			font-weight: 500;
 			font-style: italic;
 			color: black;
-			font-size: 2.2em;
+			font-size: 2em;
 		 /*	padding-left: 2em;*/
 			padding-top: 1.5em;
 			padding-bottom: .2em;
@@ -1022,9 +943,9 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 			font-weight: 700;
 			font-style: italic;
 			color: black;
-			font-size: 2.2em;
+			font-size: 2em;
 		    margin-left: 2em;
-			padding: .8em;
+			padding: 1.2em .8em .8em .8em;
 		}
 
 		#icon5 {
@@ -1102,7 +1023,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     		text-align: left;
     	}
 
-    	
+    	body {font-size: 16px;}
     	
 
     	#last {
@@ -1118,7 +1039,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     		font-family: 'Source Sans Pro'; 
     		font-weight: 400;  
     		clear: both;
-    		color: gray;
+    		color: teal;
     		font-size: 1.5em;
     		padding-top: .5em;
     		margin-bottom: 1em;}
@@ -1129,16 +1050,28 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     		font-size: 1.1em;
     		line-height: 1.4em;
     		font-weight: 300;
+    		display: inline-block;
     		/*padding: 0 3% 3% 3%;*/
     		clear: both;
     		text-align: left;
     		font-weight: 400;
     		color: black;
     		margin-bottom: 0.2em;
-    		display: inline-block;
+    		margin-top: .4em;
+    		
     		}
 
-
+           #section_title2 {
+           	padding-top: 1.2em;
+			padding-bottom: .2em;
+			font-family: 'Roboto';
+			font-weight: 500;
+			font-style: italic;
+			color: black;
+			font-size: 2em;
+		 /*	padding-left: 2em;*/
+			
+		}
     		.sectionsubtitle2 
     		{font-family: 'Roboto'; 
     		font-weight: 400;  
@@ -1150,6 +1083,24 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
     		display: inline-block;
     		padding-bottom: .2em;
     		}
+
+
+    	#darkul ul, li{
+    		color: black;
+    		list-style: disc;
+            list-style-position: outside;
+            margin-left: 2.6em;
+			font-family: 'Roboto';
+    		font-size: 1em;
+    		line-height: 1.2em;
+    		font-weight: 400;
+    		padding: .5em .5em 0 0;
+    		text-align: left;
+
+    	}
+
+
+
 
 
 		#syneproj {
