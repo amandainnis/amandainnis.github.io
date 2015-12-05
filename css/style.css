@@ -127,10 +127,10 @@ table {
 		  .padleft6em {
 		 	padding-left: 6em;
 		 }
-		/*.col_s5 img {
-			width: 100%;
+		
+		.padbot1em {
+			padding-bottom: 1em;
 		}
-*/
 		.iphoneunfloat3 {
     		width: 30%;
     		float: left;
@@ -439,7 +439,7 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
     		font-size: 1em;
     		line-height: 1.4em;
     		font-weight: 400;
-    		padding: .5em .5em 0 0;
+    		padding: .5em .5emg 0 0;
     		color: white;
     		text-align: left;
 
@@ -979,7 +979,7 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
              }*/
 		#section_title {
 			font-family: 'Roboto';
-			font-weight: 400;
+			font-weight: 500;
 			font-style: italic;
 			color: black;
 			font-size: 2.2em;
@@ -991,24 +991,29 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 		.sectionsubtitle {
 			font-family: 'Roboto'; 
-    		font-weight: 200;  
+    		font-weight: 400;  
     		color: honeydew;
     		font-style: italic;
     		font-size: 1.3em;
     		padding-top: .5em;
-    	
-    		line-height: 1.3em;
-    		padding-bottom: 1em;}
+    		padding-bottom: .2em;
+    		display: inline-block;
+    		line-height: 1.4em;}
+    		
+    		
 		
 		.sectiontext {
-			font-family: 'Roboto';
+			font-family: 'Roboto Condensed';
     		font-size: 1.1em;
     		font-style: italic;
     		line-height: 1.4em;
     		font-weight: 400;
     		text-align: left;
     		color: black;
+    		width: 100%;
+    		display: inline-block;
     		margin-bottom: 1em;
+    		margin-top: .3em;
     		}
 		
 
@@ -1106,9 +1111,45 @@ box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 
 
     	#heuristics {
-    		background-color: steelblue;
+    		background-color: white;
     	}
 
+    	.title2 {
+    		font-family: 'Source Sans Pro'; 
+    		font-weight: 400;  
+    		clear: both;
+    		color: gray;
+    		font-size: 1.5em;
+    		padding-top: .5em;
+    		margin-bottom: 1em;}
+    		
+
+    	.text2 {
+    		font-family: 'Roboto Condensed';
+    		font-size: 1.1em;
+    		line-height: 1.4em;
+    		font-weight: 300;
+    		/*padding: 0 3% 3% 3%;*/
+    		clear: both;
+    		text-align: left;
+    		font-weight: 400;
+    		color: black;
+    		margin-bottom: 0.2em;
+    		display: inline-block;
+    		}
+
+
+    		.sectionsubtitle2 
+    		{font-family: 'Roboto'; 
+    		font-weight: 400;  
+    		color: gray;
+    		font-style: italic;
+    		font-size: 1.3em;
+    		padding-top: .5em;
+    		line-height: 1.4em;
+    		display: inline-block;
+    		padding-bottom: .2em;
+    		}
 
 
 		#syneproj {
