@@ -430,15 +430,15 @@ box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 			ul {
             list-style: disc;
             list-style-position: outside;
-            margin-left: 2.5em;
+            margin-left: 2.6em;
              }
 
 
 			li {
 			font-family: 'Roboto';
     		font-size: 1em;
-    		line-height: 1.3em;
-    		font-weight: 300;
+    		line-height: 1.4em;
+    		font-weight: 400;
     		padding: .5em 0 0 0;
     		color: white;
     		text-align: left;
