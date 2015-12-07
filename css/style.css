@@ -192,9 +192,12 @@ table {
        	width: 90%;
 		margin: 0 auto;
 		height: 100%;
-		-webkit-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
+		-webkit-box-shadow: 12px 10px 37px -6px rgba(93,138,148,1);
+-moz-box-shadow: 12px 10px 37px -6px rgba(93,138,148,1);
+box-shadow: 12px 10px 37px -6px rgba(93,138,148,1);
+		/*-webkit-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
 		-moz-box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
-		box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);
+		box-shadow: 12px 10px 37px -6px rgba(170,192,194,1);*/
        }
      
 		.container #top-row
@@ -400,7 +403,7 @@ table {
         }
         
 			
-			.whiteul ul, li {
+			.whiteul ul li {
             list-style: disc;
             list-style-position: outside;
             margin-left: 2.6em;
@@ -410,9 +413,20 @@ table {
     		font-weight: 400;
     		padding: .5em .5em 0 0;
     		color: white;
-    		text-align: left;
+    		text-align: left;}
 
-			}
+    		.whiteul li {
+            list-style: disc;
+            list-style-position: outside;
+            margin-left: 2.6em;
+			font-family: 'Roboto';
+    		font-size: 1em;
+    		line-height: 1.4em;
+    		font-weight: 400;
+    		padding: .5em .5em 0 0;
+    		color: white;
+    		text-align: left;}
+
 
            #experiment {
         	background-image: url("../img/synthesis5b.png");
@@ -427,9 +441,12 @@ table {
 	    	width: 100%;
 	    	/*margin: 2% auto;*/
 	    	background-color: snow;
-	    	-webkit-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
+	    	-webkit-box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
+-moz-box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
+box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
+	    	/*-webkit-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
 			-moz-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
-			box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
+			box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);*/
 	       }
 
 	     #process h2{
@@ -456,9 +473,13 @@ table {
 		   #tools {
 		   	background-color: #B1DBDD;    /*#9DD6D8*/
 		   	width: 100%;
-		   	-webkit-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
+		   	-webkit-box-shadow: 12px 10px 37px -6px rgba(168,182,189,1);
+			-moz-box-shadow: 12px 10px 37px -6px rgba(168,182,189,1);
+			box-shadow: 12px 10px 37px -6px rgba(168,182,189,1);
+
+		   /*	-webkit-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
 			-moz-box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
-			box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);
+			box-shadow: 12px 10px 37px -6px rgba(73,136,138,1);*/
 		   /*	border-radius: 2%;*/
 		   }
 		   
@@ -492,9 +513,9 @@ table {
 			#allproj  {
 	    	background-color: white;    /*#9DD6D8*/
 		   	width: 100%;
-		   	-webkit-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
-			-moz-box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
-			box-shadow: 12px 2px 37px -6px rgba(170,164,184,1);
+		   -webkit-box-shadow: 12px 10px 37px -6px rgba(214,214,214,1);
+-moz-box-shadow: 12px 10px 37px -6px rgba(214,214,214,1);
+box-shadow: 12px 10px 37px -6px rgba(214,214,214,1);
 		   /*	border-radius: 2%;*/
 		   }
 		   
@@ -539,11 +560,17 @@ table {
 
 /*////////////////////CONTACT///////////////////*/
 	    	#contact {
-    		background-color: #E57DFB;
+    		background-color: #D7C5E7;
+    		-webkit-box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
+-moz-box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
+box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
+
+
+			/*background-color: #E57DFB;
     		-webkit-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 			-moz-box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
 			box-shadow: 12px 10px 37px -6px rgba(224,160,130,1);
-
+*/
 	    	}
 		   
 		  #contact h2{
