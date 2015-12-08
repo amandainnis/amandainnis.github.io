@@ -628,11 +628,10 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
       #charlie_scroll {
         position: absolute;
       	top: .3em;
-      	left: .1em;
       	width: 75.6%;
      	overflow-y: scroll;
         white-space: nowrap;
-        margin: 3% 0 3% 9%;
+        margin: 3% 0 3% 12.5%;
         height: 78%;
      }
 
