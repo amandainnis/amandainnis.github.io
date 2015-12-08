@@ -1200,10 +1200,19 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 			padding-top: 1em;
 		}    
 
-		#NYU_title img {
+		/*#NYU_title img {
 			width: 60%;
-			margin-left: 15%
-		}
+			margin-left: 15%}*/
+
+			#NYU_title
+			{
+			/*	background-image: url("../img/nyuhomepagelaptop.png");
+			background-size: 100%;
+			background-repeat: no-repeat;*/
+				width: 100%;
+				}
+
+
 /*////////////////////////JOES EXPERIMENTAL SECTION////////////////////*/
 
 #wrapper {
