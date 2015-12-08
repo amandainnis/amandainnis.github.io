@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:400,300,300italic,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Megrim);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700italic,600,600italic,700,400italic,300italic,300,200italic|Open+Sans:400,600,700);
-/*@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900);*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700);
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -128,37 +128,7 @@ table {
 		.padbot1em {
 			padding-bottom: 1em;
 		}
-		
-		.iphoneunfloat2 {
-    		width: 20%;
-    		float: left;
-    	}
-
-		.iphoneunfloat3 {
-    		width: 30%;
-    		float: left;
-    	}
-
-    	.iphoneunfloat4 {
-    		width: 40%;
-    		float: left;
-    	}
-    	.iphoneunfloat5 {
-    		width: 50%;
-    		float: left;
-    	}
-    	.iphoneunfloat6 {
-    		width: 60%;
-    		float: left;
-    	}
-    	.iphoneunfloat7 {
-    		width: 70%;
-    		float: left;
-    	}
-    	.iphoneunfloat8 {
-    		width: 80%;
-    		float: left;
-    	}
+	
 
     	#borderright {
     		border-right: 1px black solid;
@@ -184,9 +154,6 @@ table {
 		body img{
         width: 100%;
         margin: 0 auto;}  
-
-     
-
 
         .containermasthead {
        	width: 90%;
@@ -227,8 +194,7 @@ table {
 		-moz-box-sizing: border-box;
       	box-sizing: border-box;
       }  
-      
-		
+     
 	
         a#bloc_p {
       	color: gray; 
@@ -350,7 +316,7 @@ table {
 
         }
         #imgaboutme h2 {
-        	font-family: 'Source Sans Pro';
+        	font-family: 'Roboto';
         	font-weight: 700;
         	color: #EB6EDC;
         	padding-left: 5%;
@@ -438,11 +404,8 @@ table {
 	    	/*margin: 2% auto;*/
 	    	background-color: snow;
 	    	-webkit-box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
-box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
-	    	/*-webkit-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
-			-moz-box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);
-			box-shadow: 12px 10px 37px -6px rgba(203,196,204,1);*/
+			-moz-box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
+			box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
 	       }
 
 	     #process h2{
@@ -547,15 +510,13 @@ box-shadow: 12px 10px 37px -6px rgba(209,205,209,1);
 	    	/*border: 0.5em outset;*/  /*#44C5C2*/
 	    }
 
-	    
-		
 
 /*////////////////////CONTACT///////////////////*/
 	    	#contact {
     		background-color: #D7C5E7;
     		-webkit-box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
--moz-box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
-box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
+			-moz-box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
+			box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 	    	}
 		   
 		  #contact h2{
@@ -581,14 +542,8 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 	       float: left;
 	   		margin: 0 0 0 2em;}
 
-		
-		
-
-		
 
 /*section specific to project page*/
-
-
 
 		nav.projectMenu {
 		display: none;
@@ -605,9 +560,7 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
       	-webkit-box-sizing: border-box; 
 		-moz-box-sizing: border-box;
       	box-sizing: border-box;
-     /* background: #1D91A2;*/ }  /*#1D91A2;*//*#EEEEEE; */
-
-
+     }  
 
 
      .container_centerlaptop {
@@ -635,8 +588,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
       	width: 100%;
 }
 
-
-
       #charlie_title h3 {
 			font-family: 'Source Sans Pro';
 			font-weight: 700;
@@ -656,9 +607,7 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 			margin-right: 6rem;
 			padding-top: 1rem;
 			text-align: right;
-			/*position: absolute;
-			top: 700px;
-			left: -100px;*/} 
+			} 
 
 			#scroll_title2 {font-family: 'Roboto';
 			font-weight: 400;
@@ -700,8 +649,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 	    	cursor: pointer;
 	    }
       
-    
-	   
 
 	    #bloc_p:hover {color: #65FAC3;}
 		
@@ -858,7 +805,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 	    	clear: both;
 	    }
 		
-	
 
     	body {font-size: 16px;}
     	
@@ -866,8 +812,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
     	#last {
     		padding-bottom: 1em;
     	}
-
-
 
 		#syneproj {
 				background-image: url("../img/nybackdrop.png");
@@ -937,8 +881,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 				}
 
 
-
-
 /* media queries media queries media queries*/
 		 @media only screen and (max-width: 1220px) {
 		 	/*nav {width:14%;}*/
@@ -989,16 +931,12 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 		 		
 		 	}
 		 	
-
-
 		 	 @media only screen and (max-width: 1060px) {
 		 	/*nav {width:15%;}*/
 		 	body#home {
 		 		font-size: 14px;}
 		 		
 		 	}
-
-
 
 
 		 	 @media only screen and (max-width: 1020px) {
@@ -1041,17 +979,17 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 		     	margin: 2% auto;
 		     	padding: 56% 0;}  
 		   
-		    #charlie_scroll {
-        position: absolute;
-      	top: .3em;
-      	width: 70.6%;
-     	overflow-y: scroll;
-        white-space: nowrap;
-        margin: 11% 0 3% 15.5%;
-        height: 77%;
-     }
-			
-			}
+			#charlie_scroll {
+		        position: absolute;
+		      	top: .3em;
+		      	width: 70.6%;
+		     	overflow-y: scroll;
+		        white-space: nowrap;
+		        margin: 11% 0 3% 15.5%;
+		        height: 77%;
+		     }
+					
+					}
 
 		@media only screen and (max-width: 650px) {
 			 /* nav {width:18%;}*/
