@@ -802,10 +802,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 			}
 
 
-
-			
-			
-
 			section#charlie_summary {
 				background-color: #3B3B3B;  /*#FFFDF3*/
 				padding-left: 1.5em;
@@ -818,79 +814,7 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 				background-color: #248D5E;
 			}
 
-
-			#charlie_summary h3 {
-				font-size: 1.5em;
-				font-family: 'Roboto';
-				font-weight: 700;
-				padding: 1em 0 1em 0;
-				font-style: italic;
-				color: #21AAB9;
-				}
-
-			
-
-			#charlie_section_title {
-			font-family: 'Roboto';
-			font-weight: 700;
-			font-style: italic;
-			color: black;
-			font-size: 2.2em;
-		    margin-left: 3em;
-			padding: .8em;
-		}    
-
 		
-		#section_title {
-			font-family: 'Roboto';
-			font-weight: 500;
-			font-style: italic;
-			color: black;
-			font-size: 2em;
-		 /*	padding-left: 2em;*/
-			padding-top: 1.5em;
-			padding-bottom: .2em;
-		}
-		
-
-		.sectionsubtitle {
-			font-family: 'Roboto'; 
-    		font-weight: 400;  
-    		color: honeydew;
-    		font-style: italic;
-    		font-size: 1.3em;
-    		padding-top: .5em;
-    		padding-bottom: .2em;
-    		display: inline-block;
-    		line-height: 1.4em;}
-    		
-    		
-		
-		.sectiontext {
-			font-family: 'Roboto Condensed';
-    		font-size: 1.1em;
-    		font-style: italic;
-    		line-height: 1.4em;
-    		font-weight: 400;
-    		text-align: left;
-    		color: black;
-    		width: 100%;
-    		display: inline-block;
-    		margin-bottom: 1em;
-    		margin-top: .3em;
-    		}
-		
-
-		#userresearch_section_title	{
-			font-family: 'Roboto';
-			font-weight: 700;
-			font-style: italic;
-			color: black;
-			font-size: 2em;
-		    margin-left: 2em;
-			padding: 1.2em .8em .8em .8em;
-		}
-
 		#icon5 {
 			padding-top: 15%;
 			/*float: left;*/
@@ -949,16 +873,10 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 
 
 
-
-
-
 		#syneproj {
 				background-image: url("../img/nybackdrop.png");
 				background-size: 100%;
-				width: 100%;
-
-
-			}
+				width: 100%;}
 
 			.container_center {
 			width: 90%;
@@ -995,10 +913,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 			}
 
 
-
-			
-	    	
-
 	    	#syne_title h3 {
 			font-family: 'Roboto Condensed';
 			font-weight: 700;
@@ -1025,10 +939,6 @@ box-shadow: 12px 10px 37px -6px rgba(190,180,194,1);
 			{
 				width: 100%;
 				}
-
-
-
-
 
 
 
