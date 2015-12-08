@@ -415,7 +415,7 @@ nav.projectMenu {
 				margin: 0 auto;
 			}
 
-			#synelink a{
+			#synelink a, #synelink2 a{
 				text-align: center;
 				text-decoration: none;
 				font-family: 'Roboto';
@@ -424,6 +424,14 @@ nav.projectMenu {
 				
 			}
 
+			#synelink2 {
+				width: 20%;
+				padding: 0 1em 1em 1em;
+				margin: 0 auto;
+
+			}
+
+			
 
 			#slyne1 {
 				background-color: snow;
