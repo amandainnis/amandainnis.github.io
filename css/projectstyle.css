@@ -409,13 +409,39 @@ nav.projectMenu {
 				width: 20%;
 			}
 				
-
 			#synelink {
-				text-align: center;
-				text-decoration: none;
-				padding-bottom: 2em;
+				width: 20%;
+				padding: 2em 1em 1em 1em;
+				margin: 0 auto;
 			}
 
+			#synelink a{
+				text-align: center;
+				text-decoration: none;
+				font-family: 'Roboto';
+				font-size: 1em;
+				font-weight: 700;
+				
+			}
+
+
+			#slyne1 {
+				background-color: snow;
+			}	
+
+			#slyne2 {
+				background-color: aliceblue;
+				
+			}
+			
+			
+			#slyne3 {
+				background-color: white;
+			}
+
+			#slyne4 {
+				background-color: white;
+			}
 
 	    	#syne_title h3 {
 			font-family: 'Roboto Condensed';
