@@ -123,20 +123,24 @@ nav.projectMenu {
       	text-decoration: none;
       	margin: 0 auto;
       	padding: 1em 5em 1em 1em;
-      	text-align: right;
+      	text-align: left;
       	-webkit-box-sizing: border-box; 
 		-moz-box-sizing: border-box;
       	box-sizing: border-box;
      }  
 
-
+     	#charlieproj
+     	{width: 100%;
+     		background-color: white;}
+     
      .container_centerlaptop {
      	background-image: url("../img/laptop-mockup.png");
      	background-repeat: no-repeat;
      	background-size: 100%;
        position: relative;
+    /*   background-color: white;*/
      	width: 90%;
-     	margin: 2% auto;
+     	margin: 2% auto 10% auto;
      /*	height: 650px;*/  /*i need to set this to percentage eventually??, but it wants to collapse*/
        padding: 27% 0;}   
 
@@ -203,7 +207,6 @@ nav.projectMenu {
         font-family:'Roboto Condensed'; 
         font-weight: 100;
         font-size: 1.2em;
-       /* margin-right: 2em;*/
 	    padding-top: 1.5em;
 	    padding-right: 1em;
 	    padding-left: 1em;
@@ -240,18 +243,13 @@ nav.projectMenu {
 				font-style: italic;
 				font-size: 2em;}
 
-			#wrapper1 {
-				/*width: auto; */
-				height: 100%;
-				
-			}	
-
+			
 			.slydes {
 				/*height: 700px;*/
 				width: 100%;
-				white-space: nowrap;
+				/*white-space: nowrap;
 				overflow-x: scroll;
-				overflow-y: hidden;
+				overflow-y: hidden;*/
 				box-sizing: border-box;
 			}
 
