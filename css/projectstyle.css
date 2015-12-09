@@ -83,6 +83,77 @@ table {
 	    	clear: both;
 	    }		
 
+
+	    .col_s1 {
+    	width: 10%;
+    	float: left;
+	    }
+
+	   .col_s2 {
+	   	width: 20%;
+	   	float: left;
+	   }
+	   
+	    .col_s3
+	    {width: 30%;
+	    float: left;}
+
+	    .col_s4 {
+	    width: 40%;
+	    float: left;
+	    }
+		
+		.col_s5
+		{width: 50%;
+		float: left;}
+
+		.col_s6
+		{width: 60%;
+		float: left;}
+
+		.col_s61 
+		  {width: 60%;
+		  float: left;
+		  padding-left: 10%;}
+
+		 .col_s7
+		 {width: 70%;
+		 float: left;}
+
+		  .col_s8
+		 {width: 80%;
+		 float: left;}
+
+        .padleft2em {
+			padding-left: 2em;
+		}
+		 .padleft3em {
+			padding-left: 3em;
+		}
+
+		 .padleft4em {
+		 	padding-left: 4em;
+		 }
+
+		  .padleft5em {
+		 	padding-left: 5em;
+		 }
+
+		  .padleft6em {
+		 	padding-left: 6em;
+		 }
+		
+		.padbot1em {
+			padding-bottom: 1em;
+		}
+	
+
+    	#borderright {
+    		border-right: 1px black solid;
+    		box-sizing: border-box;
+    	}
+
+
   a#bloc_p {
       	color: gray; 
      	text-decoration: none;
@@ -189,6 +260,17 @@ nav.projectMenu {
         	font-weight: 700;
         }
 
+     #allproj2 h2{
+        	font-family: 'Roboto';
+        	color: black;   /*#523F6C*/
+        	font-size: 2em;
+        	margin-top: 1em;
+        	padding: 1em;
+        	border-bottom: black solid;   /*#685187*/
+        	font-weight: 700;
+        }
+
+
 		#scroll_title {font-family: 'Roboto';
 			font-weight: 400;
 			font-style: italic;
@@ -265,7 +347,7 @@ nav.projectMenu {
 		
 
 			.slyde {
-			display: inline-block;
+			
 			width: 100%;
 			background-color: white;
 
@@ -372,6 +454,128 @@ nav.projectMenu {
 
 
 		.row3 {
+	    	margin: 3% auto 8% auto;
+	    	width: 100%;   /*was 80%*/
+	    	clear: both;
+	    }
+		
+		.row4 {
+	    	margin: 8% auto 8% auto;
+	    	width: 100%;   /*was 80%*/
+	    	clear: both;
+	    }
+		
+
+	    .centerwrapper {
+	    	width: 70%;
+	    	margin: 0 auto;
+	    }
+
+
+
+			#charlie_section_title {
+			font-family: 'Roboto';
+			font-weight: 700;
+			font-style: italic;
+			color: black;
+			font-size: 2.2em;
+		    margin-left: 6em;
+			padding: .8em;
+		}    
+
+		 /* .textbox {
+             	border: 1px black solid;
+             	margin-top: 2em;
+             }*/
+		#section_title {
+			font-family: 'Roboto';
+			font-weight: 500;
+			font-style: italic;
+			color: black;
+			font-size: 2em;
+		 /*	padding-left: 2em;*/
+			padding-top: 1.5em;
+			padding-bottom: .2em;
+		}
+		
+
+		.sectionsubtitle {
+			font-family: 'Roboto'; 
+    		font-weight: 400;  
+    		color: honeydew;
+    		font-style: italic;
+    		font-size: 1.3em;
+    		padding-top: .5em;
+    		padding-bottom: .2em;
+    		display: inline-block;
+    		line-height: 1.4em;}
+    		
+    		
+		
+		.sectiontext {
+			font-family: 'Roboto Condensed';
+    		font-size: 1.1em;
+    		font-style: italic;
+    		line-height: 1.4em;
+    		font-weight: 400;
+    		text-align: left;
+    		color: black;
+    		width: 100%;
+    		display: inline-block;
+    		margin-bottom: 1em;
+    		margin-top: .3em;
+    		}
+		
+
+		#userresearch_section_title	{
+			font-family: 'Roboto';
+			font-weight: 700;
+			font-style: italic;
+			color: black;
+			font-size: 1.7em;
+		 
+			padding: 1.2em .8em .8em .8em;
+		}
+
+		#icon5 {
+			padding-top: 15%;
+			/*float: left;*/
+			/*margin: 5%;*/
+			clear: both;
+			width: 30%;
+			margin: 0 auto;
+			/*height: 75px;*/
+		/*	border: 1px gray solid;*/}
+
+
+		#icon3 {
+			margin-top: 2%;
+			float: right;
+			margin-right: 10%;
+			clear: both;
+			width: 30%;
+			/*height: 75px;*/
+		/*	border: 1px gray solid;*/}
+
+		div#icon img {
+			width: 100%;
+		}
+
+		#icon2 {
+			margin-top: 1%;
+			float: right;
+			margin-right: 10%;
+			clear: both;
+			width: 30%;
+			/*height: 75px;*/
+		/*	border: 1px gray solid;*/}
+
+		div#icon2 img {
+			width: 100%;
+		}
+
+
+		.row3 {
 	    	height: auto;
 	    /*	padding-top: 3%;*/
 	    	margin: 3% auto 3% auto;
@@ -380,6 +584,134 @@ nav.projectMenu {
 	    	clear: both;
 	    }
 		
+		
+    	.title {
+    		font-family: 'Source Sans Pro'; 
+    		font-weight: 400;  
+    		clear: both;
+    		color: white;
+    		font-size: 1.5em;
+    		padding-top: .5em;
+    		margin-bottom: 1em;}
+    		
+
+    	.text {
+    		font-family: 'Roboto Condensed';
+    		font-size: 1.3em;
+    		line-height: 1.6em;
+    		font-weight: 300;
+    		/*padding: 0 3% 3% 3%;*/
+    		clear: both;
+    		text-align: left;
+    		font-weight: 400;
+    		color: black;
+    		margin-bottom: 0.2em;
+    		}
+    		
+    	.text p {
+    		text-align: left;
+    	}
+
+    	body {font-size: 16px;}
+    	
+
+    	#last {
+    		padding-bottom: 1em;
+    	}
+
+
+    	#heuristics {
+    		background-color: white;
+    	}
+
+    	.title2 {
+    		font-family: 'Source Sans Pro'; 
+    		font-weight: 400;  
+    		clear: both;
+    		color: teal;
+    		font-size: 1.7em;
+    		padding-top: .5em;
+    		margin-bottom: 1em;}
+    		
+
+    	.text2 {
+    		font-family: 'Roboto Condensed';
+    		font-size: 1.2em;
+    		line-height: 1.2em;
+    		font-weight: 300;
+    		/*display: inline-block;*/
+    		/*padding: 0 3% 3% 3%;*/
+    		clear: both;
+    		text-align: left;
+    		font-weight: 400;
+    		color: black;
+    		margin-bottom: 0.2em;
+    		margin-top: .4em;
+    		
+    		}
+
+           #section_title2 {
+           	padding-top: 1.2em;
+			padding-bottom: .2em;
+			font-family: 'Roboto';
+			font-weight: 500;
+			font-style: italic;
+			color: black;
+			font-size: 1.7em;
+		 /*	padding-left: 2em;*/
+			
+		}
+    		.sectionsubtitle2 
+    		{font-family: 'Roboto'; 
+    		font-weight: 400;  
+    		color: gray;
+    		font-style: italic;
+    		font-size: 1.3em;
+    		padding-top: .5em;
+    		line-height: 1.4em;
+    		display: inline-block;
+    		padding-bottom: .2em;
+    		}
+
+
+    	#darkul ul, li{
+    		color: black;
+    		list-style: disc;
+            list-style-position: outside;
+            margin-left: 2.6em;
+			font-family: 'Roboto';
+    		font-size: 1em;
+    		line-height: 1.2em;
+    		font-weight: 400;
+    		padding: .5em .5em 0 0;
+    		text-align: left;
+
+    	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     	body {font-size: 16px;}
     	
