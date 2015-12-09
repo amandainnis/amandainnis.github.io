@@ -169,6 +169,25 @@ nav.projectMenu {
 			padding-top: 1em;
 
 		}  
+      
+		#allproj  {
+	    	    /*#9DD6D8*/
+		   	width: 100%;
+		   /*-webkit-box-shadow: 12px 10px 37px -6px rgba(214,214,214,1);
+			-moz-box-shadow: 12px 10px 37px -6px rgba(214,214,214,1);
+			box-shadow: 12px 10px 37px -6px rgba(214,214,214,1);*/
+		   /*	border-radius: 2%;*/
+		   }
+
+      #allproj h2{
+        	font-family: 'Roboto';
+        	color: black;   /*#523F6C*/
+        	font-size: 2em;
+        	margin-top: 1em;
+        	padding: 1em;
+        	border-bottom: gray solid;   /*#685187*/
+        	font-weight: 700;
+        }
 
 		#scroll_title {font-family: 'Roboto';
 			font-weight: 400;
@@ -243,15 +262,7 @@ nav.projectMenu {
 				font-style: italic;
 				font-size: 2em;}
 
-			
-			.slydes {
-				/*height: 700px;*/
-				width: 100%;
-				/*white-space: nowrap;
-				overflow-x: scroll;
-				overflow-y: hidden;*/
-				box-sizing: border-box;
-			}
+		
 
 			.slyde {
 			display: inline-block;
@@ -263,7 +274,9 @@ nav.projectMenu {
 			#slyde1 {
 				background-color: honeydew;
 			}	
-
+			#slyde1b {
+				background-color: white;
+			}
 			#slyde2 {
 				background-color: #248D5E;
 				
