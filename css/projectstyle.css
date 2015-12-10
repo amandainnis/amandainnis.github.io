@@ -879,22 +879,33 @@ nav.projectMenu {
 		
 		#arjun
 		{width: 100%;
-			background-image: url("..img/arjunme.png");
+			background-image: url("../img/arjunme.png");
 			background-size: 100%;
-			padding: 30%;
+			padding-bottom: 30%;
+
 			}	
 
-		#arjun h2 {
+		#arjun h4 {
 			font-family: 'Roboto';
 			font-size: 2em;
-			display: inline-block;
+			font-weight: 600;
+		
 			width: 20%;
-			padding: 10%;
+			padding: 1em;
 			margin: 2% auto;
 			text-align: center;
 
 		}
+		#arjun h6 {
+			font-family: 'Roboto';
+			font-size: 1.7em;
+			font-weight: 500;
+			font-style: none;
+			padding: 1em;
+			margin: 2% auto;
+			text-align: left;
 
+		}
 	
 
 		 
