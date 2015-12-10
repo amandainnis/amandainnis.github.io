@@ -283,14 +283,17 @@ nav.projectMenu {
 
 
 		#scroll_title {font-family: 'Roboto';
-			font-weight: 400;
-			font-style: italic;
-			color: gray;
-			font-size: 1.5em;
-			margin-right: 6rem;
-			padding-top: 1rem;
+			font-weight: 500;
+			color: black;
+			font-size: 2em;
+			padding-top: 4rem;
 			text-align: right;
+			display: inline-block;
+			margin: 0 auto;
 			} 
+
+
+
 
 			#scroll_title2 {font-family: 'Roboto';
 			font-weight: 400;
