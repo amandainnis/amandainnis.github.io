@@ -840,7 +840,12 @@ nav.projectMenu {
 
 			}
 
+			.slyde2 {
 			
+			width: 100%;
+		
+
+			}
 
 			#slyne1 {
 				background-color: snow;
@@ -869,6 +874,34 @@ nav.projectMenu {
 			margin-left: 2em;
 			padding-top: 1em;
 		}    
+
+		
+		
+		#arjun
+		{width: 100%;
+			background-image: url("..img/arjunme.png");
+			background-size: 100%;
+			padding: 30%;
+			}	
+
+		#arjun h2 {
+			font-family: 'Roboto';
+			font-size: 2em;
+			display: inline-block;
+			width: 20%;
+			padding: 10%;
+			margin: 2% auto;
+			text-align: center;
+
+		}
+
+	
+
+		 
+		
+
+
+
 
 
 		#NYU_title h3 {
