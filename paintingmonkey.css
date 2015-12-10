@@ -200,9 +200,14 @@ color: teal;}
 		
 
 		     #lessons {
-		     	background-color: blue;
+		    /* 	background-color: blue;*/
+                 background-image: linear-gradient(to right, gray, white, gray, black);
 		     	width: 19%;
-		     	float: right;}
+		     	float: right;
+		     	margin-right: 30%;
+		     	box-shadow: 170px 0 10px yellow,
+                330px 0 0 -20px blue,
+                330px 5px 5px -20px black;}
 
 		#divobject {
 			width: 200px;
@@ -278,7 +283,26 @@ color: teal;}
 		  border-top-right-radius: 60px;
 		  border-bottom-left-radius: 60px;
 		  border-bottom-right-radius: 60px;
+
+		  animation-name: diagonal-slide;
+		  animation-duration: 5s;
+		  animation-iteration-count: 10;
+		}
+
+@keyframes diagonal-slide {
+
+  from {
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    left: 100px;
+    top: 100px;
+  }
+
 }
+
 
     	.circle 
     		{border-radius: 50%;
@@ -317,8 +341,28 @@ color: teal;}
 			position: absolute;
 			right: 10%;
 			top: 35%;
+}
+	#triangle-topleft:hover {
+  animation-name: diagonal-slide;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
 
-		}
+@keyframes diagonal-slide {
+
+  from {
+    left: 0;
+    top: 35%;
+  }
+
+  to {
+    left: 600px;
+    top: 600px;
+  }
+
+}
+
+		
 
 
 

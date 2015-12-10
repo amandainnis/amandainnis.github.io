@@ -270,6 +270,17 @@ nav.projectMenu {
         	font-weight: 700;
         }
 
+ #allproj3 h2{
+        	font-family: 'Roboto';
+        	color: white;   /*#523F6C*/
+        	font-size: 2em;
+        	margin-top: 1em;
+        	padding: 1em;
+        	border-bottom: white solid;   /*#685187*/
+        	font-weight: 700;
+        }
+
+
 
 		#scroll_title {font-family: 'Roboto';
 			font-weight: 400;
@@ -369,12 +380,40 @@ nav.projectMenu {
 			}
 			
 			#slyde2b {
-				background-color: white;
+				background-image: url("../img/featureanalysischarlie2.png");
+				background-size: 100%;
+
 			}
+
+			#heuristiccontainer{
+				/*background: rgba(18,18,18,.5);*/
+        		width: 70%;
+        		margin: 0 auto;
+			}
+
 
 			#slyde3 {
 				background-color: white;
 			}
+
+			#slyde3b {
+				background-color: white;
+			}
+			
+			#slyde3b img {
+				width: 80%;
+				margin: 0 auto;
+				padding-left: 2em;
+			}
+
+
+			#slyde4
+			{background-color: #F2FBFB;}
+
+
+
+
+
 			.slyde h3 {
 				font-family: 'Roboto';
 				font-weight: 700;
@@ -619,34 +658,35 @@ nav.projectMenu {
     		padding-bottom: 1em;
     	}
 
-
-    	#heuristics {
-    		background-color: white;
+    	#white h2 {
+    		color: white;
     	}
+    	
 
     	.title2 {
-    		font-family: 'Source Sans Pro'; 
-    		font-weight: 400;  
+    		font-family: 'Roboto'; 
+    		font-weight: 500;  
     		clear: both;
-    		color: teal;
+    		color: white;
     		font-size: 1.7em;
-    		padding-top: .5em;
-    		margin-bottom: 1em;}
+    		/*padding-top: .5em;*/
+    		padding-bottom: .3em;
+    		display: inline-block;}
     		
 
     	.text2 {
-    		font-family: 'Roboto Condensed';
+    		font-family: 'Roboto';
     		font-size: 1.2em;
-    		line-height: 1.2em;
+    		line-height: 1.4em;
     		font-weight: 300;
     		/*display: inline-block;*/
     		/*padding: 0 3% 3% 3%;*/
     		clear: both;
     		text-align: left;
     		font-weight: 400;
-    		color: black;
+    		color: white;
     		margin-bottom: 0.2em;
-    		margin-top: .4em;
+    	
     		
     		}
 
@@ -690,6 +730,29 @@ nav.projectMenu {
 
 
 
+	.whiteul ul, li {
+            list-style: disc;
+            list-style-position: outside;
+            margin-left: 2.6em;
+			font-family: 'Roboto';
+    		font-size: 1em;
+    		line-height: 1.4em;
+    		font-weight: 400;
+    		padding: .5em .5em 0 0;
+    		color: white;
+    		text-align: left;}
+
+    		.whiteul li {
+            list-style: disc;
+            list-style-position: outside;
+            margin-left: 2.6em;
+			font-family: 'Roboto';
+    		font-size: 1em;
+    		line-height: 1.4em;
+    		font-weight: 400;
+    		padding: .5em .5em 0 0;
+    		color: white;
+    		text-align: left;}
 
 
 
