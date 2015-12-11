@@ -212,7 +212,7 @@ color: teal;}
 		#divobject {
 			width: 200px;
 			border-radius: 50%;
-    box-shadow: 170px 0 10px yellow,
+             box-shadow: 170px 0 10px yellow,
                 330px 0 0 -20px blue,
                 330px 5px 5px -20px black;
                 float: right;
@@ -283,11 +283,10 @@ color: teal;}
 		  border-top-right-radius: 60px;
 		  border-bottom-left-radius: 60px;
 		  border-bottom-right-radius: 60px;
-
 		  animation-name: diagonal-slide;
 		  animation-duration: 5s;
 		  animation-iteration-count: 10;
-		}
+		  float: left;}
 
 @keyframes diagonal-slide {
 
@@ -306,9 +305,19 @@ color: teal;}
 
     	.circle 
     		{border-radius: 50%;
-    		width: 15%;
-    		height: 15%;
-	    	margin: 3% auto 3% auto;}
+    		width: 5%;
+    		height: 5%;
+	    	margin: 3% auto 3% auto;
+	    	float: left;
+	    	padding: 5%;
+	    	background-color: green;
+	    	ms-transform: translate(50px,100px); 
+			   	-webkit-transform: translate(50px,100px); 
+			    transform: translate(50px,100px);
+			     -webkit-transition-duration: 0.3s;
+  			  transition-duration: 0.3s;
+			    box-shadow: 110px 0 10px navy, 330px 0 0 -30px chartreuse,  330px 5px 5px -30px beige;
+}
 
 	    .circle img {
 	    	width: 100%;
@@ -342,25 +351,27 @@ color: teal;}
 			right: 10%;
 			top: 35%;
 }
-	#triangle-topleft:hover {
-  animation-name: diagonal-slide;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-}
+				#triangle-topleft:hover {
+			  animation-name: diagonal-slide;
+			  animation-duration: 5s;
+			  animation-iteration-count: 1;
+			  -webkit-transition-duration: 0.3s;
+  			  transition-duration: 0.3s;
+			}
 
-@keyframes diagonal-slide {
+			@keyframes diagonal-slide {
 
-  from {
-    left: 0;
-    top: 35%;
-  }
+			  from {
+			    left: 0;
+			    top: 35%;
+			  }
 
-  to {
-    left: 600px;
-    top: 600px;
-  }
+			  to {
+			    left: 600px;
+			    top: 600px;
+			  }
 
-}
+			}
 
 		
 
@@ -396,10 +407,7 @@ color: teal;}
 
 
 			
- ms-transform: translate(50px,100px); 
-			   	-webkit-transform: translate(50px,100px); 
-			    transform: translate(50px,100px);
-
+ 
 
     	 	.monkey2 {
     	 		width: 50%;
