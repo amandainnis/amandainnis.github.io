@@ -89,6 +89,10 @@ table {
 		{width: 50%;
 		float: left;}
 
+        .col_s5m
+        {width: 50%;
+        float: left;}
+
 		.col_s6
 		{width: 60%;
 		float: left;}
@@ -308,6 +312,11 @@ table {
         	line-height: 1.4em;
         }
 
+
+        .col_s5e
+        {width: 50%;
+        float: left;}
+
         #imgaboutme {
         	margin: 1em auto; 
         	float: right;
@@ -393,6 +402,8 @@ table {
            #experiment {
         	background-image: url("../img/synthesis5b.png");
         	background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #B1DBDD;
         	-webkit-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
 			-moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
 			box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
@@ -418,9 +429,9 @@ table {
         	font-weight: 700;
         }
         	.col_s25 {
-        		width: 25%;
+        		width: 22%;
         		float: left;
-        		padding: 1% 2.9% 1% 2.9%;
+        		padding: 1% 4.9% 1% 4.9%;
         	}
 
 	    /*	#processcol {
@@ -468,6 +479,10 @@ table {
 	    	}
 
 /*////////////////////ALL PROJ PAGE///////////////////*/ 
+            .col_s3p
+            {width: 30%;
+        float: left;}
+
 
 
 			#allproj  {
@@ -556,4 +571,283 @@ table {
 	   	}
 /*section specific to project page*/
 
-		
+/* media queries media queries media queries*/
+@media only screen and (max-width: 1200px) {
+        .col_s3p
+            {width: 28%;
+            float: left;}}
+
+         @media only screen and (max-width: 1134px) {
+
+         #textaboutme2 
+           {margin: 2em auto 1em auto;
+            background: rgba(18,18,18,.5);
+            width: 80%;
+
+        }
+}
+@media only screen and (max-width: 1034px) {
+
+         #masthead {
+        width: 100%;
+        background-color: #1D91A2;
+        background-image: url("../img/portfolio_duotone1sml3.png");  
+        background-repeat: no-repeat;
+        background-size: 100%;}
+
+
+         #textaboutme2 
+           {margin: 2em auto 1em auto;
+            background: rgba(18,18,18,.5);
+            width: 90%;
+
+        }
+         .col_s5e
+        {width: 60%;
+        float: left;}
+         .col_s25 {
+                width: 24%;
+                float: left;
+                padding: 1% 3.9% 1% 3.9%;
+            }
+}		
+
+
+@media only screen and (max-width: 860px) {
+
+        h1 {
+        height: 2em;
+        font-family:'Roboto'; 
+        font-weight: 100;
+        color: honeydew;
+        padding-top: 1.1em;
+        padding-bottom: .5em;
+        text-align: left;
+        font-size: 5em;
+        /*margin-left: 2.7em;*/}
+
+
+       #masthead {
+        width: 100%;
+        background-color: #1D91A2;
+        background-image: url("../img/portfolio_duotone1sml4.png");  
+        background-repeat: no-repeat;
+        background-size: 100%;}
+
+       #masttext
+       {width: 70%;}
+
+        .col_s5m
+        {width: 80%;
+        float: left;}
+
+
+         #textaboutme2 
+           {margin: 1em auto 1em auto;
+            background: rgba(18,18,18,.5);
+            width: 90%;
+
+        }
+         .col_s5e
+        {width: 80%;
+        float: left;}
+       
+
+
+ #textaboutme2 h2{
+            font-family: 'Roboto';
+            color: #ABFEFF;
+            font-size: 2em;
+            margin-top: 1em;
+            padding-top: 1em;
+            border-bottom: white solid;}
+
+       #imgaboutme img {
+            width: auto;
+           height: 100%;
+
+        }
+        #experiment {
+            background-image: url("../img/synthesis5c.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #B1DBDD;
+            -webkit-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+            -moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+            box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+        }
+     
+        .col_s25 {
+                width: 24%;
+                float: left;
+                padding: 1% 3.9% 1% 3.9%;
+            }
+             /*.col_s25 {
+                width: 26%;
+                float: left;
+                padding: 1% 2.9% 1% 2.9%;
+            }*/
+            #portrait {
+            padding: .7em;   
+            }
+}
+
+@media only screen and (max-width: 680px) {
+     h1 {
+        height: 2em;
+        font-family:'Roboto'; 
+        font-weight: 100;
+        color: honeydew;
+        padding-top: 1.1em;
+        padding-bottom: .5em;
+        text-align: left;
+        font-size: 5em;
+        /*margin-left: 2.7em;*/}
+
+         #masthead h2 {
+            font-family: 'Roboto';
+            font-weight: 700;
+            color: #E57DFB;
+            font-size: 2em;
+            padding-bottom: 2em;
+            }
+
+          #masttext
+       {width: 90%;
+        margin: 2em 0 0 0;
+            padding: 1em 1em 0 0;
+            border-top: black solid;}
+
+         #textaboutme2 
+           {margin: 1em auto 1em auto;
+            background: rgba(18,18,18,.5);
+            width: 90%;
+
+        }
+         .col_s5e
+        {width: 90%;
+        float: left;}
+       
+
+
+ #textaboutme2 h2{
+            font-family: 'Roboto';
+            color: #ABFEFF;
+            font-size: 2em;
+            margin-top: 1em;
+            padding-top: 1em;
+            border-bottom: white solid;}
+
+       #imgaboutme img {
+            width: auto;
+           
+
+        }
+     #experiment {
+            background-image: url("../img/synthesis5d.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #B1DBDD;
+            -webkit-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+            -moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+            box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+        }
+     
+
+}
+
+@media only screen and (max-width: 580px) {
+
+  #masttext
+       {width: 90%;
+        margin: 2em 0 1em 0;
+            padding: 1em 1em 0 0;
+            border-top: black solid;}
+
+         #textaboutme2 
+           {margin: 1em auto 1em auto;
+            background: rgba(18,18,18,.5);
+            width: 90%;
+
+        }
+         .col_s5e
+        {width: 100%;
+        float: left;}
+       
+
+
+ #textaboutme2 h2{
+            font-family: 'Roboto';
+            color: #ABFEFF;
+            font-size: 1.7em;
+            margin-top: 1em;
+            padding-top: 1em;
+            border-bottom: white solid;}
+
+       #imgaboutme img {
+            width: auto;
+           
+
+        }
+     #experiment {
+            background-image: url("../img/synthesis5e.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #B1DBDD;
+            -webkit-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+            -moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+            box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
+        }
+     #textaboutme2 h3{
+            font-family: 'Roboto';
+            color: #ABFEFF;
+            font-size: 1.1em;
+            margin-top: .5em;
+            padding: .5em 0em .7em 0.2em;
+        }
+        .col_s25 {width: 75%;
+                float: none;
+                padding: 1% 1.9% 1% 8.9%;} 
+
+                 .col_s3p
+            {width: 70%;
+        float: none;
+        margin-left: 10%;}
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+ #masthead {
+        width: 100%;
+        background-color: #1D91A2;
+        background-image: url("../img/portfolio_duotone1sml5.png");  
+        background-repeat: no-repeat;
+        background-size: 100%;}
+
+        .col_s3b        /*this is the column for tools, will need to be queried*/
+           {width: 80%;
+           float: none;
+            margin: 0 0 0 0em;}
+
+            .col_s6b {
+                width: 85%;
+                margin: 0 0 0 15%;
+            }
+
+            #tools img{
+            width: 70%;
+            }
+
+             .col_s3p
+            {width: 70%;
+        float: none;
+        margin-left: 10%;}
+
+}
+
+
+
+
+

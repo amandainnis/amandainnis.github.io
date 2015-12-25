@@ -152,6 +152,7 @@ body {
 		font-weight: 1.1rem;
 		line-height: 1.3rem;
 		padding-top: 2em;
+		text-align: center;
 		
 	}
 
@@ -182,28 +183,81 @@ body {
 		font-weight: 600;
 		font-size: 2em;}
 
+ @media only screen and (max-width: 1160px) 
+ {h2}
+
  @media only screen and (max-width: 960px) {
 		 h2 {
 		 	width: 40%;
 		 	margin-top: 5rem;
-			 }
+		 	margin-bottom: 1rem;
+			 /*margin: 45% 5% 15% 0;*/}
+			 nav {
+		   width: 60%;}
+		   
+		   nav a{
+		padding: .7em;
+		font-size: 1.2em;
+		margin: 2em .7em .7em .7em;}
+
 	}
 
  @media only screen and (max-width: 860px) {
 		 h2 {
-		 	width: 60%;
+		 	width: 50%;
 		 	margin-top: 13rem;
 			 }
+		nav {
+		   width: 60%;}
+	 
 	}
 
 
  @media only screen and (max-width: 760px) {
+		 .container {
+				width: 100%;
+			}
+
 		 h2 {
-		 	width: 60%;
+		 	width: 50%;
 		 	margin-top: 13rem;
-			float: none; }
+			float: right; }
+		nav {
+		   width: 60%;}
+
 	}
 
+@media only screen and (max-width: 660px) {
+		 .container {
+					width: 100%;}
+
+		  h2 {
+			 	width: 50%;
+			 	margin-top: 13rem;
+			 	margin-bottom: 1rem;
+				float: right; 
+		 		}
+		 nav {
+			   width: 60%;}
+		 
+		 nav a{
+			padding: .5em;
+			font-size: 1.2em;
+			margin: 2em .5em .5em .5em;}
+		 
+		 h1 {
+			font-size: 3rem;
+			font-weight: 700;
+			position: absolute;
+			top: .7rem;
+			padding: 1rem;
+			}
+
+			#center {
+		width: 90%;
+		margin: 2% auto;
+	}
+	}
 
 
 
