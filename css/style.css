@@ -563,7 +563,7 @@ table {
                 margin: 0 auto;
             }
 
-    	.col_icon        /*this is the column for tools, will need to be queried*/
+    	.col_icon       
 	       {width: 6%;
 	       float: left;
 	   		margin: 0 0 0 2em;
@@ -580,6 +580,8 @@ table {
         		text-decoration: none;
         		cursor: pointer;
 	   	}
+
+      
 /*section specific to project page*/
 
 /* media queries media queries media queries*/
@@ -621,10 +623,44 @@ table {
                 float: left;
                 padding: 1% 3.9% 1% 3.9%;
             }
+
+
+             #icongroup {
+                width: 90%;
+                padding-left: 1%;
+                margin: 0 auto;
+            }
+
+
+/*//////////////*/
+        .col_icon       
+           {width: 8%;
+           float: left;
+            margin: 0 0 0 2em;
+            padding: 2%;}
+
+       
+
+        .col_icon a {
+            font-family: 'Roboto';
+                font-weight: 500;
+                padding-bottom: 1em;
+                text-decoration: none;
+                cursor: pointer;
+        }
+
+/*////////////////////*/
+
+
+
 }		
 
 
 @media only screen and (max-width: 860px) {
+
+   
+
+
 
         h1 {
         height: 2em;
@@ -647,6 +683,12 @@ table {
 
        #masttext
        {width: 70%;}
+
+       #icongroup {
+                width: 100%;
+                padding-left: 3%;
+                margin: 0 auto;
+            }
 
         .col_s5m
         {width: 80%;
@@ -701,9 +743,54 @@ table {
             #portrait {
             padding: .7em;   
             }
+
+            .col_icon       
+           {width: 8%;
+           float: left;
+            margin: 0 0 0 2em;
+            padding: 2% 1% 2% 1%;}
+
+             .col_icon img {
+            width: 100%;
+        }   
 }
 
 @media only screen and (max-width: 680px) {
+    
+
+     nav.menu {
+        color: gray;
+        display: none;
+        background: white;
+        width: 100%;
+        position: fixed; /*with position relative it has a shadow, without, it doesnt  WTF??*/
+        /*position: fixed; top: 0%; left: 0%; */
+        top:0;
+        text-decoration: none;
+        margin: 0 auto;
+        padding: 1em 1em 1em 1em;
+        text-align: left;
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }  
+     
+    
+        a#bloc_p {
+        color: gray; 
+        text-decoration: none;
+        font-family:'Roboto Condensed'; 
+        font-weight: 100;
+        font-size: 1em;
+        padding-top: 1.5em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 1.5em;
+        }       
+
+
+
+
      h1 {
         height: 2em;
         font-family:'Roboto'; 
@@ -763,11 +850,51 @@ table {
             -moz-box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
             box-shadow: 12px 10px 37px -6px rgba(139,150,153,1);
         }
-     
+      .col_icon       
+           {width: 12%;
+           float: left;
+            margin: 0 0 0 2em;
+            padding: 2% 2% 2% 2%;}
+#icongroup {
+                width: 90%;
+                padding-left: 5%;
+                margin: 0 auto;
+            }
 
 }
 
 @media only screen and (max-width: 580px) {
+ nav.menu {
+        color: gray;
+        display: none;
+        background: white;
+        width: 100%;
+        position: fixed; /*with position relative it has a shadow, without, it doesnt  WTF??*/
+        /*position: fixed; top: 0%; left: 0%; */
+        top:0;
+        text-decoration: none;
+        margin: 0 auto;
+        padding: 1em 1em 1em 1em;
+        text-align: left;
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }  
+     
+    
+        a#bloc_p {
+        color: gray; 
+        display: block;
+        text-decoration: none;
+        font-family:'Roboto Condensed'; 
+        font-weight: 100;
+        font-size: 1em;
+        padding-top: 1.5em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid gray;
+        }       
 
   #masttext
        {width: 90%;
@@ -824,6 +951,19 @@ table {
             {width: 70%;
         float: none;
         margin-left: 10%;}
+
+        #icongroup {
+                width: 99%;
+                padding-left: 5%;
+                margin: 0 auto;
+            }
+
+            .col_icon       
+           {width: 12%;
+           float: left;
+            margin: 0 2em 0 2em;
+            padding: 3%;}
+
 }
 
 
@@ -856,6 +996,12 @@ table {
         float: none;
         margin-left: 10%;}
 
+
+ #icongroup {
+                width: 99%;
+                padding-left: 15%;
+                margin: 0 auto;
+            }
 }
 
 
