@@ -556,11 +556,21 @@ table {
         		padding-bottom: 1em;
         	}
 
+           
+            #icongroup {
+                width: 90%;
+                padding-left: 20%;
+                margin: 0 auto;
+            }
 
-    	.col_s3c        /*this is the column for tools, will need to be queried*/
-	       {width: 30%;
+    	.col_icon        /*this is the column for tools, will need to be queried*/
+	       {width: 10%;
 	       float: left;
 	   		margin: 0 0 0 2em;}
+
+        .col_icon img {
+            width: 90%;
+        }   
 
 	   	.col_s3c a {
 	   		font-family: 'Roboto';
