@@ -412,10 +412,10 @@ nav.projectMenu {
 			 #slyde3b p {
         	font-size: 1em;
         	font-weight: 400;
-        	font-family: 'Roboto Condensed';  
-        	padding: .7em;
+        	font-family: 'Roboto';  
+        	padding: 1em;
         	color: black;
-        	line-height: 1.4em;
+        	line-height: 1.6em;
         }
 			#slyde4
 			{background-color: #F2FBFB;}
