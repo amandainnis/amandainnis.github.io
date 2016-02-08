@@ -939,6 +939,13 @@ nav.projectMenu {
 				}
 
 
+
+
+		video {
+			margin-bottom: 2em;
+		}		
+
+
 /* media queries media queries media queries*/
 		 @media only screen and (max-width: 1220px) {
 		 	/*nav {width:14%;}*/

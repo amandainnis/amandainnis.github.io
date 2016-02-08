@@ -272,21 +272,13 @@ color: teal;}
 		}
 
 
-		#pacman {
-		  width: 0px;
-		  height: 0px;
-		  border-right: 60px solid transparent;
-		  border-top: 60px solid aquamarine;
-		  border-left: 60px solid red;
-		  border-bottom: 60px solid yellow;
-		  border-top-left-radius: 60px;
-		  border-top-right-radius: 60px;
-		  border-bottom-left-radius: 60px;
-		  border-bottom-right-radius: 60px;
+		
+		  
+		  #pacman {
 		  animation-name: diagonal-slide;
 		  animation-duration: 5s;
 		  animation-iteration-count: 10;
-		  float: left;}
+		  }
 
 @keyframes diagonal-slide {
 
@@ -296,12 +288,23 @@ color: teal;}
   }
 
   to {
-    left: 100px;
+    left: 400px;
     top: 100px;
   }
 
 }
 
+#pacman {
+		  width: 0px;
+		  height: 0px;
+		  border-right: 60px solid transparent;
+		  border-top: 60px solid aquamarine;
+		  border-left: 60px solid red;
+		  border-bottom: 60px solid yellow;
+		  border-top-left-radius: 60px;
+		  border-top-right-radius: 60px;
+		  border-bottom-left-radius: 60px;
+		  border-bottom-right-radius: 60px;}
 
     	.circle 
     		{border-radius: 50%;

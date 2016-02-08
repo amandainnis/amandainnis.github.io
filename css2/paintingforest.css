@@ -226,3 +226,73 @@ border: 9px inset transparent;                             /* #eb41eb*/
 			-webkit-box-shadow: 10px 20px 41px -2px rgba(76,161,113,1);
 -moz-box-shadow: 10px 20px 41px -2px rgba(76,161,113,1);
 box-shadow: 10px 20px 41px -2px rgba(76,161,113,1);}
+
+
+			#animationcontainer {
+				position: relative;
+				width: 90%;
+				top: 39%;
+				left: 50%;
+				padding-top: 10%;
+			}
+
+
+			#banana {
+				font-family: 'Roboto';
+				letter-spacing: 20px;
+				height: 20px;
+				width: 70px;
+				background-color: yellow;
+				position: absolute;
+				top: 200px;
+				left: 100px;
+				-webkit-transform: translate(100px) rotate(20deg);
+ 				-webkit-transform-origin: 0 -250px;
+  				transform: translate(100px) rotate(20deg);
+  				transform-origin: 0 -250px;
+  				border-top-left-radius: 20px;
+  				animation-duration: 3s;
+  				animation-name: slidein;}
+ 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+ 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+			#leaf {
+			font-family: 'Roboto';
+				letter-spacing: 20px;
+				height: 20px;
+				width: 70px;
+				background-color: green;
+				position: absolute;
+				top: 10px;
+				left: 10px;	
+			}
+				
+			#leaf2 {
+			font-family: 'Roboto';
+				letter-spacing: 20px;
+				height: 200px;
+				width: 70px;
+				background-image: linear-gradient(to right, chartreuse, green, gray, black);
+				position: relative;
+				top: 20px;
+				left: 20px;	
+			}
+				
+
+
+
+  
+
+
+
