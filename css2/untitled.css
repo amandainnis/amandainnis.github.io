@@ -81,6 +81,24 @@ body {
 	margin: 10px;
 	box-shadow: 70px 0 10px yellow;}
 
+.triangle1b {
+	width: 0;
+    height: 0;
+    float: left;
+	border-top: 60px rgba(252,214,240,1) solid;
+    border-right: 60px transparent solid;
+	margin: 10px;
+	box-shadow: 70px 0 10px yellow;}
+
+.triangle1:hover {
+	border-top: 60px pink solid;
+}
+
+
+.triangle1:hover ~ .triangle1 {
+	border-top: 60px rgba(159,9,181,.2) solid;
+}
+
 
 .triangle2 {
 	width: 0px;
@@ -175,3 +193,16 @@ body {
 				        opacity : 1;
 				    }
 				}
+
+	#teal:hover {
+			background-color: magenta;
+		}
+
+		#teal:hover + #teal2{
+			background-color: magenta;
+		}
+
+		#teal:hover ~ #triangle-topleft {
+			border-top: 100px pink solid;
+		}
+
