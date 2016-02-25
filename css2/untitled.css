@@ -99,6 +99,13 @@ body {
 	border-top: 60px rgba(159,9,181,.2) solid;
 }
 
+.triangle1:hover ~ .triangle1b {
+	border-top: 60px yellow solid;
+}
+
+.triangle1b:hover ~ .triangle1 {
+	border-top: 60px aquamarine solid;
+}
 
 .triangle2 {
 	width: 0px;
