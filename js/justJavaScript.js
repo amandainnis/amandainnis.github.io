@@ -3,3 +3,7 @@ function greetMe(yourName) {
 }
 
 greetMe("World");
+
+var login = document.querySelector("div.user-panel.main input[name=login]");
+
+greetMe(login);
