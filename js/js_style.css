@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Megrim|Lobster);
+
 
 
 
@@ -84,13 +84,85 @@ h1 {
 
 #canvasOneContainer {
 	width: 100%;
+	background: rgba(173,250,219,1);
+background: -moz-linear-gradient(top, rgba(173,250,219,1) 0%, rgba(247,252,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,250,219,1)), color-stop(100%, rgba(247,252,255,1)));
+background: -webkit-linear-gradient(top, rgba(173,250,219,1) 0%, rgba(247,252,255,1) 100%);
+background: -o-linear-gradient(top, rgba(173,250,219,1) 0%, rgba(247,252,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(173,250,219,1) 0%, rgba(247,252,255,1) 100%);
+background: linear-gradient(to bottom, rgba(173,250,219,1) 0%, rgba(247,252,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adfadb', endColorstr='#f7fcff', GradientType=0 );
+	
+	/*background-image: url("img/cloud.png");
+	background-repeat: repeat-x;
+	background-position: top 10px;*/
+
+	
 }
 
  canvas {
- 	border: 2px aliceblue outset;
- 	display: block;
- 	margin: 1em auto;
+ 	/*border: 2px aliceblue outset;*/
+ 	display: inline-block;
+ 	margin: 1em auto 0 auto;
+ 	position: relative;
+ 	z-index: 3;
  }
+
+.tree {
+	width: 30%;
+	height: 380px;
+	padding: 10%;
+	color: green;
+	transform: skew(-10deg);
+	float: left;
+	position: relative;
+	left: -600px;
+	background-color: rgba(46, 106, 72, 54);
+	-webkit-box-shadow: 600px -44px 5px 0px rgba(25,89,13,1);
+	-moz-box-shadow: 600px -44px 5px 0px rgba(25,89,13,1);
+	box-shadow: 600px -44px 5px 0px rgba(25,89,13,1);
+
+	border-radius: 10px 200px 100px 200px;
+	-moz-border-radius: 10px 200px 100px 200px;
+	-webkit-border-radius: 10px 200px 100px 200px;
+	z-index: 5;
+}
+
+.trunk {
+	width: 10%;
+	display: inline-block;
+	position: relative;
+	height: 200px;
+	padding: 1%;
+	left: -300px;
+	background-image: linear-gradient(to right, #896634, #DEAA66, #896634, black);
+	z-index: 4;
+}
+
+
+.cloudClass{
+	/*background-image: url("img/cloud.png");*/
+	width: 100px;
+	float: left;
+	position: relative;
+	z-index: 1;
+	/*padding: 25px;*/
+
+}
+.cloudClass img{
+	width: 100%;
+}
+
+.water {
+	width: 80%;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	top: 450px;
+	left: 10%;
+	z-index: 2;
+	background-color: #38E7E6;
+}
 
 /*canvas#canvas1 {
 	width: 600px;
@@ -99,4 +171,52 @@ h1 {
 	display: block;
 	margin: 1em auto;
 }*/
+@media only screen and (max-width: 1230px) {
 
+.trunk {
+	width: 10%;
+	display: inline-block;
+	position: relative;
+	height: 200px;
+	padding: 1%;
+	left: -200px;
+	background-image: linear-gradient(to right, #896634, #DEAA66, #896634, black);
+	z-index: 4;
+}
+.cloudClass {
+	display: none;
+}
+
+}
+@media only screen and (max-width: 1050px) {
+	.tree {
+		display: none;
+	}
+
+	.trunk {display: none;}
+
+	#canvasOneContainer {
+	margin: 0 auto;}
+
+	canvas {
+		display: block;
+		margin: 0 auto;}
+	
+}
+	
+
+@media only screen and (max-width: 600px) {
+
+	.trunk {
+		display: none;}
+
+	.tree {
+		display: none;
+	}
+
+	.water {
+		display: none;
+	}
+
+
+} /*end media query*/
