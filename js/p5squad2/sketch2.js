@@ -1,4 +1,4 @@
-var waveX;
+
 
 function setup() {
   var canvasTwo= createCanvas(580, 580);

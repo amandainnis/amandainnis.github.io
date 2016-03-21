@@ -65,7 +65,8 @@ function draw() {
 
 
 // When the user clicks the mouse
-function mousePressed() {
+function mousePressed(evt) {
+  evt.preventDefault();
   // Check if mouse is inside the circle
   var d = dist(mouseX, mouseY, 360, 200);
   if (d < 100) {
