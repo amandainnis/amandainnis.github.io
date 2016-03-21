@@ -185,11 +185,18 @@ function draw() {
    arc(bushX + 1, 285, 20, 20, 180, 0); } // arc (x, y, width, height, angle start, angle stop)
 
 
+   //bezier(x1,y1,x2,y2,x3,y3,x4,y4)
+  noFill();
+  stroke(117, 95, 47);
+  strokeWeight(5); 
+  bezier(0, 354, 488, 452, 250, 514, width, 500);
 
   
 
 
 
+
+  noStroke();
   fill(62, 46, 24);
   rect(42 + horseX, 456, 33, 26, 22);//body 1
   rect(60 + horseX, 458, 47, 26, 22); //body 2
@@ -246,16 +253,24 @@ function draw() {
         speed = -1
       };  
 
+var tailY = random(-10, 10);
+noFill();
+//stroke(r, 46, r);
+stroke(0);
+strokeWeight(8);
+  beginShape();
+  vertex(horseX + 113, 464);
+  bezierVertex(horseX + 122, 452, horseX + 140, 487, horseX + 150, 477 + tailY);
+  endShape();
 
 
- // +100 on all the  ys
   //fill(horseX, 46, horseX - 60);
-  fill(r, 46, r);
-  ellipse(118 + horseX, 466, 14, 10); //TAIL closest to butt
-  ellipse(120 + horseX, 468, 14, 10);
-  ellipse(122 + horseX, 470, 14, 10);
-   ellipse(124 + horseX, 472, 14, 10);
-  ellipse(133 + horseX, 477, 26, 12); //widest furthest tail
+  //fill(r, 46, r);
+  //ellipse(118 + horseX, 466, 14, 10); //TAIL closest to butt
+  //ellipse(120 + horseX, 468, 14, 10);
+  //ellipse(122 + horseX, 470, 14, 10);
+   //ellipse(124 + horseX, 472, 14, 10);
+  //ellipse(133 + horseX, 477, 26, 12); //widest furthest tail
  
   
   
@@ -265,7 +280,7 @@ function draw() {
   			speed = - 1;
   		}
   		else if (horseX == -120) {
-  			horseX = width +20;
+  			horseX = width +600;
   		};
 
  // horseX = horseX + speed;
