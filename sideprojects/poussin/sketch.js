@@ -255,8 +255,8 @@ function draw() {
 
 var tailY = random(-10, 10);
 noFill();
-//stroke(r, 46, r);
-stroke(0);
+stroke(r, 46, r);
+//stroke(0);
 strokeWeight(8);
   beginShape();
   vertex(horseX + 113, 464);
