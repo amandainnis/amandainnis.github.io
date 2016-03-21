@@ -3,13 +3,15 @@
 var horseX;
 var speed;
 var cloudX;
+var r = 0;
+var b = 255;
 
 function setup() {
   var canvasTwo = createCanvas(580, 580);
   canvasTwo.parent('myParent');
   horseX = 480;
   speed = -1;
-  var cloudX = 25;
+  cloudX = 0;
 }
 
 function draw() {
@@ -18,7 +20,8 @@ function draw() {
   noStroke();
  
   fill(122, 141, 144);
-  triangle(300, 180, 400, 80, 500, 180);  //mountain
+  quad(300, 180, 400, 80, 420, 85, 500, 180);
+  //triangle(300, 180, 400, 80, 500, 180);  //mountain
   fill(149, 159, 152);
   triangle(300, 180, 400, 80, 350, 180);  //light side of mountain
 
@@ -31,16 +34,23 @@ function draw() {
 
   
 
-  fill(255);
-  ellipse(25, 75, 30, 40);  //cloud
-  ellipse(45, 75, 30, 30);
-  ellipse(30, 80, 80, 30);
+
+  
+
+  fill(228, 227, 190);
+  ellipse(250, 55, 30, 40);  //cloud
+  ellipse(270, 55, 30, 30);
+  ellipse(255, 60, 80, 30);
+  
+  
+
+  
 
   fill(116, 124, 114);  //below mountain
   rect(0, 180, 600, 60);
 
-  fill(116, 114, 114);
-  rect(0, 180, 600, 20);
+  // fill(116, 114, 114);
+  // rect(0, 180, 600, 20);
 
   fill(155, 133, 84);  //hill
   triangle(290, 225, 450, 175, 550, 225);
@@ -176,6 +186,8 @@ function draw() {
 
 
 
+  
+
 
 
   fill(62, 46, 24);
@@ -219,26 +231,53 @@ function draw() {
   quad(119 + horseX, 497, 124 + horseX, 518, 129 + horseX, 514, 126 + horseX, 494); // far right fore leg
   quad(127 + horseX, 521, 123 + horseX, 514, 128 + horseX, 512, 132 + horseX, 517); //hoof
 
+
+   var r = map(cloudX, 0, width, 0, 255);
+  var b = map(cloudX, 0, width, 255, 0);
+  fill(r, 227, b);
+  ellipse(cloudX, 550, 20, 20);
+  //ellipse(r, 570, 20, 20);
+  
+  cloudX = cloudX + speed;
+      if (cloudX < 1) {
+        speed = 1;
+      }
+      else if (cloudX > width) {
+        speed = -1
+      };  
+
+
+
  // +100 on all the  ys
-  fill(horseX, 46, horseX - 60);
+  //fill(horseX, 46, horseX - 60);
+  fill(r, 46, r);
   ellipse(118 + horseX, 466, 14, 10); //TAIL closest to butt
   ellipse(120 + horseX, 468, 14, 10);
   ellipse(122 + horseX, 470, 14, 10);
    ellipse(124 + horseX, 472, 14, 10);
   ellipse(133 + horseX, 477, 26, 12); //widest furthest tail
-  rotate(-130);
+ 
+  
   
 
-  horseX = horseX + speed;
-  		if (horseX > 479) {
+  horseX = horseX - 1;
+  		if (horseX > width + 20) {
   			speed = - 1;
   		}
-  		else if (horseX < -20) {
-  			speed = 1;
+  		else if (horseX == -120) {
+  			horseX = width +20;
   		};
 
+ // horseX = horseX + speed;
+ //      if (horseX > 479) {
+ //        speed = - 1;
+ //      }
+ //      else if (horseX < -20) {
+ //        speed = 1;
+ //      };
   
-
-  	
+//fill(199, 198, 155);
   
-} //end of draw function
+ 
+  
+}; //end of draw function
