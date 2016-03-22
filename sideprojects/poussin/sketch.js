@@ -242,7 +242,7 @@ function draw() {
    var r = map(cloudX, 0, width, 0, 255);
   var b = map(cloudX, 0, width, 255, 0);
   fill(r, 227, b);
-  ellipse(cloudX, 550, 20, 20);
+  ellipse(cloudX, 550, 20, 20);   //the moving ball
   //ellipse(r, 570, 20, 20);
   
   cloudX = cloudX + speed;
@@ -255,6 +255,7 @@ function draw() {
 
 var tailY = random(-10, 10);
 noFill();
+var r = map(cloudX, 0, width, 100, 200);
 stroke(r, 46, r);
 //stroke(0);
 strokeWeight(8);
@@ -263,6 +264,22 @@ strokeWeight(8);
   bezierVertex(horseX + 122, 452, horseX + 140, 487, horseX + 150, 477 + tailY);
   endShape();
 
+
+
+noStroke();
+
+fill(100, r, 119);
+ellipse(0, 350, 60, 60);
+
+ellipse(550, 350, 10, 5);
+
+//this is HOW THINGS TAKE AN ANGLE, somehow they always have to have TRANSLATE
+// translate(500, 400);  
+// angleMode(DEGREES);
+// rotate(70);
+// rect(20, 50, 52, 52, 10);
+// arc(20, 20, 20, 20, 180, 0);
+// ellipse(500, 400, 20, 10)
 
   //fill(horseX, 46, horseX - 60);
   //fill(r, 46, r);
