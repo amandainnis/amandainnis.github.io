@@ -6,12 +6,22 @@ var cloudX;
 var r = 0;
 var b = 255;
 
+// var img;
+// function preload() {
+//   img = loadImage('ovalblur.png');
+// }
+
 function setup() {
   var canvasTwo = createCanvas(580, 580);
   canvasTwo.parent('myParent');
   horseX = 480;
   speed = -1;
   cloudX = 0;
+  //image(img, 500, 500);
+//   loadImage("ovalblur.png", function(img) {
+//     image(img, 0, 0);
+//   });
+// }
 }
 
 function draw() {
@@ -191,12 +201,67 @@ function draw() {
   strokeWeight(5); 
   bezier(0, 354, 488, 452, 250, 514, width, 500);
 
+   
+// beginShape();
+// vertex(105,362);
+// vertex(20,402);
+// vertex(17,441);
+// vertex(118,460);
+// vertex(161,447);
+// vertex(183,437);
+// vertex(150,377);
+// endShape(CLOSE);
+  
   
 
 
+//   // Draw the image at its default size
+// image(getImage("cute/CharacterBoy"), 100, 100);
 
+// // Draw a smaller image
+// image(getImage("cute/CharacterBoy"), 100, 100, 40, 80);
+  //grass
+stroke(132, 122, 61);
+strokeWeight(1);
+for (var grassY = 0; grassY < 200; grassY +=10) {
+for (var grassX =0; grassX < width; grassX +=5) {
+line(0 + grassX, 400 + grassY, 3 + grassX, 390 +grassY);
+}};
 
   noStroke();
+
+var r = map(cloudX, 0, width, 100, 140);
+var b = map(cloudX, 0, width, 85, 50);
+fill(100, r, b);
+
+  //rect(x,y,w,h,[tl],[tr],[br],[bl])
+
+  rect(400, 382, 90, 40, 82, 64, 10, 10);
+  
+  rect(20, 362, 90, 80, 62, 46, 30, 30);  //big old bush
+  ellipse(45, 377, 40, 30);
+  ellipse(55, 367, 40, 30);
+  ellipse(75, 370, 50, 40);
+  ellipse(93, 387, 40, 30);
+  ellipse(25, 402, 30, 50);
+  ellipse(99, 410, 30, 50);
+
+  var r = map(cloudX, 0, width, 100, 140);
+  var b = map(cloudX, 0, width, 85, 50);
+  fill(120, r, b);  
+  
+  // for (leafY = 362; leafY < 462; leafY += 7) {
+  // for(leafX = 40; leafX < 110; leafX += 7) {
+  // ellipse(leafX, leafY, 5, 5);}
+  
+  // };
+
+
+  // for(leafX = 20; leafX < 130; leafX += 5) {   //this will make things go in a diagonal
+  //   ellipse(leafX, 382 + leafX, 5, 5);
+  // };
+
+ 
   fill(62, 46, 24);
   rect(42 + horseX, 456, 33, 26, 22);//body 1
   rect(60 + horseX, 458, 47, 26, 22); //body 2
@@ -269,7 +334,12 @@ strokeWeight(8);
 noStroke();
 
 fill(100, r, 119);
-ellipse(0, 350, 60, 60);
+ellipse(0, 300, 10, 15);
+ellipse(10, 310, 30, 20);
+
+
+
+
 
 ellipse(550, 350, 10, 5);
 
@@ -300,6 +370,42 @@ ellipse(550, 350, 10, 5);
   			horseX = width +600;
   		};
 
+
+// var r = map(cloudX, 0, width, 100, 140);
+// var b = map(cloudX, 0, width, 85, 50);
+//   fill(120, r, b);  
+//   ellipse(40, 382, 30, 30);
+//   ellipse(25, 422, 30, 50);
+
+
+  //115, 118, 80
+  // translate(105, 362);  
+  // angleMode(DEGREES);
+  // rotate(30);
+  // ellipse(0, 0, 10, 20);
+  // ellipse(10, 0, 10, 20);
+  // ellipse(20, 0, 10, 20);
+  
+  // translate(-10, 10);  
+  // rotate(90);
+  // ellipse(0, 0, 10, 20);
+  // ellipse(10, 0, 10, 20);
+  // ellipse(20, -10, 10, 20);
+
+  // translate(10, -30);  
+  // rotate(90);
+  // ellipse(0, 0, 10, 20);
+  // ellipse(10, 0, 10, 20);
+  // ellipse(20, -10, 10, 20);
+
+
+
+
+
+//ellipse(105, 362, 10, 30);
+
+
+
  // horseX = horseX + speed;
  //      if (horseX > 479) {
  //        speed = - 1;
@@ -309,7 +415,7 @@ ellipse(550, 350, 10, 5);
  //      };
   
 //fill(199, 198, 155);
-  
- 
+  //image(img,[sx=500],[sy=500],[sWidth=img.width],[sHeight=img.height],[dx=0],[dy=0],[dWidth],[dHeight])
+ //image(img,[sx=0],[sy=0],[sWidth=img.width],[sHeight=img.height],[dx=0],[dy=0],[dWidth],[dHeight])
   
 }; //end of draw function
