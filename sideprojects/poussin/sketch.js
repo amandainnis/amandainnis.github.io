@@ -17,11 +17,7 @@ function setup() {
   horseX = 480;
   speed = -1;
   cloudX = 0;
-  //image(img, 500, 500);
-//   loadImage("ovalblur.png", function(img) {
-//     image(img, 0, 0);
-//   });
-// }
+
 }
 
 function draw() {
@@ -141,11 +137,7 @@ function draw() {
   rect(0, 280, 25, 60);
   triangle(width, 260, width - 210, 260, width, 300);
 
-  // fill(107, 89, 40);
-  // for(brushY=250; brushY < 280; brushY += 5) {
-  // for(brushX = 10; brushX < 100; brushX += 10) {
-  // ellipse(brushX - 5, brushY, 3, 3);}
-  // }; 
+
 
   fill(115, 118, 80);  //bushes green
   angleMode(DEGREES);
