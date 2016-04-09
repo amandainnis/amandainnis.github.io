@@ -335,6 +335,23 @@ ellipse(10, 310, 30, 20);
 
 ellipse(550, 350, 10, 5);
 
+
+fill(77, 77, 48);
+ellipse(0, 550, 60, 80);
+ellipse(5, 555, 80, 80);
+ellipse(10, 560, 80, 60);
+ellipse(33, 537, 45, 25);
+ellipse(30, 568, 180, 60);
+
+
+ellipse(580, 550, 60, 80);
+ellipse(575, 555, 80, 80);
+ellipse(570, 560, 80, 60);
+ellipse(547, 537, 45, 25);
+ellipse(540, 568, 180, 60);
+
+
+
 //this is HOW THINGS TAKE AN ANGLE, somehow they always have to have TRANSLATE
 // translate(500, 400);  
 // angleMode(DEGREES);
@@ -363,51 +380,7 @@ ellipse(550, 350, 10, 5);
   		};
 
 
-// var r = map(cloudX, 0, width, 100, 140);
-// var b = map(cloudX, 0, width, 85, 50);
-//   fill(120, r, b);  
-//   ellipse(40, 382, 30, 30);
-//   ellipse(25, 422, 30, 50);
 
 
-  //115, 118, 80
-  // translate(105, 362);  
-  // angleMode(DEGREES);
-  // rotate(30);
-  // ellipse(0, 0, 10, 20);
-  // ellipse(10, 0, 10, 20);
-  // ellipse(20, 0, 10, 20);
-  
-  // translate(-10, 10);  
-  // rotate(90);
-  // ellipse(0, 0, 10, 20);
-  // ellipse(10, 0, 10, 20);
-  // ellipse(20, -10, 10, 20);
-
-  // translate(10, -30);  
-  // rotate(90);
-  // ellipse(0, 0, 10, 20);
-  // ellipse(10, 0, 10, 20);
-  // ellipse(20, -10, 10, 20);
-
-
-
-
-
-//ellipse(105, 362, 10, 30);
-
-
-
- // horseX = horseX + speed;
- //      if (horseX > 479) {
- //        speed = - 1;
- //      }
- //      else if (horseX < -20) {
- //        speed = 1;
- //      };
-  
-//fill(199, 198, 155);
-  //image(img,[sx=500],[sy=500],[sWidth=img.width],[sHeight=img.height],[dx=0],[dy=0],[dWidth],[dHeight])
- //image(img,[sx=0],[sy=0],[sWidth=img.width],[sHeight=img.height],[dx=0],[dy=0],[dWidth],[dHeight])
-  
+ 
 }; //end of draw function

@@ -81,9 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3e3c6', end
 
 header h1{
 	font-family: 'Work Sans', sans-serif;
-	/*font-family: 'Libre Baskerville', serif;*/
 	font-weight: 200;
-	/*font-style: italic;*/
 	font-size: 2em;
 	margin-bottom: 1em;
 }
@@ -160,24 +158,23 @@ header h1{
 	z-index: 2;
 }
 
-/*#relative {
-	position: relative;
-	width: 600px;
-}*/
+
 
 #myParent {
 	position: relative;
 }
 
 canvas {
- 	/*border: 2px aliceblue outset;*/
- 	/*display: inline-block;*/
  	margin: 0 auto 0 auto;
  	position: relative;
  	float: left;
  	left: -150px;
  	z-index: 1;
  }
+
+
+
+
 
 .centerWrapper {
 	width: 600px;
@@ -190,7 +187,6 @@ canvas {
 
 button#showPainting, button#whoPoussin, button#whoClark {
   background: transparent;
-  /*text-align: center;*/
   border: 2px solid #fff;
   border-radius: 1em;
   color: #fff;
@@ -213,11 +209,6 @@ button#showPainting, button#whoPoussin, button#whoClark {
 	width: 600px;
 }
 
-/*#poussinInfo h1{
-	font-family: 'Libre Baskerville', serif;
-	font-weight: 700;
-	font-size: 3em;
-}*/
 
 
 #poussinInfo h1, #bookInfo h1{
@@ -230,7 +221,6 @@ button#showPainting, button#whoPoussin, button#whoClark {
 
 #bookInfo h1 {
 	text-align: right;
-	/*font-family: 'Libre Baskerville', serif;*/
 }
 
 h5 {
@@ -260,7 +250,6 @@ h6 {
 	width: 600px;
 	/*background-image: url("amazonClark.png");*/
 	background-size: cover;
-	/*font-family: 'Work Sans';*/
 	font-family: 'Libre Baskerville', serif;
 	font-size: 1em;
 	line-height: 1.5em;
@@ -274,6 +263,20 @@ h6 {
 
 }
 
+/* this will be for the other html file*/
+#portParent {
+	float: right;
+	margin-right: 2em;
+	background-image: url("poussinPortrait.jpg");
+	background-size: cover;
+	width: 180px;
+	border: 1px black solid;
+}
 
+/*this will be for whatever iframes are hosted on the page*/
+iframe {
+     display: inline-block;
+     /*margin: 2em auto;*/
+ }
 
 
