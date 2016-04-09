@@ -442,7 +442,7 @@ function draw() {
 
   if(mouseX > 220 && mouseX < 360 && mouseY > 220 && mouseY < 360) {
     //fill(255, 0, 200);
-   blendMode(DIFFERENCE);
+   blendMode(SCREEN);
     //peripheral facets
   //fill(252, 223, 215);  //yellow pinkish
   fill(255);
@@ -523,24 +523,24 @@ function draw() {
   //fill(254, 239, 239);  //WHITISH SQUARE
   quad(270, 270, 270, 290, 280, 300, 290, 290);
 
-  fill(254, 239, 239);
+  fill(254, random(239), 239);
   quad(290, 171, 290, 190, 300, 200, 310, 175);
   
   fill(144, 132, 149);  //GOOD GRAY
   triangle(400, 336, 360, 320, 360, 360); //ONTOP OF bottom middle right facet
   fill(255); //pinkey
   triangle(400, 336, 360, 340, 360, 360); //ONTOP OF bottom middle right facet
-  fill(254, 239, 239); //pinkey
+  fill(254, random(239), 239); //pinkey
   triangle(337, 400, 320, 360, 360, 360);  // ON TOP OF bottom right facet 
-  fill(245, 229, 240); //pale lavendar pink
+  fill(245, random(229), 240); //pale lavendar pink
   triangle(337, 400, 340, 360, 360, 360);
-  fill(117, 109, 124);
+  fill(117, random(109), 124);
   triangle(243, 400, 260, 360, 275, 375);
-  fill(255, 219, 221);
+  fill(255, random(219), 221);
   triangle(180, 243, 189, 282, 171, 285);
   fill(163, 142, 155);
   triangle(400, 243, 360, 260, 360, 220); // ON TOP OF top middle right fa
-  fill(253, 232, 237);
+  fill(253, random(232), 237);
   triangle(400, 243, 360, 260, 360, 280); //lavenderish highlight from top middle right dot
   fill(255, 243, 247);
   triangle(360, 220, 360, 245, 340, 240); //white highlight upper right inner facet corner

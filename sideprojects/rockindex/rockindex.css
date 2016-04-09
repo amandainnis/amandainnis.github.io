@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://github.com/google/fonts/blob/master/ofl/montserrat/Montserrat-Light.ttf);
+@import url(https://github.com/google/fonts/blob/master/ofl/montserrat/Montserrat-Thin.ttf);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,700);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,7 +61,15 @@ table {
 * {box-sizing: border-box;}
 
 body {
-	background: rgba(227,209,200,1);
+	
+	font-size: 14px;
+	/*border: 1em navy solid;*/
+	}
+
+.myContainer {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(227,209,200,1);
 	background: -moz-linear-gradient(top, rgba(227,209,200,1) 0%, rgba(229,222,206,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(227,209,200,1)), color-stop(100%, rgba(229,222,206,1)));
 	background: -webkit-linear-gradient(top, rgba(227,209,200,1) 0%, rgba(229,222,206,1) 100%);
@@ -64,11 +77,7 @@ body {
 	background: -ms-linear-gradient(top, rgba(227,209,200,1) 0%, rgba(229,222,206,1) 100%);
 	background: linear-gradient(to bottom, rgba(227,209,200,1) 0%, rgba(229,222,206,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3d1c8', endColorstr='#e5dece', GradientType=0 );
-	}
-
-.myContainer {
-    width: 95%;
-    margin: 1em auto;
+      
    }
 
    /*#blackGem::before {
@@ -79,6 +88,89 @@ body {
 		  bottom: -50%;
 		  left: -350%;
 		  background: none;}*/
+   
+   h1 {
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 7em;
+		color: #FFEBC4;           /*C4EBFF  F8927E*/
+		text-align: center;
+		/*margin: .1em 0 0 0;*/
+		/*padding: .2em 0 .3em 0;*/
+		position: absolute;
+		/*display: block;*/
+		top: .3em;
+		left: 30%;
+		/*margin: 0 auto;*/
+		/*background: url("img-noise-361x370.png");*/
+		}
+
+		
+	/*header:hover*/
+	header {
+		height: 14em;
+		/*background: url("http://www.eurocheapo.com/blog/wp-content/uploads/2012/07/Mont-Blanc.jpg");*/
+		background: url("melania_qvc.png");
+		background-size: cover;
+		background-position: center -200px;
+		background-color: magenta;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+		-webkit-transition: opacity 0.5s ease-in-out;
+		 -moz-transition: opacity 0.5s ease-in-out;
+		/*background-blend-mode: screen;*/
+	}	
+	
+	header:hover .internet {
+		color: #FFEBC4;
+		font-weight: 600;
+	}
+
+	.showHeader {
+		opacity: 1;
+	}
+
+	section {
+		max-width: 800px;
+		margin: 1em auto;
+		padding: 1em;
+	}
+
+	.space {
+		height: 2em;
+		display: block;
+	}
+	/*h2 {
+		font-family: 'Montserrat-Thin', 'Montserrat-Light';
+		font-size: 2.4em;
+		color: #FFEBC4;           
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: .5em;
+		margin-bottom: .5em;
+	}*/
+
+	p {
+		font-family: 'Source Sans Pro';
+		/*position: relative;*/
+		font-weight: 300;
+		color: #767676;
+		font-size: 1.5em;
+		line-height: 1.5em;
+		text-align: center;
+		/*max-width: 500px;*/
+		margin: 0 auto 1em auto;
+		position: relative;
+		top: -2.3em;
+		letter-spacing: 1px;
+		padding-bottom: 1em;
+		border-bottom: 1px solid #BFB39B;
+	}
+
+	.letter1:hover, .letter2:hover, .letter3:hover, .letter4:hover, .letter5:hover, 
+	.letter6:hover, .letter7:hover, .letter8:hover {
+		color: #FFCF73;
+	}
 
    #blackGem::after { /*gradient slider*/
    		  content: '';
@@ -158,6 +250,7 @@ body {
 	#skyBlueGem {
 		position: relative;
 		display: inline-block;
+		margin: 0 1em;
 		/*left: 150px;*/
 		/*top: -170px;
 		left: -50px;*/
@@ -167,6 +260,7 @@ body {
 	#blueShine {
 		position: relative;
 		display: inline-block;
+		margin: 0 1em;
 		/*float: left;*/
 		/*left: 150px;*/
 	}
@@ -322,7 +416,7 @@ body {
 			}
 
 		canvas {
-			display: inline-block;
+			display: block;
 			/*position: absolute;*/
 			/*top: -40px;*/
 			/*vertical-align: center;*/
@@ -351,13 +445,14 @@ body {
 		  color: #222;
 		  font-size: 24px;
 		  font: Helvetica, Arial, Sans-serif;
-		  height: 6em;
-		  width: 6em;
-		  position: absolute;
+		  height: 5em;
+		  width: 5em;
+		/*  position: absolute;
 		  top: 50%;
-		  left: 50%;
+		  left: 50%;*/
+		  float: right;
 		  transform: translate(-50%, -50%) rotateZ(45deg);
-		  margin-left: 3em;
+		  margin-left: 2em;
 		}
 
 		#squareRound:hover {
