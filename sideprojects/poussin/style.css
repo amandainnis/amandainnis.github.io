@@ -270,7 +270,9 @@ h6 {
 
 }
 
-
+.paintingVisible {
+	opacity: 1;
+}
 
 /*this will be for whatever iframes are hosted on the page*/
 iframe {
