@@ -197,11 +197,12 @@ button#showPainting, button#whoPoussin, button#whoClark {
   margin: 0 auto;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.1em;
+  outline: none;
   /*position: absolute;
   left: 50%;
   top: 700px;*/
   /*transform: translate3d(-50%, -50%, 1em);*/
-  transition: all 0.4s ease-out;
+  /*transition: all 0.4s ease-out;*/
   /*z-index: 2;*/
 
 }
@@ -255,23 +256,21 @@ h6 {
 	line-height: 1.5em;
 }
 
+#showPainting:focus ~ #poussinPainting {
+	opacity: 1;
+}
+
 #poussinPainting {
 	width: 600px;
 	height: 440px;
 	background-image: url("landscape_with_calm sml.png");
 	background-size: cover;
+	opacity: 0;
+	transition: all 0.4s ease-out;
 
 }
 
-/* this will be for the other html file*/
-#portParent {
-	float: right;
-	margin-right: 2em;
-	background-image: url("poussinPortrait.jpg");
-	background-size: cover;
-	width: 180px;
-	border: 1px black solid;
-}
+
 
 /*this will be for whatever iframes are hosted on the page*/
 iframe {
