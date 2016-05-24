@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic);
+
+* {
+	box-sizing: border-box;
+	
+}
+
+body {
+	font-size: 14px;
+	background-color: #D2D2D2;
+	font-family: 'Roboto', sans-serif;
+}
+
+#eventWrapper {
+	width: 500px;
+	height: 500px;
+	/*height: 60%;*/
+	background-color: white;
+	
+	/*overflow: scroll;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+.bar {
+	width: 100%;
+	height: 30px;
+	background-color: #1565C0;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 14px;
+	color: white;
+	padding-left: 25px;
+	padding-top: 8px;
+	text-transform: uppercase;
+}
+
+.innerEventWrapper {
+	width: 500px;
+	height: 415px;
+	overflow-y: scroll;
+	padding-bottom: 45px;
+}
+
+.pretendScrollBar {
+	width: 14px;
+	height: 100%;
+	background-color: #F5F5F5;
+	position: absolute;
+	right: 0px;
+
+}
+
+.pretendScrollDisc {
+	width: 8px;
+	height: 40px;
+	border-radius: 3px;
+	margin: 10px 3px 0 3px;
+	background-color: #C1C1C1;
+	/*position: absolute;*/
+	/*right: 0px;*/
+}
+
+#searchBar {
+	width: 500px;
+	height: 55px;
+	background-color: #FBFCFE;
+	position: relative;
+	top: 0px;
+	z-index: 2;
+	/*border-bottom: 1px gray solid;*/
+}
+
+.searchField {
+	width: 200px;
+	padding: 0 0 10px 25px;
+	margin: 25px 0 0 25px;
+	outline: none;
+	border: none;
+
+	border-bottom: 1px gray solid;
+
+}
+
+#bottomBar {
+	width: 500px;
+	height: 45px;
+	background-color: #F5F5F5;
+	position: fixed;
+	top: 455px;
+	z-index: 2;
+}
+
+.cancelButton {
+	float: right;
+	position: relative;
+	top: 12px;
+	right: 50px;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: rgba(0, 0, 0, .54);
+	letter-spacing: .4px;
+	background-color: #E8E8E8;
+	outline: none;
+	border: none;
+	padding: .7em 0;
+	border-radius: 3px;
+	width: 70px;
+
+}
+
+.textWrapper {
+	width: 56%;
+	padding: 25px 0 0 25px;
+
+}
+
+.eventTitle {
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: .2px;
+	line-height: 1.5em;
+	color: rgba(0,0,0, .87);
+}
+
+.eventLocation {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 12px;
+	letter-spacing: .1px;
+	line-height: 1.5em;
+	color: rgba(0,0,0, .54);
+}
+.eventDate {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 12px;
+	/*font-style: italic;*/
+	letter-spacing: .1px;
+	line-height: 1.5em;
+	color: rgba(0,0,0, .54);
+}
+
+
+
+.inviteButton {
+	float: right;
+	position: relative;
+	top: 35px;
+	right: 35px;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: white;
+	letter-spacing: .4px;
+	background-color: #2196F3;
+	outline: none;
+	border: none;
+	padding: .5em 0;
+	border-radius: 3px;
+	width: 70px;
+
+
+
+}
+
+.inviteButton:hover {
+	background-color: #1565C0;
+	/*transition: box-shadow .2s;
+	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3), 0 1px 10px 0 rgba(0, 0, 0, 0.2); */
+
+	}
+
+
+	/*.inviteButton:hover {
+	transition: box-shadow .2s;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2); 
+
+	}*/
+
+.divItsaRow {
+	width: 100%;
+	
+}
+
+#randoButton {
+	float: right;
+	position: relative;
+	top: 35px;
+	right: 65px;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: white;
+	letter-spacing: .4px;
+	background-color: green;
+	outline: none;
+	border: none;
+	padding: .5em 0;
+	border-radius: 2px;
+	width: 70px;
+}
+	

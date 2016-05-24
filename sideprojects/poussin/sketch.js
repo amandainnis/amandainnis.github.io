@@ -6,6 +6,8 @@ var cloudX;
 var r = 0;
 var b = 255;
 
+
+
 // var img;
 // function preload() {
 //   img = loadImage('ovalblur.png');
@@ -24,6 +26,7 @@ function draw() {
  // background (213,228,231); 
   //light slate blue
   noStroke();
+
  
   fill(122, 141, 144);
   quad(300, 180, 400, 80, 420, 85, 500, 180);
@@ -380,7 +383,7 @@ ellipse(540, 568, 180, 60);
   		};
 
 
-
+// image(img, mouseX, mouseY);
 
  
 }; //end of draw function

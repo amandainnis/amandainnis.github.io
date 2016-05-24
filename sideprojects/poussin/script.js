@@ -1,4 +1,4 @@
-document.getElementById('show-element').onclick = function() {
+document.getElementById('showPainting').onclick = function() {
   var element = document.getElementById('to-show');
   if (element.className === 'hide') {
     element.className = 'show';
