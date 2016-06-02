@@ -36,8 +36,6 @@
 	height: 30px;
 	text-align: center;
 	line-height: 1.2em;
-	font-weight: 500;
-	color: rgba(0, 0, 0, .5);
 	/*display: inline-block;*/
 }
 
@@ -64,7 +62,6 @@
 	text-align:center;
 	padding-right: 3px;
 	line-height: 1.2em;
-	color: black;
 }
 .calendar-box a {
 	text-decoration: none;
