@@ -420,7 +420,19 @@ body {
 
 
 
+.overlay {
+	width: 500px;
+	height: 460px;
+	background-image: url("readership.png");
+	background-size: cover;
+	position: absolute;
+	z-index: 3;
+	top: 130px;
+	left: 25px;
+	display: none;
+}
 
 
-
-
+.overlay img {
+	width: 100%;
+}
