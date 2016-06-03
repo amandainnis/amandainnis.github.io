@@ -124,7 +124,7 @@ header{
 
 .AZ {
 	font-size: 14px;
-	color: rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .7);
 	position: relative;
 	display: inline-block;
 	left: 500px;
@@ -218,15 +218,19 @@ h2 {
  }
 
  .timeElapsed.green {
- 	background-color: rgba(87, 232, 117, 0.6); 
+ 	background-color: rgba(87, 232, 117, 0.4); 
  }
 
+/* .timeElapsed.yellow {
+ 	background-color: rgba(255, 236, 0, 0.4); 
+ }*/
+
  .timeElapsed.yellow {
- 	background-color: rgba(255, 236, 0, 0.7); 
+ 	background-color: rgba(255, 232, 146, 0.6); 
  }
 
  .timeElapsed.red {
- 	background-color: rgba(255, 80, 77, 0.5); 
+ 	background-color: rgba(255, 80, 77, 0.3); 
  }
 
 
@@ -257,7 +261,7 @@ h2 {
 
 #contactsWrapper {
 	width: 600px;
-	height: 770px;
+	height: 760px;
 	/*height: 60%;*/
 	background-color: white;
 	
