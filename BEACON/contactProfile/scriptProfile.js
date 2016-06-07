@@ -4,6 +4,19 @@ $(document).ready(function(){
 	$('#securitiesWrapper').hide();
 	$('#meetingsWrapper').hide();
 
+	$('#bottomBarCall').show(); 
+	$('#bottomBarEnd').hide();
+	
+	$('#bottomBarCall').click(function(){
+		$('#bottomBarCall').hide(); 
+		$('#bottomBarEnd').show();
+	});
+
+	$('#bottomBarEnd').click(function(){
+		$('#bottomBarCall').show(); 
+		$('#bottomBarEnd').hide();
+	});
+	
 
 //////readership///////
 	$('.readership').click(function(event){
@@ -67,6 +80,7 @@ $(document).ready(function(){
     
     var $bar1 = $('.bar1Event');
     var $eventCalendar = $('.mdi-calendar-check');
+    var $cancelButton = $(".cancelButton");
     var $bookButton = $(".book");
     var $bar2 = $('.bar2Event');
     var $timeButton = $(".timeButton.active");
@@ -80,8 +94,25 @@ $(document).ready(function(){
     $eventCalendar.click(function(){
     	$("#eventWrapper").show();
     	$("#searchEvent").show();
+    	$bar1.show();
     })
     
+    $cancelButton.click(function(){
+    	$("#eventWrapper").hide();
+    	$("#searchEvent").hide();
+    	$("#chooseTime").hide(); 
+    	$bar1.hide();
+    	$bar2.hide();
+    	$("#bottomBar2Event").hide();
+    	$timeButton.removeClass( 'teal');
+    })
+    
+
+    $bar1.click(function(){
+    	$("#eventWrapper").hide();
+    	$("#searchEvent").hide();
+    })
+
     $bookButton.click(function(event){
       event.preventDefault();
       $("#searchEvent").hide();
@@ -89,6 +120,8 @@ $(document).ready(function(){
       
       $bar1.hide();
       $bar2.show();
+      $("#bottomBarEvent").show();
+      // $("#bottomBar2Event").show();
 
     });
 
