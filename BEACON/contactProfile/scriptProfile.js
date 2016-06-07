@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$('#readershipWrapper').hide();
 	$('#touchpointWrapper').hide();
 	$('#securitiesWrapper').hide();
+	$('#meetingsWrapper').hide();
 
 
 //////readership///////
@@ -37,6 +38,18 @@ $(document).ready(function(){
 	$('#securitiesWrapper .mdi-chevron-left').click(function(event){
       event.preventDefault();
       $('#securitiesWrapper').hide(); 
+ });
+
+
+//////meetings///////
+	$('.meetings').click(function(event){
+      event.preventDefault();
+      $('#meetingsWrapper').show(); 
+ });
+
+	$('#meetingsWrapper .mdi-chevron-left').click(function(event){
+      event.preventDefault();
+      $('#meetingsWrapper').hide(); 
  });
 
 
