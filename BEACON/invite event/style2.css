@@ -111,7 +111,6 @@ body {
 	border: none;
 	background-color: #FBFCFE;
 	border-bottom: 1px gray solid;
-
 }
 
 #bottomBar {
@@ -241,7 +240,7 @@ body {
 	overflow-y: hidden;
 }
 
-.textWrapper2 {
+.textWrapper3 {
 	width: 96%;
 	padding: 25px 0 0 25px;
 
@@ -336,7 +335,7 @@ body {
 
 
 
-.green, .green:hover {
+.teal, .teal:hover {
 background-color: #1de9b6 !important;
 color: white;
 font-weight: 400;

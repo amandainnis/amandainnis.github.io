@@ -53,6 +53,79 @@ $(document).ready(function(){
  });
 
 
+	
+
+
+
+//////INVITE TO EVENTS///////
+	$("#eventWrapper").hide();
+	$("#searchEvent").hide();
+	$("#chooseTime").hide();
+    
+    $("#bottomBar2Event").hide();
+    $(".addMe").hide();
+    
+    var $bar1 = $('.bar1Event');
+    var $eventCalendar = $('.mdi-calendar-check');
+    var $bookButton = $(".book");
+    var $bar2 = $('.bar2Event');
+    var $timeButton = $(".timeButton.active");
+    // var $timeButtonGreen = $(".timeButton.active.green");
+    var $bar3 = $('.bar3');
+    var $chevron2 = $('.bar2Event.mdi-chevron-left');
+    var $confirmButton = $('.confirmButton');
+
+  
+    
+    $eventCalendar.click(function(){
+    	$("#eventWrapper").show();
+    	$("#searchEvent").show();
+    })
+    
+    $bookButton.click(function(event){
+      event.preventDefault();
+      $("#searchEvent").hide();
+      $("#chooseTime").show(); 
+      
+      $bar1.hide();
+      $bar2.show();
+
+    });
+
+//////////////SCREEN TWO//////////////////
+
+    $bar2.click(function(event){
+      event.preventDefault();
+      $("#searchEvent").show();
+      $("#chooseTime").hide();
+      
+      $bar1.show();
+      $bar2.hide();
+      $("#bottomBar2Event").hide();
+      $(".addMe").hide();
+      $("#bottomBarEvent").show();
+      $timeButton.removeClass( 'teal');
+
+    });
+    
+    $timeButton.click(function(event){
+      event.preventDefault();
+      $(".addMe").show();
+      $("#bottomBarEvent").hide();
+      $("#bottomBar2Event").show();
+      $timeButton.removeClass( 'teal');
+      $(this).addClass( 'teal');
+
+      
+  });
+
+
+
+
+
+
+
+
 
 
 });

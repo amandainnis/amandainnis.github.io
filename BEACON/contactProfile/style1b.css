@@ -614,8 +614,8 @@ body {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 498, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003498}}
+/* line 500, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003500}}
 .readershipWrapper,
 .meetingsWrapper {
   width: 500px;
@@ -623,8 +623,8 @@ body {
   overflow-y: scroll;
   padding-bottom: 45px;
 }
-/* line 508, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003508}}
+/* line 510, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003510}}
 #searchBar {
   width: 500px;
   height: 65px;
@@ -634,8 +634,8 @@ body {
   z-index: 2;
   /*border-bottom: 1px gray solid;*/
 }
-/* line 518, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003518}}
+/* line 520, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003520}}
 .searchField {
   width: 200px;
   padding: 0 0 10px 25px;
@@ -653,8 +653,311 @@ body {
 	top: 455px;
 	z-index: 2;
 }*/
-/* line 539, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003539}}
+/* line 564, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003564}}
+.textWrapper2 {
+  width: 56%;
+  padding: 25px 0 0 25px;
+  float: left;
+}
+/* line 571, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003571}}
+.dateWrapper {
+  width: 17%;
+  float: left;
+  padding: 40px 0 0 0;
+  margin-left: 55px;
+  /*border: 1px black solid;*/
+}
+/* line 579, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003579}}
+.readWrapper {
+  width: 8%;
+  float: left;
+  padding: 40px 0 0 0;
+  margin-left: 22px;
+  /*border: 1px black solid;*/
+}
+/* line 588, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003588}}
+.timeElapsed {
+  padding-top: 4px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  width: 26px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: -2px;
+}
+/* line 603, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003603}}
+.timeElapsed.green {
+  background-color: rgba(87, 232, 117, 0.4);
+}
+/* line 607, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003607}}
+.timeElapsed.yellow {
+  background-color: rgba(255, 236, 0, 0.5);
+}
+/* line 611, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003611}}
+.timeElapsed.red {
+  background-color: rgba(255, 80, 77, 0.4);
+}
+/* line 622, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003622}}
+.eventTitle {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .2px;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.87);
+}
+/* line 631, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003631}}
+.eventLocation {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: .1px;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.54);
+}
+/* line 639, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003639}}
+.eventDate {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  /*font-style: italic;*/
+  letter-spacing: .1px;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.54);
+}
+/* line 650, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003650}}
+.statusText {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: .1px;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.54);
+}
+/* line 659, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003659}}
+.columnTitle {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: .1px;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.54);
+  text-transform: uppercase;
+}
+/* line 668, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003668}}
+.columnTitle.published {
+  margin-left: 327px;
+}
+/* line 672, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003672}}
+.columnTitle.read {
+  margin-left: 38px;
+}
+/* line 679, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003679}}
+.divItsaRow {
+  width: 100%;
+  padding-top: 5px;
+}
+/* line 684, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003684}}
+.divItsaRow:first-of-type {
+  padding-top: 0px;
+}
+/*/////////////////*/
+/* line 690, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003690}}
+.bar2 {
+  width: 100%;
+  height: 30px;
+  background-color: #1565C0;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  padding-left: 5px;
+  padding-top: 8px;
+  text-transform: uppercase;
+}
+/* line 703, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003703}}
+.innerEventWrapper.eventChoose {
+  width: 500px;
+  height: 435px;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  overflow-y: hidden;
+}
+/* line 716, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003716}}
+.eventBarText {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+}
+/* line 722, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003722}}
+.mdi-chevron-left {
+  font-size: 22px;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: -4px;
+}
+/*///////////// touchpoints   ////*/
+/* line 732, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003732}}
+.touchpointWrapper,
+.securitiesWrapper {
+  width: 500px;
+  height: 364px;
+  overflow-y: scroll;
+  padding-bottom: 45px;
+}
+/* line 739, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003739}}
+#noSearchBar {
+  width: 500px;
+  height: 65px;
+  background-color: #FBFCFE;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+}
+/* line 748, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003748}}
+.dateWrapper2 {
+  width: 17%;
+  float: left;
+  padding: 40px 0 0 0;
+  margin-left: 55px;
+  /*border: 1px black solid;*/
+}
+/* line 755, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003755}}
+.lengthWrapper {
+  width: 10%;
+  float: left;
+  padding: 40px 0 0 0;
+  margin-left: 22px;
+  /*border: 1px black solid;*/
+}
+/* line 763, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003763}}
+.columnTitle.length {
+  margin-left: 72px;
+  display: inline-block;
+  padding-top: 46px;
+}
+/* line 770, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003770}}
+.columnTitle.date {
+  margin-left: 327px;
+  display: inline-block;
+  padding-top: 46px;
+}
+/* line 776, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003776}}
+.columnTitle.updated {
+  margin-left: 327px;
+  display: inline-block;
+  /*padding-top: 26px;*/
+}
+/* line 783, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003783}}
+.statusWrapper {
+  width: 30%;
+  float: left;
+  padding: 25px 0 0 0;
+  margin-left: 55px;
+}
+/* line 793, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003793}}
+#eventWrapper {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 128px;
+  left: 25px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 818, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003818}}
+.bar1Event {
+  width: 100%;
+  height: 30px;
+  background-color: #1565C0;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  padding-left: 25px;
+  padding-top: 11px;
+  text-transform: uppercase;
+}
+/* line 833, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003833}}
+.innerEventWrapper {
+  width: 500px;
+  height: 415px;
+  overflow-y: scroll;
+  padding-bottom: 45px;
+}
+/* line 843, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003843}}
+#searchBarEvent {
+  width: 500px;
+  height: 55px;
+  background-color: #FBFCFE;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  /*border-bottom: 1px gray solid;*/
+}
+/* line 853, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003853}}
+.searchField {
+  width: 200px;
+  padding: 0 0 10px 25px;
+  margin: 25px 0 0 25px;
+  outline: none;
+  border: none;
+  background-color: #FBFCFE;
+  border-bottom: 1px gray solid;
+}
+/* line 863, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003863}}
+#bottomBarEvent {
+  width: 500px;
+  height: 45px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: 455px;
+  z-index: 2;
+}
+/* line 872, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003872}}
 .cancelButton {
   float: right;
   position: relative;
@@ -673,67 +976,19 @@ body {
   border-radius: 3px;
   width: 80px;
 }
-/* line 558, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003558}}
+/* line 891, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003891}}
 .cancelButton:hover {
   background-color: #E8E8E8;
 }
-/* line 562, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003562}}
-.textWrapper2 {
+/* line 895, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003895}}
+.textWrapperEvent {
   width: 56%;
   padding: 25px 0 0 25px;
-  float: left;
 }
-/* line 569, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003569}}
-.dateWrapper {
-  width: 17%;
-  float: left;
-  padding: 40px 0 0 0;
-  margin-left: 55px;
-  /*border: 1px black solid;*/
-}
-/* line 577, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003577}}
-.readWrapper {
-  width: 8%;
-  float: left;
-  padding: 40px 0 0 0;
-  margin-left: 22px;
-  /*border: 1px black solid;*/
-}
-/* line 586, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003586}}
-.timeElapsed {
-  padding-top: 4px;
-  border-radius: 2px;
-  font-size: 11px;
-  font-weight: 500;
-  width: 26px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: -2px;
-}
-/* line 601, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003601}}
-.timeElapsed.green {
-  background-color: rgba(87, 232, 117, 0.4);
-}
-/* line 605, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003605}}
-.timeElapsed.yellow {
-  background-color: rgba(255, 236, 0, 0.5);
-}
-/* line 609, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003609}}
-.timeElapsed.red {
-  background-color: rgba(255, 80, 77, 0.4);
-}
-/* line 620, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003620}}
+/* line 901, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003901}}
 .eventTitle {
   font-family: 'Roboto';
   font-weight: 600;
@@ -742,8 +997,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 629, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003629}}
+/* line 910, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003910}}
 .eventLocation {
   font-family: 'Roboto';
   font-weight: 400;
@@ -752,63 +1007,53 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 637, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003637}}
+/* line 918, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003918}}
 .eventDate {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 13px;
-  /*font-style: italic;*/
   letter-spacing: .1px;
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 648, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003648}}
-.statusText {
+/* line 929, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003929}}
+.eventButton {
+  float: right;
+  position: relative;
+  top: 35px;
+  right: 35px;
+  font-size: 13px;
+  text-transform: uppercase;
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 13px;
-  /*font-style: italic;*/
-  letter-spacing: .1px;
-  line-height: 1.4em;
-  color: rgba(0, 0, 0, 0.54);
+  color: white;
+  letter-spacing: .4px;
+  background-color: #2196F3;
+  outline: none;
+  border: none;
+  padding: .54em 0;
+  border-radius: 3px;
+  width: 80px;
+  transition: .3s;
 }
-/* line 658, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003658}}
-.columnTitle {
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: .1px;
-  line-height: 1.4em;
-  color: rgba(0, 0, 0, 0.54);
-  text-transform: uppercase;
+/* line 952, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003952}}
+.eventButton:hover {
+  background-color: #1565C0;
+  transition: .3s;
 }
-/* line 667, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003667}}
-.columnTitle.published {
-  margin-left: 327px;
-}
-/* line 671, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003671}}
-.columnTitle.read {
-  margin-left: 38px;
-}
-/* line 678, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003678}}
-.divItsaRow {
+/* line 960, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003960}}
+.divItsaRowEvent {
   width: 100%;
-  padding-top: 5px;
-}
-/* line 683, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003683}}
-.divItsaRow:first-of-type {
-  padding-top: 0px;
+  margin-top: 5px;
 }
 /*/////////////////*/
-/* line 689, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003689}}
-.bar2 {
+/* line 969, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003969}}
+.bar2Event {
   width: 100%;
   height: 30px;
   background-color: #1565C0;
@@ -817,11 +1062,11 @@ body {
   font-size: 12px;
   color: white;
   padding-left: 5px;
-  padding-top: 8px;
+  padding-top: 9px;
   text-transform: uppercase;
 }
-/* line 702, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003702}}
+/* line 982, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003982}}
 .innerEventWrapper.eventChoose {
   width: 500px;
   height: 435px;
@@ -829,15 +1074,21 @@ body {
   padding-bottom: 45px;
   overflow-y: hidden;
 }
-/* line 715, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003715}}
+/* line 990, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003990}}
+.textWrapper3 {
+  width: 96%;
+  padding: 25px 0 0 25px;
+}
+/* line 999, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003999}}
 .eventBarText {
   display: inline-block;
   position: relative;
   top: -8px;
 }
-/* line 721, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003721}}
+/* line 1005, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031005}}
 .mdi-chevron-left {
   font-size: 22px;
   margin-right: 10px;
@@ -845,71 +1096,342 @@ body {
   position: relative;
   top: -4px;
 }
-/*///////////// touchpoints   ////*/
-/* line 731, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003731}}
-.touchpointWrapper,
-.securitiesWrapper {
-  width: 500px;
-  height: 364px;
-  overflow-y: scroll;
-  padding-bottom: 45px;
+/* line 1013, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031013}}
+.timeButtonWrapper {
+  padding-left: 25px;
+  margin-top: 20px;
+  height: 250px;
+  background-color: #F9F9F9;
 }
-/* line 738, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003738}}
-#noSearchBar {
+/* line 1023, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031023}}
+.timeType {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: .1px;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.54);
+  display: block;
+  padding: 15px 0 0 0;
+  clear: both;
+}
+/* line 1038, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031038}}
+.timeButton {
+  float: left;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: .4px;
+  background-color: #2196F3;
+  outline: none;
+  border: none;
+  padding: .5em 0;
+  border-radius: 2px;
+  width: 80px;
+  margin-right: 32px;
+  margin-bottom: 15px;
+  transition: .3s;
+}
+/* line 1057, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031057}}
+.timeButton:hover {
+  background-color: #1565C0;
+  transition: .3s;
+}
+/* line 1063, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031063}}
+.timeButton.disabled {
+  float: left;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: .4px;
+  background-color: #D5D5D5;
+  outline: none;
+  border: none;
+  padding: .5em 0;
+  border-radius: 2px;
+  width: 80px;
+  margin-right: 32px;
+  margin-bottom: 15px;
+}
+/* line 1085, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031085}}
+.teal,
+.teal:hover {
+  background-color: #1de9b6 !important;
+  color: white;
+  font-weight: 400;
+  transition: .3s;
+}
+/* line 1096, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031096}}
+.lightBlue {
+  background-color: #90caf9;
+}
+/* line 1101, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031101}}
+#bottomBar2Event {
   width: 500px;
-  height: 65px;
-  background-color: #FBFCFE;
-  position: relative;
-  top: 0px;
+  height: 45px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: 455px;
   z-index: 2;
 }
-/* line 747, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003747}}
-.dateWrapper2 {
-  width: 17%;
-  float: left;
-  padding: 40px 0 0 0;
-  margin-left: 55px;
-  /*border: 1px black solid;*/
+/* line 1109, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031109}}
+#bottomBar2Event.cancelButton {
+  float: right;
+  position: relative;
+  top: 7px;
+  /*right: 50px;*/
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+  letter-spacing: .4px;
+  background-color: #E8E8E8;
+  outline: none;
+  border: none;
+  padding: .7em 0;
+  border-radius: 3px;
+  width: 80px;
 }
-/* line 754, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003754}}
-.lengthWrapper {
-  width: 10%;
-  float: left;
-  padding: 40px 0 0 0;
-  margin-left: 22px;
-  /*border: 1px black solid;*/
+/* line 1128, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031128}}
+.confirmButton {
+  float: right;
+  position: relative;
+  top: 7px;
+  right: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.94);
+  letter-spacing: .4px;
+  background-color: #1565C0;
+  outline: none;
+  border: none;
+  padding: .7em 0;
+  border-radius: 3px;
+  width: 80px;
+  margin-left: 15px;
+  transition: .3s;
 }
-/* line 762, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003762}}
-.columnTitle.length {
-  margin-left: 72px;
+/* line 1150, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031150}}
+.confirmButton:hover {
+  background-color: #2196F3;
+  transition: .3s;
+}
+/* line 1159, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031159}}
+.addMe {
+  /*margin: 30px 25px 0 25px;*/
+  color: rgba(0, 0, 0, 0.54);
+  margin-left: 25px;
+  margin-top: 10px;
+  /*padding-top: 15px;*/
+  /*border-top: 1px solid rgba(0, 0, 0, .24);*/
+}
+/* line 1168, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031168}}
+.box {
   display: inline-block;
-  padding-top: 46px;
+  position: relative;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px rgba(0, 0, 0, 0.54) solid;
+  margin-right: 10px;
 }
-/* line 769, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003769}}
-.columnTitle.date {
-  margin-left: 327px;
+/* line 1179, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031179}}
+[type="checkbox"] {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+/* line 1186, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031186}}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+}
+/* line 1191, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031191}}
+[type="checkbox"] {
+  /* checkbox aspect */
+}
+/* line 1193, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031193}}
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
   display: inline-block;
-  padding-top: 46px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
 }
-/* line 775, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003775}}
-.columnTitle.updated {
-  margin-left: 327px;
-  display: inline-block;
-  /*padding-top: 26px;*/
+/* line 1209, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031209}}
+[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  z-index: 0;
+  border: 2px solid #5a5a5a;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
 }
-/* line 782, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003782}}
-.statusWrapper {
-  width: 30%;
-  float: left;
-  padding: 25px 0 0 0;
-  margin-left: 55px;
+/* line 1225, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031225}}
+[type="checkbox"]:not(:checked):disabled + label:before {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+/* line 1229, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031229}}
+[type="checkbox"]:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 11px;
+  height: 20px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #26a69a;
+  border-bottom: 2px solid #26a69a;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+/* line 1249, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031249}}
+[type="checkbox"]:checked:disabled + label:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+}
+/* line 1253, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031253}}
+[type="checkbox"].filled-in + label:after {
+  border-radius: 2px;
+}
+/* line 1255, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031255}}
+[type="checkbox"].filled-in + label:before,
+[type="checkbox"].filled-in + label:after {
+  content: '';
+  left: 0;
+  position: absolute;
+  /* .1s delay is for check animation */
+  transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
+  z-index: 1;
+}
+/* line 1262, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031262}}
+[type="checkbox"].filled-in:not(:checked) + label:before {
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  left: 6px;
+  top: 10px;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 20% 40%;
+  transform-origin: 100% 100%;
+}
+/* line 1272, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031272}}
+[type="checkbox"].filled-in:not(:checked) + label:after {
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 2px solid #a6a6a6;
+  top: 0px;
+  z-index: 0;
+}
+/* line 1279, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031279}}
+[type="checkbox"].filled-in:checked + label:before {
+  top: 0;
+  left: 1px;
+  width: 6px;
+  height: 10px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+/* line 1292, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031292}}
+[type="checkbox"].filled-in:checked + label:after {
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #2196F3;
+  background-color: #2196F3;
+  z-index: 0;
+}
+/* line 1299, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031299}}
+[type="checkbox"].filled-in:disabled:not(:checked) + label:before {
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+/* line 1302, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031302}}
+[type="checkbox"].filled-in:disabled:not(:checked) + label:after {
+  border-color: transparent;
+  background-color: #BDBDBD;
+}
+/* line 1305, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031305}}
+[type="checkbox"].filled-in:disabled:checked + label:before {
+  background-color: transparent;
+}
+/* line 1307, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031307}}
+[type="checkbox"].filled-in:disabled:checked + label:after {
+  background-color: #BDBDBD;
+  border-color: #BDBDBD;
 }
 /*# sourceMappingURL=style1b.css.map */
