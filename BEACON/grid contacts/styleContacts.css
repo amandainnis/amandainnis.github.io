@@ -80,7 +80,7 @@ header{
 	width: 4%;
 	position: absolute;
 	top: 20px;
-	left: 30px;
+	left: 10px;
 
 }
 
@@ -116,10 +116,10 @@ header{
 }
 
 #logo {
-	width: 80px;
+	width: 30px;
 	position: absolute;
 	z-index: 3;
-	margin: 5px 10px;
+	margin: 5px 0 0 10px;
 	top: 28px;
 }
 
@@ -131,7 +131,7 @@ header{
 }
 
 #logo img {
-	width: 25%;
+	width: 75%;
 }
 
 .bar {
@@ -142,7 +142,7 @@ header{
 
 .AZ {
 	font-size: 14px;
-	color: rgba(255, 255, 255, .7);
+	color: rgba(255, 255, 255, .9);
 	position: relative;
 	display: inline-block;
 	left: 500px;
@@ -204,8 +204,8 @@ h2 {
  	/*float: right;*/
  	position: relative;
  	top: -40px;
- 	left: 373px;
- 	/*border: 1px aquamarine solid;*/
+ 	left: 376px;
+ 	// border: 1px aquamarine solid;
  }
 
 
@@ -231,7 +231,7 @@ h2 {
  	display: inline-block;
  	text-align: center;
  	position: relative;
- 	top: -3px;
+ 	top: -4px;
  	
  }
 
@@ -321,26 +321,56 @@ h2 {
 
 
 
-.mdi-phone, .mdi-message-text, .mdi-dots-vertical {
-	font-size: 22px;
+.mdi-phone, .mdi-message-text, .mdi-email-outline, .mdi-email, .mdi-dots-vertical {
+	font-size: 20px;
 	width: 22px;
-	color: rgba(0,0,0, .3);
+	color: rgba(0, 0, 0, .4);
 	transition: .3s ease-in;
 
 	
 }
 
-.mdi-phone:hover, .mdi-message-text:hover, .mdi-dots-vertical:hover  {
-	color: rgba(0,0,0, 1);
+.mdi-phone {
+	color: #0069CB;
+	// color: black;
+}
+
+.mdi-email-outline {
+	position: relative;
+	top: 1px;
+	// color: #0069CB;
+	// color: rgba(0, 0, 0, .6);
+}
+
+.mdi-message-text {
+	font-size: 22px;
+	width: 22px;
+	// color: rgba(0, 0, 0, .6);
+	transition: .3s ease-in;
+	position: relative;
+	top: 2px;
+
+}
+
+// .mdi-message-text {
+// 	color: #0069CB;
+// }
+
+.mdi-phone:hover, .mdi-email:hover, .mdi-email-outline:hover, .mdi-message-text:hover, .mdi-dots-vertical:hover  {
+	color: rgba(0, 0, 0, 1);
 	transition: .3s ease-in;
 }
 
-.mdi-phone, .mdi-message-text {
-	text-align: right;
+// .mdi-phone, .mdi-message-text {
+// 	text-align: right;
+// }
+
+.mdi-phone, .mdi-email, .mdi-email-outline, .mdi-message-text {
+	margin-left: 13px;
 }
 
-.timeElapsed, .mdi-phone, .mdi-message-text, .mdi-dots-vertical {
-	margin-left: 13px;
+.mdi-dots-vertical {
+	margin-left: 8px;
 }
 
 
@@ -451,7 +481,7 @@ h2 {
 	width: 520px;
 	height: 35px;
 	position: relative;
-	left: 60px;
+	left: 15px;
 	top: 20px;
 	/*border: 1px solid rgba(0,0,0, 0.2);*/
 	padding-top: 5px;
