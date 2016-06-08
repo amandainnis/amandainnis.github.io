@@ -46,6 +46,14 @@ table {
 	box-sizing: border-box;	
 }
 
+.clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
 
 
 body {
@@ -54,9 +62,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#eventWrapper {
+#scheduleMeetingWrapper {
     width: 500px;
-    /*height: 600px;*/
+	height: 460px;
     
     background-color: white;
     /*overflow: scroll;*/
@@ -81,15 +89,15 @@ body {
 
 .innerFormWrapper {
     width: 475px;
-    /*height: 540px;*/
-    /*overflow-y: scroll;*/
+  	height: 430px;
+    overflow-y: scroll;
     overflow-x: hidden;
-    /*padding-bottom: 45px;*/
+    padding-bottom: 45px;
     margin: 0 0 0 25px;
     /*border: 1px black solid;*/
 }
 
-#searchBar {
+#searchBarMeeting {
     width: 500px;
     height: 55px;
     background-color: #FBFCFE;
@@ -117,23 +125,32 @@ body {
     z-index: 2;
 }
 
+
 .cancelButton {
-    float: right;
-    position: relative;
-    top: 12px;
-    right: 50px;
-    text-transform: uppercase;
-    font-family: 'Roboto';
-    font-weight: 400;
-    color: rgba(0, 0, 0, .54);
-    letter-spacing: .4px;
-    background-color: #E8E8E8;
-    outline: none;
-    border: none;
-    padding: .7em 0;
-    border-radius: 3px;
-    width: 70px;
+	float: right;
+	position: relative;
+	top: 7px;
+	right: 50px;
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: rgba(0, 0, 0, .54);
+	letter-spacing: .4px;
+	background-color: #F5F5F5;
+	outline: none;
+	border: none;
+	font-size: 13px;
+	padding: .7em 0;
+	border-radius: 3px;
+	width: 80px;
+
 }
+.cancelButton:hover {
+	background-color: #E8E8E8;
+}
+
+
+
 
 .inputWrapperMini {
     width: 40%;
@@ -144,6 +161,11 @@ body {
 .inputWrapper {
     width: 84%;
 	padding-left: 30px;
+}
+
+.inputWrapperPrefix {
+    width: 77%;
+	/*padding-left: 30px;*/
 }
 
 
@@ -253,7 +275,7 @@ textarea.materialize-textarea {
     border-bottom: 1px solid #9e9e9e;
     border-radius: 0;
     outline: none;
-    height: 3rem;
+    height: 2.2rem;
     width: 100%;
     font-size: 14px;
     margin: 0 0 15px 0;
@@ -367,8 +389,8 @@ input[type=search].valid,
 input[type=search]:focus.valid,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea:focus.valid {
-    border-bottom: 1px solid #4CAF50;
-    box-shadow: 0 1px 0 0 #4CAF50;
+    border-bottom: 1px solid #dbdbdb;
+    /*box-shadow: 0 1px 0 0 #4CAF50;*/
 }
 
 input[type=text].valid + label:after,
@@ -394,7 +416,7 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
     content: attr(data-success);
-    color: #4CAF50;
+    color: #18CAB2;
     opacity: 1;
 }
 
@@ -423,6 +445,9 @@ textarea.materialize-textarea:focus.invalid {
     border-bottom: 1px solid #F44336;
     box-shadow: 0 1px 0 0 #F44336;
 }
+/*red*/
+
+
 
 input[type=text].invalid + label:after,
 input[type=text]:focus.invalid + label:after,
@@ -472,13 +497,13 @@ textarea.materialize-textarea + label:after {
 
 .input-field {
     position: relative;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
 }
 
 .input-field label {
     color: #9e9e9e;
     position: absolute;
-    top: 0.7rem;
+    top: 0.5rem;
     /*left: 0.1rem;*/
     font-size: 14px;
     cursor: text;
@@ -491,11 +516,12 @@ textarea.materialize-textarea + label:after {
 
 .input-field label.active {
     font-size: 0.8rem;
-    -webkit-transform: translateY(-140%);
-    -moz-transform: translateY(-140%);
-    -ms-transform: translateY(-140%);
-    -o-transform: translateY(-140%);
-    transform: translateY(-140%);
+    color: #cacaca;
+    -webkit-transform: translateY(-150%);
+    -moz-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+    -o-transform: translateY(-150%);
+    transform: translateY(-150%);
 }
 
 .input-field .prefix {

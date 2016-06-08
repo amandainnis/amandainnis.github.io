@@ -95,7 +95,7 @@ $(document).ready(function(){
     	$("#eventWrapper").show();
     	$("#searchEvent").show();
     	$bar1.show();
-    })
+    });
     
     $cancelButton.click(function(){
     	$("#eventWrapper").hide();
@@ -105,13 +105,13 @@ $(document).ready(function(){
     	$bar2.hide();
     	$("#bottomBar2Event").hide();
     	$timeButton.removeClass( 'teal');
-    })
+    });
     
 
     $bar1.click(function(){
     	$("#eventWrapper").hide();
     	$("#searchEvent").hide();
-    })
+    });
 
     $bookButton.click(function(event){
       event.preventDefault();
