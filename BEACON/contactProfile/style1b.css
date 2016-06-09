@@ -251,10 +251,10 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003157}}
 .counterText {
   position: absolute;
-  top: 15px;
+  top: 12px;
   left: 30px;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
 }
 /* line 166, style1b.less */

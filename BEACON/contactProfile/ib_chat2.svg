@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.000124470291 0 119.624544 119.684951 119.624544 119.684951 0.000124470291 2.71050543e-20 0.000124470291"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Frequent-Contacts-Copy-30" transform="translate(-228.000000, -185.000000)">
+            <g id="Group" transform="translate(228.000000, 185.000000)">
+                <g id="Page-1">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M36.0337,95.814 C28.2007,95.814 20.9157,95.845 13.6307,95.806 C4.5217,95.758 0.0547,91.408 0.0357,82.387 C-0.0113,59.222 -0.0153,36.055 0.0407,12.889 C0.0607,4.654 4.4547,0.085 12.6377,0.064 C44.1377,-0.02 75.6367,-0.024 107.1357,0.069 C114.8157,0.092 119.4657,4.438 119.5307,12.13 C119.7317,35.96 119.7467,59.795 119.5137,83.626 C119.4367,91.532 114.6247,95.728 106.6667,95.792 C96.3347,95.876 85.9947,95.625 75.6717,95.952 C73.1797,96.03 70.2147,97.236 68.3727,98.917 C62.2247,104.529 56.6677,110.791 50.4897,116.367 C48.4777,118.182 45.3177,119.328 42.5707,119.585 C38.5017,119.967 36.0417,117.562 36.0357,113.21 C36.0277,107.589 36.0337,101.969 36.0337,95.814" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+                </g>
+                <text id="IB" font-family="Montserrat-Bold, Montserrat" font-size="74" font-weight="bold" letter-spacing="1.02777803" fill="#FDFBFB">
+                    <tspan x="21" y="74">IB</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
