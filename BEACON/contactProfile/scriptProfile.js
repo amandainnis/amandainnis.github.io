@@ -104,6 +104,7 @@ $(document).ready(function(){
     	$bar1.hide();
     	$bar2.hide();
     	$("#bottomBar2Event").hide();
+    	$("#bottomBarEvent").show();
     	$timeButton.removeClass( 'teal');
     });
     

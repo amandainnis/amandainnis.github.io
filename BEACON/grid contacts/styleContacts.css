@@ -321,7 +321,7 @@ h2 {
 
 
 
-.mdi-phone, .mdi-message-text, .mdi-email-outline, .mdi-email, .mdi-dots-vertical {
+.mdi-phone, .mdi-comment, .mdi-message-text, .mdi-email-outline, .mdi-email, .mdi-dots-vertical {
 	font-size: 20px;
 	width: 22px;
 	color: rgba(0, 0, 0, .4);
@@ -329,6 +329,20 @@ h2 {
 
 	
 }
+
+// .mdi-comment {
+// 	position: relative;
+
+// }
+
+// .ibText {
+// 	display: inline-block;
+// 	position: absolute;
+// 	left: -3px;
+// 	color: white;
+// }
+
+
 
 .mdi-phone {
 	color: #0069CB;
@@ -342,7 +356,7 @@ h2 {
 	// color: rgba(0, 0, 0, .6);
 }
 
-.mdi-message-text {
+.mdi-comment, .mdi-message-text {
 	font-size: 22px;
 	width: 22px;
 	// color: rgba(0, 0, 0, .6);
@@ -356,7 +370,7 @@ h2 {
 // 	color: #0069CB;
 // }
 
-.mdi-phone:hover, .mdi-email:hover, .mdi-email-outline:hover, .mdi-message-text:hover, .mdi-dots-vertical:hover  {
+.mdi-phone:hover, .mdi-email:hover, .mdi-email-outline:hover, .mdi-comment:hover, .mdi-message-text:hover, .mdi-dots-vertical:hover  {
 	color: rgba(0, 0, 0, 1);
 	transition: .3s ease-in;
 }
@@ -365,7 +379,7 @@ h2 {
 // 	text-align: right;
 // }
 
-.mdi-phone, .mdi-email, .mdi-email-outline, .mdi-message-text {
+.mdi-phone, .mdi-email, .mdi-email-outline, .mdi-comment, .mdi-message-text {
 	margin-left: 13px;
 }
 
