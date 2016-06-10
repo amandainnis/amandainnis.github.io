@@ -176,12 +176,12 @@ body {
 }
 /* line 94, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\0000394}}
-.mdi-dots-vertical {
+.mdi-close {
   position: absolute;
   left: 510px;
   font-size: 17px;
   top: 5px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
 }
 /* line 102, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003102}}
@@ -384,7 +384,7 @@ body {
 /* line 290, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003290}}
 .notesBox {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-left: 25px;
   width: 499px;
   height: 73px;
@@ -396,14 +396,14 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003303}}
 .readership {
   float: left;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 25px;
 }
 /* line 309, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003309}}
 .touchpoints {
   float: right;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-right: 25px;
 }
 /* line 316, style1b.less */
@@ -412,7 +412,7 @@ body {
   float: left;
   margin-left: 25px;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 /* line 323, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003323}}
@@ -420,7 +420,7 @@ body {
   float: right;
   margin-right: 25px;
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 /* line 330, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003330}}
@@ -592,7 +592,7 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003501}}
 .spaceBetweenIcons {
   display: inline-block;
-  width: 13%;
+  width: 7%;
 }
 /* line 506, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003506}}
@@ -617,7 +617,8 @@ body {
 .mdi-calendar,
 .mdi-calendar-check,
 .mdi-border-color,
-.mdi-library-books {
+.mdi-library-books,
+.mdi-dots-horizontal {
   font-size: 32px;
   color: rgba(0, 0, 0, 0.6);
 }
