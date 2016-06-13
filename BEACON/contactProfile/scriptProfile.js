@@ -24,7 +24,7 @@ $(document).ready(function(){
       $('#readershipWrapper').show(); 
  });
 
-	$('#readershipWrapper .mdi-chevron-left').click(function(event){
+	$('#readershipWrapper .mdi-close').click(function(event){
       event.preventDefault();
       $('#readershipWrapper').hide(); 
  });
@@ -36,7 +36,7 @@ $(document).ready(function(){
       $('#touchpointWrapper').show(); 
  });
 
-	$('#touchpointWrapper .mdi-chevron-left').click(function(event){
+	$('#touchpointWrapper .mdi-close').click(function(event){
       event.preventDefault();
       $('#touchpointWrapper').hide(); 
  });
@@ -48,7 +48,7 @@ $(document).ready(function(){
       $('#securitiesWrapper').show(); 
  });
 
-	$('#securitiesWrapper .mdi-chevron-left').click(function(event){
+	$('#securitiesWrapper .mdi-close').click(function(event){
       event.preventDefault();
       $('#securitiesWrapper').hide(); 
  });
@@ -60,7 +60,7 @@ $(document).ready(function(){
       $('#meetingsWrapper').show(); 
  });
 
-	$('#meetingsWrapper .mdi-chevron-left').click(function(event){
+	$('#meetingsWrapper .mdi-close').click(function(event){
       event.preventDefault();
       $('#meetingsWrapper').hide(); 
  });
