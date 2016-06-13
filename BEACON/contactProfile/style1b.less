@@ -180,12 +180,69 @@ body {
 
 .leaveVoiceDrop {
 	position: absolute;
-	top: 15px;
-	left: 450px;
-	font-weight: 400;
+	top: 13px;
+	left: 495px;
+	font-weight: 500;
 	font-size: 13px;
-	color: rgba(0,0,0, 0.5);
+	text-transform: uppercase;
+	color: rgba(0, 105, 203, 0.8);
 }
+
+.leaveVoiceDrop:hover {
+	cursor: pointer;
+}
+
+.voiceDropChoose {
+	position: absolute;
+	display: inline-block;
+	top: -66px;
+	left: 265px;
+	width: 160px;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	// border: 1px #a7a7a7 solid;
+}
+
+.ulTitle {
+	display: inline-block;
+	width: 120px;
+	position: absolute;
+	top: 6px;
+	left: 365px;
+	
+	background-color: #F8F9F9;
+	text-align: left;
+	// position: relative;
+	padding: .5em 0 .5em .7em;
+	// left: -.3em;
+	
+	color: #6b6b6b;
+	// box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+	// border: 1px black solid;
+}
+
+.voiceDropChoose li {
+	// background-color: #F1F3F5;
+	padding: .5em 0 .5em .7em;
+	color: rgba(0, 105, 203, 0.8);
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	// border: 1px black solid;
+	
+}
+
+.voiceDropChoose li:hover {
+	background-color: #F0F0F0;
+	cursor: pointer;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+}
+
 
 .callButton {
 	display: block;

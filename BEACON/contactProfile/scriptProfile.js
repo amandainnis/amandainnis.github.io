@@ -3,20 +3,28 @@ $(document).ready(function(){
 	$('#touchpointWrapper').hide();
 	$('#securitiesWrapper').hide();
 	$('#meetingsWrapper').hide();
+  $('.voiceDropChoose li').hide();
 
 	$('#bottomBarCall').show(); 
 	$('#bottomBarEnd').hide();
 	
-	$('#bottomBarCall').click(function(){
+	$('.callButton').click(function(){
 		$('#bottomBarCall').hide(); 
 		$('#bottomBarEnd').show();
 	});
 
-	$('#bottomBarEnd').click(function(){
+	$('.endCallButton').click(function(){
 		$('#bottomBarCall').show(); 
 		$('#bottomBarEnd').hide();
 	});
 	
+  $('.ulTitle').click(function(){
+    $('.voiceDropChoose li').show();
+  })
+
+  $('.voiceDropChoose li').click(function(){
+    $('.voiceDropChoose li').hide();
+  })
 
 //////readership///////
 	$('.readership').click(function(event){
