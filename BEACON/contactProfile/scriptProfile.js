@@ -85,7 +85,7 @@ $(document).ready(function(){
     var $bar2 = $('.bar2Event');
     var $timeButton = $(".timeButton.active");
     // var $timeButtonGreen = $(".timeButton.active.green");
-    var $bar3 = $('.bar3');
+ 
     var $chevron2 = $('.bar2Event.mdi-chevron-left');
     var $confirmButton = $('.confirmButton');
 
