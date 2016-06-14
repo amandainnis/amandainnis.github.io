@@ -17,15 +17,46 @@ $(document).ready(function(){
 		$('#bottomBarCall').show(); 
 		$('#bottomBarEnd').hide();
 	});
+
+  ///////////////Bottom Bar Voicedrop////////////////
+
+  var $dropThis = $('.ulTitle');
+  var mydefault = $('#mydefault');
+  var standard = $('#standard');
+  var deluxe = $('#deluxe');
+  var hypo = $('#hypo');
 	
-  $('.ulTitle').click(function(){
+  $dropThis.click(function(){
     $('.voiceDropChoose li').show();
-  })
 
-  $('.voiceDropChoose li').click(function(){
-    $('.voiceDropChoose li').hide();
-  })
+       standard.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
 
+       mydefault.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+       
+       deluxe.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+
+       hypo.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+
+
+  });
+
+  
 //////readership///////
 	$('.readership').click(function(event){
       event.preventDefault();
