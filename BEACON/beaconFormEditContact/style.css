@@ -453,7 +453,8 @@ input[type=search]:focus.valid + label:after,
 textarea.materialize-textarea.valid + label:after,
 textarea.materialize-textarea:focus.valid + label:after {
     content: attr(data-success);
-    color: #18CAB2;
+    // color: #18CAB2;
+    color: rgba(6, 113, 212, 0.8);
     opacity: 1;
 }
 
@@ -576,6 +577,12 @@ textarea.materialize-textarea + label:after {
 .input-field .prefix.active {
     color: rgba(6, 113, 212, 0.8);
 }
+
+
+
+
+
+
 
 .input-field .prefix ~ input,
 .input-field .prefix ~ textarea {
