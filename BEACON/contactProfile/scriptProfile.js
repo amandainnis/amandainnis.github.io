@@ -114,6 +114,7 @@ $(document).ready(function(){
 	$("#searchEvent").hide();
 	$("#chooseTime").hide();
     
+    $("#bottomBarEvent").hide();
     $("#bottomBar2Event").hide();
     $(".addMe").hide();
     
@@ -128,7 +129,7 @@ $(document).ready(function(){
     var $chevron2 = $('.bar2Event.mdi-chevron-left');
     var $confirmButton = $('.confirmButton');
 
-  
+ 
     
     $eventCalendar.click(function(){
     	$("#eventWrapper").show();
@@ -143,8 +144,9 @@ $(document).ready(function(){
     	$bar1.hide();
     	$bar2.hide();
     	$("#bottomBar2Event").hide();
-    	$("#bottomBarEvent").show();
+    	$("#bottomBarEvent").hide();
     	$timeButton.removeClass( 'teal');
+      $timeButton.removeClass('lightBlue');
     });
     
 
@@ -174,10 +176,11 @@ $(document).ready(function(){
       
       $bar1.show();
       $bar2.hide();
+      $("#bottomBarEvent").hide();
       $("#bottomBar2Event").hide();
       $(".addMe").hide();
-      $("#bottomBarEvent").show();
       $timeButton.removeClass( 'teal');
+      $timeButton.removeClass('lightBlue');
 
     });
     
@@ -187,6 +190,7 @@ $(document).ready(function(){
       $("#bottomBarEvent").hide();
       $("#bottomBar2Event").show();
       $timeButton.removeClass( 'teal');
+      $timeButton.addClass('lightBlue'); 
       $(this).addClass( 'teal');
 
       
