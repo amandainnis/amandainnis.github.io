@@ -1,941 +1,1057 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Contact Profile Page</title>
-	
-	<link rel="stylesheet" type="text/css" href="materialdesignicons.css">
-	<link rel="stylesheet" type="text/css" href="style1b.css">
-	<!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
-	<script type="text/javascript" src="jquery-2.2.4.js"></script>
-	 <script type="text/javascript" src="scriptProfile.js"></script>
+    <title>Contact Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="style1b.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script type="text/javascript" src="scriptProfile.js"></script>
 </head>
+
 <body>
-	<div id = "contactWrapper">
-		<div class ="bar">Contact Profile<i class="mdi mdi-close"></i></div>
-		
-
-		<div id="bottomBarCall"><input class="callButton" type="button" value="call"></div>
-
-		<!-- <i id="callPhoneButton" class="mdi mdi-phone"></i> -->
-
-		<div id="bottomBarEnd"><span class="counterText">05:13</span><input class="endCallButton" type="button" value="end call"><span class="leaveVoiceDrop">Drop</span><span class="ulTitle">Default</span><i class="mdi mdi-chevron-down"></i><ul class ="voiceDropChoose"><li id="mydefault">Default</li>
-        <li id="standard">Standard</li>
-        <li id="deluxe">Deluxe</li><li id="hypo">Hypo-Allergenic</li></ul></div>
-		<!-- <i class="mdi mdi-phone-hangup"></i> -->
-		
-		<div class="profileBar">
-			<span class="profileNameText">Axelrod, Bobby</span> <br/>
-			<span class="companyText">Axe Capital Investment Management, LLC</span> <br/>
-			<span class="sectorText">Gold</span>
-			<div class="iconsProfile">
-				<div class="iconWrapperProfile"><i class="mdi mdi-email-outline"></i></div>
-				
-				<!-- <div class="iconWrapperProfile ibChat"><i class="mdi mdi-message-text"></i></div> -->
-
-                <div class="iconWrapperProfile ibChat"><img src="ib_chat_small.png"></div>
-				
-				<div class="iconWrapperPhone">+1 800-867-5309</div>
-				
-				<div class="iconWrapperTriangle"><i class="mdi mdi-phone"></i></div>
-				
-				<div class="iconWrapperTriangle"><i class="mdi mdi-menu-down"></i></div>
-
-			</div>
-			<!-- end iconsProfile -->
-
-		</div>
-
-<!---////////////// section boxes	////////////////////////////////////////	 -->
-
-		<div class="sectionBox readership">
-			<span class="sectionBoxTitle">Latest Readership</span><i class="mdi mdi-chevron-right"></i>
-			<div class ="textWrapper clearfix">
-						<span class="innerTextTitle"> HY Wire</span> <br/>
-						<span class="innerTextSubtitle">Collateral Damage 1, A Recovery</span> <br/>
-						<span class="innerTextThird">Contopoulos, George</span> <br/>
-						<span class="innerTextBottom">Read 4 Days Ago</span> <br/>
-
-			</div>
-			<!-- end of textWrapper -->
-						
-		</div>
-		<!-- end of section readership -->
-
-	
-
-		
-		<div class="sectionBox touchpoints">
-			<span class="sectionBoxTitle">Recent Touchpoints</span><i class="mdi mdi-chevron-right"></i>
-			<div class ="textWrapper clearfix">
-						<span class="innerTextTitle"> Jimmy McGill</span> <br/>
-						<span class="innerTextSubtitle">Called Saul Goodwin</span> <br/>
-						<span class="innerTextThird">Outgoing Call 00:05:11</span> <br/>
-						<span class="innerTextBottom">Today</span> <br/>
-
-			</div>
-			<!-- end of textWrapper -->
-		</div>
-		<!-- end of section touchpoints -->
-
-
-
-		<div class="sectionBox securities">
-			<span class="sectionBoxTitle">Securities of Interest</span><i class="mdi mdi-chevron-right"></i>
-			<div class ="textWrapper clearfix">
-						<span class="innerTextTitle"> GHJK <br> HOAS <br> PQSC <br> MRTV</span> <br/>
-						<!-- <span class="innerTextSubtitle">Collateral Damage 1, A Recovery</span> <br/>
-						<span class="innerTextThird">Contopoulos, George</span> <br/> -->
-						<span class="innerTextBottom">Last Updated 2 Days Ago</span> <br/>
-
-			</div>
-			<!-- end of textWrapper -->
-		</div>
-		<!-- end of section securities -->
-
-
-
-		<div class="sectionBox meetings">
-			<span class="sectionBoxTitle">Past & Upcoming Meetings</span><i class="mdi mdi-chevron-right"></i>
-			<div class ="textWrapper clearfix">
-						<span class="innerTextTitle"> 2016 Consumer and Retail Tech Conference</span> <br/>
-						<span class="innerTextSubtitle">New York</span> <br/>
-						<span class="innerTextThird">14 Mar 2016</span> <br/>
-						<span class="innerTextBottom"></span> <br/>
-
-			</div>
-			<!-- end of textWrapper -->
-		</div>
-		<!-- end of section meetings -->
-
-<!---////////////// end of section boxes	////////////////////////////////////////	 -->
-
-		<div class="notesBox clearfix">
-			<span class="sectionNotesTitle">Personal Notes</span>
-			<div class ="notesWrapper clearfix">
-			<span class="notesText"> He likes ham sandwiches and beer.  Loves the white sox.  Has a dog named Tino.</span>
-
-			</div>
-			<!-- end of textWrapper -->
-		</div>
-		<!-- end of section notes -->
-
-
-
-
-		<div class="iconsBottom2"> 
-			<div class="iconWrapper"><i class="mdi mdi-border-color"></i><br>
-			Call Notes</div>
-
-				<span class = "spaceBetweenIcons"></span>
-
-
-			<div class="iconWrapper"><i class="mdi mdi-calendar-check"></i><br>
-			Invite To Event</div>
-
-				<span class = "spaceBetweenIcons"></span>
-
-			<div class="iconWrapper"><i class="mdi mdi-library-books"></i><br>
-			Send Research</div>
-
-				<span class = "spaceBetweenIcons"></span>
-
-			<div class="iconWrapper"><i class="mdi mdi-calendar"></i><br>
-
-			Schedule Meeting</div>
-
-
-			<span class = "spaceBetweenIcons"></span>
-
-			<div class="iconWrapper"><i class="mdi mdi-dots-horizontal"></i><br>
-			More</div>
-
-				
-
-	</div>
-
-
-	<!-- end of contactWrapper -->
-
-<!-- <div class="overlay"></div> -->
-   <div id="readershipWrapper">
-        <div class="bar2">Latest Readership<i class="mdi mdi-close"></i></div>
-        <div id="searchReadership">
-            <div id="searchBar">
-                <input class="searchField" value="Search"><span class="columnTitle published">Published</span><span class="columnTitle read">Read</span></div>
-            <div class="readershipWrapper">
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">The HY Wire</span>
-                        <br/>
-                        <span class="eventLocation">Collateral Damage 1: A Recovery Reces</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, G</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Situation Room</span>
-                        <br/>
-                        <span class="eventLocation"> 1994, 1995, 1996</span>
-                        <br/>
-                        <span class="eventDate"> Jamiroquai, F</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> HCP Inc</span>
-                        <br/>
-                        <span class="eventLocation">Earnings Beat, Guidance Raised, No Cha</span>
-                        <br/>
-                        <span class="eventDate"> DeGiorno, J</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Edison International</span>
-                        <br/>
-                        <span class="eventLocation">EIX, Flat 1Q Earnings Await CPUC Deci</span>
-                        <br/>
-                        <span class="eventDate"> Fellini, F</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">The HY Wire</span>
-                        <br/>
-                        <span class="eventLocation">Collateral Damage 1: A Recovery Reces</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, G</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Situation Room</span>
-                        <br/>
-                        <span class="eventLocation"> 1994, 1995, 1996</span>
-                        <br/>
-                        <span class="eventDate"> Jamiroquai, F</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> HCP Inc</span>
-                        <br/>
-                        <span class="eventLocation">Earnings Beat, Guidance Raised, No Cha</span>
-                        <br/>
-                        <span class="eventDate"> DeGiorno, J</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Edison International</span>
-                        <br/>
-                        <span class="eventLocation">EIX, Flat 1Q Earnings Await CPUC Deci</span>
-                        <br/>
-                        <span class="eventDate"> Fellini, F</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate"> 05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="readWrapper clearfix">
-                        <span class="timeElapsed green">2d</span>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
+    <div id="backgroundPrototype">
+        <div id="contactWrapper">
+            <div class="bar">Contact Profile<i class="mdi mdi-close"></i></div>
+            <div id="bottomBarCall">
+                <input class="callButton" type="button" value="call">
             </div>
-            <!-- end of innerEventWrapper -->
-        </div>
-        <!-- end of searchEvent -->
-    </div>
-  
-  <!-- end of EventWrapper -->
-
-  <div id="touchpointWrapper">
-        <div class="bar2">Recent Touchpoints<i class="mdi mdi-close"></i></div>
-        <div id="searchReadership">
-            <div id="noSearchBar"><span class="columnTitle date">Date</span><span class="columnTitle length">Length</span></div>
-            <div class="touchpointWrapper">
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">Update on Business</span>
-                        <br/>
-                        <span class="eventLocation">Call Report</span>
-                        <br/>
-                        <span class="eventDate"> Contopoulos, George - NYC</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper2 clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                    <div class="lengthWrapper clearfix">
-                        <span class="eventDate">00:53</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
+            <!-- <i id="callPhoneButton" class="mdi mdi-phone"></i> -->
+            <div id="bottomBarEnd"><span class="counterText">05:13</span>
+                <input class="endCallButton" type="button" value="end call"><span class="leaveVoiceDrop">Drop</span><span class="ulTitle">Default</span><i class="mdi mdi-chevron-down"></i>
+                <ul class="voiceDropChoose">
+                    <li id="mydefault">Default</li>
+                    <li id="standard">Standard</li>
+                    <li id="deluxe">Deluxe</li>
+                    <li id="hypo">Hypo-Allergenic</li>
+                </ul>
             </div>
-            <!-- end of innerEventWrapper -->
-        </div>
-        <!-- end of searchEvent -->
-    </div>
-    <!-- end of EventWrapper -->
-
-
-<div id="securitiesWrapper">
-        <div class="bar2">Securities of interest<i class="mdi mdi-close"></i></div>
-        <div id="searchSecurities">
-            <div id="searchBar">
-                <input class="searchField" value="Search"><span class="columnTitle updated">Updated</span></div>
-            <div class="securitiesWrapper">
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
+            <!-- <i class="mdi mdi-phone-hangup"></i> -->
+            <div class="profileBar">
+                <span class="profileNameText">Axelrod, Bobby</span>
+                <br/>
+                <span class="companyText">Axe Capital Investment Management, LLC</span>
+                <br/>
+                <span class="sectorText">Gold</span>
+                <div class="iconsProfile">
+                    <div class="iconWrapperProfile"><i class="mdi mdi-email-outline"></i></div>
+                    <!-- <div class="iconWrapperProfile ibChat"><i class="mdi mdi-message-text"></i></div> -->
+                    <div class="iconWrapperProfile ibChat"><img src="ib_chat_small.png"></div>
+                    <div class="iconWrapperPhone">+1 800-867-5309</div>
+                    <div class="iconWrapperTriangle"><i class="mdi mdi-phone"></i></div>
+                    <div class="iconWrapperTriangle"><i class="mdi mdi-menu-down"></i></div>
                 </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle">GOOG</span>
-                        <br/>
-                        <span class="eventLocation">Dawson, Jim</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="dateWrapper clearfix">
-                        <span class="eventDate">05 Jun 2015</span>
-                        <br/>
-                    </div>
-                </div>
-                <!-- end of divItsaRow -->
+                <!-- end iconsProfile -->
             </div>
-            <!-- end of innerEventWrapper -->
-        </div>
-        <!-- end of searchEvent -->
-    </div>
-    <!-- end of EventWrapper -->
-
-<div id="meetingsWrapper">
-        <div class="bar2">Past & Upcoming Meetings<i class="mdi mdi-close"></i></div>
-        <div id="searchMeetings">
-            <div id="searchBar">
-                <input class="searchField" value="Search"><span class="columnTitle published">Status</span></div>
-            <div class="meetingsWrapper">
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Media, Communications &amp Entertainment Conference 2016</span>
-                        <br/>
-                        <span class="eventLocation"> Paris</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Invited</span>
-                        <br/>
-                    </div>
-                    
+            <!---////////////// section boxes   ////////////////////////////////////////     -->
+            <div class="sectionBox readership">
+                <span class="sectionBoxTitle">Latest Readership</span><i class="mdi mdi-chevron-right"></i>
+                <div class="textWrapper clearfix">
+                    <span class="innerTextTitle"> HY Wire</span>
+                    <br/>
+                    <span class="innerTextSubtitle">Collateral Damage 1, A Recovery</span>
+                    <br/>
+                    <span class="innerTextThird">Contopoulos, George</span>
+                    <br/>
+                    <span class="innerTextBottom">Read 4 Days Ago</span>
+                    <br/>
                 </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> 2016 Consumer and Retail Tech Conference</span>
-                        <br/>
-                        <span class="eventLocation"> New York</span>
-                        <br/>
-                        <span class="eventDate"> 14 Sept 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Pending</span>
-                        <br/>
-                    </div>
-                    
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> 2016 Global Metals, Mining &amp Steel Conference </span>
-                        <br/>
-                        <span class="eventLocation">Miami Beach</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Executive Review Approved</span>
-                        <br/>
-                    </div>
-                    
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> 2016 Health Care Conference</span>
-                        <br/>
-                        <span class="eventLocation">Los Vegas</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Department Review Not Approved</span>
-                        <br/>
-                    </div>
-                    
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
-                        <br/>
-                        <span class="eventLocation"> Paris</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Pending</span>
-                        <br/>
-                    </div>
-                    
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> George Staphos and Google<br/>RA, EQ</span>
-                        <br/>
-                        <span class="eventLocation"> New York</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Invited</span>
-                        <br/>
-                    </div>
-                    
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRow clearfix">
-                    <div class="textWrapper2 clearfix">
-                        <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
-                        <br/>
-                        <span class="eventLocation"> Paris Hilton Beach Fun Paris Hilton Beach...</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                    <div class="statusWrapper clearfix">
-                        <span class="statusText">Pending</span>
-                        <br/>
-                    </div>
-                    
-                </div>
-                <!-- end of divItsaRow -->
-               
+                <!-- end of textWrapper -->
             </div>
-            <!-- end of innerEventWrapper -->
-        </div>
-        <!-- end of searchEvent -->
-    </div>
-  
-  <!-- end of EventWrapper -->
-
-
-
-
-
-  <div id="eventWrapper">
-        <div class="bar1Event">Invite to Event<i class="mdi mdi-close"></i></div>
-
-        <div id="bottomBarEvent">
-            <!-- <input class="cancelButton" type="button" value="cancel"> -->
-        </div>
-
-        <div id="bottomBar2Event">
-        	<span class="addMe"><input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+            <!-- end of section readership -->
+            <div class="sectionBox touchpoints">
+                <span class="sectionBoxTitle">Recent Touchpoints</span><i class="mdi mdi-chevron-right"></i>
+                <div class="textWrapper clearfix">
+                    <span class="innerTextTitle"> Jimmy McGill</span>
+                    <br/>
+                    <span class="innerTextSubtitle">Called Saul Goodwin</span>
+                    <br/>
+                    <span class="innerTextThird">Outgoing Call 00:05:11</span>
+                    <br/>
+                    <span class="innerTextBottom">Today</span>
+                    <br/>
+                </div>
+                <!-- end of textWrapper -->
+            </div>
+            <!-- end of section touchpoints -->
+            <div class="sectionBox securities">
+                <span class="sectionBoxTitle">Securities of Interest</span><i class="mdi mdi-chevron-right"></i>
+                <div class="textWrapper clearfix">
+                    <span class="innerTextTitle"> GHJK <br> HOAS <br> PQSC <br> MRTV</span>
+                    <br/>
+                    <!-- <span class="innerTextSubtitle">Collateral Damage 1, A Recovery</span> <br/>
+                        <span class="innerTextThird">Contopoulos, George</span> <br/> -->
+                    <span class="innerTextBottom">Last Updated 2 Days Ago</span>
+                    <br/>
+                </div>
+                <!-- end of textWrapper -->
+            </div>
+            <!-- end of section securities -->
+            <div class="sectionBox meetings">
+                <span class="sectionBoxTitle">Past & Upcoming Meetings</span><i class="mdi mdi-chevron-right"></i>
+                <div class="textWrapper clearfix">
+                    <span class="innerTextTitle"> 2016 Consumer and Retail Tech Conference</span>
+                    <br/>
+                    <span class="innerTextSubtitle">New York</span>
+                    <br/>
+                    <span class="innerTextThird">14 Mar 2016</span>
+                    <br/>
+                    <span class="innerTextBottom"></span>
+                    <br/>
+                </div>
+                <!-- end of textWrapper -->
+            </div>
+            <!-- end of section meetings -->
+            <!---////////////// end of section boxes    ////////////////////////////////////////     -->
+            <div class="notesBox clearfix">
+                <span class="sectionNotesTitle">Personal Notes</span>
+                <div class="notesWrapper clearfix">
+                    <span class="notesText"> He likes ham sandwiches and beer.  Loves the white sox.  Has a dog named Tino.</span>
+                </div>
+                <!-- end of textWrapper -->
+            </div>
+            <!-- end of section notes -->
+            <div class="iconsBottom2">
+                <div class="iconWrapper"><i class="mdi mdi-border-color"></i>
+                    <br> Call Notes</div>
+                <span class="spaceBetweenIcons"></span>
+                <div class="iconWrapper"><i class="mdi mdi-calendar-check"></i>
+                    <br> Invite To Event</div>
+                <span class="spaceBetweenIcons"></span>
+                <div class="iconWrapper"><i class="mdi mdi-library-books"></i>
+                    <br> Send Research</div>
+                <span class="spaceBetweenIcons"></span>
+                <div class="iconWrapper"><i class="mdi mdi-calendar"></i>
+                    <br> Schedule Meeting</div>
+                <span class="spaceBetweenIcons"></span>
+                <div class="iconWrapper"><i class="mdi mdi-dots-horizontal"></i>
+                    <br> More
+                </div>
+            </div>
+            <!-- end of contactWrapper -->
+            <!-- <div class="overlay"></div> -->
+            <div id="readershipWrapper">
+                <div class="bar2">Latest Readership<i class="mdi mdi-close"></i></div>
+                <div id="searchReadership">
+                    <div id="searchBar">
+                        <input class="searchField" value="Search"><span class="columnTitle published">Published</span><span class="columnTitle read">Read</span></div>
+                    <div class="readershipWrapper">
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">The HY Wire</span>
+                                <br/>
+                                <span class="eventLocation">Collateral Damage 1: A Recovery Reces</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, G</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Situation Room</span>
+                                <br/>
+                                <span class="eventLocation"> 1994, 1995, 1996</span>
+                                <br/>
+                                <span class="eventDate"> Jamiroquai, F</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> HCP Inc</span>
+                                <br/>
+                                <span class="eventLocation">Earnings Beat, Guidance Raised, No Cha</span>
+                                <br/>
+                                <span class="eventDate"> DeGiorno, J</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Edison International</span>
+                                <br/>
+                                <span class="eventLocation">EIX, Flat 1Q Earnings Await CPUC Deci</span>
+                                <br/>
+                                <span class="eventDate"> Fellini, F</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">The HY Wire</span>
+                                <br/>
+                                <span class="eventLocation">Collateral Damage 1: A Recovery Reces</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, G</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Situation Room</span>
+                                <br/>
+                                <span class="eventLocation"> 1994, 1995, 1996</span>
+                                <br/>
+                                <span class="eventDate"> Jamiroquai, F</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> HCP Inc</span>
+                                <br/>
+                                <span class="eventLocation">Earnings Beat, Guidance Raised, No Cha</span>
+                                <br/>
+                                <span class="eventDate"> DeGiorno, J</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Edison International</span>
+                                <br/>
+                                <span class="eventLocation">EIX, Flat 1Q Earnings Await CPUC Deci</span>
+                                <br/>
+                                <span class="eventDate"> Fellini, F</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate"> 05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="readWrapper clearfix">
+                                <span class="timeElapsed green">2d</span>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                    </div>
+                    <!-- end of innerEventWrapper -->
+                </div>
+                <!-- end of searchEvent -->
+            </div>
+            <!-- end of EventWrapper -->
+            <div id="touchpointWrapper">
+                <div class="bar2">Recent Touchpoints<i class="mdi mdi-close"></i></div>
+                <div id="searchReadership">
+                    <div id="noSearchBar"><span class="columnTitle date">Date</span><span class="columnTitle length">Length</span></div>
+                    <div class="touchpointWrapper">
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">Update on Business</span>
+                                <br/>
+                                <span class="eventLocation">Call Report</span>
+                                <br/>
+                                <span class="eventDate"> Contopoulos, George - NYC</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper2 clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                            <div class="lengthWrapper clearfix">
+                                <span class="eventDate">00:53</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                    </div>
+                    <!-- end of innerEventWrapper -->
+                </div>
+                <!-- end of searchEvent -->
+            </div>
+            <!-- end of EventWrapper -->
+            <div id="securitiesWrapper">
+                <div class="bar2">Securities of interest<i class="mdi mdi-close"></i></div>
+                <div id="searchSecurities">
+                    <div id="searchBar">
+                        <input class="searchField" value="Search"><span class="columnTitle updated">Updated</span></div>
+                    <div class="securitiesWrapper">
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle">GOOG</span>
+                                <br/>
+                                <span class="eventLocation">Dawson, Jim</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="dateWrapper clearfix">
+                                <span class="eventDate">05 Jun 2015</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                    </div>
+                    <!-- end of innerEventWrapper -->
+                </div>
+                <!-- end of searchEvent -->
+            </div>
+            <!-- end of EventWrapper -->
+            <div id="meetingsWrapper">
+                <div class="bar2">Past & Upcoming Meetings<i class="mdi mdi-close"></i></div>
+                <div id="searchMeetings">
+                    <div id="searchBar">
+                        <input class="searchField" value="Search"><span class="columnTitle published">Status</span></div>
+                    <div class="meetingsWrapper">
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Media, Communications &amp Entertainment Conference 2016</span>
+                                <br/>
+                                <span class="eventLocation"> Paris</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Invited</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> 2016 Consumer and Retail Tech Conference</span>
+                                <br/>
+                                <span class="eventLocation"> New York</span>
+                                <br/>
+                                <span class="eventDate"> 14 Sept 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Pending</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> 2016 Global Metals, Mining &amp Steel Conference </span>
+                                <br/>
+                                <span class="eventLocation">Miami Beach</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Executive Review Approved</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> 2016 Health Care Conference</span>
+                                <br/>
+                                <span class="eventLocation">Los Vegas</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Department Review Not Approved</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
+                                <br/>
+                                <span class="eventLocation"> Paris</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Pending</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> George Staphos and Google<br/>RA, EQ</span>
+                                <br/>
+                                <span class="eventLocation"> New York</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Invited</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="textWrapper2 clearfix">
+                                <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
+                                <br/>
+                                <span class="eventLocation"> Paris Hilton Beach Fun Paris Hilton Beach...</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                            <div class="statusWrapper clearfix">
+                                <span class="statusText">Pending</span>
+                                <br/>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                    </div>
+                    <!-- end of innerEventWrapper -->
+                </div>
+                <!-- end of searchEvent -->
+            </div>
+            <!-- end of EventWrapper -->
+            <div id="eventWrapper">
+                <div class="bar1Event">Invite to Event<i class="mdi mdi-close"></i></div>
+                <div id="bottomBarEvent">
+                    <!-- <input class="cancelButton" type="button" value="cancel"> -->
+                </div>
+                <div id="bottomBar2Event">
+                    <span class="addMe"><input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
                     <label for="filled-in-box">Add me as a meeting attendee</label></span>
-            <input class="confirmButton" type="button" value="confirm">
-            <input class="cancelButton" type="button" value="cancel">
-        </div>
-        <div id="searchEvent">
-            <div id="searchBarEvent">
-                <input class="searchField" value="Search"><span class="columnTitle count">Count 15 / 20</span>
+                    <input class="confirmButton" type="button" value="confirm">
+                    <input class="cancelButton" type="button" value="cancel">
+                </div>
+                <div id="searchEvent">
+                    <div id="searchBarEvent">
+                        <input class="searchField" value="Search"><span class="columnTitle count">Count 15 / 20</span>
+                    </div>
+                    <div class="innerEventWrapper">
+                        <div class="divItsaRowEvent clearfix">
+                            <input class="eventButton book" type="button" value="book">
+                            <div class="textWrapperEvent clearfix">
+                                <span class="eventTitle"> Media, Communications &amp Entertainment Conference 2016</span>
+                                <br/>
+                                <span class="eventLocation"> Paris</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowEvent clearfix">
+                            <input class="eventButton book" type="button" value="book">
+                            <div class="textWrapperEvent clearfix">
+                                <span class="eventTitle"> 2016 Consumer and Retail Tech Conference</span>
+                                <br/>
+                                <span class="eventLocation"> New York</span>
+                                <br/>
+                                <span class="eventDate"> 14 Sept 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowEvent clearfix">
+                            <input class="eventButton book" type="button" value="book">
+                            <div class="textWrapperEvent clearfix">
+                                <span class="eventTitle"> 2016 Global Metals, Mining &amp Steel Conference </span>
+                                <br/>
+                                <span class="eventLocation">Miami Beach</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowEvent clearfix">
+                            <input class="eventButton invite" type="button" value="invite">
+                            <div class="textWrapperEvent clearfix">
+                                <span class="eventTitle"> 2016 Health Care Conference</span>
+                                <br/>
+                                <span class="eventLocation">Los Vegas</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowEvent clearfix">
+                            <input class="eventButton interest" type="button" value="interest">
+                            <div class="textWrapperEvent">
+                                <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
+                                <br/>
+                                <span class="eventLocation"> Paris</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div id="hgc" class="divItsaRowEvent clearfix">
+                            <input class="eventButton book" type="button" value="book">
+                            <div class="textWrapperEvent">
+                                <span class="eventTitle"> George Staphos and Google<br/>RA, EQ</span>
+                                <br/>
+                                <span class="eventLocation"> New York</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowEvent clearfix">
+                            <input class="eventButton invite" type="button" value="invite">
+                            <div class="textWrapperEvent">
+                                <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
+                                <br/>
+                                <span class="eventLocation"> Paris Hilton Beach Fun Paris Hilton</span>
+                                <br/>
+                                <span class="eventDate"> 18 Jun 2016</span>
+                                <br/>
+                            </div>
+                            <!-- end of text wrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                    </div>
+                    <!-- end of innerEventWrapper -->
+                </div>
+                <!-- end of searchEvent -->
+                <div id="chooseTime">
+                    <div class="bar2Event"><i class="mdi mdi-chevron-left"></i><span class="eventBarText">Invite to Event</span><i class="mdi mdi-close"></i></div>
+                    <div class="innerEventWrapper eventChoose">
+                        <!-- <div class="divItsaRow clearfix"> -->
+                        <div class="textWrapperEvent clearfix">
+                            <span class="eventTitle"> 2016 Consumer and Retail Tech Conference </span>
+                            <br/>
+                            <span class="eventLocation"> New York</span>
+                            <br/>
+                            <span class="eventDate"> 14 Sept 2016 </span>
+                            <br/>
+                        </div>
+                        <!-- end of text wrapper -->
+                        <!-- </div> -->
+                        <!-- end of divItsaRow -->
+                        <div class="timeButtonWrapper clearfix">
+                            <span class="timeType"> One-on-One</span>
+                            <br/>
+                            <input class="timeButton active" type="button" value="7:30am">
+                            <input class="timeButton disabled" type="button" value="9:00am">
+                            <input class="timeButton active" type="button" value="10:30am">
+                            <input class="timeButton active" type="button" value="12:30pm">
+                            <input class="timeButton active" type="button" value="1:30pm">
+                            <input class="timeButton active" type="button" value="3:00pm">
+                            <input class="timeButton disabled" type="button" value="4:30pm">
+                            <input class="timeButton active" type="button" value="6:00pm">
+                            <br/>
+                            <span class="timeType clearfix">Group</span>
+                            <br/>
+                            <input class="timeButton active" type="button" value="11:30am">
+                            <input class="timeButton disabled" type="button" value="7:30pm">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="innerEventWrapper">
-                <div class="divItsaRowEvent clearfix">
-                    <input class="eventButton book" type="button" value="book">
-                    <div class="textWrapperEvent clearfix">
-                        <span class="eventTitle"> Media, Communications &amp Entertainment Conference 2016</span>
-                        <br/>
-                        <span class="eventLocation"> Paris</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
+            <!-- end of EventWrapper -->
+            <div id="editContactWrapper">
+                <div class="editContactBar">Edit Contact</div>
+                <div id="bottomBarEditContact">
+                    <input class="confirmButton" type="button" value="save">
+                    <input class="cancelButton" type="button" value="cancel">
                 </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRowEvent clearfix">
-                    <input class="eventButton book" type="button" value="book">
-                    <div class="textWrapperEvent clearfix">
-                        <span class="eventTitle"> 2016 Consumer and Retail Tech Conference</span>
-                        <br/>
-                        <span class="eventLocation"> New York</span>
-                        <br/>
-                        <span class="eventDate"> 14 Sept 2016</span>
-                        <br/>
+                <form>
+                    <div class="editContactInnerFormWrapper">
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperPrefix clearfix">
+                                <div class="input-field">
+                                    <i class="mdi mdi-account prefix"></i>
+                                    <input id="lastName" type="text" class="validate">
+                                    <label for="lastName">Last Name</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapper clearfix">
+                                <div class="input-field">
+                                    <input id="firstName" type="text" class="validate">
+                                    <label for="firstName">First Name *</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <!-- <div class="emptyDiv"></div> -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperPrefix clearfix">
+                                <div class="input-field">
+                                    <i class="mdi mdi-domain prefix"></i>
+                                    <input id="company" type="text" class="validate">
+                                    <label for="company">Company</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapper clearfix">
+                                <div class="input-field">
+                                    <input id="jobTitle" type="text" class="validate">
+                                    <label for="jobTitle">Job Title</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperPrefix clearfix">
+                                <div class="input-field">
+                                    <i class="mdi mdi-phone prefix"></i>
+                                    <input id="primaryPhone" type="text" class="validate">
+                                    <label for="primaryPhone">Primary Phone</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapper clearfix">
+                                <div class="input-field">
+                                    <input id="altPhone" type="text" class="validate">
+                                    <label for="altPhone">Alt Phone</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapper clearfix">
+                                <div class="input-field">
+                                    <input id="cellPhone" type="text" class="validate">
+                                    <label for="cellPhone">Cell Phone</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperPrefix clearfix">
+                                <div class="input-field">
+                                    <i class="mdi mdi-email-outline prefix"></i>
+                                    <input id="primaryEmail" type="text" class="validate">
+                                    <label for="primaryEmail">Primary Email</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapper clearfix">
+                                <div class="input-field">
+                                    <input id="altEmail" type="text" class="validate">
+                                    <label for="altEmail">Alt Email</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperPrefix clearfix">
+                                <div class="input-field">
+                                    <i class="mdi mdi-map-marker prefix"></i>
+                                    <input id="address" type="text" class="validate">
+                                    <label for="address">Address</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperMiniFloat clearfix">
+                                <div class="input-field">
+                                    <input id="city" type="text" class="validate">
+                                    <label for="city">City</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                            <div class="inputWrapperMiniFloat clearfix">
+                                <div class="input-field">
+                                    <input id="state" type="text" class="validate">
+                                    <label for="state">State</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRow clearfix">
+                            <div class="inputWrapperMiniFloat clearfix">
+                                <div class="input-field">
+                                    <input id="zipcode" type="text" class="validate">
+                                    <label for="zipcode">Zipcode</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                            <div class="inputWrapperMiniFloat clearfix">
+                                <div class="input-field">
+                                    <input id="country" type="text" class="validate">
+                                    <label for="country">Country</label>
+                                </div>
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
                     </div>
-                    <!-- end of text wrapper -->
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRowEvent clearfix">
-                    <input class="eventButton book" type="button" value="book">
-                    <div class="textWrapperEvent clearfix">
-                        <span class="eventTitle"> 2016 Global Metals, Mining &amp Steel Conference </span>
-                        <br/>
-                        <span class="eventLocation">Miami Beach</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRowEvent clearfix">
-                    <input class="eventButton invite" type="button" value="invite">
-                    <div class="textWrapperEvent clearfix">
-                        <span class="eventTitle"> 2016 Health Care Conference</span>
-                        <br/>
-                        <span class="eventLocation">Los Vegas</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRowEvent clearfix">
-                    <input class="eventButton interest" type="button" value="interest">
-                    <div class="textWrapperEvent">
-                        <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
-                        <br/>
-                        <span class="eventLocation"> Paris</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                </div>
-                <!-- end of divItsaRow -->
-                <div id="hgc" class="divItsaRowEvent clearfix">
-                    <input class="eventButton book" type="button" value="book">
-                    <div class="textWrapperEvent">
-                        <span class="eventTitle"> George Staphos and Google<br/>RA, EQ</span>
-                        <br/>
-                        <span class="eventLocation"> New York</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                </div>
-                <!-- end of divItsaRow -->
-                <div class="divItsaRowEvent clearfix">
-                    <input class="eventButton invite" type="button" value="invite">
-                    <div class="textWrapperEvent">
-                        <span class="eventTitle"> Google Roadshow <br/>ND, EQ</span>
-                        <br/>
-                        <span class="eventLocation"> Paris Hilton Beach Fun Paris Hilton</span>
-                        <br/>
-                        <span class="eventDate"> 18 Jun 2016</span>
-                        <br/>
-                    </div>
-                    <!-- end of text wrapper -->
-                </div>
-                <!-- end of divItsaRow -->
+                    <!-- end of edit contactinnerFormWrapper -->
+                </form>
             </div>
-            <!-- end of innerEventWrapper -->
         </div>
-        <!-- end of searchEvent -->
-        <div id="chooseTime">
-            <div class="bar2Event"><i class="mdi mdi-chevron-left"></i><span class="eventBarText">Invite to Event</span><i class="mdi mdi-close"></i></div>
-
-            <div class="innerEventWrapper eventChoose">
-                <!-- <div class="divItsaRow clearfix"> -->
-                <div class="textWrapperEvent clearfix">
-                    <span class="eventTitle"> 2016 Consumer and Retail Tech Conference </span>
-                    <br/>
-                    <span class="eventLocation"> New York</span>
-                    <br/>
-                    <span class="eventDate"> 14 Sept 2016 </span>
-                    <br/>
-                </div>
-                <!-- end of text wrapper -->
-                <!-- </div> -->
-                <!-- end of divItsaRow -->
-                <div class="timeButtonWrapper clearfix">
-                    <span class="timeType"> One-on-One</span>
-                    <br/>
-                    <input class="timeButton active" type="button" value="7:30am">
-                    <input class="timeButton disabled" type="button" value="9:00am">
-                    <input class="timeButton active" type="button" value="10:30am">
-                    <input class="timeButton active" type="button" value="12:30pm">
-                    <input class="timeButton active" type="button" value="1:30pm">
-                    <input class="timeButton active" type="button" value="3:00pm">
-                    <input class="timeButton disabled" type="button" value="4:30pm">
-                    <input class="timeButton active" type="button" value="6:00pm">
-                    <br/>
-                    <span class="timeType clearfix">Group</span>
-                    <br/>
-                    <input class="timeButton active" type="button" value="11:30am">
-                    <input class="timeButton disabled" type="button" value="7:30pm">
-                </div>
-                <!-- end of timebuttonwrapper -->
-                
-                <!-- <div class="addMe">
-                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-                    <label for="filled-in-box">Add me as a meeting attendee</label>
-                   
-                </div> -->
-            </div>
-        </div>
+        <!-- end of contact wrapper -->
     </div>
-    <!-- end of EventWrapper -->
-
+    <!-- end of backgroundPrototype -->
 </body>
+
 </html>

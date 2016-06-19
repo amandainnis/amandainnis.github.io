@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('#touchpointWrapper').hide();
 	$('#securitiesWrapper').hide();
 	$('#meetingsWrapper').hide();
+  $('#editContactWrapper').hide();
   $('.voiceDropChoose li').hide();
 
 	$('#bottomBarCall').show(); 
@@ -17,6 +18,8 @@ $(document).ready(function(){
 		$('#bottomBarCall').show(); 
 		$('#bottomBarEnd').hide();
 	});
+
+  
 
   ///////////////Bottom Bar Voicedrop////////////////
 
@@ -55,7 +58,13 @@ $(document).ready(function(){
 
 
   });
+  $('.leaveVoiceDrop').mouseover(function(){
+    $('.ulTitle').addClass('blueSelection');
+  });
 
+  $('.leaveVoiceDrop').mouseleave(function(){
+    $('.ulTitle').removeClass('blueSelection');
+  });
   
 //////readership///////
 	$('.readership').click(function(event){
@@ -196,10 +205,12 @@ $(document).ready(function(){
       
   });
 
+//////////////////// MORE will activate edit contact for now/////////
 
 
-
-
+$('.mdi-dots-horizontal').click(function(){
+  $('#editContactWrapper').show();
+});
 
 
 

@@ -62,7 +62,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#scheduleMeetingWrapper {
+#editContactWrapper {
     width: 500px;
 	height: 460px;
     
@@ -73,21 +73,21 @@ body {
     /*border: 1px black solid;*/
 }
 
-.bar {
+.editContactBar {
     width: 100%;
     height: 30px;
-    background-color: #0069CB;
+    background-color: #dde5ef;
     /*#1565C0;*/
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
-    color: white;
+    color: rgba(0, 105, 203, 1);
     padding-left: 25px;
     padding-top: 8px;
     text-transform: uppercase;
 }
 
-.innerFormWrapper {
+.editContactInnerFormWrapper {
     width: 475px;
   	height: 430px;
     overflow-y: scroll;
@@ -116,10 +116,10 @@ body {
     border-bottom: 1px gray solid;
 }
 
-#bottomBar {
+#bottomBarEditContact {
     width: 500px;
     height: 45px;
-    background-color: #F5F5F5;
+    background-color: #f4f6f8;
     position: fixed;
     top: 455px;
     z-index: 2;
@@ -136,7 +136,7 @@ body {
 	font-weight: 400;
 	color: rgba(0, 0, 0, .54);
 	letter-spacing: .4px;
-	background-color: #F5F5F5;
+	background-color: #f4f6f8;
 	outline: none;
 	border: none;
 	font-size: 13px;
