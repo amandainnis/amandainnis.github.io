@@ -555,7 +555,7 @@ h2 {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content2 {
-    display: none;
+    // display: none;
     position: absolute;
     background-color: white;
     /*left: 30px;*/
@@ -663,7 +663,7 @@ a {
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
+    // display: none;
     position: absolute;
     background-color: white;
     padding-top: 5px;

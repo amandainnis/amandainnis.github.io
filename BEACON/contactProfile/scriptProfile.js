@@ -212,7 +212,13 @@ $('.mdi-dots-horizontal').click(function(){
   $('#editContactWrapper').show();
 });
 
+$('#bottomBarEditContact .cancelButton').click(function(){
+  $('#editContactWrapper').hide();
+});
 
+$('.editContactBar .mdi-close').click(function(){
+  $('#editContactWrapper').hide();
+});
 
 
 
