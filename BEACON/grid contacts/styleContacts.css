@@ -253,7 +253,25 @@ h2 {
 
 ////////////////////////////////
 
+ // .timeElapsed.green {
+ // 	background-color: rgba(87, 232, 117, 0.4); 
+ // }
 
+ .timeElapsed.green {
+ 	background-color: rgba(87, 232, 117, 0.9); 
+ }
+.timeElapsed.green {
+ 	background-color: #66DD83; 
+ }
+
+ .timeElapsed.green {
+ 	background-color: #66DD83; 
+ }
+
+
+ .timeElapsed.green {
+ 	background-color: #66DD83; 
+ }
 
 .timeElapsed.green {
  	background-color: #8CDFA1; 
@@ -264,25 +282,57 @@ h2 {
 
 
 
+// .timeElapsed.green {
+//  	background-color: #45BFA1; 
+//  }
+
+ // .timeElapsed.green {
+ // 	background-color: #19C7AC; 
+ // }
 
 
+///////////////////////////
 
+
+/* .timeElapsed.yellow {
+ 	background-color: rgba(255, 236, 0, 0.4); 
+ }*/
+
+ // .timeElapsed.yellow {
+ // 	background-color: rgba(255, 232, 146, 0.6); 
+ // }
+
+  .timeElapsed.yellow {
+ 	background-color: #fbc02d; 
+ }
 
 .timeElapsed.yellow {
  	background-color: #F3C34C; 
  }
 
 
+ // .timeElapsed.yellow {
+ // 	background-color: #E39E19; 
+ // }
 
+ // .timeElapsed.red {
+ // 	background-color: rgba(255, 80, 77, 0.3); 
+ // }
+
+.timeElapsed.red {
+ 	background-color: #F6867E; 
+ }
 
  .timeElapsed.red {
  	background-color: #F7A099; 
  }
 
 
-///////////////////////////
 
 
+ // .timeElapsed.red {
+ // 	background-color: #EB6273; 
+ // }
 
 
 
