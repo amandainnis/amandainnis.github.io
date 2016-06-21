@@ -210,6 +210,22 @@ h2 {
 
 
 
+.ibChat {
+	display: inline-block;
+	width: 22px;
+	position: relative;
+	top: 5px;
+	margin-left: 13px;
+	opacity: .6;
+}
+
+.ibChat img {
+	display: inline-block;
+	width: 100%;
+}
+
+
+
  .rank {
  	display: inline-block;
  	font-size: 13px;
@@ -237,25 +253,7 @@ h2 {
 
 ////////////////////////////////
 
- // .timeElapsed.green {
- // 	background-color: rgba(87, 232, 117, 0.4); 
- // }
 
- .timeElapsed.green {
- 	background-color: rgba(87, 232, 117, 0.9); 
- }
-.timeElapsed.green {
- 	background-color: #66DD83; 
- }
-
- .timeElapsed.green {
- 	background-color: #66DD83; 
- }
-
-
- .timeElapsed.green {
- 	background-color: #66DD83; 
- }
 
 .timeElapsed.green {
  	background-color: #8CDFA1; 
@@ -266,57 +264,25 @@ h2 {
 
 
 
-// .timeElapsed.green {
-//  	background-color: #45BFA1; 
-//  }
-
- // .timeElapsed.green {
- // 	background-color: #19C7AC; 
- // }
 
 
-///////////////////////////
 
-
-/* .timeElapsed.yellow {
- 	background-color: rgba(255, 236, 0, 0.4); 
- }*/
-
- // .timeElapsed.yellow {
- // 	background-color: rgba(255, 232, 146, 0.6); 
- // }
-
-  .timeElapsed.yellow {
- 	background-color: #fbc02d; 
- }
 
 .timeElapsed.yellow {
  	background-color: #F3C34C; 
  }
 
 
- // .timeElapsed.yellow {
- // 	background-color: #E39E19; 
- // }
 
- // .timeElapsed.red {
- // 	background-color: rgba(255, 80, 77, 0.3); 
- // }
-
-.timeElapsed.red {
- 	background-color: #F6867E; 
- }
 
  .timeElapsed.red {
  	background-color: #F7A099; 
  }
 
 
+///////////////////////////
 
 
- // .timeElapsed.red {
- // 	background-color: #EB6273; 
- // }
 
 
 
@@ -324,7 +290,7 @@ h2 {
 .mdi-phone, .mdi-comment, .mdi-message-text, .mdi-email-outline, .mdi-email, .mdi-dots-vertical {
 	font-size: 20px;
 	width: 22px;
-	color: rgba(0, 0, 0, .4);
+	color: rgba(0, 0, 0, .6);
 	transition: .3s ease-in;
 
 	
@@ -444,6 +410,7 @@ h2 {
 	letter-spacing: .1px;
 	line-height: 1.4em;
 	color: rgba(0,0,0, .54);
+	color: #7F7F7F;
 }
 .eventDate {
 	font-family: 'Roboto';
@@ -453,20 +420,23 @@ h2 {
 	letter-spacing: .1px;
 	line-height: 1.4em;
 	color: rgba(0,0,0, .54);
+	color: #7F7F7F;
 }
 
 
 
 .textWrapper {
 	width: 60%;
-	padding: 15px 0 0 0px;
+	// padding: 15px 0 0 0px;
+	padding: 10px 0 0 0px;
 
 }
 
 
 .divItsaRow {
 	width: 90%;
-	height: 84px;
+	// height: 84px;
+	height: 76px;
 	border-bottom: 1px rgba(0,0,0, .05) solid;
 	margin-left: 30px;
 	
@@ -647,7 +617,7 @@ a {
 	left: 85px;
 	/*padding-bottom: 5px;*/
 	/*top: -20px;*/
-	border: 1px solid rgba(0,0,0, 0.2);
+	border-bottom: 1px solid #bababa;
 	/*padding-top: 5px;*/
 	border-radius: 2px;
 	color: rgba(0,0,0, .8);
