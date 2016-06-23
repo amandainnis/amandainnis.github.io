@@ -120,13 +120,13 @@ header{
 	position: absolute;
 	z-index: 3;
 	margin: 5px 0 0 10px;
-	top: 28px;
+	top: 0px;
 }
 
 .beaconLogoText {
 	position: relative;
-	left: 5px;
-	top: -14px;
+	left: 45px;
+	top: -5px;
 	text-transform: uppercase;
 }
 
@@ -484,13 +484,21 @@ h2 {
 
 
 .divItsaRow {
-	width: 90%;
+	// width: 90%;
 	// height: 84px;
 	height: 76px;
 	border-bottom: 1px rgba(0,0,0, .05) solid;
-	margin-left: 30px;
+	padding-left: 30px;
 	
 }
+
+.divItsaRow:hover {
+	background-color: aliceblue;
+	box-sizing: border-box;
+	padding-left: 26px;
+	border-left: 4px #0069CB solid;
+	// width: 100%;
+} 
 
 /*.sideSearch {
 	font-size: 13px;
@@ -560,16 +568,16 @@ h2 {
 .topSearch .mdi-magnify {
 	position: relative;
 	top: 10px;
-	left: 10px;
+	left: -40px;
 }
 
 .iconMini {
 	display: inline-block;
 	position: relative;
-	left: 330px;
+	left: 310px;
 	top: -50px;
 	height: 26px;
-	width: 90px;
+	width: 120px;
 	/*border: 1px black solid;*/
 }
 
@@ -656,31 +664,40 @@ a {
 
 .sideSearch {
     background-color: white;
-    /*color: white;*/
+    outline: none;
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
 	display: inline-block;
 	width: 130px;
 	height: 25px;
 	position: relative;
 	left: 85px;
-	/*padding-bottom: 5px;*/
-	/*top: -20px;*/
 	border-bottom: 1px solid #bababa;
 	/*padding-top: 5px;*/
 	border-radius: 2px;
-	color: rgba(0,0,0, .8);
-	text-align: center;
+
+	padding: 0 0 5px 5px;
+
+	
+	color: #aeaeae;
 	transition: .3s ease-in;
    
 }
 
-.sideSearch i {
+
+
+.sideSearchIcon {
 	position: absolute;
-	left: 2px;
-	top: 5px;
+	left: 70px;
+	top: 10px;
+	color: #aeaeae;
+	font-size: 17px;
 }
+
+
+
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     // display: none;

@@ -188,8 +188,8 @@ $(document).ready(function(){
       $("#bottomBarEvent").hide();
       $("#bottomBar2Event").hide();
       $(".addMe").hide();
-      $timeButton.removeClass( 'teal');
-      $timeButton.removeClass('lightBlue');
+      $timeButton.removeClass( 'blueSelected');
+      // $timeButton.removeClass('lightBlue');
 
     });
     
@@ -198,9 +198,9 @@ $(document).ready(function(){
       $(".addMe").show();
       $("#bottomBarEvent").hide();
       $("#bottomBar2Event").show();
-      $timeButton.removeClass( 'teal');
-      $timeButton.addClass('lightBlue'); 
-      $(this).addClass( 'teal');
+      $timeButton.removeClass( 'blueSelected');
+      // $timeButton.addClass('lightBlue'); 
+      $(this).addClass( 'blueSelected');
 
       
   });
