@@ -1218,13 +1218,10 @@ body {
   font-family: 'Roboto';
   font-weight: 400;
   color: white;
-  color: #2196F3;
   letter-spacing: .4px;
   background-color: #2196F3;
-  background-color: white;
   outline: none;
   border: none;
-  border: 1px solid #2196F3;
   padding: .54em 0;
   border-radius: 3px;
   width: 80px;
@@ -1234,8 +1231,6 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031233}}
 .eventButton:hover {
   background-color: #1565C0;
-  background-color: #2196F3;
-  color: white;
   transition: .3s;
 }
 /* line 1243, style1b.less */
@@ -1321,15 +1316,11 @@ body {
   font-family: 'Roboto';
   font-size: 15px;
   font-weight: 300;
-  font-weight: 400;
   color: white;
-  color: #2196F3;
   letter-spacing: .4px;
   background-color: #2196F3;
-  background-color: white;
   outline: none;
   border: none;
-  border: 1px solid #2196F3;
   padding: .5em 0;
   border-radius: 3px;
   width: 80px;
@@ -1342,8 +1333,6 @@ body {
 .timeButton:hover {
   background-color: #1565C0;
   transition: .3s;
-  background-color: #2196F3;
-  color: white;
 }
 /* line 1370, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031370}}
@@ -1356,7 +1345,6 @@ body {
   color: white;
   letter-spacing: .4px;
   background-color: #ced7e4;
-  background-color: #e7ecf3;
   outline: none;
   border: none;
   padding: .5em 0;
@@ -1378,10 +1366,8 @@ body {
 .teal,
 .teal:hover {
   background-color: #1de9b6 !important;
-  background-color: #1fd5bf !important;
   color: white;
   font-weight: 400;
-  border: 1px solid #1fd5bf;
   transition: .3s;
 }
 /* line 1412, style1b.less */
