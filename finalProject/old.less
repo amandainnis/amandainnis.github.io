@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+
+* {
+	box-sizing: border-box;
+}
+
+ .clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
+
+
+
+
+
+
+
+//////////////// NAV i stole ///////////////////
+
+.nav {
+    height: 100vh;
+    z-index: 100;
+}
+
+.nav {
+    right: 0px;
+}
+
+.nav {
+    position: fixed;
+}
+
+
+.nav, .dot-link {
+    top: 0px;}
+
+.hamburger {
+    height: 2px;
+    // background-color: #5C70D6;
+    background-color: black;
+    top: calc(50% - 1px);
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+
+ .nav-button {
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    top: 30px;
+    right: 30px;
+    border-radius: 100%;
+}
+
+.nav-button {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+    background-color: white;
+    // background-color: green;
+}
+
+
+.nav-button, .project-intro-more {
+    cursor: pointer;
+}
+
+.nav-button-graphic {
+    height: 100%;
+    width: 40%;
+    top: 0%;
+    left: 30%;
+}
+
+.btn:before, .clouds, .dots, .dot-anchor-close, .dot-anchor-text, body:before, #intro, .loader-wrapper, .loader-circle, .map, .map-image-content, .page-standard:before, .project-intro:before, .project-intro-more:before, .mute-button:before, .cloud, .animating.content-project, .animating.content-page, .button-graphic, .button-graphic:before, .button-graphic:after, .dot, .dot-anchor, .dot-content, .dot-link, .fallback-page, #intro audio, #intro:before, .intro-logo, .intro-logo-image, .logo-background, .map-image, .nav-container, .nav-footer, .nav-button, .nav-button-graphic, .hamburger, .hamburger:before, .hamburger:after, .row-project-single:before, .project-intro-video, .project-intro-video iframe, .project-intro-video-controller-start:after, .project-intro-more, .project-image, .project-wave, .project-number {
+    position: absolute;
+}
+.nav-button, .nav-button-graphic {
+ position: absolute;}
+
+
+.active .hamburger {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    background-color: transparent;
+}
+
+
+
+
+
+.active .hamburger:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+.hamburger:before {
+    top: -7px;
+}
+
+.hamburger:before, .hamburger:after {
+    -webkit-transform-origin: 50% 50% 0px;
+    -ms-transform-origin: 50% 50% 0px;
+    transform-origin: 50% 50% 0px;
+    background-color: #5C70D6;
+    height: inherit;
+    width: inherit;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.5, 0, 0.25, 1), top 0.3s cubic-bezier(0.5, 0, 0.25, 1), bottom 0.3s cubic-bezier(0.5, 0, 0.25, 1);
+    transition: transform 0.3s cubic-bezier(0.5, 0, 0.25, 1), top 0.3s cubic-bezier(0.5, 0, 0.25, 1), bottom 0.3s cubic-bezier(0.5, 0, 0.25, 1);
+}
+
+.mute-button:before, .btn:before, .cloud:before, .button-graphic:before, .button-graphic:after, .dot-link:before, body:before, #intro:before, .loader-logo:before, .logo-content:before, .map-image:before, .hamburger:before, .hamburger:after, .page-standard:before, .project-intro:before, .project-intro-video-content:before, .project-intro-video-controller-start:after, .project-intro-more:before {
+    content: "";
+}
+
+
+.active .hamburger:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 0px;
+}
+
+.hamburger:after {
+    bottom: -7px;
+}
+
+.nav-container {
+    overflow: auto;
+    z-index: 0;
+    width: 350px;
+    padding-top: 90px;
+}
+
+// element.style {
+//     transform: matrix(1, 0, 0, 1, -350, 0);
+// }
+// must be in JavaScript
+
+
+
+body:before, .map, .map-image, .dot, .dot-anchor, .dot-content, .loader, .loader-logo, .nav-container {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.btn:before, .clouds, .dots, .dot-anchor-close, .dot-anchor-text, body:before, #intro, .loader-wrapper, .loader-circle, .map, .map-image-content, .page-standard:before, .project-intro:before, .project-intro-more:before, .mute-button:before, .cloud, .animating.content-project, .animating.content-page, .button-graphic, .button-graphic:before, .button-graphic:after, .dot, .dot-anchor, .dot-content, .dot-link, .fallback-page, #intro audio, #intro:before, .intro-logo, .intro-logo-image, .logo-background, .map-image, .nav-container, .nav-footer, .nav-button, .nav-button-graphic, .hamburger, .hamburger:before, .hamburger:after, .row-project-single:before, .project-intro-video, .project-intro-video iframe, .project-intro-video-controller-start:after, .project-intro-more, .project-image, .project-wave, .project-number {
+    position: absolute;
+}
+
+.btn:before, .clouds, .dots, .dot-anchor-close, .dot-anchor-text, body:before, #intro, .loader-wrapper, .loader-circle, .map, .map-image-content, .page-standard:before, .project-intro:before, .project-intro-more:before, .dot-link, .nav-container, .project-intro-video, .project-intro-video iframe {
+    height: 100%;
+}
+
+.nav-content {
+    z-index: 1;
+    padding: 60px;
+}
+
+
+.btn, .content-project, .content-page, .dot-action, .dot-link-arrow, #page, .intro-content, .loader-circle .loader-circle-svg, .logo-content, .nav-content, .page-standard, .partner, .row-project-single, .project-section, .project-intro-video-content, .project-text, .project-section .col-image {
+    position: relative;
+}
+
+.mute-button:before, .btn:before, .cloud:before, .button-graphic:before, .button-graphic:after, .dot-link:before, body:before, #intro:before, .loader-logo:before, .logo-content:before, .map-image:before, .hamburger:before, .hamburger:after, .page-standard:before, .project-intro:before, .project-intro-video-content:before, .project-intro-video-controller-start:after, .project-intro-more:before, .button-back, .dot-action, .dot-link-arrow, html.mobile #fallback, html.mobile #fallback .fallback-mobile, html.lt-ie-10 #fallback, html.lt-ie-10 #fallback .fallback-desktop, .fallback-page, .loader.active, .logo, .nav-content ul li a, .partner {
+    display: block;
+
+
+.nav {
+  height: 100vh;
+  z-index: 100; }
+  .nav .vcs-logo {
+    max-width: 125px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    margin-left: -3px; }
+
+.nav-container {
+  overflow: auto;
+  z-index: 0;
+  width: 350px;
+  padding-top: 90px; }
+
+.nav-content {
+  z-index: 1;
+  padding: 60px; }
+  .nav-content ul {
+    list-style: none; }
+    .nav-content ul li a {
+      padding: 5px 0px; }
+
+.nav-footer {
+  padding: 60px;
+  bottom: 0;
+  opacity: 0.75; }
+  .nav-footer .nav-footer-title {
+    padding-bottom: 15px; }
+
+@-webkit-keyframes wave {
+  from {
+    background-position: -25px 0; }
+  to {
+    background-position: -46px 0; } }
+
+@keyframes wave {
+  from {
+    background-position: -25px 0; }
+  to {
+    background-position: -46px 0; } }
+.nav-button {
+  z-index: 1;
+  width: 55px;
+  height: 55px;
+  top: 30px;
+  right: 30px;
+  border-radius: 100%; }
+  .state-map .nav.pulse .nav-button {
+    -webkit-animation: pulse-glow 6s 2s cubic-bezier(0.19, 1, 0.22, 1) infinite both;
+            animation: pulse-glow 6s 2s cubic-bezier(0.19, 1, 0.22, 1) infinite both; }
+
+.nav-button-graphic {
+  height: 100%;
+  width: 40%;
+  top: 0%;
+  left: 30%; }
+
+.hamburger {
+  height: 2px;
+  background-color: #5C70D6;
+  top: calc(50% - 1px);
+  -webkit-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+  .hamburger:before, .hamburger:after {
+    -webkit-transform-origin: 50% 50% 0px;
+        -ms-transform-origin: 50% 50% 0px;
+            transform-origin: 50% 50% 0px;
+    background-color: #5C70D6;
+    height: inherit;
+    width: inherit;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.5, 0, 0.25, 1), top 0.3s cubic-bezier(0.5, 0, 0.25, 1), bottom 0.3s cubic-bezier(0.5, 0, 0.25, 1);
+            transition: transform 0.3s cubic-bezier(0.5, 0, 0.25, 1), top 0.3s cubic-bezier(0.5, 0, 0.25, 1), bottom 0.3s cubic-bezier(0.5, 0, 0.25, 1); }
+  .hamburger:before {
+    top: -7px; }
+  .hamburger:after {
+    bottom: -7px; }
+  .active .hamburger {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    background-color: transparent; }
+    .active .hamburger:before {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 0px; }
+    .active .hamburger:after {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      bottom: 0px; }

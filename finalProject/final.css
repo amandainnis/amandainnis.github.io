@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+
+* {
+	box-sizing: border-box;
+}
+
+ .clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
+
+
+
+
+body {
+	font-family: 'Roboto';
+}
+
+nav {
+	width: 100%;
+}
+
+
+#my_parent {
+	float: left;
+	border: 1px black solid;
+}
+
+h3 {
+	float: right;
+	margin: 1em 0;
+}
+
+
+.sideBar {
+	margin: 1em;
+	float: left;
+	// border: 1px black solid;
+}
+
+.brush0 {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px black solid;
+	float: left;
+}
+
+.brush0Color, .brush1Color {
+	border-top: 1px #a9a9a9 solid;
+	padding: 1em 0;
+}
+
+.brush1 {
+	width: 30px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px black solid;
+	float: left;
+}
+
+input {
+	float: right;
+}
+
+
+#screenshot {
+	float: left;
+	margin-top: 3em;
+}
+
+
+.brushImg {
+	width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+//////////////// NAV i stole ///////////////////
+
+// .nav {
+//     height: 100vh;
+//     z-index: 100;
+// }
+
+// .nav {
+//     right: 0px;
+// }
+
+// .nav {
+//     position: fixed;
+// }
+
+
+
+// .hamburger {
+//     height: 2px;
+//     // background-color: #5C70D6;
+//     background-color: black;
+//     top: calc(50% - 1px);
+//     -webkit-transition: background-color 0.2s ease;
+//     transition: background-color 0.2s ease;
+//     -webkit-transition-delay: 0.1s;
+//     transition-delay: 0.1s;
+// }
+
+
+//  .nav-button {
+//     z-index: 1;
+//     width: 55px;
+//     height: 55px;
+//     top: 30px;
+//     right: 30px;
+//     border-radius: 100%;
+// }
+
+// .nav-button {
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//     -webkit-transform-style: flat;
+//     transform-style: flat;
+//     background-color: white;
+//     // background-color: green;
+// }
+
+//////////////// end of NAV i stole ///////////////////
