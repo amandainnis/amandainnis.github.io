@@ -137,7 +137,7 @@ screenshotButton.on('click', function(){
 
 $('#fileinput1').click(function(){
     var inputImg = $(this).val();
-    var $newBkgd = $('.level1').css('background-image', inputImg);
+    var $newBkgd = $('.level1').css('background-image', 'url(' + inputImg + ')');
     
 });
     
