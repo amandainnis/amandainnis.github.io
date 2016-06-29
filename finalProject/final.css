@@ -204,8 +204,11 @@ input {
 }
 
 .level1 {
-	width: 100%;
-	padding: 8em;
+	width: 578px;
+	height: 578px;
+	background-image: url('yellow is my friend.png');
+	background-size: cover;
+	// padding: 28em;
 }
 
 
