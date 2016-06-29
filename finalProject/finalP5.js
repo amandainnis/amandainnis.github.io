@@ -9,8 +9,11 @@ var brushIndex = 0;
 var brushes = [{
 	size: [10, 10]
 }, {
-	size: [30, 40]	
-}];
+	size: [30, 40],	
+}, {
+    size: [50, 60]
+}
+];
 
 
 $(document).ready(function() {
@@ -55,7 +58,18 @@ $(document).ready(function() {
 
     });
 
+    $(".color-picker2").on('click', function() {
+        var thisColor = $(".color-picker2").val();
+        console.log(thisColor);
+        brushIndex = 2;
 
+    });
+
+    $("#triangle").on('click', function() {
+        var thisShape = triangle(290, 225, 450, 175, 550, 225);
+        
+
+    });
 
 });
 
@@ -76,9 +90,13 @@ function draw() {
     var brush = brushes[brushIndex];
     if (brushIndex === 0) {
     	var color = $(".color-picker0").val();
-    } else {
+    } else if (brushIndex === 1) {
     	var color = $(".color-picker1").val();
-    }
+    } else if (brushIndex === 2) {
+        var color = $(".color-picker2").val();}
+
+
+
 
     // var color = $('.color-picker0').val();
     console.log(brush)
@@ -114,12 +132,16 @@ var screenshotButton = $('#screenshot');
 screenshotButton.on('click', function(){
 	alert("you got it");
 	save('#my_parent.png');
-})
+});
 
 
-// function mouseClicked(){
-//   save('myCanvas.png');
-// }
+$('#fileinput1').click(function(){
+    var inputImg = $(this).val();
+    var $newBkgd = $('.level1').css('background-image', inputImg);
+    
+});
+    
+
 
 // $('.brush0').on('click', function() {
 //     if (type === 'ellipse') {

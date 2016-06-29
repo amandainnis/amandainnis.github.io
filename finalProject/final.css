@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,900 );
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black);
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,25 +61,76 @@ table {
 
 
 
+
 body {
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
 }
 
 nav {
+	// background-color: #f5f5f5;
 	width: 100%;
+	// -webkit-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+	// -moz-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+	// box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+}
+
+.subNav {
+	width: 100%;
+	margin: 1rem 0 0 1rem; 
 }
 
 
 #my_parent {
+	margin: 2rem 0 0 1rem;
 	float: left;
 	border: 1px black solid;
 }
 
-h3 {
-	float: right;
-	margin: 1em 0;
+
+
+
+h1 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2em;
+	font-weight: 200;
+	padding: 1rem;
+	margin-top: 1rem;
+	// color: #e0e0e0;
+	color: black;
+	// color: white;
+	// text-align: center;
 }
 
+// h1 .upper {
+// 	// text-transform: uppercase;
+// }
+
+
+p {
+	font-weight: 300;
+	font-size: 16px;
+	color: rgba(0,0,0, .54);
+}
+
+.leftsize, .rightcolor {
+	display: inline-block;
+	margin: 1em 0;
+	color: rgba(0,0,0, .54);
+	
+}
+.rightcolor {
+	float: right;
+	
+}
+.leftsize {
+	float left;
+}
 
 .sideBar {
 	margin: 1em;
@@ -88,27 +141,41 @@ h3 {
 .brush0 {
 	width: 10px;
 	height: 10px;
-	border-radius: 50%;
+}
+
+
+
+.brush1 {
+	width: 30px;
+	height: 40px;	
+}
+
+.brush2 {
+	width: 50px;
+	height: 60px;
+}
+
+.brush3 {
+	width: 70px;
+	height: 80px;
+}
+
+
+.brush0, .brush1, .brush2, .brush3 {
+	float: right;
 	border: 1px black solid;
+	border-radius: 50%;
+}
+
+input {
 	float: left;
 }
 
-.brush0Color, .brush1Color {
+.brush0Color, .brush1Color, .brush2Color, .brush3Color  {
 	border-top: 1px #a9a9a9 solid;
 	padding: 1em 0;
 }
 
-.brush1 {
-	width: 30px;
-	height: 40px;
-	border-radius: 50%;
-	border: 1px black solid;
-	float: left;
-}
-
-input {
-	float: right;
-}
 
 
 #screenshot {
@@ -117,17 +184,29 @@ input {
 }
 
 
-.brushImg {
+.brushImg, .paletteImg {
 	width: 20%;
+	// border: 1px black solid;
+}
+
+.paletteImg {
+	float: right;
 }
 
 
 
+#emptyFrame {
+	margin: 1rem 0 0 1rem;
+	float: left;
+	border: 1px black solid;
+	width: 580px;
+	height: 580px;
+}
 
-
-
-
-
+.level1 {
+	width: 100%;
+	padding: 8em;
+}
 
 
 //////////////// NAV i stole ///////////////////
