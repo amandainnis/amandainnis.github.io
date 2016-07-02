@@ -139,16 +139,16 @@ $(document).ready(function() {
 // end of doc ready
 
 
-function preload() {
-  canvasImg = loadImage('url');
+// function preload() {
+//   canvasImg = loadImage('url');
   
-}
+// }
 
 function setup() {
     var canvasOne = createCanvas(580, 580);
     canvasOne.parent('my_parent');
-    var canvasTwo = createCanvas(580, 580);
-    canvasTwo.parent('emptyFrameCanvas');
+    // var canvasTwo = createCanvas(580, 580);
+    // canvasTwo.parent('emptyFrameCanvas');
 };
 
 
