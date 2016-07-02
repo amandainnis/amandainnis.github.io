@@ -1,5 +1,5 @@
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,900 );
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,900);
 @import url(https://fonts.googleapis.com/css?family=Archivo+Black);
 
 html, body, div, span, applet, object, iframe,
@@ -43,220 +43,238 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;}
+	border-spacing: 0;
+}
 
 * {
 	box-sizing: border-box;
 }
 
  .clearfix:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-		}
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
 
 
 
 
 
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 .wrapper {
-	width: 80%;
-	margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 nav {
-	// background-color: #f5f5f5;
-	width: 100%;
-	// -webkit-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
-	// -moz-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
-	// box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+    // background-color: #f5f5f5;
+    width: 100%;
+    // -webkit-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+    // -moz-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+    // box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+}
+
+.redditHero {
+    width: 50%;
+}
+
+.paintHero {
+    width: 50%;
 }
 
 .subNav {
-	width: 100%;
-	margin: 1rem 0 0 1rem; 
+    margin: 1rem 0 0 1rem;
 }
-
 
 #my_parent {
-	margin: 2rem 0 0 1rem;
-	float: left;
-	border: 1px black solid;
+    margin: 2rem 0 0 1rem;
+    float: left;
+    border: 1px black solid;
 }
-
-
 
 
 h1 {
-	font-family: 'Archivo Black', sans-serif;
-	font-size: 2em;
-	font-weight: 200;
-	padding: 1rem;
-	margin-top: 1rem;
-	// color: #e0e0e0;
-	color: black;
-	// color: white;
-	// text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    font-weight: 200;
+    padding: 1rem;
+    margin-top: 1rem;
+    // color: #e0e0e0;
+    color: black;
+    // color: white;
+    // text-align: center;
 }
 
 // h1 .upper {
 // 	// text-transform: uppercase;
 // }
-
-
 p {
-	font-weight: 300;
-	font-size: 16px;
-	color: rgba(0,0,0, .54);
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .54);
+    // width: 580px;
 }
 
-.leftsize, .rightcolor {
-	display: inline-block;
-	margin: 1em 0;
-	color: rgba(0,0,0, .54);
-	
+.nameYourPainting {
+    width: 580px;
 }
+
+// .nameYourPainting .titleSpan {
+// 	padding: 10px;
+// 	background-color: yellow;
+// 	font-weight: 500;
+// 	margin: 5px;
+// 	border-radius: 10px;
+// 	cursor: pointer;
+// 	display: inline-block;
+// }
+.nameYourPainting .titleSpan {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid black;
+    // width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.leftsize,
 .rightcolor {
-	float: right;
-	
+    display: inline-block;
+    margin: 1em 0;
+    color: rgba(0, 0, 0, .54);
+    user-select: none;
+    -webkit-user-select: none;
 }
+
+.rightcolor {
+    float: right;
+}
+
 .leftsize {
-	float left;
+    float left;
 }
 
 .sideBar {
-	margin: 1em;
-	float: left;
-	// border: 1px black solid;
+    margin: 1em;
+    float: left;
+    // border: 1px black solid;
 }
 
 .brush0 {
-	width: 10px;
-	height: 10px;
+    width: 10px;
+    height: 10px;
 }
 
-
-
 .brush1 {
-	width: 30px;
-	height: 40px;	
+    width: 30px;
+    height: 40px;
 }
 
 .brush2 {
-	width: 50px;
-	height: 60px;
+    width: 50px;
+    height: 60px;
 }
 
 .brush3 {
-	width: 70px;
-	height: 80px;
+    width: 70px;
+    height: 80px;
 }
 
-
-.brush0, .brush1, .brush2, .brush3 {
-	float: right;
-	border: 1px black solid;
-	border-radius: 50%;
+.brush0,
+.brush1,
+.brush2,
+.brush3 {
+    float: right;
+    border: 1px black solid;
+    border-radius: 50%;
 }
 
 input {
-	float: left;
+    float: left;
 }
 
-.brush0Color, .brush1Color, .brush2Color, .brush3Color  {
-	border-top: 1px #a9a9a9 solid;
-	padding: 1em 0;
+.brush0Color,
+.brush1Color,
+.brush2Color,
+.brush3Color {
+    border-top: 1px #a9a9a9 solid;
+    padding: 1em 0;
 }
 
-
+.color-pickerBackground {
+    float: left;
+}
 
 #screenshot {
-	float: left;
-	margin-top: 3em;
+    float: left;
+    margin-top: 3em;
 }
 
-
-.brushImg, .paletteImg {
-	width: 20%;
-	// border: 1px black solid;
+.brushImg,
+.paletteImg {
+    width: 20%;
+    // border: 1px black solid;
 }
 
 .paletteImg {
-	float: right;
+    float: right;
 }
 
-
+// p {
+// 	width: 60%;
+// }
+#reddit {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
 
 #emptyFrame {
-	margin: 1rem 0 0 1rem;
-	float: left;
-	border: 1px black solid;
-	width: 580px;
-	height: 580px;
+    margin: 1rem 0 0 1rem;
+    float: left;
+    border: 1px black solid;
+    width: 580px;
+    height: 580px;
 }
 
 .level1 {
-	width: 578px;
-	height: 578px;
-	background-image: url('yellow is my friend.png');
-	background-size: cover;
-	// padding: 28em;
+    width: 578px;
+    height: 578px;
+    // background-image: url('yellow is my friend.png');
+    // background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG');
+    background-size: cover;
+    // padding: 28em;
+    background-color: #00bcd6;
+    background-blend-mode: color-burn;
 }
 
+.backgroundBlendColor {
+    background-color: #D0B0FB;
+}
 
-//////////////// NAV i stole ///////////////////
+.bbmColorBurn {
+    background-blend-mode: color-burn;
+}
 
-// .nav {
-//     height: 100vh;
-//     z-index: 100;
-// }
-
-// .nav {
-//     right: 0px;
-// }
-
-// .nav {
-//     position: fixed;
-// }
-
-
-
-// .hamburger {
-//     height: 2px;
-//     // background-color: #5C70D6;
-//     background-color: black;
-//     top: calc(50% - 1px);
-//     -webkit-transition: background-color 0.2s ease;
-//     transition: background-color 0.2s ease;
-//     -webkit-transition-delay: 0.1s;
-//     transition-delay: 0.1s;
-// }
-
-
-//  .nav-button {
-//     z-index: 1;
-//     width: 55px;
-//     height: 55px;
-//     top: 30px;
-//     right: 30px;
-//     border-radius: 100%;
-// }
-
-// .nav-button {
-//     -webkit-backface-visibility: hidden;
-//     backface-visibility: hidden;
-//     -webkit-transform-style: flat;
-//     transform-style: flat;
-//     background-color: white;
-//     // background-color: green;
-// }
-
-//////////////// end of NAV i stole ///////////////////
+.backgroundBlur {
+    -webkit-filter: blur(15px);
+    /* Chrome, Safari, Opera */
+    filter: blur(15px);
+}

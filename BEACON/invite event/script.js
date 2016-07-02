@@ -39,7 +39,7 @@ $(document).ready(function() {
       $("#bottomBar2").hide();
       $(".addMe").hide();
       $("#bottomBar").show();
-      $timeButton.removeClass( 'green');
+      $timeButton.removeClass( 'teal');
 
     });
     
@@ -48,40 +48,13 @@ $(document).ready(function() {
       $(".addMe").show();
       $("#bottomBar").hide();
       $("#bottomBar2").show();
-      $timeButton.removeClass( 'green');
-      $(this).addClass( 'green');
+      $timeButton.removeClass( 'teal');
+      $(this).addClass( 'teal');
 
       
   });
 
-    // $confirmButton.mouseover(function(){
-    //   $timeButton.addClass( 'lightBlue');
-    //   // $timeButtonGreen.addClass( 'green');
-    // });
-
-    // $confirmButton.mouseover(function(){
-    //   var flagbutton = $("$timeButton").hasClass('green');
-    //   console.log(flagbutton)
-    //   if (flagbutton == false) {
-    //     console.log("if false condition")
-
-    //   }
-
-    //   else {
-    //     console.log("if false condition")
-
-    //   }
-
-    //   if (!$timeButton.hasClass('green')) {
-    //   $timeButton.addClass( 'lightBlue');
-    // }
-    // });
-
-// $confirmButton.mouseleave(function(){
-//   $timeButton.removeClass( 'lightBlue');
-// })
-
-
+   
 
 
 });

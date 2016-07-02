@@ -679,7 +679,7 @@ body {
 
 
 
-#readershipWrapper, #touchpointWrapper, #securitiesWrapper, #meetingsWrapper, #editContactWrapper {
+#readershipWrapper, #touchpointWrapper, #securitiesWrapper, #meetingsWrapper, #editContactWrapper, #scheduleMeetingWrapper {
 	width: 500px;
 	height: 460px;
 	background-color: white;
@@ -1072,7 +1072,7 @@ body {
 	text-transform: uppercase;
 }
 
-.bar1Event .mdi-close, .bar2Event .mdi-close, .editContactBar .mdi-close{
+.bar1Event .mdi-close, .bar2Event .mdi-close, .editContactBar .mdi-close, .scheduleMeetingBar .mdi-close{
 	position: absolute;
 	left: 465px;
 	font-size: 17px;
@@ -1626,9 +1626,9 @@ background-color: #bbdefb;
   border-color: #BDBDBD; }
 
 
-///////////////////////EDIT CONTACT//////////////////
+///////////////////////EDIT CONTACT   SCHEDULE MEETING//////////////////
 
-#bottomBarEditContact {
+#bottomBarEditContact, #bottomBarScheduleMeeting {
     width: 500px;
     height: 40px;
     background-color: #f4f6f8;
@@ -1637,7 +1637,7 @@ background-color: #bbdefb;
     z-index: 2;
 }
 
-.editContactBar {
+.editContactBar, .scheduleMeetingBar {
     width: 100%;
     height: 30px;
     background-color: #dde5ef;
@@ -1651,11 +1651,12 @@ background-color: #bbdefb;
     text-transform: uppercase;
 }
 
-.editContactInnerFormWrapper {
+.editContactInnerFormWrapper, .scheduleMeetingInnerFormWrapper {
     width: 475px;
   	height: 430px;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-top: 10px;
     padding-bottom: 45px;
     margin: 0 0 0 25px;
     /*border: 1px black solid;*/
@@ -1674,7 +1675,7 @@ background-color: #bbdefb;
 }
 
 .inputWrapperPrefix {
-    width: 77%;
+    width: 79%;
 	/*padding-left: 30px;*/
 }
 
@@ -1963,7 +1964,7 @@ textarea.materialize-textarea + label:after {
     position: absolute;
     width: 2rem;
     font-size: 22px;
-    top: 10px;
+    top: 5px;
     -webkit-transition: color .2s;
     -moz-transition: color .2s;
     -o-transition: color .2s;
@@ -2108,8 +2109,8 @@ textarea.materialize-textarea {
 //     top: -14px;
 //     font-size: 0.8rem; }
 
-// /*select {
-//   display: none; }*/
+// select {
+//   display: none; }
 
 // select.browser-default {
 //   display: block; }
@@ -2121,7 +2122,7 @@ textarea.materialize-textarea {
 //   color: rgba(0, 0, 0, 0.3);
 //   cursor: default;
 //   -webkit-user-select: none;
-//    webkit (safari, chrome) browsers 
+//    // webkit (safari, chrome) browsers 
 //   -moz-user-select: none;
 //   /* mozilla browsers */
 //   -ms-user-select: none;
@@ -2131,9 +2132,9 @@ textarea.materialize-textarea {
 // .select-wrapper i {
 //   color: rgba(0, 0, 0, 0.3); }
 
-// /*.select-dropdown li.disabled, .select-dropdown li.disabled > span, .select-dropdown li.optgroup {
+// .select-dropdown li.disabled, .select-dropdown li.disabled > span, .select-dropdown li.optgroup {
 //   color: rgba(0, 0, 0, 0.3);
-//   background-color: transparent; }*/
+//   background-color: transparent; }
 
 // .select-dropdown li img {
 //   height: 40px;
@@ -2174,4 +2175,62 @@ textarea.materialize-textarea {
 
 
 
+.selectMenu {
+	position: absolute;
+	display: inline-block;
+	top: -16px;
+	left: 5px;
+	width: 160px;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	// border: 1px #a7a7a7 solid;
+}
 
+.selectTitle {
+	display: inline-block;
+	width: 135px;
+	position: relative;
+	// top: 6px;
+	// left: 345px;
+	
+	text-align: left;
+	// position: relative;
+	padding: .5em 0 .5em .7em;
+	// left: -.3em;
+	
+	color: #6b6b6b;
+	// box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+	border-bottom: 1px #6b6b6b solid;
+}
+
+
+.selectTitle .mdi-chevron-down {
+	display: inline-block;
+	position: relative;
+	// top: -19px;
+	// left: 462px;
+	font-size: 17px;
+	color: #6b6b6b;
+}
+
+.selectMenu li {
+	// background-color: #F1F3F5;
+	padding: .5em 0 .5em .7em;
+	color: rgba(0, 105, 203, 0.8);
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	// border: 1px black solid;
+	
+}
+
+.selectMenu li:hover {
+	background-color: #F0F0F0;
+	cursor: pointer;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+}

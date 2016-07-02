@@ -1,9 +1,12 @@
 $(document).ready(function(){
+
+  // $('select').material_select();
 	$('#readershipWrapper').hide();
 	$('#touchpointWrapper').hide();
 	$('#securitiesWrapper').hide();
 	$('#meetingsWrapper').hide();
   $('#editContactWrapper').hide();
+  $('#scheduleMeetingWrapper').hide();
   $('.voiceDropChoose li').hide();
 
 	$('#bottomBarCall').show(); 
@@ -219,6 +222,66 @@ $('#bottomBarEditContact .cancelButton').click(function(){
 $('.editContactBar .mdi-close').click(function(){
   $('#editContactWrapper').hide();
 });
+
+//////////////////// schedule mtg/////////
+
+
+$('.mdi-calendar').click(function(){
+  $('#scheduleMeetingWrapper').show();
+});
+
+$('#bottomBarScheduleMeeting .cancelButton').click(function(){
+  $('#scheduleMeetingWrapper').hide();
+});
+
+$('.scheduleMeetingBar .mdi-close').click(function(){
+  $('#scheduleMeetingWrapper').hide();
+});
+
+
+  var $selectTitle = $('.selectTitle');
+  var option1 = $('#mydefault');
+  var standard = $('#standard');
+  var deluxe = $('#deluxe');
+  var hypo = $('#hypo');
+  
+  $dropThis.click(function(){
+    $('.voiceDropChoose li').show();
+
+       standard.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+
+       mydefault.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+       
+       deluxe.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+
+       hypo.click(function(){
+          var inputText = $(this).text();
+          $dropThis.text(inputText);
+          $('.voiceDropChoose li').hide();
+       }); 
+
+
+  });
+
+
+
+
+
+
+
+
 
 
 

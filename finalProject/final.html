@@ -3,7 +3,6 @@
 
 <head>
     <title></title>
-    <!-- <link rel="stylesheet" type="text/css" href="spectrum.css"> -->
     <link rel="stylesheet" type="text/css" href="final.css">
 </head>
 
@@ -12,56 +11,102 @@
         <nav>
             <h1><span class="upper">Drawing</span> (Undefined)</h1>
         </nav>
-        <div class="subNav">
+        <img class="redditHero" src="whatcanudo.png">
+        <!-- <img class="paintHero"src="bernievaguepaintingwow.png"> -->
+        <div class="subNav clearfix">
             <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
             </p>
-        </div>
-        <div id="my_parent"></div>
-        <div class="sideBar clearfix">
-            <div class="typeHeader clearfix">
-                <!-- <img class="brushImg" src="brush.png"> -->
-                <!-- <img class="paletteImg" src="palette.png"> -->
-                <span class="leftsize">Size</span>
-                <span class="rightcolor clearfix">Color</span>
+            <!-- <div id="reddit">Click here</div> -->
+            <div class="nameYourPainting clearfix">
+                <input class="input0 color-pickerBackground" type="color" value="#00BCD6"></input>
             </div>
-            <div class="brush0Color clearfix">
-                <div class="brush0"></div>
-                <!-- <div class="brush2"></div> -->
-                <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
+        </div>
+
+        <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="imageWrapper clearfix">
+            <div id="emptyFrameCanvas">
                 
             </div>
-            <div class="brush1Color clearfix">
-                <div class="brush1"></div>
-                <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
-            </div>
-            <div class="brush2Color clearfix">
-                <div class="brush2"></div>
-                <input class="input2 color-picker2" type="color" value="#A2A508"></input>
-            </div>
-            <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
-            <button id="screenshot" class="clearfix">Take screenshot</button>
+            <button id="screenshot3" class="clearfix">Take screenshot</button>
         </div>
-        <!-- //end of sideBar -->
-        <div id="emptyFrame" class="level0">
-            <div class="level1">
-                <div class="level2">
-                    <div class="level3">
-                        <div class="level4">
-                        </div>
-                    </div>
+        <!-- end of imageWrapper -->
+
+
+        <div class="imageWrapper clearfix">
+            <div id="emptyFrame" class="level0">
+                <div class="level1">
                 </div>
             </div>
+            <button id="screenshot2" class="clearfix">Take screenshot</button>
         </div>
-        <div class="sideBar2">
-            <input type="file" id="fileinput1" class="clearfix" />
-            <!--  <button id="level0load" class="clearfix">Level0 LoadImg</button> -->
+        <!-- end of imageWrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="paintingWrapper clearfix">
+            <!-- end of empty frame -->
+            <div id="my_parent"></div>
+            <div class="sideBar clearfix">
+                <div class="typeHeader clearfix">
+                    <i class="mdi mdi-brush"></i>
+                    <i class="mdi mdi-palette"></i>
+                    <!-- <img class="brushImg" src="brush.png"> -->
+                    <!-- <img class="paletteImg" src="palette.png"> -->
+                    <span class="leftsize">Color</span>
+                    <span class="rightcolor clearfix">Size</span>
+                </div>
+                <div class="brush0Color clearfix">
+                    <div class="brush0"></div>
+                    <!-- <div class="brush2"></div> -->
+                    <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
+                </div>
+                <div class="brush1Color clearfix">
+                    <div class="brush1"></div>
+                    <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
+                </div>
+                <div class="brush2Color clearfix">
+                    <div class="brush2"></div>
+                    <input class="input2 color-picker2" type="color" value="#A2A508"></input>
+                </div>
+                <div class="brush3Color clearfix">
+                    <div class="brush3"></div>
+                    <input class="input3 color-picker3" type="color" value="#BB65CA"></input>
+                </div>
+                <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
+                <button id="screenshot" class="clearfix">Take screenshot</button>
+            </div>
+            <!-- //end of sideBar -->
         </div>
-        <!-- end of empty frame -->
+        <!-- end of paintingWrapper -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <!-- end of wrApper -->
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
     <!-- <script type="text/javascript" src="spectrum.js"></script> -->
+    <!-- <script type="text/javascript" src="html2canvas.js"></script> -->
     <script type="text/javascript" src="p5.js"></script>
     <script type="text/javascript" src="p5.dom.js"></script>
     <script type="text/javascript" src="finalP5.js"></script>
