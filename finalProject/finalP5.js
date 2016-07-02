@@ -139,16 +139,12 @@ $(document).ready(function() {
 // end of doc ready
 
 
-// function preload() {
-//   canvasImg = loadImage('url');
-  
-// }
+
 
 function setup() {
     var canvasOne = createCanvas(580, 580);
     canvasOne.parent('my_parent');
-    // var canvasTwo = createCanvas(580, 580);
-    // canvasTwo.parent('emptyFrameCanvas');
+    
 };
 
 
@@ -214,7 +210,7 @@ var screenshotButton2 = $('#screenshot2');
 screenshotButton2.on('click', function() {
     alert("you got it");
     // newImg = $('.level1').css('background-image','url');
-    save("$('.level1').css('background-image','url').png");
+    // save("$('.level1').css('background-image','url').png");
 });
 
 
@@ -237,11 +233,11 @@ screenshotButton2.on('click', function() {
 ////////////// end of  html to canvas //////////////////
 
 
-$('#fileinput1').click(function() {
-    var inputImg = $(this).val();
-    var $newBkgd = $('.level1').css('background-image', 'url(' + inputImg + ')');
+// $('#fileinput1').click(function() {
+//     var inputImg = $(this).val();
+//     var $newBkgd = $('.level1').css('background-image', 'url(' + inputImg + ')');
 
-});
+// });
 
 // $('.brush0').on('click', function() {
 //     if (type === 'ellipse') {

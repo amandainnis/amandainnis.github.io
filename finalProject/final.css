@@ -73,6 +73,15 @@ body {
     margin: 0 auto;
 }
 
+#my_parent {
+    margin: 2rem 0 0 1rem;
+    float: left;
+    border: 1px black solid;
+    width: 580px;
+    height: 580px;
+}
+
+
 nav {
     // background-color: #f5f5f5;
     width: 100%;
@@ -93,11 +102,7 @@ nav {
     margin: 1rem 0 0 1rem;
 }
 
-#my_parent {
-    margin: 2rem 0 0 1rem;
-    float: left;
-    border: 1px black solid;
-}
+
 
 
 h1 {
@@ -278,3 +283,4 @@ input {
     /* Chrome, Safari, Opera */
     filter: blur(15px);
 }
+
