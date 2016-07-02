@@ -24,17 +24,18 @@ var goatBody;
 var goatTail;
 var goatHead;
 
-var screenshotButton = $('#screenshot');
-screenshotButton.on('click', function() {
-    alert("you got it");
-    save('#myParent.png');
-});
+
 
 
 function preload() {
   img = loadImage('plantGroup.png');
   goatBody = loadImage('goatBody.png');
   goatHead = loadImage('goatHead.png');
+  var screenshotButton = $('#screenshot');
+   screenshotButton.on('click', function() {
+    alert("you got it");
+    save('#myParent.png');
+});
 }
 
 function setup() {
