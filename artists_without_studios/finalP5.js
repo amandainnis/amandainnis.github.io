@@ -39,6 +39,18 @@ $(document).ready(function() {
         //     $('.redditHero').show();
         // })
 
+        $('#studioWall').hide();
+        
+        $('h2').on('click', function(){
+            $('#studioWall').show();
+            $('.redditHero').hide();
+        });
+
+        $('h1').on('click', function(){
+            $('#studioWall').hide();
+            $('.redditHero').show();
+        });
+
         $('.changeRedditImage').on('click', function(){
             $('.nameYourPainting').css({'display': 'block'});
         });
