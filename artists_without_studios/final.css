@@ -169,20 +169,40 @@ p {
 // }
 
 .changeRedditImage {
-	display: block;
-	padding: .5rem;
+	// display: block;
+	// padding: .5rem;
 	font-weight: 500;
 	position: relative;
 	text-align: left;
+    color: #6b6b6b;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D8D8D8;
+    cursor: pointer;
+}
+
+.downTriangle {
+    width: 5%;
+    margin-left: 5px;
+}
+
+.changeBkgrdColor, .changeFltr {
+    // padding: .5rem;
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    color: #6b6b6b;
 }
 
 .redditOption1,
 .redditOption2,
 .redditOption3
  {
-    border-top: 1px #a9a9a9 solid;
-    padding: 1em 0;
+    padding: 1.3rem .5rem .4rem .5rem;
 }
+
+// .redditOption1 {
+//  border-top: 1px #a9a9a9 solid;
+// }
 
 .nameYourPainting {
     
@@ -206,18 +226,29 @@ p {
 	display: block;
 }
 
-.bbmButton {
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: pointer;
-    padding: 10px;
-    margin: 10px 5px;
-    border: 1px solid black;
-    // width: 100px;
-    text-align: center;
-    border-radius: 10px;
-    display: inline-block;
+.filters {
+    padding: 0 10px;
 }
+
+.filters li {
+    padding: 5px 0;
+}
+
+input[type="radio" i] {
+    margin-right: 10px;
+}
+// .bbmButton {
+//     user-select: none;
+//     -webkit-user-select: none;
+//     cursor: pointer;
+//     padding: 10px;
+//     margin: 10px 5px;
+//     border: 1px solid black;
+//     // width: 100px;
+//     text-align: center;
+//     border-radius: 10px;
+//     display: inline-block;
+// }
 
 .selectedJson,
 .selectedFilter {
@@ -289,12 +320,22 @@ p {
 }
 
 .color-pickerBackground {
-    margin-left: 1rem;
+    margin-right: .5rem;
 }
 
 #screenshot {
     float: left;
     margin-top: 3em;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    // margin: 10px 5px;
+    border: 1px solid black;
+    // width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .brushImg,

@@ -31,10 +31,17 @@ function preload() {
   img = loadImage('plantGroup.png');
   goatBody = loadImage('goatBody.png');
   goatHead = loadImage('goatHead.png');
-  var screenshotButton = $('#screenshot');
+  var screenshotButton = $('#screenshot3');
    screenshotButton.on('click', function() {
-    alert("you got it");
-    save('#myParent.png');
+    // alert("you got it");
+    // save('#myParent.png');
+    var canvas = document.getElementById('defaultCanvas0');
+    // save canvas image as data url (png format by default)
+      var dataURL = canvas.toDataURL();
+
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+      document.getElementById('canvasImg').src = dataURL;
 });
 }
 

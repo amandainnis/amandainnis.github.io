@@ -16,6 +16,8 @@ var brushes = [{
     size: [70, 80]
 }];
 
+// global scope so any function can use contents of this handmade variable, this var can have any name
+var previousClass = false;
 
 $(document).ready(function() {
         // $('.imageWrapper').hide();
@@ -64,9 +66,6 @@ $(document).ready(function() {
 
             $(this).addClass('selectedJson');
 
-
-            // $(this).css('color', 'blue');
-
             var url = $(this).data('url');
 
             $('.level1').css('background-image', 'url(' + url + ')');
@@ -75,7 +74,22 @@ $(document).ready(function() {
 
          // $('.level1').addClass('color-burn');
 
+
+         // turns off previousClass but also stores it as a variable for subsequent calls
+         // return states that this is the end of the function, it could return something but in this case it returns undefined
+        $('input[type=radio][name=filter]').change(function(){
+            if (previousClass) {
+               $('.level1').removeClass(previousClass); 
+            }
+            // following line changes the value of previousClass and holds it above, because previousClass 
+            //is a gloabal var, its value persists outside the function terminating
+            previousClass = this.value.toLowerCase();
+            $('.level1').addClass(previousClass);
+        });
+        
+
         $('.filters').on('click', 'li', function (){
+            return;
             var thisFilter = $(this).attr("class");
 
             // $('li').removeClass('selectedFilter');
