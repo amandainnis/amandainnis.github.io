@@ -16,35 +16,43 @@ var brushes = [{
     size: [70, 80]
 }];
 
-$('body').on('click', '.titleSpan', function(e) {
-    $(this).css('color', 'blue');
-
-    var url = $(this).data('url');
-
-    $('.level1').css('background-image', 'url(' + url + ')');
-});
-
-
-// $('body').on('click', '.titleSpan', function(e) {
-//     $(this).css('color', 'blue');
-
-//     var url = $(this).data('url');
-
-//     $('.level1').css('background-image', 'url(' + url + ')');
-// });
-
-
-//by clicking on this, you choose this
 
 $(document).ready(function() {
 
+        $('body').on('click', '.titleSpan', function(e) {
+            $('.titleSpan').removeClass('selectedJson');
 
-  
+            $(this).addClass('selectedJson');
+
+
+            // $(this).css('color', 'blue');
+
+            var url = $(this).data('url');
+
+            $('.level1').css('background-image', 'url(' + url + ')');
+        });
+
+
+         // $('.level1').addClass('color-burn');
+
+        $('.filters').on('click', 'li', function (){
+            var thisFilter = $(this).attr("class");
+
+            // $('li').removeClass('selectedFilter');
+            $(this).toggleClass('selectedFilter');
+
+            $('.level1').toggleClass(thisFilter);
+
+            // $('.titleSpan').click();
+        })
+
+
         $.get('https://www.reddit.com/top.json', handleResponse);
 
         var articles2 = [];
         var paintingTitles = [];
         var images = [];
+
 
         /////  articles is a local variable unless declared 
         function handleResponse(response) {
@@ -56,8 +64,14 @@ $(document).ready(function() {
                 return item.data;
             });
 
-            articles2 = jQuery.grep(articles, function( a ) {
-                return a.thumbnail !== ("");
+            // articles2 = jQuery.grep(articles, function( a ) {
+            //     return a.thumbnail !== ("");
+            // });
+
+             articles2 = jQuery.grep(articles, function( a ) {
+                if ( a.thumbnail.indexOf('http') > -1 ) {
+                    return a.thumbnail;
+                }
             });
            
             articles2.forEach(function(item) {
@@ -73,12 +87,16 @@ $(document).ready(function() {
             console.log(paintingTitles);
             console.log(images);
 
+            // $('.level1').css('background-image', images[0]);
+
             paintingTitles.forEach(function(title, i) {
                 var span = $('<span class="titleSpan">');
                 span.text(title);
                 span.attr('data-url', images[i]);
 
                $('.nameYourPainting').append(span); 
+
+               $('.titleSpan')[0].click();
             });
 
 
@@ -132,8 +150,6 @@ $(document).ready(function() {
         brushIndex = 3;
 
     });
-
-   
 
 });
 // end of doc ready

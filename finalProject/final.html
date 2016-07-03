@@ -9,35 +9,58 @@
 <body>
     <div class="wrapper">
         <nav>
-            <h1><span class="upper">Drawing</span> (Undefined)</h1>
+            <h1>Artists Without Studios</h1>
+            <h2>Mess with Pixelated Redddit Images, Make A Painting in the Canvas Element</h2>
+            <!-- <h1><span class="upper">Drawing</span> (Undefined)</h1> -->
         </nav>
-        <img class="redditHero" src="whatcanudo.png">
+        <img class="redditHero" src="whatcanudo2.png">
         <!-- <img class="paintHero"src="bernievaguepaintingwow.png"> -->
         <div class="subNav clearfix">
-            <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
-            </p>
+            
             <!-- <div id="reddit">Click here</div> -->
             <div class="nameYourPainting clearfix">
-                <input class="input0 color-pickerBackground" type="color" value="#00BCD6"></input>
+                
             </div>
         </div>
 
         <!-- ////////////////////////////////////////////////////////////////////////////////// -->
-        <div class="imageWrapper clearfix">
+        <!-- <div class="imageWrapper clearfix">
             <div id="emptyFrameCanvas">
                 
             </div>
             <button id="screenshot3" class="clearfix">Take screenshot</button>
-        </div>
+        </div> -->
         <!-- end of imageWrapper -->
 
 
         <div class="imageWrapper clearfix">
+        <p>Click on a title to load Reddit image, play with background color and image filters.
+            </p>
             <div id="emptyFrame" class="level0">
                 <div class="level1">
                 </div>
             </div>
-            <button id="screenshot2" class="clearfix">Take screenshot</button>
+            <!-- end of empty frame -->
+            <div class="sideBar2 clearfix">
+                <input class="input0 color-pickerBackground" type="color" value="#00BCD6"></input>
+                    <ul class="filters bbmButton">
+                        <li class="multiply">Multiply</li>
+                        <li class="screen">Screen</li>
+                        <li class="overlay">Overlay</li>
+                        <li class="darken">Darken</li>
+                        <li class="lighten">Lighten</li>
+                        <li class="color-dodge">Color-dodge</li>
+                        <li class="color-burn">Color-burn</li>
+                        <li class="hard-light">Hardlight</li>
+                        <li class="soft-light">Softlight</li>
+                        <li class="exclusion">Exclusion</li>
+                        <li class="hue">Hue</li>
+                        <li class="saturation">Saturation</li>
+                        <li class="color">Color</li>
+                        <li class="luminosity">Luminosity</li>
+                    </ul>
+                <button id="screenshot2" class="clearfix">Take screenshot</button>
+            </div>
         </div>
         <!-- end of imageWrapper -->
 
@@ -53,7 +76,8 @@
 
 
         <div class="paintingWrapper clearfix">
-            <!-- end of empty frame -->
+            <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
+            </p>
             <div id="my_parent"></div>
             <div class="sideBar clearfix">
                 <div class="typeHeader clearfix">

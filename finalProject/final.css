@@ -91,7 +91,7 @@ nav {
 }
 
 .redditHero {
-    width: 50%;
+    width: 90%;
 }
 
 .paintHero {
@@ -107,15 +107,18 @@ nav {
 
 h1 {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 200;
-    padding: 1rem;
+    padding: 1rem 0 .75rem 1rem;
     margin-top: 1rem;
     // color: #e0e0e0;
     color: black;
     // color: white;
     // text-align: center;
 }
+ h2 {
+ 	padding: 0 0 1rem 1rem;
+ }
 
 // h1 .upper {
 // 	// text-transform: uppercase;
@@ -129,6 +132,7 @@ p {
 
 .nameYourPainting {
     width: 580px;
+    width: 80%;
 }
 
 // .nameYourPainting .titleSpan {
@@ -140,7 +144,7 @@ p {
 // 	cursor: pointer;
 // 	display: inline-block;
 // }
-.nameYourPainting .titleSpan {
+.nameYourPainting .titleSpan, .bbmButton {
     user-select: none;
     -webkit-user-select: none;
     cursor: pointer;
@@ -152,6 +156,11 @@ p {
     border-radius: 10px;
     display: inline-block;
 }
+
+.selectedJson, .selectedFilter {
+	color: blue;
+}
+
 
 .leftsize,
 .rightcolor {
@@ -170,7 +179,7 @@ p {
     float left;
 }
 
-.sideBar {
+.sideBar, .sideBar2 {
     margin: 1em;
     float: left;
     // border: 1px black solid;
@@ -267,16 +276,21 @@ input {
     background-size: cover;
     // padding: 28em;
     background-color: #00bcd6;
-    background-blend-mode: color-burn;
+    // background-blend-mode: color-burn;
+}
+
+.sideBar2 {
+	float: left;
+	width: 300px;
 }
 
 .backgroundBlendColor {
     background-color: #D0B0FB;
 }
 
-.bbmColorBurn {
-    background-blend-mode: color-burn;
-}
+// .bbmColorBurn {
+//     background-blend-mode: color-burn;
+// }
 
 .backgroundBlur {
     -webkit-filter: blur(15px);
@@ -284,3 +298,18 @@ input {
     filter: blur(15px);
 }
 
+.multiply 	 { background-blend-mode: multiply;    }
+.screen 	 { background-blend-mode: screen; 	   } 
+.overlay 	 { background-blend-mode: overlay;     }
+.darken 	 { background-blend-mode: darken;      }
+.lighten 	 { background-blend-mode: lighten;     }
+.color-dodge { background-blend-mode: color-dodge; }
+.color-burn  { background-blend-mode: color-burn;  }
+.hard-light  { background-blend-mode: hard-light;  }
+.soft-light  { background-blend-mode: soft-light;  }
+.difference  { background-blend-mode: difference;  }
+.exclusion   { background-blend-mode: exclusion;   }
+.hue 		 { background-blend-mode: hue;   	   }
+.saturation  { background-blend-mode: saturation;  }
+.color 		 { background-blend-mode: color;       }
+.luminosity  { background-blend-mode: luminosity;  }
