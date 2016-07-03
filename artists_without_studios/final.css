@@ -94,6 +94,7 @@ nav {
 
 .redditHero {
     width: 90%;
+    margin-top: 1rem;
 }
 
 .paintHero {
@@ -117,7 +118,7 @@ h1 {
 
 h2 {
     
-    margin-top: 1rem;
+    margin-top: .1rem;
     cursor: pointer;
      padding: .5rem 0 1rem 1rem;
     
@@ -160,7 +161,7 @@ p {
 } 
 
 .imageWrapper, .paintingWrapper {
-	margin-top: 5rem;
+	margin-top: 2rem;
 }
 
 // .imageWrapper p {
