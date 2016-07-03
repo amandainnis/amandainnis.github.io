@@ -39,6 +39,14 @@ $(document).ready(function() {
             $('.redditHero').show();
         })
 
+        $('.changeRedditImage').on('click', function(){
+            $('.nameYourPainting').css({'display': 'block'});
+        });
+
+        $('.nameYourPainting').mouseleave(function() {
+            $('.nameYourPainting').css({'display': 'none'});
+        });
+
         $('body').on('click', '.titleSpan', function(e) {
             $('.titleSpan').removeClass('selectedJson');
 
