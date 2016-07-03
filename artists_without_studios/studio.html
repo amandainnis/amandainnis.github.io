@@ -9,87 +9,85 @@
 <body>
     <div class="wrapper">
         <nav>
-            <h1>Artists Without Studios</h1>
-            <h2><span class="showReddit">Mess with Pixelated Redddit Images</span> <span class="goPaint">Make A Painting in the Canvas Element</span></h2>
+            <h1><a href="index.html" target="_blank">Artists Without Studios</a></h1>
+            <h2>Mess with Pixelated Reddit Images, Make A Painting in the Canvas Element</h2>
             <!-- <h1><span class="upper">Drawing</span> (Undefined)</h1> -->
         </nav>
-        <img class="redditHero" src="whatcanudo3.png">
-        <!-- <img class="paintHero"src="bernievaguepaintingwow.png"> -->
-        <div class="imageWrapper clearfix">
-            <p>Click on a title to load Reddit image, play with background color and image filters.
-            </p>
-            
-            <div id="emptyFrame" class="level0">
-                <div class="level1">
+        <div id="studioWall">
+            <div class="imageWrapper clearfix">
+                <p>Click on a title to load Reddit image, play with background color and image filters.
+                </p>
+                <div id="emptyFrame" class="level0">
+                    <div class="level1">
+                    </div>
                 </div>
-            </div>
-            <!-- end of empty frame -->
-            <div class="sideBar2 clearfix">
-                <div class="redditOption1">
-                <span class="changeRedditImage">Change Reddit Image</span>
-                </div>
-                <!-- <div id="reddit">Click here</div> -->
+                <!-- end of empty frame -->
+                <div class="sideBar2 clearfix">
+                    <div class="redditOption1">
+                        <span class="changeRedditImage">Change Reddit Image</span>
+                    </div>
+                    <!-- <div id="reddit">Click here</div> -->
                     <div class="nameYourPainting clearfix">
                     </div>
-                
-                <div class="redditOption2">
-                <input class="input0 color-pickerBackground" type="color" value="#00BCD6"></input>
-                Change Background Color</div>
-
-                <div class="redditOption3">Apply Filters</div>
-                <ul class="filters bbmButton">
-                    <li class="multiply">Multiply</li>
-                    <li class="screen">Screen</li>
-                    <li class="overlay">Overlay</li>
-                    <li class="darken">Darken</li>
-                    <li class="lighten">Lighten</li>
-                    <li class="color-dodge">Color-dodge</li>
-                    <li class="color-burn">Color-burn</li>
-                    <li class="hard-light">Hardlight</li>
-                    <li class="soft-light">Softlight</li>
-                    <li class="exclusion">Exclusion</li>
-                    <li class="hue">Hue</li>
-                    <li class="saturation">Saturation</li>
-                    <li class="color">Color</li>
-                    <li class="luminosity">Luminosity</li>
-                </ul>
-                <button id="screenshot2" class="clearfix">Take screenshot</button>
+                    <div class="redditOption2">
+                        <input class="input0 color-pickerBackground" type="color" value="#00BCD6"></input>
+                        Change Background Color</div>
+                    <div class="redditOption3">Apply Filters</div>
+                    <ul class="filters bbmButton">
+                        <li class="none">None</li>
+                        <li class="multiply">Multiply</li>
+                        <li class="screen">Screen</li>
+                        <li class="overlay">Overlay</li>
+                        <li class="darken">Darken</li>
+                        <li class="lighten">Lighten</li>
+                        <li class="color-dodge">Color-dodge</li>
+                        <li class="color-burn">Color-burn</li>
+                        <li class="hard-light">Hardlight</li>
+                        <li class="soft-light">Softlight</li>
+                        <li class="exclusion">Exclusion</li>
+                        <li class="hue">Hue</li>
+                        <li class="saturation">Saturation</li>
+                        <li class="color">Color</li>
+                        <li class="luminosity">Luminosity</li>
+                    </ul>
+                    <button id="screenshot2" class="clearfix">Take screenshot</button>
+                </div>
             </div>
-        </div>
-        <!-- end of imageWrapper -->
-        <div class="paintingWrapper clearfix">
-            <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
-            </p>
-            <div id="my_parent"></div>
-            <div class="sideBar clearfix">
-                <div class="typeHeader clearfix">
-                    
-                    <span class="leftsize">Color</span>
-                    <span class="rightcolor clearfix">Size</span>
+            <!-- end of imageWrapper -->
+            <div class="paintingWrapper clearfix">
+                <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
+                </p>
+                <div id="my_parent"></div>
+                <div class="sideBar clearfix">
+                    <div class="typeHeader clearfix">
+                        <span class="leftsize">Color</span>
+                        <span class="rightcolor clearfix">Size</span>
+                    </div>
+                    <div class="brush0Color clearfix">
+                        <div class="brush0"></div>
+                        <!-- <div class="brush2"></div> -->
+                        <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
+                    </div>
+                    <div class="brush1Color clearfix">
+                        <div class="brush1"></div>
+                        <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
+                    </div>
+                    <div class="brush2Color clearfix">
+                        <div class="brush2"></div>
+                        <input class="input2 color-picker2" type="color" value="#A2A508"></input>
+                    </div>
+                    <div class="brush3Color clearfix">
+                        <div class="brush3"></div>
+                        <input class="input3 color-picker3" type="color" value="#BB65CA"></input>
+                    </div>
+                    <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
+                    <button id="screenshot" class="clearfix">Take screenshot</button>
                 </div>
-                <div class="brush0Color clearfix">
-                    <div class="brush0"></div>
-                    <!-- <div class="brush2"></div> -->
-                    <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
-                </div>
-                <div class="brush1Color clearfix">
-                    <div class="brush1"></div>
-                    <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
-                </div>
-                <div class="brush2Color clearfix">
-                    <div class="brush2"></div>
-                    <input class="input2 color-picker2" type="color" value="#A2A508"></input>
-                </div>
-                <div class="brush3Color clearfix">
-                    <div class="brush3"></div>
-                    <input class="input3 color-picker3" type="color" value="#BB65CA"></input>
-                </div>
-                <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
-                <button id="screenshot" class="clearfix">Take screenshot</button>
+                <!-- //end of sideBar -->
             </div>
-            <!-- //end of sideBar -->
+            <!-- end of paintingWrapper -->
         </div>
-        <!-- end of paintingWrapper -->
+        <!-- end of studiowall -->
     </div>
     <!-- end of wrApper -->
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
