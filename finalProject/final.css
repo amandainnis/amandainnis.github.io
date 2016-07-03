@@ -81,7 +81,6 @@ body {
     height: 580px;
 }
 
-
 nav {
     // background-color: #f5f5f5;
     width: 100%;
@@ -102,9 +101,6 @@ nav {
     margin: 1rem 0 0 1rem;
 }
 
-
-
-
 h1 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2.5em;
@@ -113,21 +109,33 @@ h1 {
     margin-top: 1rem;
     // color: #e0e0e0;
     color: black;
-    // color: white;
-    // text-align: center;
+    cursor: pointer;
 }
- h2 {
- 	padding: 0 0 1rem 1rem;
- }
 
-// h1 .upper {
-// 	// text-transform: uppercase;
-// }
+h2 {
+    padding: 0 0 1rem 1rem;
+    margin-top: .5rem;
+}
+
 p {
     font-weight: 300;
     font-size: 16px;
     color: rgba(0, 0, 0, .54);
+    margin-top: 1rem;
+    margin-left: 1rem;
     // width: 580px;
+}
+
+.showReddit,
+.goPaint {
+    border: 1px black solid;
+    padding: .5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.showReddit {
+    margin-right: .5em;
 }
 
 .nameYourPainting {
@@ -135,16 +143,17 @@ p {
     width: 80%;
 }
 
-// .nameYourPainting .titleSpan {
-// 	padding: 10px;
-// 	background-color: yellow;
-// 	font-weight: 500;
-// 	margin: 5px;
-// 	border-radius: 10px;
-// 	cursor: pointer;
-// 	display: inline-block;
-// }
-.nameYourPainting .titleSpan, .bbmButton {
+.nameYourPainting .titleSpan {
+	padding: 10px;
+	background-color: yellow;
+	font-weight: 500;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.bbmButton {
     user-select: none;
     -webkit-user-select: none;
     cursor: pointer;
@@ -157,10 +166,10 @@ p {
     display: inline-block;
 }
 
-.selectedJson, .selectedFilter {
-	color: blue;
+.selectedJson,
+.selectedFilter {
+    color: blue;
 }
-
 
 .leftsize,
 .rightcolor {
@@ -179,7 +188,8 @@ p {
     float left;
 }
 
-.sideBar, .sideBar2 {
+.sideBar,
+.sideBar2 {
     margin: 1em;
     float: left;
     // border: 1px black solid;
@@ -280,8 +290,8 @@ input {
 }
 
 .sideBar2 {
-	float: left;
-	width: 300px;
+    float: left;
+    width: 300px;
 }
 
 .backgroundBlendColor {
@@ -291,25 +301,68 @@ input {
 // .bbmColorBurn {
 //     background-blend-mode: color-burn;
 // }
-
 .backgroundBlur {
     -webkit-filter: blur(15px);
     /* Chrome, Safari, Opera */
     filter: blur(15px);
 }
 
-.multiply 	 { background-blend-mode: multiply;    }
-.screen 	 { background-blend-mode: screen; 	   } 
-.overlay 	 { background-blend-mode: overlay;     }
-.darken 	 { background-blend-mode: darken;      }
-.lighten 	 { background-blend-mode: lighten;     }
-.color-dodge { background-blend-mode: color-dodge; }
-.color-burn  { background-blend-mode: color-burn;  }
-.hard-light  { background-blend-mode: hard-light;  }
-.soft-light  { background-blend-mode: soft-light;  }
-.difference  { background-blend-mode: difference;  }
-.exclusion   { background-blend-mode: exclusion;   }
-.hue 		 { background-blend-mode: hue;   	   }
-.saturation  { background-blend-mode: saturation;  }
-.color 		 { background-blend-mode: color;       }
-.luminosity  { background-blend-mode: luminosity;  }
+.multiply {
+    background-blend-mode: multiply;
+}
+
+.screen {
+    background-blend-mode: screen;
+}
+
+.overlay {
+    background-blend-mode: overlay;
+}
+
+.darken {
+    background-blend-mode: darken;
+}
+
+.lighten {
+    background-blend-mode: lighten;
+}
+
+.color-dodge {
+    background-blend-mode: color-dodge;
+}
+
+.color-burn {
+    background-blend-mode: color-burn;
+}
+
+.hard-light {
+    background-blend-mode: hard-light;
+}
+
+.soft-light {
+    background-blend-mode: soft-light;
+}
+
+.difference {
+    background-blend-mode: difference;
+}
+
+.exclusion {
+    background-blend-mode: exclusion;
+}
+
+.hue {
+    background-blend-mode: hue;
+}
+
+.saturation {
+    background-blend-mode: saturation;
+}
+
+.color {
+    background-blend-mode: color;
+}
+
+.luminosity {
+    background-blend-mode: luminosity;
+}

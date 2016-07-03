@@ -18,6 +18,26 @@ var brushes = [{
 
 
 $(document).ready(function() {
+        $('.imageWrapper').hide();
+        $('.paintingWrapper').hide();
+
+        $('.showReddit').on('click', function(){
+            $('.redditHero').hide();
+            $('.paintingWrapper').hide();
+            $('.imageWrapper').show();
+        });
+
+        $('.goPaint').on('click', function(){
+            $('.redditHero').hide();
+            $('.imageWrapper').hide();
+            $('.paintingWrapper').show();
+        });
+
+        $('h1').on('click', function(){
+            $('.imageWrapper').hide();
+            $('.paintingWrapper').hide();
+            $('.redditHero').show();
+        })
 
         $('body').on('click', '.titleSpan', function(e) {
             $('.titleSpan').removeClass('selectedJson');
