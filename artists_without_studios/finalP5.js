@@ -29,12 +29,12 @@ $(document).ready(function() {
         
         $('h2').on('click', function(){
             $('#studioWall').show();
-            $('.redditHero').hide();
+            $('#main').hide();
         });
 
         $('h1').on('click', function(){
             $('#studioWall').hide();
-            $('.redditHero').show();
+            $('#main').show();
         });
 
         $('.changeRedditImage').on('click', function(){

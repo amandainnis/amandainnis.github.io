@@ -93,7 +93,7 @@ nav {
 }
 
 .redditHero {
-    width: 90%;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -108,7 +108,7 @@ nav {
 h1 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2.5em;
-    font-weight: 200;
+    font-weight: 500;
     padding: 1rem 0 .2rem 1rem;
     margin-top: 1rem;
     // color: #e0e0e0;
@@ -124,6 +124,20 @@ h2 {
     
 }
 
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1.5rem 0 0 0;
+    font-family: 'Roboto';
+    text-align: center;
+    // margin-left: 39%;
+    // text-transform: uppercase;
+}
+
+h3.png {
+    margin-top: 2rem;
+}
+
 p {
     font-weight: 400;
     font-size: 16px;
@@ -131,6 +145,20 @@ p {
     margin-top: 1rem;
     margin-left: 1rem;
     // width: 580px;
+}
+
+.aboutP, .pngP {
+    // text-align: center;
+    font-size: 18px;
+    width: 70%;
+    color: rgba(0, 0, 0, .74);
+    line-height: 1.5em;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+p span {
+    font-weight: 600;
 }
 
 .hidden {
@@ -478,4 +506,30 @@ input[type="radio" i] {
 
 .luminosity {
     background-blend-mode: luminosity;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+   
+}
+
+
+@media only screen and (max-width: 800px) {
+   .wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+    .redditHero {
+    width: 100%;
+    margin-top: 1rem;
+}
+    h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
 }
