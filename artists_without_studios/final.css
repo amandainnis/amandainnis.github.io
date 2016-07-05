@@ -76,7 +76,7 @@ body {
     margin: 0 auto;
 }
 
-#my_parent {
+#my_parent, #my_otherParent {
     margin: 1rem 0 3rem 1rem;
     float: left;
     border: 1px black solid;
@@ -133,6 +133,10 @@ p {
     // width: 580px;
 }
 
+.hidden {
+    display: none;
+}
+
 .showReddit,
 .goPaint {
     // border-bottom: 1px rgba(0,0,0, .23) solid;
@@ -160,7 +164,7 @@ p {
 	transition: .3s;
 } 
 
-.imageWrapper, .paintingWrapper {
+.imageWrapper, .paintingWrapper, .paintingImageWrapper {
 	margin-top: 2rem;
 }
 
@@ -286,24 +290,37 @@ input[type="radio" i] {
 }
 
 .brush1 {
+    width: 20px;
+    height: 20px;
+}
+
+.brush2 {
     width: 30px;
     height: 40px;
 }
 
-.brush2 {
+.brush3 {
     width: 50px;
     height: 60px;
 }
 
-.brush3 {
+.brush4 {
     width: 70px;
     height: 80px;
 }
 
+.brush5 {
+    width: 100px;
+    height: 100px;
+}
+
+
 .brush0,
 .brush1,
 .brush2,
-.brush3 {
+.brush3,
+.brush4,
+.brush5 {
     float: right;
     border: 1px black solid;
     border-radius: 50%;
@@ -314,7 +331,9 @@ input[type="radio" i] {
 .brush0Color,
 .brush1Color,
 .brush2Color,
-.brush3Color {
+.brush3Color,
+.brush4Color,
+.brush5Color {
     border-top: 1px #a9a9a9 solid;
     padding: 1em 0;
 }

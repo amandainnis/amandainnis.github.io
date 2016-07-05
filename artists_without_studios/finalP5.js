@@ -9,39 +9,23 @@ var canvasImg;
 var brushes = [{
     size: [10, 10]
 }, {
+    size: [20, 20],
+},{
     size: [30, 40],
 }, {
     size: [50, 60],
 }, {
     size: [70, 80]
+}, {
+    size: [100, 100]
 }];
 
 // global scope so any function can use contents of this handmade variable, this var can have any name
 var previousClass = false;
 
 $(document).ready(function() {
-        // $('.imageWrapper').hide();
-        // $('.paintingWrapper').hide();
-
-        // $('.showReddit').on('click', function(){
-        //     $('.redditHero').hide();
-        //     $('.paintingWrapper').hide();
-        //     $('.imageWrapper').show();
-        // });
-
-        // $('.goPaint').on('click', function(){
-        //     $('.redditHero').hide();
-        //     $('.imageWrapper').hide();
-        //     $('.paintingWrapper').show();
-        // });
-
-        // $('h1').on('click', function(){
-        //     $('.imageWrapper').hide();
-        //     $('.paintingWrapper').hide();
-        //     $('.redditHero').show();
-        // })
-
-        $('#studioWall').hide();
+       
+        
         
         $('h2').on('click', function(){
             $('#studioWall').show();
@@ -100,7 +84,7 @@ $(document).ready(function() {
             // $('.titleSpan').click();
         })
 
-
+// get this stuff from reddit json and throw it inside handleResponse()--not saying how we're going to use function
         $.get('https://www.reddit.com/top.json', handleResponse);
 
         var articles2 = [];
@@ -114,7 +98,7 @@ $(document).ready(function() {
                 // if (response.data.children.thumbnail === true) {
                 //    articles.push(response.data.children)};
             
-            articles = response.data.children.map(function(item) {
+            var articles = response.data.children.map(function(item) {
                 return item.data;
             });
 
@@ -205,6 +189,20 @@ $(document).ready(function() {
 
     });
 
+    $(".color-picker4").on('click', function() {
+        var thisColor = $(".color-picker4").val();
+        console.log(thisColor);
+        brushIndex = 4;
+
+    });
+
+    $(".color-picker5").on('click', function() {
+        var thisColor = $(".color-picker5").val();
+        console.log(thisColor);
+        brushIndex = 5;
+
+    });
+
 });
 // end of doc ready
 
@@ -214,6 +212,7 @@ $(document).ready(function() {
 function setup() {
     var canvasOne = createCanvas(580, 580);
     canvasOne.parent('my_parent');
+
     
 };
 
@@ -235,6 +234,10 @@ function draw() {
         var color = $(".color-picker2").val();
     } else if (brushIndex === 3) {
         var color = $(".color-picker3").val();
+    } else if (brushIndex === 4) {
+        var color = $(".color-picker4").val();
+    } else if (brushIndex === 5) {
+        var color = $(".color-picker5").val();
     };
 
 
@@ -270,18 +273,14 @@ $('#my_parent').on('mousedown', function() {
 });
 
 
+
+
 var screenshotButton = $('#screenshot');
 screenshotButton.on('click', function() {
     alert("you got it");
     save('#my_parent.png');
 });
 
-var screenshotButton2 = $('#screenshot2');
-screenshotButton2.on('click', function() {
-    alert("you got it");
-    // newImg = $('.level1').css('background-image','url');
-    // save("$('.level1').css('background-image','url').png");
-});
 
 
 //////////////  html to canvas //////////////////
