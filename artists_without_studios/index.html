@@ -9,7 +9,7 @@
 <body>
     <div class="wrapper">
         <nav>
-            <h1>Artists Without Studios</h1>
+            <h1 id="titleOfSite">Artists Without Studios</h1>
             <h2>Mess with Pixelated Reddit Images, <span class="reddit">Make</span> A Painting in the Canvas Element</h2>
             <!-- <h1><span class="upper">Drawing</span> (Undefined)</h1> -->
         </nav>
@@ -77,29 +77,29 @@
                         <span class="rightcolor clearfix">Size</span>
                     </div>
                     <div class="brush0Color clearfix">
-                        <div class="brush0"></div>
+                        <div class="brush0" onclick = "selectBrush(0)"></div>
                         <!-- <div class="brush2"></div> -->
                         <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
                     </div>
                     <div class="brush1Color clearfix">
-                        <div class="brush1"></div>
+                        <div class="brush1" onclick = "selectBrush(1)"></div>
                         <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
                     </div>
                     <div class="brush2Color clearfix">
-                        <div class="brush2"></div>
+                        <div class="brush2" onclick = "selectBrush(2)"></div>
                         <input class="input2 color-picker2" type="color" value="#220D99"></input>
                     </div>
                     <div class="brush3Color clearfix">
-                        <div class="brush3"></div>
+                        <div class="brush3" onclick = "selectBrush(3)"></div>
                         <input class="input3 color-picker3" type="color" value="#1DA569"></input>
                     </div>
                     <div class="brush4Color clearfix">
-                        <div class="brush4"></div>
+                        <div class="brush4" onclick = "selectBrush(4)"></div>
                         <input class="input4 color-picker4" type="color" value="#BB65CA"></input>
                     </div>
                     <div class="brush5Color clearfix">
-                        <div class="brush5"></div>
-                        <input class="input4 color-picker5" type="color" value="#FBF388"></input>
+                        <div class="brush5" onclick = "selectBrush(5)"></div>
+                        <input class="input5 color-picker5" type="color" value="#FBF388"></input>
                     </div>
                     <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
                     <div id="screenshot" class="clearfix">Save Canvas as PNG File</div>
