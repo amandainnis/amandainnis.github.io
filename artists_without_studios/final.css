@@ -509,14 +509,30 @@ input[type="radio" i] {
 }
 
 
+@media only screen and (max-width: 1300px) {
+    
+    .aboutP, .pngP {
+        width: 80%;
+    }
+   
+}
 
+@media only screen and (max-width: 1200px) {
+    
+    .aboutP, .pngP {
+        width: 85%;
+    }
+   
+}
 
 @media only screen and (max-width: 1000px) {
     .wrapper {
     width: 95%;
     margin: 0 auto;
 }
-   
+   .aboutP, .pngP {
+        width: 90%;
+    }
 }
 
 
@@ -529,7 +545,16 @@ input[type="radio" i] {
     width: 100%;
     margin-top: 1rem;
 }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
     h1 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2em;
+}
+   h3 {
+   font-size: 1.5em; 
+}
 }
