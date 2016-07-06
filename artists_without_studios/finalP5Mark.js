@@ -280,7 +280,7 @@ $('#my_parent').on('mousedown', function() {
 
 
 screenshotButton.on('click', function() {
-    alert("i'm lying, david!");
+    alert("title your painting!");
     save('#my_parent.png');
 });
 
