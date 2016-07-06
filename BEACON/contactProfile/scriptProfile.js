@@ -239,37 +239,40 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
 });
 
 
-  var $selectTitle = $('.selectTitle');
-  var option1 = $('#mydefault');
-  var standard = $('#standard');
-  var deluxe = $('#deluxe');
-  var hypo = $('#hypo');
-  
-  $dropThis.click(function(){
-    $('.voiceDropChoose li').show();
+  var selectTitle = $('.selectTitle');
+  var selectMenu = $('#selectMenu li');
+  var option1 = $('#option1');
+  var option2 = $('#option2');
+  var option3 = $('#option3');
+  var option4 = $('#option4');
 
-       standard.click(function(){
+  selectMenu.hide();
+  
+  selectTitle.click(function(){
+    selectMenu.show();
+
+       option1.click(function(){
           var inputText = $(this).text();
-          $dropThis.text(inputText);
-          $('.voiceDropChoose li').hide();
+          selectTitle.text(inputText);
+          selectMenu.hide();
        }); 
 
-       mydefault.click(function(){
+       option2.click(function(){
           var inputText = $(this).text();
-          $dropThis.text(inputText);
-          $('.voiceDropChoose li').hide();
+          selectTitle.text(inputText);
+          selectMenu.hide();
        }); 
        
-       deluxe.click(function(){
+       option3.click(function(){
           var inputText = $(this).text();
-          $dropThis.text(inputText);
-          $('.voiceDropChoose li').hide();
+          selectTitle.text(inputText);
+          selectMenu.hide();
        }); 
 
-       hypo.click(function(){
+       option4.click(function(){
           var inputText = $(this).text();
-          $dropThis.text(inputText);
-          $('.voiceDropChoose li').hide();
+          selectTitle.text(inputText);
+          selectMenu.hide();
        }); 
 
 

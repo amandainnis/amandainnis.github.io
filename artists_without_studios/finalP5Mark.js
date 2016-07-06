@@ -249,8 +249,10 @@ function draw() {
 	// mouseX and mouseY need to be adjust to the scale of the canvas
 	// this is the attributied width and height vs the css width and height
 
-	console.log( "MousXY - " + mouseX + " , " + mouseY + " | TouchXY - " + touchX + ", " + touchY );
-    ellipse(touchX, touchY, brush.size[0], brush.size[1]);
+	// console.log( "MousXY - " + mouseX + " , " + mouseY + " | TouchXY - " + touchX + ", " + touchY );
+    // ellipse(touchX, touchY, brush.size[0], brush.size[1]);
+    ellipse(mouseX, mouseY, brush.size[0], brush.size[1]);
+
 };
 //end of draw function
 
