@@ -238,7 +238,7 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
   $('#scheduleMeetingWrapper').hide();
 });
 
-
+  var selectTitleTotal = $('.selectTitleTotal');
   var selectTitle = $('.selectTitle');
   var selectMenu = $('#selectMenu li');
   var option1 = $('#option1');
@@ -248,7 +248,7 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
 
   selectMenu.hide();
   
-  selectTitle.click(function(){
+  selectTitleTotal.click(function(){
     selectMenu.show();
 
        option1.click(function(){
