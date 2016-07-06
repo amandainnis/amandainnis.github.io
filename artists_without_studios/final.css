@@ -532,7 +532,7 @@ input[type="radio" i] {
     width: 95%;
     margin: 0 auto;
 }
-   .aboutP, .pngP {
+   .aboutP, .pngP, .optimalP {
         width: 90%;
     }
 }
