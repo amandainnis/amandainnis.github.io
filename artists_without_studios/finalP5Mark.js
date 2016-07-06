@@ -123,7 +123,7 @@ function initializeListeners()
 
 			$(".color-picker2").on('click', function() {
 				var thisColor = $(".color-picker2").val();
-				console.log(thisColor);
+				// console.log(thisColor);
 				brushIndex = 2;
 
 			});
@@ -214,7 +214,7 @@ function handleResponse(response) {
 function setup() {
 	// we need to create this canvas based on the scale of the platform we're using (pc, tablet, phone)
     var canvasOne = createCanvas(580, 580);
-	canvasOne.style="width:275px, height: 275px";
+	// canvasOne.style="width:275px, height: 275px";
     canvasOne.parent('my_parent');
 
     
