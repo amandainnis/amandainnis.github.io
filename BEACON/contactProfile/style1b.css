@@ -2123,20 +2123,22 @@ textarea.materialize-textarea {
   width: 135px;
   position: relative;
   text-align: left;
-  padding: .5em 0 .5em 0;
+  padding: 1em 0 .8em 0;
   color: #9e9e9e;
   border-bottom: 1px #9e9e9e solid;
+  margin-bottom: .5em;
 }
-/* line 2203, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032203}}
+/* line 2204, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032204}}
 .selectTitle .mdi-chevron-down {
   display: inline-block;
   position: relative;
   font-size: 17px;
   color: #6b6b6b;
+  margin-left: 1.99em;
 }
-/* line 2210, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032210}}
+/* line 2212, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032212}}
 #selectMenu li {
   display: none;
   padding: .5em 0 .5em .7em;
@@ -2145,8 +2147,8 @@ textarea.materialize-textarea {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 2223, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032223}}
+/* line 2225, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032225}}
 #selectMenu li:hover {
   background-color: #F0F0F0;
   cursor: pointer;
