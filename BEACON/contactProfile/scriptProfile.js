@@ -238,20 +238,119 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
   $('#scheduleMeetingWrapper').hide();
 });
 
+ 
+
+  var selectHourTotal = $('.selectHourTotal');
+  var selectHour = $('.selectHour');
+  var selectHourMenu = $('#selectHourMenu li');
+  var one = $('#one');
+  var two = $('#two');
+  var three = $('#three');
+  var four = $('#four');
+  var five = $('#five');
+  var six = $('#six');
+  var seven = $('#seven');
+  var eight = $('#eight');
+  var nine = $('#nine');
+  var ten = $('#ten');
+  var eleven = $('#eleven');
+  var twelve = $('#twelve');
+
+  selectHourMenu.hide();
+  
+  selectHourTotal.click(function(){
+    selectHourMenu.show();
+
+       one.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          // selectHour.addClass$('.afterHour');
+          selectHourMenu.hide();
+       }); 
+
+       two.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       three.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       four.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       five.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       six.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       seven.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+       
+       eight.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       nine.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       ten.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       eleven.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+
+       twelve.click(function(){
+          var inputText = $(this).text();
+          selectHour.text(inputText);
+          selectHourMenu.hide();
+       }); 
+  });
+
+
+
   var selectTitleTotal = $('.selectTitleTotal');
   var selectTitle = $('.selectTitle');
   var selectMenu = $('#selectMenu li');
-  var option1 = $('#option1');
-  var option2 = $('#option2');
-  var option3 = $('#option3');
-  var option4 = $('#option4');
+  var option1 = $('#selectMenu #option1');
+  var option2 = $('#selectMenu #option2');
+  var option3 = $('#selectMenu #option3');
+  var option4 = $('#selectMenu #option4');
 
   selectMenu.hide();
   
   selectTitleTotal.click(function(){
     selectMenu.show();
 
-       option1.click(function(){
+       option1.on('click', function(){
           var inputText = $(this).text();
           selectTitle.text(inputText);
           selectMenu.hide();
@@ -274,12 +373,7 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
           selectTitle.text(inputText);
           selectMenu.hide();
        }); 
-
-
   });
-
-
-
 
 
 
