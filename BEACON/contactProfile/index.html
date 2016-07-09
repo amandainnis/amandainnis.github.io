@@ -1059,16 +1059,17 @@
                             <!-- <div class="inputWrapperPrefix clearfix"> -->
                             <div class="input-field halfInput">
                                 <i class="mdi mdi-calendar prefix"></i>
-                                <input id="date" type="text" class="validate" />
+                                <input id="dateSchedule" type="text" class="validate"/>
                                 <!-- <input id="icon_date" type="text" class="validate"> -->
                                 <label for="date"></label>
+                                <img class="downTriangle calendar"src="downTriangle.png">
                             </div>
                             <!-- end of half input -->
-
+                            <div class="angular_calendar"><img src="angular_calendar.png"></div>
 
                             <div class="input-field halfInput2">
-                                <i class="mdi mdi-clock prefix"></i>
-                                <span class="selectHourTotal"><span class="selectHour">Hour</span><i class="mdi mdi-chevron-down selectTitleChev"></i></span>
+                                <!-- <i class="mdi mdi-clock prefix"></i> -->
+                                <span class="selectHourTotal"><span class="selectHour">Hour</span><img class="downTriangle hour"src="downTriangle.png"></span>
                                 <ul id="selectHourMenu">
                                     <li id="one">1</li>
                                     <li id="two">2</li>
@@ -1083,7 +1084,7 @@
                                     <li id="eleven">11</li>
                                     <li id="twelve">12</li>
                                 </ul>
-                                <span class="selectMinTotal"><span class="selectMin">Min</span><i class="mdi mdi-chevron-down selectTitleChev"></i></span>
+                                <span class="selectMinTotal"><span class="selectMin">Min</span><img class="downTriangle minute"src="downTriangle.png"></span>
                                 <ul id="selectMinMenu">
                                     <li id="option1">00</li>
                                     <li id="option2">15</li>
@@ -1114,7 +1115,8 @@
                         <div class="divItsaRow clearfix">
                             <div class="inputWrapper clearfix">
                                 <!-- <div class="input-field"> -->
-                                <div class="selectTitleTotal"><span class="selectTitle">Choose Type</span><i class="mdi mdi-chevron-down selectTitleChev"></i></div>
+                                <div class="selectTitleTotal"><span class="selectTitle">Choose Type</span><i class="mdi mdi-chevron-down selectTitleChev"></i>
+                                </div>
                                 <ul id="selectMenu">
                                     <li id="option1">One on one</li>
                                     <li id="option2">Awesome</li>

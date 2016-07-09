@@ -28,6 +28,7 @@
 	}];
 
 
+
 function selectBrush(index) {
     brushIndex = index;
 }
@@ -39,15 +40,15 @@ function initializeListeners()
 	*/
 	
 	// NAVIGATION
-		$('h2').on('click', function(){
-			$('#studioWall').show();
-			$('#main').hide();
-		});
+		// $('h2').on('click', function(){
+		// 	$('#studioWall').show();
+		// 	$('#main').hide();
+		// });
 
-		$('h1').on('click', function(){
-			$('#studioWall').hide();
-			$('#main').show();
-		});
+		// $('h1').on('click', function(){
+		// 	$('#studioWall').hide();
+		// 	$('#main').show();
+		// });
 		
 		// this allows for dynamic binding of elements with class type 'titleSpan' to invoke click events and allow the event to bubble up to the 'body' where this function is actually bound
 		$('body').on('click', '.titleSpan', function(e) {
@@ -63,9 +64,9 @@ function initializeListeners()
 			$('.level1').css('background-image', 'url(' + url + ')');
 		});
 	
-	// REDDIT IMAGeRY
+	// FILTERS
 		 // turns off previousClass but also stores it as a variable for subsequent calls
-		 // return states that this is the end of the function, it could return something but in this case it returns undefined
+		
 		$('input[type=radio][name=filter]').change(function(){
 			if (previousClass) {
 			   $('.level1').removeClass(previousClass); 
@@ -83,6 +84,21 @@ function initializeListeners()
 
 		});
 
+
+	// Dropdown for choosing image source 
+
+		$('.changeSource').on('click', function(){
+			$('.nameYourSource').css({'display': 'block'});
+		});
+
+		$('.nameYourSource').mouseleave(function() {
+			$('.nameYourSource').css({'display': 'none'});
+		});
+	
+	
+
+   // Dropdown for REDDIT IMAGeRY
+
 		$('.changeRedditImage').on('click', function(){
 			$('.nameYourPainting').css({'display': 'block'});
 		});
@@ -91,19 +107,10 @@ function initializeListeners()
 			$('.nameYourPainting').css({'display': 'none'});
 		});
 	
-/* this was the old method of selecting a filter
-	$('.filters').on('click', 'li', function (){
-		return;
-		var thisFilter = $(this).attr("class");
 
-		// $('li').removeClass('selectedFilter');
-		$(this).toggleClass('selectedFilter');
 
-		$('.level1').toggleClass(thisFilter);
 
-		// $('.titleSpan').click();
-	})
-*/
+
 	// CANVAS EVENTS
 		// BRUSHES
 			$(".color-picker0").on('click', function() {
@@ -187,7 +194,7 @@ function handleResponse(response) {
 		paintingTitles.push(item.author);
 	});
 	
-
+	// console.log(articles2);
 	// console.log(articles2);
 	// console.log(paintingTitles);
 	// console.log(images);
@@ -221,7 +228,7 @@ function setup() {
 };
 
 function draw() {
-
+	 // return states that this is the end of the function, it could return something but in this case it returns undefined
     // 'return' will exit a function and not run anything below it.
     if (brushUp === true) {
         return;
@@ -286,35 +293,3 @@ screenshotButton.on('click', function() {
 
 
 
-//////////////  html to canvas //////////////////
-
-// $("#screenshot2").click(function() { 
-//         html2canvas($(".level1"), {
-//             onrendered: function(canvas) {
-//                 theCanvas = canvas;
-//                 document.body.appendChild(canvas);
-
-//                 canvas.toBlob(function(blob) {
-//                     saveAs(blob, "Dashboard.png"); 
-//                 });
-//             }
-//         });
-//     });
-
-
-////////////// end of  html to canvas //////////////////
-
-
-// $('#fileinput1').click(function() {
-//     var inputImg = $(this).val();
-//     var $newBkgd = $('.level1').css('background-image', 'url(' + inputImg + ')');
-
-// });
-
-// $('.brush0').on('click', function() {
-//     if (type === 'ellipse') {
-//         type = '';
-//     } else {
-//         type = 'ellipse';
-//     }
-// });

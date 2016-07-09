@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="final.css">
+</head>
+<body>
+	<div class="wrapper">
+        <nav>
+            <h1 id="titleOfSite">Artists Without Studios</h1>
+            <h2>Mess with Pixelated Reddit Images, <span class="reddit">Make</span> A Painting in the Canvas Element</h2>
+            <!-- <h1><span class="upper">Drawing</span> (Undefined)</h1> -->
+        </nav>
+
+        <div class="imageWrapper clearfix">
+                <!-- <p>Click on a title to load Reddit image, play with background color and image filters.
+                </p> -->
+
+                <span id="nextNytImg" class="reddit">Next</span>
+                <div class="emptyFrame2">
+                    <div class="level1">
+                    </div>
+                </div>
+
+                <div class="sourceOption">
+                        <span class="changeSource">Change Source<img class="downTriangle" src="downTriangle.png"></span>
+                    </div>
+                    <!-- the hidden menu -->
+                    <div class="nameYourSource clearfix">
+                        <ul class="sourceList">
+                            <li>Reddit</li>
+                            <li>NYT</li>
+                            <li>I'll paste in my own link</li>
+                        </ul>
+
+                         <div class="redditOption1">
+		                        <span class="changeRedditImage">Change Image <img class="downTriangle" src="downTriangle.png"></span>
+		                 </div>
+		                    <!-- the hidden menu -->
+		                 <div class="nameYourPainting clearfix"></div>
+
+                         <div id="inputDiv">
+                         	<input type="text" class="newImage"/> <button class="submitImage">submit</button>
+                         </div>
+                    </div>
+
+
+               
+
+                <div class="emptyFrame2">
+                    <div class="level2">
+                    </div>
+                </div>
+
+
+    </div>
+    <!-- end of wrapper -->
+
+<script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <!-- <script src="jscolor.js"></script> -->
+    <!-- <script type="text/javascript" src="spectrum.js"></script> -->
+    <!-- <script type="text/javascript" src="html2canvas.js"></script> -->
+    <script type="text/javascript" src="p5.js"></script>
+    <script type="text/javascript" src="p5.dom.js"></script>
+    <script type="text/javascript" src="nyt.js"></script>
+</body>
+</html>

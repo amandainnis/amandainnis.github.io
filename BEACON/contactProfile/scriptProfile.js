@@ -257,6 +257,15 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
   var twelve = $('#twelve');
 
   selectHourMenu.hide();
+
+  $('#dateSchedule').on('click', function(){
+    $('.angular_calendar').show();
+  });
+
+  $('.angular_calendar').on('click', function(){
+    $('.angular_calendar').hide();
+  });
+
   
   selectHourTotal.click(function(){
     selectHourMenu.show();

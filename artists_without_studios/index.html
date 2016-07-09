@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Artists Without Studios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="final.css">
 </head>
@@ -11,109 +11,20 @@
     <div class="wrapper">
         <nav>
             <h1 id="titleOfSite">Artists Without Studios</h1>
-            <h2>Mess with Pixelated Reddit Images, <span class="reddit">Make</span> A Painting in the Canvas Element</h2>
+            <h2>Mess with Pixelated Reddit Images, <a href="studio.html"><span class="reddit">Make</span></a> A Painting in the Canvas Element</h2>
             <!-- <h1><span class="upper">Drawing</span> (Undefined)</h1> -->
         </nav>
         <div id="main">
             <img class="redditHero" src="whatcanudo4.png">
             <h3 class="about">About</h3>
-            <p class="aboutP">This website is an art project by me, Amanda Innis, who enjoys making "paintings" in the canvas element.  I have also included imagery from Reddit's top stories for inspiration as well as filters to play with.</p>
+            <p class="aboutP">This website is an art project by me, Amanda Innis, who enjoys making "paintings" in the canvas element. I have also included imagery from Reddit's top stories for inspiration as well as filters to play with.</p>
             <h3 class="optimal">Optimal Functioning</h3>
-            <p class="optimalP">Use a laptop or desktop computer and view the site in Chrome.  Chrome has the best color-picker built in.  Safari is a sad state of affairs when it comes to color-pickers.  I will try to address this issue in the next several weeks.</p>
+            <p class="optimalP">Use a laptop or desktop computer and view the site in Chrome. Chrome has the best color-picker built in. Safari is a sad state of affairs when it comes to color-pickers. I will try to address this issue in the next several weeks.</p>
             <h3 class="png">What this Site Can Do</h3>
-            <p class="pngP">You can play with <span>Reddit</span> images by clicking on filters and changing the background color (click on the input itself to change color). You can make a <span>canvas</span> painting/drawing by clicking on one of the brushes or the color input next to it.  You can change colors and brushes by clicking on each of the color inputs. And, if you want to <span>take colors from the Reddit image</span>, simply click on the input and, before using the color-picker, scroll up to the Reddit image, then click on color-picker and get your color.</p>
-
-            <p class="pngP">As for capturing images, you can download a PNG file of the canvas drawing you make. Be sure to take it before you refresh the page !! (these castles are made of sand).  However, taking a PNG of the Reddit image isn't possible so if you like what you make, just screenshot that one yourself.</p>
-            
+            <p class="pngP">You can play with <span>Reddit</span> images by clicking on filters and changing the background color (click on the input itself to change color). You can make a <span>canvas</span> painting/drawing by clicking on one of the brushes or the color input next to it. You can change colors and brushes by clicking on each of the color inputs. And, if you want to <span>take colors from the Reddit image</span>, simply click on the input and, before using the color-picker, scroll up to the Reddit image, then click on color-picker and get your color.</p>
+            <p class="pngP">As for capturing images, you can download a PNG file of the canvas drawing you make. Be sure to take it before you refresh the page !! (these castles are made of sand). However, taking a PNG of the Reddit image isn't possible so if you like what you make, just screenshot that one yourself.</p>
         </div>
-        <!-- <img class="paintHero"src="bernievaguepaintingwow.png"> -->
-
-        <div id="studioWall" class="hidden">
-            <div class="imageWrapper clearfix">
-                <p>Click on a title to load Reddit image, play with background color and image filters.
-                </p>
-                <div id="emptyFrame" class="level0">
-                    <div class="level1">
-                    </div>
-                </div>
-                <!-- end of empty frame -->
-                <div class="sideBar2 clearfix">
-                    <div class="redditOption1">
-                        <span class="changeRedditImage">Change Reddit image <img class="downTriangle" src="downTriangle.png"></span>
-                    </div>
-                    <!-- <div id="reddit">Click here</div> -->
-                    <div class="nameYourPainting clearfix">
-                    </div>
-                    <div class="redditOption2">
-                        
-                        <span class="changeBkgrdColor"><input class="input0 color-pickerBackground" type="color" value="#00BCD6"/>Click to change background color</span></div>
-                    <div class="redditOption3"><span class="changeFltr">Apply filters</span></div>
-                    <ul class="filters">
-                        <li class="none"><input type="radio" name="filter" value=""/>None</li>
-                        <li class="multiply"><input type="radio" name="filter" value="multiply"/>Multiply</li>
-                        <li class="screen"><input type="radio" name="filter" value="screen"/>Screen</li>
-                        <li class="overlay"><input type="radio" name="filter" value="Overlay"/>Overlay</li>
-                        <li class="darken"><input type="radio" name="filter" value="Darken"/>Darken</li>
-                        <li class="lighten"><input type="radio" name="filter" value="Lighten"/>Lighten</li>
-                        <li class="color-dodge"><input type="radio" name="filter" value="Color-dodge"/>Color-dodge</li>
-                        <li class="color-burn"><input type="radio" name="filter" value="Color-burn"/>Color-burn</li>
-                        <li class="hard-light"><input type="radio" name="filter" value="Hard-light"/>Hardlight</li>
-                        <li class="soft-light"><input type="radio" name="filter" value="Soft-light"/>Softlight</li>
-                        <li class="exclusion"><input type="radio" name="filter" value="Exclusion"/>Exclusion</li>
-                        <li class="hue"><input type="radio" name="filter" value="Hue"/>Hue</li>
-                        <li class="saturation"><input type="radio" name="filter" value="Saturation"/>Saturation</li>
-                        <li class="color"><input type="radio" name="filter" value="Color"/>Color</li>
-                        <li class="luminosity"><input type="radio" name="filter" value="Luminosity"/>Luminosity</li>
-                    </ul>
-                    <!-- <button id="screenshot2" class="clearfix">Take screenshot</button> -->
-                </div>
-            </div>
-            <!-- end of imageWrapper -->
-            <div class="paintingWrapper clearfix">
-                <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
-                </p>
-                <div id="my_parent"></div>
-                <div class="sideBar clearfix">
-                    <div class="typeHeader clearfix">
-                        <span class="leftsize">Color</span>
-                        <span class="rightcolor clearfix">Size</span>
-                    </div>
-                    <div class="brush0Color clearfix">
-                        <div class="brush0" onclick = "selectBrush(0)"></div>
-                        <!-- <div class="brush2"></div> -->
-                       
-                        <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
-                    </div>
-                    <div class="brush1Color clearfix">
-                        <div class="brush1" onclick = "selectBrush(1)"></div>
-                        <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
-                    </div>
-                    <div class="brush2Color clearfix">
-                        <div class="brush2" onclick = "selectBrush(2)"></div>
-                        <input class="input2 color-picker2" type="color" value="#220D99"></input>
-                    </div>
-                    <div class="brush3Color clearfix">
-                        <div class="brush3" onclick = "selectBrush(3)"></div>
-                        <input class="input3 color-picker3" type="color" value="#1DA569"></input>
-                    </div>
-                    <div class="brush4Color clearfix">
-                        <div class="brush4" onclick = "selectBrush(4)"></div>
-                        <input class="input4 color-picker4" type="color" value="#BB65CA"></input>
-                    </div>
-                    <div class="brush5Color clearfix">
-                        <div class="brush5" onclick = "selectBrush(5)"></div>
-                        <input class="input5 color-picker5" type="color" value="#FBF388"></input>
-                    </div>
-                    <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
-                    <div id="screenshot" class="clearfix">Save Canvas as PNG File</div>
-                </div>
-                <!-- //end of sideBar -->
-            </div>
-            <!-- end of paintingWrapper -->
-
-        </div>
-        <!-- end of studiowall -->
-        
+       
     </div>
     <!-- end of wrApper -->
     <script type="text/javascript" src="jquery-2.2.4.js"></script>

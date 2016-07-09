@@ -202,6 +202,16 @@ p span {
 // 	color: #00BCD6;
 // }
 
+.changeSource {
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+    color: #6b6b6b;
+    padding-bottom: 8px;
+    // border-bottom: 1px solid #D8D8D8;
+    cursor: pointer;
+}
+
 .changeRedditImage {
 	// display: block;
 	// padding: .5rem;
@@ -227,19 +237,28 @@ p span {
     color: #6b6b6b;
 }
 
-.redditOption1,
+.redditOption1 {
+    padding: .5rem .5rem .4rem .5rem;
+}
+
 .redditOption2,
 .redditOption3
  {
     padding: 1.3rem .5rem .4rem .5rem;
 }
 
+
+.sourceOption {
+    padding: .7rem .5rem .8rem .5rem;
+    position: absolute;
+    top: 40px;
+    background-color: #f1f1f1;
+}
 // .redditOption1 {
 //  border-top: 1px #a9a9a9 solid;
 // }
 
-.nameYourPainting {
-    
+.nameYourSource {
     width: 200px;
     position: absolute;
     top: 50px;
@@ -250,12 +269,31 @@ p span {
     background: white;
 }
 
+.sourceList li {
+    padding: 5px;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.nameYourPainting {
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: .3s;
+    display: none;
+    background: white;
+}
+
+
+
 .nameYourPainting .titleSpan {
 	padding: 5px;
-	// background-color: yellow;
 	font-weight: 500;
 	margin: 5px;
-	// border-radius: 10px;
 	cursor: pointer;
 	display: block;
 }
@@ -511,9 +549,38 @@ input[type="radio" i] {
 }
 
 
+
+
+.emptyFrame2 {
+    margin: 1rem 0 0 1rem;
+    float: left;
+    border: 1px black solid;
+    width: 580px;
+    height: 580px;
+}
+
+
+
+.level2 {
+    width: 578px;
+    height: 578px;
+    // background-image: url('yellow is my friend.png');
+    // background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG');
+    background-size: cover;
+    // padding: 28em;
+    background-color: #00bcd6;
+    background-blend-mode: color-burn;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
     
-    .aboutP, .pngP {
+    .aboutP, .pngP, .optimalP {
         width: 80%;
     }
    
@@ -521,7 +588,7 @@ input[type="radio" i] {
 
 @media only screen and (max-width: 1200px) {
     
-    .aboutP, .pngP {
+    .aboutP, .pngP, .optimalP {
         width: 85%;
     }
    

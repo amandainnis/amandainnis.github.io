@@ -2,68 +2,140 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Artists Without Studios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="final.css">
 </head>
 
 <body>
     <div class="wrapper">
         <nav>
-            <h1><a href="index.html" target="_blank">Artists Without Studios</a></h1>
-            <h2>Mess with Pixelated Reddit Images, Make A Painting in the Canvas Element</h2>
-            <!-- <h1><span class="upper">Drawing</span> (Undefined)</h1> -->
+            <a href="index.html"><h1 id="titleOfSite">Artists Without Studios</h1></a>
+            <h2>Play With Background Color and Image Filters, Or Go To <a href="#goToCanvas"><span class="reddit">Canvas</span></a> Element</h2>
+            
         </nav>
-        <div id="studioWall">
-             <div class="paintingImageWrapper clearfix">
+        
+       
+            <div class="imageWrapper clearfix">
+                
+                <div id="emptyFrame" class="level0">
+                    <div class="level1">
+                    </div>
+                </div>
+                <!-- end of empty frame -->
+                <div class="sideBar2 clearfix">
+                    <!-- <div class="sourceOption">
+                        <span class="changeSource">Change Source<img class="downTriangle" src="downTriangle.png"></span>
+                    </div> -->
+                    <!-- the hidden menu -->
+                    <!-- <div class="nameYourSource clearfix">
+                        <ul class="sourceList">
+                            <li>Reddit</li>
+                            <li onclick="alert('yay')">NYT</li>
+                            <li>I'll paste in my own link</li>
+                        </ul>
+                    </div> -->
+
+                    
+                    <div id="sourceDiv" class="redditOption1">
+                        <span class="changeRedditImage">Change Image <img class="downTriangle" src="downTriangle.png"></span>
+                    </div>
+                    <!-- the hidden menu -->
+                    <div class="nameYourPainting clearfix"></div>
+
+                    <!--  <div id="inputDiv">
+                            <input type="text" class="newImage"/> <button class="submitImage">submit</button>
+                         </div> -->
+
+                    <div class="redditOption2">
+                        <span class="changeBkgrdColor"><input class="input0 color-pickerBackground" type="color" value="#00BCD6"/>Click to change background color</span></div>
+                    <div class="redditOption3"><span class="changeFltr">Apply filters</span></div>
+                    <ul class="filters">
+                        <li class="none">
+                            <input type="radio" name="filter" value="" />None</li>
+                        <li class="multiply">
+                            <input type="radio" name="filter" value="multiply" />Multiply</li>
+                        <li class="screen">
+                            <input type="radio" name="filter" value="screen" />Screen</li>
+                        <li class="overlay">
+                            <input type="radio" name="filter" value="Overlay" />Overlay</li>
+                        <li class="darken">
+                            <input type="radio" name="filter" value="Darken" />Darken</li>
+                        <li class="lighten">
+                            <input type="radio" name="filter" value="Lighten" />Lighten</li>
+                        <li class="color-dodge">
+                            <input type="radio" name="filter" value="Color-dodge" />Color-dodge</li>
+                        <li class="color-burn">
+                            <input type="radio" name="filter" value="Color-burn" />Color-burn</li>
+                        <li class="hard-light">
+                            <input type="radio" name="filter" value="Hard-light" />Hardlight</li>
+                        <li class="soft-light">
+                            <input type="radio" name="filter" value="Soft-light" />Softlight</li>
+                        <li class="exclusion">
+                            <input type="radio" name="filter" value="Exclusion" />Exclusion</li>
+                        <li class="hue">
+                            <input type="radio" name="filter" value="Hue" />Hue</li>
+                        <li class="saturation">
+                            <input type="radio" name="filter" value="Saturation" />Saturation</li>
+                        <li class="color">
+                            <input type="radio" name="filter" value="Color" />Color</li>
+                        <li class="luminosity">
+                            <input type="radio" name="filter" value="Luminosity" />Luminosity</li>
+                    </ul>
+                    <!-- <button id="screenshot2" class="clearfix">Take screenshot</button> -->
+                </div>
+            </div>
+            <!-- end of imageWrapper -->
+            <div id="goToCanvas" class="paintingWrapper clearfix">
                 <p>Click on the input next to brush size, choose a color, click and drag inside the canvas.
                 </p>
-                <div id="my_otherParent"></div>
+                <div id="my_parent"></div>
                 <div class="sideBar clearfix">
                     <div class="typeHeader clearfix">
                         <span class="leftsize">Color</span>
                         <span class="rightcolor clearfix">Size</span>
                     </div>
                     <div class="brush0Color clearfix">
-                        <div class="brush0"></div>
-                      
+                        <div class="brush0" onclick="selectBrush(0)"></div>
+                        <!-- <div class="brush2"></div> -->
                         <input class="input0 color-picker0" type="color" value="#00BCD6"></input>
                     </div>
                     <div class="brush1Color clearfix">
-                        <div class="brush1"></div>
+                        <div class="brush1" onclick="selectBrush(1)"></div>
                         <input class="input1 color-picker1" type="color" value="#FA5A4E"></input>
                     </div>
                     <div class="brush2Color clearfix">
-                        <div class="brush2"></div>
+                        <div class="brush2" onclick="selectBrush(2)"></div>
                         <input class="input2 color-picker2" type="color" value="#220D99"></input>
                     </div>
                     <div class="brush3Color clearfix">
-                        <div class="brush3"></div>
-                        <input class="input3 color-picker3" type="color" value="#A2A508"></input>
+                        <div class="brush3" onclick="selectBrush(3)"></div>
+                        <input class="input3 color-picker3" type="color" value="#1DA569"></input>
                     </div>
                     <div class="brush4Color clearfix">
-                        <div class="brush4"></div>
+                        <div class="brush4" onclick="selectBrush(4)"></div>
                         <input class="input4 color-picker4" type="color" value="#BB65CA"></input>
                     </div>
                     <div class="brush5Color clearfix">
-                        <div class="brush5"></div>
-                        <input class="input4 color-picker5" type="color" value="#FBF388"></input>
+                        <div class="brush5" onclick="selectBrush(5)"></div>
+                        <input class="input5 color-picker5" type="color" value="#FBF388"></input>
                     </div>
-                    
+                    <!-- <button id="triangle" class="clearfix">Draw Triangle</button> -->
                     <div id="screenshot" class="clearfix">Save Canvas as PNG File</div>
                 </div>
                 <!-- //end of sideBar -->
             </div>
             <!-- end of paintingWrapper -->
-        </div>
-        <!-- end of studiowall -->
+      
     </div>
     <!-- end of wrApper -->
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <!-- <script src="jscolor.js"></script> -->
     <!-- <script type="text/javascript" src="spectrum.js"></script> -->
     <!-- <script type="text/javascript" src="html2canvas.js"></script> -->
     <script type="text/javascript" src="p5.js"></script>
     <script type="text/javascript" src="p5.dom.js"></script>
-    <script type="text/javascript" src="finalP5.js"></script>
+    <script type="text/javascript" src="finalP5Mark.js"></script>
 </body>
 
 </html>
