@@ -1709,10 +1709,13 @@ background-color: #bbdefb;
 
     /*padding: 25px 0 0 25px;*/
 }
-
+.inputWrapperContact {
+	width: 90%;
+	padding-left: 30px;
+}
 .inputWrapper {
     width: 90%;
-	padding-left: 30px;
+	// padding-left: 30px;
 }
 
 .inputWrapperPrefix {
@@ -2234,9 +2237,12 @@ textarea.materialize-textarea {
     top: -44px;
 }
 
+
+
 .mdi-menu-down {
 	display: inline-block;
 	font-size: 20px;
+	color: #9b9b9b;
 }
 
 
@@ -2327,15 +2333,29 @@ textarea.materialize-textarea {
 }
 
 
+.labelType {
+	font-size: 0.8rem;
+    color: #cacaca;
+	display: inline-block;
+	padding-top: 1rem;
+}
 
+.selectTitleTotal, .selectDriverTotal {
+	float: left;
+	width: 190px;
+}
 
-.selectTitle {
+// .selectDriver {
+// 	margin-left: 1em;
+// }
+
+.selectTitle, .selectDriver {
 	display: inline-block;
 	width: 135px;
 	position: relative;
 	text-align: left;
-	padding: 1.5em 0 .8em 0;
-	color: #9e9e9e;
+	padding: .7rem 0 0.5rem 0;
+	color: #272727;
 	border-bottom: 1px #dbdbdb solid;
 	margin-bottom: .5em;
 }
@@ -2391,7 +2411,7 @@ textarea.materialize-textarea {
 	// margin-left: 1.99em;
 }
 
-#selectMenu li {
+#selectMenu li, #selectDriverMenu li {
 	display: none;
 	padding: .5em 0 .5em .7em;
 	color: rgba(0, 105, 203, 0.8);
