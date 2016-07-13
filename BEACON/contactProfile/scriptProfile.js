@@ -359,12 +359,15 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
 
 
   var selectTitleTotal = $('.selectTitleTotal');
+  var selectDriverTotal = $('.selectDriverTotal');
   var selectTitle = $('.selectTitle');
+  var selectDriver = $('.selectDriver');
   var selectMenu = $('#selectMenu li');
+  var selectDriverMenu = $('#selectDriverMenu li');
   var option1 = $('#selectMenu #option1');
   var option2 = $('#selectMenu #option2');
   var option3 = $('#selectMenu #option3');
-  var option4 = $('#selectMenu #option4');
+  
 
   selectMenu.hide();
   
@@ -389,10 +392,36 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
           selectMenu.hide();
        }); 
 
-       option4.click(function(){
+       
+  });
+
+selectDriverMenu.hide();
+  
+  selectDriverTotal.click(function(){
+    selectDriverMenu.show();
+
+       $('#optionA').on('click', function(){
           var inputText = $(this).text();
-          selectTitle.text(inputText);
-          selectMenu.hide();
+          selectDriver.text(inputText);
+          selectDriverMenu.hide();
+       }); 
+
+       $('#optionB').click(function(){
+          var inputText = $(this).text();
+          selectDriver.text(inputText);
+          selectDriverMenu.hide();
+       }); 
+       
+       $('#optionC').click(function(){
+          var inputText = $(this).text();
+          selectDriver.text(inputText);
+          selectDriverMenu.hide();
+       }); 
+
+       $('#optionD').click(function(){
+          var inputText = $(this).text();
+          selectDriver.text(inputText);
+          selectDriverMenu.hide();
        }); 
   });
 

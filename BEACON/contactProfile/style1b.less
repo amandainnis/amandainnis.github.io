@@ -2291,7 +2291,21 @@ textarea.materialize-textarea {
 #selectMenu {
 	position: absolute;
 	top: 196px;
-	left: 55px;
+	left: 25px;
+	width: 160px;
+	z-index: 3;
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	// border: 1px #a7a7a7 solid;
+}
+
+#selectDriverMenu {
+	position: absolute;
+	top: 196px;
+    left: 215px;
 	width: 160px;
 	z-index: 3;
 	text-align: left;
@@ -2340,9 +2354,18 @@ textarea.materialize-textarea {
 	padding-top: 1rem;
 }
 
+.labelOverChip {
+	font-size: 0.8rem;
+    color: #cacaca;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-bottom: .4rem;
+}
+
 .selectTitleTotal, .selectDriverTotal {
 	float: left;
 	width: 190px;
+	position: relative;
 }
 
 // .selectDriver {
@@ -2434,7 +2457,7 @@ textarea.materialize-textarea {
 	
 }
 
-#selectMenu li:hover {
+#selectMenu li:hover, #selectMinMenu li:hover {
 	background-color: #F0F0F0;
 	cursor: pointer;
 	transition: .2s;
