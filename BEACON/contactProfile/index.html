@@ -5,6 +5,7 @@
     <title>Contact Profile Page</title>
     <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
     <link rel="stylesheet" type="text/css" href="style1b.css">
+    <!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
     <script type="text/javascript" src="materialize.js"></script>
@@ -882,6 +883,16 @@
                 </div>
             </div>
             <!-- end of EventWrapper -->
+
+
+            <ul class="moreChoose">
+                    <li id="goToEditContact">Edit Contact</li>
+                    <li id="incomingCallPopUps">Incoming Call Popups</li>
+                </ul>
+
+
+
+
             <div id="editContactWrapper">
                 <div class="editContactBar">Edit Contact<i class="mdi mdi-close"></i></div>
                 <div id="bottomBarEditContact">
@@ -1056,58 +1067,53 @@
                 <form>
                     <div class="scheduleMeetingInnerFormWrapper">
                         <div class="divItsaRow clearfix">
-                            <!-- <div class="inputWrapperPrefix clearfix"> -->
-                            <div class="input-field halfInput">
-                                <i class="mdi mdi-calendar prefix"></i>
-                                <input id="dateSchedule" type="text" class="validate"/>
-                                <!-- <input id="icon_date" type="text" class="validate"> -->
-                                <label for="date"></label>
-                                <img class="downTriangle calendar"src="downTriangle.png">
+                            <div class="inputWrapper clearfix">
+                                <div class="dateWithTriangle">
+                                    <div class="input-field halfInput">
+                                        <input id="dateSchedule" type="text" class="validate" />
+                                        <!-- <input id="icon_date" type="text" class="validate"> -->
+                                        <label for="date">11 Jul 2016</label>
+                                        <i class="mdi mdi-menu-down"></i>
+                                    </div>
+                                    <!-- end of half input -->
+                                </div>
+                                <div class="angular_calendar"><img src="angular_calendar.png"></div>
+                                <div class="input-field halfInput2">
+                                    <div class="selectHourTotal"><span class="selectHour">Time</span><i class="mdi mdi-menu-down"></i>
+                                    </div>
+                                        <ul id="selectHourMenu">
+                                            <li id="one">1:00 PM</li>
+                                            <li id="two">2:00 PM</li>
+                                            <li id="three">3:00 PM</li>
+                                            <li id="four">4:00 PM</li>
+                                            <li id="five">5:00 PM</li>
+                                            <li id="six">6:00 PM</li>
+                                            <li id="seven">7:00 PM</li>
+                                            <li id="eight">8:00 PM</li>
+                                            <li id="nine">9:00 PM</li>
+                                            <li id="ten">10:00 PM</li>
+                                            <li id="eleven">11:00 PM</li>
+                                            <li id="twelve">12:00 PM</li>
+                                        </ul>
+                                    
+                                </div>
+                                <!-- end of half input -->
                             </div>
-                            <!-- end of half input -->
-                            <div class="angular_calendar"><img src="angular_calendar.png"></div>
-
-                            <div class="input-field halfInput2">
-                                <!-- <i class="mdi mdi-clock prefix"></i> -->
-                                <span class="selectHourTotal"><span class="selectHour">Hour</span><img class="downTriangle hour"src="downTriangle.png"></span>
-                                <ul id="selectHourMenu">
-                                    <li id="one">1</li>
-                                    <li id="two">2</li>
-                                    <li id="three">3</li>
-                                    <li id="four">4</li>
-                                    <li id="five">5</li>
-                                    <li id="six">6</li>
-                                    <li id="seven">7</li>
-                                    <li id="eight">8</li>
-                                    <li id="nine">9</li>
-                                    <li id="ten">10</li>
-                                    <li id="eleven">11</li>
-                                    <li id="twelve">12</li>
-                                </ul>
-                                <span class="selectMinTotal"><span class="selectMin">Min</span><img class="downTriangle minute"src="downTriangle.png"></span>
-                                <ul id="selectMinMenu">
-                                    <li id="option1">00</li>
-                                    <li id="option2">15</li>
-                                    <li id="option3">30</li>
-                                    <li id="option4">45</li>
-                                </ul>
-
-
-                                <!-- <input id="icon_date" type="text" class="validate"> -->
-                                <!-- <label for ="date" ></label> -->
-                            </div>
-                            <!-- end of half input -->
-                            <!-- </div> -->
-                            <!-- end of inputWrapperMini -->
+                            <!-- end of inputWrapper -->
                         </div>
                         <!-- end of divItsaRow -->
                         <div class="divItsaRow clearfix">
                             <div class="inputWrapper clearfix">
                                 <div class="input-field">
-                                    <input id="city" type="text" class="validate">
-                                    <label for="city">City</label>
+                                    <div class="cityInputWithChip">
+                                        <div class="chip">New York<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                    </div>
+                                    <!-- <input id="city" type="text">
+                                    <label for="city" class="active">City</label> -->
+                                    
                                 </div>
                                 <!-- end of inputfield -->
+                                
                             </div>
                             <!-- end of inputWrapper -->
                         </div>
@@ -1176,6 +1182,85 @@
                     <!-- end of innerFormWrapper -->
                 </form>
             </div>
+            <!-- end of schedulemeetingwrapper -->
+
+
+            <div id="popUpDiv">
+                
+                <div id="screen1" class="incomingCallPopup">
+                   <div class="barPopUp">
+                        <div class="popUpLogo"></div>
+                        <span class="barTitlePopUp">Beacon</span>
+                        <i id="popUpClose" class="mdi mdi-close"></i>
+                   </div> 
+                   <div class="bodyPopUp clearfix">
+                       <div class="leftSidePopUp">
+                           <span class="leftPopUpMainMessage">Multiple Matches Found</span>
+                       </div>
+                        <div class="rightSidePopUp">
+                            <span class="rightText1">00:35</span> <br>
+                            <span class="rightText2">212-555-1234</span>
+                            
+                        </div>
+
+                        <div class="popUpFooterMultiple">
+                            <span class="footerMessageMultiple">Pop Up will Close in 10...</span> <br>
+                            <input class="nameButton" type="button" value="Daenerys Targareon">
+                            <input class="nameButton" type="button" value="Jon Snow">
+                        </div>
+
+
+                   </div>
+                   <!-- end of body popUp -->
+                   
+                </div>
+                
+
+
+
+
+
+
+
+
+
+                <div id="screen2" class="incomingCallPopup">
+                    
+                    <div class="barPopUp">
+                        <div class="popUpLogo"></div>
+                        <span class="barTitlePopUp">Beacon</span>
+                        <i id="popUpClose" class="mdi mdi-close"></i>
+                   </div> 
+                   <div class="bodyPopUp clearfix">
+                       <div class="leftSidePopUp">
+                           <span class="leftPopUpMainMessage">Axelrod, Bobby</span> <br>
+                           <span class="leftText2">Axe Capital Management, LLC</span>  <br>
+                           <span class="leftText3">Platinum<br>
+                       </div>
+                        <div class="rightSidePopUp">
+                            <span class="rightText1">00:35</span> <br>
+                            <span class="rightText2">212-555-1234</span>
+                            
+                        </div>
+
+                        <div class="popUpFooterCallerFound">
+                            <span class="footerMessageCallerFound">Pop Up will Close in 10...</span> <br>
+                            <input class="tpButton" type="button" value="Start touchpoint">
+                            
+                        </div>
+
+
+                   </div>
+                   <!-- end of body popUp -->
+
+
+
+
+                </div>
+            </div> 
+            <!-- end of popUpDiv        -->
+
+
         </div>
         <!-- end of contact wrapper -->
     </div>

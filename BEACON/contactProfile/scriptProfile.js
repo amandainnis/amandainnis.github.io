@@ -8,6 +8,8 @@ $(document).ready(function(){
   $('#editContactWrapper').hide();
   $('#scheduleMeetingWrapper').hide();
   $('.voiceDropChoose li').hide();
+  $('.moreChoose').hide();
+  $('#popUpDiv').hide();
 
 	$('#bottomBarCall').show(); 
 	$('#bottomBarEnd').hide();
@@ -208,12 +210,22 @@ $(document).ready(function(){
       
   });
 
-//////////////////// MORE will activate edit contact for now/////////
-
+//////////////////// MORE /////////
 
 $('.mdi-dots-horizontal').click(function(){
-  $('#editContactWrapper').show();
+  $('.moreChoose').show();
 });
+
+    $('.moreChoose #goToEditContact').on('click', function(){
+      $('#editContactWrapper').show();
+      $('.moreChoose').hide();
+    });
+
+    $('.moreChoose #incomingCallPopUps').on('click', function(){
+      $('#popUpDiv').show();
+      $('.moreChoose').hide();
+    });
+//////////////////// CONTACT BAR /////////
 
 $('#bottomBarEditContact .cancelButton').click(function(){
   $('#editContactWrapper').hide();
@@ -387,6 +399,27 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
 
 
 
+
+// $( "#screen1").on('click', function() {
+//   $( "#screen1" ).animate({ "left": "+=150px" }, 1000 );
+// });
+
+
+$( "#screen2").on('click', function() {
+  $( "#screen2" ).animate({ "top": "+=150px" }, 5000 );
+});
+
+
+
+$( "#screen1").on('click', function() {
+  $( "#screen1" ).addClass( 'rubberBand' );
+  setTimeout(
+    function(){
+      $( "#screen1" ).removeClass( 'rubberBand' );
+    }, 
+    1000
+  );
+});
 
 
 
