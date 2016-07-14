@@ -270,13 +270,18 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
 
   selectHourMenu.hide();
 
-  $('#dateSchedule').on('click', function(){
-    $('.angular_calendar').show();
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
   });
 
-  $('.angular_calendar').on('click', function(){
-    $('.angular_calendar').hide();
-  });
+  // $('#dateSchedule').on('click', function(){
+  //   $('.angular_calendar').show();
+  // });
+
+  // $('.angular_calendar').on('click', function(){
+  //   $('.angular_calendar').hide();
+  // });
 
   
   selectHourTotal.click(function(){
