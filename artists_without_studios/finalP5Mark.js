@@ -10,6 +10,7 @@
 	var screenshotButton = $('#screenshot');
 	
 	var articles2 = [];
+	var currentImgIndex = 0;
 	var paintingTitles = [];
 	var images = [];
 	
@@ -38,7 +39,11 @@ function initializeListeners()
 	/*
 		note: All event listeners /should/ be bound to IDs only. This prevents erroniously binding an event to multiple tags
 	*/
-	
+	$('.submitImage').click(function(){
+	var inputText = $('.newImage').val();
+	$('.level1').css('background-image', 'url(' + inputText + ')');
+});
+
 	// NAVIGATION
 		// $('h2').on('click', function(){
 		// 	$('#studioWall').show();
@@ -156,7 +161,37 @@ function initializeListeners()
 
 			});
 
+
+////next prev////////////////////
+
+
+			$('#nextImg').click(function(){
+	// if will always run the first logical statement, if there re a lot of && then put oftenmost false thing first
+			if (++currentImgIndex >= articles2.length){
+				currentImgIndex = 0;
+			}
+			$('.level1').css('background-image', 'url(' + articles2[currentImgIndex].thumbnail + ')');
+		
+	
+});
+
+$('#prevImg').click(function(){
+	// if will always run the first logical statement, if there re a lot of && then put oftenmost false thing first
+			if (--currentImgIndex < 0){
+				currentImgIndex = articles2.length -1;
+			}
+			$('.level1').css('background-image', 'url(' + articles2[currentImgIndex].thumbnail + ')');
+		
+	
+});
+
+
 }
+
+
+
+
+
 
 
 $(document).ready(function() {

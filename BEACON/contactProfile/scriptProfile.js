@@ -127,9 +127,12 @@ $(document).ready(function(){
 	$("#eventWrapper").hide();
 	$("#searchEvent").hide();
 	$("#chooseTime").hide();
+   $("#confirmTime").hide();
+   $("#confirmTime2").hide();
     
     $("#bottomBarEvent").hide();
-    $("#bottomBar2Event").hide();
+    // $("#bottomBar2Event").hide();
+    $("#bottomBar3Event").hide();
     $(".addMe").hide();
     
     var $bar1 = $('.bar1Event');
@@ -137,6 +140,7 @@ $(document).ready(function(){
     var $cancelButton = $(".cancelButton");
     var $bookButton = $(".book");
     var $bar2 = $('.bar2Event');
+    var $bar3 = $('.bar3Event');
     var $timeButton = $(".timeButton.active");
     // var $timeButtonGreen = $(".timeButton.active.green");
  
@@ -157,7 +161,8 @@ $(document).ready(function(){
     	$("#chooseTime").hide(); 
     	$bar1.hide();
     	$bar2.hide();
-    	$("#bottomBar2Event").hide();
+      $bar3.hide();
+    	$("#bottomBar3Event").hide();
     	$("#bottomBarEvent").hide();
     	$timeButton.removeClass( 'teal');
       $timeButton.removeClass('lightBlue');
@@ -190,11 +195,30 @@ $(document).ready(function(){
       
       $bar1.show();
       $bar2.hide();
+      $bar3.hide();
       $("#bottomBarEvent").hide();
-      $("#bottomBar2Event").hide();
+      $("#bottomBar3Event").hide();
       $(".addMe").hide();
-      $timeButton.removeClass( 'teal');
-      $timeButton.removeClass('lightBlue');
+      // $timeButton.removeClass( 'teal');
+      // $timeButton.removeClass('lightBlue');
+
+    });
+
+    $bar3.click(function(event){
+      event.preventDefault();
+      $("#searchEvent").hide();
+      $("#chooseTime").show();
+      $("#confirmTime").hide();
+      
+      $bar1.hide();
+      $bar2.show();
+      $bar3.hide();
+      $("#bottomBarEvent").hide();
+      $("#bottomBar3Event").hide();
+      // $("#confirmTime2").hide();
+      // $(".addMe").hide();
+      // $timeButton.removeClass( 'teal');
+      // $timeButton.removeClass('lightBlue');
 
     });
     
@@ -202,13 +226,27 @@ $(document).ready(function(){
       event.preventDefault();
       $(".addMe").show();
       $("#bottomBarEvent").hide();
-      $("#bottomBar2Event").show();
-      $timeButton.removeClass( 'teal');
-      $timeButton.addClass('lightBlue'); 
-      $(this).addClass( 'teal');
-
+      $("#chooseTime").hide();
+      $("#confirmTime").show();
+      $("#bottomBar2Event").hide();
+      $("#bottomBar3Event").show();
+      $bar2.hide();
+      $bar3.show();
       
-  });
+      // $timeButton.removeClass( 'teal');
+      // $timeButton.addClass('lightBlue'); 
+      // $(this).addClass( 'teal');  
+      
+      
+
+    });
+
+    // $("#confirmMe").click(function(){
+    //   $("#confirmTime").hide();
+    //   $("#confirmTime2").show();
+    // });
+
+    
 
 //////////////////// MORE /////////
 

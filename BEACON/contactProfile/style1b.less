@@ -1072,7 +1072,7 @@ body {
 	text-transform: uppercase;
 }
 
-.bar1Event .mdi-close, .bar2Event .mdi-close, .editContactBar .mdi-close, .scheduleMeetingBar .mdi-close{
+.bar1Event .mdi-close, .bar2Event .mdi-close, .bar3Event .mdi-close, .editContactBar .mdi-close, .scheduleMeetingBar .mdi-close{
 	position: absolute;
 	left: 465px;
 	font-size: 17px;
@@ -1090,7 +1090,7 @@ body {
 	padding-bottom: 45px;
 }
 
-.bar2Event {
+.bar2Event, .bar3Event {
 	width: 100%;
 	height: 30px;
 	// background-color: #1565C0;
@@ -1176,6 +1176,12 @@ body {
 
 }
 
+.textWrapperEventBig {
+	width: 80%;
+	padding: 25px 0 0 25px;
+
+}
+
 .eventTitle {
 	font-family: 'Roboto';
 	font-weight: 600;
@@ -1184,6 +1190,8 @@ body {
 	line-height: 1.4em;
 	color: rgba(0,0,0, .87);
 }
+
+
 
 .eventLocation {
 	font-family: 'Roboto';
@@ -1415,7 +1423,7 @@ background-color: #bbdefb;
 }
 
 
-#bottomBar2Event {
+#bottomBar2Event, #bottomBar3Event {
 	width: 500px;
 	height: 40px;
 	background-color: #F5F5F5;
@@ -1425,7 +1433,9 @@ background-color: #bbdefb;
 	top: 420px;
 	z-index: 2;
 }
-#bottomBar2Event.cancelButton {
+
+
+#bottomBar2Event.cancelButton, #bottomBar3Event.cancelButton {
 	float: right;
 	position: relative;
 	top: 4px;
@@ -1444,7 +1454,7 @@ background-color: #bbdefb;
 
 }
 
-.confirmButton {
+#nextButton, .confirmButton {
 	float: right;
 	position: relative;
 	top: 4px;
@@ -1469,26 +1479,72 @@ background-color: #bbdefb;
 
 }
 
-.confirmButton:hover {
+#nextButton:hover, .confirmButton:hover {
 	background-color: #1565C0;
 	transition: .3s;
 }
 
 
+.timeConfirmFloat {
+	width: 97px;
+    color: white;
+    position: relative;
+    top: -77px;
+    left: 377px;
+    padding: 13px;
+    font-size: 17px;
+    text-align: center;
+    /* float: right; */
+    /* border: 1px black solid; */
+    background-color: #14c1ac;
+    /* border-radius: 10px; */
+}
 
+////////////////////////// go with alternate screen
 
+.eventTitleBig {
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: .2px;
+	line-height: 1.4em;
+	color: rgba(0,0,0, .87);
+}
 
-.addMe {
-	/*margin: 30px 25px 0 25px;*/
-	color: rgba(0, 0, 0, .54);
-	margin-left: 25px;
-	// margin-top: 10px;
+.timeConfirmFloatSmall {
+	width: 80px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 10px;
+    background-color: #14c1ac;
+}
 
+.warning2 {
+	margin: 10px 0 20px 0;
+	font-size: 17px;
+	font-style: italic;
+}
+
+///////////////////////
+
+.checkboxes {
+	margin: 10px 25px 0 25px;
 	position: relative;
 	top: 12px;
-	/*padding-top: 15px;*/
-	/*border-top: 1px solid rgba(0, 0, 0, .24);*/
+	padding-top: 15px;
+	border-top: 1px solid rgba(0, 0, 0, .24);
+	// background-color: yellow;
+
 }
+.addMe {
+	margin-bottom: 15px;
+	color: rgba(0, 0, 0, .54);
+}
+
+
 
 
 

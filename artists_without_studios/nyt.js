@@ -67,6 +67,7 @@ $.ajax({
 // ADDED THIS BIT IN AFTER ALL BELOW CODE FAILED
 
   nytImg = nytObj.map(function(itemInArray) {
+  if (itemInArray.multimedia && itemInArray.multimedia[1])	
   return itemInArray.multimedia[1].url;
   });
 
@@ -127,6 +128,16 @@ $('#nextNytImg').click(function(){
 	// if will always run the first logical statement, if there re a lot of && then put oftenmost false thing first
 			if (++currentImgIndex >= nytImg.length){
 				currentImgIndex = 0;
+			}
+			$('.level1').css('background-image', 'url(http://www.nytimes.com/' + nytImg[currentImgIndex] + ')');
+		
+	
+});
+
+$('#prevNytImg').click(function(){
+	// if will always run the first logical statement, if there re a lot of && then put oftenmost false thing first
+			if (--currentImgIndex < 0){
+				currentImgIndex = nytImg.length -1;
 			}
 			$('.level1').css('background-image', 'url(http://www.nytimes.com/' + nytImg[currentImgIndex] + ')');
 		
