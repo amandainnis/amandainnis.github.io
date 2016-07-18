@@ -276,6 +276,9 @@ $('.editContactBar .mdi-close').click(function(){
 //////////////////// schedule mtg/////////
 
 
+
+
+
 $('.mdi-calendar').click(function(){
   $('#scheduleMeetingWrapper').show();
 });
@@ -494,6 +497,24 @@ $( "#screen1").on('click', function() {
 });
 
 
+// var date = new Date();
+
+
+Date.prototype.mmddyyyy = function () {
+  var yyyy = this.getFullYear().toString();
+  var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+  var dd  = this.getDate().toString();
+  return (mm[1]?mm:"0"+mm[0]) + "/" + (dd[1]?dd:"0"+dd[0]) + "/" +  yyyy; // padding
+};
+
+var date = new Date();
+console.log( date.mmddyyyy() ); // Assuming you have an open console
+
+
+    
+
+
+$("#date").text(date.mmddyyyy());
 
 
 });

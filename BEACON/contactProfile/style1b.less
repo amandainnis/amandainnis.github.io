@@ -1539,6 +1539,7 @@ background-color: #bbdefb;
 	// background-color: yellow;
 
 }
+
 .addMe {
 	margin-bottom: 15px;
 	color: rgba(0, 0, 0, .54);
@@ -2170,7 +2171,14 @@ textarea.materialize-textarea {
 .input-field input[type=date]::datetime-edit { padding: 1em; }
 
 
-
+input[type="date"]{
+    align-items: center;
+    display: -webkit-inline-flex;
+    font-family: 'Roboto';
+    -webkit-padding-start: 1px;
+    overflow: hidden;
+    padding: 0px;
+}
 
 
 
@@ -2287,10 +2295,10 @@ textarea.materialize-textarea {
 
 .halfInput .mdi-menu-down {
 	display: inline-block;
-	font-size: 20px;
-	position: relative;
-	left: 169px;
-    top: -44px;
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    top: 3px;
 }
 
 
@@ -2428,7 +2436,7 @@ textarea.materialize-textarea {
 // 	margin-left: 1em;
 // }
 
-.selectTitle, .selectDriver {
+#date, .selectTitle, .selectDriver {
 	display: inline-block;
 	width: 135px;
 	position: relative;
