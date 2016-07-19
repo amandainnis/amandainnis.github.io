@@ -443,7 +443,7 @@ $('.scheduleMeetingBar .mdi-close').click(function(){
 
 selectDriverMenu.hide();
   
-  selectDriverTotal.click(function(){
+  selectDriver.click(function(){
     selectDriverMenu.show();
 
        $('#optionA').on('click', function(){
