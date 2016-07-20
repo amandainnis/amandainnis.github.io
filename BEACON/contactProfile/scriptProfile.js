@@ -480,21 +480,21 @@ selectDriverMenu.hide();
 // });
 
 
-$( "#screen2").on('click', function() {
-  $( "#screen2" ).animate({ "top": "+=150px" }, 5000 );
-});
+// $( "#screen2").on('click', function() {
+//   $( "#screen2" ).animate({ "top": "+=150px" }, 5000 );
+// });
 
 
 
-$( "#screen1").on('click', function() {
-  $( "#screen1" ).addClass( 'rubberBand' );
-  setTimeout(
-    function(){
-      $( "#screen1" ).removeClass( 'rubberBand' );
-    }, 
-    1000
-  );
-});
+// $( "#screen1").on('click', function() {
+//   $( "#screen1" ).addClass( 'rubberBand' );
+//   setTimeout(
+//     function(){
+//       $( "#screen1" ).removeClass( 'rubberBand' );
+//     }, 
+//     1000
+//   );
+// });
 
 
 // var date = new Date();
