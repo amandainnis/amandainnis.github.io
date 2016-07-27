@@ -16,24 +16,10 @@
         </nav>
         <div class="imageWrapper clearfix">
             <div class="frameWrapper">
-                <div class="imageSelectWrapper">
-                    <span id="prevImg" class="nextPrev"><i class="mdi mdi-chevron-left"></i>Prev</span>
-                    <div id="inputDiv">
-                        <input type="text" class="newImage" />
-                        <button class="submitImage">submit</button>
-                    </div>
-                    <span id="nextImg" class="nextPrev">Next<i class="mdi mdi-chevron-right"></i></span>
-                </div>
-                <!-- end of imageselectwrapper -->
-                <div id="emptyFrame" class="level0">
-                    <div class="level1">
-                    </div>
-                </div>
-                <!-- end of empty frame -->
-            </div>
-            <!-- end of frameWrapper   -->
-            <div class="sideBar2 clearfix">
-                <!-- <div class="sourceOption">
+                <div class="imageSelectWrapper clearfix">
+                    <div id="filtersMenu"><span id="openFiltersMenu">Filters Menu</span>
+                        <div class="sideBar2 clearfix">
+                            <!-- <div class="sourceOption">
                     <span class="changeSource">Change Source</span>
                 
                    
@@ -45,11 +31,8 @@
                         </select>
                     </div>
                     </div>  -->
-
-
-
-                    
-               <!--  <div class="selectDriverTotal">
+                            <!-- perfect dropdown menu , which should turn into a select on mobile-->
+                            <!--  <div class="selectDriverTotal">
                     <span class="labelType">Meeting Driver</span>
                     <br>
                     <span class="selectDriver">Meeting Driver</span><i class="mdi mdi-menu-down selectTitleChev"></i>
@@ -61,64 +44,83 @@
                     </ul>
                 </div>
  -->
-
-
-                <!--  <! <div class="sourceOption">
+                            <!--  <! <div class="sourceOption">
                         <selectclass="changeSource">Change Source</select> <! <img class="downTriangle2" src="downTriangle.png"> -->
-                <!-- </div> -->
-                <!-- the hidden menu -->
-                <!--  <div class="nameYourSource clearfix">
+                            <!-- </div> -->
+                            <!-- the hidden menu -->
+                            <!--  <div class="nameYourSource clearfix">
                         <ul class="sourceList">
                             <li>Reddit</li>
                             <li onclick="alert('yay')">NYT</li>
                             <li>I'll paste in my own link</li>
                         </ul>
                     </div> -->
-                <!--  <div id="sourceDiv" class="redditOption1">
+                            <!--  <div id="sourceDiv" class="redditOption1">
                     <span class="changeRedditImage">Change Image <img class="downTriangle" src="downTriangle.png"></span>
                 </div> -->
-                <!-- the hidden menu -->
-                <div class="nameYourPainting clearfix"></div>
-                <!--  <div id="inputDiv">
+                            <!-- the hidden menu -->
+                            <div class="nameYourPainting clearfix"></div>
+                            <!--  <div id="inputDiv">
                             <input type="text" class="newImage"/> <button class="submitImage">submit</button>
                          </div> -->
-                <div class="redditOption2">
-                    <span class="changeBkgrdColor"><input class="input0 color-pickerBackground" type="color" value="#00BCD6"/>Click to change background color</span></div>
-                <div class="redditOption3"><span class="changeFltr">Apply filters</span></div>
-                <ul class="filters">
-                    <li class="none">
-                        <input type="radio" name="filter" value="" />None</li>
-                    <li class="multiply">
-                        <input type="radio" name="filter" value="multiply" />Multiply</li>
-                    <li class="screen">
-                        <input type="radio" name="filter" value="screen" />Screen</li>
-                    <li class="overlay">
-                        <input type="radio" name="filter" value="Overlay" />Overlay</li>
-                    <li class="darken">
-                        <input type="radio" name="filter" value="Darken" />Darken</li>
-                    <li class="lighten">
-                        <input type="radio" name="filter" value="Lighten" />Lighten</li>
-                    <li class="color-dodge">
-                        <input type="radio" name="filter" value="Color-dodge" />Color-dodge</li>
-                    <li class="color-burn">
-                        <input type="radio" name="filter" value="Color-burn" />Color-burn</li>
-                    <li class="hard-light">
-                        <input type="radio" name="filter" value="Hard-light" />Hardlight</li>
-                    <li class="soft-light">
-                        <input type="radio" name="filter" value="Soft-light" />Softlight</li>
-                    <li class="exclusion">
-                        <input type="radio" name="filter" value="Exclusion" />Exclusion</li>
-                    <li class="hue">
-                        <input type="radio" name="filter" value="Hue" />Hue</li>
-                    <li class="saturation">
-                        <input type="radio" name="filter" value="Saturation" />Saturation</li>
-                    <li class="color">
-                        <input type="radio" name="filter" value="Color" />Color</li>
-                    <li class="luminosity">
-                        <input type="radio" name="filter" value="Luminosity" />Luminosity</li>
-                </ul>
-                <!-- <button id="screenshot2" class="clearfix">Take screenshot</button> -->
+                            <div class="redditOption2">
+                                <div id="closeFilters"><i class="mdi mdi-close"></i></div>
+                                <span class="changeBkgrdColor"><input class="input0 color-pickerBackground" type="color" value="#00BCD6"/><br>Click for background</span></div>
+                            <div class="redditOption3"><span class="changeFltr">Apply filters</span></div>
+                            <ul class="filters">
+                                <li class="none">
+                                    <input type="radio" name="filter" value="" />None</li>
+                                <li class="multiply">
+                                    <input type="radio" name="filter" value="multiply" />Multiply</li>
+                                <li class="screen">
+                                    <input type="radio" name="filter" value="screen" />Screen</li>
+                                <li class="overlay">
+                                    <input type="radio" name="filter" value="Overlay" />Overlay</li>
+                                <li class="darken">
+                                    <input type="radio" name="filter" value="Darken" />Darken</li>
+                                <li class="lighten">
+                                    <input type="radio" name="filter" value="Lighten" />Lighten</li>
+                                <li class="color-dodge">
+                                    <input type="radio" name="filter" value="Color-dodge" />Color-dodge</li>
+                                <li class="color-burn">
+                                    <input type="radio" name="filter" value="Color-burn" />Color-burn</li>
+                                <li class="hard-light">
+                                    <input type="radio" name="filter" value="Hard-light" />Hardlight</li>
+                                <li class="soft-light">
+                                    <input type="radio" name="filter" value="Soft-light" />Softlight</li>
+                                <li class="exclusion">
+                                    <input type="radio" name="filter" value="Exclusion" />Exclusion</li>
+                                <li class="hue">
+                                    <input type="radio" name="filter" value="Hue" />Hue</li>
+                                <li class="saturation">
+                                    <input type="radio" name="filter" value="Saturation" />Saturation</li>
+                                <li class="color">
+                                    <input type="radio" name="filter" value="Color" />Color</li>
+                                <li class="luminosity">
+                                    <input type="radio" name="filter" value="Luminosity" />Luminosity</li>
+                            </ul>
+                            <!-- <button id="screenshot2" class="clearfix">Take screenshot</button> -->
+                        </div>
+                        <!-- end of sidebar2  -->
+                    </div>
+                    <!-- end of filter menu -->
+                    <div class="nextPrevWrapper clearfix">
+                        <span id="prevImg" class="nextPrev"><i class="mdi mdi-chevron-left"></i>Prev</span>
+                        <span id="nextImg" class="nextPrev">Next<i class="mdi mdi-chevron-right"></i></span>
+                    </div>
+                    <div id="inputDiv">
+                        <input type="text" class="newImage" />
+                        <button class="submitImage">Image Link</button>
+                    </div>
+                </div>
+                <!-- end of imageselectwrapper -->
+                <div id="emptyFrame" class="level0">
+                    <div class="level1">
+                    </div>
+                </div>
+                <!-- end of empty frame -->
             </div>
+            <!-- end of frameWrapper   -->
         </div>
         <!-- end of imageWrapper -->
         <div id="goToCanvas" class="paintingWrapper clearfix">

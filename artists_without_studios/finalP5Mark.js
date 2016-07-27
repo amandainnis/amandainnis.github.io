@@ -186,6 +186,14 @@ $('#prevImg').click(function(){
 });
 
 
+$('#openFiltersMenu').click(function(){
+	$('.sideBar2').show();
+})
+
+$('#closeFilters').click(function(){
+	$('.sideBar2').hide();
+})
+
 }
 
 
