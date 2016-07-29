@@ -95,9 +95,9 @@ h4 {
   font-weight: 400;
   letter-spacing: .5px;
   background-color: #f1f1f1;
-  -webkit-box-shadow: -5px 0px 0px 0px #169c66;
-  -moz-box-shadow: -5px 0px 0px 0px #169c66;
-  box-shadow: -5px 0px 0px 0px #169c66;
+  -webkit-box-shadow: -5px 0px 0px 0px #767676;
+  -moz-box-shadow: -5px 0px 0px 0px #767676;
+  box-shadow: -5px 0px 0px 0px #767676;
 }
 /* line 115, styleguide.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003115}}
@@ -451,14 +451,8 @@ h5 {
   background-color: #c9cfd7;
   position: static;
 }
-/* line 451, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003451}}
-.whiteStuff {
-  width: 100%;
-  height: 557px;
-}
-/* line 458, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003458}}
+/* line 456, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003456}}
 .bar {
   width: 100%;
   height: 30px;
@@ -470,8 +464,17 @@ h5 {
   padding-top: 10px;
   text-transform: uppercase;
 }
-/* line 479, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003479}}
+/* line 470, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003470}}
+.mdi-close {
+  position: static;
+  float: right;
+  font-size: 17px;
+  top: 5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+/* line 483, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003483}}
 #headerContainer {
   width: 600px;
   height: 400px;
