@@ -432,10 +432,10 @@ h5 {
 }
 /* line 434, styleguide.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003434}}
+#contactProfile548demo,
 #contactProfile548 {
   margin-top: 2em;
   width: 548px;
-  height: 630px;
   background-image: url("contactProfileImg.png");
   background-size: cover;
   border: darkkhaki 1px solid;
@@ -590,52 +590,86 @@ h5 {
 /* line 577, styleguide.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003577}}
 .profileBar .iconWrapper2 .mdi-email-outline {
-  margin-right: .1em;
+  margin-right: 1.25%;
 }
 /* line 581, styleguide.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003581}}
 .profileBar .iconWrapper2 .mdi-menu-down {
-  margin-left: .1em;
+  margin-left: 1.25%;
 }
 /* line 584, styleguide.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003584}}
 .profileBar .iconWrapper2 .ibChat2,
 .profileBar .iconWrapper2 .iconWrapperPhone,
 .profileBar .iconWrapper2 .mdi-phone {
-  margin: 0 .1em;
+  margin: 0 1.25%;
 }
-/* line 591, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003591}}
+/* line 593, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003593}}
+#contactProfile648 .iconWrapper2 .mdi-email-outline {
+  margin-right: 2.25%;
+}
+/* line 597, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003597}}
+#contactProfile648 .iconWrapper2 .mdi-menu-down {
+  margin-left: 2.25%;
+}
+/* line 600, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003600}}
+#contactProfile648 .iconWrapper2 .ibChat2,
+#contactProfile648 .iconWrapper2 .iconWrapperPhone,
+#contactProfile648 .iconWrapper2 .mdi-phone {
+  margin: 0 2.25%;
+}
+/* line 608, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003608}}
+#contactProfile748 .iconWrapper2 .mdi-email-outline {
+  margin-right: 3%;
+}
+/* line 612, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003612}}
+#contactProfile748 .iconWrapper2 .mdi-menu-down {
+  margin-left: 3%;
+}
+/* line 615, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003615}}
+#contactProfile748 .iconWrapper2 .ibChat2,
+#contactProfile748 .iconWrapper2 .iconWrapperPhone,
+#contactProfile748 .iconWrapper2 .mdi-phone {
+  margin: 0 3%;
+}
+/* line 622, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003622}}
 .readership {
   float: left;
   margin-top: 2.7%;
   margin-left: 4.5%;
 }
-/* line 597, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003597}}
+/* line 628, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003628}}
 .touchpoints {
   float: right;
   margin-top: 2.7%;
   margin-right: 4.5%;
 }
-/* line 603, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003603}}
+/* line 634, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003634}}
 .securities {
   float: left;
   margin-left: 4.5%;
   margin-top: 2.7%;
   margin-bottom: 2.7%;
 }
-/* line 610, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003610}}
+/* line 641, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003641}}
 .meetings {
   float: right;
   margin-right: 4.5%;
   margin-top: 2.7%;
   margin-bottom: 2.7%;
 }
-/* line 617, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003617}}
+/* line 648, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003648}}
 .sectionBox {
   width: 43.6%;
   height: 9.64em;
@@ -643,55 +677,54 @@ h5 {
   position: relative;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
-/* line 623, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003623}}
+/* line 654, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003654}}
 .sectionBox .header3 {
   width: 100%;
-  padding-bottom: .37em;
+  padding-top: .65em;
+  padding-left: 1.1em;
+  padding-bottom: .4em;
+  padding-right: .14em;
   background-color: #E5EBF3;
 }
-/* line 627, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003627}}
+/* line 661, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003661}}
 .sectionBox .header3 .headerText3 {
-  width: 80%;
   float: left;
-  padding-left: 1.1em;
-  padding-top: .6em;
   text-transform: uppercase;
   color: #0069cb;
   font-size: .86em;
   letter-spacing: .1px;
 }
-/* line 637, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003637}}
-.sectionBox .header3 .mdi-chevron-right {
+/* line 670, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003670}}
+.sectionBox .header3 .mdi-chevron-right.chevRight2 {
   float: right;
-  position: relative;
-  top: .14em;
-  left: 0;
-  padding-right: .14em;
+  position: absolute;
+  top: .3em;
+  left: initial;
+  right: .2em !important;
   font-size: 1.28em;
   color: rgba(0, 105, 203, 0.7);
 }
-/* line 649, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003649}}
+/* line 682, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003682}}
 .sectionBox .textWrapper {
-  width: 95%;
   padding: 1.1em 0 0 1.1em;
 }
-/* line 652, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003652}}
+/* line 685, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003685}}
 .sectionBox .textWrapper .innerTextTitle {
   font-weight: 500;
   font-size: 1em;
   letter-spacing: .1px;
   line-height: 1.2em;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: .3em;
   color: rgba(0, 0, 0, 0.9);
 }
-/* line 661, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003661}}
+/* line 694, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003694}}
 .sectionBox .textWrapper .innerTextSubtitle {
   font-weight: 400;
   font-size: .86em;
@@ -699,8 +732,8 @@ h5 {
   line-height: 1.5em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 668, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003668}}
+/* line 701, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003701}}
 .sectionBox .textWrapper .innerTextThird {
   font-weight: 400;
   font-size: .86em;
@@ -708,8 +741,8 @@ h5 {
   line-height: 1.3em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 675, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003675}}
+/* line 708, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003708}}
 .sectionBox .textWrapper .innerTextBottom {
   font-weight: 400;
   font-size: .86em;
@@ -718,21 +751,21 @@ h5 {
   color: rgba(0, 0, 0, 0.54);
   display: inline-block;
   position: absolute;
-  bottom: 6px;
+  bottom: .5em;
 }
-/* line 689, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003689}}
+/* line 722, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003722}}
 .notesBox {
-  margin-top: 2.7%;
+  margin-top: .5em;
   margin-left: 4.5%;
   width: 90.8%;
-  height: 73px;
+  height: 5.21em;
   background-color: white;
   clear: both;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
-/* line 697, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003697}}
+/* line 730, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003730}}
 .notesBox .sectionNotesTitle {
   text-transform: uppercase;
   color: rgba(0, 105, 203, 0.9);
@@ -740,11 +773,11 @@ h5 {
   letter-spacing: .1px;
   display: inline-block;
   padding-left: 1.1em;
-  padding-top: 6px;
-  padding-bottom: 5px;
+  padding-top: .7em;
+  padding-bottom: .5em;
 }
-/* line 707, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003707}}
+/* line 740, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003740}}
 .notesBox .notesText {
   font-weight: 400;
   font-size: .86em;
@@ -752,22 +785,137 @@ h5 {
   line-height: 1.3em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 717, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003717}}
+/* line 750, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003750}}
 #bottomBarEnd,
 #bottomBarCall {
   width: 100%;
-  height: 40px;
-  margin-top: 21px;
+  height: 2.86em;
+  margin-top: 1.5em;
   background-color: #c9cfd7;
   position: static;
 }
-/* line 735, styleguide.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003735}}
+/* line 760, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003760}}
+.iconsBottom2 {
+  margin-left: 5%;
+  margin-top: 2.2%;
+  width: 91%;
+  height: 2.93em;
+}
+/* line 765, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003765}}
+.iconsBottom2 .iconWrapper3 {
+  display: inline-block;
+  text-align: center;
+}
+/* line 768, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003768}}
+.iconsBottom2 .iconWrapper3 .iconLabel {
+  font-size: .79em;
+  color: rgba(0, 0, 0, 0.6);
+  color: teal;
+}
+/* line 773, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003773}}
+.iconsBottom2 .iconWrapper3 .mdi-calendar,
+.iconsBottom2 .iconWrapper3 .mdi-calendar-check,
+.iconsBottom2 .iconWrapper3 .mdi-border-color,
+.iconsBottom2 .iconWrapper3 .mdi-library-books,
+.iconsBottom2 .iconWrapper3 .mdi-dots-horizontal {
+  font-size: 2.28em;
+  color: rgba(0, 0, 0, 0.6);
+  color: teal;
+}
+/* line 781, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003781}}
+.spaceBetweenIcons {
+  display: inline-block;
+  width: 7%;
+}
+/* line 787, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003787}}
+#contactProfile648 .sectionBox {
+  width: 43.6%;
+  height: 10.64em;
+}
+/* line 791, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003791}}
+#contactProfile648 .spaceBetweenIcons {
+  display: inline-block;
+  width: 9%;
+}
+/* line 798, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003798}}
+#contactProfile748 .sectionBox {
+  width: 43.6%;
+  height: 10.64em;
+}
+/* line 802, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003802}}
+#contactProfile748 .spaceBetweenIcons {
+  display: inline-block;
+  width: 10%;
+}
+/* line 808, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003808}}
+.callButton {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 6px;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: .86em;
+  color: white;
+  letter-spacing: .4px;
+  background-color: #14c1ac;
+  outline: none;
+  border: none;
+  padding: .7em 0;
+  border-radius: 3px;
+  width: 7.14em;
+}
+/* line 830, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003830}}
+#readershipWrapper2,
+#touchpointWrapper2,
+#securitiesWrapper2,
+#meetingsWrapper2,
+#editContactWrapper2,
+#scheduleMeetingWrapper2 {
+  width: 500px;
+  height: 460px;
+  background-color: white;
+  position: static;
+  z-index: 3;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 850, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003850}}
+.readershipWrapper2,
+.meetingsWrapper2 {
+  width: 500px;
+  height: 364px;
+  overflow-y: scroll;
+  padding-bottom: 45px;
+}
+/* line 858, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003858}}
 #headerContainer {
   width: 600px;
   height: 400px;
   border: 1px goldenrod solid;
   margin-top: 2em;
+}
+/* line 865, styleguide.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/styleguide\/styleguide\.less}line{font-family:\00003865}}
+.spacer {
+  width: 100%;
+  height: 1em;
 }
 /*# sourceMappingURL=styleguide.css.map */
