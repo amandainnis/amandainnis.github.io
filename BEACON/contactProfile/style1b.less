@@ -1103,7 +1103,7 @@ body {
 	// color: white;
 	color: rgba(0, 105, 203, 1);
 	padding-left: 5px;
-    padding-top: 8px;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
@@ -1574,6 +1574,7 @@ background-color: #bbdefb;
 
 .labelForLabel {
 	margin-right: 30px;
+	color: rgba(0, 0, 0, .87);
 }
 
 [type="checkbox"] {
@@ -1772,7 +1773,7 @@ background-color: #bbdefb;
     font-size: 12px;
     color: rgba(0, 105, 203, 1);
     padding-left: 25px;
-    padding-top: 8px;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
@@ -2308,6 +2309,15 @@ input[type="date"]{
 // 	clear: both;
 // }
 
+.divItsaRowInput {
+	width: 100%;
+	// height: 80px;
+	padding-top: 5px;
+}
+.divItsaRowInput:first-of-type {
+	margin-top: .5rem;
+}
+
 .halfInput {
 	float: left;
 	display: inline-block;
@@ -2406,7 +2416,11 @@ input[type="date"]{
 	 -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
 	// border: 1px #a7a7a7 solid;
 }
-
+.timeDiv {
+	position: relative;
+	width: 190px;
+	float: left;
+}
 
 #selectHourMenu {
 	position: absolute;
@@ -2451,7 +2465,7 @@ input[type="date"]{
     color: rgba(0,0,0, .29);
 	display: inline-block;
 	padding-top: 1rem;
-	padding-bottom: .4rem;
+	padding-bottom: .3rem;
 	font-weight: 500;
 }
 
@@ -2467,7 +2481,7 @@ input[type="date"]{
 	font-family: 'Roboto';
 	position: relative;
 	text-align: left;
-	padding: .5rem 0 .5rem .1rem;
+	padding: .6rem 0 .5rem 0;
 	color: #272727;
 	outline: none;
 	border: none;
@@ -2492,7 +2506,7 @@ input[type="date"]{
 	width: 166px;
 	position: relative;
 	text-align: left;
-	padding: .5rem 0 .5rem .1rem;
+	padding: .6rem 0 .5rem 0;
 	color: #272727;
 	border-bottom: 1px #dbdbdb solid;
 	margin-bottom: .5em;
@@ -2594,12 +2608,12 @@ input[type="date"]{
 }
 
 .emptyChipInput {
-	min-height: 38px;
+	min-height: 37px;
 }
 
 .chip {
   display: inline-block;
-  height: 32px;
+  height: 30px;
   font-size: 13px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
@@ -2635,7 +2649,9 @@ input[type="date"]{
     color: #6b6b6b;}
 
 
-
+.rowOfChecks {
+	margin-top: .5em;
+}
 
 
 @-webkit-keyframes rubberBand {

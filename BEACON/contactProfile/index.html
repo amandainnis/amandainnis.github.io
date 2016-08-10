@@ -1132,12 +1132,12 @@
                 </div>
                 <form>
                     <div class="scheduleMeetingInnerFormWrapper">
-                        <div class="divItsaRow clearfix">
+                        <div class="divItsaRowInput clearfix">
                             <div class="inputWrapper clearfix">
                                 
                                  <!--    <div class="halfInput"> -->
                                     <div class="dateWithTriangle">
-                                    <span class="labelType">Date</span> <br>
+                                    <!-- <span class="labelType">Date</span> <br> -->
                                        
                                         <span id='date'></span>
                                        <!-- <input id="datepicker" type="text" class="validate"> -->
@@ -1150,9 +1150,9 @@
                                 </div>
                                 
                                 <!-- <div class="halfInput2"> -->
-
+                                    <div class="timeDiv">
                                     <div class="selectHourTotal">
-                                    <span class="labelType">Time</span> <br><span class="selectHour">Time</span><i class="mdi mdi-menu-down"></i>
+                                    <!-- <span class="labelType">Time</span> <br> --><span class="selectHour">Time</span><i class="mdi mdi-menu-down"></i>
                                     </div>
                                         <ul id="selectHourMenu">
                                             <li id="one">1:00 PM</li>
@@ -1168,14 +1168,14 @@
                                             <li id="eleven">11:00 PM</li>
                                             <li id="twelve">12:00 PM</li>
                                         </ul>
-                                    
-                                <!-- </div> -->
-                                <!-- end of half input -->
+                                    </div>
+                             
+                                <!-- end of time div -->
                             </div>
                             <!-- end of inputWrapper -->
                         </div>
                         <!-- end of divItsaRow -->
-                        <div class="divItsaRow clearfix">
+                        <div class="divItsaRowInput clearfix">
                             <div class="inputWrapper clearfix">
                             <span class="labelOverChip">City</span> <br>
                                 
@@ -1188,7 +1188,7 @@
                             <!-- end of inputWrapper -->
                         </div>
                         <!-- end of divItsaRow -->
-                        <div class="divItsaRow">
+                        <div class="divItsaRowInput">
                             <div class="inputWrapper">
                                 
                                 <div class="selectTitleTotal">
@@ -1226,7 +1226,7 @@
                         </div>
                         <!-- end of divItsaRow -->
                         
-                        <div class="divItsaRow clearfix">
+                        <div class="divItsaRowInput clearfix">
                             <div class="inputWrapper clearfix">
                                 <!-- <div class="input-field"> -->
                                 <!-- <div class="selectTitleTotal"> -->
@@ -1241,7 +1241,7 @@
                             <!-- end of inputWrapper -->
                         </div>
                         <!-- end of divItsaRow -->
-                        <div class="divItsaRow clearfix">
+                        <div class="divItsaRowInput clearfix">
                             <div class="inputWrapper clearfix">
 
                             <span class="labelOverChip">Attendees</span> <br>
@@ -1258,18 +1258,19 @@
                             <!-- end of inputWrapper -->
                         </div>
                         <!-- end of divItsaRow -->
-                        <div class="divItsaRow clearfix">
+                        <div class="divItsaRowInput clearfix">
                             <div class="inputWrapper clearfix">
-                                <div class="input-field">
-                                    <input id="notify" type="text" class="validate">
-                                    <label for="notify">Notify</label>
-                                </div>
-                                <!-- end of inputfield -->
+                                 <span class="labelOverChip">Notify</span> <br>
+                                
+                                    <div class="emptyChipInput">
+                                        <div class="chip">Kanye West<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                    </div>
                             </div>
                             <!-- end of inputWrapper -->
                         </div>
                         <!-- end of divItsaRow -->
-                        <div class="divItsaRow clearfix">
+                        <div class="divItsaRowInput clearfix">
+                        <div class="rowOfChecks">
                             <span class="labelForLabel">Send Outlook invite to</span>
 
                             <div class="addMe2"><input type="checkbox" class="filled-in" id="filled-in-boxMeeting1"  />
@@ -1277,7 +1278,7 @@
 
                             <div class="addMe2"><input type="checkbox" class="filled-in" id="filled-in-boxMeeting2"  />
                                 <label for="filled-in-boxMeeting2">BoFAML</label></div>
-
+                                </div>
                          </div>
                         <!-- end of divItsaRow -->
 
