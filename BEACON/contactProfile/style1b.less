@@ -1777,13 +1777,13 @@ background-color: #bbdefb;
 }
 
 .editContactInnerFormWrapper, .scheduleMeetingInnerFormWrapper {
-    width: 475px;
+    width: 470px;
   	height: 430px;
     overflow-y: scroll;
     overflow-x: hidden;
     padding-top: 10px;
     padding-bottom: 45px;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 30px;
     /*border: 1px black solid;*/
 }
 
@@ -2311,22 +2311,23 @@ input[type="date"]{
 .halfInput {
 	float: left;
 	display: inline-block;
+
 }
 
-.dateWithTriangle {
-	width: 200px;
-	height: 51px;
+.dateWithTriangle, .selectHourTotal {
+	width: 190px;
+	// height: 51px;
 	// border: 1px black solid;
 	float: left;
 }
 
-.halfInput .mdi-menu-down {
-	display: inline-block;
-    font-size: 20px;
-    position: relative;
-    left: 0px;
-    top: 3px;
-}
+// .halfInput .mdi-menu-down {
+// 	display: inline-block;
+//     font-size: 20px;
+//     position: relative;
+//     left: 0px;
+//     top: 3px;
+// }
 
 
 
@@ -2338,7 +2339,6 @@ input[type="date"]{
 
 
 .halfInput2 {
-	// width: 62%;
 	float: left;
 	
 }
@@ -2440,7 +2440,7 @@ input[type="date"]{
 
 .labelType {
 	font-size: 0.75rem;
-    color: rgba(0,0,0, .44);
+    color: rgba(0,0,0, .29);
 	display: inline-block;
 	padding-top: 1rem;
 	font-weight: 500;
@@ -2448,7 +2448,7 @@ input[type="date"]{
 
 .labelOverChip {
 	font-size: 0.75rem;
-    color: rgba(0,0,0, .44);
+    color: rgba(0,0,0, .29);
 	display: inline-block;
 	padding-top: 1rem;
 	padding-bottom: .4rem;
@@ -2461,40 +2461,66 @@ input[type="date"]{
 	position: relative;
 }
 
-
-
-#date, .selectTitle, .selectDriver {
+.selectSubject {
 	display: inline-block;
-	width: 135px;
+	width: 100%;
+	font-family: 'Roboto';
 	position: relative;
 	text-align: left;
-	padding: .5rem 0 0.5rem 0;
+	padding: .5rem 0 .5rem .1rem;
+	color: #272727;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	border-bottom: 1px #dbdbdb solid;
+	margin-bottom: .5em;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #272727;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #272727;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #272727;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #272727;
+}
+#date, .selectTitle, .selectDriver, .selectHour {
+	display: inline-block;
+	width: 166px;
+	position: relative;
+	text-align: left;
+	padding: .5rem 0 .5rem .1rem;
 	color: #272727;
 	border-bottom: 1px #dbdbdb solid;
 	margin-bottom: .5em;
 }
 
-.selectHourTotal .mdi-menu-down {
+.dateWithTriangle .mdi-menu-down, .selectHourTotal .mdi-menu-down {
 	display: inline-block;
 	font-size: 20px;
 	position: relative;
     top: 7px;
 }
 
-
-
-.selectHour {
-	display: inline-block;
-	width: 135px;
-	float: left;
-	text-align: left;
-	padding: .5rem 0 .5rem 0;
-	color: #9e9e9e;
-	border-bottom: 1px #dbdbdb solid;
-	margin-bottom: .5em;
+.selectDriverTotal, .selectHourTotal {
 	margin-left: 2em;
-	// font-size: 16px;
 }
+
+// .selectHour {
+// 	display: inline-block;
+// 	// width: 135px;
+// 	float: left;
+// 	text-align: left;
+// 	padding: .5rem 0 .5rem 0;
+// 	color: #272727;
+// 	border-bottom: 1px #dbdbdb solid;
+// 	margin-bottom: .5em;
+	
+// 	// font-size: 16px;
+// }
 
 
 
@@ -2554,7 +2580,8 @@ input[type="date"]{
 }
 
 
-.cityInputWithChip {
+
+.emptyChipInput, .cityInputWithChip {
 	display: inline-block;
     width: 100%;
     float: left;
@@ -2564,6 +2591,10 @@ input[type="date"]{
     border-bottom: 1px #dbdbdb solid;
     margin-bottom: .5em;
     // margin-left: 2em;
+}
+
+.emptyChipInput {
+	min-height: 38px;
 }
 
 .chip {

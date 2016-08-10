@@ -1134,21 +1134,25 @@
                     <div class="scheduleMeetingInnerFormWrapper">
                         <div class="divItsaRow clearfix">
                             <div class="inputWrapper clearfix">
-                                <div class="dateWithTriangle">
-                                    <div class="input-field halfInput">
-                                        <!-- <input id="dateSchedule" type="date" class="datepicker" /> -->
+                                
+                                 <!--    <div class="halfInput"> -->
+                                    <div class="dateWithTriangle">
+                                    <span class="labelType">Date</span> <br>
+                                       
                                         <span id='date'></span>
                                        <!-- <input id="datepicker" type="text" class="validate"> -->
 
                                          <!-- <input type="date" "myDate"> -->
                                         <!-- <label for="date">11 Jul 2016</label> -->
                                         <i class="mdi mdi-menu-down"></i>
-                                    </div>
+                                    <!-- </div> -->
                                     <!-- end of half input -->
                                 </div>
-                                <div class="angular_calendar"><img src="angular_calendar.png"></div>
-                                <div class="input-field halfInput2">
-                                    <div class="selectHourTotal"><span class="selectHour">Time</span><i class="mdi mdi-menu-down"></i>
+                                
+                                <!-- <div class="halfInput2"> -->
+
+                                    <div class="selectHourTotal">
+                                    <span class="labelType">Time</span> <br><span class="selectHour">Time</span><i class="mdi mdi-menu-down"></i>
                                     </div>
                                         <ul id="selectHourMenu">
                                             <li id="one">1:00 PM</li>
@@ -1165,7 +1169,7 @@
                                             <li id="twelve">12:00 PM</li>
                                         </ul>
                                     
-                                </div>
+                                <!-- </div> -->
                                 <!-- end of half input -->
                             </div>
                             <!-- end of inputWrapper -->
@@ -1174,14 +1178,11 @@
                         <div class="divItsaRow clearfix">
                             <div class="inputWrapper clearfix">
                             <span class="labelOverChip">City</span> <br>
-                                <!-- <div class="input-field"> -->
+                                
                                     <div class="cityInputWithChip">
                                         <div class="chip">New York<i id="chipIcon" class="mdi mdi-close"></i></div>
                                     </div>
-                                    
-                                    
-                               <!--  </div> -->
-                                <!-- end of inputfield -->
+                            
                                 
                             </div>
                             <!-- end of inputWrapper -->
@@ -1227,10 +1228,14 @@
                         
                         <div class="divItsaRow clearfix">
                             <div class="inputWrapper clearfix">
-                                <div class="input-field">
-                                    <input id="subject" type="text" class="validate">
-                                    <label for="subject">Subject</label>
-                                </div>
+                                <!-- <div class="input-field"> -->
+                                <!-- <div class="selectTitleTotal"> -->
+                                <span class="labelType">Subject</span> <br>    
+                                <input class="selectSubject" placeholder="Enter Subject"></input>
+                               <!--  </div> -->
+                                    <!-- <input id="subject" type="text" class="validate">
+                                    <label for="subject">Subject</label> -->
+                                <!-- </div> -->
                                 <!-- end of inputfield -->
                             </div>
                             <!-- end of inputWrapper -->
@@ -1238,10 +1243,16 @@
                         <!-- end of divItsaRow -->
                         <div class="divItsaRow clearfix">
                             <div class="inputWrapper clearfix">
-                                <div class="input-field">
+
+                            <span class="labelOverChip">Attendees</span> <br>
+                                
+                                    <div class="emptyChipInput">
+                                        <div class="chip">Kim Kardashian<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                    </div>
+                                <!-- <div class="input-field">
                                     <input id="attendees" type="text" class="validate">
                                     <label for="attendees">Attendees</label>
-                                </div>
+                                </div> -->
                                 <!-- end of inputfield -->
                             </div>
                             <!-- end of inputWrapper -->
