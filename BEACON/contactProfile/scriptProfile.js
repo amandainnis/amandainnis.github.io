@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('#meetingsWrapper').hide();
   $('#editContactWrapper').hide();
   $('#scheduleMeetingWrapper').hide();
+  $('#callNotesWrapper').hide();
   $('.voiceDropChoose li').hide();
   $('.moreChoose').hide();
   $('#popUpDiv').hide();
@@ -273,9 +274,26 @@ $('.editContactBar .mdi-close').click(function(){
   $('#editContactWrapper').hide();
 });
 
+
+
+
+//////////////////// call notes/////////
+
+$('.mdi-border-color').click(function(){
+  $('#callNotesWrapper').show();
+});
+
+$('#bottomBarCallNotes .cancelButton').click(function(){
+  $('#callNotesWrapper').hide();
+});
+
+$('.callNotesBar .mdi-close').click(function(){
+  $('#callNotesWrapper').hide();
+});
+
+
+
 //////////////////// schedule mtg/////////
-
-
 
 
 
@@ -515,6 +533,7 @@ console.log( date.mmddyyyy() ); // Assuming you have an open console
 
 
 $("#date").text(date.mmddyyyy());
+$("#date2").text(date.mmddyyyy());
 
 
 });

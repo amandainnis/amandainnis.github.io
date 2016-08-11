@@ -1128,6 +1128,7 @@
             <div id="scheduleMeetingWrapper">
                 <div class="scheduleMeetingBar">Schedule Meeting<i class="mdi mdi-close"></i></div>
                 <div id="bottomBarScheduleMeeting">
+                    <input class="confirmButton" value="save" type="button">
                     <input class="cancelButton" type="button" value="cancel">
                 </div>
                 <form>
@@ -1190,7 +1191,7 @@
                         <!-- end of divItsaRow -->
                         <div class="divItsaRowInput">
                             <div class="inputWrapper">
-                                
+                                <div class="selectTitleWrapper">
                                 <div class="selectTitleTotal">
                                 <span class="labelType">Type</span> <br>    
                                 <span class="selectTitle">Choose Type</span><i class="mdi mdi-menu-down selectTitleChev"></i>
@@ -1201,6 +1202,7 @@
                                     <li id="option3">Call</li>
                                     
                                 </ul>
+                                </div>
                             </div>
                             <!-- end of inputWrapper -->
 
@@ -1288,6 +1290,139 @@
                 </form>
             </div>
             <!-- end of schedulemeetingwrapper -->
+            <div id="callNotesWrapper">
+                <div class="callNotesBar">Call Notes<i class="mdi mdi-close"></i></div>
+                <div id="bottomBarCallNotes">
+                    <input class="confirmButton" value="save" type="button">
+                    <input class="cancelButton" type="button" value="cancel">
+                </div>
+                <form>
+                    <div class="scheduleMeetingInnerFormWrapper">
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                            <!-- <div class="inputWrapper"> -->
+                                <div class="selectTitleWrapper">
+                                <div class="selectTitleTotal">
+                                <span class="labelType">Type</span> <br>    
+                                <span class="selectTitle">Outgoing Call</span><i class="mdi mdi-menu-down selectTitleChev"></i>
+                                </div>
+                                <ul id="selectMenu">
+                                    <li id="option1">Outgoing Call</li>
+                                    <li id="option2">Incoming Call</li>
+                                    <li id="option3">Voicemail</li>
+                                    
+                                </ul>
+                                </div>
+                        <!--     </div> -->
+                            <!-- end of inputWrapper -->
+                                
+                                 <!--    <div class="halfInput"> -->
+                                    <div class="dateWithTriangle2">
+                                    <span class="labelType">Date</span> <br>
+                                       
+                                        <span id='date2'></span>
+                                       
+                                        <i class="mdi mdi-menu-down"></i>
+                                    <!-- </div> -->
+                                    <!-- end of half input -->
+                                </div>
+                                
+                                <!-- <div class="halfInput2"> -->
+                                    
+                                    <div class="durationTotal">
+                                    <span class="labelType">Duration</span> <br><span class="durationHour">0</span>
+                             
+                                <!-- end of time div -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <!-- <div class="input-field"> -->
+                                <!-- <div class="selectTitleTotal"> -->
+                                <span class="labelType">Subject</span> <br>    
+                                <input class="selectSubject" placeholder="Enter Subject"></input>
+                               <!--  </div> -->
+                                    <!-- <input id="subject" type="text" class="validate">
+                                    <label for="subject">Subject</label> -->
+                                <!-- </div> -->
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                            <span class="labelOverChip">Tickers Discussed</span> <br>
+                                
+                                    <div class="emptyChipInput">
+                                        <div class="chip">AMZN<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                        <div class="chip">GOOG<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                    </div>
+                            
+                                
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <!-- <div class="input-field"> -->
+                                <!-- <div class="selectTitleTotal"> -->
+                                <span class="labelType">Call Notes</span> <br>    
+                                <textarea class="textFieldWrapper" placeholder="Enter Call Notes"></textarea>
+                               <!--  </div> -->
+                                    <!-- <input id="subject" type="text" class="validate">
+                                    <label for="subject">Subject</label> -->
+                                <!-- </div> -->
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+
+                        
+                        
+                        
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+
+                            <span class="labelOverChip">Attendees</span> <br>
+                                
+                                    <div class="emptyChipInput">
+                                        <div class="chip">Kim Kardashian<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                    </div>
+                                <!-- <div class="input-field">
+                                    <input id="attendees" type="text" class="validate">
+                                    <label for="attendees">Attendees</label>
+                                </div> -->
+                                <!-- end of inputfield -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                 <span class="labelOverChip">Notify</span> <br>
+                                
+                                    <div class="emptyChipInput">
+                                        <div class="chip">Kanye West<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                    </div>
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        
+
+
+                    </div>
+                    <!-- end of innerFormWrapper -->
+                </form>
+            </div>
+            <!-- end of callNotesWrapper -->
 
 
             <div id="popUpDiv">
