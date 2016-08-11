@@ -216,11 +216,11 @@ h2 {
 
 .ibChat {
 	display: inline-block;
-	width: 22px;
+	width: 23px;
 	position: relative;
-	top: 5px;
-	margin-left: 13px;
-	opacity: .6;
+	top: 3px;
+	margin-left: 10px;
+	opacity: .7;
 }
 
 .ibChat img {
@@ -251,7 +251,7 @@ h2 {
  	display: inline-block;
  	text-align: center;
  	position: relative;
- 	top: -4px;
+ 	top: -7px;
  	
  }
 
@@ -342,9 +342,9 @@ h2 {
 
 
 .mdi-phone, .mdi-comment, .mdi-message-text, .mdi-email-outline, .mdi-email, .mdi-dots-vertical {
-	font-size: 20px;
-	width: 22px;
-	color: rgba(0, 0, 0, .6);
+	font-size: 24px;
+	width: 25px;
+	color: rgba(0, 0, 0, .7);
 	transition: .3s ease-in;
 
 	
@@ -366,12 +366,14 @@ h2 {
 
 .mdi-phone {
 	color: #0069CB;
+	position: relative;
+	top: 1px;
 	// color: black;
 }
 
 .mdi-email-outline {
 	position: relative;
-	top: 1px;
+	// top: 3px;
 	// color: #0069CB;
 	// color: rgba(0, 0, 0, .6);
 }
@@ -400,11 +402,11 @@ h2 {
 // }
 
 .mdi-phone, .mdi-email, .mdi-email-outline, .mdi-comment, .mdi-message-text {
-	margin-left: 13px;
+	margin-left: 10px;
 }
 
 .mdi-dots-vertical {
-	margin-left: 8px;
+	margin-left: 4px;
 }
 
 
@@ -667,9 +669,9 @@ a {
 }
 
 .sideSearchContainer {
-	width: 140px;
+	width: 120px;
 	position: relative;
-	left: 438px;
+	left: 458px;
     top: -150px;
 }
 .sideSearch {
@@ -679,7 +681,7 @@ a {
     cursor: pointer;
     font-size: 13px;
 	display: inline-block;
-	width: 130px;
+	width: 115px;
 	height: 25px;
 	
 	border-bottom: 1px solid #bababa;
