@@ -72,7 +72,12 @@ header{
 	width: 100%;
 	// margin-top: .5em;
 	background: white;
-	position: relative; }
+	position: relative; 
+	    height: 71px;
+	        height: 74px;
+ 
+    background: #e7e6e6;
+	    }
 	
 
 
@@ -88,19 +93,32 @@ header{
 	width: 100%;
 }
 
-#nineBox {
-	width: 20px;
-	height: 20px;
+.topRightActions {
+	width: 70px;
+	display: inline-block;
 	font-size: 25px;
-	position: absolute;
-	top: 30px;
-	left: 550px;
+	position: relative;
+	left: 509px;
+    top: -17px;
+        top: -11px;
+    color: rgba(0, 0, 0, .5);
+    color: #0069CB;
+}
+
+#nineBox {
+	width: 25px;
+    height: 25px;
+    font-size: 25px;
+    position: absolute;
+    left: 41px;
+    top: 0px;
+	// left: 550px;
 	color: #0069CB;
 	/*border: 1px black solid;*/
 
 }
 .mdi-window-minimize {
-	font-size: 22px;
+	font-size: 19px;
 	position: absolute;
 	top: 2px;
 	left: 570px;
@@ -136,7 +154,7 @@ header{
 
 .bar {
 	width: 100%;
-	height: 39px;
+	height: 40px;
 	background-color: #0069CB;
 }
 
@@ -145,16 +163,16 @@ header{
 	color: rgba(255, 255, 255, .9);
 	position: relative;
 	display: inline-block;
-	left: 495px;
-    top: -19px;
+	left: 537px;
+    top: -41px;
 }
 
 .hamburgerMenu {
 	    /* width: 3px; */
     position: relative;
     display: inline-block;
-    left: 516px;
-    top: -17px;
+    left: 30px;
+    top: 1px;
     color: rgba(255, 255, 255, .9);
     font-size: 19px;
 }
@@ -165,14 +183,45 @@ header{
 
 .sectionHeader {
 	width: 100%;
-	height: 74px;
-	border-bottom: 1px solid rgba(0,0,0, 0.1);
-}
-
-.sectionHeader {
 	background-color: white;
+	height: 74px;
+	height: 65px;
+	border-bottom: 2px solid rgba(0,0,0, 0.1);
 }
 
+
+.sideSearchContainer {
+	width: 120px;
+	position: relative;
+	left: 404px;
+    top: -21px;
+}
+.sideSearch {
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+	display: inline-block;
+	width: 115px;
+	height: 25px;
+	
+	border-bottom: 1px solid #bababa;
+	/*padding-top: 5px;*/
+	border-radius: 2px;
+	padding: 5px 0 4px 5px;
+	// color: #aeaeae;
+	transition: .3s ease-in;
+   
+}
+
+.filterIcon {
+	position: absolute;
+	left: 98px;
+    top: 4px;
+    color: rgba(0,0,0, .3);
+    font-size: 17px;
+}
 
 
 h1, h3 {
@@ -182,23 +231,41 @@ h1, h3 {
 
 .bar h1 {
 	font-size: 14px;
-	color: white;
-	padding-left: 30px;
-	padding-top: 15px;
+    color: white;
+        padding-left: 38px;
+    padding-top: 14px;
+    display: inline-block;
 
 }
 
+.listTitleContainer {width: 100%;}
+
 h2 {
-	font-size: 24px; 
+	// font-size: 24px; 
 	color: rgba(0,0,0,.87);
 	font-weight: 500;
 	letter-spacing: .5px;
-	padding-left: 30px;
-	padding-top: 28px;
+	// padding-left: 30px;
+	// padding-top: 28px;
+	display: inline-block;
+		    font-size: 20px;
+		    margin-left: 30px;
+		    margin-top: 17px;
+		    padding: 4px 4px 6px 0px;
+		    border-bottom: 1px #cacaca solid;
 }
 
 #listContainer {
 	position: relative;
+}
+
+.listMenu {
+	font-size: 24px;
+	color: rgba(0,0,0,.5);
+	position: relative;
+	top: 4px;
+	    top: 1px;
+    left: 7px;
 }
 
  .iconGang {
@@ -255,27 +322,12 @@ h2 {
  	
  }
 
-////////////////////////////////
+
+
 
  // .timeElapsed.green {
- // 	background-color: rgba(87, 232, 117, 0.4); 
+ // 	background-color: #66DD83; 
  // }
-
- .timeElapsed.green {
- 	background-color: rgba(87, 232, 117, 0.9); 
- }
-.timeElapsed.green {
- 	background-color: #66DD83; 
- }
-
- .timeElapsed.green {
- 	background-color: #66DD83; 
- }
-
-
- .timeElapsed.green {
- 	background-color: #66DD83; 
- }
 
 .timeElapsed.green {
  	background-color: #8CDFA1; 
@@ -283,49 +335,20 @@ h2 {
 
 
 
-
-
-
-// .timeElapsed.green {
-//  	background-color: #45BFA1; 
-//  }
-
- // .timeElapsed.green {
- // 	background-color: #19C7AC; 
+ //  .timeElapsed.yellow {
+ // 	background-color: #fbc02d; 
  // }
-
-
-///////////////////////////
-
-
-/* .timeElapsed.yellow {
- 	background-color: rgba(255, 236, 0, 0.4); 
- }*/
-
- // .timeElapsed.yellow {
- // 	background-color: rgba(255, 232, 146, 0.6); 
- // }
-
-  .timeElapsed.yellow {
- 	background-color: #fbc02d; 
- }
 
 .timeElapsed.yellow {
  	background-color: #F3C34C; 
  }
 
 
- // .timeElapsed.yellow {
- // 	background-color: #E39E19; 
- // }
 
- // .timeElapsed.red {
- // 	background-color: rgba(255, 80, 77, 0.3); 
- // }
 
-.timeElapsed.red {
- 	background-color: #F6867E; 
- }
+// .timeElapsed.red {
+//  	background-color: #F6867E; 
+//  }
 
  .timeElapsed.red {
  	background-color: #F7A099; 
@@ -334,9 +357,6 @@ h2 {
 
 
 
- // .timeElapsed.red {
- // 	background-color: #EB6273; 
- // }
 
 
 
@@ -350,17 +370,7 @@ h2 {
 	
 }
 
-// .mdi-comment {
-// 	position: relative;
 
-// }
-
-// .ibText {
-// 	display: inline-block;
-// 	position: absolute;
-// 	left: -3px;
-// 	color: white;
-// }
 
 
 
@@ -506,20 +516,7 @@ h2 {
 	// width: 100%;
 } 
 
-/*.sideSearch {
-	font-size: 13px;
-	display: inline-block;
-	width: 130px;
-	height: 25px;
-	position: relative;
-	left: 440px;
-	top: -20px;
-	border: 1px solid rgba(0,0,0, 0.2);
-	padding-top: 5px;
-	border-radius: 2px;
-	text-align: center;
 
-}*/
 
 
 /* The container <div> - needed to position the dropdown content */
@@ -529,8 +526,9 @@ h2 {
 	width: 520px;
 	height: 35px;
 	position: relative;
-	left: 15px;
-	top: 20px;
+	left: 0px;
+	top: 13px;
+	    top: 27px;
 	/*border: 1px solid rgba(0,0,0, 0.2);*/
 	padding-top: 5px;
 	border-radius: 2px;
@@ -568,13 +566,18 @@ h2 {
 	color: rgba(0,0,0, .8);
 	/*text-align: center;*/
 	transition: .3s ease-in;
-   
+       width: 479px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .topSearch .mdi-magnify {
 	position: relative;
-	top: 10px;
-	left: -40px;
+	font-size: 24px;
+    top: 17px;
+    left: -26px;
+    color: rgba(0,0,0, .5);
+    top: 6px;
+    left: 21px;
 }
 
 .iconMini {
@@ -668,40 +671,10 @@ a {
 	width: 220px;
 }
 
-.sideSearchContainer {
-	width: 120px;
-	position: relative;
-	left: 458px;
-    top: -150px;
-}
-.sideSearch {
-    background-color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 13px;
-	display: inline-block;
-	width: 115px;
-	height: 25px;
-	
-	border-bottom: 1px solid #bababa;
-	/*padding-top: 5px;*/
-	border-radius: 2px;
-	padding: 5px 0 4px 5px;
-	// color: #aeaeae;
-	transition: .3s ease-in;
-   
-}
 
 
 
-.sideSearchIcon {
-	position: absolute;
-	left: -18px;
-    top: 4px;
-    color: rgba(0,0,0, .3);
-    font-size: 17px;
-}
+
 
 
 
