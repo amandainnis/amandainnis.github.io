@@ -479,43 +479,43 @@ body {
   margin-top: 15px;
   margin-left: 25px;
   width: 499px;
-  height: 73px;
+  height: 85px;
   background-color: white;
   clear: both;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
-/* line 422, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003422}}
+/* line 423, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003423}}
 .readership {
   float: left;
-  margin-top: 15px;
+  margin-top: 7px;
   margin-left: 25px;
 }
-/* line 428, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003428}}
+/* line 430, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003430}}
 .touchpoints {
   float: right;
-  margin-top: 15px;
+  margin-top: 7px;
   margin-right: 25px;
 }
-/* line 435, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003435}}
+/* line 438, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003438}}
 .securities {
   float: left;
   margin-left: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 442, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003442}}
+/* line 445, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003445}}
 .meetings {
   float: right;
   margin-right: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 449, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003449}}
+/* line 452, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003452}}
 .sectionBoxTitle {
   text-transform: uppercase;
   color: rgba(0, 105, 203, 0.8);
@@ -530,8 +530,8 @@ body {
   background-color: #e9ecf0;
   background-color: #E5EBF3;
 }
-/* line 473, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003473}}
+/* line 476, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003476}}
 .sectionNotesTitle {
   text-transform: uppercase;
   color: rgba(0, 105, 203, 0.9);
@@ -541,24 +541,24 @@ body {
   /*border-bottom: .5px rgba(6, 113, 212, 0.4) solid;*/
   /*width: 100%;*/
   display: inline-block;
-  padding-left: 15px;
+  margin-left: 15px;
   padding-top: 6px;
   padding-bottom: 5px;
 }
-/* line 488, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003488}}
+/* line 491, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003491}}
 .textWrapper {
   width: 95%;
   padding: 15px 0 0 15px;
 }
-/* line 494, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003494}}
+/* line 497, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003497}}
 .notesWrapper {
   width: 95%;
   padding: 5px 0 0 15px;
 }
-/* line 499, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003499}}
+/* line 502, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003502}}
 .innerTextTitle {
   font-family: 'Roboto';
   font-weight: 500;
@@ -569,8 +569,8 @@ body {
   padding-bottom: 5px;
   color: rgba(0, 0, 0, 0.9);
 }
-/* line 510, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003510}}
+/* line 513, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003513}}
 .innerTextSubtitle {
   font-family: 'Roboto';
   font-weight: 400;
@@ -579,8 +579,8 @@ body {
   line-height: 1.5em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 518, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003518}}
+/* line 521, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003521}}
 .innerTextThird {
   font-family: 'Roboto';
   font-weight: 400;
@@ -589,8 +589,8 @@ body {
   line-height: 1.3em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 527, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003527}}
+/* line 530, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003530}}
 .innerTextBottom {
   font-family: 'Roboto';
   font-weight: 400;
@@ -602,8 +602,8 @@ body {
   position: absolute;
   bottom: 6px;
 }
-/* line 539, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003539}}
+/* line 542, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003542}}
 .notesText {
   font-family: 'Roboto';
   font-weight: 400;
@@ -618,8 +618,8 @@ body {
 	margin-left: 30px;
 	margin-top: 12px;
 }*/
-/* line 556, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003556}}
+/* line 559, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003559}}
 .iconsProfile {
   width: 203px;
   height: 19px;
@@ -629,8 +629,8 @@ body {
   /*border: 1px black solid;*/
   margin-right: 25px;
 }
-/* line 566, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003566}}
+/* line 569, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003569}}
 .iconWrapperProfile {
   display: inline-block;
   padding-bottom: 1px;
@@ -638,8 +638,8 @@ body {
   font-family: 'Roboto';
   font-size: 13px;
 }
-/* line 574, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003574}}
+/* line 577, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003577}}
 .iconWrapperPhone {
   display: inline-block;
   position: relative;
@@ -650,8 +650,8 @@ body {
   line-height: 1.5em;
   border-bottom: 1px solid #6b6b6b;
 }
-/* line 586, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003586}}
+/* line 589, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003589}}
 .iconWrapperTriangle {
   display: inline-block;
   padding-bottom: 1px;
@@ -659,16 +659,16 @@ body {
   font-family: 'Roboto';
   font-size: 18px;
 }
-/* line 597, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003597}}
+/* line 600, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003600}}
 .iconsBottom2 {
   margin-left: 28px;
   margin-top: 12px;
   width: 500px;
   height: 41px;
 }
-/* line 605, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003605}}
+/* line 608, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003608}}
 .iconWrapper {
   font-family: 'Roboto';
   font-size: 11px;
@@ -676,48 +676,48 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 617, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003617}}
+/* line 620, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003620}}
 .iconWrapper img {
   padding-bottom: 3px;
 }
-/* line 621, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003621}}
+/* line 624, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003624}}
 .spaceBetweenIcons {
   display: inline-block;
   width: 7%;
 }
-/* line 626, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003626}}
+/* line 629, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003629}}
 .mdi-email-outline,
 .mdi-message-text {
   font-size: 18px;
 }
-/* line 630, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003630}}
+/* line 633, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003633}}
 .mdi-email-outline {
   color: rgba(0, 105, 203, 0.7);
 }
-/* line 634, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003634}}
+/* line 637, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003637}}
 .mdi-email-outline:hover {
   color: rgba(0, 105, 203, 0.9);
 }
-/* line 638, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003638}}
+/* line 641, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003641}}
 .ibChat {
   width: 22px;
   position: relative;
   top: 1px;
 }
-/* line 644, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003644}}
+/* line 647, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003647}}
 .ibChat img {
   display: inline-block;
   width: 100%;
 }
-/* line 652, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003652}}
+/* line 655, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003655}}
 .mdi-calendar,
 .mdi-calendar-check,
 .mdi-border-color,
@@ -726,8 +726,8 @@ body {
   font-size: 32px;
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 663, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003663}}
+/* line 666, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003666}}
 .overlay {
   width: 500px;
   height: 460px;
@@ -739,13 +739,13 @@ body {
   left: 25px;
   /*display: none;*/
 }
-/* line 676, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003676}}
+/* line 679, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003679}}
 .overlay img {
   width: 100%;
 }
-/* line 682, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003682}}
+/* line 685, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003685}}
 #readershipWrapper,
 #touchpointWrapper,
 #securitiesWrapper,
@@ -766,8 +766,8 @@ body {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 702, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003702}}
+/* line 705, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003705}}
 .readershipWrapper,
 .meetingsWrapper {
   width: 500px;
@@ -775,8 +775,8 @@ body {
   overflow-y: scroll;
   padding-bottom: 45px;
 }
-/* line 712, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003712}}
+/* line 715, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003715}}
 #searchBar {
   width: 500px;
   height: 65px;
@@ -794,15 +794,15 @@ body {
 	top: 455px;
 	z-index: 2;
 }*/
-/* line 766, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003766}}
+/* line 769, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003769}}
 .textWrapper2 {
   width: 56%;
   padding: 25px 0 0 25px;
   float: left;
 }
-/* line 773, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003773}}
+/* line 776, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003776}}
 .dateWrapper {
   width: 17%;
   float: left;
@@ -810,8 +810,8 @@ body {
   margin-left: 55px;
   /*border: 1px black solid;*/
 }
-/* line 781, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003781}}
+/* line 784, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003784}}
 .readWrapper {
   width: 8%;
   float: left;
@@ -819,8 +819,8 @@ body {
   margin-left: 22px;
   /*border: 1px black solid;*/
 }
-/* line 790, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003790}}
+/* line 793, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003793}}
 .timeElapsed {
   padding-top: 4px;
   border-radius: 8px;
@@ -833,23 +833,23 @@ body {
   position: relative;
   top: -2px;
 }
-/* line 817, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003817}}
+/* line 820, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003820}}
 .timeElapsed.green {
   background-color: #8CDFA1;
 }
-/* line 821, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003821}}
+/* line 824, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003824}}
 .timeElapsed.yellow {
   background-color: #F3C34C;
 }
-/* line 825, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003825}}
+/* line 828, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003828}}
 .timeElapsed.red {
   background-color: #F7A099;
 }
-/* line 830, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003830}}
+/* line 833, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003833}}
 .eventTitle {
   font-family: 'Roboto';
   font-weight: 600;
@@ -858,8 +858,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 839, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003839}}
+/* line 842, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003842}}
 .eventLocation {
   font-family: 'Roboto';
   font-weight: 400;
@@ -868,8 +868,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 847, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003847}}
+/* line 850, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003850}}
 .eventDate {
   font-family: 'Roboto';
   font-weight: 400;
@@ -879,8 +879,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 858, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003858}}
+/* line 861, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003861}}
 .statusText {
   font-family: 'Roboto';
   font-weight: 400;
@@ -889,8 +889,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 867, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003867}}
+/* line 870, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003870}}
 .columnTitle {
   font-weight: 400;
   font-size: 12px;
@@ -899,30 +899,30 @@ body {
   color: rgba(0, 0, 0, 0.54);
   text-transform: uppercase;
 }
-/* line 876, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003876}}
+/* line 879, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003879}}
 .columnTitle.published {
   margin-left: 327px;
 }
-/* line 880, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003880}}
+/* line 883, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003883}}
 .columnTitle.read {
   margin-left: 38px;
 }
-/* line 887, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003887}}
+/* line 890, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003890}}
 .divItsaRow {
   width: 100%;
   padding-top: 5px;
 }
-/* line 892, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003892}}
+/* line 895, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003895}}
 .divItsaRow:first-of-type {
   padding-top: 0px;
 }
 /*/////////////////*/
-/* line 912, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003912}}
+/* line 915, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003915}}
 .bar2 {
   width: 100%;
   height: 30px;
@@ -936,8 +936,8 @@ body {
   text-transform: uppercase;
   position: relative;
 }
-/* line 928, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003928}}
+/* line 931, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003931}}
 .bar2 .mdi-close {
   position: absolute;
   left: 465px;
@@ -945,8 +945,8 @@ body {
   top: 5px;
   color: rgba(0, 105, 203, 0.8);
 }
-/* line 938, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003938}}
+/* line 941, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003941}}
 .innerEventWrapper.eventChoose {
   width: 500px;
   height: 435px;
@@ -954,15 +954,15 @@ body {
   padding-bottom: 45px;
   overflow-y: hidden;
 }
-/* line 951, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003951}}
+/* line 954, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003954}}
 .eventBarText {
   display: inline-block;
   position: relative;
   top: -8px;
 }
-/* line 957, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003957}}
+/* line 960, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003960}}
 .mdi-chevron-left {
   font-size: 22px;
   margin-right: 10px;
@@ -971,8 +971,8 @@ body {
   top: -4px;
 }
 /*///////////// touchpoints   ////*/
-/* line 967, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003967}}
+/* line 970, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003970}}
 .touchpointWrapper,
 .securitiesWrapper {
   width: 500px;
@@ -980,8 +980,8 @@ body {
   overflow-y: scroll;
   padding-bottom: 45px;
 }
-/* line 974, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003974}}
+/* line 977, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003977}}
 #noSearchBar {
   width: 500px;
   height: 65px;
@@ -990,8 +990,8 @@ body {
   top: 0px;
   z-index: 2;
 }
-/* line 983, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003983}}
+/* line 986, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003986}}
 .dateWrapper2 {
   width: 17%;
   float: left;
@@ -999,8 +999,8 @@ body {
   margin-left: 55px;
   /*border: 1px black solid;*/
 }
-/* line 990, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003990}}
+/* line 993, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003993}}
 .lengthWrapper {
   width: 10%;
   float: left;
@@ -1008,37 +1008,37 @@ body {
   margin-left: 22px;
   /*border: 1px black solid;*/
 }
-/* line 998, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\00003998}}
+/* line 1001, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031001}}
 .columnTitle.length {
   margin-left: 72px;
   display: inline-block;
   padding-top: 46px;
 }
-/* line 1005, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031005}}
+/* line 1008, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031008}}
 .columnTitle.date {
   margin-left: 327px;
   display: inline-block;
   padding-top: 46px;
 }
-/* line 1011, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031011}}
+/* line 1014, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031014}}
 .columnTitle.updated {
   margin-left: 327px;
   display: inline-block;
   /*padding-top: 26px;*/
 }
-/* line 1018, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031018}}
+/* line 1021, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031021}}
 .statusWrapper {
   width: 30%;
   float: left;
   padding: 25px 0 0 0;
   margin-left: 55px;
 }
-/* line 1028, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031028}}
+/* line 1031, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031031}}
 #eventWrapper {
   width: 500px;
   height: 460px;
@@ -1053,8 +1053,8 @@ body {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 1057, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031057}}
+/* line 1060, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031060}}
 .bar1Event {
   width: 100%;
   height: 30px;
@@ -1068,8 +1068,8 @@ body {
   padding-top: 10px;
   text-transform: uppercase;
 }
-/* line 1075, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031075}}
+/* line 1078, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031078}}
 .bar1Event .mdi-close,
 .bar2Event .mdi-close,
 .bar3Event .mdi-close,
@@ -1082,16 +1082,16 @@ body {
   top: 5px;
   color: #0069cb;
 }
-/* line 1086, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031086}}
+/* line 1089, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031089}}
 .innerEventWrapper {
   width: 500px;
   height: 374px;
   overflow-y: scroll;
   padding-bottom: 45px;
 }
-/* line 1093, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031093}}
+/* line 1096, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031096}}
 .bar2Event,
 .bar3Event {
   width: 100%;
@@ -1105,8 +1105,8 @@ body {
   padding-top: 10px;
   text-transform: uppercase;
 }
-/* line 1111, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031111}}
+/* line 1114, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031114}}
 #searchBarEvent {
   width: 500px;
   height: 55px;
@@ -1116,8 +1116,8 @@ body {
   z-index: 2;
   /*border-bottom: 1px gray solid;*/
 }
-/* line 1121, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031121}}
+/* line 1124, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031124}}
 .searchField {
   width: 200px;
   font-family: 'Roboto';
@@ -1130,8 +1130,8 @@ body {
   background-color: #FBFCFE;
   border-bottom: 1px #bababa solid;
 }
-/* line 1134, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031134}}
+/* line 1137, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031137}}
 #bottomBarEvent {
   width: 500px;
   height: 40px;
@@ -1142,8 +1142,8 @@ body {
   top: 420px;
   z-index: 2;
 }
-/* line 1146, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031146}}
+/* line 1149, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031149}}
 .cancelButton {
   float: right;
   position: relative;
@@ -1163,28 +1163,28 @@ body {
   width: 80px;
   transition: .3s;
 }
-/* line 1166, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031166}}
+/* line 1169, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031169}}
 .cancelButton:hover {
   background-color: #E8E8E8;
   background-color: #ced7e4;
   background-color: #e2e8ef;
   transition: .3s;
 }
-/* line 1173, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031173}}
+/* line 1176, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031176}}
 .textWrapperEvent {
   width: 56%;
   padding: 25px 0 0 25px;
 }
-/* line 1179, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031179}}
+/* line 1182, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031182}}
 .textWrapperEventBig {
   width: 80%;
   padding: 25px 0 0 25px;
 }
-/* line 1185, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031185}}
+/* line 1188, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031188}}
 .eventTitle {
   font-family: 'Roboto';
   font-weight: 600;
@@ -1193,8 +1193,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 1196, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031196}}
+/* line 1199, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031199}}
 .eventLocation {
   font-family: 'Roboto';
   font-weight: 400;
@@ -1203,8 +1203,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 1204, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031204}}
+/* line 1207, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031207}}
 .eventDate {
   font-family: 'Roboto';
   font-weight: 400;
@@ -1213,8 +1213,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 1215, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031215}}
+/* line 1218, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031218}}
 .eventButton {
   float: right;
   position: relative;
@@ -1234,21 +1234,21 @@ body {
   width: 80px;
   transition: .3s;
 }
-/* line 1241, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031241}}
+/* line 1244, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031244}}
 .eventButton:hover {
   background-color: #1565C0;
   transition: .3s;
 }
-/* line 1251, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031251}}
+/* line 1254, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031254}}
 .divItsaRowEvent {
   width: 100%;
   margin-top: 5px;
 }
 /*/////////////////*/
-/* line 1264, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031264}}
+/* line 1267, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031267}}
 .innerEventWrapper.eventChoose {
   width: 500px;
   height: 374px;
@@ -1257,14 +1257,14 @@ body {
   padding-bottom: 45px;
   overflow-x: hidden;
 }
-/* line 1274, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031274}}
+/* line 1277, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031277}}
 .textWrapper3 {
   width: 96%;
   padding: 25px 0 0 25px;
 }
-/* line 1280, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031280}}
+/* line 1283, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031283}}
 .columnTitle.count {
   font-weight: 400;
   font-size: 12px;
@@ -1276,15 +1276,15 @@ body {
   position: relative;
   top: -10px;
 }
-/* line 1295, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031295}}
+/* line 1298, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031298}}
 .eventBarText {
   display: inline-block;
   position: relative;
   top: -8px;
 }
-/* line 1301, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031301}}
+/* line 1304, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031304}}
 .mdi-chevron-left {
   font-size: 22px;
   margin-right: 10px;
@@ -1292,8 +1292,8 @@ body {
   position: relative;
   top: -4px;
 }
-/* line 1309, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031309}}
+/* line 1312, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031312}}
 .timeButtonWrapper {
   margin-left: 25px;
   margin-right: 25px;
@@ -1302,8 +1302,8 @@ body {
   border-top: 1px solid #D8D8D8;
   height: 250px;
 }
-/* line 1326, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031326}}
+/* line 1329, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031329}}
 .timeType {
   font-family: 'Roboto';
   font-weight: 400;
@@ -1315,8 +1315,8 @@ body {
   padding: 15px 0 0 0;
   clear: both;
 }
-/* line 1342, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031342}}
+/* line 1345, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031345}}
 .timeButton {
   float: left;
   text-transform: uppercase;
@@ -1335,14 +1335,14 @@ body {
   margin-bottom: 15px;
   transition: .3s;
 }
-/* line 1370, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031370}}
+/* line 1373, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031373}}
 .timeButton:hover {
   background-color: #1565C0;
   transition: .3s;
 }
-/* line 1378, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031378}}
+/* line 1381, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031381}}
 .timeButton.disabled {
   float: left;
   text-transform: uppercase;
@@ -1360,16 +1360,16 @@ body {
   margin-right: 32px;
   margin-bottom: 15px;
 }
-/* line 1398, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031398}}
+/* line 1401, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031401}}
 .blueSelected,
 .blueSelected:hover {
   transition: .3s;
   background-color: #2196F3 !important;
   color: white;
 }
-/* line 1407, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031407}}
+/* line 1410, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031410}}
 .teal,
 .teal:hover {
   background-color: #1de9b6 !important;
@@ -1377,14 +1377,14 @@ body {
   font-weight: 400;
   transition: .3s;
 }
-/* line 1420, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031420}}
+/* line 1423, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031423}}
 .lightBlue {
   background-color: #90caf9;
   background-color: #bbdefb;
 }
-/* line 1426, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031426}}
+/* line 1429, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031429}}
 #bottomBar2Event,
 #bottomBar3Event {
   width: 500px;
@@ -1396,8 +1396,8 @@ body {
   top: 420px;
   z-index: 2;
 }
-/* line 1438, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031438}}
+/* line 1441, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031441}}
 #bottomBar2Event.cancelButton,
 #bottomBar3Event.cancelButton {
   float: right;
@@ -1416,8 +1416,8 @@ body {
   border-radius: 3px;
   width: 80px;
 }
-/* line 1457, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031457}}
+/* line 1460, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031460}}
 #nextButton,
 .confirmButton {
   float: right;
@@ -1438,15 +1438,15 @@ body {
   width: 80px;
   transition: .3s;
 }
-/* line 1482, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031482}}
+/* line 1485, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031485}}
 #nextButton:hover,
 .confirmButton:hover {
   background-color: #1565C0;
   transition: .3s;
 }
-/* line 1488, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031488}}
+/* line 1491, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031491}}
 .timeConfirmFloat {
   width: 97px;
   color: white;
@@ -1461,8 +1461,8 @@ body {
   background-color: #14c1ac;
   /* border-radius: 10px; */
 }
-/* line 1505, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031505}}
+/* line 1508, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031508}}
 .eventTitleBig {
   font-family: 'Roboto';
   font-weight: 600;
@@ -1471,8 +1471,8 @@ body {
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 1525, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031525}}
+/* line 1528, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031528}}
 .timeConfirmFloatSmall {
   width: 90px;
   color: #414141;
@@ -1483,67 +1483,67 @@ body {
   margin-top: 10px;
   background-color: #dde5ef;
 }
-/* line 1537, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031537}}
+/* line 1540, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031540}}
 .warning2 {
   margin: 10px 0 20px 0;
   font-size: 17px;
   font-style: italic;
 }
-/* line 1545, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031545}}
+/* line 1548, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031548}}
 .checkboxes {
   margin: 30px 25px 0 25px;
   position: relative;
   top: 12px;
   padding-top: 15px;
 }
-/* line 1557, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031557}}
+/* line 1560, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031560}}
 .addMe {
   margin-bottom: 15px;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 1562, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031562}}
+/* line 1565, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031565}}
 .addMeWithLine {
   border-top: 1px solid rgba(0, 0, 0, 0.24);
   padding-top: 15px;
 }
-/* line 1568, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031568}}
+/* line 1571, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031571}}
 .addMe2 {
   margin-bottom: 15px;
   color: rgba(0, 0, 0, 0.54);
   display: inline-block;
   margin-right: 30px;
 }
-/* line 1575, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031575}}
+/* line 1578, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031578}}
 .labelForLabel {
   margin-right: 30px;
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 1580, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031580}}
+/* line 1583, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031583}}
 [type="checkbox"] {
   border-color: rgba(0, 0, 0, 0.26);
 }
-/* line 1587, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031587}}
+/* line 1590, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031590}}
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
   visibility: hidden;
 }
-/* line 1592, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031592}}
+/* line 1595, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031595}}
 [type="checkbox"] {
   /* checkbox aspect */
 }
-/* line 1594, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031594}}
+/* line 1597, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031597}}
 [type="checkbox"] + label {
   position: relative;
   padding-left: 30px;
@@ -1561,8 +1561,8 @@ body {
   -ms-user-select: none;
   /* IE10+ */
 }
-/* line 1610, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031610}}
+/* line 1613, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031613}}
 [type="checkbox"] + label:before {
   content: '';
   position: absolute;
@@ -1580,14 +1580,14 @@ body {
   -ms-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 1626, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031626}}
+/* line 1629, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031629}}
 [type="checkbox"]:not(:checked):disabled + label:before {
   border: none;
   background-color: rgba(0, 0, 0, 0.26);
 }
-/* line 1630, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031630}}
+/* line 1633, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031633}}
 [type="checkbox"]:checked + label:before {
   top: -4px;
   left: -3px;
@@ -1609,19 +1609,19 @@ body {
   -o-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
-/* line 1650, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031650}}
+/* line 1653, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031653}}
 [type="checkbox"]:checked:disabled + label:before {
   border-right: 2px solid rgba(0, 0, 0, 0.26);
   border-bottom: 2px solid rgba(0, 0, 0, 0.26);
 }
-/* line 1654, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031654}}
+/* line 1657, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031657}}
 [type="checkbox"].filled-in + label:after {
   border-radius: 2px;
 }
-/* line 1656, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031656}}
+/* line 1659, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031659}}
 [type="checkbox"].filled-in + label:before,
 [type="checkbox"].filled-in + label:after {
   content: '';
@@ -1631,8 +1631,8 @@ body {
   transition: border 0.25s, background-color 0.25s, width 0.2s 0.1s, height 0.2s 0.1s, top 0.2s 0.1s, left 0.2s 0.1s;
   z-index: 1;
 }
-/* line 1663, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031663}}
+/* line 1666, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031666}}
 [type="checkbox"].filled-in:not(:checked) + label:before {
   width: 0;
   height: 0;
@@ -1644,8 +1644,8 @@ body {
   -webkit-transform-origin: 20% 40%;
   transform-origin: 100% 100%;
 }
-/* line 1673, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031673}}
+/* line 1676, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031676}}
 [type="checkbox"].filled-in:not(:checked) + label:after {
   height: 13px;
   width: 13px;
@@ -1654,8 +1654,8 @@ body {
   top: 0px;
   z-index: 0;
 }
-/* line 1680, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031680}}
+/* line 1683, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031683}}
 [type="checkbox"].filled-in:checked + label:before {
   top: 0;
   left: 1px;
@@ -1670,8 +1670,8 @@ body {
   -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
-/* line 1693, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031693}}
+/* line 1696, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031696}}
 [type="checkbox"].filled-in:checked + label:after {
   top: 0px;
   width: 13px;
@@ -1680,31 +1680,31 @@ body {
   background-color: #2196F3;
   z-index: 0;
 }
-/* line 1701, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031701}}
+/* line 1704, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031704}}
 [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
   background-color: transparent;
   border: 2px solid transparent;
 }
-/* line 1704, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031704}}
+/* line 1707, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031707}}
 [type="checkbox"].filled-in:disabled:not(:checked) + label:after {
   border-color: transparent;
   background-color: #BDBDBD;
 }
-/* line 1707, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031707}}
+/* line 1710, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031710}}
 [type="checkbox"].filled-in:disabled:checked + label:before {
   background-color: transparent;
 }
-/* line 1709, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031709}}
+/* line 1712, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031712}}
 [type="checkbox"].filled-in:disabled:checked + label:after {
   background-color: #BDBDBD;
   border-color: #BDBDBD;
 }
-/* line 1717, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031717}}
+/* line 1720, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031720}}
 .moreChoose {
   display: none;
   position: absolute;
@@ -1718,8 +1718,8 @@ body {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 1732, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031732}}
+/* line 1735, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031735}}
 .moreChoose li {
   padding: .5em 0 .5em .7em;
   color: rgba(0, 105, 203, 0.8);
@@ -1727,8 +1727,8 @@ body {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 1743, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031743}}
+/* line 1746, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031746}}
 .moreChoose li:hover {
   background-color: #F0F0F0;
   cursor: pointer;
@@ -1736,8 +1736,8 @@ body {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 1757, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031757}}
+/* line 1760, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031760}}
 #bottomBarEditContact,
 #bottomBarScheduleMeeting,
 #bottomBarCallNotes {
@@ -1748,8 +1748,8 @@ body {
   top: 420px;
   z-index: 2;
 }
-/* line 1766, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031766}}
+/* line 1769, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031769}}
 .editContactBar,
 .scheduleMeetingBar,
 .callNotesBar {
@@ -1765,8 +1765,8 @@ body {
   padding-top: 10px;
   text-transform: uppercase;
 }
-/* line 1780, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031780}}
+/* line 1783, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031783}}
 .editContactInnerFormWrapper,
 .scheduleMeetingInnerFormWrapper {
   width: 100%;
@@ -1776,31 +1776,31 @@ body {
   padding: 10px 30px 45px 30px;
   /*border: 1px black solid;*/
 }
-/* line 1790, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031790}}
+/* line 1793, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031793}}
 .inputWrapperMini {
   width: 40%;
   /*padding: 25px 0 0 25px;*/
 }
-/* line 1795, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031795}}
+/* line 1798, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031798}}
 .inputWrapperContact {
   width: 90%;
   padding-left: 30px;
 }
-/* line 1799, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031799}}
+/* line 1802, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031802}}
 .inputWrapper {
   width: 100%;
 }
-/* line 1804, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031804}}
+/* line 1807, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031807}}
 .inputWrapperPrefix {
   width: 85%;
   /*padding-left: 30px;*/
 }
-/* line 1810, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031810}}
+/* line 1813, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031813}}
 .inputWrapperMiniFloat {
   width: 186px;
   float: left;
@@ -1808,8 +1808,8 @@ body {
   margin-left: 30px;
   /*padding: 25px 0 0 25px;*/
 }
-/* line 1819, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031819}}
+/* line 1822, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031822}}
 input[type=text],
 input[type=password],
 input[type=email],
@@ -1837,8 +1837,8 @@ textarea.materialize-textarea {
   box-sizing: content-box;
   transition: all .3s;
 }
-/* line 1847, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031847}}
+/* line 1850, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031850}}
 input[type=text]:disabled,
 input[type=text][readonly="readonly"],
 input[type=password]:disabled,
@@ -1864,8 +1864,8 @@ textarea.materialize-textarea[readonly="readonly"] {
   color: rgba(0, 0, 0, 0.26);
   border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
 }
-/* line 1873, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031873}}
+/* line 1876, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031876}}
 input[type=text]:disabled + label,
 input[type=text][readonly="readonly"] + label,
 input[type=password]:disabled + label,
@@ -1890,8 +1890,8 @@ textarea.materialize-textarea:disabled + label,
 textarea.materialize-textarea[readonly="readonly"] + label {
   color: rgba(0, 0, 0, 0.26);
 }
-/* line 1898, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031898}}
+/* line 1901, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031901}}
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
 input[type=email]:focus:not([readonly]),
@@ -1906,8 +1906,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid rgba(6, 113, 212, 0.7);
   box-shadow: 0 1px 0 0 rgba(6, 113, 212, 0.7);
 }
-/* line 1918, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031918}}
+/* line 1921, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031921}}
 input[type=text]:focus:not([readonly]) + label,
 input[type=password]:focus:not([readonly]) + label,
 input[type=email]:focus:not([readonly]) + label,
@@ -1921,8 +1921,8 @@ input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
   color: rgba(6, 113, 212, 0.7);
 }
-/* line 1932, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031932}}
+/* line 1935, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031935}}
 input[type=text].valid,
 input[type=text]:focus.valid,
 input[type=password].valid,
@@ -1948,8 +1948,8 @@ textarea.materialize-textarea:focus.valid {
   border-bottom: 1px solid #dbdbdb;
   /*box-shadow: 0 1px 0 0 #4CAF50;*/
 }
-/* line 1958, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031958}}
+/* line 1961, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031961}}
 input[type=text].valid + label:after,
 input[type=text]:focus.valid + label:after,
 input[type=password].valid + label:after,
@@ -1976,8 +1976,8 @@ textarea.materialize-textarea:focus.valid + label:after {
   color: rgba(6, 113, 212, 0.8);
   opacity: 1;
 }
-/* line 1986, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031986}}
+/* line 1989, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031989}}
 input[type=text].invalid,
 input[type=text]:focus.invalid,
 input[type=password].invalid,
@@ -2004,8 +2004,8 @@ textarea.materialize-textarea:focus.invalid {
   box-shadow: 0 1px 0 0 #F44336;
 }
 /*red*/
-/* line 2015, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032015}}
+/* line 2018, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032018}}
 input[type=text].invalid + label:after,
 input[type=text]:focus.invalid + label:after,
 input[type=password].invalid + label:after,
@@ -2032,8 +2032,8 @@ textarea.materialize-textarea:focus.invalid + label:after {
   color: #F44336;
   opacity: 1;
 }
-/* line 2042, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032042}}
+/* line 2045, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032045}}
 input[type=text] + label:after,
 input[type=password] + label:after,
 input[type=email] + label:after,
@@ -2052,14 +2052,14 @@ textarea.materialize-textarea + label:after {
   opacity: 0;
   transition: 0.2s opacity ease-out, 0.2s color ease-out;
 }
-/* line 2061, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032061}}
+/* line 2064, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032064}}
 .input-field {
   position: relative;
   margin-top: 1.2rem;
 }
-/* line 2066, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032066}}
+/* line 2069, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032069}}
 .input-field label {
   color: #9e9e9e;
   position: absolute;
@@ -2073,8 +2073,8 @@ textarea.materialize-textarea + label:after {
   -ms-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
-/* line 2080, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032080}}
+/* line 2083, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032083}}
 .input-field label.active {
   font-size: 0.8rem;
   color: #cacaca;
@@ -2084,8 +2084,8 @@ textarea.materialize-textarea + label:after {
   -o-transform: translateY(-150%);
   transform: translateY(-150%);
 }
-/* line 2090, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032090}}
+/* line 2093, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032093}}
 .input-field .prefix {
   position: absolute;
   width: 2rem;
@@ -2097,75 +2097,75 @@ textarea.materialize-textarea + label:after {
   -ms-transition: color .2s;
   transition: color .2s;
 }
-/* line 2102, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032102}}
+/* line 2105, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032105}}
 .input-field .prefix.active {
   color: rgba(6, 113, 212, 0.8);
 }
-/* line 2112, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032112}}
+/* line 2115, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032115}}
 .input-field .prefix ~ input,
 .input-field .prefix ~ textarea {
   margin-left: 2rem;
   /*width: 92%;
     width: calc(100% - 3rem);*/
 }
-/* line 2119, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032119}}
+/* line 2122, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032122}}
 .input-field .prefix ~ textarea {
   padding-top: .8rem;
 }
-/* line 2123, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032123}}
+/* line 2126, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032126}}
 .input-field .prefix ~ label {
   margin-left: 2rem;
 }
 @media only screen and (max-width: 992px) {
-  /* line 2128, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032128}}
+  /* line 2131, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032131}}
   .input-field .prefix ~ input {
     width: 86%;
     width: calc(97%);
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 2135, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032135}}
+  /* line 2138, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032138}}
   .input-field .prefix ~ input {
     width: 80%;
     width: calc(97%);
   }
 }
-/* line 2141, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032141}}
+/* line 2144, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032144}}
 .input-field input[type=search] {
   display: block;
   line-height: inherit;
   padding-left: 4rem;
   width: calc(96%);
 }
-/* line 2148, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032148}}
+/* line 2151, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032151}}
 .input-field input[type=search]:focus {
   background-color: #fff;
   border: 0;
   box-shadow: none;
   color: #444;
 }
-/* line 2155, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032155}}
+/* line 2158, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032158}}
 .input-field input[type=search]:focus + label i,
 .input-field input[type=search]:focus ~ .mdi-navigation-close,
 .input-field input[type=search]:focus ~ .material-icons {
   color: #444;
 }
-/* line 2161, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032161}}
+/* line 2164, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032164}}
 .input-field input[type=search] + label {
   left: 1rem;
 }
-/* line 2165, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032165}}
+/* line 2168, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032168}}
 .input-field input[type=search] ~ .mdi-navigation-close,
 .input-field input[type=search] ~ .material-icons {
   position: absolute;
@@ -2176,15 +2176,15 @@ textarea.materialize-textarea + label:after {
   font-size: 2rem;
   transition: .3s color;
 }
-/* line 2176, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032176}}
+/* line 2179, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032179}}
 textarea {
   width: 100%;
   height: 3rem;
   background-color: transparent;
 }
-/* line 2182, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032182}}
+/* line 2185, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032185}}
 textarea.materialize-textarea {
   overflow-y: hidden;
   /* prevents scroll bar flash */
@@ -2193,29 +2193,29 @@ textarea.materialize-textarea {
   resize: none;
   min-height: 3rem;
 }
-/* line 2191, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032191}}
+/* line 2194, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032194}}
 .input-field input[type=date]::-webkit-inner-spin-button {
   display: none;
 }
-/* line 2193, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032193}}
+/* line 2196, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032196}}
 .input-field input[type=time]::-webkit-inner-spin-button {
   display: none;
 }
-/* line 2195, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032195}}
+/* line 2198, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032198}}
 .input-field input[type=date]::-webkit-calendar-picker-indicator {
   right: 0;
   padding: .539em .34em;
 }
-/* line 2197, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032197}}
+/* line 2200, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032200}}
 .input-field input[type=date]::datetime-edit {
   padding: 1em;
 }
-/* line 2200, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032200}}
+/* line 2203, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032203}}
 input[type="date"] {
   align-items: center;
   display: -webkit-inline-flex;
@@ -2227,95 +2227,95 @@ input[type="date"] {
 /***************
   Select Field
 ***************/
-/* line 2310, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032310}}
+/* line 2313, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032313}}
 .divItsaRowInput {
   width: 100%;
   padding-top: 5px;
 }
-/* line 2315, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032315}}
+/* line 2318, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032318}}
 .divItsaRowInput:first-of-type {
   margin-top: .5rem;
 }
-/* line 2319, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032319}}
+/* line 2322, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032322}}
 .halfInput {
   float: left;
   display: inline-block;
 }
-/* line 2325, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032325}}
+/* line 2328, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032328}}
 .dateWithTriangle,
 .selectHourTotal {
   width: 200px;
   float: left;
 }
-/* line 2331, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032331}}
+/* line 2334, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032334}}
 .dateWithTriangle2 {
   float: left;
   width: 114px;
   margin-left: 2em;
 }
-/* line 2336, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032336}}
+/* line 2339, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032339}}
 .durationTotal {
   float: left;
   width: 70px;
   margin-left: 1rem;
 }
-/* line 2352, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032352}}
+/* line 2355, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032355}}
 .mdi-menu-down {
   display: inline-block;
   font-size: 20px;
   color: #9b9b9b;
 }
-/* line 2359, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032359}}
+/* line 2362, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032362}}
 .halfInput2 {
   float: left;
 }
-/* line 2364, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032364}}
+/* line 2367, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032367}}
 .angular_calendar {
   display: none;
   width: 250px;
   position: absolute;
   z-index: 3;
 }
-/* line 2371, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032371}}
+/* line 2374, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032374}}
 .angular_calendar img {
   width: 100%;
 }
-/* line 2377, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032377}}
+/* line 2380, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032380}}
 .downTriangle.calendar {
   width: 14%;
   position: relative;
   top: -38px;
   left: 128px;
 }
-/* line 2384, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032384}}
+/* line 2387, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032387}}
 .downTriangle.hour {
   width: 5.2%;
   position: relative;
   top: 1px;
   left: 2px;
 }
-/* line 2392, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032392}}
+/* line 2395, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032395}}
 .downTriangle.minute {
   width: 5.2%;
   position: relative;
   top: 1px;
   left: 2px;
 }
-/* line 2400, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032400}}
+/* line 2403, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032403}}
 #selectMenu {
   position: absolute;
   top: 38px;
@@ -2328,8 +2328,8 @@ input[type="date"] {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 2414, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032414}}
+/* line 2417, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032417}}
 #selectDriverMenu {
   position: absolute;
   top: 33px;
@@ -2343,16 +2343,16 @@ input[type="date"] {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 2428, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032428}}
+/* line 2431, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032431}}
 .timeDiv,
 .selectTitleWrapper {
   position: relative;
   width: 197px;
   float: left;
 }
-/* line 2434, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032434}}
+/* line 2437, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032437}}
 #selectHourMenu {
   position: absolute;
   top: 6px;
@@ -2365,8 +2365,8 @@ input[type="date"] {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 2449, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032449}}
+/* line 2452, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032452}}
 #selectMinMenu {
   position: absolute;
   top: 6px;
@@ -2379,8 +2379,8 @@ input[type="date"] {
   -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 2464, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032464}}
+/* line 2467, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032467}}
 .labelType {
   font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.29);
@@ -2388,8 +2388,8 @@ input[type="date"] {
   padding-top: 1rem;
   font-weight: 500;
 }
-/* line 2472, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032472}}
+/* line 2475, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032475}}
 .labelOverChip {
   font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.29);
@@ -2398,8 +2398,8 @@ input[type="date"] {
   padding-bottom: .3rem;
   font-weight: 500;
 }
-/* line 2481, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032481}}
+/* line 2484, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032484}}
 .selectTitleTotal,
 .selectDriverTotal {
   float: left;
@@ -2407,8 +2407,8 @@ input[type="date"] {
   width: 195px;
   position: relative;
 }
-/* line 2490, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032490}}
+/* line 2493, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032493}}
 .selectSubject {
   display: inline-block;
   width: 100%;
@@ -2423,32 +2423,32 @@ input[type="date"] {
   border-bottom: 1px #dbdbdb solid;
   margin-bottom: .5em;
 }
-/* line 2504, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032504}}
+/* line 2507, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032507}}
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #272727;
 }
-/* line 2507, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032507}}
+/* line 2510, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032510}}
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #272727;
 }
-/* line 2510, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032510}}
+/* line 2513, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032513}}
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #272727;
 }
-/* line 2513, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032513}}
+/* line 2516, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032516}}
 :-moz-placeholder {
   /* Firefox 18- */
   color: #272727;
 }
-/* line 2518, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032518}}
+/* line 2521, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032521}}
 .textFieldWrapper {
   display: inline-block;
   width: 100%;
@@ -2466,13 +2466,13 @@ input[type="date"] {
   min-height: 67px;
   line-height: 1.5em;
 }
-/* line 2536, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032536}}
+/* line 2539, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032539}}
 textarea {
   resize: both;
 }
-/* line 2542, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032542}}
+/* line 2545, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032545}}
 #date,
 .selectTitle,
 .selectDriver,
@@ -2486,8 +2486,8 @@ textarea {
   border-bottom: 1px #dbdbdb solid;
   margin-bottom: .5em;
 }
-/* line 2553, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032553}}
+/* line 2556, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032556}}
 #date2,
 .durationHour {
   display: inline-block;
@@ -2499,13 +2499,13 @@ textarea {
   border-bottom: 1px #dbdbdb solid;
   margin-bottom: .5em;
 }
-/* line 2564, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032564}}
+/* line 2567, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032567}}
 .durationHour {
   width: 60px;
 }
-/* line 2568, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032568}}
+/* line 2571, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032571}}
 .dateWithTriangle .mdi-menu-down,
 .selectHourTotal .mdi-menu-down {
   display: inline-block;
@@ -2513,28 +2513,28 @@ textarea {
   position: relative;
   top: 7px;
 }
-/* line 2575, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032575}}
+/* line 2578, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032578}}
 .dateWithTriangle2 .mdi-menu-down {
   display: inline-block;
   font-size: 20px;
   position: relative;
   top: 0px;
 }
-/* line 2581, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032581}}
+/* line 2584, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032584}}
 .selectDriverTotal,
 .selectHourTotal {
   margin-left: 2em;
 }
-/* line 2587, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032587}}
+/* line 2590, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032590}}
 .afterHour {
   padding: .7em 0 .8em .6em;
   color: black;
 }
-/* line 2593, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032593}}
+/* line 2596, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032596}}
 .selectTitleChev.mdi-chevron-down {
   display: inline-block;
   position: relative;
@@ -2542,8 +2542,8 @@ textarea {
   color: #6b6b6b;
   left: -11px;
 }
-/* line 2602, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032602}}
+/* line 2605, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032605}}
 #selectMenu li,
 #selectDriverMenu li {
   display: none;
@@ -2553,8 +2553,8 @@ textarea {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 2612, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032612}}
+/* line 2615, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032615}}
 #selectHourMenu li,
 #selectMinMenu li {
   display: none;
@@ -2564,8 +2564,8 @@ textarea {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 2625, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032625}}
+/* line 2628, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032628}}
 #selectMenu li:hover,
 #selectMinMenu li:hover {
   background-color: #F0F0F0;
@@ -2574,8 +2574,8 @@ textarea {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 2634, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032634}}
+/* line 2637, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032637}}
 #selectHourMenu li:hover,
 #selectMinMenu li:hover {
   background-color: #F0F0F0;
@@ -2584,8 +2584,8 @@ textarea {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
-/* line 2644, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032644}}
+/* line 2647, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032647}}
 .emptyChipInput,
 .cityInputWithChip {
   display: inline-block;
@@ -2597,14 +2597,14 @@ textarea {
   border-bottom: 1px #dbdbdb solid;
   margin-bottom: .5em;
 }
-/* line 2656, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032656}}
+/* line 2659, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032659}}
 .cityInputWithChip,
 .emptyChipInput {
   min-height: 37px;
 }
-/* line 2660, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032660}}
+/* line 2663, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032663}}
 .chip {
   display: inline-block;
   height: 30px;
@@ -2618,8 +2618,8 @@ textarea {
   background-color: #e9f0f7;
   background-color: #ebf3fb;
 }
-/* line 2681, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032681}}
+/* line 2684, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032684}}
 .chip i.material-icons {
   cursor: pointer;
   float: right;
@@ -2627,8 +2627,8 @@ textarea {
   line-height: 32px;
   padding-left: 8px;
 }
-/* line 2688, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032688}}
+/* line 2691, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032691}}
 #chipIcon.mdi-close {
   cursor: pointer;
   float: right;
@@ -2638,101 +2638,101 @@ textarea {
   position: static;
   color: #6b6b6b;
 }
-/* line 2698, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032698}}
+/* line 2701, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032701}}
 .rowOfChecks {
   margin-top: .5em;
 }
 @-webkit-keyframes rubberBand {
-  /* line 2704, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032704}}
+  /* line 2707, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032707}}
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-  /* line 2709, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032709}}
+  /* line 2712, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032712}}
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
   }
-  /* line 2714, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032714}}
+  /* line 2717, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032717}}
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1);
   }
-  /* line 2719, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032719}}
+  /* line 2722, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032722}}
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
     transform: scale3d(1.15, 0.85, 1);
   }
-  /* line 2724, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032724}}
+  /* line 2727, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032727}}
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1);
   }
-  /* line 2729, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032729}}
+  /* line 2732, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032732}}
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1);
   }
-  /* line 2734, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032734}}
+  /* line 2737, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032737}}
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
 @keyframes rubberBand {
-  /* line 2742, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032742}}
+  /* line 2745, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032745}}
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-  /* line 2747, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032747}}
+  /* line 2750, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032750}}
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
   }
-  /* line 2752, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032752}}
+  /* line 2755, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032755}}
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1);
   }
-  /* line 2757, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032757}}
+  /* line 2760, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032760}}
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
     transform: scale3d(1.15, 0.85, 1);
   }
-  /* line 2762, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032762}}
+  /* line 2765, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032765}}
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1);
   }
-  /* line 2767, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032767}}
+  /* line 2770, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032770}}
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1);
   }
-  /* line 2772, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032772}}
+  /* line 2775, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032775}}
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 2781, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032781}}
+/* line 2784, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032784}}
 #popUpDiv {
   position: absolute;
   z-index: 4;
@@ -2740,8 +2740,8 @@ textarea {
   top: -20px;
   left: 87px;
 }
-/* line 2790, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032790}}
+/* line 2793, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032793}}
 .incomingCallPopup {
   width: 483px;
   height: 201px;
@@ -2750,40 +2750,40 @@ textarea {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
-/* line 2801, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032801}}
+/* line 2804, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032804}}
 .incomingCallPopup.rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
-/* line 2808, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032808}}
+/* line 2811, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032811}}
 #screen1 {
   position: absolute;
   z-index: 4;
   background-color: white;
   background-size: cover;
 }
-/* line 2818, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032818}}
+/* line 2821, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032821}}
 #screen2 {
   position: absolute;
   background-color: white;
   top: 212px;
   background-size: cover;
 }
-/* line 2828, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032828}}
+/* line 2831, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032831}}
 #screen3 {
   position: absolute;
   background-color: white;
   top: 422px;
   background-size: cover;
 }
-/* line 2839, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032839}}
+/* line 2842, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032842}}
 .barPopUp {
   padding-left: 20px;
   padding-top: 8px;
@@ -2791,8 +2791,8 @@ textarea {
   width: 483px;
   border-bottom: 6px #0069CB solid;
 }
-/* line 2847, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032847}}
+/* line 2850, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032850}}
 .popUpLogo {
   width: 16px;
   height: 16px;
@@ -2800,8 +2800,8 @@ textarea {
   display: inline-block;
   background-color: #0069CB;
 }
-/* line 2856, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032856}}
+/* line 2859, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032859}}
 .barTitlePopUp {
   position: relative;
   padding-left: 6px;
@@ -2809,8 +2809,8 @@ textarea {
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 2864, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032864}}
+/* line 2867, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032867}}
 #popUpClose.mdi-close {
   cursor: pointer;
   float: right;
@@ -2819,37 +2819,37 @@ textarea {
   position: static;
   color: #6b6b6b;
 }
-/* line 2873, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032873}}
+/* line 2876, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032876}}
 .bodyPopUp {
   width: 483px;
   height: 164px;
   padding-top: 30px;
   padding-left: 30px;
 }
-/* line 2882, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032882}}
+/* line 2885, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032885}}
 .leftSidePopUp {
   width: 50%;
   float: left;
 }
-/* line 2888, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032888}}
+/* line 2891, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032891}}
 .leftPopUpMainMessage {
   font-size: 17px;
   font-weight: 500;
   line-height: 21px;
 }
-/* line 2894, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032894}}
+/* line 2897, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032897}}
 .rightSidePopUp {
   width: 30%;
   float: right;
   text-align: right;
   margin-right: 30px;
 }
-/* line 2903, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032903}}
+/* line 2906, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032906}}
 .rightText1 {
   color: black;
   line-height: 18px;
@@ -2858,8 +2858,8 @@ textarea {
   display: inline-block;
   padding-top: 3px;
 }
-/* line 2911, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032911}}
+/* line 2914, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032914}}
 .rightText2,
 .leftText2,
 .leftText3 {
@@ -2869,15 +2869,15 @@ textarea {
   font-weight: 400;
   display: inline-block;
 }
-/* line 2919, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032919}}
+/* line 2922, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032922}}
 .popUpFooterMultiple {
   clear: both;
   width: 452px;
   padding-top: 31px;
 }
-/* line 2927, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032927}}
+/* line 2930, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032930}}
 .nameButton {
   display: inline-block;
   position: relative;
@@ -2894,8 +2894,8 @@ textarea {
   border-radius: 5px;
   margin-right: 8px;
 }
-/* line 2947, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032947}}
+/* line 2950, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032950}}
 .nameButton_disabled {
   display: inline-block;
   position: relative;
@@ -2912,33 +2912,33 @@ textarea {
   border-radius: 5px;
   margin-right: 8px;
 }
-/* line 2967, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032967}}
+/* line 2970, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032970}}
 .footerMessageMultiple,
 .footerMessageCallerFound {
   font-size: 13px;
   color: #717171;
 }
-/* line 2973, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032973}}
+/* line 2976, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032976}}
 .popUpFooterCallerFound {
   clear: both;
   width: 452px;
   padding-top: 14px;
 }
-/* line 2978, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032978}}
+/* line 2981, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032981}}
 .footerMessageMultiple {
   padding-top: 2px;
 }
-/* line 2981, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032981}}
+/* line 2984, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032984}}
 .footerMessageCallerFound {
   position: relative;
   top: 30px;
 }
-/* line 2986, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032986}}
+/* line 2989, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000032989}}
 .tpButton {
   display: inline-block;
   float: right;
@@ -2962,8 +2962,8 @@ textarea {
 /**
  * Note: the root picker element should *NOT* be styled more than what's here.
  */
-/* line 3015, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033015}}
+/* line 3018, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033018}}
 .picker {
   font-size: 16px;
   text-align: left;
@@ -2979,24 +2979,24 @@ textarea {
 /**
  * The picker input element.
  */
-/* line 3030, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033030}}
+/* line 3033, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033033}}
 .picker__input {
   cursor: default;
 }
 /**
  * When the picker is opened, the input element is "activated".
  */
-/* line 3036, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033036}}
+/* line 3039, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033039}}
 .picker__input.picker__input--active {
   border-color: #0089ec;
 }
 /**
  * The holder is the only "scrollable" top-level container element.
  */
-/* line 3042, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033042}}
+/* line 3045, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033045}}
 .picker__holder {
   width: 100%;
   overflow-y: auto;
@@ -3012,8 +3012,8 @@ textarea {
 /**
  * Make the holder and frame fullscreen.
  */
-/* line 3057, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033057}}
+/* line 3060, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033060}}
 .picker__holder,
 .picker__frame {
   bottom: 0;
@@ -3024,8 +3024,8 @@ textarea {
 /**
  * The holder should overlay the entire screen.
  */
-/* line 3066, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033066}}
+/* line 3069, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033069}}
 .picker__holder {
   position: fixed;
   -webkit-transition: background 0.15s ease-out, top 0s 0.15s;
@@ -3036,8 +3036,8 @@ textarea {
 /**
  * The frame that bounds the box contents of the picker.
  */
-/* line 3076, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033076}}
+/* line 3079, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033079}}
 .picker__frame {
   position: absolute;
   margin: 0 auto;
@@ -3053,8 +3053,8 @@ textarea {
   transition: all 0.15s ease-out;
 }
 @media (min-height: 28.875em) {
-  /* line 3091, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033091}}
+  /* line 3094, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033094}}
   .picker__frame {
     overflow: visible;
     top: auto;
@@ -3063,8 +3063,8 @@ textarea {
   }
 }
 @media (min-height: 40.125em) {
-  /* line 3098, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033098}}
+  /* line 3101, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033101}}
   .picker__frame {
     margin-bottom: 7.5%;
   }
@@ -3072,16 +3072,16 @@ textarea {
 /**
  * The wrapper sets the stage to vertically align the box contents.
  */
-/* line 3104, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033104}}
+/* line 3107, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033107}}
 .picker__wrap {
   display: table;
   width: 100%;
   height: 100%;
 }
 @media (min-height: 28.875em) {
-  /* line 3110, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033110}}
+  /* line 3113, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033113}}
   .picker__wrap {
     display: block;
   }
@@ -3089,16 +3089,16 @@ textarea {
 /**
  * The box contains all the picker contents.
  */
-/* line 3116, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033116}}
+/* line 3119, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033119}}
 .picker__box {
   background: #ffffff;
   display: table-cell;
   vertical-align: middle;
 }
 @media (min-height: 28.875em) {
-  /* line 3122, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033122}}
+  /* line 3125, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033125}}
   .picker__box {
     display: block;
     border: 1px solid #777777;
@@ -3115,8 +3115,8 @@ textarea {
 /**
  * When the picker opens...
  */
-/* line 3137, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033137}}
+/* line 3140, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033140}}
 .picker--opened .picker__holder {
   top: 0;
   background: transparent;
@@ -3127,8 +3127,8 @@ textarea {
   -moz-transition: background 0.15s ease-out;
   transition: background 0.15s ease-out;
 }
-/* line 3147, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033147}}
+/* line 3150, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033150}}
 .picker--opened .picker__frame {
   top: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -3137,8 +3137,8 @@ textarea {
   opacity: 1;
 }
 @media (min-height: 35.875em) {
-  /* line 3155, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033155}}
+  /* line 3158, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033158}}
   .picker--opened .picker__frame {
     top: 10%;
     bottom: 20% auto;
@@ -3150,20 +3150,20 @@ textarea {
 /* ==========================================================================
    CUSTOM MATERIALIZE STYLES
    ========================================================================== */
-/* line 3165, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033165}}
+/* line 3168, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033168}}
 .picker__input.picker__input--active {
   border-color: #E3F2FD;
 }
-/* line 3168, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033168}}
+/* line 3171, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033171}}
 .picker__frame {
   margin: 0 auto;
   max-width: 325px;
 }
 @media (min-height: 38.875em) {
-  /* line 3173, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033173}}
+  /* line 3176, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033176}}
   .picker--opened .picker__frame {
     top: 10%;
     bottom: auto;
@@ -3175,16 +3175,16 @@ textarea {
 /**
  * The picker box.
  */
-/* line 3183, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033183}}
+/* line 3186, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033186}}
 .picker__box {
   padding: 0 1em;
 }
 /**
  * The header containing the month and year stuff.
  */
-/* line 3189, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033189}}
+/* line 3192, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033192}}
 .picker__header {
   text-align: center;
   position: relative;
@@ -3193,8 +3193,8 @@ textarea {
 /**
  * The month and year labels.
  */
-/* line 3197, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033197}}
+/* line 3200, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033200}}
 .picker__month,
 .picker__year {
   display: inline-block;
@@ -3204,8 +3204,8 @@ textarea {
 /**
  * The month and year selectors.
  */
-/* line 3205, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033205}}
+/* line 3208, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033208}}
 .picker__select--month,
 .picker__select--year {
   height: 2em;
@@ -3213,22 +3213,22 @@ textarea {
   margin-left: .25em;
   margin-right: .25em;
 }
-/* line 3211, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033211}}
+/* line 3214, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033214}}
 .picker__select--month.browser-default {
   display: inline;
   background-color: #FFFFFF;
   width: 40%;
 }
-/* line 3216, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033216}}
+/* line 3219, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033219}}
 .picker__select--year.browser-default {
   display: inline;
   background-color: #FFFFFF;
   width: 25%;
 }
-/* line 3221, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033221}}
+/* line 3224, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033224}}
 .picker__select--month:focus,
 .picker__select--year:focus {
   border-color: rgba(0, 0, 0, 0.05);
@@ -3236,8 +3236,8 @@ textarea {
 /**
  * The month navigation buttons.
  */
-/* line 3227, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033227}}
+/* line 3230, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033230}}
 .picker__nav--prev,
 .picker__nav--next {
   position: absolute;
@@ -3247,20 +3247,20 @@ textarea {
   box-sizing: content-box;
   top: -0.25em;
 }
-/* line 3235, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033235}}
+/* line 3238, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033238}}
 .picker__nav--prev {
   left: -1em;
   padding-right: 1.25em;
 }
-/* line 3239, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033239}}
+/* line 3242, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033242}}
 .picker__nav--next {
   right: -1em;
   padding-left: 1.25em;
 }
-/* line 3243, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033243}}
+/* line 3246, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033246}}
 .picker__nav--disabled,
 .picker__nav--disabled:hover,
 .picker__nav--disabled:before,
@@ -3273,8 +3273,8 @@ textarea {
 /**
  * The calendar table of dates
  */
-/* line 3252, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033252}}
+/* line 3255, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033255}}
 .picker__table {
   text-align: center;
   border-collapse: collapse;
@@ -3285,14 +3285,14 @@ textarea {
   margin-top: .75em;
   margin-bottom: .5em;
 }
-/* line 3262, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033262}}
+/* line 3265, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033265}}
 .picker__table th,
 .picker__table td {
   text-align: center;
 }
-/* line 3265, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033265}}
+/* line 3268, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033268}}
 .picker__table td {
   margin: 0;
   padding: 0;
@@ -3300,8 +3300,8 @@ textarea {
 /**
  * The weekday labels
  */
-/* line 3272, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033272}}
+/* line 3275, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033275}}
 .picker__weekday {
   width: 14.285714286%;
   font-size: .75em;
@@ -3311,8 +3311,8 @@ textarea {
   /* Increase the spacing a tad */
 }
 @media (min-height: 33.875em) {
-  /* line 3281, style1b.less */
-  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033281}}
+  /* line 3284, style1b.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033284}}
   .picker__weekday {
     padding-bottom: .5em;
   }
@@ -3320,8 +3320,8 @@ textarea {
 /**
  * The days on the calendar
  */
-/* line 3287, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033287}}
+/* line 3290, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033290}}
 .picker__day--today {
   position: relative;
   color: #595959;
@@ -3330,40 +3330,40 @@ textarea {
   font-weight: 400;
   border: 1px solid transparent;
 }
-/* line 3295, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033295}}
+/* line 3298, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033298}}
 .picker__day--disabled:before {
   border-top-color: #aaaaaa;
 }
-/* line 3298, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033298}}
+/* line 3301, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033301}}
 .picker__day--infocus:hover {
   cursor: pointer;
   color: #000;
   font-weight: 500;
 }
-/* line 3303, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033303}}
+/* line 3306, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033306}}
 .picker__day--outfocus {
   display: none;
   padding: .75rem 0;
   color: #fff;
 }
-/* line 3308, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033308}}
+/* line 3311, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033311}}
 .picker__day--outfocus:hover {
   cursor: pointer;
   color: #dddddd;
   font-weight: 500;
 }
-/* line 3313, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033313}}
+/* line 3316, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033316}}
 .picker__day--highlighted:hover,
 .picker--focused .picker__day--highlighted {
   cursor: pointer;
 }
-/* line 3316, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033316}}
+/* line 3319, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033319}}
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
@@ -3376,8 +3376,8 @@ textarea {
   background: #0089ec;
   color: #ffffff;
 }
-/* line 3326, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033326}}
+/* line 3329, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033329}}
 .picker__day--disabled,
 .picker__day--disabled:hover,
 .picker--focused .picker__day--disabled {
@@ -3386,8 +3386,8 @@ textarea {
   color: #dddddd;
   cursor: default;
 }
-/* line 3332, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033332}}
+/* line 3335, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033335}}
 .picker__day--highlighted.picker__day--disabled,
 .picker__day--highlighted.picker__day--disabled:hover {
   background: #bbbbbb;
@@ -3395,16 +3395,16 @@ textarea {
 /**
  * The footer containing the "today", "clear", and "close" buttons.
  */
-/* line 3338, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033338}}
+/* line 3341, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033341}}
 .picker__footer {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* line 3344, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033344}}
+/* line 3347, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033347}}
 .picker__button--today,
 .picker__button--clear,
 .picker__button--close {
@@ -3417,8 +3417,8 @@ textarea {
   display: inline-block;
   vertical-align: bottom;
 }
-/* line 3354, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033354}}
+/* line 3357, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033357}}
 .picker__button--today:hover,
 .picker__button--clear:hover,
 .picker__button--close:hover {
@@ -3427,8 +3427,8 @@ textarea {
   background: #b1dcfb;
   border-bottom-color: #b1dcfb;
 }
-/* line 3360, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033360}}
+/* line 3363, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033363}}
 .picker__button--today:focus,
 .picker__button--clear:focus,
 .picker__button--close:focus {
@@ -3436,8 +3436,8 @@ textarea {
   border-color: rgba(0, 0, 0, 0.05);
   outline: none;
 }
-/* line 3365, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033365}}
+/* line 3368, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033368}}
 .picker__button--today:before,
 .picker__button--clear:before,
 .picker__button--close:before {
@@ -3445,30 +3445,30 @@ textarea {
   display: inline-block;
   height: 0;
 }
-/* line 3370, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033370}}
+/* line 3373, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033373}}
 .picker__button--today:before,
 .picker__button--clear:before {
   content: " ";
   margin-right: .45em;
 }
-/* line 3374, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033374}}
+/* line 3377, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033377}}
 .picker__button--today:before {
   top: -0.05em;
   width: 0;
   border-top: 0.66em solid #0059bc;
   border-left: .66em solid transparent;
 }
-/* line 3380, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033380}}
+/* line 3383, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033383}}
 .picker__button--clear:before {
   top: -0.25em;
   width: .66em;
   border-top: 3px solid #ee2200;
 }
-/* line 3385, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033385}}
+/* line 3388, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033388}}
 .picker__button--close:before {
   content: "\D7";
   top: -0.1em;
@@ -3477,8 +3477,8 @@ textarea {
   margin-right: .35em;
   color: #777777;
 }
-/* line 3393, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033393}}
+/* line 3396, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033396}}
 .picker__button--today[disabled],
 .picker__button--today[disabled]:hover {
   background: #f5f5f5;
@@ -3486,22 +3486,22 @@ textarea {
   color: #dddddd;
   cursor: default;
 }
-/* line 3399, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033399}}
+/* line 3402, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033402}}
 .picker__button--today[disabled]:before {
   border-top-color: #aaaaaa;
 }
 /* ==========================================================================
    CUSTOM MATERIALIZE STYLES
    ========================================================================== */
-/* line 3405, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033405}}
+/* line 3408, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033408}}
 .picker__box {
   border-radius: 2px;
   overflow: hidden;
 }
-/* line 3409, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033409}}
+/* line 3412, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033412}}
 .picker__date-display {
   text-align: center;
   background-color: #26a69a;
@@ -3509,65 +3509,65 @@ textarea {
   padding-bottom: 15px;
   font-weight: 400;
 }
-/* line 3418, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033418}}
+/* line 3421, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033421}}
 .picker__nav--prev:hover,
 .picker__nav--next:hover {
   cursor: pointer;
   color: #000000;
   background: #a1ded8;
 }
-/* line 3423, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033423}}
+/* line 3426, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033426}}
 .picker__weekday-display {
   padding: 10px;
   font-weight: 400;
   letter-spacing: .5px;
   font-size: 1.4rem;
 }
-/* line 3434, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033434}}
+/* line 3437, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033437}}
 .picker__month-display {
   font-size: 1.4rem;
   display: inline-block;
 }
-/* line 3441, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033441}}
+/* line 3444, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033444}}
 .picker__day-display {
   font-size: 1.4rem;
   font-weight: 400;
   display: inline-block;
 }
-/* line 3447, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033447}}
+/* line 3450, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033450}}
 .picker__year-display {
   font-size: 1.4rem;
   color: #ffffff;
   display: inline-block;
 }
-/* line 3455, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033455}}
+/* line 3458, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033458}}
 .picker__box {
   padding: 0;
 }
-/* line 3458, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033458}}
+/* line 3461, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033461}}
 .picker__calendar-container {
   padding: 0 1rem;
 }
-/* line 3460, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033460}}
+/* line 3463, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033463}}
 .picker__calendar-container thead {
   border: none;
 }
-/* line 3463, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033463}}
+/* line 3466, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033466}}
 .picker__table {
   margin-top: 0;
   margin-bottom: .5em;
 }
-/* line 3467, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033467}}
+/* line 3470, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033470}}
 .picker__day--infocus {
   color: #595959;
   letter-spacing: -0.3;
@@ -3575,23 +3575,23 @@ textarea {
   font-weight: 400;
   border: 1px solid transparent;
 }
-/* line 3474, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033474}}
+/* line 3477, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033477}}
 .picker__day.picker__day--today {
   color: #26a69a;
 }
-/* line 3477, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033477}}
+/* line 3480, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033480}}
 .picker__day.picker__day--today.picker__day--selected {
   color: #fff;
 }
-/* line 3480, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033480}}
+/* line 3483, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033483}}
 .picker__weekday {
   font-size: .9rem;
 }
-/* line 3483, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033483}}
+/* line 3486, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033486}}
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
@@ -3604,29 +3604,29 @@ textarea {
   background-color: #26a69a;
   color: #ffffff;
 }
-/* line 3492, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033492}}
+/* line 3495, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033495}}
 .picker__day--selected.picker__day--outfocus,
 .picker__day--selected:hover.picker__day--outfocus,
 .picker--focused .picker__day--selected.picker__day--outfocus {
   background-color: #a1ded8;
 }
-/* line 3495, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033495}}
+/* line 3498, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033498}}
 .picker__footer {
   text-align: right;
   padding: 5px 10px;
 }
-/* line 3499, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033499}}
+/* line 3502, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033502}}
 .picker__close,
 .picker__today {
   font-size: 1.1rem;
   padding: 0 1rem;
   color: #26a69a;
 }
-/* line 3504, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033504}}
+/* line 3507, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033507}}
 .picker__nav--prev:before,
 .picker__nav--next:before {
   content: " ";
@@ -3638,14 +3638,14 @@ textarea {
   display: block;
   margin: 0 auto;
 }
-/* line 3514, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033514}}
+/* line 3517, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033517}}
 .picker__nav--next:before {
   border-right: 0;
   border-left: 0.75em solid #676767;
 }
-/* line 3518, style1b.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033518}}
+/* line 3521, style1b.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000033521}}
 button.picker__today:focus,
 button.picker__clear:focus,
 button.picker__close:focus {
