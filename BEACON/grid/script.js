@@ -14,6 +14,7 @@ $(document).ready(function(){
 
 ////////// ninebox/////////////////// 
 $('#nineBoxContent').hide();
+
 $('#nineBox i').click(function(){
   $('#nineBoxContent').show();
 })

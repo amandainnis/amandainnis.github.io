@@ -94,11 +94,11 @@ header{
 }
 
 .topRightActions {
-	width: 70px;
+	width: 65px;
 	display: inline-block;
 	font-size: 25px;
 	position: relative;
-	left: 509px;
+	left: 515px;
     top: -17px;
         top: -11px;
     color: rgba(0, 0, 0, .5);
@@ -110,8 +110,8 @@ header{
     height: 25px;
     font-size: 25px;
     position: absolute;
-    left: 41px;
-    top: 13px;
+    left: 34px;
+    top: 0px;
 	// left: 550px;
 	color: #0069CB;
 	/*border: 1px black solid;*/
@@ -142,7 +142,7 @@ header{
 .beaconLogoText {
 	position: relative;
 	left: 45px;
-	top: -5px;
+	top: 10px;
 	text-transform: uppercase;
 }
 
@@ -544,20 +544,20 @@ h2 {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdownSearch {
-	font-size: 14px;
-	display: inline-block;
-	width: 480px;
-	height: 35px;
-	position: relative;
-	left: 0px;
-	top: 13px;
-	    top: 27px;
-	/*border: 1px solid rgba(0,0,0, 0.2);*/
-	padding-top: 5px;
-	border-radius: 2px;
-	text-align: left;
-	z-index: 3;
-	transition: .3s ease-in;
+	    font-size: 14px;
+    /* display: inline-block; */
+    width: 445px;
+    /* height: 35px; */
+    position: relative;
+    left: 49px;
+    top: 19px;
+    /* top: 27px; */
+    /* border: 1px solid rgba(0,0,0, 0.2); */
+    /* padding-top: 5px; */
+    border-radius: 2px;
+    text-align: left;
+    z-index: 3;
+    transition: .3s ease-in;
 }
 .dropdownSearch i {
 	text-align: left;
@@ -589,7 +589,7 @@ h2 {
 	color: rgba(0,0,0, .8);
 	/*text-align: center;*/
 	transition: .3s ease-in;
-       width: 479px;
+       width: 450px;
        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
