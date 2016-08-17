@@ -12,6 +12,17 @@ $(document).ready(function(){
 		$('.dropdown-content2').hide();
 	});
 
+////////// ninebox/////////////////// 
+$('#nineBoxContent').hide();
+$('#nineBox i').click(function(){
+  $('#nineBoxContent').show();
+})
+
+$('#nineBoxContent').mouseleave(function(){
+    $('#nineBoxContent').hide();
+  });
+
+
 ////////// side search///////////////////	
 	
 	$('#dropdown-content').hide();

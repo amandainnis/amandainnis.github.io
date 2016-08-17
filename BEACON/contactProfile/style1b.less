@@ -473,7 +473,7 @@ body {
 
 ////////////////////////////////////NEW/////////////////////////
 
-.sectionNotesTitle {
+#callNotesTitle, #sectionNotesTitle {
 	text-transform: uppercase;
 	color: rgba(0, 105, 203, 0.9);
 	// color: rgba(21, 101, 192, 1);
@@ -484,8 +484,12 @@ body {
 	/*width: 100%;*/
 	display: inline-block;
 	margin-left: 15px;
-	padding-top: 6px;
-	padding-bottom: 5px;
+	padding-top: 9px;
+	padding-bottom: 3px;
+}
+
+#callNotesTitle {
+	border-bottom: 2px rgb(6, 113, 212) solid;
 }
 
 .textWrapper {
@@ -494,10 +498,15 @@ body {
 
 }
 
-.notesWrapper {
+#callNotesSummaryWrapper, #notesWrapper {
 	width: 95%;
-	padding: 5px 0 0 15px;
+	padding: 7px 0 0 15px;
 }
+
+// #notesWrapper {
+// 	display: none;
+// }
+
 
 .innerTextTitle {
 	font-family: 'Roboto';
@@ -539,7 +548,7 @@ body {
 	bottom: 6px;
 }
 
-.notesText {
+.callNotesSummaryLabelText, .notesText {
 	font-family: 'Roboto';
 	font-weight: 400;
 	font-size: 12px;
@@ -549,6 +558,21 @@ body {
 	/*display: inline-block;*/
 	/*margin-top: 1em;*/
 
+}
+
+.callNotesSummaryThingText {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.callNotesSummaryThingText {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: .1px;
+	line-height: 1.3em;
+	color: rgba(0,0,0, .9);
+	
 }
 
 /*.iconsBottom {
@@ -652,7 +676,7 @@ body {
 
 
 
-.mdi-calendar, .mdi-calendar-check, .mdi-border-color, .mdi-library-books, .mdi-dots-horizontal {
+.mdi-calendar, .mdi-calendar-check, .mdi-format-list-bulleted, .mdi-border-color, .mdi-library-books, .mdi-dots-horizontal {
 	font-size: 32px;
 	// color: rgba(6, 113, 212, 0.9);
 	// color: rgba(21, 101, 192, 1);
