@@ -295,10 +295,22 @@ header{
     left: -14px;
     top: 1px;
     color: rgba(0,0,0,.5);
+    cursor: pointer;
+    padding: 0px 4px 2px 5px;
+    border-radius: 50%;
+    transition: .2s ease-in;
+    
 }
+
+#clear:hover {
+	background-color: rgba(0, 0, 0, 0.06);
+	transition: .2s ease-in;
+}
+
 
 .bottomBorder {
 	border-bottom: 1px solid #bababa;
+	transition: .3s ease-in;
 }
 
 #filterIcon {
@@ -309,6 +321,11 @@ header{
     font-size: 17px;
     cursor: pointer;
     transition: .3s ease-in;
+}
+
+.blue {
+	color: #0069CB !important;
+	transition: .3s ease-in;
 }
 
 #filterIcon:hover {
@@ -380,6 +397,8 @@ header{
 #sortSection {
 	width: 98px;
 	cursor: pointer;
+	// padding-bottom: 1px;
+	// border-bottom: 1px solid #bababa;
 	// background-color: yellow;
 }
 

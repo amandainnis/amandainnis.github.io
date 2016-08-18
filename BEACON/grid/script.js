@@ -92,11 +92,23 @@ $('#filterSortContainer').on('click', function(event){
     event.preventDefault();
     $('#filterSortContainer').animate({left: '378px'});
     $('.sideSearch').addClass('bottomBorder');
+    // $('#filterIcon.mdi-filter').addClass('blue');
+
+    $('#clear').click(function(){
+        $('.sideSearch').val("");
+        $('#filterIcon.mdi-filter').removeClass('blue');
+
+      });
 
   });
 
+$('#filterIcon.mdi-filter').on('click', function(){
+    $('#filterSortContainer').animate({left:'535px'});
+})
+
 $('#sortSection').click(function(){
   $('#sortMenuList').show();
+
 
       $('#sort1').click(function(){
           var inputText = $(this).text();
