@@ -777,7 +777,8 @@ body {
 #meetingsWrapper,
 #editContactWrapper,
 #scheduleMeetingWrapper,
-#callNotesWrapper {
+#callNotesWrapper,
+#sendReadershipWrapper {
   width: 500px;
   height: 460px;
   background-color: white;

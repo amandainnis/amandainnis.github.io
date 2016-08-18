@@ -84,6 +84,57 @@ $('#nineBoxContent').mouseleave(function(){
 
 	
 
+//////////////filter/////////////////////
+
+$('#sortMenuList').hide();
+
+$('#filterSortContainer').on('click', function(event){
+    event.preventDefault();
+    $('#filterSortContainer').animate({left: '378px'});
+    $('.sideSearch').addClass('bottomBorder');
+
+  });
+
+$('#sortSection').click(function(){
+  $('#sortMenuList').show();
+
+      $('#sort1').click(function(){
+          var inputText = $(this).text();
+          $('#AZ').text(inputText);
+          $('#sortMenuList').hide();
+       }); 
+
+    $('#sort2').click(function(){
+          var inputText = $(this).text();
+          $('#AZ').text(inputText);
+          $('#sortMenuList').hide();
+       }); 
+
+       $('#sort3').click(function(){
+          var inputText = $(this).text();
+          $('#AZ').text(inputText);
+          $('#sortMenuList').hide();
+       }); 
+
+       $('#sort4').click(function(){
+          var inputText = $(this).text();
+          $('#AZ').text(inputText);
+          $('#sortMenuList').hide();
+       }); 
+
+       $('#sort5').click(function(){
+          var inputText = $(this).text();
+          $('#AZ').text(inputText);
+          $('#sortMenuList').hide();
+       }); 
+})
+  
+  $('.mdi-close').on('click', function(event){
+    event.preventDefault();
+    var slideoutMenuWidth = $('.slideout-menu').width();
+    slideOutMenu.animate({left: '-300px'}, 350);
+
+  });
 
 
 

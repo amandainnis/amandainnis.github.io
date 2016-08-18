@@ -15,7 +15,8 @@
     <div id="wrapper">
         <header>
             <!-- <div id="search"> -->
-            <span class="beaconLogoText">Beacon</span><div id="logo"><img src="logo_current.png"></div>
+            <span class="beaconLogoText">Beacon</span>
+            <div id="logo"><img src="logo_current.png"></div>
             <div class="dropdownSearch">
                 <div class="topSearch"><i class="mdi mdi-magnify"></i></div>
                 <div class="dropdown-content2">
@@ -77,11 +78,11 @@
             <!-- </div> -->
             <i class="mdi mdi-window-minimize"></i>
             <div class="topRightActions">
-            <i class="mdi mdi-bell"></i>
+                <i class="mdi mdi-bell"></i>
                 <div id="nineBox">
                     <i class="mdi mdi-apps"></i>
                 </div>
-                <div class= "nineBoxDropdown">
+                <div class="nineBoxDropdown">
                     <ul id="nineBoxContent">
                         <li>Contacts</li>
                         <li>User Preferences</li>
@@ -94,55 +95,65 @@
             </div>
         </header>
         <div class="bar">
-        <span class="hamburgerMenu"><i class="mdi mdi-menu"></i></span>
+            <!-- <span class="hamburgerMenu"><i class="mdi mdi-menu"></i></span> -->
             <h1>Contacts</h1>
-
-            <div class="sideSearchContainer">
-                <input class="sideSearch" placeholder="Filter">
-                <!-- <i class="mdi mdi-magnify sideSearchIcon"></i> -->
-                <i class="mdi mdi-filter filterIcon"></i>
-            </div>
-            <span class="AZ">SORT</span>
-            
-
-            </div>
+            <i id="threeDotWhite" class="mdi mdi-dots-vertical"></i>
+        </div>
         <div class="sectionHeader">
             <!-- <div id="listContainer">
             <div class="listTitleContainer">
             <h2>My Contacts<i class="mdi mdi-menu-down listMenu"></i></h2>
             </div> -->
             <div class="listTitleContainer">
-            <div class="listTitleInputDiv">
-            <h2>My Contacts
+                <div class="listTitleInputDiv">
+                    <h2>My Contacts
             </h2><i class="mdi mdi-menu-down listMenu"></i>
-            </div>
-
-            <div class="dropdown">
-            	
-               
-                <div id="dropdown-content">
-                <input type="text" placeholder="Search lists"><ul>
-                    <li id="list1">My Contacts</li>
-                    <li id="list2">Health Care Corp Access</li>
-                    <li id="list3">Daily Call List</li>
-                    <li id="list4">Weekly Call List</li>
-                    <li id="list5">Frequent Call List</li>
-                    <li id="list6">Health Care Corp Ac...</li>
-                    <li id="list7">Another Person's Li...</li>
-                    <li id="list8">Bi-Weekly Call List</li>
-                    </ul>
                 </div>
-            </div>
-            <!-- end of dropdown -->
+                <div class="dropdown">
+                    <div id="dropdown-content">
+                        <input type="text" placeholder="Search lists">
+                        <ul>
+                            <li id="list1">My Contacts</li>
+                            <li id="list2">Health Care Corp Access</li>
+                            <li id="list3">Daily Call List</li>
+                            <li id="list4">Weekly Call List</li>
+                            <li id="list5">Frequent Call List</li>
+                            <li id="list6">Health Care Corp Access22</li>
+                            <li id="list7">Another Person's Li...</li>
+                            <li id="list8">Bi-Weekly Call List</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of dropdown -->
             </div>
             <!-- end of listcontainer -->
+            <div id="filterSortContainer">
+                <div id="sideSearchContainer">
+                    
+                    <!-- <i class="mdi mdi-magnify sideSearchIcon"></i> -->
+                    <i id="filterIcon" class="mdi mdi-filter"></i>
+                    <input class="sideSearch" placeholder="Filter">
+                    <span id="clear">X</span>
+                </div>
+                <div class="sortContainer">
+                    <div id="sortSection">
+                        <span id="AZ">Sort by</span><i class="mdi mdi-menu-down sortMenu"></i>
+                    </div>
+                    <ul id="sortMenuList">
+                        <li id="sort1">Name</li>
+                        <li id="sort2">Company</li>
+                        <li id="sort3">Rank</li>
+                        <li id="sort4">Last TP</li>
+                        <li id="sort5">Segmentation</li>
+                    </ul>
+                </div>
+                <!-- end of sort container -->
+            </div>
             
-
         </div>
         <!-- end of sectionheader -->
         <div id="contactsWrapper">
-            <!-- <div class="pretendScrollBar"><div class="pretendScrollDisc"></div></div> -->
-            <!-- <div id="searchBar"><input class="searchField" value="Search"></div> -->
+            
             <div class="innerEventWrapper">
                 <div class="divItsaRow clearfix">
                     <div class="textWrapper clearfix">
@@ -158,7 +169,7 @@
                         <!-- <span class="rank">#1</span> -->
                         <div class="timeElapsed green">2</div>
                         <i class="mdi mdi-email-outline"></i>
-                       <div class="ibChat"><img src="ib_chat_small.png"></div>
+                        <div class="ibChat"><img src="ib_chat_small.png"></div>
                         <i class="mdi mdi-phone"></i>
                         <i class="mdi mdi-dots-vertical"></i>
                     </div>
@@ -308,7 +319,7 @@
             </div>
             <!-- end of innerEventWrapper -->
         </div>
-        <!-- 	</section> -->
+        <!--    </section> -->
         <div class="overlay"></div>
     </div>
     <!-- end of wrapper -->
