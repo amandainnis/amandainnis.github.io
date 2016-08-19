@@ -261,7 +261,8 @@ header{
 #filterSortContainer {
 	// border-bottom: 1px gray solid;
 	position: relative;
-	left: 535px;
+	// left: 535px;
+	left: 378px;
     top: -158px;
     width: 179px;
 }
@@ -283,7 +284,7 @@ header{
 	display: inline-block;
 	width: 100px;
 	height: 25px;
-	
+	border-bottom: 1px solid #bababa;
 	// border-radius: 2px;
 	padding: 5px 0 4px 5px;
 	transition: .3s ease-in;
