@@ -24,6 +24,18 @@ $('#nineBoxContent').mouseleave(function(){
   });
 
 
+////////// global threedot/////////////////// 
+$('#threeDotContent').hide();
+
+$('#threeDotWhite.mdi-dots-vertical').click(function(){
+  $('#threeDotContent').show();
+})
+
+$('#threeDotContent').mouseleave(function(){
+    $('#threeDotContent').hide();
+  });
+
+
 ////////// side search///////////////////	
 	
 	$('#dropdown-content').hide();
