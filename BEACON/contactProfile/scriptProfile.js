@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('#meetingsWrapper').hide();
   $('#editContactWrapper').hide();
   $('#scheduleMeetingWrapper').hide();
+  $('#sendReadershipWrapper').hide();
   $('#callNotesWrapper').hide();
   $('.voiceDropChoose li').hide();
   $('.moreChoose').hide();
@@ -289,6 +290,21 @@ $('#bottomBarCallNotes .cancelButton').click(function(){
 
 $('.callNotesBar .mdi-close').click(function(){
   $('#callNotesWrapper').hide();
+});
+
+
+//////////////////// send readership/////////
+
+$('.mdi-library-books').click(function(){
+  $('#sendReadershipWrapper').show();
+});
+
+$('#bottomBarSendReadership .cancelButton').click(function(){
+  $('#sendReadershipWrapper').hide();
+});
+
+$('.sendReadershipBar .mdi-close').click(function(){
+  $('#sendReadershipWrapper').hide();
 });
 
 
