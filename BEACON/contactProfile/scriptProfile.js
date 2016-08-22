@@ -281,6 +281,7 @@ $('.editContactBar .mdi-close').click(function(){
 //////////////////// call notes/////////
 
 $('.mdi-border-color').click(function(){
+  console.log("yeah i am here");
   $('#callNotesWrapper').show();
 });
 

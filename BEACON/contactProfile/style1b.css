@@ -1407,8 +1407,7 @@ body {
 /* line 1449, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031449}}
 .lightBlue {
-  background-color: #90caf9;
-  background-color: #bbdefb;
+  background-color: #bbdefb !important;
 }
 /* line 1455, style1b.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/BEACON\/contactProfile\/style1b\.less}line{font-family:\000031455}}
