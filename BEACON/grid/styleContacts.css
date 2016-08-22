@@ -62,6 +62,7 @@ body {
 	height: 760px;
 	background-color: #F5F5F5;
 	overflow-y: hidden;
+	overflow-x: hidden;
 	margin: 0 auto;
 }
 
@@ -665,11 +666,11 @@ h2:hover {
 	height: 584px;
 	/*height: 60%;*/
 	background-color: white;
-	overflow-x: hidden;
+	
 	overflow-y: scroll;
 	margin: 0 auto;
 	position: relative;
-
+	overflow-x: hidden;
 }
 
 
