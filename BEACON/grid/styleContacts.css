@@ -60,7 +60,7 @@ body {
 #wrapper {
 	width: 600px;
 	height: 760px;
-	background-color: #F5F5F5;
+	background-color: white;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	margin: 0 auto;
@@ -269,6 +269,7 @@ header{
     top: -158px;
     width: 179px;
 }
+
 
 
 #sideSearchContainer {

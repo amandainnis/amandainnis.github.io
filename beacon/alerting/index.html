@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../grid/materialdesignicons.css">
+	<link rel="stylesheet" type="text/css" href="../grid/styleContacts.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="../grid/jquery-2.2.4.js"></script>
+    <!-- <script type="text/javascript" src="jquery-1.11.3.js"></script> -->
+    <script type="text/javascript" src="../grid/script.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="wrapper">
+        <header>
+            <!-- <div id="search"> -->
+            <span class="beaconLogoText">Beacon</span>
+            <div id="logo"><img src="../grid/logo_current.png"></div>
+            <div class="dropdownSearch">
+                <div class="topSearch"><i class="mdi mdi-magnify"></i></div>
+                <div class="dropdown-content2">
+                </div>
+            </div>
+            <i class="mdi mdi-window-minimize"></i>
+            <div class="topRightActions">
+                <i class="mdi mdi-bell"></i>
+                <div id="nineBox">
+                    <i class="mdi mdi-apps"></i>
+                </div>
+                <div class="nineBoxDropdown">
+                    <ul id="nineBoxContent">
+                        <li>Contacts</li>
+                        <li>User Preferences</li>
+                        <li>About</li>
+                        <li>Version</li>
+                        <li>Clear Cache</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="bar">
+            <h1>Alerts</h1>
+            <i id="threeDotWhiteAlert" class="mdi mdi-dots-vertical"></i>
+            <!-- <div class="threeDotDropdown">
+                    <ul id="threeDotContent">
+                        <li>New Contact</li>
+                        <li>New List</li>
+                        <li>Touchpoint Preferences</li>
+                        <li>Manage Voicedrop</li>
+                    </ul>
+                </div> -->
+        </div>
+
+        <div class="alertHeader">
+        	<div class="allOpenClosed">
+        		<span class="notSelected">All</span>
+        		<span class="selected">Open</span>
+        		<span class="notSelected">Closed</span>
+
+        	</div>
+
+
+        	<div id="filterSortContainerAlerts">
+                <div id="sideSearchContainer">
+                    
+                    <!-- <i class="mdi mdi-magnify sideSearchIcon"></i> -->
+                    <i id="filterIcon" class="mdi mdi-filter"></i>
+                    <input type="text" class="sideSearch" placeholder="Filter">
+                    <span id="clear">x</span>
+                </div>
+                <!-- <div class="sortContainer">
+                    <div id="sortSection">
+                        <span id="AZ">Sort by</span><i class="mdi mdi-menu-down sortMenu"></i>
+                    </div>
+                    <ul id="sortMenuList">
+                        <li id="sort1">Name</li>
+                        <li id="sort2">Company</li>
+                        <li id="sort3">Rank</li>
+                        <li id="sort4">Last TP</li>
+                        <li id="sort5">Segmentation</li>
+                    </ul>
+                </div> -->
+                <!-- end of sort container -->
+            </div>
+        </div>
+        <!-- end of alert header -->
+
+        <div class="alertSummary">
+        	<div id="total" class="summary">
+        		<div class="summaryLabel">Total</div>
+        		<div class="numbers selectedNumbers">323</div>
+        	</div>
+        	
+        	<div class="summary">
+        		<div class="summaryLabel">Outage</div>
+        		<div class="numbers">42</div>
+        	</div>
+        	
+        	<div class="summary">
+        		<div class="summaryLabel">Critical</div>
+        		<div class="numbers">57</div>
+        	</div>
+        	
+        	<div class="summary">
+        		<div class="summaryLabel">Urgent</div>
+        		<div class="numbers">139</div>
+        	</div>
+        	
+        	<div class="summary">
+        		<div class="summaryLabel">Comm.</div>
+        		<div class="numbers">3</div>
+        	</div>
+
+        	<div class="summary">
+        		<div class="summaryLabel">ProAct.</div>
+        		<div class="numbers">99</div>
+        	</div>
+        	
+
+        	
+        </div>
+        <!-- end of alertSummary -->
+
+        <div class="cockpit">
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Risk</div>
+        			<div class="numberSummaryBox">411</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">9</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">4</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">14</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">14</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric risk"></div>
+        		</div>
+        	</div>
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Trade</div>
+        			<div class="numberSummaryBox">73</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">14</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">10</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">17</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">31</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric trade"></div>
+        		</div>
+        	</div>
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Strat</div>
+        			<div class="numberSummaryBox">18</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">3</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">7</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">6</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">2</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric strat"></div>
+        		</div>
+        	</div>
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Sales</div>
+        			<div class="numberSummaryBox">38</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">7</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">8</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">11</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">12</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric sales"></div>
+        		</div>
+        	</div>
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Perf</div>
+        			<div class="numberSummaryBox">46</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">4</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">9</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">19</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">14</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric perf"></div>
+        		</div>
+        	</div>
+
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Pr-Trd</div>
+        			<div class="numberSummaryBox">51</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">11</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">10</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">13</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">17</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric pr-trd"></div>
+        		</div>
+        	</div>
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Systm</div>
+        			<div class="numberSummaryBox">21</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">2</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">7</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">6</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">6</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric system"></div>
+        		</div>
+        	</div>
+
+        	<div class="summaryBox">
+        		<div class="summaryBoxLeft">
+        			<div class="summaryBoxTitle">Mrkt</div>
+        			<div class="numberSummaryBox">35</div>
+        		</div>
+        		<div class="summaryBoxRight">
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Mine</span>
+        				<span class="numberSummaryBoxMini">8</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Desk</span>
+        				<span class="numberSummaryBoxMini">9</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Cvg.</span>
+        				<span class="numberSummaryBoxMini">9</span>
+        			</div>
+        			<div class="minRow">
+        				<span class="summaryBoxCategory">Crit.</span>
+        				<span class="numberSummaryBoxMini">9</span>
+        			</div>
+        			
+        		</div>
+        		
+        		<div class="metricBar">
+        			<div class="blueMetric mrkt"></div>
+        		</div>
+        	</div>
+        	
+        </div>
+
+</body>
+</html>
