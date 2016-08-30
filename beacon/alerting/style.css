@@ -262,11 +262,16 @@
 	left: 60px;
 }
 
+.feed {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
 
 .alertRow {
     width: 100%;
     border-bottom: 1px #eeeeee solid;
-    padding: 2.4% 3% 2.4% 5%;
+    padding: 2.4% 2% 2.4% 5%;
     transition: .3s;
 }
 
@@ -297,10 +302,10 @@
 }
 
 .contactGridRowTextWrapper {
-    width: 73%;
+    width: 62%;
     float: left;
     // border: 1px black solid;
-    margin-left: 4%;
+    margin-left: 3%;
     white-space: nowrap;
     text-overflow: ellipsis
 }
@@ -313,25 +318,44 @@
     line-height: 1em;
     display: inline-block;
     padding-bottom: 4px;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, .9);
 }
 
 .companyText {
     font-family: 'Roboto';
+        /* font-family: 'Roboto Condensed'; */
     font-weight: 400;
-    font-size: .9em;
+    font-size: 1em; 
     letter-spacing: .1px;
-    line-height: 1em;
+    line-height: 1.4em;
     color: rgba(0, 0, 0, .54);
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
     position: relative;
     z-index: 1;
 }
 
+
+.alertIcons {
+    width: 146px;
+    height: 26px;
+    font-size: 24px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 3px;
+    // left: 376px;
+    color: rgba(0, 0, 0, .8);
+    // background-color: pink;
+}
+
+.mdi-information-variant, .mdi-link-variant, .mdi-check, .mdi-information {
+	padding-right: 11px;
+}
+
 .gridDots {
-    color: #A9A9A9;
-    font-size: 26px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 24px;
     float: right;
     position: relative;
     z-index: 2;
