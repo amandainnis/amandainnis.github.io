@@ -146,8 +146,8 @@
 	padding-top: 16px;
 }
 .minRow {
-	margin-left: 10px;
-	width: 44px;
+	margin-left: 12px;
+    width: 41px;
 	padding-bottom: 3px;
 }
 
@@ -169,7 +169,7 @@
 	color: rgba(0,0,0, .9);
 	text-align: right;
 	float: right;
-	padding-top: 1px;
+	// padding-top: 1px;
 	// padding-top: 15px;
 }
 
@@ -263,8 +263,11 @@
 }
 
 .feed {
+	width: 600px;
+	height: 264px;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	// background-color: pink;
 }
 
 
@@ -306,8 +309,8 @@
     float: left;
     // border: 1px black solid;
     margin-left: 3%;
-    white-space: nowrap;
-    text-overflow: ellipsis
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
 }
 
 .nameText {
@@ -317,7 +320,7 @@
     letter-spacing: .1px;
     line-height: 1em;
     display: inline-block;
-    padding-bottom: 4px;
+    // padding-bottom: 4px;
     color: rgba(0, 0, 0, .9);
 }
 
@@ -337,13 +340,13 @@
 
 
 .alertIcons {
-    width: 146px;
+    width: 141px;
     height: 26px;
-    font-size: 24px;
+    font-size: 22px;
     display: inline-block;
     float: right;
     position: relative;
-    top: 3px;
+    top: 4px;
     // left: 376px;
     color: rgba(0, 0, 0, .8);
     // background-color: pink;
@@ -355,7 +358,7 @@
 
 .gridDots {
     color: rgba(0, 0, 0, .8);
-    font-size: 24px;
+    font-size: 22px;
     float: right;
     position: relative;
     z-index: 2;
