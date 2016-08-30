@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+* {
+	box-sizing: border-box;
+
+	
+}
+
+
+
+body {
+	font-size: 14px;
+	background-color: #D2D2D2;
+	font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+	width: 600px;
+	/*height: 60%;*/
+	background-color: #F5F5F5;
+	/*overflow: scroll;*/
+	margin: 0 auto;
+}
+
+
+
+header{
+	height: 63px;
+	width: 100%;
+	margin-top: .5em;
+	background: white;
+	position: relative; }
+	
+
+
+#search {
+	width: 4%;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+
+}
+
+#nineBox {
+	width: 20px;
+	height: 20px;
+	font-size: 25px;
+	position: absolute;
+	top: 30px;
+	left: 550px;
+	color: #0069CB;
+	/*border: 1px black solid;*/
+
+}
+
+.bar {
+	width: 100%;
+	height: 39px;
+	background-color: #0069CB;
+}
+
+
+
+.threeDotWhite {
+	width: 3px;
+	position: relative;
+	display: inline-block;
+	left: 570px;
+	top: -15px;
+}
+
+.threeDotWhite img {
+	width: 100%;
+}
+
+.sectionHeader {
+	width: 100%;
+	height: 74px;
+	border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+
+.sectionHeader {
+	background-color: white;
+}
+
+
+
+h1, h3 {
+	font-family: 'Roboto';
+	text-transform: uppercase;
+}
+
+.bar h1 {
+	font-size: 14px;
+	color: rgba(255, 255, 255, .8);
+	font-weight: 300;
+	padding-left: 25px;
+	padding-top: 15px;
+	letter-spacing: .3px;
+
+}
+
+h2 {
+	font-size: 22px; 
+	color: rgba(0,0,0,.87);
+	font-weight: 500;
+	letter-spacing: .5px;
+	padding-left: 30px;
+	padding-top: 28px;
+}
+
+
+#inProgressTab {
+	color: rgba(0,0,0,.87);
+	border-bottom: 1px black solid;
+	padding-bottom: .2em;
+}
+
+#completeTab {
+	color: rgba(0,0,0,.2);
+	padding-bottom: .2em;
+	padding-left: .2em;
+}
+
+
+
+#contactsWrapper {
+	width: 600px;
+	height: 770px;
+	/*height: 60%;*/
+	background-color: white;
+	
+	/*overflow-y: scroll;*/
+	margin: 0 auto;
+	position: relative;
+
+}
+
+
+
+#searchBar {
+	width: 500px;
+	height: 55px;
+	background-color: #FBFCFE;
+	position: relative;
+	top: 0px;
+	z-index: 2;
+	/*border-bottom: 1px gray solid;*/
+}
+
+.searchField {
+	width: 200px;
+	padding: 0 0 10px 25px;
+	margin: 25px 0 0 25px;
+	outline: none;
+	border: none;
+
+	border-bottom: 1px gray solid;
+
+}
+
+.eventTitle {
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: .3px;
+	line-height: 1.4em;
+	color: rgba(0,0,0, .8);
+}
+
+.eventLocation {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 13px;
+	letter-spacing: .1px;
+	line-height: 1.4em;
+	color: rgba(0,0,0, .54);
+}
+.eventDate {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 13px;
+	/*font-style: italic;*/
+	letter-spacing: .1px;
+	line-height: 1.4em;
+	color: rgba(0,0,0, .54);
+}
+
+
+.sideSearch {
+	font-size: 13px;
+	display: inline-block;
+	width: 130px;
+	height: 25px;
+	position: relative;
+	left: 440px;
+	top: -20px;
+	border: 1px solid rgba(0,0,0, 0.2);
+	padding-top: 5px;
+	border-radius: 2px;
+	text-align: center;
+	background-color: white;
+
+}
+
+
+
+.topSearch {
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+	display: inline-block;
+	width: 430px;
+	height: 35px;
+	position: relative;
+	left: 60px;
+	top: 20px;
+	text-align: left;
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgba(0,0,0, 0.2);
+	border-radius: 2px;
+	color: rgba(0,0,0, .8);
+	transition: .3s ease-in;
+   
+}

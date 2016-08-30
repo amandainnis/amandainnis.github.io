@@ -1,0 +1,286 @@
+@import 'https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700';
+
+.clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
+
+#threeDotWhiteAlert {
+	position: relative;
+    display: inline-block;
+    left: 469px;
+    top: 3px;
+    color: rgba(255, 255, 255, .9) !important;
+    font-size: 22px;
+    cursor: pointer;
+}
+.alertHeader {
+	height: 52px;
+	border-bottom: 1px rgba(0,0,0, .15) solid;
+}
+
+.allOpenClosed {
+	margin-left: 30px;
+	padding-top: 22px;
+	font-size: 16px;
+	font-weight: 500;
+	color: rgba(0,0,0, .44);
+}
+
+.allOpenClosed span {
+	padding-right: 5px;
+}
+
+.allOpenClosed .selected {
+	color: #0069CB;
+}
+
+
+#filterSortContainerAlerts {
+	position: relative;
+	left: 465px;
+    top: -21px;
+    width: 123px;
+}
+
+.numbers {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+
+.alertSummary {
+	height: 70px;
+	padding-left: 30px;
+	padding-top: 10px;
+	border-bottom: 6px #DCE2E8 solid;
+}
+
+.summary {
+	display: inline-block;
+	text-align: center;
+	margin-right: 7.8%;
+}
+
+#total {
+	padding-right: 5.6%;
+	margin-right: 5.6%;
+	border-right: 1px #DCE2E8 solid;
+}
+
+.summary .numbers {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 32px;
+	color: rgba(0,0,0, .9);
+	padding-bottom: 3px;
+    
+}
+
+.numbers.selectedNumbers {
+	border-bottom: 6px #0069CB solid;
+}
+
+.summaryLabel {
+	color: rgba(0,0,0, .54);
+	padding-bottom: 5px;
+
+}
+
+.cockpit {
+	width: 100%;
+	padding-left: 30px;
+	height: 260px;
+	border-bottom: 1px rgba(0,0,0, .15) solid;
+}
+
+.summaryBox {
+	width: 124px;
+    height: 107px;
+    background-color: #F4F6F8;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding-top: 13px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+}
+
+.summaryBoxLeft {
+	width: 50%;
+	float: left;
+	padding-left: 5%;
+}
+
+.summaryBoxRight {
+	width: 50%;
+	float: left;
+}
+
+
+.summaryBoxTitle {
+	font-weight: 500;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .5px;
+	padding-top: 3px;
+	color: rgba(0,0,0, .9);
+	
+}
+
+.numberSummaryBox {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 32px;
+	color: rgba(0,0,0, .9);
+	text-align: center;
+	padding-top: 16px;
+}
+.minRow {
+	margin-left: 10px;
+	width: 44px;
+	padding-bottom: 2px;
+}
+
+.summaryBoxCategory {
+	font-size: 11px;
+	color: rgba(0,0,0, .6);
+	// font-weight: 300;
+	// text-transform: uppercase;
+	// font-family: 'Cabin Condensed', sans-serif;
+}
+
+.numberSummaryBoxMini {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 13px;
+	color: rgba(0,0,0, .9);
+	text-align: right;
+	float: right;
+	padding-top: 2px;
+	// padding-top: 15px;
+}
+
+.metricBar {
+	background-color: #C9CFD7;
+	position: relative;
+	top: 73px;
+	width: 100%;
+	height: 12px;
+}
+
+.blueMetric {
+	height: 100%;
+	min-width: 1px;
+	background-color: #2196F3;
+}
+
+.risk {
+	width: 88px;
+}
+
+.trade {
+	width: 93px;
+}
+
+.strat {
+	width: 53px;
+}
+
+.sales {
+	width: 63px;
+}
+
+.perf {
+	width: 41px;
+}
+
+.pr-trd {
+	width: 45px;
+}
+
+.system {
+	width: 23px;
+}
+
+.mrkt {
+	width: 28px;
+}
+
+
+
+
+.alertRow {
+    width: 100%;
+    border-bottom: 1px #eeeeee solid;
+    padding: 2.4% 3% 2.4% 5%;
+    transition: .3s;
+}
+
+.alertRow:hover {
+	background-color: aliceblue;
+	background-color: #f5f5f5;
+	transition: .3s;
+}
+
+.alertType {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #14C1AC;
+    display: inline-block;
+    float: left;
+    // padding-top: 1%;
+}
+
+.alertText {
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	padding-top: 12px;
+	letter-spacing: .2px;
+}
+
+.contactGridRowTextWrapper {
+    width: 73%;
+    float: left;
+    // border: 1px black solid;
+    margin-left: 4%;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.nameText {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: .1px;
+    line-height: 1em;
+    display: inline-block;
+    padding-bottom: 4px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.companyText {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: .1px;
+    line-height: 1em;
+    color: rgba(0, 0, 0, .54);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 1;
+}
+
+.gridDots {
+    color: #A9A9A9;
+    font-size: 26px;
+    float: right;
+    position: relative;
+    z-index: 2;
+    // margin-right: 5%;
+}

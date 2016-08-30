@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="materialize.css"> -->
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <title>Beacon</title>
+</head>
+
+<body>
+    <div id="scheduleMeetingWrapper">
+        <div class="bar">Schedule Meeting</div>
+        <div id="bottomBar">
+            <input class="cancelButton" type="button" value="cancel">
+        </div>
+        <form>
+            <div class="innerFormWrapper">
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapperPrefix clearfix">
+                        <div class="input-field">
+                            <i class="mdi mdi-calendar prefix"></i>
+                            <input type="text" name="date" id="date" />
+                            <!-- <input id="icon_date" type="text" class="validate"> -->
+                            <label for="date" value="date"></label>
+                        </div>
+                    </div>
+                    <!-- end of inputWrapperMini -->
+                </div>
+                <!-- end of divItsaRow -->
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapper clearfix">
+                        <div class="input-field">
+                            <input id="city" type="text" class="validate">
+                            <label for="city">City</label>
+                        </div>
+                        <!-- end of inputfield -->
+                    </div>
+                    <!-- end of inputWrapper -->
+                </div>
+                <!-- end of divItsaRow -->
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapper clearfix">
+                        <div class="input-field">
+                            <!--  <select>
+						      <option value="" disabled selected>Choose your option</option>
+						      <option value="1">Option 1</option>
+						      <option value="2">Option 2</option>
+						      <option value="3">Option 3</option>
+						    </select>
+						    <label>Type</label> -->
+                            <input id="city" type="text" class="validate">
+                            <label for="city">Type</label>
+                        </div>
+                        <!-- end of inputfield -->
+                    </div>
+                    <!-- end of inputWrapper -->
+                </div>
+                <!-- end of divItsaRow -->
+                <div class="emptyDiv"></div>
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapper clearfix">
+                        <div class="input-field">
+                            <input id="city" type="text" class="validate">
+                            <label for="city">Meeting Driver</label>
+                        </div>
+                        <!-- end of inputfield -->
+                    </div>
+                    <!-- end of inputWrapper -->
+                </div>
+                <!-- end of divItsaRow -->
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapper clearfix">
+                        <div class="input-field">
+                            <input id="subject" type="text" class="validate">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <!-- end of inputfield -->
+                    </div>
+                    <!-- end of inputWrapper -->
+                </div>
+                <!-- end of divItsaRow -->
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapper clearfix">
+                        <div class="input-field">
+                            <input id="attendees" type="text" class="validate">
+                            <label for="attendees">Attendees</label>
+                        </div>
+                        <!-- end of inputfield -->
+                    </div>
+                    <!-- end of inputWrapper -->
+                </div>
+                <!-- end of divItsaRow -->
+                <div class="divItsaRow clearfix">
+                    <div class="inputWrapper clearfix">
+                        <div class="input-field">
+                            <input id="notify" type="text" class="validate">
+                            <label for="notify">Notify</label>
+                        </div>
+                        <!-- end of inputfield -->
+                    </div>
+                    <!-- end of inputWrapper -->
+                </div>
+                <!-- end of divItsaRow -->
+            </div>
+            <!-- end of innerFormWrapper -->
+        </form>
+    </div>
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+    <script type="text/javascript">
+    calendar.set("date");
+    </script>
+</body>
+
+</html>

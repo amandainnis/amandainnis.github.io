@@ -1,0 +1,87 @@
+.calendar-box {
+	display:none;
+	background-color:#fff;
+	border: 1px solid #444;
+	position:absolute;
+	left: 450px;
+	width:300px;
+	text-align: center;
+	top: 100px;
+	padding: 0 5px;
+	z-index: 2;
+	height: auto;
+    /*margin: 5px auto 0;*/
+}
+.calendar-box select.calendar-month {
+	width:90px;
+}
+.calendar-box select.calendar-year {
+	width:70px;
+}
+.calendar-box .calendar-cancel {
+	width:100%;
+}
+.calendar-box table {
+	width: 270px;
+
+}
+.calendar-box table td {
+	width: 14.28%;
+
+}
+
+.calendar-box table .header td {
+	/*padding: 5px 0;*/
+	margin-top: 5px;
+	height: 30px;
+	text-align: center;
+	line-height: 1.2em;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .5);
+	/*display: inline-block;*/
+}
+
+.calendar-box table tr .days td {
+	
+	
+	border: 1px black solid;
+	/*display: inline-block;*/
+}
+
+.calendar-box table th {
+	
+	height: 30px;
+	color: #999999;
+	width: 14.28%;
+	font-weight: 500;
+	text-align:center;
+	line-height: 1.2em;
+
+	/*display: inline-block;*/
+}
+
+.calendar-box .calendar-title {
+	text-align:center;
+	padding-right: 3px;
+	line-height: 1.2em;
+	color: black;
+}
+.calendar-box a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 9px 5px;
+	color: black;
+	text-align: center;
+	line-height: 1.2em;
+}
+.calendar-box .today a {
+	text-align: center;
+	/*padding:5px 5px;*/
+	/*margin-left:-5px;*/
+	background-color:#ffe9c6;
+} 
+.calendar-box .selected a {
+	padding:5px 5px;
+	margin-left:-5px;
+	background-color:#c9ff8b;
+}
