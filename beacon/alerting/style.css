@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 .alertHeader {
-	height: 52px;
+	height: 49px;
 	border-bottom: 1px rgba(0,0,0, .15) solid;
 }
 
@@ -44,9 +44,24 @@
 
 #filterSortContainerAlerts {
 	position: relative;
-	left: 465px;
-    top: -21px;
+	left: 438px;
+    top: 11px;
     width: 123px;
+}
+
+#sideSearchContainerAlerts {
+    width: 120px;
+    // position: relative;
+}
+
+#filterIconAlerts {
+    position: absolute;
+    color: rgba(0,0,0, .3);
+    cursor: pointer;
+    transition: .3s ease-in;
+    left: -16px;
+    top: 251px;
+    font-size: 15px;
 }
 
 .numbers {
@@ -100,7 +115,7 @@
 .cockpit {
 	width: 100%;
 	padding-left: 30px;
-	height: 260px;
+	height: 285px;
 	border-bottom: 1px rgba(0,0,0, .15) solid;
 }
 
@@ -152,7 +167,7 @@
 .minRow {
 	margin-left: 12px;
     width: 41px;
-	padding-bottom: 3px;
+	padding-bottom: 4px;
 }
 
 .summaryBoxCategory {
@@ -268,7 +283,7 @@
 
 .feed {
 	width: 600px;
-	height: 264px;
+	height: 244px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	// background-color: pink;

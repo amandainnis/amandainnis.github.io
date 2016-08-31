@@ -60,29 +60,6 @@
 
         	</div>
 
-
-        	<div id="filterSortContainerAlerts">
-                <div id="sideSearchContainer">
-                    
-                    <!-- <i class="mdi mdi-magnify sideSearchIcon"></i> -->
-                    <i id="filterIcon" class="mdi mdi-filter"></i>
-                    <input type="text" class="sideSearch" placeholder="Filter">
-                    <span id="clear">x</span>
-                </div>
-                <!-- <div class="sortContainer">
-                    <div id="sortSection">
-                        <span id="AZ">Sort by</span><i class="mdi mdi-menu-down sortMenu"></i>
-                    </div>
-                    <ul id="sortMenuList">
-                        <li id="sort1">Name</li>
-                        <li id="sort2">Company</li>
-                        <li id="sort3">Rank</li>
-                        <li id="sort4">Last TP</li>
-                        <li id="sort5">Segmentation</li>
-                    </ul>
-                </div> -->
-                <!-- end of sort container -->
-            </div>
         </div>
         <!-- end of alert header -->
 
@@ -131,19 +108,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">9</span>
+        				<span id="riskSummaryMy" class="numberSummaryBoxMini">9</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">4</span>
+        				<span id="riskSummaryDsk" class="numberSummaryBoxMini">4</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">14</span>
+        				<span id="riskSummaryCov" class="numberSummaryBoxMini">14</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">14</span>
+        				<span id="riskSummaryVip" class="numberSummaryBoxMini">14</span>
         			</div>
         			
         		</div>
@@ -162,19 +139,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">14</span>
+        				<span id ="tradeSummaryMy" class="numberSummaryBoxMini">14</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">10</span>
+        				<span id="tradeSummaryDsk" class="numberSummaryBoxMini">10</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">17</span>
+        				<span id="tradeSummaryCov" class="numberSummaryBoxMini">17</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">31</span>
+        				<span id="tradeSummaryVip" class="numberSummaryBoxMini">31</span>
         			</div>
         			
         		</div>
@@ -193,19 +170,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">3</span>
+        				<span id="stratSummaryMy" class="numberSummaryBoxMini">3</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">7</span>
+        				<span id="stratSummaryDsk" class="numberSummaryBoxMini">7</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">6</span>
+        				<span id="stratSummaryCov" class="numberSummaryBoxMini">6</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">2</span>
+        				<span id="stratSummaryVip" class="numberSummaryBoxMini">2</span>
         			</div>
         			
         		</div>
@@ -224,19 +201,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">7</span>
+        				<span id="salesSummaryMy" class="numberSummaryBoxMini">7</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">8</span>
+        				<span id="salesSummaryDsk" class="numberSummaryBoxMini">8</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">11</span>
+        				<span id="salesSummaryCov" class="numberSummaryBoxMini">11</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">12</span>
+        				<span id="salesSummaryVip" class="numberSummaryBoxMini">12</span>
         			</div>
         			
         		</div>
@@ -255,19 +232,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">4</span>
+        				<span id="perfSummaryMy" class="numberSummaryBoxMini">4</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">9</span>
+        				<span id="perfSummaryDsk" class="numberSummaryBoxMini">9</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">19</span>
+        				<span id="perfSummaryCov" class="numberSummaryBoxMini">19</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">14</span>
+        				<span id="perfSummaryVip" class="numberSummaryBoxMini">14</span>
         			</div>
         			
         		</div>
@@ -287,19 +264,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">11</span>
+        				<span id="prTrdSummaryMy" class="numberSummaryBoxMini">11</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">10</span>
+        				<span id="prTrdSummaryDsk" class="numberSummaryBoxMini">10</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">13</span>
+        				<span id="prTrdSummaryCov" class="numberSummaryBoxMini">13</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">17</span>
+        				<span id="prTrdSummaryVip" class="numberSummaryBoxMini">17</span>
         			</div>
         			
         		</div>
@@ -318,19 +295,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">2</span>
+        				<span id="systmSummaryMy" class="numberSummaryBoxMini">2</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">7</span>
+        				<span id="systmSummaryDsk" class="numberSummaryBoxMini">7</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">6</span>
+        				<span id="systmSummaryCov" class="numberSummaryBoxMini">6</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">6</span>
+        				<span id="systmSummaryVip" class="numberSummaryBoxMini">6</span>
         			</div>
         			
         		</div>
@@ -349,19 +326,19 @@
         		<div class="summaryBoxRight">
         			<div class="minRow">
         				<span class="summaryBoxCategory">My</span>
-        				<span class="numberSummaryBoxMini">8</span>
+        				<span id="mrktSummaryMy" class="numberSummaryBoxMini">8</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Dsk</span>
-        				<span class="numberSummaryBoxMini">9</span>
+        				<span id="mrktSummaryDsk" class="numberSummaryBoxMini">9</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Cov</span>
-        				<span class="numberSummaryBoxMini">9</span>
+        				<span id="mrktSummaryCov" class="numberSummaryBoxMini">9</span>
         			</div>
         			<div class="minRow">
         				<span class="summaryBoxCategory">Vip</span>
-        				<span class="numberSummaryBoxMini">9</span>
+        				<span id="mrktSummaryVip" class="numberSummaryBoxMini">9</span>
         			</div>
         			
         		</div>
@@ -372,6 +349,18 @@
         		</div>
         	</div>
         	
+        	<div id="filterSortContainerAlerts" class="clearfix">
+                <div id="sideSearchContainerAlerts">
+                    <i id="filterIconAlerts" class="mdi mdi-filter"></i>
+                    <input type="text" class="sideSearch" placeholder="Filter">
+                    <span id="clear">x</span>
+                </div>
+                
+            </div>
+
+
+
+
         </div>
         <!-- end of cockpit -->
         <div class="feed">
