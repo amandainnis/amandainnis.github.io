@@ -100,7 +100,7 @@
         <!-- end of alertSummary -->
 
         <div class="cockpit">
-        	<div class="summaryBox">
+        	<div id="riskSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Risk</div>
         			<div id="riskSummary" class="numberSummaryBox">41</div>
@@ -131,7 +131,7 @@
         		</div>
         	</div>
 
-        	<div class="summaryBox">
+        	<div id="tradeSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Trade</div>
         			<div id="tradeSummary" class="numberSummaryBox">73</div>
@@ -162,7 +162,7 @@
         		</div>
         	</div>
 
-        	<div class="summaryBox">
+        	<div id="stratSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Strat</div>
         			<div id="stratSummary" class="numberSummaryBox">18</div>
@@ -193,7 +193,7 @@
         		</div>
         	</div>
 
-        	<div class="summaryBox">
+        	<div id="salesSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Sales</div>
         			<div id="salesSummary" class="numberSummaryBox">38</div>
@@ -224,7 +224,7 @@
         		</div>
         	</div>
 
-        	<div class="summaryBox">
+        	<div id="perfSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Perf</div>
         			<div id="perfSummary" class="numberSummaryBox">46</div>
@@ -256,7 +256,7 @@
         	</div>
 
 
-        	<div class="summaryBox">
+        	<div id="prTrdSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Pr-Trd</div>
         			<div id="prTrdSummary" class="numberSummaryBox">51</div>
@@ -287,7 +287,7 @@
         		</div>
         	</div>
 
-        	<div class="summaryBox">
+        	<div id="systmSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Systm</div>
         			<div id="systmSummary" class="numberSummaryBox">21</div>
@@ -318,7 +318,7 @@
         		</div>
         	</div>
 
-        	<div class="summaryBox">
+        	<div id="mrktSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Mrkt</div>
         			<div id="mrktSummary" class="numberSummaryBox">35</div>
@@ -348,28 +348,35 @@
         			<div class="blueMetric mrkt"></div>
         		</div>
         	</div>
-        	
-        	<div id="filterSortContainerAlerts" class="clearfix">
-                <div id="sideSearchContainerAlerts">
-                    <i id="filterIconAlerts" class="mdi mdi-filter"></i>
-                    <input type="text" class="sideSearch" placeholder="Filter">
-                    <span id="clear">x</span>
+        	<div class="filterRow clearfix">
+        		 <div id="filterSortContainerAlerts">
+	                <div id="sideSearchContainerAlerts">
+	                    <i id="filterIconAlerts" class="mdi mdi-filter"></i>
+	                    <input type="text" class="sideSearchAlerts" placeholder="Filter">
+	                    <span id="clearAlerts">x</span>
                 </div>
                 
-            </div>
-
-
-
+         </div>
+         <!-- end of filter -->
+        	</div>
 
         </div>
         <!-- end of cockpit -->
+
+
+       
+
+
+
+
+
         <div class="feed">
          <div class="alertRow clearfix">
-            <div class="alertType">
+            <div class="alertType tradeAlert">
             	<div class="alertText">TRD</div>
             </div>
             <div class="contactGridRowTextWrapper">
-                <span class="nameText">DVD ADV (BGIBES):</span><span class="companyText">Sell DVD 4,968 INSTINCT @2.11
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
               Day (or session) breached 100% 143.33333 (adv%)
                11:34:05</span>
             </div>
@@ -385,11 +392,29 @@
         <!-- end of alertRow -->
 
         <div class="alertRow clearfix">
-            <div class="alertType">
-            	<div class="alertText">TRD</div>
+            <div class="alertType riskAlert">
+            	<div class="alertText">RSK</div>
             </div>
             <div class="contactGridRowTextWrapper">
-                <span class="nameText">DVD ADV (BGIBES):</span><span class="companyText">Sell DVD 4,968 INSTINCT @2.11
+                <span class="messageTitle">Error Msg:</span><span class="messageText">Restricted symbol has no allowable exemptions
+                11:35:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+            	<!-- <i class="mdi mdi-information"></i> -->
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+        <div class="alertRow clearfix">
+            <div class="alertType performanceAlert">
+            	<div class="alertText">PER</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">Price Path</span><span class="messageText">Murakami rose and fell 1Q84 Sell Cap Div 
               Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
             </div>
             <div class="alertIcons">
@@ -403,29 +428,11 @@
         <!-- end of alertRow -->
 
         <div class="alertRow clearfix">
-            <div class="alertType">
-            	<div class="alertText">TRD</div>
+            <div class="alertType stratAlert">
+            	<div class="alertText">STR</div>
             </div>
             <div class="contactGridRowTextWrapper">
-                <span class="nameText">DVD ADV (BGIBES):</span><span class="companyText">Sell DVD 4,968 INSTINCT @2.11
-              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
-            </div>
-            <div class="alertIcons">
-            	<i class="mdi mdi-information-variant"></i>
-            	<!-- <i class="mdi mdi-information"></i> -->
-	            <i class="mdi mdi-link-variant"></i>
-	            <i class="mdi mdi-check"></i>
-	            <i class="mdi mdi-dots-vertical gridDots"></i>
-            </div>
-        </div>
-        <!-- end of alertRow -->
-
-        <div class="alertRow clearfix">
-            <div class="alertType">
-            	<div class="alertText">TRD</div>
-            </div>
-            <div class="contactGridRowTextWrapper">
-                <span class="nameText">DVD ADV (BGIBES):</span><span class="companyText">Sell DVD 4,968 INSTINCT @2.11
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
               Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
             </div>
             <div class="alertIcons">
@@ -439,11 +446,99 @@
         <!-- end of alertRow -->
 
          <div class="alertRow clearfix">
-            <div class="alertType">
-            	<div class="alertText">TRD</div>
+            <div class="alertType salesAlert">
+            	<div class="alertText">SAL</div>
             </div>
             <div class="contactGridRowTextWrapper">
-                <span class="nameText">DVD ADV (BGIBES):</span><span class="companyText">Sell DVD 4,968 INSTINCT @2.11
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+         <div class="alertRow clearfix">
+            <div class="alertType prTrdAlert">
+            	<div class="alertText">PTR</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+        <div class="alertRow clearfix">
+            <div class="alertType systmAlert">
+            	<div class="alertText">SYS</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+        <div class="alertRow clearfix">
+            <div class="alertType mktAlert">
+            	<div class="alertText">MKT</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+
+
+         <div class="alertRow clearfix">
+            <div class="alertType prTrdAlert">
+            	<div class="alertText">PTR</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+
+         <div class="alertRow clearfix">
+            <div class="alertType stratAlert">
+            	<div class="alertText">STR</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
               Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
             </div>
             <div class="alertIcons">
@@ -455,6 +550,124 @@
             </div>
         </div>
         <!-- end of alertRow -->
+
+         <div class="alertRow clearfix">
+            <div class="alertType mktAlert">
+            	<div class="alertText">MKT</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+
+
+
+         <div class="alertRow clearfix">
+            <div class="alertType riskAlert">
+            	<div class="alertText">RSK</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">Error Msg:</span><span class="messageText">Restricted symbol has no allowable exemptions
+                11:35:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+            	<!-- <i class="mdi mdi-information"></i> -->
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+
+
+
+        <div class="alertRow clearfix">
+            <div class="alertType tradeAlert">
+            	<div class="alertText">TRD</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%)
+               11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+            	<!-- <i class="mdi mdi-information"></i> -->
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+            
+        </div>
+        <!-- end of alertRow -->
+
+
+
+        <div class="alertRow clearfix">
+            <div class="alertType performanceAlert">
+            	<div class="alertText">PER</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">Price Path</span><span class="messageText">Murakami rose and fell 1Q84 Sell Cap Div 
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+            	<!-- <i class="mdi mdi-information"></i> -->
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+
+         <div class="alertRow clearfix">
+            <div class="alertType salesAlert">
+            	<div class="alertText">SAL</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+         <div class="alertRow clearfix">
+            <div class="alertType systmAlert">
+            	<div class="alertText">SYS</div>
+            </div>
+            <div class="contactGridRowTextWrapper">
+                <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+              Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+            </div>
+            <div class="alertIcons">
+            	<i class="mdi mdi-information-variant"></i>
+	            <i class="mdi mdi-link-variant"></i>
+	            <i class="mdi mdi-check"></i>
+	            <i class="mdi mdi-dots-vertical gridDots"></i>
+            </div>
+        </div>
+        <!-- end of alertRow -->
+
+
     
 
        </div>

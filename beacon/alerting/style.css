@@ -42,27 +42,7 @@
 }
 
 
-#filterSortContainerAlerts {
-	position: relative;
-	left: 438px;
-    top: 11px;
-    width: 123px;
-}
 
-#sideSearchContainerAlerts {
-    width: 120px;
-    // position: relative;
-}
-
-#filterIconAlerts {
-    position: absolute;
-    color: rgba(0,0,0, .3);
-    cursor: pointer;
-    transition: .3s ease-in;
-    left: -16px;
-    top: 251px;
-    font-size: 15px;
-}
 
 .numbers {
 	font-family: 'Cabin Condensed', sans-serif;
@@ -131,6 +111,10 @@
     box-sizing: border-box;
 }
 
+#riskSummaryBox:hover ~ .risk{
+	background-color: #fcf1f3;
+}
+
 .summaryBoxLeft {
 	width: 50%;
 	float: left;
@@ -165,9 +149,17 @@
 	padding-top: 16px;
 }
 .minRow {
-	margin-left: 12px;
-    width: 41px;
-	padding-bottom: 4px;
+	margin-left: 11px;
+    width: 46px;
+    padding: 1px 3px 2px 2px;
+	// margin-bottom: 1px;
+	transition: .2s ease-in;
+}
+
+.minRow:hover {
+	background-color: #f9fdc5;
+	transition: .2s ease-in;
+	// cursor: pointer;
 }
 
 .summaryBoxCategory {
@@ -195,7 +187,7 @@
 .metricBar {
 	background-color: #C9CFD7;
 	position: relative;
-	top: 73px;
+	top: 74px;
 	width: 100%;
 	height: 12px;
 }
@@ -204,6 +196,7 @@
 	height: 100%;
 	min-width: 1px;
 	background-color: #2196F3;
+	transition: .3s; 
 }
 
 .lineMetric {
@@ -281,6 +274,76 @@
 	left: 60px;
 }
 
+
+/*////////////// FILTER /////////////////////////*/
+.filterRow {
+	width: 100%;
+	height: 31px;
+	position: relative;
+	top: 8px;
+	clear: both;
+}
+
+#filterSortContainerAlerts {
+	position: relative;
+	left: 438px;
+    // top: 11px;
+    width: 123px;
+    height: 30px;
+}
+
+.sideSearchAlerts {
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    border-bottom: 1px solid #bababa;
+    padding: 5px 0 4px 5px;
+    transition: .3s ease-in;
+}
+
+#clearAlerts {
+    position: relative;
+    left: -14px;
+    top: 1px;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+    padding: 0px 4px 2px 5px;
+    border-radius: 50%;
+    transition: .2s ease-in;
+}
+
+
+#clearAlerts:hover {
+	background-color: rgba(0, 0, 0, 0.06);
+	transition: .2s ease-in;
+}
+
+
+#sideSearchContainerAlerts {
+    width: 120px;
+    position: relative;
+    left: 5px;
+    // position: relative;
+}
+
+#filterIconAlerts {
+    position: absolute;
+    color: rgba(0,0,0, .3);
+    cursor: pointer;
+    transition: .3s ease-in;
+    left: -16px;
+    top:  7px;
+    font-size: 15px;
+}
+
+
+/*/////////////////////// FEED ////////////////////////*/
+
 .feed {
 	width: 600px;
 	height: 244px;
@@ -323,6 +386,52 @@
 	letter-spacing: .2px;
 }
 
+/*/////////////////////////////////////////// ALERT COLORS ///////////////////////*/
+.riskAlert {
+	background-color: #F7A099; 
+	background-color: #ED75C1;
+	background-color: #B46CEE;
+	// background-color: #EBA8A8;
+}
+
+// .riskAlert .alertText {
+// 	color: rgba(0,0,0, .7);
+// }
+
+.tradeAlert {
+	background-color: #14C1AC;
+}
+
+.performanceAlert {
+	background-color: #0856AF;
+}
+
+.stratAlert {
+	background-color: #855280;
+	background-color: #625285;
+}
+
+.salesAlert {
+	background-color: #C6C50D;
+}
+
+
+.prTrdAlert {
+	background-color: #3FEEB1;
+	background-color: #26B470;
+	background-color: #46d18e;
+}
+
+
+.systmAlert {
+	background-color: #2E415A;
+}
+
+.mktAlert {
+	background-color: #268EB4;
+}
+
+
 .contactGridRowTextWrapper {
     width: 62%;
     float: left;
@@ -332,7 +441,7 @@
     // text-overflow: ellipsis;
 }
 
-.nameText {
+.messageTitle {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 1em;
@@ -343,18 +452,19 @@
     color: rgba(0, 0, 0, .9);
 }
 
-.companyText {
+.messageText {
     font-family: 'Roboto';
         /* font-family: 'Roboto Condensed'; */
     font-weight: 400;
     font-size: 1em; 
-    letter-spacing: .1px;
+    // letter-spacing: .1px;
     line-height: 1.4em;
     color: rgba(0, 0, 0, .54);
     /* white-space: nowrap; */
     /* text-overflow: ellipsis; */
     position: relative;
     z-index: 1;
+    padding-left: 5px;
 }
 
 

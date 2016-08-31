@@ -371,6 +371,34 @@ $(document).ready(function(){
 	});
 	// end of proAct
 
+	$('#riskSummaryBox')
+		.mouseenter(function(){
+		$('.risk').addClass('riskAlert');  
+		})
+		.mouseleave(function(){
+		$('.risk').removeClass('riskAlert');	
+		});
+
+	$('#tradeSummaryBox')
+		.mouseenter(function(){
+		$('.trade').addClass('tradeAlert');  
+		})
+		.mouseleave(function(){
+		$('.trade').removeClass('tradeAlert');	
+		});
+
+stratSummaryBox
+salesSummaryBox
+perfSummaryBox
+prTrdSummaryBox
+systmSummaryBox
+mrktSummaryBox
+
+	$('#clearAlerts').click(function(){
+        $('.sideSearchAlerts').val("");
+        // $('#filterIcon.mdi-filter').removeClass('blue');
+
+      });
 
 });
 // end of doc ready
