@@ -49,11 +49,11 @@
     width: 123px;
 }
 
-// .numbers {
-// 	font-family: 'Cabin Condensed', sans-serif;
-// }
+.numbers {
+	font-family: 'Cabin Condensed', sans-serif;
+}
 
-.alertSummary {
+#alertSummaryHeadings {
 	height: 70px;
 	padding-left: 30px;
 	padding-top: 10px;
@@ -66,7 +66,7 @@
 	margin-right: 7.7%;
 }
 
-#total {
+.summaryTotal {
 	padding-right: 5.6%;
 	margin-right: 5.6%;
 	border-right: 1px #DCE2E8 solid;
@@ -81,6 +81,10 @@
 	padding-bottom: 3px;
     
 }
+
+.summary .numbers:hover {
+	cursor: pointer;
+} 
 
 .numbers.selectedNumbers {
 	border-bottom: 6px #0069CB solid;
