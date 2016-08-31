@@ -4,9 +4,10 @@
 	<link rel="stylesheet" type="text/css" href="materialdesignicons.css">
 	<link rel="stylesheet" type="text/css" href="grid/styleContacts.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="grid/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
     <!-- <script type="text/javascript" src="jquery-1.11.3.js"></script> -->
     <script type="text/javascript" src="grid/script.js"></script>
+    <script type="text/javascript" src="alert.js"></script>
 	<title></title>
 </head>
 <body>
@@ -53,9 +54,9 @@
 
         <div class="alertHeader">
         	<div class="allOpenClosed">
-        		<span class="notSelected">All</span>
-        		<span class="selected">Open</span>
-        		<span class="notSelected">Closed</span>
+        		<span id="allAlerts" class="notSelected">All</span>
+        		<span id="openAlerts" class="selected">Open</span>
+        		<span id="closedAlerts" class="notSelected">Closed</span>
 
         	</div>
 
@@ -113,7 +114,7 @@
 
         	<div class="summary">
         		<div class="summaryLabel">ProAct.</div>
-        		<div class="numbers">99</div>
+        		<div class="numbers">82</div>
         	</div>
         	
 
@@ -125,7 +126,7 @@
         	<div class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Risk</div>
-        			<div class="numberSummaryBox">411</div>
+        			<div class="numberSummaryBox">41</div>
         		</div>
         		<div class="summaryBoxRight">
         			<div class="minRow">
