@@ -138,6 +138,25 @@
 	
 }
 
+// .dot {
+// 	width: 5px;
+// 	height: 5px;
+// 	border-radius: 50%;
+// 	position: absolute;
+// 	top: 3px;
+// 	left: 2px;
+
+// }
+	.dot {
+    width: 2px;
+    height: 105px;
+    /* border-radius: 50%; */
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+
 .numberSummaryBox {
 	// font-family: 'Roboto Condensed', sans-serif;
 	// font-weight: 700;
@@ -381,7 +400,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
-	font-weight: 500;
+	// font-weight: 500;
 	padding-top: 12px;
 	letter-spacing: .2px;
 }
@@ -391,6 +410,8 @@
 	background-color: #F7A099; 
 	background-color: #ED75C1;
 	background-color: #B46CEE;
+	    background-color: #cf6cee;
+	// background-color: #ddee03;
 	// background-color: #EBA8A8;
 }
 
@@ -409,26 +430,40 @@
 .stratAlert {
 	background-color: #855280;
 	background-color: #625285;
+	background-color: #f9fdc5;
+	background-color: #ddee03;
+	background-color: #B46CEE;
+	background-color: #9770f2;
 }
 
 .salesAlert {
 	background-color: #C6C50D;
+	background-color: #2E415A;
 }
 
 
 .prTrdAlert {
 	background-color: #3FEEB1;
-	background-color: #26B470;
+	
 	background-color: #46d18e;
+	background-color: #39a872;
+	background-color: #26B470;
+	    background-color: #46a9d1;
+	        background-color: #6cbdee;
 }
 
 
 .systmAlert {
-	background-color: #2E415A;
+	background-color: #88a8b5;
+	    background-color: #627c87;
+	        background-color: #7e96a0;
 }
 
 .mktAlert {
 	background-color: #268EB4;
+	background-color: #f0cd67;
+	    background-color: #785d8b;
+	        background-color: #4f38a4;
 }
 
 

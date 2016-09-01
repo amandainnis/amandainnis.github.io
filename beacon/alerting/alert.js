@@ -17,7 +17,10 @@ var prTrdSummary = $('#prTrdSummary');
 var systmSummary = $('#systmSummary');
 var mrktSummary = $('#mrktSummary');
 
+
+
 $(document).ready(function(){
+	$('.dot').hide();
 
 	$('#total').click(function(){
 		$('.summary .numbers').removeClass('selectedNumbers');
