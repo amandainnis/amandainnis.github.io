@@ -20,6 +20,8 @@ var mrktSummary = $('#mrktSummary');
 
 
 $(document).ready(function(){
+
+
 	$('.dot').hide();
 
 	$('#total').click(function(){

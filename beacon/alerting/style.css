@@ -1,5 +1,26 @@
 @import 'https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
+// @import url("//hello.myfonts.net/count/320361");
+
+  
+// @font-face {font-family: 'TTCorals-Regular';src: url('webfonts/320361_0_0.eot');src: url('webfonts/320361_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/320361_0_0.woff2') format('woff2'),url('webfonts/320361_0_0.woff') format('woff'),url('webfonts/320361_0_0.ttf') format('truetype');}
+ 
+  
+// @font-face {font-family: 'TTCorals-Bold';src: url('webfonts/320361_1_0.eot');src: url('webfonts/320361_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/320361_1_0.woff2') format('woff2'),url('webfonts/320361_1_0.woff') format('woff'),url('webfonts/320361_1_0.ttf') format('truetype');}
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Yantramanav:400,500,700,900';
+
+@font-face {
+font-family: 'Gotham Narrow Book';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
+}
+
+@import 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700';
 
 
 .clearfix:after {
@@ -22,15 +43,27 @@
 }
 .alertHeader {
 	height: 49px;
+	    // height: 53px;
 	border-bottom: 1px rgba(0,0,0, .15) solid;
 }
 
+// .alertHeaderTitle {
+// 	margin-left: 30px;
+//     padding-top: 19px;
+//     font-size: 20px;
+//     font-weight: 400;
+//     float: left;
+//     color: rgba(0, 0, 0, .81);
+// }
+
 .allOpenClosed {
 	margin-left: 30px;
+	// margin-right: 30px;
 	padding-top: 22px;
 	font-size: 16px;
 	font-weight: 500;
 	color: rgba(0,0,0, .44);
+	// float: right;
 }
 
 .allOpenClosed span {
@@ -138,23 +171,23 @@
 	
 }
 
-// .dot {
-// 	width: 5px;
-// 	height: 5px;
-// 	border-radius: 50%;
-// 	position: absolute;
-// 	top: 3px;
-// 	left: 2px;
+.dot {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 2px;
 
-// }
-	.dot {
-    width: 2px;
-    height: 105px;
-    /* border-radius: 50%; */
-    position: absolute;
-    top: 1px;
-    left: 1px;
 }
+// 	.dot {
+//     width: 2px;
+//     height: 105px;
+//      border-radius: 50%; 
+//     position: absolute;
+//     top: 1px;
+//     left: 1px;
+// }
 
 
 .numberSummaryBox {
@@ -175,11 +208,11 @@
 	transition: .2s ease-in;
 }
 
-.minRow:hover {
-	background-color: #f9fdc5;
-	transition: .2s ease-in;
-	// cursor: pointer;
-}
+// .minRow:hover {
+// 	background-color: #f9fdc5;
+// 	transition: .2s ease-in;
+// 	// cursor: pointer;
+// }
 
 .summaryBoxCategory {
 	font-size: 12px;
@@ -194,7 +227,7 @@
 .numberSummaryBoxMini {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-family: 'Cabin Condensed', sans-serif;
-
+	// font-weight: 700;
 	font-size: 14px;
 	color: rgba(0,0,0, .9);
 	text-align: right;
@@ -382,6 +415,8 @@
 .alertRow:hover {
 	background-color: aliceblue;
 	background-color: #f5f5f5;
+	background-color: #f3f8fc;
+	background-color: #f4f6f8;
 	transition: .3s;
 }
 
@@ -403,6 +438,8 @@
 	// font-weight: 500;
 	padding-top: 12px;
 	letter-spacing: .2px;
+	// color: #F4F6F8;
+
 }
 
 /*/////////////////////////////////////////// ALERT COLORS ///////////////////////*/
@@ -410,18 +447,30 @@
 	background-color: #F7A099; 
 	background-color: #ED75C1;
 	background-color: #B46CEE;
-	    background-color: #cf6cee;
-	// background-color: #ddee03;
-	// background-color: #EBA8A8;
+	background-color: #e67979;
+	background-color: #cf6cee;
+	background-color: #f66f64;
+    background-color: rgb(209, 213, 68);
+    background-color: #cf6cee;
+    background-color: #fd857b;
+	    
 }
 
-// .riskAlert .alertText {
-// 	color: rgba(0,0,0, .7);
-// }
+.riskAlert .alertText {
+	color: rgba(0,0,0, .7);
+	color: #f9fdc5;
+	color: white;
+}
 
 .tradeAlert {
+	background-color: #32b5a5;
 	background-color: #14C1AC;
+	background-color: #5ac5b8;
 }
+
+// .tradeAlert .alertText {
+// 	color: aliceblue;
+// }
 
 .performanceAlert {
 	background-color: #0856AF;
@@ -431,14 +480,22 @@
 	background-color: #855280;
 	background-color: #625285;
 	background-color: #f9fdc5;
-	background-color: #ddee03;
-	background-color: #B46CEE;
+	background-color: #ddee03; 
+	// good yellow above
+	
 	background-color: #9770f2;
+	background-color: #957ecb;
+	background-color: #a18fc9;
+	    background-color: #c6b0f8;
+	    background-color: #B46CEE;
 }
 
 .salesAlert {
 	background-color: #C6C50D;
 	background-color: #2E415A;
+	background-color: #485f7d;
+	    background-color: #1c3a60;
+
 }
 
 
@@ -448,10 +505,16 @@
 	background-color: #46d18e;
 	background-color: #39a872;
 	background-color: #26B470;
-	    background-color: #46a9d1;
-	        background-color: #6cbdee;
+	background-color: #46a9d1;
+    background-color: #6cbdee;
+    background-color: #40a2de;
 }
 
+// .prTrdAlert .alertText {
+// 	color: #f6fd9b;
+// 	color: #d6fffe;
+// 	color: white;
+// }
 
 .systmAlert {
 	background-color: #88a8b5;
@@ -464,8 +527,14 @@
 	background-color: #f0cd67;
 	    background-color: #785d8b;
 	        background-color: #4f38a4;
+	background-color: #604f9e;
+	    background-color: #6550b0;
 }
 
+// .mktAlert .alertText {
+// 	color: #f6fd9b;
+// 	color: #fbffca;
+// }
 
 .contactGridRowTextWrapper {
     width: 62%;
@@ -516,14 +585,51 @@
     // background-color: pink;
 }
 
-.mdi-information-variant, .mdi-link-variant, .mdi-check, .mdi-information {
-	padding-right: 11px;
+.mdi-open-in-new {
+	font-size: 22px;
+}
+
+.mdi-information-variant, .mdi-link-variant, .mdi-check, .mdi-information, .mdi-open-in-new {
+	padding: 2px;
+    margin-right: 7px;
+    transition: .3s;
+	// background-color: yellow;
+}
+
+.mdi-information-variant {
+	border-radius: 50%;
+	transition: .3s;
+	// background-color: #f4f6f8;
+}
+
+.mdi-information-variant:hover {
+	background-color: #485f7d;
+	background-color: #C9CFD7;
+	// color: white;
+	transition: .3s;
+}
+
+
+
+.mdi-open-in-new:hover {
+	background-color: #32b5a5;
+	background-color: #C9CFD7;
+	transition: .2s;
+}
+
+.mdi-check:hover {
+	color: #32b5a5;
+	background-color: #f9fdc5;
+	background-color: #C9CFD7;
+	transition: .3s;
+	// cursor: pointer;
 }
 
 .gridDots {
     color: rgba(0, 0, 0, .8);
     font-size: 22px;
     float: right;
+     padding: 2px;
     position: relative;
     z-index: 2;
     // margin-right: 5%;
