@@ -1,26 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700';
+/*/ @import 'https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700';*/
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
-// @import url("//hello.myfonts.net/count/320361");
 
-  
-// @font-face {font-family: 'TTCorals-Regular';src: url('webfonts/320361_0_0.eot');src: url('webfonts/320361_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/320361_0_0.woff2') format('woff2'),url('webfonts/320361_0_0.woff') format('woff'),url('webfonts/320361_0_0.ttf') format('truetype');}
- 
-  
-// @font-face {font-family: 'TTCorals-Bold';src: url('webfonts/320361_1_0.eot');src: url('webfonts/320361_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/320361_1_0.woff2') format('woff2'),url('webfonts/320361_1_0.woff') format('woff'),url('webfonts/320361_1_0.ttf') format('truetype');}
-
-
-
-@import 'https://fonts.googleapis.com/css?family=Yantramanav:400,500,700,900';
-
-@font-face {
-font-family: 'Gotham Narrow Book';
-font-style: normal;
-font-weight: normal;
-src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
-}
-
-@import 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700';
 
 
 .clearfix:after {
@@ -77,9 +57,9 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 
 
 
-.numbers {
-	font-family: 'Cabin Condensed', sans-serif;
-}
+// .numbers {
+// 	font-family: 'Cabin Condensed', sans-serif;
+// }
 
 #alertSummaryHeadings {
 	height: 70px;
@@ -91,12 +71,13 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 .summary {
 	display: inline-block;
 	text-align: center;
-	margin-right: 7.7%;
+	margin-right: 6.9%;
 }
 
 .summaryTotal {
-	padding-right: 5.6%;
-	margin-right: 5.6%;
+	margin-left: 1%;
+	padding-right: 4.6%;
+	margin-right: 4.6%;
 	border-right: 1px #DCE2E8 solid;
 }
 
@@ -104,10 +85,12 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 	
 	font-family: 'Roboto Condensed', sans-serif;
 	font-family: 'Cabin Condensed', sans-serif;
-	font-size: 32px;
+	font-family: 'Roboto', sans-serif; 
+	// letter-spacing: -.7px;
+	font-size: 30px;
 	color: rgba(0,0,0, .9);
-	padding-bottom: 3px;
-    
+	padding-bottom: 5px;
+    font-weight: 500;
 }
 
 .summary .numbers:hover {
@@ -128,7 +111,7 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 .cockpit {
 	width: 100%;
 	padding-left: 30px;
-	height: 285px;
+	height: 280px;
 	border-bottom: 1px rgba(0,0,0, .15) solid;
 }
 
@@ -137,6 +120,7 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
     height: 107px;
     background-color: #F4F6F8;
     margin-top: 15px;
+    margin-top: 20px;
     margin-right: 15px;
     padding-top: 13px;
     position: relative;
@@ -194,8 +178,10 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 	// font-family: 'Roboto Condensed', sans-serif;
 	// font-weight: 700;
 	font-family: 'Cabin Condensed', sans-serif;
-
-	font-size: 32px;
+	font-family: 'Roboto', sans-serif; 
+	// letter-spacing: -.7px;
+	font-weight: 500;
+	font-size: 30px;
 	color: rgba(0,0,0, .9);
 	text-align: center;
 	padding-top: 16px;
@@ -217,6 +203,8 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 .summaryBoxCategory {
 	font-size: 12px;
 	color: rgba(0,0,0, .7);
+	font-family: 'Roboto', sans-serif; 
+	// letter-spacing: -.7px;
 	font-family: 'Roboto Condensed', sans-serif;
 
 	font-weight: 400;
@@ -226,14 +214,16 @@ src: local('Gotham Narrow Book'), url('GothamNarrow-Book.woff') format('woff');
 
 .numberSummaryBoxMini {
 	font-family: 'Roboto Condensed', sans-serif;
-	font-family: 'Cabin Condensed', sans-serif;
+	// font-family: 'Cabin Condensed', sans-serif;
+	// font-family: 'Roboto', sans-serif; 
+	
 	// font-weight: 700;
 	font-size: 14px;
 	color: rgba(0,0,0, .9);
 	text-align: right;
 	float: right;
-	// padding-top: 1px;
-	// padding-top: 15px;
+	letter-spacing: -.7px;
+
 }
 
 .metricBar {
