@@ -544,28 +544,28 @@ $(document).ready(function(){
 	});
 	// end of proAct
 
-	$('#riskSummaryBox')
+	$('.summaryBox this')
 		.mouseenter(function(){
-		$('.risk').addClass('riskAlert');  
+		$('.blueMetric').addClass('metricDarker');  
 		})
 		.mouseleave(function(){
-		$('.risk').removeClass('riskAlert');	
+		$('.blueMetric').removeClass('metricDarker');	
 		});
 
-	$('#tradeSummaryBox')
-		.mouseenter(function(){
-		$('.trade').addClass('tradeAlert');  
-		})
-		.mouseleave(function(){
-		$('.trade').removeClass('tradeAlert');	
-		});
+// 	$('#tradeSummaryBox')
+// 		.mouseenter(function(){
+// 		$('.trade').addClass('tradeAlert');  
+// 		})
+// 		.mouseleave(function(){
+// 		$('.trade').removeClass('tradeAlert');	
+// 		});
 
-stratSummaryBox
-salesSummaryBox
-perfSummaryBox
-prTrdSummaryBox
-systmSummaryBox
-mrktSummaryBox
+// stratSummaryBox
+// salesSummaryBox
+// perfSummaryBox
+// prTrdSummaryBox
+// systmSummaryBox
+// mrktSummaryBox
 
 	$('#clearAlerts').click(function(){
         $('.sideSearchAlerts').val("");
