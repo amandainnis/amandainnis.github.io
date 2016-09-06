@@ -190,7 +190,7 @@ $(document).ready(function(){
 	});
 
 
-	// $('.dot').hide();
+	$('.dot').hide();
 
 	$('#total').click(function(){
 		$('.summary .numbers').removeClass('selectedNumbers');
