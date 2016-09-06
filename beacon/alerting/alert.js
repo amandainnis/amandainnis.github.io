@@ -552,6 +552,11 @@ $(document).ready(function(){
 		$('.blueMetric').removeClass('metricDarker');	
 		});
 
+
+	$('#riskSummaryBox').on('click', function(){
+		$('.alertRow').hide();
+		$('.alertRow .alertFeed').show();
+	})
 // 	$('#tradeSummaryBox')
 // 		.mouseenter(function(){
 // 		$('.trade').addClass('tradeAlert');  

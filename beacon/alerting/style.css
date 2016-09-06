@@ -834,16 +834,17 @@ header {
   background-color: #6cbdee;
   background-color: #40a2de;
   background-color: #2196F3;
+  background-color: #1992c2;
 }
-/* line 781, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003781}}
+/* line 782, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003782}}
 .systmAlert {
   background-color: #88a8b5;
   background-color: #627c87;
   background-color: #7e96a0;
 }
-/* line 787, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003787}}
+/* line 788, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003788}}
 .mktAlert {
   background-color: #268EB4;
   background-color: #f0cd67;
@@ -852,15 +853,15 @@ header {
   background-color: #604f9e;
   background-color: #6550b0;
 }
-/* line 801, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003801}}
+/* line 802, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003802}}
 .contactGridRowTextWrapper {
   width: 62%;
   float: left;
   margin-left: 3%;
 }
-/* line 810, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003810}}
+/* line 811, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003811}}
 .messageTitle {
   font-family: 'Roboto';
   font-weight: 500;
@@ -870,8 +871,8 @@ header {
   display: inline-block;
   color: rgba(0, 0, 0, 0.9);
 }
-/* line 828, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003828}}
+/* line 829, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003829}}
 .messageText {
   font-family: 'Roboto';
   /* font-family: 'Roboto Condensed'; */
@@ -885,8 +886,8 @@ header {
   z-index: 1;
   padding-left: 5px;
 }
-/* line 851, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003851}}
+/* line 852, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003852}}
 .alertIcons {
   width: 141px;
   height: 26px;
@@ -897,13 +898,13 @@ header {
   top: 4px;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 864, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003864}}
+/* line 865, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003865}}
 .mdi-open-in-new {
   font-size: 22px;
 }
-/* line 868, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003868}}
+/* line 869, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003869}}
 .mdi-information-variant,
 .mdi-link-variant,
 .mdi-check,
@@ -913,36 +914,36 @@ header {
   margin-right: 7px;
   transition: .3s;
 }
-/* line 875, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003875}}
+/* line 876, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003876}}
 .mdi-information-variant {
   border-radius: 50%;
   transition: .3s;
 }
-/* line 881, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003881}}
+/* line 882, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003882}}
 .mdi-information-variant:hover {
   background-color: #485f7d;
   background-color: #C9CFD7;
   transition: .3s;
 }
-/* line 890, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003890}}
+/* line 891, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003891}}
 .mdi-open-in-new:hover {
   background-color: #32b5a5;
   background-color: #C9CFD7;
   transition: .2s;
 }
-/* line 896, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003896}}
+/* line 897, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003897}}
 .mdi-check:hover {
   color: #32b5a5;
   background-color: #f9fdc5;
   background-color: #C9CFD7;
   transition: .3s;
 }
-/* line 904, style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003904}}
+/* line 905, style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/amandainnis\/Desktop\/web folder HTML CSS\/amandainnis\.github\.io\/beacon\/alerting\/style\.less}line{font-family:\00003905}}
 .gridDots {
   color: rgba(0, 0, 0, 0.8);
   font-size: 22px;
