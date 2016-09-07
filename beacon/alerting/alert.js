@@ -544,19 +544,132 @@ $(document).ready(function(){
 	});
 	// end of proAct
 
-	$('.summaryBox this')
-		.mouseenter(function(){
-		$('.blueMetric').addClass('metricDarker');  
-		})
-		.mouseleave(function(){
-		$('.blueMetric').removeClass('metricDarker');	
-		});
+	// $('.summaryBox this')
+	// 	.mouseenter(function(){
+	// 	$('.blueMetric').addClass('metricDarker');  
+	// 	})
+	// 	.mouseleave(function(){
+	// 	$('.blueMetric').removeClass('metricDarker');	
+	// 	});
 
 
-	$('#riskSummaryBox').on('click', function(){
-		$('.alertRow').hide();
-		$('.alertRow .alertFeed').show();
-	})
+	// $('#riskSummaryBox').on('click', function(){
+	// 	$('.alertRow').hide();
+	// 	$('.alertRow.riskFeed').toggle();
+	// });
+// var filter = false;
+
+
+
+// $( '#cockpit' ).on( 'click', '.summaryBox', function( event ) {
+//     console.log( "Hello." );
+//     filter === true;
+//     $('.alertRow').hide();
+// });
+
+
+
+// $('#riskSummaryBox').on('click', function(){
+// 	if (filter === true) {
+// 		$('#riskSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow.riskFeed').toggle();
+// 		console.log("filter");
+// 	}
+// 		else {
+// 			console.log(filter);
+// 		}
+// 	});
+
+
+
+
+
+
+
+
+
+//////////////////  FUNCTIONAL BUT BEGINS WITH HIDDEN FEED   ////////////////////////
+
+// $('.alertRow').hide();
+	
+$('#riskSummaryBox').on('click', function(){
+	$('#riskSummaryBox').toggleClass('summaryClick');
+	$('.alertRow').toggle();
+		$('.alertRow.riskFeed').toggle();
+		
+	});
+
+$('#tradeSummaryBox').on('click', function(){
+		$('#tradeSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.tradeFeed').toggle();
+	});
+
+$('#stratSummaryBox').on('click', function(){
+		$('#stratSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.stratFeed').toggle();
+	});
+
+$('#salesSummaryBox').on('click', function(){
+		$('#salesSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.salesFeed').toggle();
+	});
+
+$('#perfSummaryBox').on('click', function(){
+		$('#perfSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.perfFeed').toggle();
+	});
+
+$('#prTrdSummaryBox').on('click', function(){
+		$('#prTrdSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.prTrdFeed').toggle();
+	});
+
+$('#systmSummaryBox').on('click', function(){
+		$('#systmSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.sysFeed').toggle();
+	});
+
+$('#mrktSummaryBox').on('click', function(){
+		$('#mrktSummaryBox').toggleClass('summaryClick');
+		$('.alertRow').toggle();
+		$('.alertRow.mktFeed').toggle();
+	});
+////////end //////////  FUNCTIONAL BUT BEGINS WITH HIDDEN FEED   ///////// end///////////////
+
+
+// $( '#cockpit' ).on( 'click', '.summaryBox', function( event ) {
+// 	console.log( "You began the filter!" );
+// 	filter = true;
+// 	$('.alertRow').hide();
+// 	$('#riskSummaryBox').on('click', function(){
+// 		$('.riskFeed').show();
+// 	});
+
+// 	if (filter) {
+// 	$('#riskSummaryBox').on('click', function(){
+// 		$('.alertRow.riskFeed').show();
+// 	});
+
+// }
+
+// });
+
+
+
+ 
+// function() {
+    
+//     $( this ).click( function() { console.log( "This is after click 1" ); } );
+// };
+
+
+
 // 	$('#tradeSummaryBox')
 // 		.mouseenter(function(){
 // 		$('.trade').addClass('tradeAlert');  

@@ -1,15 +1,7 @@
-@import 'https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
 
-@import 'https://fonts.googleapis.com/css?family=Assistant:300,400,600,700,800|Biryani:200,300,400,600,700,800,900|Fira+Sans:300,400,500,700|Khula:300,400,600,700,800|Source+Sans+Pro:200,300,400,600,700,900|Ubuntu:300,400,500,700|Yantramanav:300,400,500,700,900';
 
-/*font-family: 'Assistant', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Khula', sans-serif;
-font-family: 'Yantramanav', sans-serif;
-font-family: 'Biryani', sans-serif;*/
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900';
+
 
 .clearfix:after {
 		visibility: hidden;
@@ -316,13 +308,7 @@ header{
 // 	font-family: 'Cabin Condensed', sans-serif;
 	font-family: 'Roboto', sans-serif; 
 // 	font-family: 'Assistant', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-// font-family: 'Ubuntu', sans-serif;
-// font-family: 'Fira Sans', sans-serif;
-// font-family: 'Khula', sans-serif;
-// font-family: 'Yantramanav', sans-serif;
-// font-family: 'Biryani', sans-serif;
-	// letter-spacing: -.7px;
+    font-family: 'Source Sans Pro', sans-serif;
 	font-size: 32px;
 	color: rgba(0,0,0, .9);
 	padding-bottom: 5px;
@@ -345,7 +331,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 }
 
-.cockpit {
+#cockpit {
 	width: 100%;
 	padding-left: 30px;
 	height: 280px;
@@ -371,6 +357,18 @@ font-family: 'Source Sans Pro', sans-serif;
 	transition: .3s;
 }
 
+.summaryClick {
+	background-color: #e0e9f1 !important;
+	transition: .3s;
+}
+
+.hidden {
+	display: none;
+}
+
+.showMe {
+	display: block !important;
+}
 
 #riskSummaryBox:hover ~ .risk{
 	background-color: #fcf1f3;
@@ -417,12 +415,12 @@ font-family: 'Source Sans Pro', sans-serif;
 //     left: 1px;
 // }
 .dot {
-    width: 6px;
-    height: 106px;
+       width: 124px;
+    height: 6px;
     /* border-radius: 50%; */
     position: absolute;
     top: 0px;
-    left: -5px;
+    left: 0;
 }
 
 .numberSummaryBox {
@@ -453,20 +451,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	font-size: 12px;
 	color: rgba(0,0,0, .7);
 	font-family: 'Roboto', sans-serif; 
-	// letter-spacing: -.7px;
-	font-family: 'Roboto Condensed', sans-serif;
-// 	font-family: 'Assistant', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-// font-family: 'Ubuntu', sans-serif;
-// font-family: 'Fira Sans', sans-serif;
-// font-family: 'Khula', sans-serif;
-// font-family: 'Yantramanav', sans-serif;
-// font-family: 'Biryani', sans-serif;
-
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	    font-weight: 600;
+	font-weight: 600;
 	text-transform: uppercase;
-	// font-family: 'Cabin Condensed', sans-serif;
+	
 }
 
 .numberSummaryBoxMini {
@@ -651,7 +640,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 /*/////////////////////// FEED ////////////////////////*/
 
-.feed {
+#feed {
 	width: 600px;
 	height: 244px;
 	overflow-y: scroll;
@@ -674,6 +663,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	background-color: #f4f6f8;
 	transition: .3s;
 }
+
+.tradeFeed, .riskFeed, .perfFeed, .stratFeed, .salesFeed, .prTrdFeed, .sysFeed, .mktFeed {
+	width: 100%;
+} 
 
 .alertType {
     width: 36px;
@@ -810,13 +803,6 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .messageTitle {
     font-family: 'Roboto';
-//     font-family: 'Assistant', sans-serif;
-// font-family: 'Source Sans Pro', sans-serif;
-// font-family: 'Ubuntu', sans-serif;
-// font-family: 'Fira Sans', sans-serif;
-// font-family: 'Khula', sans-serif;
-// font-family: 'Yantramanav', sans-serif;
-// font-family: 'Biryani', sans-serif;
     font-weight: 500;
     font-size: 1em;
     letter-spacing: .1px;
@@ -828,14 +814,6 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .messageText {
     font-family: 'Roboto';
-//     font-family: 'Assistant', sans-serif;
-// font-family: 'Source Sans Pro', sans-serif;
-// font-family: 'Ubuntu', sans-serif;
-// font-family: 'Fira Sans', sans-serif;
-// font-family: 'Khula', sans-serif;
-// font-family: 'Yantramanav', sans-serif;
-// font-family: 'Biryani', sans-serif;
-        /* font-family: 'Roboto Condensed'; */
     font-weight: 400;
     font-size: 1em; 
     // letter-spacing: .1px;

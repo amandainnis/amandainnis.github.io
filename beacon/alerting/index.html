@@ -9,7 +9,7 @@
 
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
     <!-- <script type="text/javascript" src="jquery-1.11.3.js"></script> -->
-    <script type="text/javascript" src="grid/script.js"></script>
+    <!-- <script type="text/javascript" src="grid/script.js"></script> -->
     <script type="text/javascript" src="alert.js"></script>
 	<title></title>
 </head>
@@ -95,7 +95,7 @@
         </div>
         <!-- end of alertSummary -->
 
-        <div class="cockpit">
+        <div id="cockpit">
         	<div id="riskSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
         			<div class="summaryBoxTitle">Risk</div>
@@ -370,11 +370,10 @@
 
        
 
-        <div class="feed">
+        <div id="feed">
          
 
-         <div class="alertRow clearfix">
-            <div class="tradeFeed">
+         <div class="alertRow clearfix tradeFeed">
                 <div class="alertType tradeAlert">
                 	<div class="alertText">TRD</div>
                 </div>
@@ -391,12 +390,12 @@
     	            <i class="mdi mdi-check"></i>
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
+            
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="alertFeed">
+        <div class="alertRow clearfix riskFeed">
+            
                 <div class="alertType riskAlert">
                     <div class="alertText">RSK</div>
                 </div>
@@ -412,15 +411,13 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-
-            </div>
-            <!-- end of alertFeed -->
+         
             
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="perfFeed">
+        <div class="alertRow clearfix perfFeed">
+           
                 <div class="alertType performanceAlert">
                 	<div class="alertText">PER</div>
                 </div>
@@ -437,13 +434,10 @@
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
 
-             </div>
-             <!-- end of perfFeed    -->
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="stratFeed">
+        <div class="alertRow clearfix stratFeed">
                 <div class="alertType stratAlert">
                 	<div class="alertText">STR</div>
                 </div>
@@ -459,13 +453,11 @@
     	            <i class="mdi mdi-check"></i>
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of stratFeed -->
+         
         </div>
         <!-- end of alertRow -->
 
-         <div class="alertRow clearfix">
-            <div class="salesFeed">
+         <div class="alertRow clearfix salesFeed">
                 <div class="alertType salesAlert">
                 	<div class="alertText">SAL</div>
                 </div>
@@ -480,13 +472,11 @@
     	            <i class="mdi mdi-check"></i>
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of salesFeed -->
         </div>
         <!-- end of alertRow -->
 
-         <div class="alertRow clearfix">
-            <div class="prTrdFeed">
+         <div class="alertRow clearfix prTrdFeed">
+            
                 <div class="alertType prTrdAlert">
                 	<div class="alertText">PTR</div>
                 </div>
@@ -501,13 +491,11 @@
     	            <i class="mdi mdi-check"></i>
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of prTrdFeed -->
+         
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="sysFeed">
+        <div class="alertRow clearfix sysFeed">
                 <div class="alertType systmAlert">
                 	<div class="alertText">SYS</div>
                 </div>
@@ -522,13 +510,12 @@
     	            <i class="mdi mdi-check"></i>
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of sysFeed -->
+          
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="mktFeed">
+        <div class="alertRow clearfix mktFeed">
+            
                 <div class="alertType mktAlert">
                 	<div class="alertText">MKT</div>
                 </div>
@@ -543,15 +530,14 @@
     	            <i class="mdi mdi-check"></i>
     	            <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of mktFeed -->
+           
         </div>
         <!-- end of alertRow -->
 
 
 
-         <div class="alertRow clearfix">
-            <div class="alertFeed">
+         <div class="alertRow clearfix riskFeed">
+           
                 <div class="alertType riskAlert">
                     <div class="alertText">RSK</div>
                 </div>
@@ -567,15 +553,12 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-
-            </div>
-            <!-- end of alertFeed -->
             
         </div>
         <!-- end of alertRow -->
 
-         <div class="alertRow clearfix">
-            <div class="salesFeed">
+         <div class="alertRow clearfix salesFeed">
+            
                 <div class="alertType salesAlert">
                     <div class="alertText">SAL</div>
                 </div>
@@ -590,14 +573,13 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of salesFeed -->
+          
         </div>
         <!-- end of alertRow -->
 
 
-        <div class="alertRow clearfix">
-            <div class="perfFeed">
+        <div class="alertRow clearfix perfFeed">
+            
                 <div class="alertType performanceAlert">
                     <div class="alertText">PER</div>
                 </div>
@@ -614,13 +596,11 @@
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
 
-             </div>
-             <!-- end of perfFeed    -->
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="sysFeed">
+        <div class="alertRow clearfix sysFeed">
+           
                 <div class="alertType systmAlert">
                     <div class="alertText">SYS</div>
                 </div>
@@ -635,15 +615,14 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of sysFeed -->
+           
         </div>
         <!-- end of alertRow -->
 
 
 
-         <div class="alertRow clearfix">
-            <div class="tradeFeed">
+         <div class="alertRow clearfix tradeFeed">
+           
                 <div class="alertType tradeAlert">
                     <div class="alertText">TRD</div>
                 </div>
@@ -660,13 +639,13 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
+         
         </div>
         <!-- end of alertRow -->
 
 
-        <div class="alertRow clearfix">
-            <div class="stratFeed">
+        <div class="alertRow clearfix stratFeed">
+            
                 <div class="alertType stratAlert">
                     <div class="alertText">STR</div>
                 </div>
@@ -682,13 +661,12 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of stratFeed -->
+         
         </div>
         <!-- end of alertRow -->
 
-         <div class="alertRow clearfix">
-            <div class="prTrdFeed">
+         <div class="alertRow clearfix prTrdFeed">
+            
                 <div class="alertType prTrdAlert">
                     <div class="alertText">PTR</div>
                 </div>
@@ -703,13 +681,12 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of prTrdFeed -->
+            
         </div>
         <!-- end of alertRow -->
 
-        <div class="alertRow clearfix">
-            <div class="mktFeed">
+        <div class="alertRow clearfix mktFeed">
+           
                 <div class="alertType mktAlert">
                     <div class="alertText">MKT</div>
                 </div>
@@ -724,8 +701,7 @@
                     <i class="mdi mdi-check"></i>
                     <i class="mdi mdi-dots-vertical gridDots"></i>
                 </div>
-            </div>
-            <!-- end of mktFeed -->
+         
         </div>
         <!-- end of alertRow -->
 
