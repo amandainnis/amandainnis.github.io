@@ -561,11 +561,7 @@ $(document).ready(function(){
 
 
 
-// $( '#cockpit' ).on( 'click', '.summaryBox', function( event ) {
-//     console.log( "Hello." );
-//     filter === true;
-//     $('.alertRow').hide();
-// });
+
 
 
 
@@ -591,55 +587,182 @@ $(document).ready(function(){
 //////////////////  FUNCTIONAL BUT BEGINS WITH HIDDEN FEED   ////////////////////////
 
 // $('.alertRow').hide();
-	
-$('#riskSummaryBox').on('click', function(){
-	$('#riskSummaryBox').toggleClass('summaryClick');
-	$('.alertRow').toggle();
-		$('.alertRow.riskFeed').toggle();
-		
-	});
 
-$('#tradeSummaryBox').on('click', function(){
-		$('#tradeSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.tradeFeed').toggle();
-	});
+	
+// $('#riskSummaryBox').on('click', function(){
+// 	if ($('#riskSummaryBox').hasClass('summaryClick')) {
+//     $('.alertRow').show();
+//     $('#riskSummaryBox').removeClass('summaryClick');
+	
+// 	} else { 
+// 	    $('#riskSummaryBox').addClass('summaryClick');
+// 	    $('.alertRow').hide();
+// 	    $('.alertRow.riskFeed').show();
+// 	}
+	
+// });
+
+var counter = 0;
+
+
+$( '#cockpit' ).on( 'click', '.summaryBox', function( event ) {
+	
+    if (counter == 1 && $(this).hasClass('summaryClick')){
+    	$(this).removeClass('summaryClick');
+    	counter -= 1;
+    }
+    else if (counter == 0){
+    	$(this).addClass('summaryClick');
+		counter += 1;
+	}
+	else if (counter == 1 && (!$(this).hasClass('summaryClick'))){
+		counter += 0;
+		$('.summaryBox').removeClass('summaryClick');
+		$(this).addClass('summaryClick');
+
+	}
+	console.log(counter);
+});
+
+
+
+
+$('#riskSummaryBox').on('click', function(){ 
+	if (counter == 1 && $('#riskSummaryBox').hasClass('summaryClick')) {
+	 $('.alertRow').show();
+	} 
+	else {
+	$('.alertRow').hide();
+    $('.alertRow.riskFeed').show();
+	}
+});
+
+$('#tradeSummaryBox').on('click', function(){ 
+	if (counter == 1 && $('#tradeSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	}
+	else {
+	$('.alertRow').hide();
+    $('.alertRow.tradeFeed').show(); 
+	} 
+	
+});
+
+
 
 $('#stratSummaryBox').on('click', function(){
-		$('#stratSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.stratFeed').toggle();
-	});
+	if (counter == 1 && $('#stratSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	} 
+	else { 
+    $('.alertRow').hide();
+    $('.alertRow.stratFeed').show();
+	}
+	
+});
 
 $('#salesSummaryBox').on('click', function(){
-		$('#salesSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.salesFeed').toggle();
-	});
+	if (counter == 1 && $('#salesSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	} 
+	else { 
+    $('.alertRow').hide();
+    $('.alertRow.salesFeed').show();
+	}
+	
+});
 
 $('#perfSummaryBox').on('click', function(){
-		$('#perfSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.perfFeed').toggle();
-	});
+	if (counter == 1 && $('#perfSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	} 
+	else { 
+    $('.alertRow').hide();
+    $('.alertRow.perfFeed').show();
+	}
+	
+});
 
 $('#prTrdSummaryBox').on('click', function(){
-		$('#prTrdSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.prTrdFeed').toggle();
-	});
+	if (counter == 1 && $('#prTrdSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	} 
+	else { 
+    $('.alertRow').hide();
+    $('.alertRow.prTrdFeed').show();
+	}
+	
+});
 
 $('#systmSummaryBox').on('click', function(){
-		$('#systmSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.sysFeed').toggle();
-	});
+	if (counter == 1 && $('#systmSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	} 
+	else { 
+    $('.alertRow').hide();
+    $('.alertRow.sysFeed').show();
+	}
+	
+});
 
 $('#mrktSummaryBox').on('click', function(){
-		$('#mrktSummaryBox').toggleClass('summaryClick');
-		$('.alertRow').toggle();
-		$('.alertRow.mktFeed').toggle();
-	});
+	if (counter == 1 && $('#mrktSummaryBox').hasClass('summaryClick')) {
+    $('.alertRow').show();
+	} 
+	else { 
+    $('.alertRow').hide();
+    $('.alertRow.mktFeed').show();
+	}
+	
+});
+
+
+
+
+
+
+
+// $('#tradeSummaryBox').on('click', function(){
+// 		$('#tradeSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.tradeFeed').toggle();
+// 	});
+
+// $('#stratSummaryBox').on('click', function(){
+// 		$('#stratSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.stratFeed').toggle();
+// 	});
+
+// $('#salesSummaryBox').on('click', function(){
+// 		$('#salesSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.salesFeed').toggle();
+// 	});
+
+// $('#perfSummaryBox').on('click', function(){
+// 		$('#perfSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.perfFeed').toggle();
+// 	});
+
+// $('#prTrdSummaryBox').on('click', function(){
+// 		$('#prTrdSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.prTrdFeed').toggle();
+// 	});
+
+// $('#systmSummaryBox').on('click', function(){
+// 		$('#systmSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.sysFeed').toggle();
+// 	});
+
+// $('#mrktSummaryBox').on('click', function(){
+// 		$('#mrktSummaryBox').toggleClass('summaryClick');
+// 		$('.alertRow').toggle();
+// 		$('.alertRow.mktFeed').toggle();
+// 	});
 ////////end //////////  FUNCTIONAL BUT BEGINS WITH HIDDEN FEED   ///////// end///////////////
 
 
