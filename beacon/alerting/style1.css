@@ -646,6 +646,7 @@ font-family: 'Source Sans Pro', sans-serif;
 #feed {
 	width: 600px;
 	height: 244px;
+	height: 320px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	// background-color: pink;
