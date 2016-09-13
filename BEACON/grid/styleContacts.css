@@ -150,13 +150,13 @@ header{
 
 .beaconLogoText {
 	position: relative;
-	left: 45px;
-	top: 10px;
+	left: 36px;
+    top: 6px;
 	text-transform: uppercase;
 }
 
 #logo img {
-	width: 75%;
+	width: 54%;
 }
 
 
