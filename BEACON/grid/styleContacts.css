@@ -48,7 +48,14 @@ table {
 
 	
 }
-
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
 
 
 body {
@@ -150,6 +157,56 @@ header{
 
 #logo img {
 	width: 75%;
+}
+
+
+.searchCategory {
+	width: 100%;
+    height: 30px;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(0,0,0, .7);
+        color: rgb(111, 142, 174);
+            color: rgb(85, 114, 144);
+            color: rgba(0,0,0, .5);
+    // margin-bottom: 3px;
+    background-color: #dbe4ee;
+    background-color: #e7ebf0;
+    letter-spacing: .3px;
+    // background-color: #eaeef2;
+}
+
+.colSearch {
+	display: inline-block;
+	float: left;
+	width: 25%;
+	font-size: 14px;
+    padding: .5em 0;
+    padding: 5px 25px;
+        border-right: 1px solid rgba(0,0,0, 0.1);
+}
+.ticker {
+	// background-color: rgb(245, 245, 245);
+    // padding: .5em;
+    color: rgba(0,0,0,.8);
+        font-weight: 500;
+}
+
+.ticker:hover {
+	color: #0069CB;
+	color: rgba(0,0,0,.8);
+	// background-color: aliceblue;
+	// background-color: #f4f6f8;
+	cursor: pointer;
+}
+
+.tikSearchRow {
+	width: 100%;
+	// height: 60px;
+	padding: 9px 18px;
+	padding: 12px 0px;
 }
 
 .bar {
@@ -766,7 +823,7 @@ h2:hover {
 .dropdownSearch {
 	    font-size: 14px;
     /* display: inline-block; */
-    width: 445px;
+    width: 440px;
     /* height: 35px; */
     position: relative;
     left: 49px;
@@ -805,12 +862,12 @@ h2:hover {
 	/*top: -20px;*/
 	border-bottom: 1px solid rgba(0,0,0, 0.2);
 	/*padding-top: 5px;*/
-	border-radius: 2px;
+	// border-radius: 2px;
 	color: rgba(0,0,0, .8);
 	/*text-align: center;*/
 	transition: .3s ease-in;
        width: 450px;
-       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+       // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
 .topSearch .mdi-magnify {
@@ -826,7 +883,7 @@ h2:hover {
 .iconMini {
 	display: inline-block;
 	position: relative;
-	left: 310px;
+	left: 292px;
 	top: -50px;
 	height: 26px;
 	width: 120px;
@@ -847,7 +904,7 @@ h2:hover {
 .dropdown-content2 .searchContact{
     color: rgba(0,0,0, .8);
     font-weight: 500;
-    padding: 12px 15px;
+    padding: 12px 25px;
     text-decoration: none;
     display: block;
     font-family: 'Roboto';
