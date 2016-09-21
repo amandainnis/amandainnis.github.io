@@ -281,7 +281,6 @@ $('.editContactBar .mdi-close').click(function(){
 //////////////////// call notes/////////
 
 $('.mdi-border-color').click(function(){
-  console.log("yeah i am here");
   $('#callNotesWrapper').show();
 });
 
@@ -294,7 +293,7 @@ $('.callNotesBar .mdi-close').click(function(){
 });
 
 
-//////////////////// send readership/////////
+//////////////////// send research/////////
 
 $('.mdi-library-books').click(function(){
   $('#sendResearchWrapper').show();
@@ -308,6 +307,126 @@ $('.sendResearchBar .mdi-close').click(function(){
   $('#sendResearchWrapper').hide();
 });
 
+
+var researchCounter = 0;
+
+
+
+// $('#researchWrapper').on('click', 'input', function(){
+
+//     if ($('input:checkbox:checked').is(':checked')=== true) {
+//       console.log("You got it");
+//       researchCounter += 1;
+//     }
+//     else if ($('input:checkbox:checked').is(':checked')=== false){console.log("no");
+//     researchCounter -= 1;
+//   }
+//   console.log(researchCounter);
+// } );
+
+// $('#researchWrapper').on('click', 'input', function(){
+
+//     if($('#research1').is(':checked') === true) {
+//       console.log("yes");
+//       researchCounter += 1;
+//     }
+//     else if ($('#research1').is(':checked') === false) {
+//       researchCounter --;
+//     }
+//     if ($('#research2').is(':checked') === true) {
+//       researchCounter += 1;
+//     }
+//     else if ($('#research2').is(':checked') === false) {
+//       researchCounter --;
+//     }
+//     if ($('#research2b').is(':checked') === true) {
+//       researchCounter += 1;
+//     }
+//     else if ($('#research2b').is(':checked') === false) {
+//       researchCounter -= 1;
+//     }
+//   console.log(researchCounter);
+// } );
+
+$('#sendResearch').hide();
+
+$('#research1, #research2, #research2b, #research3, #research4, #research5, #research6, #research7').on('click', function(){
+
+    if($(this).is(':checked') === true) {
+      researchCounter += 1;
+    }
+    else {
+      researchCounter --;
+    }
+   
+  console.log(researchCounter);
+  $('#researchCount').text(researchCounter);
+  if (researchCounter > 0){
+    $('#nextResearch').removeClass('lightBlue');
+    $('#cart .mdi-cart').removeClass('cartDim');
+  }
+  else {
+    $('#nextResearch').addClass('lightBlue');
+    $('#cart .mdi-cart').addClass('cartDim');
+  }
+} );
+
+$('#nextResearch').on('click', function(){
+  $('#searchResearch').hide();
+  $('#sendResearch').show();
+})
+
+
+$('#research1').click(function(){
+  
+  if($('#research1').is(':checked') === true) {
+    $( '<div class="textWrapperCollection"><i class="mdi mdi-paperclip pResearch"></i><span class="researchTitleSmall">The HY Wire</span><span class="eventLocationSmall">Collateral Damage 1: A Recovery Reces</span></div>' ).appendTo( "#researchCollection" );
+  }
+});
+
+
+$('#research2').click(function(){
+if($('#research2').is(':checked') === true) {
+    $( '<div class="textWrapperCollection"><i class="mdi mdi-paperclip pResearch"></i><span class="researchTitleSmall">Situation Room</span><span class="eventLocationSmall">1994, 1995, 1996</span></div>' ).appendTo( "#researchCollection" );
+  }
+});
+
+$('#research2b').click(function(){
+if($('#research2b').is(':checked') === true) {
+    $( '<div class="textWrapperCollection"><i class="mdi mdi-paperclip pResearch"></i><span class="researchTitleSmall">HCP Inc</span><span class="eventLocationSmall">Earnings Beat, Guidance Raised, No Cha</span></div>' ).appendTo( "#researchCollection" );
+  }
+});
+
+
+
+
+// $('#research2').click(function(){
+//   console.log($('#research2').is(':checked'));
+// });
+
+// $('#research2b').click(function(){
+//   console.log($('#research2b').is(':checked'));
+// });
+
+// $('#research3').click(function(){
+//   console.log($('#research3').is(':checked'));
+// });
+
+// $('#research4').click(function(){
+//   console.log($('#research4').is(':checked'));
+// });
+
+// $('#research5').click(function(){
+//   console.log($('#research5').is(':checked'));
+// });
+
+// $('#research6').click(function(){
+//   console.log($('#research6').is(':checked'));
+// });
+
+// $('#research7').click(function(){
+//   console.log($('#research7').is(':checked'));
+// });
 
 
 //////////////////// schedule mtg/////////
@@ -551,6 +670,14 @@ console.log( date.mmddyyyy() ); // Assuming you have an open console
 
 $("#date").text(date.mmddyyyy());
 $("#date2").text(date.mmddyyyy());
+
+
+
+
+
+
+
+
 
 
 });
