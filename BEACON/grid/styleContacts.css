@@ -267,7 +267,7 @@ header {
     // color: #0069CB;
     cursor: pointer;
     transition: .3s ease-in;
-    left: -14px;
+    left: 21px;
     top: 7px;
     font-size: 15px;
 }
@@ -302,13 +302,14 @@ header {
     height: 174px;
     position: relative;
     top: 0px;
-    left: 102px;
+    left: 84px;
     z-index: 2;
 }
 
 #sortMenuList {
     position: absolute;
-        left: -28px;
+    left: -51px;
+    top: 28px;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -318,14 +319,31 @@ header {
 
 #sortMenuList li {
     color: rgba(9, 98, 195, 1);
+    color: rgba(0,0,0, .87);
     font-weight: 400;
     font-size: 14px;
     padding: 8px 0 8px 15px;
     text-decoration: none;
     display: block;
     line-height: 1.3em;
-    width: 110px;
+    width: 164px;
     cursor: pointer;
+}
+
+#sortMenuList #sortBy {
+	color: rgba(0,0,0, .57);
+	font-weight: 400;
+    font-size: 14px;
+    padding: 8px 0 8px 15px;
+    
+    display: block;
+    line-height: 1.3em;
+    width: 164px;
+}
+
+#sortMenuList li .mdi-check{
+	padding-right: 3px;
+	color: white;
 }
 
 #sortMenuList li:hover {
@@ -359,7 +377,7 @@ header {
 
 
 #AZ {
-        font-size: 13px;
+    font-size: 13px;
     width: 55px;
     height: 20px;
     overflow: hidden;
@@ -369,8 +387,21 @@ header {
     color: rgba(0, 0, 0, .8);
     position: relative;
     display: inline-block;
-    left: 10px;
+    left: 39px;
     top: 8px;
+}
+
+
+#sortMenuList input {
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 500;
+    letter-spacing: .5px;
+    padding: 6px 6px 6px 8px;
+    border: 1px #e0e0e0 solid;
+    font-size: 12px;
+    width: 133px;
+    margin: .5em 1.5em;
+    outline: none;
 }
 
 

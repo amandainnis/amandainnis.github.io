@@ -125,37 +125,77 @@ $('#sortMenuList').hide();
 //     $('#filterSortContainer').animate({left:'535px'});
 // })
 
+
+
+
+//////////  OLD SORT BY ///////////////////
+
+// $('#sortSection').click(function(){
+//   $('#sortMenuList').show();
+
+
+//       $('#sort1').click(function(){
+//           var inputText = $(this).text();
+//           $('#AZ').text(inputText);
+//           $('#sortMenuList').hide();
+//        }); 
+
+//     $('#sort2').click(function(){
+//           var inputText = $(this).text();
+//           $('#AZ').text(inputText);
+//           $('#sortMenuList').hide();
+//        }); 
+
+//        $('#sort3').click(function(){
+//           var inputText = $(this).text();
+//           $('#AZ').text(inputText);
+//           $('#sortMenuList').hide();
+//        }); 
+
+//        $('#sort4').click(function(){
+//           var inputText = $(this).text();
+//           $('#AZ').text(inputText);
+//           $('#sortMenuList').hide();
+//        }); 
+
+//        $('#sort5').click(function(){
+//           var inputText = $(this).text();
+//           $('#AZ').text(inputText);
+//           $('#sortMenuList').hide();
+//        }); 
+// })
+
 $('#sortSection').click(function(){
   $('#sortMenuList').show();
 
 
       $('#sort1').click(function(){
-          var inputText = $(this).text();
-          $('#AZ').text(inputText);
+          $('#sortMenuList li .mdi-check').removeClass('blue');
+          $('#sort1 .mdi-check').addClass('blue');
           $('#sortMenuList').hide();
        }); 
 
-    $('#sort2').click(function(){
-          var inputText = $(this).text();
-          $('#AZ').text(inputText);
+      $('#sort2').click(function(){
+          $('#sortMenuList li .mdi-check').removeClass('blue');
+          $('#sort2 .mdi-check').addClass('blue');
           $('#sortMenuList').hide();
        }); 
 
        $('#sort3').click(function(){
-          var inputText = $(this).text();
-          $('#AZ').text(inputText);
+          $('#sortMenuList li .mdi-check').removeClass('blue');
+          $('#sort3 .mdi-check').addClass('blue');
           $('#sortMenuList').hide();
        }); 
 
        $('#sort4').click(function(){
-          var inputText = $(this).text();
-          $('#AZ').text(inputText);
+          $('#sortMenuList li .mdi-check').removeClass('blue');
+          $('#sort4 .mdi-check').addClass('blue');
           $('#sortMenuList').hide();
        }); 
 
        $('#sort5').click(function(){
-          var inputText = $(this).text();
-          $('#AZ').text(inputText);
+          $('#sortMenuList li .mdi-check').removeClass('blue');
+          $('#sort5 .mdi-check').addClass('blue');
           $('#sortMenuList').hide();
        }); 
 })
