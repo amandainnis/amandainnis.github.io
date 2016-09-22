@@ -139,24 +139,28 @@
             </div>
             <!-- end of listcontainer -->
             <div id="filterSortContainer">
-                <div id="sideSearchContainer">
+                
+               <!--  <div id="sideSearchContainer">
                     <i id="filterIcon" class="mdi mdi-filter"></i>
-                    <input type="text" class="sideSearch" placeholder="Filter">
+                    <input type="text" class="sideSearch" placeholder="FILTER">
                     <span id="clear">x</span>
-                </div>
+                </div> -->
                 <div class="sortContainer">
                     <div id="sortSection">
                         <!-- <i class="mdi mdi-sort"></i> -->
-                        <i class="mdi mdi-sort-alphabetical"></i>
-                        <span id="AZ">Name</span><i class="mdi mdi-menu-down sortMenu"></i>
+                        <!-- <i class="mdi mdi-sort-alphabetical"></i> -->
+                        <i id="filterIcon" class="mdi mdi-filter"></i>
+                        <span id="AZ">FILTER</span><!-- <i class="mdi mdi-menu-down sortMenu"></i> -->
                     </div>
-                    <ul id="sortMenuList">
-                        <li id="sort1">Name</li>
-                        <li id="sort2">Company</li>
-                        <li id="sort3">Rank</li>
-                        <li id="sort4">Last TP</li>
-                        <li id="sort5">Segmentation</li>
-                    </ul>
+                    <div id="sortMenuList">
+                        <ul>
+                            <li id="sort1">Name</li>
+                            <li id="sort2">Company</li>
+                            <li id="sort3">Rank</li>
+                            <li id="sort4">Last TP</li>
+                            <li id="sort5">Segmentation</li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- end of sort container -->
             </div>
@@ -323,7 +327,149 @@
             <!-- end of innerEventWrapper -->
         </div>
         <!--    </section> -->
-        <div class="overlay"></div>
+        <div id="overlay">
+            <div id="scheduleMeetingWrapper">
+                <div class="scheduleMeetingBar">Schedule Meeting<i class="mdi mdi-close"></i></div>
+                <div id="bottomBarScheduleMeeting">
+                    <input class="confirmButton" value="save" type="button">
+                    <input class="cancelButton" type="button" value="cancel">
+                </div>
+                <form>
+                    <div class="scheduleMeetingInnerFormWrapper">
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <!--    <div class="halfInput"> -->
+                                <div class="dateWithTriangle">
+                                    <!-- <span class="labelType">Date</span> <br> -->
+                                    <span id='date'></span>
+                                    <!-- <input id="datepicker" type="text" class="validate"> -->
+                                    <!-- <input type="date" "myDate"> -->
+                                    <!-- <label for="date">11 Jul 2016</label> -->
+                                    <i class="mdi mdi-menu-down"></i>
+                                    <!-- </div> -->
+                                    <!-- end of half input -->
+                                </div>
+                                <!-- <div class="halfInput2"> -->
+                                <div class="timeDiv">
+                                    <div class="selectHourTotal">
+                                        <!-- <span class="labelType">Time</span> <br> --><span class="selectHour">Time</span><i class="mdi mdi-menu-down"></i>
+                                    </div>
+                                    <ul id="selectHourMenu">
+                                        <li id="one">1:00 PM</li>
+                                        <li id="two">2:00 PM</li>
+                                        <li id="three">3:00 PM</li>
+                                        <li id="four">4:00 PM</li>
+                                        <li id="five">5:00 PM</li>
+                                        <li id="six">6:00 PM</li>
+                                        <li id="seven">7:00 PM</li>
+                                        <li id="eight">8:00 PM</li>
+                                        <li id="nine">9:00 PM</li>
+                                        <li id="ten">10:00 PM</li>
+                                        <li id="eleven">11:00 PM</li>
+                                        <li id="twelve">12:00 PM</li>
+                                    </ul>
+                                </div>
+                                <!-- end of time div -->
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <span class="labelOverChip">City</span>
+                                <br>
+                                <div class="cityInputWithChip">
+                                    <div class="chip">New York<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                </div>
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput">
+                            <div class="inputWrapper">
+                                <div class="selectTitleWrapper">
+                                    <div class="selectTitleTotal">
+                                        <span class="labelType">Type</span>
+                                        <br>
+                                        <span class="selectTitle">Choose Type</span><i class="mdi mdi-menu-down selectTitleChev"></i>
+                                    </div>
+                                    <ul id="selectMenu">
+                                        <li id="option1">One on one</li>
+                                        <li id="option2">Group</li>
+                                        <li id="option3">Call</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of inputWrapper -->
+                            <div class="inputWrapper clearfix">
+                                <!-- <div class="input-field"> -->
+                                <div class="selectDriverTotal">
+                                    <span class="labelType">Meeting Driver</span>
+                                    <br>
+                                    <span class="selectDriver">Meeting Driver</span><i class="mdi mdi-menu-down selectTitleChev"></i>
+                                    <ul id="selectDriverMenu">
+                                        <li id="optionA">Client Relationship</li>
+                                        <li id="optionB">Direct Sales</li>
+                                        <li id="optionC">Senior Introduction</li>
+                                        <li id="optionD">Broker Vote Review</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <span class="labelType">Subject</span>
+                                <br>
+                                <input class="selectSubject" placeholder="Enter Subject"></input>
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <span class="labelOverChip">Attendees</span>
+                                <br>
+                                <div class="emptyChipInput">
+                                    <div class="chip">Kim Kardashian<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                </div>
+                                
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="inputWrapper clearfix">
+                                <span class="labelOverChip">Notify</span>
+                                <br>
+                                <div class="emptyChipInput">
+                                    <div class="chip">Kanye West<i id="chipIcon" class="mdi mdi-close"></i></div>
+                                </div>
+                            </div>
+                            <!-- end of inputWrapper -->
+                        </div>
+                        <!-- end of divItsaRow -->
+                        <div class="divItsaRowInput clearfix">
+                            <div class="rowOfChecks">
+                                <span class="labelForLabel">Send Outlook invite to</span>
+                                <div class="addMe2">
+                                    <input type="checkbox" class="filled-in" id="filled-in-boxMeeting1" />
+                                    <label for="filled-in-boxMeeting1">Investor</label>
+                                </div>
+                                <div class="addMe2">
+                                    <input type="checkbox" class="filled-in" id="filled-in-boxMeeting2" />
+                                    <label for="filled-in-boxMeeting2">BoFAML</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of divItsaRow -->
+                    </div>
+                    <!-- end of innerFormWrapper -->
+                </form>
+            </div>
+            
+        </div>
     </div>
     <!-- end of wrapper -->
 </body>

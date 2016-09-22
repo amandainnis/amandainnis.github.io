@@ -167,7 +167,7 @@ $('#sortSection').click(function(){
 
   });
 
-
+$('#overlay').hide();
 
 });
 

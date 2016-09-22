@@ -215,7 +215,7 @@ header {
 
 #filterSortContainer {
     position: relative;
-    left: 370px;
+    left: 402px;
     top: -158px;
     width: 179px;
 }
@@ -226,7 +226,7 @@ header {
 }
 
 .sideSearch {
-    background-color: white;
+    background-color: transparent;
     outline: none;
     border: none;
     cursor: pointer;
@@ -263,8 +263,8 @@ header {
 #filterIcon {
     position: absolute;
     color: rgba(0, 0, 0, .4);
-    color: rgba(0, 0, 0, .6);
-    color: #0069CB;
+    color: rgba(0, 0, 0, .7);
+    // color: #0069CB;
     cursor: pointer;
     transition: .3s ease-in;
     left: -14px;
@@ -290,7 +290,7 @@ header {
 
 .listMenu {
     font-size: 24px;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .9);
     position: relative;
     top: 4px;
     top: 1px;
@@ -301,13 +301,14 @@ header {
     width: 90px;
     height: 174px;
     position: relative;
-    top: -26px;
+    top: 0px;
     left: 102px;
     z-index: 2;
 }
 
 #sortMenuList {
     position: absolute;
+        left: -28px;
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -337,12 +338,12 @@ header {
 }
 
 .sortMenu {
-    font-size: 24px;
+        font-size: 24px;
     color: rgba(0, 0, 0, .5);
     display: inline-block;
     position: absolute;
     top: 2px;
-    left: 81px;
+    left: 52px;
     cursor: pointer;
 }
 
@@ -353,22 +354,22 @@ header {
     top: 2px;
     color: rgba(0, 0, 0, .4);
     color: rgba(0, 0, 0, .7);
-    color: #0069CB;
+    // color: #0069CB;
 }
 
 
 #AZ {
-    font-size: 13px;
+        font-size: 13px;
     width: 55px;
     height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: 500;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .8);
     position: relative;
     display: inline-block;
-    left: 11px;
+    left: 10px;
     top: 8px;
 }
 
@@ -782,4 +783,30 @@ h2:hover {
     background-color: aliceblue;
 }
 
+#overlay {
+	width: 600px;
+    height: 760px;
+    position: relative;
+    top: -769px;
+    background-color: rgba(0, 0, 0, 0.26);
+    z-index: 3;
+}
+/* ///////////// FROM CONTACT Profile ///////////// */
 
+#readershipWrapper, #touchpointWrapper, #securitiesWrapper, #meetingsWrapper, #editContactWrapper, #scheduleMeetingWrapper, #callNotesWrapper, #sendResearchWrapper {
+	width: 500px;
+	height: 460px;
+	background-color: white;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 3;
+	top: 128px;
+	left: 25px;
+	transition: box-shadow .2s;
+	// box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	//  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	//  -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.17), 0 5px 15px 0 rgba(0, 0, 0, 0.1); 
+}
