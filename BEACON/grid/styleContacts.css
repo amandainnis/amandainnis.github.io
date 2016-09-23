@@ -293,8 +293,8 @@ header {
     color: rgba(0, 0, 0, .9);
     position: relative;
     top: 4px;
-    top: 2px;
-    left: -22px;
+    top: 3px;
+    left: -23px;
 }
 
 .sortContainer {
@@ -313,7 +313,7 @@ header {
     background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2);
     transition: .3s ease-in;
 }
 
@@ -796,7 +796,7 @@ h2:hover {
     padding-top: 5px;
     padding-bottom: 5px;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.2);
     transition: .3s ease-in;
 }
 
