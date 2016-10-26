@@ -87,8 +87,25 @@ body {
 	margin: 0 auto;
 }
 
+#popoutWrapper {
+    width: 1230px;
+    height: 760px;
+    background-color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 0 auto;
 
+}
 
+section#boxes {
+    width: 50%;
+    float: left;
+}
+
+section#popoutFeedSection {
+    width: 50%;
+    float: right;
+}
 
 .bar {
 	width: 100%;
@@ -286,6 +303,29 @@ body {
     background-color: gray;
 }
 
+.popoutFeed {
+     width: 52px;
+    height: 19px;
+    position: absolute;
+    z-index: 3;
+    /* background-color: #f4f6f8; */
+        top: 236px;
+    left: 546px;
+    padding: 4px;
+
+}
+
+.popoutFeed div {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+
+.popoutFeed div img {
+    height: 67%;
+}
+
 .expandPit {
     width: 24px;
     height: 22px;
@@ -470,6 +510,13 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+#feedPop {
+    width: 600px;
+    // height: 355px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 1em;
+}
 
 
 .alertRow {
@@ -553,9 +600,9 @@ body {
 }
 
 .contactGridRowTextWrapper {
-    width: 63%;
+    width: 68%;
     float: left;
-    margin-left: 3%;
+    margin-left: 3.7%;
 }
 
 .messageTitle {
@@ -563,7 +610,7 @@ body {
     font-weight: 500;
     font-size: 1em;
     letter-spacing: .1px;
-    line-height: 1.3em;
+    line-height: 1.4em;
     color: rgba(0, 0, 0, .9);
 }
 
@@ -571,7 +618,7 @@ body {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1em;
-    line-height: 1.3em;
+    line-height: 1.4em;
     color: rgba(0, 0, 0, .54);
     padding-left: 5px;
 }
@@ -583,6 +630,7 @@ body {
     display: inline-block;
     float: right;
     position: relative;
+        left: 5px;
     top: 4px;
     color: rgba(0, 0, 0, .8);
 }
