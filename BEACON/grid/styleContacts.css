@@ -216,7 +216,7 @@ header {
 #filterSortContainer {
     position: relative;
     left: 402px;
-    top: -158px;
+    top: -155px;
     width: 179px;
 }
 
@@ -264,10 +264,9 @@ header {
     position: absolute;
     color: rgba(0, 0, 0, .4);
     color: rgba(0, 0, 0, .7);
-    // color: #0069CB;
     cursor: pointer;
     transition: .3s ease-in;
-    left: 21px;
+    left: 7px;
     top: 7px;
     font-size: 15px;
 }
@@ -298,11 +297,11 @@ header {
 }
 
 .sortContainer {
-    width: 90px;
+        width: 90px;
     height: 174px;
     position: relative;
-    top: 0px;
-    left: 84px;
+    /* top: 5px; */
+    left: 71px;
     z-index: 2;
 }
 
@@ -351,8 +350,11 @@ header {
 }
 
 #sortSection {
-    width: 98px;
+        width: 98px;
     cursor: pointer;
+    border: 1px #dbe4ee solid;
+    /* background-color: #f2f5f9; */
+    padding: 2px;
 }
 
 .sortMenu {
@@ -377,7 +379,7 @@ header {
 
 
 #AZ {
-    font-size: 13px;
+        font-size: 13px;
     width: 55px;
     height: 20px;
     overflow: hidden;
@@ -387,8 +389,8 @@ header {
     color: rgba(0, 0, 0, .8);
     position: relative;
     display: inline-block;
-    left: 39px;
-    top: 8px;
+    left: 27px;
+    top: 5px;
 }
 
 
@@ -435,6 +437,7 @@ h2 {
     margin-top: 25px;
     padding: 6px 25px 4px 0px;
     transition: .3s;
+    border-bottom: 1px solid transparent;
 }
 
 h2:hover {

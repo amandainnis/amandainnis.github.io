@@ -60,41 +60,44 @@
         <!-- end of alert header -->
 
         <div id="alertSummaryHeadings">
-        	<div class="summary summaryTotal">
-        		<div class="summaryLabel">Total</div>
-        		<div id="total" class="numbers selectedNumbers">323</div>
-        	</div>
-        	
-        	<div class="summary">
-        		<div class="summaryLabel">Outage</div>
-        		<div id="outage" class="numbers">42</div>
-        	</div>
-        	
-        	<div class="summary">
-        		<div class="summaryLabel">Critical</div>
-        		<div id="critical" class="numbers">57</div>
-        	</div>
-        	
-        	<div class="summary">
-        		<div class="summaryLabel">Urgent</div>
-        		<div id="urgent" class="numbers">139</div>
-        	</div>
-        	
-        	<div class="summary">
-        		<div class="summaryLabel">Comm.</div>
-        		<div id="commentary" class="numbers">3</div>
-        	</div>
-
-        	<div class="summary">
-        		<div class="summaryLabel">ProAct.</div>
-        		<div id="proAct" class="numbers">82</div>
-        	</div>
-        	
-
-        	
+            <div class="summaryTotal">
+                <div class="summary">
+                    <div class="summaryLabel">Total</div>
+                    <div id="total" class="numbers selectedNumbers">323</div>
+                </div>
+            </div>
+            <div class="summaryWrapper">
+                <div class="summary">
+                    <div class="summaryLabel">Outage</div>
+                    <div id="outage" class="numbers">42</div>
+                </div>
+            </div>
+            <div class="summaryWrapper">
+                <div class="summary">
+                    <div class="summaryLabel">Critical</div>
+                    <div id="critical" class="numbers">57</div>
+                </div>
+            </div>
+            <div class="summaryWrapper">
+                <div class="summary">
+                    <div class="summaryLabel">Urgent</div>
+                    <div id="urgent" class="numbers">139</div>
+                </div>
+            </div>
+            <div class="summaryWrapper">
+                <div class="summary">
+                    <div class="summaryLabel">Comm.</div>
+                    <div id="commentary" class="numbers">3</div>
+                </div>
+            </div>
+            <div class="summaryWrapper">
+                <div class="summary">
+                    <div class="summaryLabel">ProAct.</div>
+                    <div id="proAct" class="numbers">82</div>
+                </div>
+            </div>
         </div>
         <!-- end of alertSummary -->
-
         <div id="cockpit">
         	<div id="riskSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
@@ -102,30 +105,7 @@
         			<div class="dot riskAlert"></div>
         			<div id="riskSummary" class="numberSummaryBox">41</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="riskSummaryMy" class="numberSummaryBoxMini">9</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="riskSummaryDsk" class="numberSummaryBoxMini">4</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="riskSummaryCov" class="numberSummaryBoxMini">14</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="riskSummaryVip" class="numberSummaryBoxMini">14</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric risk1"></div>
-        			<div class="blueMetric risk"></div>
-        		</div>
         	</div>
 
         	<div id="tradeSummaryBox" class="summaryBox">
@@ -134,62 +114,16 @@
         			<div class="dot tradeAlert"></div>
         			<div id="tradeSummary" class="numberSummaryBox">73</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id ="tradeSummaryMy" class="numberSummaryBoxMini">14</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="tradeSummaryDsk" class="numberSummaryBoxMini">10</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="tradeSummaryCov" class="numberSummaryBoxMini">17</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="tradeSummaryVip" class="numberSummaryBoxMini">31</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric trade1"></div>
-        			<div class="blueMetric trade"></div>
-        		</div>
         	</div>
 
         	<div id="stratSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
-        			<div class="summaryBoxTitle">Strat</div>
+        			<div class="summaryBoxTitle">Strategy</div>
         			<div class="dot stratAlert"></div>
         			<div id="stratSummary" class="numberSummaryBox">18</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="stratSummaryMy" class="numberSummaryBoxMini">3</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="stratSummaryDsk" class="numberSummaryBoxMini">7</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="stratSummaryCov" class="numberSummaryBoxMini">6</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="stratSummaryVip" class="numberSummaryBoxMini">2</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric strat1"></div>
-        			<div class="blueMetric strat"></div>
-        		</div>
         	</div>
 
         	<div id="salesSummaryBox" class="summaryBox">
@@ -198,171 +132,46 @@
         			<div class="dot salesAlert"></div>
         			<div id="salesSummary" class="numberSummaryBox">38</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="salesSummaryMy" class="numberSummaryBoxMini">7</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="salesSummaryDsk" class="numberSummaryBoxMini">8</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="salesSummaryCov" class="numberSummaryBoxMini">11</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="salesSummaryVip" class="numberSummaryBoxMini">12</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric sales1"></div>
-        			<div class="blueMetric sales"></div>
-        		</div>
         	</div>
 
         	<div id="perfSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
-        			<div class="summaryBoxTitle">Perf</div>
+        			<div class="summaryBoxTitle">Perform.</div>
         			<div class="dot performanceAlert"></div>
         			<div id="perfSummary" class="numberSummaryBox">46</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="perfSummaryMy" class="numberSummaryBoxMini">4</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="perfSummaryDsk" class="numberSummaryBoxMini">9</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="perfSummaryCov" class="numberSummaryBoxMini">19</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="perfSummaryVip" class="numberSummaryBoxMini">14</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric perf1"></div>
-        			<div class="blueMetric perf"></div>
-        		</div>
         	</div>
 
 
         	<div id="prTrdSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
-        			<div class="summaryBoxTitle">P-Trd</div>
+        			<div class="summaryBoxTitle">Pre-Trade</div>
         			<div class="dot prTrdAlert"></div>
         			<div id="prTrdSummary" class="numberSummaryBox">51</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="prTrdSummaryMy" class="numberSummaryBoxMini">11</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="prTrdSummaryDsk" class="numberSummaryBoxMini">10</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="prTrdSummaryCov" class="numberSummaryBoxMini">13</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="prTrdSummaryVip" class="numberSummaryBoxMini">17</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric pr-trd1"></div>
-        			<div class="blueMetric pr-trd"></div>
-        		</div>
         	</div>
 
         	<div id="systmSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
-        			<div class="summaryBoxTitle">Systm</div>
+        			<div class="summaryBoxTitle">System</div>
         			<div class="dot systmAlert"></div>
         			<div id="systmSummary" class="numberSummaryBox">21</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="systmSummaryMy" class="numberSummaryBoxMini">2</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="systmSummaryDsk" class="numberSummaryBoxMini">7</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="systmSummaryCov" class="numberSummaryBoxMini">6</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="systmSummaryVip" class="numberSummaryBoxMini">6</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric system1"></div>
-        			<div class="blueMetric system"></div>
-        		</div>
         	</div>
 
         	<div id="mrktSummaryBox" class="summaryBox">
         		<div class="summaryBoxLeft">
-        			<div class="summaryBoxTitle">Mrkt</div>
+        			<div class="summaryBoxTitle">Market</div>
         			<div class="dot mktAlert"></div>
         			<div id="mrktSummary" class="numberSummaryBox">35</div>
         		</div>
-        		<div class="summaryBoxRight">
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">My</span>
-        				<span id="mrktSummaryMy" class="numberSummaryBoxMini">8</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Dsk</span>
-        				<span id="mrktSummaryDsk" class="numberSummaryBoxMini">9</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Cov</span>
-        				<span id="mrktSummaryCov" class="numberSummaryBoxMini">9</span>
-        			</div>
-        			<div class="minRow">
-        				<span class="summaryBoxCategory">Vip</span>
-        				<span id="mrktSummaryVip" class="numberSummaryBoxMini">9</span>
-        			</div>
-        			
-        		</div>
         		
-        		<div class="metricBar">
-        			<div class="lineMetric mrkt1"></div>
-        			<div class="blueMetric mrkt"></div>
-        		</div>
         	</div>
-        	<!-- <div class="filterRow clearfix">
-        		 <div id="filterSortContainerAlerts">
-	                <div id="sideSearchContainerAlerts">
-	                    <i id="filterIconAlerts" class="mdi mdi-filter"></i>
-	                    <input type="text" class="sideSearchAlerts" placeholder="Filter">
-	                    <span id="clearAlerts">x</span>
-                </div>
-                
-         </div>
-         <! end of filter -->
-        	<!-- </div> -->
+        	
  
         </div>
         <!-- end of cockpit -->
@@ -382,11 +191,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
             
@@ -402,11 +209,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
             
@@ -422,11 +227,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
             
         </div>
@@ -442,11 +245,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
             
@@ -462,11 +263,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
             
         </div>
@@ -482,11 +281,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
             
@@ -504,11 +301,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
             
         </div>
@@ -524,11 +319,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
             
@@ -550,11 +343,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-                	<!-- <i class="mdi mdi-information"></i> -->
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
             
         </div>
@@ -571,11 +362,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
             
@@ -593,11 +382,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-                	<!-- <i class="mdi mdi-information"></i> -->
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
 
         </div>
@@ -613,11 +400,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-                	<!-- <i class="mdi mdi-information"></i> -->
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
         </div>
@@ -633,10 +418,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
         </div>
         <!-- end of alertRow -->
@@ -652,10 +436,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
         </div>
@@ -671,10 +454,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
           
         </div>
@@ -691,10 +473,9 @@
                 </div>
                 <div class="alertIcons">
                 	<i class="mdi mdi-information-variant"></i>
-    	            <!-- <i class="mdi mdi-link-variant"></i> -->
     	            <i class="mdi mdi-open-in-new"></i>
     	            <i class="mdi mdi-check"></i>
-    	            <i class="mdi mdi-dots-vertical gridDots"></i>
+    	            <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
            
         </div>
@@ -713,11 +494,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
             
         </div>
@@ -734,10 +513,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
           
         </div>
@@ -755,11 +533,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
 
         </div>
@@ -776,10 +552,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
            
         </div>
@@ -799,11 +574,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
         </div>
@@ -821,11 +594,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-information"></i> -->
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
         </div>
@@ -842,10 +613,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
             
         </div>
@@ -862,10 +632,9 @@
                 </div>
                 <div class="alertIcons">
                     <i class="mdi mdi-information-variant"></i>
-                    <!-- <i class="mdi mdi-link-variant"></i> -->
                     <i class="mdi mdi-open-in-new"></i>
                     <i class="mdi mdi-check"></i>
-                    <i class="mdi mdi-dots-vertical gridDots"></i>
+                    <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
                 </div>
          
         </div>
