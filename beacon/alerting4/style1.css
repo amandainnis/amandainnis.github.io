@@ -532,10 +532,20 @@ section#popoutFeedSection {
 
 .alertFeedActionBar {
     width: 100%;
-    height: 20px;
+    height: 30px;
+        background-color: #edeff1;
     background-color: #f4f6f8;
     border-bottom: 1px #eeeeee solid;
+    border-bottom: 1px rgba(0, 0, 0, .15) solid;
 }
+
+.alertFeedActionBar i {
+    position: relative;
+    left: 548px;
+    top: 5px;
+    font-size: 18px;
+}
+
 
 .alertRow {
     width: 100%;
