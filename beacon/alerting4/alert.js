@@ -43,6 +43,15 @@ $(document).ready(function(){
 
 	});
 
+	$('#stock2').click(function(){
+		$('.typeStockClient span').removeClass('selected');
+		$(this).addClass('selected');
+		$('#clientpit').hide();
+		$('#cockpit').hide();
+		$('#stockpit2').show();
+
+	});
+
     $('#client').click(function(){
 		$('.typeStockClient span').removeClass('selected');
 		$(this).addClass('selected');
