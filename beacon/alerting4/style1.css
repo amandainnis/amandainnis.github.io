@@ -279,6 +279,7 @@ section#popoutFeedSection {
     z-index: 3;
     font-size: 27px;
     color: gray;
+    color: #ced0d5;
 }
 
 .carouselRight {
@@ -289,12 +290,13 @@ section#popoutFeedSection {
     z-index: 3;
     font-size: 27px;
     color: gray;
+    color: #ced0d5;
 }
 
 .pagination {
     width: 33px;
     position: absolute;
-    top: 239px;
+    top: 244px;
     left: 286px;
     z-index: 3;
     // border: 1px black solid;
@@ -532,9 +534,9 @@ section#popoutFeedSection {
 
 .alertFeedActionBar {
     width: 100%;
-    height: 30px;
-        background-color: #edeff1;
-    background-color: #f4f6f8;
+    height: 25px;
+    //     background-color: #edeff1;
+    // background-color: #f4f6f8;
     border-bottom: 1px #eeeeee solid;
     border-bottom: 1px rgba(0, 0, 0, .15) solid;
 }
@@ -542,8 +544,9 @@ section#popoutFeedSection {
 .alertFeedActionBar i {
     position: relative;
     left: 548px;
-    top: 5px;
+    top: 2px;
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.55);
 }
 
 
