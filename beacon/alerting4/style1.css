@@ -497,7 +497,7 @@ section#popoutFeedSection {
     background-color: #F4F6F8;
     margin-top: 19px;
     margin-right: 20px;
-    padding-top: 18px;
+    padding-top: 17px;
     position: relative;
     float: left;
     box-sizing: border-box;
@@ -507,10 +507,10 @@ section#popoutFeedSection {
     
     border-bottom: 2px solid #b9c4cf;
     
-    border-top: 2px solid #c1defa;
+    // border-top: 2px solid #c1defa;
     
-    border-top: 2px solid #c7dbed;
-    border-top: 2px solid #dce2e8;
+    // border-top: 2px solid #c7dbed;
+    // border-top: 2px solid #dce2e8;
 
     // border-top: 2px solid #e0e9f1;
     //     border-top: 2px solid #e1e9ef;
@@ -576,7 +576,7 @@ section#popoutFeedSection {
 .stockBoxTitle {
     // font-family: 'Source Sans Pro', sans-serif;
     // font-weight: 600;
-    padding-top: 4px;
+    // padding-top: 4px;
     // font-size: 17px;
 }
 
@@ -645,7 +645,7 @@ section#popoutFeedSection {
 .numberSummaryBoxStock {
     font-size: 28px;
     padding-top: 7px;
-    padding-top: 9px;
+    padding-top: 8px;
 
 }
 
