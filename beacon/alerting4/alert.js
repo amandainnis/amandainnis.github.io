@@ -50,18 +50,18 @@ $('#threeDotContent').mouseleave(function(){
 		
 	});
 
+	// $('#stock').click(function(){
+	// 	$('.typeStockClient span').removeClass('selected');
+	// 	$(this).addClass('selected');
+	// 	$('#clientpit').hide();
+	// 	$('#cockpit').hide();
+	// 	$('#stockpit').hide();
+	// 	$('#stockpit3').hide();
+	// 	$('#stockpit2').show();
+
+	// });
+
 	$('#stock').click(function(){
-		$('.typeStockClient span').removeClass('selected');
-		$(this).addClass('selected');
-		$('#clientpit').hide();
-		$('#cockpit').hide();
-		$('#stockpit').hide();
-		$('#stockpit3').hide();
-		$('#stockpit2').show();
-
-	});
-
-	$('#majik').click(function(){
 		$('.typeStockClient span').removeClass('selected');
 		$(this).addClass('selected');
 		$('#clientpit').hide();

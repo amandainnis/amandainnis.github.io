@@ -345,13 +345,18 @@ section#popoutFeedSection {
     margin-top: 5px;
 }
 
-.criticalDot {
+.criticalDot, .criticalDotClient {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background-color: #f66f64;
     position: absolute;
     left: 69px;
+    top: 12px;
+}
+
+.criticalDotClient {
+    left: 92px;
     top: 12px;
 }
 
@@ -547,7 +552,7 @@ section#popoutFeedSection {
     font-size: 15px;
     text-align: center;
     letter-spacing: .5px;
-    padding-top: 4px;
+    padding-top: 5px;
     color: rgba(0, 0, 0, .9);
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -568,6 +573,15 @@ section#popoutFeedSection {
     font-size: 17px;
 }
 
+.clientBoxTitle {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-weight: 600;
+    padding-top: 12px;
+    font-size: 16px;
+}
+
 .colorMarker {
     width: 111px;
     height: 6px;
@@ -586,7 +600,15 @@ section#popoutFeedSection {
     background-color: #74859b;
 }
 
-
+.colorMarkerClient {
+    width: 111px;
+    height: 6px;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    background-color: #74859b;
+        background-color: #4e5e72;
+}
 
 
 
@@ -598,20 +620,20 @@ section#popoutFeedSection {
     left: -1px;
 }
 
-.numberSummaryBox, .numberSummaryBoxStock {
+.numberSummaryBox, .numberSummaryBoxStock, .numberSummaryBoxClient {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 32px;
     color: rgba(0, 0, 0, .9);
     text-align: center;
-    padding-top: 14px;
+    padding-top: 13px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.numberSummaryBoxStock {
+.numberSummaryBoxStock, .numberSummaryBoxClient {
     font-size: 28px;
     padding-top: 7px;
 
