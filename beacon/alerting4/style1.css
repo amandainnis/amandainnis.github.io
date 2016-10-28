@@ -356,8 +356,9 @@ section#popoutFeedSection {
 }
 
 .criticalDotClient {
-    left: 92px;
+    left: 90px;
     top: 12px;
+        top: 11px;
 }
 
 // #stockpit3 {
@@ -553,11 +554,15 @@ section#popoutFeedSection {
     text-align: center;
     letter-spacing: .5px;
     padding-top: 5px;
+        padding-top: 9px;
     color: rgba(0, 0, 0, .9);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .summaryBoxTitle {
@@ -567,19 +572,20 @@ section#popoutFeedSection {
 }
 
 .stockBoxTitle {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    // font-family: 'Source Sans Pro', sans-serif;
+    // font-weight: 600;
     padding-top: 4px;
-    font-size: 17px;
+    // font-size: 17px;
 }
 
 .clientBoxTitle {
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    // font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
-    font-weight: 600;
-    padding-top: 12px;
-    font-size: 16px;
+    // font-weight: 600;
+    // padding-top: 10px;
+    //     padding-top: 7px;
+    // font-size: 16px;
 }
 
 .colorMarker {
@@ -606,8 +612,9 @@ section#popoutFeedSection {
     position: absolute;
     top: 0px;
     left: -1px;
+    background-color: #4e5e72;
     background-color: #74859b;
-        background-color: #4e5e72;
+        
 }
 
 
@@ -626,18 +633,26 @@ section#popoutFeedSection {
     font-size: 32px;
     color: rgba(0, 0, 0, .9);
     text-align: center;
-    padding-top: 13px;
+    padding-top: 9px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.numberSummaryBoxStock, .numberSummaryBoxClient {
+.numberSummaryBoxStock {
     font-size: 28px;
     padding-top: 7px;
+    padding-top: 9px;
 
 }
+
+.numberSummaryBoxClient {
+    font-size: 32px;
+    // padding-top: 10px;
+}
+
+
 
 .summaryBoxCategory {
 	font-size: 12px;
@@ -658,7 +673,7 @@ section#popoutFeedSection {
 #feed {
     width: 600px;
     height: 355px;
-
+        height: 377px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -774,7 +789,7 @@ section#popoutFeedSection {
 .contactGridRowTextWrapper {
     width: 68%;
     float: left;
-    margin-left: 3.7%;
+    margin-left: 4%;
 }
 
 .messageTitle {
