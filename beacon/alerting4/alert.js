@@ -61,16 +61,16 @@ $('#threeDotContent').mouseleave(function(){
 
 	});
 
-	// $('#stock2').click(function(){
-	// 	$('.typeStockClient span').removeClass('selected');
-	// 	$(this).addClass('selected');
-	// 	$('#clientpit').hide();
-	// 	$('#cockpit').hide();
-	// 	$('#stockpit').hide();
-	// 	$('#stockpit3').hide();
-	// 	$('#stockpit2').show();
+	$('#majik').click(function(){
+		$('.typeStockClient span').removeClass('selected');
+		$(this).addClass('selected');
+		$('#clientpit').hide();
+		$('#cockpit').hide();
+		$('#stockpit').hide();
+		$('#stockpit2').hide();
+		$('#stockpit3').show();
 
-	// });
+	});
 
 	// $('#stock3').click(function(){
 	// 	$('.typeStockClient span').removeClass('selected');

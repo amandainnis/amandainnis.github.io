@@ -291,7 +291,7 @@ section#popoutFeedSection {
 
 
 
-#cockpit, #stockpit, #clientpit {
+#cockpit, #stockpit, #clientpit, #stockpit3 {
     width: 100%;
     position: relative;
     padding-left: 32px;
@@ -355,16 +355,16 @@ section#popoutFeedSection {
     top: 12px;
 }
 
-#stockpit3 {
-    width: 100%;
-    position: relative;
-    padding-left: 32px;
-    height: 257px;
-    height: 270px;
-        height: 274px;
-    padding-top: 7px;
-    border-bottom: 1px rgba(0, 0, 0, .15) solid;
-}
+// #stockpit3 {
+//     width: 100%;
+//     position: relative;
+//     padding-left: 32px;
+//     height: 257px;
+//     height: 270px;
+//         height: 274px;
+//     padding-top: 7px;
+//     border-bottom: 1px rgba(0, 0, 0, .15) solid;
+// }
 
 // #stockpit3 {
 //     background-color: yellow;
