@@ -344,6 +344,16 @@ section#popoutFeedSection {
     margin-top: 5px;
 }
 
+.criticalDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f66f64;
+    position: absolute;
+    left: 69px;
+    top: 12px;
+}
+
 #stockpit3 {
     width: 100%;
     position: relative;
