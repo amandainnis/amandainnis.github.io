@@ -341,6 +341,7 @@ section#popoutFeedSection {
 .tileFilterBarWrapper {
     width: 191px;
     float: right;
+    margin-top: 5px;
 }
 
 #stockpit3 {
