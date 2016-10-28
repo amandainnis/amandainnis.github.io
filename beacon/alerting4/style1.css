@@ -211,6 +211,7 @@ section#popoutFeedSection {
 #alertSummaryHeadings {
         height: 81px;
     padding-top: 24px;
+        padding-top: 21px;
     border-bottom: 6px #DCE2E8 solid;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -268,8 +269,9 @@ section#popoutFeedSection {
 
 .summaryLabel {
     color: rgba(0, 0, 0, .54);
-    padding-bottom: 5px;
     padding-bottom: 2px;
+    padding-bottom: 5px;
+    
     font-weight: 500;
     text-align: center;
     // display: block;
