@@ -55,33 +55,33 @@ $('#threeDotContent').mouseleave(function(){
 		$(this).addClass('selected');
 		$('#clientpit').hide();
 		$('#cockpit').hide();
-		$('#stockpit2').hide();
-		$('#stockpit3').hide();
-		$('#stockpit').show();
-
-	});
-
-	$('#stock2').click(function(){
-		$('.typeStockClient span').removeClass('selected');
-		$(this).addClass('selected');
-		$('#clientpit').hide();
-		$('#cockpit').hide();
 		$('#stockpit').hide();
 		$('#stockpit3').hide();
 		$('#stockpit2').show();
 
 	});
 
-	$('#stock3').click(function(){
-		$('.typeStockClient span').removeClass('selected');
-		$(this).addClass('selected');
-		$('#clientpit').hide();
-		$('#cockpit').hide();
-		$('#stockpit').hide();
-		$('#stockpit2').hide();
-		$('#stockpit3').show();
+	// $('#stock2').click(function(){
+	// 	$('.typeStockClient span').removeClass('selected');
+	// 	$(this).addClass('selected');
+	// 	$('#clientpit').hide();
+	// 	$('#cockpit').hide();
+	// 	$('#stockpit').hide();
+	// 	$('#stockpit3').hide();
+	// 	$('#stockpit2').show();
 
-	});
+	// });
+
+	// $('#stock3').click(function(){
+	// 	$('.typeStockClient span').removeClass('selected');
+	// 	$(this).addClass('selected');
+	// 	$('#clientpit').hide();
+	// 	$('#cockpit').hide();
+	// 	$('#stockpit').hide();
+	// 	$('#stockpit2').hide();
+	// 	$('#stockpit3').show();
+
+	// });
 
     $('#client').click(function(){
 		$('.typeStockClient span').removeClass('selected');
