@@ -23,12 +23,28 @@ var mrktSummary = $('#mrktSummary');
 
 $(document).ready(function(){
 	$('#stockpit').hide();
+	$('#stockpit2').hide();
+	$('#stockpit3').hide();
 	$('#clientpit').hide();
+
+	////////// global threedot/////////////////// 
+$('#threeDotContent').hide();
+
+$('#threeDotWhiteAlert.mdi-dots-vertical').click(function(){
+  $('#threeDotContent').show();
+})
+
+$('#threeDotContent').mouseleave(function(){
+    $('#threeDotContent').hide();
+  });
+
 
 	$('#type').click(function(){
 		$('.typeStockClient span').removeClass('selected');
 		$(this).addClass('selected');
 		$('#stockpit').hide();
+		$('#stockpit2').hide();
+		$('#stockpit3').hide();
 		$('#clientpit').hide();
 		$('#cockpit').show();
 		
@@ -39,6 +55,8 @@ $(document).ready(function(){
 		$(this).addClass('selected');
 		$('#clientpit').hide();
 		$('#cockpit').hide();
+		$('#stockpit2').hide();
+		$('#stockpit3').hide();
 		$('#stockpit').show();
 
 	});
@@ -48,7 +66,20 @@ $(document).ready(function(){
 		$(this).addClass('selected');
 		$('#clientpit').hide();
 		$('#cockpit').hide();
+		$('#stockpit').hide();
+		$('#stockpit3').hide();
 		$('#stockpit2').show();
+
+	});
+
+	$('#stock3').click(function(){
+		$('.typeStockClient span').removeClass('selected');
+		$(this).addClass('selected');
+		$('#clientpit').hide();
+		$('#cockpit').hide();
+		$('#stockpit').hide();
+		$('#stockpit2').hide();
+		$('#stockpit3').show();
 
 	});
 
@@ -57,6 +88,8 @@ $(document).ready(function(){
 		$(this).addClass('selected');
 		$('#cockpit').hide();
 		$('#stockpit').hide();
+		$('#stockpit2').hide();
+		$('#stockpit3').hide();
 		$('#clientpit').show();
 		
 	});
