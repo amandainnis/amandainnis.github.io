@@ -23,8 +23,6 @@ var mrktSummary = $('#mrktSummary');
 
 $(document).ready(function(){
 	$('#stockpit').hide();
-	$('#stockpit2').hide();
-	$('#stockpit3').hide();
 	$('#clientpit').hide();
 
 	////////// global threedot/////////////////// 
@@ -43,53 +41,29 @@ $('#threeDotContent').mouseleave(function(){
 		$('.typeStockClient span').removeClass('selected');
 		$(this).addClass('selected');
 		$('#stockpit').hide();
-		$('#stockpit2').hide();
-		$('#stockpit3').hide();
 		$('#clientpit').hide();
 		$('#cockpit').show();
 		
 	});
 
-	// $('#stock').click(function(){
-	// 	$('.typeStockClient span').removeClass('selected');
-	// 	$(this).addClass('selected');
-	// 	$('#clientpit').hide();
-	// 	$('#cockpit').hide();
-	// 	$('#stockpit').hide();
-	// 	$('#stockpit3').hide();
-	// 	$('#stockpit2').show();
-
-	// });
+	
 
 	$('#stock').click(function(){
 		$('.typeStockClient span').removeClass('selected');
 		$(this).addClass('selected');
 		$('#clientpit').hide();
 		$('#cockpit').hide();
-		$('#stockpit').hide();
-		$('#stockpit2').hide();
-		$('#stockpit3').show();
+		$('#stockpit').show();
 
 	});
 
-	// $('#stock3').click(function(){
-	// 	$('.typeStockClient span').removeClass('selected');
-	// 	$(this).addClass('selected');
-	// 	$('#clientpit').hide();
-	// 	$('#cockpit').hide();
-	// 	$('#stockpit').hide();
-	// 	$('#stockpit2').hide();
-	// 	$('#stockpit3').show();
-
-	// });
+	
 
     $('#client').click(function(){
 		$('.typeStockClient span').removeClass('selected');
 		$(this).addClass('selected');
 		$('#cockpit').hide();
 		$('#stockpit').hide();
-		$('#stockpit2').hide();
-		$('#stockpit3').hide();
 		$('#clientpit').show();
 		
 	});
@@ -498,37 +472,6 @@ $('#threeDotContent').mouseleave(function(){
 	});
 	// end of proAct
 
-	// $('.summaryBox this')
-	// 	.mouseenter(function(){
-	// 	$('.blueMetric').addClass('metricDarker');  
-	// 	})
-	// 	.mouseleave(function(){
-	// 	$('.blueMetric').removeClass('metricDarker');	
-	// 	});
-
-
-	// $('#riskSummaryBox').on('click', function(){
-	// 	$('.alertRow').hide();
-	// 	$('.alertRow.riskFeed').toggle();
-	// });
-// var filter = false;
-
-
-
-
-
-
-
-// $('#riskSummaryBox').on('click', function(){
-// 	if (filter === true) {
-// 		$('#riskSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow.riskFeed').toggle();
-// 		console.log("filter");
-// 	}
-// 		else {
-// 			console.log(filter);
-// 		}
-// 	});
 
 
 
@@ -538,23 +481,7 @@ $('#threeDotContent').mouseleave(function(){
 
 
 
-//////////////////  FUNCTIONAL BUT BEGINS WITH HIDDEN FEED   ////////////////////////
 
-// $('.alertRow').hide();
-
-	
-// $('#riskSummaryBox').on('click', function(){
-// 	if ($('#riskSummaryBox').hasClass('summaryClick')) {
-//     $('.alertRow').show();
-//     $('#riskSummaryBox').removeClass('summaryClick');
-	
-// 	} else { 
-// 	    $('#riskSummaryBox').addClass('summaryClick');
-// 	    $('.alertRow').hide();
-// 	    $('.alertRow.riskFeed').show();
-// 	}
-	
-// });
 
 var counter = 0;
 
@@ -674,93 +601,6 @@ $('#mrktSummaryBox').on('click', function(){
 
 
 
-
-
-// $('#tradeSummaryBox').on('click', function(){
-// 		$('#tradeSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.tradeFeed').toggle();
-// 	});
-
-// $('#stratSummaryBox').on('click', function(){
-// 		$('#stratSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.stratFeed').toggle();
-// 	});
-
-// $('#salesSummaryBox').on('click', function(){
-// 		$('#salesSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.salesFeed').toggle();
-// 	});
-
-// $('#perfSummaryBox').on('click', function(){
-// 		$('#perfSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.perfFeed').toggle();
-// 	});
-
-// $('#prTrdSummaryBox').on('click', function(){
-// 		$('#prTrdSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.prTrdFeed').toggle();
-// 	});
-
-// $('#systmSummaryBox').on('click', function(){
-// 		$('#systmSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.sysFeed').toggle();
-// 	});
-
-// $('#mrktSummaryBox').on('click', function(){
-// 		$('#mrktSummaryBox').toggleClass('summaryClick');
-// 		$('.alertRow').toggle();
-// 		$('.alertRow.mktFeed').toggle();
-// 	});
-////////end //////////  FUNCTIONAL BUT BEGINS WITH HIDDEN FEED   ///////// end///////////////
-
-
-// $( '#cockpit' ).on( 'click', '.summaryBox', function( event ) {
-// 	console.log( "You began the filter!" );
-// 	filter = true;
-// 	$('.alertRow').hide();
-// 	$('#riskSummaryBox').on('click', function(){
-// 		$('.riskFeed').show();
-// 	});
-
-// 	if (filter) {
-// 	$('#riskSummaryBox').on('click', function(){
-// 		$('.alertRow.riskFeed').show();
-// 	});
-
-// }
-
-// });
-
-
-
- 
-// function() {
-    
-//     $( this ).click( function() { console.log( "This is after click 1" ); } );
-// };
-
-
-
-// 	$('#tradeSummaryBox')
-// 		.mouseenter(function(){
-// 		$('.trade').addClass('tradeAlert');  
-// 		})
-// 		.mouseleave(function(){
-// 		$('.trade').removeClass('tradeAlert');	
-// 		});
-
-// stratSummaryBox
-// salesSummaryBox
-// perfSummaryBox
-// prTrdSummaryBox
-// systmSummaryBox
-// mrktSummaryBox
 
 	$('#clearAlerts').click(function(){
         $('.sideSearchAlerts').val("");
