@@ -185,14 +185,14 @@ section#popoutFeedSection {
 
 
 .typeStockClient {
-    margin-left: 30px;
-    
+        margin-left: 30px;
     padding-top: 13px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.54);
     cursor: pointer;
-    letter-spacing: .3px;
+    letter-spacing: .6px;
+
 	
 }
 
