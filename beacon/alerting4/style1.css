@@ -168,7 +168,7 @@ section#popoutFeedSection {
     color: rgba(0,0,0, .87);
     font-weight: 400;
     font-size: 14px;
-    padding: 8px 0 8px 20px;
+    padding: 8px 0 8px 8px;
     text-decoration: none;
     display: block;
     line-height: 1.3em;
