@@ -25,11 +25,11 @@
             <i id="threeDotWhiteAlert" class="mdi mdi-dots-vertical"></i>
             <div class="threeDotDropdown">
                 <ul id="threeDotContent">
-                    <li><i class="mdi mdi-check"></i>Smart Sort (Stock)</li>
+                    <li><i class="mdi mdi-check invisible"></i>Smart Sort (Stock)</li>
                     <li><i class="mdi mdi-check"></i>A/Z Sort (Stock)</li>
-                    <li><i class="mdi mdi-check"></i>All</li>
+                    <li><i class="mdi mdi-check invisible"></i>All</li>
                     <li><i class="mdi mdi-check"></i>Open</li>
-                    <li><i class="mdi mdi-check"></i>Closed</li>
+                    <li><i class="mdi mdi-check invisible"></i>Closed</li>
                 </ul>
             </div>
         </div>
@@ -136,13 +136,18 @@
         <div id="stockpit">
             
             <!-- navigational -->
-            <div class="carouselLeft"><i class="mdi mdi-chevron-left"></i></div>
-            <div class="carouselRight"><i class="mdi mdi-chevron-right"></i></div>
-            <div class="pagination">
+            <div class="carouselLeft lowerCarousel"><i class="mdi mdi-chevron-left"></i></div>
+            <div class="carouselRight lowerCarousel"><i class="mdi mdi-chevron-right"></i></div>
+            <div class="pagination lowerPagination">
                 <div id="circle1" class="circle"></div>
                 <div id="circle2" class="circle"></div>
                 <div id="circle3" class="circle"></div>
             </div>
+            <div class="azSmart">
+                <span class="az azSmartSelected">A/Z</span>
+                <span class="smart">Smart</span>
+            </div>
+            
             
             <!-- end of navigational -->
             

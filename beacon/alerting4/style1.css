@@ -180,7 +180,9 @@ section#popoutFeedSection {
 }
 
 
-
+#threeDotContent li i.invisible {
+    color: transparent;
+}
 
 
 
@@ -287,12 +289,25 @@ section#popoutFeedSection {
     position: relative;
     padding-left: 32px;
     height: 257px;
+    
     height: 270px;
+    height: 287px;
     height: 262px;
     padding-top: 7px;
+    height: 270px;
+        height: 275px;
+    
+    padding-top: 9px;
     border-bottom: 1px rgba(0, 0, 0, .15) solid;
     overflow: hidden;
 }
+
+#stockpit {
+    height: 287px;
+    padding-top: 27px;
+    height: 281px;
+}
+
 
 .transparentDot {
     width: 12px;
@@ -325,7 +340,8 @@ section#popoutFeedSection {
 .carouselLeft {
     width: 25px;
     position: absolute;
-    top: 109px;
+        top: 114px;
+            top: 118px;
     left: -1px;
     z-index: 3;
     font-size: 27px;
@@ -335,26 +351,52 @@ section#popoutFeedSection {
 .carouselRight {
     width: 25px;
     position: absolute;
-    top: 109px;
+        top: 114px;
+            top: 118px;
     left: 574px;
     z-index: 3;
     font-size: 27px;
     color: #ced0d5;
 }
 
-
+.lowerCarousel {
+    top: 129px;
+}
 
 .pagination {
     width: 33px;
     position: absolute;
-    top: 240px;
+    top: 244px;
+    top: 248px;
     left: 286px;
     z-index: 3;
     // border: 1px black solid;
 
 }
 
+.lowerPagination {
+    top: 260px;
+        top: 255px;
+}
 
+.azSmart {
+    width: 115px;
+    position: absolute;
+    top: 14px;
+    left: 461px;
+}
+
+.azSmart span {
+    padding: 6px 8px;
+    border: 1px gray solid;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.azSmartSelected {
+    background-color: #32b5a5;
+        background-color: #b9c4cf;
+}
 
 .circle {
     display: inline-block;
@@ -376,6 +418,7 @@ section#popoutFeedSection {
     height: 93px;
     background-color: #F4F6F8;
     margin-top: 19px;
+    margin-top: 21px;
     margin-right: 30px;
     padding-top: 17px;
     position: relative;
