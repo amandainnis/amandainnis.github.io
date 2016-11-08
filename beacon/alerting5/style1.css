@@ -518,7 +518,7 @@ section#popoutFeedSection {
     background-color: #1c3a60;
     background-color: #74859b;
     background-color: #32b5a5;
-    background-color: #5ac5b8;
+    // background-color: #5ac5b8;
     
 }
 
@@ -671,6 +671,7 @@ section#popoutFeedSection {
     background-color: #f66f64;
     
     background-color: #B46CEE;
+    background-color: #aa4ef4;
         
 }
 
@@ -678,17 +679,19 @@ section#popoutFeedSection {
     background-color: #3ac4b3;
     background-color: #5ac5b8;
     background-color: #5a8fc5;
+    background-color: #15a1d7;
         
 }
 
 .performanceAlert {
     background-color: #0856AF;
-    background-color: #3571b0;
+    // background-color: #3571b0;
 }
 
 .stratAlert {
     background-color: #2196F3;
     background-color: #7b70d9;
+        background-color: #6456da;
     
         
 }
