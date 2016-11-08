@@ -135,8 +135,8 @@ section#popoutFeedSection {
     left: 564px;
     top: -18px;
 }
+
 .alertHeader {
-	
 	height: 40px;
     background-color: #0069CB;
 }
@@ -435,7 +435,10 @@ section#popoutFeedSection {
     width: 91px;
     height: 89px;
     background-color: #fdffee;
+    
+    background-color: #f2f8fe;
     background-color: #F4F6F8;
+    // background-color: #eef6ff;
     margin-top: 19px;
     margin-right: 20px;
     padding-top: 17px;
@@ -447,6 +450,9 @@ section#popoutFeedSection {
     border-left: 1px solid #dce2e8;
     
     border-bottom: 2px solid #b9c4cf;
+    //     border-right: 1px solid #f66f64;
+    // border-left: 1px solid #f66f64;
+    // border-bottom: 1px solid #f66f64;
     
    
 }
@@ -511,6 +517,19 @@ section#popoutFeedSection {
     left: -1px;
     background-color: #1c3a60;
     background-color: #74859b;
+    background-color: #32b5a5;
+    background-color: #5ac5b8;
+    
+}
+
+.stockBorderCritical {
+    width: 91px;
+    height: 6px;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    background-color: #1c3a60;
+    background-color: #f66f64;
 }
 
 .colorMarkerClient {
@@ -651,24 +670,25 @@ section#popoutFeedSection {
     background-color: #c960db;
     background-color: #f66f64;
     
-    
+    background-color: #B46CEE;
         
 }
 
 .tradeAlert {
     background-color: #3ac4b3;
     background-color: #5ac5b8;
+    background-color: #5a8fc5;
         
 }
 
 .performanceAlert {
     background-color: #0856AF;
-  
+    background-color: #3571b0;
 }
 
 .stratAlert {
     background-color: #2196F3;
-    background-color: #B46CEE;
+    background-color: #7b70d9;
     
         
 }
@@ -679,7 +699,7 @@ section#popoutFeedSection {
 
 .prTrdAlert {
     background-color: #1992c2;
-    
+    background-color: #26A4B4;
 }
 
 .systmAlert {

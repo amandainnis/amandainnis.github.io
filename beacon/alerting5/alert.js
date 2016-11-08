@@ -134,11 +134,16 @@ $(document).ready(function() {
 //  makeArraySlice(tickerBoxArrayMaster, 10);
 
  function makeTickerBox(name, alertCount, crit) {
-   		var newTicker = $('<div class="summaryBoxStock"><div class="summaryBoxLeft"><div class="stockBoxTitle">'+ name +'</div><div class="stockBorder"></div><div class="numberSummaryBoxStock">'+ alertCount +'</div></div></div>');
+       
+   		var newTicker = $('<div class="summaryBoxStock"><div class="summaryBoxLeft"><div class="stockBoxTitle">'+ name +'</div><div class="numberSummaryBoxStock">'+ alertCount +'</div></div></div>');
    		if (crit) {
    			
-   			newTicker.append($('<div class="criticalDot"></div>'));
+   			newTicker.append($('<div class="stockBorderCritical"></div>'));
+            // newTicker.hasClass($("stockBorder")).css( "background-color", "red" );
+            // variableClass.css( "background-color", "red" );
+            $("stockBorder").css( "background-color", "red" );
    		}
+        else {newTicker.append($('<div class="stockBorder"></div>'));}
    		$('#stockpit').append(newTicker);
    		console.log(newTicker);
    };
