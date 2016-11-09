@@ -117,7 +117,7 @@ $(document).ready(function() {
 	 });
 
      var tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
-     var tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+     tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
 
 //     var tickerBoxArray = [];
   
