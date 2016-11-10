@@ -337,6 +337,7 @@ $('#az').click();
         iterateDisplay(tickerBoxArray);
         $('#smart').removeClass('azSmartSelected');
          $('#az').addClass('azSmartSelected');
+         $('.pagination').show();
      
 
     });
