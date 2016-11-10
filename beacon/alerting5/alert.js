@@ -54,6 +54,12 @@ $(document).ready(function() {
         $('#cockpit').hide();
         $('#stockpit').show();
 
+        // total has to reset
+        $('.summary .numbers').removeClass('selectedNumbers');
+        $('#total').addClass('selectedNumbers');
+        $('#tickerZone').children().remove();
+        iterateDisplay(tickerBoxArray);
+
     });
 
 
@@ -104,73 +110,23 @@ $(document).ready(function() {
      	];
 
 
-        // var filterFn = function (someArray) {
-        //     var tempoArray = [];
-        //     for (var i=0; i < someArray.length ; i++){
-        //         if (someArray[i].redDot == true){
-        //             // console.log("has red d0t "+ someArray[i]);
-        //             tempoArray.push(someArray[i])
-        //         }
-        //         // else {
-        //         //     console.log("has not red d0t "+ someArray[i]);
-        //         // }
-        //     }
-        //     return tempoArray;
-        //     console.log(tempoArray);
-        // }
-
-        // var filterFn = function (tickerBoxArrayMaster) {
-        //     var tempoArray = [];
-        //     for (var i=0; i < tickerBoxArrayMaster.length ; i++){
-        //         if (tickerBoxArrayMaster[i].redDot == true){
-        //             // console.log("has red d0t "+ someArray[i]);
-        //             tempoArray.push(tickerBoxArrayMaster[i])
-        //         }
-        //         // else {
-        //         //     console.log("has not red d0t "+ someArray[i]);
-        //         // }
-        //     }
-        //     return tempoArray;
-            
-        // }
-        // console.log(filterFn);
-
-
-
-
-        // var critArray;
-
-        //  function filterFn(someArray, tempoArray) {
-        //     var tempoArray = [];
-        //     for (var i=0; i < someArray.length ; i++){
-        //         if (someArray[i].redDot == true){
-        //             // console.log("has red d0t "+ someArray[i]);
-        //             tempoArray.push(someArray[i])
-        //         }
-        //         // else {
-        //         //     console.log("has not red d0t "+ someArray[i]);
-        //         // }
-        //     }
-        //     return tempoArray;
-            
-        // }
-
-        // filterFn(tickerBoxArrayMaster, critArray);
-
-        // console.log(critArray);
-
-
-
-
-
-
-
 
      var tickerBoxArray = [];
 
      tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
 
+     var smartArray = [
+        {ticker: "ITUB", number: "96", redDot: true},
+        {ticker: "LUV", number: "41", redDot: true},
+        {ticker: "GE", number: "51", redDot: true},
+        {ticker: "CUZ", number: "35", redDot: true},
+        {ticker: "AAPL", number: "41", redDot: true},
+        {ticker: "TWTR", number: "35", redDot: true},
+        {ticker: "XOM", number: "96", redDot: true},
+        {ticker: "PBR", number: "38", redDot: true},
+        {ticker: "FCAU", number: "38", redDot: true}
 
+        ];
 
 
 
@@ -239,6 +195,9 @@ $(document).ready(function() {
       
         iterateDisplay(tickerBoxArray);
         console.log('norm');
+         // total has to reset
+        $('.summary .numbers').removeClass('selectedNumbers');
+        $('#total').addClass('selectedNumbers');
         
      });
 
@@ -249,7 +208,7 @@ $(document).ready(function() {
         $('#tickerZone').children().remove();
         console.log('click');
         
-         iterateDisplay(critArray);
+         iterateDisplay(smartArray);
      });
       
 $('#az').click();  
@@ -294,7 +253,7 @@ $('#az').click();
 
      });
  
-     
+
 
 
 
@@ -355,6 +314,8 @@ $('#az').click();
         // for tickers
         $('#tickerZone').children().remove();
         iterateDisplay(tickerBoxArray);
+        $('#smart').removeClass('azSmartSelected');
+         $('#az').addClass('azSmartSelected');
      
 
     });
@@ -368,6 +329,8 @@ $('#az').click();
          // for tickers
          $('#tickerZone').children().remove();
          iterateDisplay(critArray);
+         $('#smart').removeClass('azSmartSelected');
+         $('#az').removeClass('azSmartSelected');
         
     });
 
@@ -380,6 +343,8 @@ $('#az').click();
          // for tickers
          $('#tickerZone').children().remove();
          iterateDisplay(critArray);
+         $('#smart').removeClass('azSmartSelected');
+         $('#az').removeClass('azSmartSelected');
         
     });
     
