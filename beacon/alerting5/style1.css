@@ -188,9 +188,9 @@ section#popoutFeedSection {
 
 .typeStockClient {
         margin-left: 30px;
-    padding-top: 13px;
+    padding-top: 14px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.54);
     cursor: pointer;
     letter-spacing: .6px;
