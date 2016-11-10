@@ -166,27 +166,46 @@ $(document).ready(function() {
 
 
 
+     var tickerBoxArray = [];
+
+     tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
 
 
-
-
+// naviagtion on carousel and the tickerCounter
     
      var tickerCounter = 0;
 
+  
      $('#stockChevronRight').on('click', function() {
-		tickerCounter += 1;
+		if (tickerCounter < 2 && tickerCounter >= 0) {
+            tickerCounter += 1;
+        } 
 		console.log(tickerCounter);
 	 });
 
 	 $('#stockChevronLeft').on('click', function() {
-		tickerCounter -= 1;
+        if (tickerCounter > 0) {
+            tickerCounter -= 1;
+        } else if (tickerCounter == 0) {
+            tickerCounter += 0;
+        }
+		
 		console.log(tickerCounter);
 	 });
 
 
-     var tickerBoxArray = [];
 
-     tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+
+     if (tickerCounter == 0) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+        } else if (tickerCounter == 1) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+        } else if (tickerCounter == 2) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
+        } 
+
+      
+    
      
 
 
@@ -209,15 +228,15 @@ $(document).ready(function() {
 
 // //the function that yields the critArray
 
-//     var critArray = [];
+    var critArray = [];
     
-//     tickerBoxArrayMaster.forEach(function(item, index){
-//         if (tickerBoxArrayMaster[index].redDot) {
-//             critArray.push(item);
-//         }
-//      });
+    tickerBoxArrayMaster.forEach(function(item, index){
+        if (tickerBoxArrayMaster[index].redDot) {
+            critArray.push(item);
+        }
+     });
 
-//      console.log(critArray);
+     console.log(critArray);
 
 
 // the function that iterates through and displays the tickers
@@ -240,7 +259,6 @@ $(document).ready(function() {
         console.log('click');
         iterateDisplay(tickerBoxArray);
         console.log('norm');
-        // iterateDisplay(tickerBoxArray);
         
      });
 
@@ -250,33 +268,15 @@ $(document).ready(function() {
         $('#smart').addClass('azSmartSelected');
         $('#tickerZone').children().remove();
         console.log('click');
-        //the function that yields the critArray
-
-                var critArray = [];
-                
-                tickerBoxArrayMaster.forEach(function(item, index){
-                    if (tickerBoxArrayMaster[index].redDot) {
-                        critArray.push(item);
-                    }
-                 });
-
-        console.log(critArray);
-
-         iterateDisplay(critArray);
-         console.log('crit');
-        // iterateDisplay(critArray);
         
-       
-
+         iterateDisplay(critArray);
      });
-   
-
       
 $('#az').click();  
 
 
 
-
+ 
 
 
 
@@ -335,6 +335,10 @@ $('#az').click();
         $('.summary .numbers').removeClass('selectedNumbers');
         $('#total').addClass('selectedNumbers');
         addNumber(openTotalSummaryBoxTotals);
+        // for tickers
+        $('#tickerZone').children().remove();
+        iterateDisplay(tickerBoxArray);
+     
 
     });
 
@@ -344,6 +348,9 @@ $('#az').click();
         $('.summary .numbers').removeClass('selectedNumbers');
         $('#outage').addClass('selectedNumbers');
         addNumber(outageSummaryBoxTotals);
+         // for tickers
+         $('#tickerZone').children().remove();
+         iterateDisplay(critArray);
         
     });
 
@@ -353,6 +360,9 @@ $('#az').click();
         $('.summary .numbers').removeClass('selectedNumbers');
         $('#critical').addClass('selectedNumbers');
         addNumber(criticalSummaryBoxTotals);
+         // for tickers
+         $('#tickerZone').children().remove();
+         iterateDisplay(critArray);
         
     });
     
