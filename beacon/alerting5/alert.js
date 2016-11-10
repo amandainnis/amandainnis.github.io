@@ -59,6 +59,7 @@ $(document).ready(function() {
         $('#total').addClass('selectedNumbers');
         $('#tickerZone').children().remove();
         iterateDisplay(tickerBoxArray);
+        $('#az').addClass('azSmartSelected');
 
     });
 
@@ -191,6 +192,7 @@ $(document).ready(function() {
     $('#az').on('click', function(){
         $('#smart').removeClass('azSmartSelected');
         $('#az').addClass('azSmartSelected');
+        $('.pagination').show();
         $('#tickerZone').children().remove();
       
         iterateDisplay(tickerBoxArray);
@@ -205,6 +207,7 @@ $(document).ready(function() {
      $('#smart').on('click', function(){
         $('#az').removeClass('azSmartSelected');
         $('#smart').addClass('azSmartSelected');
+        $('.pagination').hide();
         $('#tickerZone').children().remove();
         console.log('click');
         
@@ -226,10 +229,16 @@ $('#az').click();
         console.log(tickerCounter);
         if (tickerCounter == 0) {
             tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+            $('.circle').removeClass('circleSelected');
+            $('#circle1').addClass('circleSelected');
         } else if (tickerCounter == 1) {
             tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+            $('.circle').removeClass('circleSelected');
+            $('#circle2').addClass('circleSelected');
         } else if (tickerCounter == 2) {
             tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
+            $('.circle').removeClass('circleSelected');
+            $('#circle3').addClass('circleSelected');
         } 
         $('#tickerZone').children().remove();
         iterateDisplay(tickerBoxArray);
@@ -243,10 +252,22 @@ $('#az').click();
         console.log(tickerCounter);
         if (tickerCounter == 0) {
             tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+            $('.circle').removeClass('circleSelected');
+            $('#circle1').addClass('circleSelected');
+            $('#stockChevronLeft').hide();
+            $('#stockChevronRight').show();
         } else if (tickerCounter == 1) {
             tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+            $('.circle').removeClass('circleSelected');
+            $('#circle2').addClass('circleSelected');
+            $('#stockChevronLeft').show();
+            $('#stockChevronRight').show();
         } else if (tickerCounter == 2) {
             tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
+            $('.circle').removeClass('circleSelected');
+            $('#circle3').addClass('circleSelected');
+            $('#stockChevronLeft').show();
+            $('#stockChevronRight').hide();
         }
         $('#tickerZone').children().remove();
         iterateDisplay(tickerBoxArray); 

@@ -311,7 +311,7 @@ section#popoutFeedSection {
 #tickerZone {
     width: 100%;
     height: 287px;
-    
+
 }
 
 .transparentDot {
@@ -411,7 +411,7 @@ section#popoutFeedSection {
     border: 1px gray solid;
 }
 
-#circle1 {
+.circleSelected {
     background-color: gray;
 }
 
