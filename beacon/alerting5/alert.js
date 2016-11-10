@@ -171,38 +171,18 @@ $(document).ready(function() {
      tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
 
 
-// naviagtion on carousel and the tickerCounter
-    
-     var tickerCounter = 0;
-
-  
-     $('#stockChevronRight').on('click', function() {
-		if (tickerCounter < 2 && tickerCounter >= 0) {
-            tickerCounter += 1;
-        } 
-		console.log(tickerCounter);
-	 });
-
-	 $('#stockChevronLeft').on('click', function() {
-        if (tickerCounter > 0) {
-            tickerCounter -= 1;
-        } else if (tickerCounter == 0) {
-            tickerCounter += 0;
-        }
-		
-		console.log(tickerCounter);
-	 });
 
 
 
 
-     if (tickerCounter == 0) {
-            tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
-        } else if (tickerCounter == 1) {
-            tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
-        } else if (tickerCounter == 2) {
-            tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
-        } 
+
+     // if (tickerCounter == 0) {
+     //        tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+     //    } else if (tickerCounter == 1) {
+     //        tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+     //    } else if (tickerCounter == 2) {
+     //        tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
+     //    } 
 
       
     
@@ -256,7 +236,7 @@ $(document).ready(function() {
         $('#smart').removeClass('azSmartSelected');
         $('#az').addClass('azSmartSelected');
         $('#tickerZone').children().remove();
-        console.log('click');
+      
         iterateDisplay(tickerBoxArray);
         console.log('norm');
         
@@ -275,9 +255,46 @@ $(document).ready(function() {
 $('#az').click();  
 
 
+// naviagtion on carousel and the tickerCounter
+    
+     var tickerCounter = 0;
 
+  
+     $('#stockChevronRight').on('click', function() {
+        if (tickerCounter < 2 && tickerCounter >= 0) {
+            tickerCounter += 1;
+        } 
+        console.log(tickerCounter);
+        if (tickerCounter == 0) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+        } else if (tickerCounter == 1) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+        } else if (tickerCounter == 2) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
+        } 
+        $('#tickerZone').children().remove();
+        iterateDisplay(tickerBoxArray);
+     });
+
+     $('#stockChevronLeft').on('click', function() {
+        if (tickerCounter < 3 && tickerCounter > 0) {
+            tickerCounter -= 1;
+        } 
+        
+        console.log(tickerCounter);
+        if (tickerCounter == 0) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+        } else if (tickerCounter == 1) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
+        } else if (tickerCounter == 2) {
+            tickerBoxArray = tickerBoxArrayMaster.slice(20,30);
+        }
+        $('#tickerZone').children().remove();
+        iterateDisplay(tickerBoxArray); 
+
+     });
  
-
+     
 
 
 
