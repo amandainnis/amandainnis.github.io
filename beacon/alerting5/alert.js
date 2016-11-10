@@ -103,6 +103,73 @@ $(document).ready(function() {
      		{ticker: "ZBH", number: "16", redDot: false}   		
      	];
 
+
+        // var filterFn = function (someArray) {
+        //     var tempoArray = [];
+        //     for (var i=0; i < someArray.length ; i++){
+        //         if (someArray[i].redDot == true){
+        //             // console.log("has red d0t "+ someArray[i]);
+        //             tempoArray.push(someArray[i])
+        //         }
+        //         // else {
+        //         //     console.log("has not red d0t "+ someArray[i]);
+        //         // }
+        //     }
+        //     return tempoArray;
+        //     console.log(tempoArray);
+        // }
+
+        // var filterFn = function (tickerBoxArrayMaster) {
+        //     var tempoArray = [];
+        //     for (var i=0; i < tickerBoxArrayMaster.length ; i++){
+        //         if (tickerBoxArrayMaster[i].redDot == true){
+        //             // console.log("has red d0t "+ someArray[i]);
+        //             tempoArray.push(tickerBoxArrayMaster[i])
+        //         }
+        //         // else {
+        //         //     console.log("has not red d0t "+ someArray[i]);
+        //         // }
+        //     }
+        //     return tempoArray;
+            
+        // }
+        // console.log(filterFn);
+
+
+
+
+        // var critArray;
+
+        //  function filterFn(someArray, tempoArray) {
+        //     var tempoArray = [];
+        //     for (var i=0; i < someArray.length ; i++){
+        //         if (someArray[i].redDot == true){
+        //             // console.log("has red d0t "+ someArray[i]);
+        //             tempoArray.push(someArray[i])
+        //         }
+        //         // else {
+        //         //     console.log("has not red d0t "+ someArray[i]);
+        //         // }
+        //     }
+        //     return tempoArray;
+            
+        // }
+
+        // filterFn(tickerBoxArrayMaster, critArray);
+
+        // console.log(critArray);
+
+
+
+
+
+
+
+
+
+
+
+
     
      var tickerCounter = 0;
 
@@ -116,22 +183,13 @@ $(document).ready(function() {
 		console.log(tickerCounter);
 	 });
 
-     var tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
-     tickerBoxArray = tickerBoxArrayMaster.slice(10,20);
 
-//     var tickerBoxArray = [];
-  
-// // console.log(tickerBoxArray[0].ticker);
+     var tickerBoxArray = [];
 
-//    function makeArraySlice(arr, sliceNumber) {
-//    		for(var i = 0; i < arr.length; i += sliceNumber) {
-//    			var temporaryArray = arr.slice(i, i + sliceNumber);
-//    			tickerBoxArray.push(temporaryArray)
-//    		}
-//    		return tickerBoxArray;
-//    };
+     tickerBoxArray = tickerBoxArrayMaster.slice(0,10);
+     
 
-//  makeArraySlice(tickerBoxArrayMaster, 10);
+
 
  function makeTickerBox(name, alertCount, crit) {
        
@@ -139,24 +197,97 @@ $(document).ready(function() {
    		if (crit) {
    			
    			newTicker.append($('<div class="stockBorderCritical"></div>'));
-            // newTicker.hasClass($("stockBorder")).css( "background-color", "red" );
-            // variableClass.css( "background-color", "red" );
-            $("stockBorder").css( "background-color", "red" );
+            
+            // $("stockBorder").css( "background-color", "red" );
    		}
         else {newTicker.append($('<div class="stockBorder"></div>'));}
-   		$('#stockpit').append(newTicker);
+   		$('#tickerZone').append(newTicker);
    		console.log(newTicker);
    };
 
 
 
-   for (i = 0; i < tickerBoxArray.length; i++) {
-   	makeTickerBox(tickerBoxArray[i].ticker, tickerBoxArray[i].number, tickerBoxArray[i].redDot);
-   		
+// //the function that yields the critArray
 
-   };
+//     var critArray = [];
+    
+//     tickerBoxArrayMaster.forEach(function(item, index){
+//         if (tickerBoxArrayMaster[index].redDot) {
+//             critArray.push(item);
+//         }
+//      });
+
+//      console.log(critArray);
+
+
+// the function that iterates through and displays the tickers
+
+
+    function iterateDisplay(arr) {
+       for (i = 0; i < arr.length; i++) {
+       makeTickerBox(arr[i].ticker, arr[i].number, arr[i].redDot);
+        
+     }};
+
 
    
+  
+  //  navigation on smart and az
+    $('#az').on('click', function(){
+        $('#smart').removeClass('azSmartSelected');
+        $('#az').addClass('azSmartSelected');
+        $('#tickerZone').children().remove();
+        console.log('click');
+        iterateDisplay(tickerBoxArray);
+        console.log('norm');
+        // iterateDisplay(tickerBoxArray);
+        
+     });
+
+
+     $('#smart').on('click', function(){
+        $('#az').removeClass('azSmartSelected');
+        $('#smart').addClass('azSmartSelected');
+        $('#tickerZone').children().remove();
+        console.log('click');
+        //the function that yields the critArray
+
+                var critArray = [];
+                
+                tickerBoxArrayMaster.forEach(function(item, index){
+                    if (tickerBoxArrayMaster[index].redDot) {
+                        critArray.push(item);
+                    }
+                 });
+
+        console.log(critArray);
+
+         iterateDisplay(critArray);
+         console.log('crit');
+        // iterateDisplay(critArray);
+        
+       
+
+     });
+   
+
+      
+$('#az').click();  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  function addNumber(arr) {

@@ -308,6 +308,11 @@ section#popoutFeedSection {
     height: 281px;
 }
 
+#tickerZone {
+    width: 100%;
+    height: 287px;
+    
+}
 
 .transparentDot {
     width: 12px;
