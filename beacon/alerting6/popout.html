@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
+    <!-- <link rel="stylesheet" type="text/css" href="grid/styleContacts.css"> -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="style.less" /> -->
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <!-- <script type="text/javascript" src="jquery-1.11.3.js"></script> -->
+    <!-- <script type="text/javascript" src="grid/script.js"></script> -->
+    <script type="text/javascript" src="alert.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div id="popoutWrapper">
+        <!-- <header>
+            
+            <span class="beaconLogoText">Beacon</span>
+            <div id="logo"><img src="logo_current.png"></div>
+            <div class="dropdownSearch">
+                <div class="topSearch"><i class="mdi mdi-magnify"></i></div>
+                <div class="dropdown-content2">
+                </div>
+            </div>
+            <i class="mdi mdi-window-minimize"></i>
+            <div class="topRightActions">
+                <i class="mdi mdi-bell"></i>
+                <div id="nineBox">
+                    <i class="mdi mdi-apps"></i>
+                </div>
+                
+            </div>
+        </header> -->
+        <section id="boxes">
+            <div class="alertHeader">
+                <!-- <div class="alertHeaderTitle">Electronic Trade Alerts</div> -->
+                <div class="typeStockClient">
+                    <span id="type" class="selected">Type</span>
+                    <span id="stock2" class="notSelected">Stock2</span>
+                    <span id="client" class="notSelected">Client</span>
+                </div>
+                <i id="threeDotWhiteAlert" class="mdi mdi-dots-vertical"></i>
+            </div>
+            <!-- end of alert header -->
+            <div id="alertSummaryHeadings">
+                <div class="summaryTotal">
+                    <div class="summary">
+                        <div class="summaryLabel">Total</div>
+                        <div id="total" class="numbers selectedNumbers">323</div>
+                    </div>
+                </div>
+                <div class="summaryWrapper">
+                    <div class="summary">
+                        <div class="summaryLabel">Outage</div>
+                        <div id="outage" class="numbers">42</div>
+                    </div>
+                </div>
+                <div class="summaryWrapper">
+                    <div class="summary">
+                        <div class="summaryLabel">Critical</div>
+                        <div id="critical" class="numbers">57</div>
+                    </div>
+                </div>
+                <div class="summaryWrapper">
+                    <div class="summary">
+                        <div class="summaryLabel">Urgent</div>
+                        <div id="urgent" class="numbers">139</div>
+                    </div>
+                </div>
+                <div class="summaryWrapper">
+                    <div class="summary">
+                        <div class="summaryLabel">Comm.</div>
+                        <div id="commentary" class="numbers">3</div>
+                    </div>
+                </div>
+                <div class="summaryWrapper">
+                    <div class="summary">
+                        <div class="summaryLabel">ProAct.</div>
+                        <div id="proAct" class="numbers">82</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of alertSummary -->
+            <!-- begin cockpit -->
+            <div id="cockpit">
+                <div id="riskSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Risk</div>
+                        <div class="colorMarker riskAlert"></div>
+                        <div id="riskSummary" class="numberSummaryBox">41</div>
+                    </div>
+                </div>
+                <div id="tradeSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Trade</div>
+                        <div class="colorMarker tradeAlert"></div>
+                        <div id="tradeSummary" class="numberSummaryBox">73</div>
+                    </div>
+                </div>
+                <div id="stratSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Strategy</div>
+                        <div class="colorMarker stratAlert"></div>
+                        <div id="stratSummary" class="numberSummaryBox">18</div>
+                    </div>
+                </div>
+                <div id="salesSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Sales</div>
+                        <div class="colorMarker salesAlert"></div>
+                        <div id="salesSummary" class="numberSummaryBox">38</div>
+                    </div>
+                </div>
+                <div id="perfSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Perform.</div>
+                        <div class="colorMarker performanceAlert"></div>
+                        <div id="perfSummary" class="numberSummaryBox">46</div>
+                    </div>
+                </div>
+                <div id="prTrdSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Pre-Trade</div>
+                        <div class="colorMarker prTrdAlert"></div>
+                        <div id="prTrdSummary" class="numberSummaryBox">51</div>
+                    </div>
+                </div>
+                <div id="systmSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">System</div>
+                        <div class="colorMarker systmAlert"></div>
+                        <div id="systmSummary" class="numberSummaryBox">21</div>
+                    </div>
+                </div>
+                <div id="mrktSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="summaryBoxTitle">Market</div>
+                        <div class="colorMarker mktAlert"></div>
+                        <div id="mrktSummary" class="numberSummaryBox">35</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of cockpit -->
+            <div id="stockpit2">
+                <!-- navigational -->
+                <div class="carouselLeft"><i class="mdi mdi-chevron-left"></i></div>
+                <div class="carouselRight"><i class="mdi mdi-chevron-right"></i></div>
+                <div class="pagination">
+                    <div id="circle1" class="circle"></div>
+                    <div id="circle2" class="circle"></div>
+                    <div id="circle3" class="circle"></div>
+                </div>
+                <!-- <div class="popoutFeed">
+                    <div class="single"><img src="single.png" /></div>
+                    <div class="popout"><img src="popout.png" /></div>
+                </div> -->
+                <!--  <div class="expandPit">
+               <i class="mdi mdi-chevron-down"></i>
+           </div> -->
+                <!-- end of navigational -->
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">AAPL</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">41</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">AMZN</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">73</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">GOOG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">18</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">QWERTY</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">38</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">BCBG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">46</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">LMNOP</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">51</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">KEY</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">21</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                 <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">AAPL</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">41</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">AMZN</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">73</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">GOOG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">18</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">QWERTY</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">38</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">BCBG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">46</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">LMNOP</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">51</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">KEY</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">21</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                 <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">AAPL</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">41</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">AMZN</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">73</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">GOOG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">18</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">QWERTY</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">38</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">BCBG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">46</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">LMNOP</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">51</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">KEY</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">21</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+                <div class="summaryBoxStock">
+                    <div class="summaryBoxLeft">
+                        <div class="stockBoxTitle">JLG</div>
+                        <!-- <div class="stockBorder"></div> -->
+                        <div class="numberSummaryBoxStock">35</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of stockpit -->
+            <div id="clientpit">
+                <!-- navigational -->
+                <div class="carouselLeft"><i class="mdi mdi-chevron-left"></i></div>
+                <div class="carouselRight"><i class="mdi mdi-chevron-right"></i></div>
+                <div class="pagination">
+                    <div id="circle1" class="circle"></div>
+                    <div id="circle2" class="circle"></div>
+                    <div id="circle3" class="circle"></div>
+                </div>
+                <!-- end of navigational -->
+                <div id="riskSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot riskAlert"></div> -->
+                        <div id="riskSummary" class="numberSummaryBox">41</div>
+                    </div>
+                </div>
+                <div id="tradeSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot tradeAlert"></div> -->
+                        <div id="tradeSummary" class="numberSummaryBox">73</div>
+                    </div>
+                </div>
+                <div id="stratSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot stratAlert"></div> -->
+                        <div id="stratSummary" class="numberSummaryBox">18</div>
+                    </div>
+                </div>
+                <div id="salesSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot salesAlert"></div> -->
+                        <div id="salesSummary" class="numberSummaryBox">38</div>
+                    </div>
+                </div>
+                <div id="perfSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot performanceAlert"></div> -->
+                        <div id="perfSummary" class="numberSummaryBox">46</div>
+                    </div>
+                </div>
+                <div id="prTrdSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot prTrdAlert"></div> -->
+                        <div id="prTrdSummary" class="numberSummaryBox">51</div>
+                    </div>
+                </div>
+                <div id="systmSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot systmAlert"></div> -->
+                        <div id="systmSummary" class="numberSummaryBox">21</div>
+                    </div>
+                </div>
+                <div id="mrktSummaryBox" class="summaryBox">
+                    <div class="summaryBoxLeft">
+                        <div class="clientBoxTitle">Blackrock</div>
+                        <!-- <div class="dot mktAlert"></div> -->
+                        <div id="mrktSummary" class="numberSummaryBox">35</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of clientpit -->
+        </section>
+        <section id="popoutFeedSection">
+            <div id="feedPop">
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Price Limit Breach</span><span class="messageText">NINEPRPX2 - WAC (Sell) - Rejected | Order Quantity: 100 - Mkt or Limit Price: 2.34</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Order Quantity Breach - Last share exceeds threshold [CRITICAL]</span><span class="messageText">PIMCOBG - IBM (Buy) - PendingNew | Order Quantity: 2,000,000 - Last Shares: N/A</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix tradeFeed">
+                    <div class="alertType tradeAlert">
+                        <div class="alertText">TRD</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Aggregate Volume Breach - Volume Exceeded 40% of daily volume[URGENT]</span><span class="messageText">IBCP | Total Order Quantity: 9,753 - Day Vol: 7,354 - % Vol: 132.62</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Order Notional Breach - Check if notional exceeds threshold [CRITICAL]</span><span class="messageText">CARMIGX - CX (Buy) - PartiallyFilled | Order Quantity: 1,618,520 -Total Notional: 13,433,716</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix tradeFeed">
+                    <div class="alertType tradeAlert">
+                        <div class="alertText">TRD</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Order Reject - Order reject count exceeds threshold [CRITICAL]</span><span class="messageText">MILLXWQK - REGN (Buy) | Order Quantity: 300 - Reject Count: 6</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Duplicate Order [CRITICAL]</span><span class="messageText">ALLIPWST - GPOR (Buy) | Order Quantity: 50, 000</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix tradeFeed">
+                    <div class="alertType tradeAlert">
+                        <div class="alertText">TRD</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Overfill Alert [CRITICAL]</span><span class="messageText">KEYDSA - DNOW (Buy) | Quantity: 1600 - Unfilled: -100</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">ADV Breach - Check OrderQty vs ADV (%)</span><span class="messageText">PIMCOBG - IBM (Buy) - Rejected | Order Quantity: 20000000 - ADV%: 871.62</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix tradeFeed">
+                    <div class="alertType tradeAlert">
+                        <div class="alertText">TRD</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%)
+                   11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Error Msg:</span><span class="messageText">Restricted symbol has no allowable exemptions
+                    11:35:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix perfFeed">
+                    <div class="alertType performanceAlert">
+                        <div class="alertText">PER</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Price Path</span><span class="messageText">Murakami rose and fell 1Q84 Sell Cap Div 
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix stratFeed">
+                    <div class="alertType stratAlert">
+                        <div class="alertText">STR</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix salesFeed">
+                    <div class="alertType salesAlert">
+                        <div class="alertText">SAL</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix prTrdFeed">
+                    <div class="alertType prTrdAlert">
+                        <div class="alertText">PTR</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix sysFeed">
+                    <div class="alertType systmAlert">
+                        <div class="alertText">SYS</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix mktFeed">
+                    <div class="alertType mktAlert">
+                        <div class="alertText">MKT</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix riskFeed">
+                    <div class="alertType riskAlert">
+                        <div class="alertText">RSK</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Error Msg:</span><span class="messageText">Restricted symbol has no allowable exemptions
+                    11:35:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix salesFeed">
+                    <div class="alertType salesAlert">
+                        <div class="alertText">SAL</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix perfFeed">
+                    <div class="alertType performanceAlert">
+                        <div class="alertText">PER</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">Price Path</span><span class="messageText">Murakami rose and fell 1Q84 Sell Cap Div 
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix sysFeed">
+                    <div class="alertType systmAlert">
+                        <div class="alertText">SYS</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix tradeFeed">
+                    <div class="alertType tradeAlert">
+                        <div class="alertText">TRD</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%)
+                   11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix stratFeed">
+                    <div class="alertType stratAlert">
+                        <div class="alertText">STR</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix prTrdFeed">
+                    <div class="alertType prTrdAlert">
+                        <div class="alertText">PTR</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+                <div class="alertRow clearfix mktFeed">
+                    <div class="alertType mktAlert">
+                        <div class="alertText">MKT</div>
+                    </div>
+                    <div class="contactGridRowTextWrapper">
+                        <span class="messageTitle">DVD ADV (BGIBES):</span><span class="messageText">Sell DVD 4,968 INSTINCT @2.11
+                  Day (or session) breached 100% 143.33333 (adv%) 11:34:05</span>
+                    </div>
+                    <div class="alertIcons">
+                        <i class="mdi mdi-information-variant"></i>
+                        <i class="mdi mdi-open-in-new"></i>
+                        <i class="mdi mdi-check"></i>
+                        <!-- <i class="mdi mdi-dots-vertical gridDots"></i> -->
+                    </div>
+                </div>
+                <!-- end of alertRow -->
+            </div>
+            <!-- end of feed -->
+        </section>
+    </div>
+    <!-- end of wrapper -->
+</body>
+
+</html>
