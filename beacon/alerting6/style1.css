@@ -344,7 +344,7 @@ section#popoutFeedSection {
     width: 25px;
     position: absolute;
         top: 114px;
-            top: 118px;
+            top: 112px;
     left: -1px;
     z-index: 3;
     font-size: 27px;
@@ -355,7 +355,7 @@ section#popoutFeedSection {
     width: 25px;
     position: absolute;
         top: 114px;
-            top: 118px;
+            top: 112px;
     left: 574px;
     z-index: 3;
     font-size: 27px;
