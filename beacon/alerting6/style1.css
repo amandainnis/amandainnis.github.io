@@ -442,7 +442,8 @@ section#popoutFeedSection {
     background-color: #f2f8fe;
     background-color: #F4F6F8;
     // background-color: #eef6ff;
-    margin-top: 19px;
+    margin-top: 21px;
+    margin-bottom: 2px;
     margin-right: 20px;
     padding-top: 17px;
     position: relative;
