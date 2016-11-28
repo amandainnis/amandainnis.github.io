@@ -382,24 +382,24 @@ section#popoutFeedSection {
         top: 255px;
 }
 
-.azSmart {
-    width: 115px;
-    position: absolute;
-    top: 14px;
-    left: 461px;
-}
+// .azSmart {
+//     width: 115px;
+//     position: absolute;
+//     top: 14px;
+//     left: 461px;
+// }
 
-.azSmart span {
-    padding: 6px 8px;
-    border: 1px #919ca8 solid;
-    border-radius: 3px;
-    margin-right: 5px;
-}
+// .azSmart span {
+//     padding: 6px 8px;
+//     border: 1px #919ca8 solid;
+//     border-radius: 3px;
+//     margin-right: 5px;
+// }
 
-.azSmartSelected {
-    background-color: #32b5a5;
-        background-color: #b9c4cf;
-}
+// .azSmartSelected {
+//     background-color: #32b5a5;
+//         background-color: #b9c4cf;
+// }
 
 .circle {
     display: inline-block;
@@ -508,7 +508,7 @@ section#popoutFeedSection {
 
 .colorMarker {
     width: 111px;
-    height: 6px;
+    height: 8px;
     position: absolute;
     top: 0px;
     left: -1px;
@@ -516,7 +516,7 @@ section#popoutFeedSection {
 
 .stockBorder {
     width: 91px;
-    height: 6px;
+    height: 7px;
     position: absolute;
     top: 0px;
     left: -2px;
@@ -532,7 +532,7 @@ section#popoutFeedSection {
 
 .stockBorderCritical {
     width: 91px;
-    height: 6px;
+    height: 7px;
     position: absolute;
     top: 0px;
     left: -2px;
@@ -544,7 +544,7 @@ section#popoutFeedSection {
 
 .colorMarkerClient {
     width: 111px;
-    height: 6px;
+    height: 7px;
     position: absolute;
     top: 0px;
     left: -1px;
@@ -557,7 +557,7 @@ section#popoutFeedSection {
 
 .colorMarkerClientCrit {
     width: 111px;
-    height: 6px;
+    height: 7px;
     position: absolute;
     top: 0px;
     left: -1px;
@@ -768,7 +768,7 @@ section#popoutFeedSection {
 
 .messageText {
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1em;
     line-height: 1.4em;
     color: rgba(0, 0, 0, .54);
