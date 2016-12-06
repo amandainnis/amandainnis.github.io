@@ -92,43 +92,52 @@ body {
 }
 
 #contactWrapper {
-	width: 484px;
-	height: 630px;
+	width: 500px;
+	height: 644px;
 	/*height: 60%;*/
 	// background-color: #F7F7F7;
 	
 	/*overflow: scroll;*/
-	background-color: #EBEDF0;
 	background-color: white;
-	margin: 2em auto;
+	background-color: #EBEDF0;
+	
+	margin: 1em auto;
 	position: relative;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-////////////////////////////////////NEW/////////////////////////
+/*///////////////////////////////////NEW////////////////////////*/
 
 .mdi-close {
 	position: absolute;
-	left: 510px;
+	left: 474px;
 	font-size: 17px;
 	top: 5px;
 	color: rgba(255, 255, 255, 0.9);
+	color: #3d3e45;
 }
 
 .bar {
 	width: 100%;
 	height: 30px;
 	background-color: #0069CB;
-	background-color: #767e85;
+	background-color: #C2C6CC;
+	background-color: #f9fafa;
 	font-family: 'Roboto';
 	font-weight: 300;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 12px;
-	color: white;
+	color: #3d3e45;
 	padding-left: 25px;
 	padding-top: 10px;
 	text-transform: uppercase;
+}
+
+.bar span {
+	position: absolute;
+    left: 396px;
+    text-transform: none;
 }
 
 // .bar2 {
@@ -167,10 +176,10 @@ body {
 
 .mdi-chevron-right {
 	position: absolute;
-	left: 183px;
+	left: 193px;
 	top: 2px;
 	font-size: 18px;
-	color: rgba(0, 105, 203, 0.7);
+	// color: rgba(0, 105, 203, 0.7);
 }
 
 .mdi-chevron-left {
@@ -182,13 +191,13 @@ body {
 }
 
 #bottomBarEnd, #bottomBarCall {
-	width: 484px;
+	width: 500px;
 	height: 40px;
 	background-color: #e9ecf0;
 	background-color: #c8d0da;
 	background-color: #c9cfd7;
 	position: absolute;
-	top: 590px;
+	top: 604px;
 	z-index: 2;
 }
 .counterText {
@@ -350,25 +359,28 @@ body {
 
 
 .profileBar {
-	width: 484px;
-	height: 97px;
-	padding-left: 26px;
-	background-color: white;
+	width: 500px;
+	    height: 113px;
+    padding-left: 30px;
+	// background-color: white;
+	// background-color: #f6f7f8;
+	// 	background-color: #EBEDF0;
 }
 
 .profileNameText {
 	font-family: 'Roboto';
-	font-weight: 500;
-	font-size: 19px;
-	padding-top: 28px;
-	display: inline-block;
-
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 32px;
+    // padding-bottom: 5px;
+    display: inline-block;
+    color: rgba(0,0,0,.87);
 }
 
 .companyText {
 	font-family: 'Roboto';
 	font-size: 12px;
-	color: rgba(0,0,0, 0.5);
+	color: rgba(0,0,0, 0.6);
 	letter-spacing: .1px;
 	padding-top: .3em;
 	display: inline-block;
@@ -377,7 +389,7 @@ body {
 .etlText {
 	font-family: 'Roboto';
 	font-size: 12px;
-	color: rgba(0,0,0, 0.5);
+	color: rgba(0,0,0, 0.6);
 	letter-spacing: .1px;
 	padding-top: .3em;
 	display: inline-block;
@@ -394,9 +406,9 @@ body {
 }
 
 .actionButtonGroup {
-	margin-left: 28px;
+	margin-left: 25px;
 	margin-top: 6px;
-	width: 500px;
+	       width: 500px;
 	height: 41px;
 	font-size: 11px;
 	display: inline-block;
@@ -409,7 +421,7 @@ body {
     cursor: pointer;
     padding: 9px 7px;
     margin: 10px 0;
-    margin-right: 7px;
+    margin-right: 14px;
     border: 1px solid #8598A7;
     width: 100px;
     text-align: center;
@@ -427,10 +439,11 @@ body {
 }
 
 .sectionBox {
-	width: 202px;
-	height: 118px;
+	width: 215px;
+	height: 121px;
 	background-color: white;
 	position: relative;
+	    border: 1px solid #C9CFD7;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 
 	
@@ -449,9 +462,9 @@ body {
 .notesBox {
 	margin-top: 15px;
 	margin-left: 25px;
-	width: 434px;
+	    width: 449px;
 	// height: 73px;
-	height: 85px;
+	height: 75px;
 	background-color: white;
 	clear: both;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
@@ -463,14 +476,14 @@ body {
 .readership {
 	float: left;
 	// margin-top: 15px;
-	margin-top: 21px;
+	margin-top: 19px;
 	margin-left: 25px;
 }
 
 .touchpoints {
 	float: right;
 	// margin-top: 15px;
-	margin-top: 21px;
+	margin-top: 19px;
 	margin-right: 25px;
 
 }
@@ -491,7 +504,7 @@ body {
 
 .sectionBoxTitle {
 	text-transform: uppercase;
-	color: rgba(0, 105, 203, 0.8);
+	// color: rgba(0, 105, 203, 0.8);
 	// color: rgba(21, 101, 192, 1);
 	font-family: 'Roboto';
 	    font-size: 11px;
@@ -500,15 +513,34 @@ body {
     display: inline-block;
     padding-left: 15px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 	background-color: #e9ecf0;
 	background-color: #E5EBF3;
 	background-color: white;
+	    border-bottom: 1px #C9CFD7 solid;
 	// background-color: #e3f2fd;
 	// background-color: #ffeb3b;
 	// background-color: aquamarine;
 
 
+}
+
+#sectionNotesTitle {
+	text-transform: uppercase;
+	// color: rgba(0, 105, 203, 0.8);
+	// color: rgba(21, 101, 192, 1);
+	font-family: 'Roboto';
+	    font-size: 11px;
+    letter-spacing: .1px;
+    width: 100%;
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+	background-color: #e9ecf0;
+	background-color: #E5EBF3;
+	background-color: white;
+	   
 }
 
 ////////////////////////////////////NEW/////////////////////////
@@ -533,13 +565,13 @@ body {
 }
 
 .textWrapper {
-	width: 95%;
-	padding: 15px 0 0 15px;
+	width: 97%;
+	padding: 11px 0 0 15px;
 
 }
 
 #callNotesSummaryWrapper, #notesWrapper {
-	width: 95%;
+	width: 97%;
 	padding: 7px 0 0 15px;
 }
 
@@ -625,9 +657,10 @@ body {
     height: 19px;
     float: right;
     position: relative;
-    top: -47px;
+    top: -53px;
+    left: 27px;
     // border: 1px black solid;
-    margin-right: 25px;
+ 
 }
 
 .iconWrapperProfile {
@@ -641,7 +674,7 @@ body {
 .iconWrapperPhone {
 	display: inline-block;
 	position: relative;
-	top: -2px;
+	top: -24px;
 	padding-right: 1px;
 	font-family: 'Roboto';
 	font-size: 13px;
@@ -684,7 +717,7 @@ body {
 	width: 7%;
 }
 
-.mdi-email-outline, .mdi-message-text {
+.mdi-email-outline, .mdi-email, .mdi-message-text {
 	font-size: 18px;
 }
 

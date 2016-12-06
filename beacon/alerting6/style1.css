@@ -452,7 +452,7 @@ section#popoutFeedSection {
     transition: .3s;
     border-right: 2px solid #ccd4dc;
     border-left: 2px solid #dce2e8;
-    border-left: 2px solid #ccd4dc;
+    border-left: 1px solid #ccd4dc;
     
     border-bottom: 2px solid #b9c4cf;
     //     border-right: 1px solid #f66f64;
@@ -519,7 +519,7 @@ section#popoutFeedSection {
     height: 7px;
     position: absolute;
     top: 0px;
-    left: -2px;
+    left: -1px;
     background-color: #1c3a60;
     
     background-color: #32b5a5;
@@ -535,7 +535,7 @@ section#popoutFeedSection {
     height: 7px;
     position: absolute;
     top: 0px;
-    left: -2px;
+    left: -1px;
     background-color: #1c3a60;
     background-color: #f66f64;
     background-color: #F44336;

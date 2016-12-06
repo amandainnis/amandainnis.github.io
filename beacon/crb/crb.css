@@ -1,0 +1,311 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic';
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+.clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
+
+* {
+	box-sizing: border-box;	
+}
+
+			
+
+
+body {
+	font-size: 12px;
+	background-color: #D2D2D2;
+	font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+	width: 600px;
+	height: 760px;
+	background-color: #26264E;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	margin: 1em auto;
+}
+
+.bar {
+	width: 100%;
+	height: 55px;
+	border-top: 2px solid #364373;
+	border-bottom: 2px solid #364373;
+	// background-color: #1f1f41;
+	// background-color: #151536;
+}
+
+.navigation {
+    margin-left: 38px;
+    padding-top: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #878fb0;
+    color: #878EB1;
+    cursor: pointer;
+    letter-spacing: .8px;
+
+	
+}
+
+.navigation span {
+	padding-right: 15px;
+	}
+
+
+.navigation .selected {
+	color: #dbdff0;
+	}
+.tickerDetails {
+	margin-left: 38px;
+	margin-top: 76px;
+	position: relative;
+	// border: 1px yellow solid;
+}
+
+
+.pricerIconButton {
+	    background-color: #394AD1;
+    width: 38px;
+    height: 38px;
+    float: right;
+    font-size: 19px;
+    color: #fbfbfb;
+    letter-spacing: .6px;
+    /* border: 1px #94a3e4 solid; */
+    margin-top: 6px;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding-left: 11px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+}
+
+.tickerDetailsWrapper {
+	display: inline-block;
+}
+
+.tickerDetailsLabel {
+	color: #878EB1;
+	font-size: 13px;
+	position: absolute;
+    top: 0px;
+    top: -24px;
+}
+
+
+.tickerWrapper {
+	width: 163px;
+	    height: 56px;
+	background-color: #364373;
+}
+.ticker {
+	font-size: 38px;
+	color: #FBFBFB;
+	font-weight: 300;
+	letter-spacing: 1px;
+	position: relative;
+	top: 21px;
+	top: 3px;
+	    padding: 6px;
+	    text-align: center;
+	
+}
+.sideWrapper {
+	margin-left: 18px;
+}
+
+.side, .quantity, .NBBO {
+	font-size: 31px;
+	font-size: 28px;
+}
+
+
+.side {
+	color: #21E0C1;
+	position: relative;
+	// top: 18px;
+	
+}
+
+.quantityWrapper {
+	margin-left: 25px;
+}
+.quantity {
+	color: #FBFBFB;
+	
+	font-weight: 300;
+	position: relative;
+	// top: 18px;
+	
+}
+
+.NBBOwrapper {
+	margin-left: 20px;
+}
+
+.NBBO {
+	
+	font-weight: 300;
+	position: relative;
+	// top: 18px;
+	
+	color: #707794;
+	
+}
+.NBBOsell {
+	color: #FB7A78;
+}
+.NBBObuy {
+	color: #21E0C1;
+}
+
+.spreadWrapper {
+	width: 485px;
+	height: 192px;
+	margin: 20px auto;
+	// border: 1px yellow solid;
+}
+
+.spreadRow {
+	// background-color: #36365C;
+	width: 100%;
+	height: 36px;
+	margin-bottom: 5px;
+	
+}
+
+.sellSection, .buySection, .quantitySection {
+	background-color: #36365C;
+	background-color: #26264E;
+	padding: 9px 0px;
+
+}
+
+.sellSection {
+	float: left;
+}
+
+.quantitySection {
+	float: left;
+	
+}
+
+.buySection {
+	float: left;
+}
+
+.sellSection, .buySection {
+	width: 200px;
+	font-size: 18px;
+	font-weight: 500;
+	
+	// display: inline-block;
+	color: #5C5C7A;
+	text-align: center;
+	
+}
+
+
+
+.quantitySection {
+	font-size: 18px;
+	font-weight: 400;
+	
+	// display: inline-block;
+	color: #F9F9FD;
+	letter-spacing: .5px;
+	    width: 84px;
+    text-align: right;
+    padding-right: 20px;
+	
+}
+
+.buyGreen {
+	background-color: #099E90;
+}
+
+.textWwhite {
+	color: #fbfbfb;
+	font-weight: 400;
+}
+
+.textGreen {
+	color: #21E0C1;
+	font-weight: 400;
+}
+
+.band {
+	width: 20px;
+	height: 2px;
+	background-color: #5C5C7A;
+	display: inline-block;
+	margin: 5px 9px;
+  
+}
+
+.bandBright {
+	background-color: #818196;
+}
+
+.bandWhite {
+	background-color: #fbfbfb;
+}
+.dataFieldsWrapper {
+	width: 475px;
+	height: 115px;
+	border: 2px solid #364373;
+	margin: 2em auto;
+}
+
