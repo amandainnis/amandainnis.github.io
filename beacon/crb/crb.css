@@ -116,8 +116,9 @@ body {
 
 
 .pricerIconButton {
+	background-color: #445287;
 	    background-color: #394AD1;
-	    background-color: #445287;
+	    
     width: 38px;
     height: 38px;
     float: right;
