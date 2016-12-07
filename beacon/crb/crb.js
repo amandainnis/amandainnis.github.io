@@ -1,29 +1,34 @@
 
-function textFlip(sectionID){
+function textFlip(sectionID, cost1, cost2, price1, price2){
 	$('#'+ sectionID + '.buySection').on( "mouseenter", function() {
-		$( '#'+ sectionID + ' .spread1' ).text(.315);
-		$( '#'+ sectionID + ' .spread2' ).text(.361);}).on("mouseleave", function() {
-			$( '#'+ sectionID + ' .spread1' ).text(160.315);
-			$( '#'+ sectionID + ' .spread2' ).text(160.361); 
+		$( '#'+ sectionID + ' .spread1' ).text(cost1);
+		$( '#'+ sectionID + ' .spread2' ).text(cost2);}).on("mouseleave", function() {
+			$( '#'+ sectionID + ' .spread1' ).text(price1);
+			$( '#'+ sectionID + ' .spread2' ).text(price2); 
 		});
 
 }
 
 
+
+
 $(document).ready(function(){
 	
 
- 	textFlip('buy400');
- 	textFlip('buy200');
- 	textFlip('buy100');
- 	textFlip('buy50');
+ 	textFlip('buy400', .345, .365, 160.345, 160.365);
+ 	textFlip('buy200', .335, .364, 160.335, 160.364);
+ 	textFlip('buy100', .325, .363, 160.325, 160.363);
+ 	textFlip('buy50', .315, .361, 160.315, 160.361);
 
 
  	$('#orderID').on( "mouseenter", function() {
 		$( '#orderIDHover' ).show();
 		}).on("mouseleave", function() {
 			$( '#orderIDHover' ).hide();
-		});
+	});
+
+
+	$('#acceptButton').on('click', function(){alert("This is going to be a popup as soon as I code it!")});
 	
 
 	// $('#buy400.buySection').on( "mouseenter", function() {
