@@ -306,9 +306,18 @@ body {
 	background-color: #fbfbfb;
 }
 
+.quantityInput {
+	font-size: 15px;
+	font-weight: 300;
+	color: #F9F9FD;
+}
+
+
 .betweenSpreadData {
 	width: 474px;
 	margin: 23px auto;
+    padding-top: 22px;
+    border-top: 2px #364373 solid;
 }
 
 .horizontalLabel {
@@ -326,7 +335,7 @@ body {
 }
 
 .rightIcons {
-	width: 100px;
+	width: 96px;
 	float: right;
 }
 
@@ -381,6 +390,11 @@ body {
 	letter-spacing: .4px;
 	display: inline-block;
 	margin-left: 5px;
+
+}
+
+.expire {
+	    float: right;
 
 }
 
