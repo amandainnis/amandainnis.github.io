@@ -315,8 +315,8 @@ body {
 
 .betweenSpreadData {
 	width: 474px;
-	margin: 23px auto;
-    padding-top: 22px;
+	    margin: 24px auto;
+    padding-top: 25px;
     border-top: 2px #364373 solid;
 }
 
@@ -399,15 +399,15 @@ body {
 }
 
 .acceptButton {
-	text-transform: uppercase;
-	color: white;
-	background-color: #394AD1;
-	width: 162px;
-	height: 37px;
-	border-radius: 10px;
-	text-align: center;
-	padding-top: 12px;
-	margin: 0 auto;
-	font-size: 16px;
-	letter-spacing: .4px;
+	    text-transform: uppercase;
+    color: white;
+    background-color: #394AD1;
+    width: 154px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 13px;
+    margin: 14px auto;
+    font-size: 16px;
+    letter-spacing: .4px;
 }
