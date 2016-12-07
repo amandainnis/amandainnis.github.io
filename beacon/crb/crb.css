@@ -279,14 +279,17 @@ body {
 	background-color: rgba(9, 158, 144, 0.9);
 }
 
-.textWwhite {
+.textWhite {
 	color: #fbfbfb;
 	font-weight: 400;
+	transition: .9s ease-in;
+	
 }
 
 .textGreen {
 	color: #21E0C1;
 	font-weight: 400;
+	transition: .9s ease-in;
 }
 
 .band {
@@ -407,7 +410,7 @@ body {
     border-radius: 10px;
     text-align: center;
     padding-top: 13px;
-    margin: 14px auto;
+        margin: 32px auto 0;
     font-size: 16px;
     letter-spacing: .4px;
 }
