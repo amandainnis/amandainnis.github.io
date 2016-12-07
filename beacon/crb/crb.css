@@ -309,17 +309,19 @@ body {
 	background-color: #fbfbfb;
 }
 
-.quantityInput {
+#quantityInput {
 	font-size: 15px;
 	font-weight: 300;
 	color: #F9F9FD;
+	
 }
+
 
 
 .betweenSpreadData {
 	width: 475px;
-	    margin: 24px auto 0 auto;
-        padding: 20px 15px;
+	margin: 24px auto 0 auto;
+    padding: 20px 15px;
     border: 2px #364373 solid;
     border-bottom: none;
 }
@@ -395,6 +397,25 @@ body {
 	display: inline-block;
 	margin-left: 5px;
 
+}
+
+#orderID {
+	position: relative;
+	transition: .9s ease-in;
+
+}
+
+#orderIDHover {
+	width: 150px;
+    height: 34px;
+    position: absolute;
+    top: -10px;
+    padding: 10px 5px;
+    z-index: 2;
+    background-color: #151536;
+    color: white;
+    transition: .9s ease-in;
+    display: none;
 }
 
 .expire {

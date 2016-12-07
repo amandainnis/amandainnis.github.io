@@ -17,6 +17,13 @@ $(document).ready(function(){
  	textFlip('buy200');
  	textFlip('buy100');
  	textFlip('buy50');
+
+
+ 	$('#orderID').on( "mouseenter", function() {
+		$( '#orderIDHover' ).show();
+		}).on("mouseleave", function() {
+			$( '#orderIDHover' ).hide();
+		});
 	
 
 	// $('#buy400.buySection').on( "mouseenter", function() {
