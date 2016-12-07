@@ -305,13 +305,84 @@ body {
 .bandWhite {
 	background-color: #fbfbfb;
 }
+
+.betweenSpreadData {
+	width: 474px;
+	margin: 15px auto;
+}
+
+.horizontalLabel {
+	color: #878EB1;
+    font-size: 13px;
+    
+}
+
+.horizontalInfoField {
+	color: #EAEAEA;
+	font-size: 15px;
+	letter-spacing: .4px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.rightIcons {
+	width: 100px;
+	float: right;
+}
+
+.edit {
+	color: #394AD1;
+	color: #42A4FF;
+	font-size: 20px;
+	position: relative;
+    top: 3px;
+}
+
+.archive {
+	color: #394AD1;
+	color: #42A4FF;
+	    font-size: 13px;
+    letter-spacing: .4px;
+    position: relative;
+    top: -1px;
+    margin-left: 27px;
+}
+
 .dataFieldsWrapper {
 	width: 475px;
 	height: 115px;
 	border: 2px solid #364373;
 	margin: 2em auto;
+	padding: 10px 0 10px 15px;
 }
 
+
+.colA, .colB, .colC {
+	width: 31%;
+	float: left;
+	// border: 1px yellow solid;
+	
+}
+
+.colA, .colB {
+	margin-right: 15px;
+	border-right: 1px #364373 solid;
+}
+
+
+.dataRow {
+	width: 100%;
+	padding: 8px 0;
+}
+
+.horizontalDataField {
+	color: #EAEAEA;
+	font-size: 13px;
+	letter-spacing: .4px;
+	display: inline-block;
+	margin-left: 5px;
+
+}
 
 .acceptButton {
 	text-transform: uppercase;
