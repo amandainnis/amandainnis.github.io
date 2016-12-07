@@ -29,6 +29,9 @@ $(document).ready(function(){
 
 
 	$('#acceptButton').on('click', function(){alert("This is going to be a popup as soon as I code it!")});
+
+	$('#pricerIconButton').on('click', function(){alert("This is reserved for the pricer tool")});
+	
 	
 
 	// $('#buy400.buySection').on( "mouseenter", function() {
