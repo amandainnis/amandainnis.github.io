@@ -317,10 +317,11 @@ body {
 
 
 .betweenSpreadData {
-	width: 474px;
-	    margin: 24px auto;
-    padding-top: 25px;
-    border-top: 2px #364373 solid;
+	width: 475px;
+	    margin: 24px auto 0 auto;
+        padding: 20px 15px;
+    border: 2px #364373 solid;
+    border-bottom: none;
 }
 
 .horizontalLabel {
@@ -364,7 +365,7 @@ body {
 	width: 475px;
 	height: 115px;
 	border: 2px solid #364373;
-	margin: 2em auto;
+	margin: 0 auto;
 	padding: 10px 0 10px 15px;
 }
 
