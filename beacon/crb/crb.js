@@ -32,7 +32,10 @@ $(document).ready(function(){
 	});
 
 
-	$('#acceptButton').on('click', function(){$('#popUpBackground').show();});
+	$('#acceptButton').on('click', function(){
+		$('#popUpBackground').show();
+		$('#popUp1').show();
+	});
 
 	$('#popUpClose').on('click', function(){$('#popUpBackground').hide();});
 
@@ -42,6 +45,13 @@ $(document).ready(function(){
 		$('#popUp2').show();
 
 	});
+
+	$('#doneButton').on('click', function(){
+		$('#popUpBackground').hide();
+		$('#popUp1').hide();
+		$('#popUp2').hide();
+	});
+	
 
 	$('#pricerIconButton').on('click', function(){alert("This is reserved for the pricer tool")});
 	
