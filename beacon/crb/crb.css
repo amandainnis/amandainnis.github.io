@@ -206,6 +206,8 @@ body {
 .NBBOsell {
 	color: #FB7A78;
 }
+
+
 .NBBObuy {
 	color: #21E0C1;
 }
@@ -267,23 +269,36 @@ body {
 	
 }
 
-.buyGreen {
+.buySection.selected {
 	background-color: #099E90;
 	background-color: rgba(9, 158, 144, 0.9);
-}
-
-.textWhite {
 	color: #fbfbfb;
 	font-weight: 400;
-	transition: .9s ease-in;
-	
+	transition: .4s ease-in;
 }
+
+.sellSection.selected {
+	background-color: #FB7A78;
+	background-color: rgba(251,122,120,.9);
+	color: #fbfbfb;
+	font-weight: 400;
+	transition: .4s ease-in;
+}
+
+
 
 .textGreen {
 	color: #21E0C1;
 	font-weight: 400;
-	transition: .9s ease-in;
+	// transition: .9s ease-in;
 }
+
+// .textWhite {
+// 	color: #fbfbfb;
+// 	font-weight: 400;
+// 	transition: .9s ease-in;
+	
+// }
 
 .band {
 	width: 20px;
@@ -465,8 +480,8 @@ body {
 }
 .expire {
 	float: right;
-	background-color: rgba(251,122,120,0.9);
-	background-color: #a1a629;
+	// background-color: rgba(251,122,120,0.9);
+	// background-color: #a1a629;
 
 }
 
@@ -631,6 +646,34 @@ body {
 
 }
 
+.buttonsToFlipSides {
+	position: absolute;
+    top: 42px;
+    left: 19px;
+}
+
+.flipSideButton {
+	    width: 81px;
+    height: 35px;
+    
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+        margin-bottom: 3px;
+    background-color: #646485;
+   
+
+}
+
+#buySideVersion {
+	color: #21E0C1;
+}
+
+
+
 .dropDownMenu {
 	display: inline-block;
 	width: 120px;
@@ -687,3 +730,9 @@ body {
 	-webkit-transition: .2s;
 	-moz-transition: .2s;
 }
+
+.redText {
+	color: #FB7A78;
+	font-weight: 400;
+}
+

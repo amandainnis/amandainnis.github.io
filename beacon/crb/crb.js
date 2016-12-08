@@ -18,7 +18,30 @@ $(document).ready(function(){
 	$('#popUp2').hide();
 	 $('#popUpUrgencyDropDown li').hide();
 	
+
+	$('#sellSideVersion').on('click', function(){
+		console.log('yo yo');
+		$('#buySellDoorway').text('S');
+		$('#buySellDoorway').addClass('redText');
+		$('.buySection').removeClass('textGreen');
+		// $('#buy200').removeClass('textWhite');
+		$('.buySection.selected .band').removeClass('bandWhite');
+		$('.buySection').removeClass('selected');
+		$('.sellSection').addClass('redText');
+
+
+	})
 	
+
+	$('#buySideVersion').on('click', function(){
+		console.log('yo Buy');
+		$('#buySellDoorway').text('B');
+		$('#buySellDoorway').removeClass('redText');
+		$('.buySection').addClass('textGreen');
+		$('#buy200').addClass('selected');
+		$('#buy200 .band').addClass('bandWhite');
+		$('.sellSection').removeClass('redText');
+	})
 
  	textFlip('buy400', .345, .365, 160.345, 160.365);
  	textFlip('buy200', .335, .364, 160.335, 160.364);

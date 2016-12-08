@@ -10,6 +10,13 @@
 </head>
 
 <body>
+	<div class="buttonsToFlipSides">
+		
+		<div id="buySideVersion" class="flipSideButton">buy</div>
+		<div id="sellSideVersion" class="flipSideButton redText">sell</div>
+	</div>
+	
+
     <div id="wrapper">
         <div class="bar">
             <div class="navigation">
@@ -27,7 +34,7 @@
             </div>
             <div class="tickerDetailsWrapper sideWrapper">
                 <div class="tickerDetailsLabel">Side</div>
-                <div class="side">B</div>
+                <div id="buySellDoorway" class="side">B</div>
             </div>
             <div class="tickerDetailsWrapper quantityWrapper">
                 <div class="tickerDetailsLabel">Qty</div>
@@ -41,14 +48,15 @@
         <!-- end of tickerDetails -->
         <div class="spreadWrapper clearfix">
             <div class="spreadRow clearfix">
-                <span class="sellSection">160.315<span class="band"></span>160.361</span>
+            	<span id="sell400" class="sellSection"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
+                
                 <span class="quantitySection">400K</span>
                 <span id="buy400" class="buySection textGreen"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
             </div>
             <div class="spreadRow clearfix">
                 <span class="sellSection">160.315<span class="band"></span>160.361</span>
                 <span class="quantitySection buyGreen">200K</span>
-                <span id="buy200" class="buySection buyGreen textWhite"><span class="spread1">160.335</span><span class="band bandWhite"></span><span class="spread2">160.364</span></span>
+                <span id="buy200" class="buySection selected"><span class="spread1">160.335</span><span class="band bandWhite"></span><span class="spread2">160.364</span></span>
             </div>
             <div class="spreadRow clearfix">
                 <span class="sellSection">160.315<span class="band"></span>160.361</span>
@@ -75,7 +83,7 @@
 	         </div>
             
             <div class="expire">
-            	<div class="verticalLabel white">Expires</div>
+            	<div class="verticalLabel">Expires</div>
             	<i class="mdi mdi-clock"></i>
                 <!-- <span class="horizontalLabel">Expires in</span> -->
                 <span class="horizontalInfoField">12:04:05</span>
