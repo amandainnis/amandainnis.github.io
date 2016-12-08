@@ -151,6 +151,8 @@ body {
 	width: 163px;
 	height: 56px;
 	background-color: #445287;
+
+	margin-left: 21px;
 }
 .ticker {
 	font-size: 38px;
@@ -166,11 +168,14 @@ body {
 }
 .sideWrapper {
 	margin-left: 18px;
+	margin-left: 10px;
+	    margin-left: 14px;
 }
 
 .side, .quantity, .NBBO {
 	font-size: 31px;
 	font-size: 28px;
+	    font-size: 26px;
 }
 
 
@@ -183,6 +188,8 @@ body {
 
 .quantityWrapper {
 	margin-left: 25px;
+	margin-left: 15px;
+	    margin-left: 14px;
 }
 .quantity {
 	color: #FBFBFB;
@@ -194,6 +201,8 @@ body {
 
 .NBBOwrapper {
 	margin-left: 20px;
+	margin-left: 10px;
+	    margin-left: 19px;
 }
 
 .NBBO {
