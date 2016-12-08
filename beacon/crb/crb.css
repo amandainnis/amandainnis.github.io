@@ -306,28 +306,53 @@ body {
 	font-size: 15px;
 	font-weight: 300;
 	color: #F9F9FD;
+	// display: inline-block;
+	// width: 100%;
+	// font-family: 'Roboto';
+	// position: relative;
+	// text-align: left;
+	// padding: .6rem 0 .5rem 0;
+	// color: #272727;
+	outline: none;
+	border: none;
 	
+	// border-bottom: 1px #dbdbdb solid;
+	// margin-bottom: .5em;
 }
-
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #F9F9FD;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #F9F9FD;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #F9F9FD;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #F9F9FD;
+}
 
 
 .betweenSpreadData {
 	width: 475px;
-	margin: 24px auto 0 auto;
+	margin: 32px auto 0 auto;
     padding: 20px 15px;
     border: 2px #364373 solid;
     border-bottom: none;
 }
 
 .horizontalLabel {
+	color: #646485;
 	color: #878EB1;
+	
     font-size: 13px;
     
 }
 
 .horizontalInfoField {
 	color: #EAEAEA;
-	font-size: 15px;
+	    font-weight: 300;
+    font-size: 16px;
 	letter-spacing: .4px;
 	display: inline-block;
 	margin-left: 5px;
@@ -359,7 +384,9 @@ body {
 .dataFieldsWrapper {
 	width: 475px;
 	height: 115px;
+	  border: 2px solid #2d3862;
 	border: 2px solid #364373;
+	  
 	margin: 0 auto;
 	padding: 10px 0 10px 15px;
 }
@@ -384,11 +411,12 @@ body {
 }
 
 .horizontalDataField {
-	color: #EAEAEA;
-	font-size: 13px;
-	letter-spacing: .4px;
-	display: inline-block;
-	margin-left: 5px;
+	    color: #EAEAEA;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .4px;
+    display: inline-block;
+    margin-left: 5px;
 
 }
 
@@ -399,8 +427,8 @@ body {
 }
 
 #orderIDHover {
-	width: 150px;
-    height: 34px;
+	width: 160px;
+    height: 36px;
     position: absolute;
     top: -10px;
     padding: 10px 5px;
