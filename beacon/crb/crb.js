@@ -16,6 +16,7 @@ $(document).ready(function(){
 
 	$('#popUpBackground').hide();
 	$('#popUp2').hide();
+	 $('#popUpUrgencyDropDown li').hide();
 	
 	
 
@@ -45,6 +46,49 @@ $(document).ready(function(){
 		$('#popUp2').show();
 
 	});
+
+
+
+  ///////////////pop up 2////////////////
+
+  
+  
+	
+  $('#urgencyDropTitle.popUpdropDown').click(function(){
+    $('#popUpUrgencyDropDown li').show();
+
+       $('#popUpUrgencyDropDown .field1').click(function(){
+          var inputText = $(this).text();
+          $('#urgencyDropTitle').text(inputText);
+          $('#popUpUrgencyDropDown li').hide();
+       }); 
+
+       $('#popUpUrgencyDropDown .field2').click(function(){
+          var inputText = $(this).text();
+          $('#urgencyDropTitle').text(inputText);
+          $('#popUpUrgencyDropDown li').hide();
+       }); 
+       
+       $('#popUpUrgencyDropDown .field3').click(function(){
+          var inputText = $(this).text();
+          $('#urgencyDropTitle').text(inputText);
+          $('#popUpUrgencyDropDown li').hide();
+       }); 
+
+       $('#popUpUrgencyDropDown .field4').click(function(){
+          var inputText = $(this).text();
+          $('#urgencyDropTitle').text(inputText);
+          $('#popUpUrgencyDropDown li').hide();
+       }); 
+
+
+  });
+
+
+
+
+
+
 
 	$('#doneButton').on('click', function(){
 		$('#popUpBackground').hide();

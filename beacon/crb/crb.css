@@ -473,7 +473,7 @@ body {
 	padding-left: 33px;
 	background-color: #37375B;
 	border: 1px solid #8292D8;
-	position: absolute;
+	position: relative;
 	z-index: 4;
 	top: 82px;
 	left: 65px;
@@ -582,14 +582,15 @@ body {
     position: relative;
     top: 14px;
     margin-right: 5px;
+    z-index: 4;
 }
 
 #doneButton {
-	    width: 100px;
+	width: 100px;
     height: 35px;
     position: relative;
-    top: 40px;
-    left: 267px;
+    top: 6px;
+    left: 304px;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -597,4 +598,62 @@ body {
     border-radius: 8px;
     text-transform: uppercase;
     background-color: #394ad1;
+
+}
+
+.dropDownMenu {
+	display: inline-block;
+	width: 120px;
+	margin-right: 5px;
+}
+
+.dropLabel {
+	color: #878fb0;
+}
+
+.dropTriangle {
+	position: relative;
+	left: 96px;
+    top: -14px;
+    font-size: 21px;
+    font-size: 21px;
+    color: #eaeaea;
+    z-index: 3;
+}
+
+#popUpUrgencyDropDown {
+	position: absolute;
+    /* display: inline-block; */
+    top: 164px;
+    left: 33px;
+    z-index: 5;
+    color: #cecfd4;
+    width: 120px;
+    text-align: left;
+       background-color: #1f1f41;
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	 -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
+	// border: 1px #a7a7a7 solid;
+}
+
+
+#popUpUrgencyDropDown li {
+	
+	padding: .7em 0 .7em .9em;
+	
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	
+	
+}
+
+#popUpUrgencyDropDown li:hover {
+	background-color: #5f6687;
+    cursor: pointer;
+    color: #fbfcfe;
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
 }
