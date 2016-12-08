@@ -352,6 +352,7 @@ body {
 
 .betweenSpreadData {
 	width: 475px;
+	    width: 485px;
 	margin: 32px auto 0 auto;
 	margin: 20px auto 0 auto;
 	    // margin: 14px auto 0 auto;
@@ -414,6 +415,7 @@ body {
 
 .dataFieldsWrapper {
 	width: 475px;
+	    width: 485px;
 	height: 115px;
 	  border: 2px solid #2d3862;
 	border: 2px solid #364373;
