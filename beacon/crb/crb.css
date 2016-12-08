@@ -315,6 +315,8 @@ body {
 	// color: #272727;
 	outline: none;
 	border: none;
+	text-align: center;
+    padding-right: 0;
 	
 	// border-bottom: 1px #dbdbdb solid;
 	// margin-bottom: .5em;
@@ -336,26 +338,39 @@ body {
 .betweenSpreadData {
 	width: 475px;
 	margin: 32px auto 0 auto;
+	    margin: 14px auto 0 auto;
     padding: 20px 15px;
+        padding: 0;
     border: 2px #364373 solid;
+    border-top: 2px #364373 solid;
     border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+
+.verticalLabel {
+	color: #878EB1;
+    font-size: 13px;
 }
 
 .horizontalLabel {
 	color: #646485;
 	color: #878EB1;
-	
-    font-size: 13px;
-    
+    font-size: 13px; 
+}
+
+.mdi-clock {
+	color: white;
 }
 
 .horizontalInfoField {
 	color: #EAEAEA;
-	    font-weight: 300;
+	font-weight: 300;
     font-size: 16px;
 	letter-spacing: .4px;
 	display: inline-block;
-	margin-left: 5px;
+	margin-top: 10px;
 }
 
 .rightIcons {
@@ -439,9 +454,24 @@ body {
     display: none;
 }
 
+.clientLeft, .expire {
+	padding: 15px;
+	margin: 10px 0;
+
+}
+
+.clientLeft {
+	float: left;
+}
 .expire {
 	float: right;
+	background-color: rgba(251,122,120,0.9);
+	background-color: #a1a629;
 
+}
+
+.white {
+	color: white;
 }
 
 .acceptButton {
