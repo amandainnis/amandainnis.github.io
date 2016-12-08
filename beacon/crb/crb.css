@@ -581,9 +581,16 @@ body {
 	font-weight: 300;
 }
 
-.popUpRow2 {
+// .popUpRow2 {
+// 	margin-top: 35px;
+// 	margin-top: 47px;
+	
+// }
+
+.popUpRow3 {
 	margin-top: 35px;
 	margin-top: 25px;
+	    margin-top: 20px;
 }
 
 .popUpExpire {
@@ -592,6 +599,7 @@ body {
 	position: relative;
     top: 29px;
     width: 120px;
+        top: 110px;
 
 }
 
@@ -612,7 +620,11 @@ body {
     outline: none;
 	background-color: transparent;
 	font-family: 'Roboto';
-	
+	width: 149px;
+    height: 59px;
+    font-size: 20px;
+    top: 21px;
+
 
 }
 
@@ -633,11 +645,14 @@ body {
         position: relative;
     top: 14px;
     left: 12px;
+        top: 98px;
+    left: 12px;
 }
 
 .popUpdropDown {
 	    display: inline-block;
     width: 120px;
+    width: 125px;
     height: 40px;
     border: 1px #878fb0 solid;
     color: white;
@@ -699,6 +714,8 @@ body {
 	display: inline-block;
 	width: 120px;
 	margin-right: 5px;
+	    width: 125px;
+    margin-right: 10px;
 }
 
 .dropLabel {
