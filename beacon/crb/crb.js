@@ -13,6 +13,8 @@ function textFlip(sectionID, cost1, cost2, price1, price2){
 
 
 $(document).ready(function(){
+
+	$('#popUpBackground').hide();
 	
 
  	textFlip('buy400', .345, .365, 160.345, 160.365);
@@ -28,7 +30,11 @@ $(document).ready(function(){
 	});
 
 
-	$('#acceptButton').on('click', function(){alert("This is going to be a popup as soon as I code it!")});
+	$('#acceptButton').on('click', function(){$('#popUpBackground').show();});
+
+	$('#popUpClose').on('click', function(){$('#popUpBackground').hide();});
+
+	
 
 	$('#pricerIconButton').on('click', function(){alert("This is reserved for the pricer tool")});
 	

@@ -450,10 +450,122 @@ body {
     background-color: #394AD1;
     width: 154px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
     padding-top: 13px;
     margin: 54px auto 0;
     font-size: 16px;
     letter-spacing: .4px;
+}
+
+#popUpBackground {
+	width: 600px;
+	height: 760px;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	background-color: rgba(0,0,0, .4);
+}
+
+.executeTrade {
+	width: 470px;
+	height: 256px;
+	padding-left: 40px;
+	background-color: #37375B;
+	border: 1px solid #8292D8;
+	position: absolute;
+	z-index: 4;
+	top: 82px;
+	left: 65px;
+}
+
+.popUpInfo {
+	width: 370px;
+
+	// border: 1px yellow solid;
+	margin-top: 50px;
+}
+
+.popUpClient {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 300;
+	color: #FBFCFE;
+}
+
+.popUpTicker {
+	color: #FBFCFE;
+	// font-weight: 300;
+	font-size: 40px;
+	letter-spacing: .4px;
+	// width: 160px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+
+#popUpClose {
+	float: right;
+	color: #878eb1;
+	margin-right: 10px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.popUpSide, .popUpQty {
+	font-size: 40px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.popUpQty {
+	color: #FBFCFE;
+	font-weight: 300;
+}
+
+.popUpRow2 {
+	margin-top: 50px;
+}
+
+.popUpExpire {
+
+	display: inline-block;
+	position: relative;
+    top: 15px;
+    width: 120px;
+
+}
+
+.popUpPriceChoose {
+	// margin-left: 7px;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	    border-radius: 8px;
+    border: 1px #f9f9fd solid;
+    color: white;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    top: 14px;
+
+}
+
+
+.executeButton {
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background-color: #F5A201;
+	color: #36365c;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+        position: relative;
+    top: 14px;
+    left: 12px;
 }

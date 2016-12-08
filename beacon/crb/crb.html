@@ -1,160 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" type="text/css" href="materialdesignicons.css">
-    
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
     <link rel="stylesheet" type="text/css" href="crb.css" />
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
-    
     <script type="text/javascript" src="crb.js"></script>
-	<title>CRB Pricer</title>
+    <title>CRB Pricer</title>
 </head>
+
 <body>
-	<div id="wrapper">
-		<div class="bar">
-			<div class="navigation">
+    <div id="wrapper">
+        <div class="bar">
+            <div class="navigation">
                 <span id="TCA" class="selected">TCA</span>
                 <span id="History" class="notSelected">History</span>
                 <span id="Restrictions" class="notSelected">Restrictions</span>
-      
-                
             </div>
-		</div>
-		<!-- end of bar -->
-
-		<span id="pricerIconButton"><i class="mdi mdi-chart-line"></i></span>
-
-		<div class="tickerDetails">
-
-			<div class="tickerDetailsWrapper tickerWrapper">
-				<div class="tickerDetailsLabel">Symbol</div>
-				<div class="ticker">AMZN</div>
-			</div>
-			<div class="tickerDetailsWrapper sideWrapper">
-				<div class="tickerDetailsLabel">Side</div>
-				<div class="side">B</div>
-			</div>
-			<div class="tickerDetailsWrapper quantityWrapper">
-				<div class="tickerDetailsLabel">Qty</div>
-				<div class="quantity">200K</div>
-			</div>
-			<div class="tickerDetailsWrapper NBBOwrapper">
-				<div class="tickerDetailsLabel">NBBO</div>
-				<div class="NBBO"><span class="NBBOsell">160.01</span> / <span class="NBBObuy">160.05</span></div>
-			</div>
-			
-		</div>
-		<!-- end of tickerDetails -->
-			
-	
-		<div class="spreadWrapper clearfix">
-			<div class="spreadRow clearfix">
-				<span class="sellSection">160.315<span class="band"></span>160.361</span>
-				<span class="quantitySection">400K</span>
-				<span id="buy400" class="buySection textGreen"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
-			</div>
-
-			<div class="spreadRow clearfix">
-				<span class="sellSection">160.315<span class="band"></span>160.361</span>
-				<span class="quantitySection buyGreen">200K</span>
-				<span id="buy200" class="buySection buyGreen textWhite"><span class="spread1">160.335</span><span class="band bandWhite"></span><span class="spread2">160.364</span></span>
-			</div>
-
-			<div class="spreadRow clearfix">
-				<span class="sellSection">160.315<span class="band"></span>160.361</span>
-				<span class="quantitySection">100K</span>
-				<span id="buy100" class="buySection textGreen"><span class="spread1">160.325</span><span class="band"></span><span class="spread2">160.363</span></span>
-			</div>
-			
-			<div class="spreadRow clearfix">
-				<span class="sellSection">160.315<span class="band"></span>160.361</span>
-				<span class="quantitySection">50K</span>
-				<span id="buy50" class="buySection textGreen"><span class="spread1">160.315</span><span class="band"></span><span class="spread2">160.361</span></span>
-			</div>
-
-			<div class="spreadRow clearfix">
-				<span class="sellSection"><span class="band"></span></span>
-				<input id= "quantityInput" class="quantitySection" placeholder="enter qty"></input>
-
-				<span class="buySection textGreen"><span class="band"></span></span>
-			</div>
-			
-
-			
-
-			
-		</div>
-		<div class="betweenSpreadData">
-			<span class="horizontalLabel">Client</span>
-			<span class="horizontalInfoField">BLACKROCK</span>
-			<!-- <div class="rightIcons">
+        </div>
+        <!-- end of bar -->
+        <span id="pricerIconButton"><i class="mdi mdi-chart-line"></i></span>
+        <div class="tickerDetails">
+            <div class="tickerDetailsWrapper tickerWrapper">
+                <div class="tickerDetailsLabel">Symbol</div>
+                <div class="ticker">AMZN</div>
+            </div>
+            <div class="tickerDetailsWrapper sideWrapper">
+                <div class="tickerDetailsLabel">Side</div>
+                <div class="side">B</div>
+            </div>
+            <div class="tickerDetailsWrapper quantityWrapper">
+                <div class="tickerDetailsLabel">Qty</div>
+                <div class="quantity">200K</div>
+            </div>
+            <div class="tickerDetailsWrapper NBBOwrapper">
+                <div class="tickerDetailsLabel">NBBO</div>
+                <div class="NBBO"><span class="NBBOsell">160.01</span> / <span class="NBBObuy">160.05</span></div>
+            </div>
+        </div>
+        <!-- end of tickerDetails -->
+        <div class="spreadWrapper clearfix">
+            <div class="spreadRow clearfix">
+                <span class="sellSection">160.315<span class="band"></span>160.361</span>
+                <span class="quantitySection">400K</span>
+                <span id="buy400" class="buySection textGreen"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
+            </div>
+            <div class="spreadRow clearfix">
+                <span class="sellSection">160.315<span class="band"></span>160.361</span>
+                <span class="quantitySection buyGreen">200K</span>
+                <span id="buy200" class="buySection buyGreen textWhite"><span class="spread1">160.335</span><span class="band bandWhite"></span><span class="spread2">160.364</span></span>
+            </div>
+            <div class="spreadRow clearfix">
+                <span class="sellSection">160.315<span class="band"></span>160.361</span>
+                <span class="quantitySection">100K</span>
+                <span id="buy100" class="buySection textGreen"><span class="spread1">160.325</span><span class="band"></span><span class="spread2">160.363</span></span>
+            </div>
+            <div class="spreadRow clearfix">
+                <span class="sellSection">160.315<span class="band"></span>160.361</span>
+                <span class="quantitySection">50K</span>
+                <span id="buy50" class="buySection textGreen"><span class="spread1">160.315</span><span class="band"></span><span class="spread2">160.361</span></span>
+            </div>
+            <div class="spreadRow clearfix">
+                <span class="sellSection"><span class="band"></span></span>
+                <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input>
+                <span class="buySection textGreen"><span class="band"></span></span>
+            </div>
+        </div>
+        <div class="betweenSpreadData">
+            <span class="horizontalLabel">Client</span>
+            <span class="horizontalInfoField">BLACKROCK</span>
+            <!-- <div class="rightIcons">
 				<span class="edit"><i class="mdi mdi-border-color"></i></span>
 				<span class="archive">Archive</span>
 			</div> -->
-			<div class="expire">
-				<span class="horizontalLabel">Expires in</span>
-				<span class="horizontalInfoField">12:04:05</span>
-			</div>
-		</div>
-
-		<div class="dataFieldsWrapper">
-			<div class="colA">
-				<div class="dataRow">
-					<span class="horizontalLabel">ADV</span>
-					<span class="horizontalDataField">3M</span>
-				</div>
-				<div class="dataRow">
-					<span class="horizontalLabel">S/U</span>
-					<span class="horizontalDataField">S</span>
-				</div>
-				<div class="dataRow">
-					<span class="horizontalLabel">Order Type</span>
-					<span class="horizontalDataField">H</span>
-				</div>
-				
-			</div>
-
-			<div class="colB">
-				<div class="dataRow">
-					<span class="horizontalLabel">Vol</span>
-					<span class="horizontalDataField">5M</span>
-				</div>
-				<div class="dataRow">
-					<span class="horizontalLabel">Advt. Vol</span>
-					<span class="horizontalDataField">4M</span>
-				</div>
-				<div class="dataRow">
-					<span class="horizontalLabel">Order ID</span>
-					<span id="orderID" class="horizontalDataField">000255...
+            <div class="expire">
+                <span class="horizontalLabel">Expires in</span>
+                <span class="horizontalInfoField">12:04:05</span>
+            </div>
+        </div>
+        <div class="dataFieldsWrapper">
+            <div class="colA">
+                <div class="dataRow">
+                    <span class="horizontalLabel">ADV</span>
+                    <span class="horizontalDataField">3M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">S/U</span>
+                    <span class="horizontalDataField">S</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Order Type</span>
+                    <span class="horizontalDataField">H</span>
+                </div>
+            </div>
+            <div class="colB">
+                <div class="dataRow">
+                    <span class="horizontalLabel">Vol</span>
+                    <span class="horizontalDataField">5M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Advt. Vol</span>
+                    <span class="horizontalDataField">4M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Order ID</span>
+                    <span id="orderID" class="horizontalDataField">000255...
 					<span id="orderIDHover">00025567G90DF45678</span>
-					</span>
-				</div>
-			</div>
+                    </span>
+                </div>
+            </div>
+            <div class="colC">
+                <div class="dataRow">
+                    <span class="horizontalLabel">NBBO</span>
+                    <span class="horizontalDataField">5M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Capacity</span>
+                    <span class="horizontalDataField">3M</span>
+                </div>
+            </div>
+        </div>
+        <div id="acceptButton" class="acceptButton">accept</div>
 
-			<div class="colC">
-				<div class="dataRow">
-					<span class="horizontalLabel">NBBO</span>
-					<span class="horizontalDataField">5M</span>
-				</div>
-				<div class="dataRow">
-					<span class="horizontalLabel">Capacity</span>
-					<span class="horizontalDataField">3M</span>
-				</div>
-				
-			</div>
-		</div>
-
-
-
-		
-		
-		<div id="acceptButton" class="acceptButton">accept</div>
-
-
-
-
-	</div>
-	<!-- end of wrapper -->
-
+        <div id="popUpBackground">
+        	<div id="popUp1" class="executeTrade">
+            
+                <div id="popUpClose">cancel</div>
+           
+            <div class="popUpInfo">
+            	<div class="popUpClient">blackrock</div>
+            	<div class="popUpTicker">AMZN</div>
+            	<span class="popUpSide textGreen">B</span>
+            	<span class="popUpQty">200K</span>
+            
+            
+                
+            </div>
+            <!-- end of popUpInfo -->
+            <div class="popUpRow2">
+            	<div class="popUpExpire">
+	                <span class="horizontalLabel">Exp</span>
+	                <span class="horizontalInfoField">12:04:05</span>
+           		 </div>
+           		 <div class="popUpPriceChoose">160.11</div>
+                <div class="executeButton">execute</div>
+                    
+            </div>
+            <!-- end of popup row2 -->
+        </div>
+        <!-- end of popUp1 -->
+        	
+        </div>
+        
+    </div>
+    <!-- end of wrapper -->
 </body>
+
 </html>
