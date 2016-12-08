@@ -28,6 +28,8 @@ $(document).ready(function(){
 		$('.buySection.selected .band').removeClass('bandWhite');
 		$('.buySection').removeClass('selected');
 		$('.sellSection').addClass('redText');
+		$('#sell200').addClass('selected');
+		$('.sellSection.selected .band').addClass('bandWhite');
 
 
 	})
@@ -41,6 +43,8 @@ $(document).ready(function(){
 		$('#buy200').addClass('selected');
 		$('#buy200 .band').addClass('bandWhite');
 		$('.sellSection').removeClass('redText');
+		$('.sellSection.selected .band').removeClass('bandWhite');
+		$('#sell200').removeClass('selected');
 	})
 
  	textFlip('buy400', .345, .365, 160.345, 160.365);
