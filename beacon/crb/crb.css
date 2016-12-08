@@ -467,9 +467,9 @@ body {
 	background-color: rgba(0,0,0, .4);
 }
 
-.executeTrade {
+.executeTrade, .followExecuteTrade {
 	width: 470px;
-	height: 256px;
+	height: 280px;
 	padding-left: 40px;
 	background-color: #37375B;
 	border: 1px solid #8292D8;
@@ -524,7 +524,7 @@ body {
 }
 
 .popUpRow2 {
-	margin-top: 50px;
+	margin-top: 35px;
 }
 
 .popUpExpire {
@@ -568,4 +568,34 @@ body {
         position: relative;
     top: 14px;
     left: 12px;
+}
+
+.popUpdropDown {
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	    // border-radius: 8px;
+    border: 1px #f9f9fd solid;
+    color: white;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    top: 14px;
+
+}
+
+#doneButton {
+	    width: 100px;
+    height: 35px;
+    position: relative;
+    top: 40px;
+    left: 267px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    background-color: #394ad1;
 }
