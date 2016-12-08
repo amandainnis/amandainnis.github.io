@@ -71,6 +71,7 @@ body {
 #wrapper {
 	width: 600px;
 	height: 760px;
+	    background-color: #23234a;
 	background-color: #26264E;
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -150,6 +151,7 @@ body {
 .tickerWrapper {
 	width: 163px;
 	height: 56px;
+	    background-color: #394679;
 	background-color: #445287;
 
 	margin-left: 21px;
@@ -581,11 +583,11 @@ body {
 	font-weight: 300;
 }
 
-// .popUpRow2 {
-// 	margin-top: 35px;
-// 	margin-top: 47px;
+.popUpRow2 {
+	margin-top: 35px;
+	margin-top: 47px;
 	
-// }
+}
 
 .popUpRow3 {
 	margin-top: 35px;
@@ -599,7 +601,8 @@ body {
 	position: relative;
     top: 29px;
     width: 120px;
-        top: 110px;
+        left: 15px;
+        // top: 110px;
 
 }
 
@@ -620,10 +623,10 @@ body {
     outline: none;
 	background-color: transparent;
 	font-family: 'Roboto';
-	width: 149px;
-    height: 59px;
-    font-size: 20px;
-    top: 21px;
+	// width: 149px;
+ //    height: 59px;
+ //    font-size: 20px;
+ //    top: 21px;
 
 
 }
@@ -645,7 +648,7 @@ body {
         position: relative;
     top: 14px;
     left: 12px;
-        top: 98px;
+        // top: 98px;
     left: 12px;
 }
 
