@@ -121,8 +121,8 @@ body {
 .tickerDetails {
 	margin-left: 38px;
 	margin-top: 76px;
-	    // margin-top: 59px;
 	position: relative;
+	    margin-top: 38px;
 	// border: 1px yellow solid;
 }
 
@@ -167,16 +167,29 @@ body {
 
 
 .tickerWrapper {
-	width: 163px;
-	height: 56px;
-	    width: 164px;
-	    background-color: #394679;
-	background-color: #445287;
+	// width: 163px;
+	// height: 76px;
+	//     background-color: #394679;
+	// background-color: #445287;
 
 	margin-left: 21px;
-	    margin-left: 19px;
+	    display: inline-block;
+    width: 135px;
+  
+    
+    color: white;
+    // font-size: 13px;
+    // padding-top: 14px;
+    // padding-left: 7px;
+    // position: relative;
+    // top: 14px;
+    // top: 10px;
+    // margin-right: 5px;
 }
 .ticker {
+	  width: 135px;
+    height: 50px;
+    border: 1px #878fb0 solid;
 	font-size: 38px;
 	color: #FBFBFB;
 	font-weight: 300;
@@ -184,6 +197,7 @@ body {
 	position: relative;
 	top: 21px;
 	top: 3px;
+	// top: -13px;
 	padding: 6px;
 	text-align: center;
 	
@@ -198,6 +212,9 @@ body {
 	font-size: 31px;
 	font-size: 28px;
 	    font-size: 26px;
+	        font-size: 22px;
+    padding: 10px;
+    border: 1px #878fb0 solid;
 }
 
 
@@ -254,14 +271,17 @@ body {
 	// background-color: #36365C;
 	width: 100%;
 	height: 36px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	
 }
 
 .sellSection, .buySection, .quantitySection {
 	background-color: #36365C;
 	background-color: #26264E;
+	    // background-color: #36365c;
 	padding: 9px 0px;
+	    border-top: 1px white solid;
+    border-bottom: 1px white solid;
 
 }
 
@@ -861,7 +881,6 @@ body {
 	background-color: #646485;
 	background-color: #36365c;
 	    background-color: #445287;
-	        background-color: #40406b;
 	    // border-top: 2px #6673b7 solid;
 	        // border-bottom: 2px #445287 solid;
 	        // border-left: 1px #818196 solid;

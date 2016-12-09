@@ -16,8 +16,20 @@ $(document).ready(function(){
 
 	$('#popUpBackground').hide();
 	$('#popUp2').hide();
-	 $('#popUpUrgencyDropDown li').hide();
-	
+	$('#popUpUrgencyDropDown li').hide();
+	$('#wrapperRestrictions').hide();
+
+
+	$('#TCA').click( function(){
+		$('#wrapperRestrictions').hide();
+
+	})
+
+	$('#Restrictions').click( function(){
+		$('#wrapperRestrictions').show();
+
+	})
+
 
 	$('#sellSideVersion').on('click', function(){
 		console.log('yo yo');
@@ -30,6 +42,7 @@ $(document).ready(function(){
 		$('.sellSection').addClass('redText');
 		$('#sell200').addClass('selected');
 		$('.sellSection.selected .band').addClass('bandWhite');
+		$('#row200 .quantitySection').addClass('sellRed');
 
 
 	})
@@ -45,6 +58,7 @@ $(document).ready(function(){
 		$('.sellSection').removeClass('redText');
 		$('.sellSection.selected .band').removeClass('bandWhite');
 		$('#sell200').removeClass('selected');
+		$('#row200 .quantitySection').removeClass('sellRed');
 	})
 
  	textFlip('buy400', .345, .365, 160.345, 160.365);
