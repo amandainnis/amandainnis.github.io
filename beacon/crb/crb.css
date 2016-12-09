@@ -703,7 +703,25 @@ background-color: #384298;
 	    display: inline-block;
     width: 120px;
     width: 125px;
-        width: 140px;
+        width: 130px;
+    height: 40px;
+    border: 1px #878fb0 solid;
+    color: white;
+    font-size: 13px;
+    padding-top: 14px;
+    padding-left: 7px;
+    position: relative;
+    top: 14px;
+    top: 10px;
+    margin-right: 5px;
+    z-index: 4;
+}
+
+.regularDropDown {
+	    display: inline-block;
+    width: 120px;
+    width: 125px;
+        width: 150px;
     height: 40px;
     border: 1px #878fb0 solid;
     color: white;
@@ -772,8 +790,8 @@ background-color: #384298;
 .dropDownMenu2 {
 	display: inline-block;
 	width: 150px;
-	margin-right: 5px;
-	    width: 125px;
+	margin-right: 20px;
+	  
     margin-right: 10px;
 }
 
@@ -781,9 +799,9 @@ background-color: #384298;
 	color: #878fb0;
 }
 
-.dropTriangle {
+.dropTrianglePopUp {
 	position: relative;
-	left: 126px;
+	left: 107px;
     top: -19px;
     font-size: 21px;
     font-size: 21px;
@@ -791,11 +809,10 @@ background-color: #384298;
     z-index: 3;
 }
 
-.dropTriangle2 {
+.dropTriangleRegular {
 	position: relative;
-	left: 111px;
+	left: 126px;
     top: -19px;
-    font-size: 21px;
     font-size: 21px;
     color: #eaeaea;
     z-index: 3;
@@ -888,7 +905,7 @@ background-color: #384298;
 .tile.wayOff {
 	background-color: #acb187;
 	    background-color: #b4bf2b;
-	    background-color: rgba(180,191,43,.6);
+	    // background-color: rgba(180,191,43,.6);
 }
 
 .searchField {

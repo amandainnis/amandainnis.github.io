@@ -74,6 +74,20 @@ $(document).ready(function(){
 	});
 
 
+	$('#rowEnterQty input').on( "mouseenter", function() {
+		$( '#sellMisc .spread1' ).text(160.321);
+		$( '#sellMisc .spread2' ).text(160.362);
+		$( '#buyMisc .spread1' ).text(160.321);
+		$( '#buyMisc .spread2' ).text(160.362);
+		}).on("mouseleave", function() {
+			$( '#sellMisc .spread1' ).text('');
+			$( '#sellMisc .spread2' ).text('');
+			$( '#buyMisc .spread1' ).text('');
+			$( '#buyMisc .spread2' ).text('');
+	});
+
+
+
 	$('#acceptButton').on('click', function(){
 		$('#popUpBackground').show();
 		$('#popUp1').show();

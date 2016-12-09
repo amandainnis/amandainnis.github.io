@@ -23,7 +23,7 @@
             <div class="navigation">
                 <span id="TCA" class="selected">TCA</span>
                 <span id="History" class="notSelected">History</span>
-                <span id="Restrictions" class="notSelected">Restrictions</span>
+                <span id="Restrictions" class="notSelected">StockList</span>
             </div>
         </div>
         <!-- end of bar -->
@@ -74,10 +74,10 @@
                 <span id="buy50" class="buySection textGreen"><span class="spread1">160.315</span><span class="band"></span><span class="spread2">160.361</span></span>
             </div>
 
-            <div class="spreadRow clearfix">
-                <span class="sellSection"><span class="band"></span></span>
+            <div id="rowEnterQty" class="spreadRow clearfix">
+                <span id="sellMisc" class="sellSection"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
                 <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input>
-                <span class="buySection textGreen"><span class="band"></span></span>
+                <span id="buyMisc" class="buySection textGreen"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
             </div>
         </div>
 
@@ -194,7 +194,7 @@
             	<div class="dropDownMenu">
             		<div class="dropLabel">Urgency</div>
             		<div id="urgencyDropTitle" class="popUpdropDown">Very high</div>
-            		<span class="dropTriangle"><i class="mdi mdi-menu-down"></i></span>
+            		<span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
             	</div>
             	
                 <ul id="popUpUrgencyDropDown">
@@ -208,13 +208,13 @@
                 <div class="dropDownMenu">
             		<div class="dropLabel">Follow on</div>
             		<div id="followDropTitle" class="popUpdropDown">More to come</div>
-            		<span class="dropTriangle"><i class="mdi mdi-menu-down"></i></span>
+            		<span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
             	</div>
 
             	<div class="dropDownMenu">
             		<div class="dropLabel">Amount</div>
             		<div id="amountDropTitle" class="popUpdropDown">Full amount</div>
-            		<span class="dropTriangle"><i class="mdi mdi-menu-down"></i></span>
+            		<span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
             	</div>
            		 
            		
@@ -237,14 +237,14 @@
 
         	<div class="dropDownMenu2">
             		<div class="dropLabel">Lists</div>
-            		<div id="urgencyDropTitle" class="popUpdropDown">IOI List</div>
-            		<span class="dropTriangle2"><i class="mdi mdi-menu-down"></i></span>
+            		<div id="urgencyDropTitle" class="regularDropDown">IOI List</div>
+            		<span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
             	</div>
 
             	<div class="dropDownMenu2">
             		<div class="dropLabel">Sort by</div>
-            		<div id="urgencyDropTitle" class="popUpdropDown">Market Cap</div>
-            		<span class="dropTriangle2"><i class="mdi mdi-menu-down"></i></span>
+            		<div id="urgencyDropTitle" class="regularDropDown">Market Cap</div>
+            		<span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
             	</div>
         	
         </div>
