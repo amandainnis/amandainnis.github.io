@@ -12,7 +12,7 @@
 <body>
 	<div class="buttonsToFlipSides">
 		
-		<div id="buySideVersion" class="flipSideButton">buy</div>
+		<div id="buySideVersion" class="flipSideButton selectedSide">buy</div>
 		<div id="sellSideVersion" class="flipSideButton redText">sell</div>
 		<!-- <div id="alternateView" class="flipSideButton">Alternate</div> -->
 	</div>
@@ -47,7 +47,7 @@
             </div>
         </div>
         <!-- end of tickerDetails -->
-        <div class="spreadWrapper clearfix">
+        <div id="spreadWrapper" class= "clearfix">
             
             <div id="row400" class="spreadRow clearfix">
             	<span id="sell400" class="sellSection"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
@@ -55,7 +55,7 @@
                 <span id="buy400" class="buySection textGreen"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
             </div>
             
-            <div id="row200" class="spreadRow clearfix">
+            <div id="row200" class="spreadRow selectedRow clearfix">
                 <span id="sell200" class="sellSection"><span class="spread1">160.335</span><span class="band"></span><span class="spread2">160.364</span></span>
                 <span class="quantitySection buyGreen">200K</span>
                 <span id="buy200" class="buySection selected"><span class="spread1">160.335</span><span class="band bandWhite"></span><span class="spread2">160.364</span></span>
@@ -211,6 +211,13 @@
             		<span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
             	</div>
 
+            	<ul id="popUpFollowDropDown">
+                    <li class="field1">Nothing</li>
+                    <li class="field2">More to come</li>
+                    <li class="field3">Winter is coming</li>
+                    <li class="field4">Go away</li>
+                </ul>
+
             	<div class="dropDownMenu">
             		<div class="dropLabel">Amount</div>
             		<div id="amountDropTitle" class="popUpdropDown">Full amount</div>
@@ -237,13 +244,13 @@
 
         	<div class="dropDownMenu2">
             		<div class="dropLabel">Lists</div>
-            		<div id="urgencyDropTitle" class="regularDropDown">IOI List</div>
+            		<div id="stockListList" class="regularDropDown">IOI List</div>
             		<span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
             	</div>
 
             	<div class="dropDownMenu2">
             		<div class="dropLabel">Sort by</div>
-            		<div id="urgencyDropTitle" class="regularDropDown">Market Cap</div>
+            		<div id="stockListSort" class="regularDropDown">Market Cap</div>
             		<span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
             	</div>
         	

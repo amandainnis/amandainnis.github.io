@@ -9,7 +9,36 @@ function textFlip(sectionID, cost1, cost2, price1, price2){
 
 }
 
+// function whoIsSelected(){
+// 		if($('#row400').hasClass('selectedRow')) {
+// 			console.log('row400');
+// 		}
+// 		else if($('#row200').hasClass('selectedRow')) {
+// 			console.log('row200');
+// 		}
+// 		else if($('#row100').hasClass('selectedRow')) {
+// 			console.log('row100');
+// 		}
+// 		else if($('#row50').hasClass('selectedRow')) {
+// 			console.log('row50');
+// 		}
+// 	}
 
+var whoIsSelected = function(){
+		if($('#row400').hasClass('selectedRow')) {
+			return 'row400';
+		}
+		else if($('#row200').hasClass('selectedRow')) {
+			return 'row200';
+		}
+		else if($('#row100').hasClass('selectedRow')) {
+			return 'row100';
+		}
+		else if($('#row50').hasClass('selectedRow')) {
+			return 'row50';
+		}
+
+	}
 
 
 $(document).ready(function(){
@@ -17,6 +46,9 @@ $(document).ready(function(){
 	$('#popUpBackground').hide();
 	$('#popUp2').hide();
 	$('#popUpUrgencyDropDown li').hide();
+	$('#popUpFollowDropDown li').hide();
+
+
 	$('#wrapperRestrictions').hide();
 
 
@@ -31,8 +63,14 @@ $(document).ready(function(){
 	})
 
 
+	// whoIsSelected();
+
+	console.log(whoIsSelected());
+
+
 	$('#sellSideVersion').on('click', function(){
-		console.log('yo yo');
+		$('#buySideVersion').removeClass('selectedSide');
+		$('#sellSideVersion').addClass('selectedSide');
 		$('#buySellDoorway').text('S');
 		$('#buySellDoorway').addClass('redText');
 		$('.buySection').removeClass('textGreen');
@@ -49,7 +87,8 @@ $(document).ready(function(){
 	
 
 	$('#buySideVersion').on('click', function(){
-		console.log('yo Buy');
+		$('#sellSideVersion').removeClass('selectedSide');
+		$('#buySideVersion').addClass('selectedSide');
 		$('#buySellDoorway').text('B');
 		$('#buySellDoorway').removeClass('redText');
 		$('.buySection').addClass('textGreen');
@@ -92,6 +131,29 @@ $(document).ready(function(){
 		$('#popUpBackground').show();
 		$('#popUp1').show();
 	});
+
+
+	// function changeRow(myID){
+	// 	$('.buySection').addClass('textGreen');
+	// 	$('#' + myID + '.buySection').addClass('selected');
+	// 	$('#buy200 .band').addClass('bandWhite');
+	// 	$('.sellSection').removeClass('redText');
+	// 	$('.sellSection.selected .band').removeClass('bandWhite');
+	// 	$('#sell200').removeClass('selected');
+	// 	$('#row200 .quantitySection').removeClass('sellRed');
+	// }
+
+	$('#spreadWrapper').on('click', '.spreadRow', function(event) {
+
+	    $('.spreadRow').removeClass('selectedRow');
+	    $(this).addClass('selectedRow');
+	    console.log(this.id);
+	    myID = this.id;
+	    $(myID).addClass('buyGreen');
+	});
+
+
+///////////////pop up 1////////////////
 
 	$('#popUpClose').on('click', function(){$('#popUpBackground').hide();});
 
@@ -140,6 +202,37 @@ $(document).ready(function(){
   });
 
 
+  $('#followDropTitle.popUpdropDown').click(function(){
+    $('#popUpFollowDropDown li').show();
+
+       $('#popUpFollowDropDown .field1').click(function(){
+          var inputText = $(this).text();
+          $('#followDropTitle').text(inputText);
+          $('#popUpFollowDropDown li').hide();
+       }); 
+
+       $('#popUpFollowDropDown .field2').click(function(){
+          var inputText = $(this).text();
+          $('#followDropTitle').text(inputText);
+          $('#popUpFollowDropDown li').hide();
+       }); 
+       
+       $('#popUpFollowDropDown .field3').click(function(){
+          var inputText = $(this).text();
+          $('#followDropTitle').text(inputText);
+          $('#popUpFollowDropDown li').hide();
+       }); 
+
+       $('#popUpFollowDropDown .field4').click(function(){
+          var inputText = $(this).text();
+          $('#followDropTitle').text(inputText);
+          $('#popUpFollowDropDown li').hide();
+       }); 
+
+
+  });
+
+
 
 
 
@@ -156,33 +249,11 @@ $(document).ready(function(){
 	
 	
 
-	// $('#buy400.buySection').on( "mouseenter", function() {
-	// 	$( '#buy400 .spread1' ).text(.315);
-	// 	$( '#buy400 .spread2' ).text(.361);}).on("mouseleave", function() {
-	// 		$( '#buy400 .spread1' ).text(160.315);
-	// 		$( '#buy400 .spread2' ).text(160.361); 
-	// 	});
+	////// StockList//////////
 
-	// $('#buy200.buySection').on( "mouseenter", function() {
-	// 	$( '#buy200 .spread1' ).text(.315);
-	// 	$( '#buy200 .spread2' ).text(.361);}).on("mouseleave", function() {
-	// 		$( '#buy200 .spread1' ).text(160.315);
-	// 		$( '#buy200 .spread2' ).text(160.361); 
-	// 	});
-
-	// $('#buy100.buySection').on( "mouseenter", function() {
-	// 	$( '#buy100 .spread1' ).text(.315);
-	// 	$( '#buy100 .spread2' ).text(.361);}).on("mouseleave", function() {
-	// 		$( '#buy100 .spread1' ).text(160.315);
-	// 		$( '#buy100 .spread2' ).text(160.361); 
-	// 	});
-
-	// $('#buy50.buySection').on( "mouseenter", function() {
-	// 	$( '#buy50 .spread1' ).text(.315);
-	// 	$( '#buy50 .spread2' ).text(.361);}).on("mouseleave", function() {
-	// 		$( '#buy50 .spread1' ).text(160.315);
-	// 		$( '#buy50 .spread2' ).text(160.361); 
-	// 	});
+	$('.tile.regular').on('click', function(){
+		$(this).toggleClass('off');
+	})
 		
 
 

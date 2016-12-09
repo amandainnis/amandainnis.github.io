@@ -74,7 +74,12 @@ $(document).ready(function() {
 
     });
 
-    
+    // DAVE search function processTicker(ticker){
+    //     ///do something with your ticker
+    //     if(ticker.outgage ===1){
+
+    //     }
+    // }
 
     var tickerBoxArrayMaster = [
             {ticker: "LVLT", number: "73", outage: "0", critical: "0", urgent: "4", comm: "0", pro: "3", redDot: false},
@@ -113,7 +118,7 @@ $(document).ready(function() {
             {ticker: "BHI", number: "51", outage: "0", critical: "0", urgent: "5", comm: "0", pro: "2", redDot: false}   		
      	];
 
-
+//DAVE search processTicker(tickerBoxArrayMaster[0])
 
      var tickerBoxArray = [];
 
