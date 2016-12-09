@@ -24,21 +24,23 @@ function textFlip(sectionID, cost1, cost2, price1, price2){
 // 		}
 // 	}
 
-var whoIsSelected = function(){
-		if($('#row400').hasClass('selectedRow')) {
-			return 'row400';
-		}
-		else if($('#row200').hasClass('selectedRow')) {
-			return 'row200';
-		}
-		else if($('#row100').hasClass('selectedRow')) {
-			return 'row100';
-		}
-		else if($('#row50').hasClass('selectedRow')) {
-			return 'row50';
-		}
+var myID;
 
-	}
+// function whoIsSelected(){
+// 		if($('#row400').hasClass('selectedRow')) {
+// 			return 'row400';
+// 		}
+// 		else if($('#row200').hasClass('selectedRow')) {
+// 			return  'row200';
+// 		}
+// 		else if($('#row100').hasClass('selectedRow')) {
+// 			return  'row100';
+// 		}
+// 		else if($('#row50').hasClass('selectedRow')) {
+// 			return  'row50';
+// 		}
+
+// 	}
 
 
 $(document).ready(function(){
@@ -65,8 +67,26 @@ $(document).ready(function(){
 
 	// whoIsSelected();
 
-	console.log(whoIsSelected());
+	// console.log(whoIsSelected());
 
+
+	// $('#sellSideVersion').on('click', function(){
+	// 	$('#buySideVersion').removeClass('selectedSide');
+	// 	$('#sellSideVersion').addClass('selectedSide');
+	// 	$('#buySellDoorway').text('S');
+	// 	$('#buySellDoorway').addClass('redText');
+	// 	$('.buySection').removeClass('textGreen');
+	// 	// $('#buy200').removeClass('textWhite');
+	// 	$('.buySection.selected .band').removeClass('bandWhite');
+	// 	$('.buySection').removeClass('selected');
+	// 	$('.sellSection').addClass('redText');
+	// 	$('.quantitySection').removeClass('buyGreen');
+	// 	$('#sell200').addClass('selected');
+	// 	$('.sellSection.selected .band').addClass('bandWhite');
+	// 	$('#row200 .quantitySection').addClass('sellRed');
+
+
+	// })
 
 	$('#sellSideVersion').on('click', function(){
 		$('#buySideVersion').removeClass('selectedSide');
@@ -74,16 +94,28 @@ $(document).ready(function(){
 		$('#buySellDoorway').text('S');
 		$('#buySellDoorway').addClass('redText');
 		$('.buySection').removeClass('textGreen');
-		// $('#buy200').removeClass('textWhite');
+		
 		$('.buySection.selected .band').removeClass('bandWhite');
 		$('.buySection').removeClass('selected');
-		$('.sellSection').addClass('redText');
-		$('#sell200').addClass('selected');
-		$('.sellSection.selected .band').addClass('bandWhite');
-		$('#row200 .quantitySection').addClass('sellRed');
+		$('.quantitySection').removeClass('buyGreen');
+
+		$('#spreadWrapper').on('click', '.spreadRow', function(event) {
+
+			    $('.spreadRow').removeClass('selectedRow');
+			    $(this).addClass('selectedRow');
+			    myID = this.id;
+				})
+	    
+		changeRowSell(myID);
+	    
+	    
+	    console.log(myID);
+
+	    // myID = this.id;
+	    // $(myID).addClass('buyGreen');
+	});
 
 
-	})
 	
 
 	$('#buySideVersion').on('click', function(){
@@ -91,13 +123,28 @@ $(document).ready(function(){
 		$('#buySideVersion').addClass('selectedSide');
 		$('#buySellDoorway').text('B');
 		$('#buySellDoorway').removeClass('redText');
-		$('.buySection').addClass('textGreen');
-		$('#buy200').addClass('selected');
-		$('#buy200 .band').addClass('bandWhite');
 		$('.sellSection').removeClass('redText');
+
 		$('.sellSection.selected .band').removeClass('bandWhite');
-		$('#sell200').removeClass('selected');
-		$('#row200 .quantitySection').removeClass('sellRed');
+		$('.sellSection').removeClass('selected');
+		$('.quantitySection').removeClass('sellRed');
+		
+
+		$('#spreadWrapper').on('click', '.spreadRow', function(event) {
+
+			    $('.spreadRow').removeClass('selectedRow');
+			    $(this).addClass('selectedRow');
+			    myID = this.id;
+				})
+	    
+		changeRowBuy(myID);
+
+		// $('#buy200').addClass('selected');
+		// $('#buy200 .band').addClass('bandWhite');
+		// $('.sellSection').removeClass('redText');
+		// $('.sellSection.selected .band').removeClass('bandWhite');
+		// $('#sell200').removeClass('selected');
+		// $('#row200 .quantitySection').removeClass('sellRed');
 	})
 
  	textFlip('buy400', .345, .365, 160.345, 160.365);
@@ -133,24 +180,57 @@ $(document).ready(function(){
 	});
 
 
-	// function changeRow(myID){
-	// 	$('.buySection').addClass('textGreen');
-	// 	$('#' + myID + '.buySection').addClass('selected');
-	// 	$('#buy200 .band').addClass('bandWhite');
-	// 	$('.sellSection').removeClass('redText');
-	// 	$('.sellSection.selected .band').removeClass('bandWhite');
-	// 	$('#sell200').removeClass('selected');
-	// 	$('#row200 .quantitySection').removeClass('sellRed');
-	// }
+
+	function changeRowBuy(someID){
+	    	$('.buySection.selected .band').removeClass('bandWhite');
+			$('.buySection').removeClass('selected');
+			$('.quantitySection').removeClass('buyGreen');
+			$('.buySection').addClass('textGreen');
+			$('#' + someID + ' .buySection').addClass('selected');
+			$('#' + someID + ' .buySection .band').addClass('bandWhite');
+			$('#' + someID + ' .quantitySection').addClass('buyGreen');
+			
+		}
+
+	function changeRowSell(someID){
+	    	$('.sellSection.selected .band').removeClass('bandWhite');
+			$('.sellSection').removeClass('selected');
+			$('.quantitySection').removeClass('sellRed');
+			$('.sellSection').addClass('redText');
+			$('#' + someID + ' .sellSection').addClass('selected');
+			$('#' + someID + ' .sellSection .band').addClass('bandWhite');
+			$('#' + someID + ' .quantitySection').addClass('sellRed');
+			
+		}
+	
 
 	$('#spreadWrapper').on('click', '.spreadRow', function(event) {
 
 	    $('.spreadRow').removeClass('selectedRow');
 	    $(this).addClass('selectedRow');
-	    console.log(this.id);
 	    myID = this.id;
-	    $(myID).addClass('buyGreen');
+	    if ($('#buySideVersion').hasClass('selectedSide')) {
+			changeRowBuy(myID);
+		}
+		else if ($('#sellSideVersion').hasClass('selectedSide')) {
+			changeRowSell(myID);
+		}
+	    
+	    
+	    console.log(myID);
+
+	    // myID = this.id;
+	    // $(myID).addClass('buyGreen');
 	});
+
+
+	
+
+
+	
+
+	
+	
 
 
 ///////////////pop up 1////////////////
