@@ -171,8 +171,10 @@ body {
 	height: 56px;
 	    width: 164px;
 	    background-color: #394679;
-	background-color: #445287;
-
+	
+background-color: #384298;
+    background-color: #464f98;
+    background-color: #445287;
 	margin-left: 21px;
 	    margin-left: 19px;
 }
@@ -260,7 +262,9 @@ body {
 
 .sellSection, .buySection, .quantitySection {
 	background-color: #36365C;
+	background-color: #36365c;
 	background-color: #26264E;
+	    
 	padding: 9px 0px;
 
 }
@@ -406,6 +410,7 @@ body {
 	    // margin: 14px auto 0 auto;
     padding: 20px 15px;
         // padding: 0;
+            border: 2px solid #4659a0;
     border: 2px #364373 solid;
     // border-top: 2px #364373 solid;
     border-bottom: none;
@@ -466,6 +471,7 @@ body {
 	    width: 485px;
 	height: 115px;
 	  border: 2px solid #2d3862;
+	      border: 2px solid #4659a0;
 	border: 2px solid #364373;
 	  
 	margin: 0 auto;
@@ -543,6 +549,7 @@ body {
 .acceptButton {
 	text-transform: uppercase;
     color: white;
+        background-color: #475bc7;
     background-color: #394AD1;
     width: 154px;
     height: 40px;
@@ -694,6 +701,7 @@ body {
 	    display: inline-block;
     width: 120px;
     width: 125px;
+        width: 140px;
     height: 40px;
     border: 1px #878fb0 solid;
     color: white;
@@ -783,7 +791,7 @@ body {
 
 .dropTriangle2 {
 	position: relative;
-	left: 96px;
+	left: 111px;
     top: -19px;
     font-size: 21px;
     font-size: 21px;
@@ -877,4 +885,17 @@ body {
 
 .tile.wayOff {
 	background-color: #acb187;
+	    background-color: #b4bf2b;
+	    background-color: rgba(180,191,43,.6);
+}
+
+.searchField {
+	    width: 145px;
+    height: 38px;
+    background-color: #e7e7f2;
+    float: left;
+    margin-top: 23px;
+    margin-right: 30px;
+    margin-left: 0px;
+    border-radius: 21px;
 }
