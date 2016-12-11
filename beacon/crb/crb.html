@@ -75,9 +75,9 @@
             </div>
 
             <div id="rowEnterQty" class="spreadRow clearfix">
-                <span id="sellMisc" class="sellSection"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
-                <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input>
-                <span id="buyMisc" class="buySection textGreen"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
+                <span id="sellMisc" class="miscSell"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
+                <input id="quantityInput" class="quantityMisc" placeholder="enter qty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter qty'" ></input>
+                <span id="buyMisc" class="miscBuy"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
             </div>
         </div>
 
@@ -159,10 +159,14 @@
 
             <div class="popUpRow2">
             	
-            	<input type="number" class="popUpPriceChoose" step="0.01" value="160.11">
             	<div class="popUpExpire">
-	                <span class="horizontalLabel">Exp</span>
-	                <span class="horizontalInfoField">12:04:05</span>
+	                <span class="verticalLabel popUpExpireTimeLabel">Exp</span>
+	                <span class="popUpExpireTime">12:04:05</span>
+           		 </div>
+
+           		 <div class="popUpPriceSet">
+           		 	<span class="verticalLabel popUpPricerLabel">Pricer</span>
+            		<input type="number" class="popUpPriceChoose" step="0.01" value="160.11">
            		 </div>
            		
                 <div id="executeButton" class="executeButton">execute</div>
@@ -240,7 +244,9 @@
 
         <div id="wrapperRestrictions">
         <div class="restrictionTopRow">
-        	<div class="searchField"></div>
+
+        <!-- <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input> -->
+        	<input id="searchTicker" class="searchField" placeholder="search first letter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search first letter'" value="">
 
         	<div class="dropDownMenu2">
             		<div class="dropLabel">Lists</div>
@@ -255,35 +261,39 @@
             	</div>
         	
         </div>
-        	
+        	<div id="tickerZone">
+
+	        	<!-- <div class="tile regular">AMZN</div>
+		        <div class="tile regular">LVLT</div>
+		        <div class="tile off">ORCL</div>
+		        <div class="tile regular">PBR</div>
+		        <div class="tile regular">AAPL</div>
+		         <div class="tile regular">GE</div>
+		        <div class="tile off">CUZ</div>
+		        <div class="tile regular">ABEV</div>
+		        <div class="tile regular">AMZN</div>
+		        <div class="tile off">HAL</div>
+		        <div class="tile regular">HOG</div>
+		        <div class="tile regular">ITUB</div>
+		        <div class="tile wayOff">CAH</div>
+		        <div class="tile regular">ECA</div>
+		        <div class="tile regular">FCX</div>
+		        <div class="tile regular">GE</div>
+		        <div class="tile off">CUZ</div>
+		        <div class="tile regular">DVA</div>
+		        <div class="tile regular">EW</div>
+		        <div class="tile regular">FCAU</div>
+		        <div class="tile regular">TWTR</div>
+		        <div class="tile wayOff">DZN</div>
+		        <div class="tile regular">GGB</div>
+		        <div class="tile regular">RAD</div>
+		        <div class="tile off">RIG</div>
+		        <div class="tile regular">TWLO</div>
+		        <div class="tile regular">EGO</div> -->
+        		
+        	</div>
 	        
-	        <div class="tile regular">AMZN</div>
-	        <div class="tile regular">LVLT</div>
-	        <div class="tile off">ORCL</div>
-	        <div class="tile regular">PBR</div>
-	        <div class="tile regular">AAPL</div>
-	         <div class="tile regular">GE</div>
-	        <div class="tile off">CUZ</div>
-	        <div class="tile regular">ABEV</div>
-	        <div class="tile regular">AMZN</div>
-	        <div class="tile off">HAL</div>
-	        <div class="tile regular">HOG</div>
-	        <div class="tile regular">ITUB</div>
-	        <div class="tile wayOff">CAH</div>
-	        <div class="tile regular">ECA</div>
-	        <div class="tile regular">FCX</div>
-	        <div class="tile regular">GE</div>
-	        <div class="tile off">CUZ</div>
-	        <div class="tile regular">DVA</div>
-	        <div class="tile regular">EW</div>
-	        <div class="tile regular">FCAU</div>
-	        <div class="tile regular">TWTR</div>
-	        <div class="tile wayOff">DZN</div>
-	        <div class="tile regular">GGB</div>
-	        <div class="tile regular">RAD</div>
-	        <div class="tile off">RIG</div>
-	        <div class="tile regular">TWLO</div>
-	        <div class="tile regular">EGO</div>
+	        
 
 
     	</div>

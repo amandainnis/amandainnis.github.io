@@ -98,7 +98,9 @@ $(document).ready(function(){
 		$('.buySection.selected .band').removeClass('bandWhite');
 		$('.buySection').removeClass('selected');
 		$('.quantitySection').removeClass('buyGreen');
-
+		// $('.quantitySection').removeClass('buyGreen');
+		
+		
 		$('#spreadWrapper').on('click', '.spreadRow', function(event) {
 
 			    $('.spreadRow').removeClass('selectedRow');
@@ -331,10 +333,100 @@ $(document).ready(function(){
 
 	////// StockList//////////
 
+
+		
+	// DAVE search function processTicker(ticker){
+    //     ///do something with your ticker
+    //     if(ticker.outgage ===1){
+
+    //     }
+    // }
+
+    var stockListIOI = [
+            {ticker: "AMZN", classification: "regular"},
+            {ticker: "ORCL", classification: "off"},
+            {ticker: "PBR", classification: "regular"},
+     		{ticker: "AAPL", classification: "regular"},
+     		{ticker: "ABEV", classification: "regular"},
+     		{ticker: "AMZN", classification: "off"},
+            {ticker: "HAL", classification: "regular"},
+            {ticker: "HOG", classification: "regular"},
+            {ticker: "ITUB", classification: "off"},
+     		{ticker: "CAH", classification: "regular"},
+     		
+
+			{ticker: "ECA", classification: "regular"},
+     		{ticker: "FCX", classification: "wayOff"},
+     		{ticker: "GE", classification: "regular"},
+            {ticker: "CUZ", classification: "regular"},
+            {ticker: "DVA", classification: "regular"},
+            {ticker: "EW", classification: "off"},
+            {ticker: "FCAU", classification: "wayOff"},
+            {ticker: "TWTR", classification: "regular"},
+            {ticker: "DZN", classification: "regular"},
+     		{ticker: "GGB", classification: "regular"},
+     		
+     		  
+     		{ticker: "LUV", classification: "regular" },
+     		{ticker: "RAD", classification: "regular"},
+     		{ticker: "RIG", classification: "off"},
+     		{ticker: "TWLO", classification: "regular"},
+            {ticker: "EGO", classification: "off"},
+     		{ticker: "XOM", classification: "regular"},
+     		{ticker: "ZBH", classification: "regular"},
+            {ticker: "AUY", classification: "regular"},
+            {ticker: "BABA", classification: "regular"},
+            {ticker: "BHI", classification: "wayOff"}   		
+     	];
+
+//DAVE search processTicker(tickerBoxArrayMaster[0])
+
+// <div class="tile regular">AMZN</div>
+
+function makeTickerTile(name, classification) {
+       
+   		var newTicker = $('<div class="tile ' + classification + '">'+ name +'</div>');
+   		
+   		$('#tickerZone').append(newTicker);
+   		
+   };
+
+
+
+function iterateDisplay(arr) {
+	for (i = 0; i < arr.length; i++) {
+       makeTickerTile(arr[i].ticker, arr[i].classification);
+        
+     }};
+
+iterateDisplay(stockListIOI);
+
+$('#searchTicker').on('change', function(){
+	var inputTick = $(this).val();
+	console.log(inputTick);
+})
+
+// var x = 'some string';
+// alert(x.charAt(0)); 
+
+	function findATicker(arr) {
+
+	for (i = 0; i < arr.length; i++) {
+		var myString = arr[i].ticker;
+       if (myString.charAt(0) === 'A'){
+       	console.log(arr[i].ticker);
+       }  
+     }};
+
+     findATicker(stockListIOI);
+
+
 	$('.tile.regular').on('click', function(){
 		$(this).toggleClass('off');
 	})
-		
+
+
+
 
 
 })
