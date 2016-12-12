@@ -100,7 +100,7 @@ $(document).ready(function(){
 		$('.quantitySection').removeClass('buyGreen');
 		// $('.quantitySection').removeClass('buyGreen');
 		
-		
+
 		$('#spreadWrapper').on('click', '.spreadRow', function(event) {
 
 			    $('.spreadRow').removeClass('selectedRow');
@@ -343,21 +343,21 @@ $(document).ready(function(){
     // }
 
     var stockListIOI = [
-            {ticker: "AMZN", classification: "regular"},
-            {ticker: "ORCL", classification: "off"},
-            {ticker: "PBR", classification: "regular"},
-     		{ticker: "AAPL", classification: "regular"},
-     		{ticker: "ABEV", classification: "regular"},
-     		{ticker: "AMZN", classification: "off"},
-            {ticker: "HAL", classification: "regular"},
-            {ticker: "HOG", classification: "regular"},
-            {ticker: "ITUB", classification: "off"},
-     		{ticker: "CAH", classification: "regular"},
+            {ticker: "amzn", classification: "regular"},
+            {ticker: "orcl", classification: "off"},
+            {ticker: "pbr", classification: "regular"},
+     		{ticker: "aapl", classification: "regular"},
+     		{ticker: "abev", classification: "regular"},
+     		{ticker: "amtr", classification: "off"},
+            {ticker: "hal", classification: "regular"},
+            {ticker: "hog", classification: "regular"},
+            {ticker: "itub", classification: "off"},
+     		{ticker: "cah", classification: "regular"},
      		
 
-			{ticker: "ECA", classification: "regular"},
-     		{ticker: "FCX", classification: "wayOff"},
-     		{ticker: "GE", classification: "regular"},
+			{ticker: "eca", classification: "regular"},
+     		{ticker: "fcx", classification: "wayOff"},
+     		{ticker: "ge", classification: "regular"},
             {ticker: "CUZ", classification: "regular"},
             {ticker: "DVA", classification: "regular"},
             {ticker: "EW", classification: "off"},
@@ -401,24 +401,43 @@ function iterateDisplay(arr) {
 
 iterateDisplay(stockListIOI);
 
+
+
 $('#searchTicker').on('change', function(){
 	var inputTick = $(this).val();
+	
+	inputTick.toUpperCase();
 	console.log(inputTick);
+
+	 function findATicker(arr, myInput) {
+
+		for (i = 0; i < arr.length; i++) {
+			var myString = arr[i].ticker;
+	       if (myString.charAt(0) == myInput){
+	       	console.log(arr[i].ticker);
+	       }  
+	     }};
+
+     findATicker(stockListIOI, inputTick);
+	
 })
 
-// var x = 'some string';
-// alert(x.charAt(0)); 
 
-	function findATicker(arr) {
 
-	for (i = 0; i < arr.length; i++) {
-		var myString = arr[i].ticker;
-       if (myString.charAt(0) === 'A'){
-       	console.log(arr[i].ticker);
-       }  
-     }};
+	// function findATicker(arr) {
 
-     findATicker(stockListIOI);
+	// for (i = 0; i < arr.length; i++) {
+	// 	var myString = arr[i].ticker;
+ //       if (myString.charAt(0) === 'A'){
+ //       	console.log(arr[i].ticker);
+ //       }  
+ //     }};
+
+ //     findATicker(stockListIOI);
+
+
+
+    
 
 
 	$('.tile.regular').on('click', function(){
