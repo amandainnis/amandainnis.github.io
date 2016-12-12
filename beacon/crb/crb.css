@@ -180,6 +180,7 @@ background-color: #384298;
 }
 .ticker {
 	font-size: 38px;
+	font-size: 34px;
 	color: #FBFBFB;
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -248,10 +249,11 @@ background-color: #384298;
 #spreadWrapper {
 	width: 485px;
 	height: 203px;
-	margin: 20px auto;
-	
-	    margin: 33px auto;
-	    margin: 33px auto 13px auto;
+	// margin: 20px auto;
+ //    margin: 33px auto;
+ //    margin: 33px auto 13px auto;
+ //    margin: 28px auto 13px auto;
+    margin: 24px auto 13px auto;
 	// border: 1px yellow solid;
 }
 
