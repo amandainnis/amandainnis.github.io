@@ -383,19 +383,12 @@ body {
 }
 
 .betweenSpreadData {
-    width: 475px;
     width: 485px;
-    margin: 32px auto 0 auto;
     margin: 20px auto 0 auto;
-    // margin: 14px auto 0 auto;
     padding: 20px 15px;
-    // padding: 0;
     border: 2px solid #4659a0;
     border: 2px #364373 solid;
-    // border-top: 2px #364373 solid;
     border-bottom: none;
-    // border-left: none;
-    // border-right: none;
     position: relative;
 }
 
@@ -525,7 +518,6 @@ body {
     border-radius: 8px;
     text-align: center;
     padding-top: 13px;
-    margin: 54px auto 0;
     font-size: 16px;
     letter-spacing: .4px;
     margin: 36px auto 0;
@@ -557,6 +549,7 @@ body {
 .followExecuteTrade {
 	height: 440px;
 	height: 464px;
+	height: 480px;
 }
 
 .popUpInfo {
@@ -593,18 +586,7 @@ body {
     font-weight: 300;
 }
 
-// .popUpRow2 {
-//     margin-top: 35px;
-//     margin-top: 47px;
-//     margin-top: 40px;
-// }
 
-// .popUpRow3 {
-//     margin-top: 35px;
-//     margin-top: 25px;
-//     margin-top: 20px;
-//     margin-top: 50px;
-// }
 
 .popUp2menus {
 	margin-top: 20px;
@@ -614,9 +596,7 @@ body {
 	margin-top: 10px;
 }
 
-// .popUpRow {
-// 	margin-top: 5px;
-// }
+
 .popUpText {
     font-size: 15px;
     color: #c6cbe8;
@@ -629,23 +609,19 @@ body {
     position: relative;
     margin-top: 40px;
     margin-top: 15px;
-    // margin-top: 9px;
 }
 
 .popUpPriceChoose {
-    // margin-left: 7px;
-    // display: inline-block;
-    // float: left;
     width: 334px;
     height: 54px;
+    height: 48px;
+    height: 50px;
     border-radius: 8px;
     border: 1px #f9f9fd solid;
+    border: 1px #e5e5f0 solid;
     color: white;
     font-size: 17px;
-    // padding-top: 10px;
     padding-left: 10px;
-    // position: relative;
-    // top: 14px;
     outline: none;
     background-color: transparent;
     font-family: 'Roboto';
@@ -673,8 +649,7 @@ body {
 .popUpExpireTime {
     color: #f9f9fd;
     color: #dedee6;
-    font-size: 17px;
-    // padding: 10px 8px;
+    font-size: 16px;
     padding-left: 8px;
 }
 
@@ -684,13 +659,11 @@ body {
 
 #popUpClose {
     color: #878eb1;
-    text-transform: uppercase;
     border: 1px solid #646485;
     position: relative;
 }
 
 .popUpButton {
-    // display: inline-block;
     float: left;
     width: 150px;
     height: 40px;
@@ -704,28 +677,20 @@ body {
 }
 
 #executeButton {
-    // display: inline-block;
-    float: left;
-    width: 150px;
-    height: 40px;
     background-color: #F5A201;
     color: #36365c;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 13px;
-    border-radius: 8px;
     position: relative;
     top: 0;
     left: 22px;
-    left: 30px;
+    left: 34px;
 }
 
 .popUpdropDown {
     width: 334px;
     height: 40px;
+    height: 44px;
     border: 1px #878fb0 solid;
+        // border: 1px #e5e5f0 solid;
     color: white;
     font-size: 13px;
     padding-top: 14px;
@@ -742,6 +707,7 @@ body {
     width: 125px;
     width: 150px;
     height: 40px;
+    height: 44px;
     border: 1px #878fb0 solid;
     color: white;
     font-size: 13px;
@@ -793,8 +759,8 @@ body {
 }
 
 .dropDownMenu {
-    display: inline-block;
     width: 334px;
+    position: relative;
     
 }
 
@@ -807,6 +773,7 @@ body {
 
 .dropLabel {
     color: #878fb0;
+    color: #9ca2c1;
 }
 
 .dropTrianglePopUp {
@@ -832,7 +799,7 @@ body {
 #popUpFollowDropDown {
     position: absolute;
     /* display: inline-block; */
-    top: 164px;
+    
     z-index: 5;
     color: #cecfd4;
     width: 120px;
@@ -845,11 +812,12 @@ body {
 }
 
 #popUpUrgencyDropDown {
+	top: 164px;
     left: 33px;
 }
 
 #popUpFollowDropDown {
-    left: 175px;
+    top: 252px;
 }
 
 li {
