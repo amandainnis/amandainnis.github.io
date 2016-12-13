@@ -9,38 +9,42 @@ function textFlip(sectionID, cost1, cost2, price1, price2){
 
 }
 
-// function whoIsSelected(){
-// 		if($('#row400').hasClass('selectedRow')) {
-// 			console.log('row400');
-// 		}
-// 		else if($('#row200').hasClass('selectedRow')) {
-// 			console.log('row200');
-// 		}
-// 		else if($('#row100').hasClass('selectedRow')) {
-// 			console.log('row100');
-// 		}
-// 		else if($('#row50').hasClass('selectedRow')) {
-// 			console.log('row50');
-// 		}
-// 	}
+ function triggerDropDown(dropTitleID, titleOfUl){
+    $('#'+ titleOfUl +' li').show();
+
+       $('#'+ titleOfUl +' .field1').click(function(){
+          var inputText = $(this).text();
+          $('#' + dropTitleID + '').text(inputText);
+          $('#'+ titleOfUl +' li').hide();
+       }); 
+
+       $('#'+ titleOfUl +' .field2').click(function(){
+          var inputText = $(this).text();
+          $('#' + dropTitleID + '').text(inputText);
+          $('#'+ titleOfUl +' li').hide();
+       }); 
+       
+       $('#'+ titleOfUl +' .field3').click(function(){
+          var inputText = $(this).text();
+          $('#' + dropTitleID + '').text(inputText);
+          $('#'+ titleOfUl +' li').hide();
+       }); 
+
+       $('#'+ titleOfUl +' .field4').click(function(){
+          var inputText = $(this).text();
+          $('#' + dropTitleID + '').text(inputText);
+          $('#'+ titleOfUl +' li').hide();
+       }); 
+
+
+ ;}
+
+
+
 
 var myID;
 
-// function whoIsSelected(){
-// 		if($('#row400').hasClass('selectedRow')) {
-// 			return 'row400';
-// 		}
-// 		else if($('#row200').hasClass('selectedRow')) {
-// 			return  'row200';
-// 		}
-// 		else if($('#row100').hasClass('selectedRow')) {
-// 			return  'row100';
-// 		}
-// 		else if($('#row50').hasClass('selectedRow')) {
-// 			return  'row50';
-// 		}
 
-// 	}
 
 
 $(document).ready(function(){
@@ -49,6 +53,11 @@ $(document).ready(function(){
 	$('#popUp2').hide();
 	$('#popUpUrgencyDropDown li').hide();
 	$('#popUpFollowDropDown li').hide();
+
+
+	$('#backgroundRestrictions').hide();
+	$('#popUpRestrictionsDropDown li').hide();
+	
 
 
 	$('#wrapperRestrictions').hide();
@@ -65,28 +74,7 @@ $(document).ready(function(){
 	})
 
 
-	// whoIsSelected();
-
-	// console.log(whoIsSelected());
-
-
-	// $('#sellSideVersion').on('click', function(){
-	// 	$('#buySideVersion').removeClass('selectedSide');
-	// 	$('#sellSideVersion').addClass('selectedSide');
-	// 	$('#buySellDoorway').text('S');
-	// 	$('#buySellDoorway').addClass('redText');
-	// 	$('.buySection').removeClass('textGreen');
-	// 	// $('#buy200').removeClass('textWhite');
-	// 	$('.buySection.selected .band').removeClass('bandWhite');
-	// 	$('.buySection').removeClass('selected');
-	// 	$('.sellSection').addClass('redText');
-	// 	$('.quantitySection').removeClass('buyGreen');
-	// 	$('#sell200').addClass('selected');
-	// 	$('.sellSection.selected .band').addClass('bandWhite');
-	// 	$('#row200 .quantitySection').addClass('sellRed');
-
-
-	// })
+	
 
 	$('#sellSideVersion').on('click', function(){
 		$('#buySideVersion').removeClass('selectedSide');
@@ -113,8 +101,7 @@ $(document).ready(function(){
 	    
 	    console.log(myID);
 
-	    // myID = this.id;
-	    // $(myID).addClass('buyGreen');
+	    
 	});
 
 
@@ -250,73 +237,27 @@ $(document).ready(function(){
 
   ///////////////pop up 2////////////////
 
-  
+ // triggerDropDown(dropTitleID, titleOfUl)
   
 	
   $('#urgencyDropTitle.popUpdropDown').click(function(){
-    $('#popUpUrgencyDropDown li').show();
-
-       $('#popUpUrgencyDropDown .field1').click(function(){
-          var inputText = $(this).text();
-          $('#urgencyDropTitle').text(inputText);
-          $('#popUpUrgencyDropDown li').hide();
-       }); 
-
-       $('#popUpUrgencyDropDown .field2').click(function(){
-          var inputText = $(this).text();
-          $('#urgencyDropTitle').text(inputText);
-          $('#popUpUrgencyDropDown li').hide();
-       }); 
-       
-       $('#popUpUrgencyDropDown .field3').click(function(){
-          var inputText = $(this).text();
-          $('#urgencyDropTitle').text(inputText);
-          $('#popUpUrgencyDropDown li').hide();
-       }); 
-
-       $('#popUpUrgencyDropDown .field4').click(function(){
-          var inputText = $(this).text();
-          $('#urgencyDropTitle').text(inputText);
-          $('#popUpUrgencyDropDown li').hide();
-       }); 
+    triggerDropDown('urgencyDropTitle', 'popUpUrgencyDropDown');
 
 
   });
+
+  
 
 
   $('#followDropTitle.popUpdropDown').click(function(){
-    $('#popUpFollowDropDown li').show();
-
-       $('#popUpFollowDropDown .field1').click(function(){
-          var inputText = $(this).text();
-          $('#followDropTitle').text(inputText);
-          $('#popUpFollowDropDown li').hide();
-       }); 
-
-       $('#popUpFollowDropDown .field2').click(function(){
-          var inputText = $(this).text();
-          $('#followDropTitle').text(inputText);
-          $('#popUpFollowDropDown li').hide();
-       }); 
-       
-       $('#popUpFollowDropDown .field3').click(function(){
-          var inputText = $(this).text();
-          $('#followDropTitle').text(inputText);
-          $('#popUpFollowDropDown li').hide();
-       }); 
-
-       $('#popUpFollowDropDown .field4').click(function(){
-          var inputText = $(this).text();
-          $('#followDropTitle').text(inputText);
-          $('#popUpFollowDropDown li').hide();
-       }); 
+    triggerDropDown('followDropTitle', 'popUpFollowDropDown');
 
 
   });
 
 
 
-
+  
 
 
 
@@ -358,25 +299,25 @@ $(document).ready(function(){
 			{ticker: "eca", classification: "regular"},
      		{ticker: "fcx", classification: "wayOff"},
      		{ticker: "ge", classification: "regular"},
-            {ticker: "CUZ", classification: "regular"},
-            {ticker: "DVA", classification: "regular"},
-            {ticker: "EW", classification: "off"},
-            {ticker: "FCAU", classification: "wayOff"},
-            {ticker: "TWTR", classification: "regular"},
-            {ticker: "DZN", classification: "regular"},
-     		{ticker: "GGB", classification: "regular"},
+            {ticker: "cuz", classification: "regular"},
+            {ticker: "dva", classification: "regular"},
+            {ticker: "ew", classification: "off"},
+            {ticker: "fcau", classification: "wayOff"},
+            {ticker: "twtr", classification: "regular"},
+            {ticker: "dzn", classification: "regular"},
+     		{ticker: "ggb", classification: "regular"},
      		
      		  
-     		{ticker: "LUV", classification: "regular" },
-     		{ticker: "RAD", classification: "regular"},
-     		{ticker: "RIG", classification: "off"},
-     		{ticker: "TWLO", classification: "regular"},
-            {ticker: "EGO", classification: "off"},
-     		{ticker: "XOM", classification: "regular"},
-     		{ticker: "ZBH", classification: "regular"},
-            {ticker: "AUY", classification: "regular"},
-            {ticker: "BABA", classification: "regular"},
-            {ticker: "BHI", classification: "wayOff"}   		
+     		{ticker: "luv", classification: "regular" },
+     		{ticker: "rad", classification: "regular"},
+     		{ticker: "rig", classification: "off"},
+     		{ticker: "twlo", classification: "regular"},
+            {ticker: "ego", classification: "off"},
+     		{ticker: "xom", classification: "regular"},
+     		{ticker: "zbh", classification: "regular"},
+            {ticker: "auy", classification: "regular"},
+            {ticker: "baba", classification: "regular"},
+            {ticker: "bhi", classification: "wayOff"}   		
      	];
 
 //DAVE search processTicker(tickerBoxArrayMaster[0])
@@ -442,10 +383,20 @@ $('#searchTicker').on('change', function(){
 
 	$('.tile.regular').on('click', function(){
 		$(this).toggleClass('off');
+			$('#backgroundRestrictions').show();
 	})
 
 
+	$('#turnOffDropTitle.widerDropDown').click(function(){
+    triggerDropDown('turnOffDropTitle', 'popUpRestrictionsDropDown');
 
+
+  });
+
+
+	$('#okButton').on('click', function(){
+			$('#backgroundRestrictions').hide();
+	})
 
 
 })
