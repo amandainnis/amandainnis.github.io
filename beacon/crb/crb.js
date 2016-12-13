@@ -387,7 +387,7 @@ $('#searchTicker').on('change', function(){
 	})
 
 
-	$('#turnOffDropTitle.widerDropDown').click(function(){
+	$('#turnOffDropTitle.popUpdropDown').click(function(){
     triggerDropDown('turnOffDropTitle', 'popUpRestrictionsDropDown');
 
 

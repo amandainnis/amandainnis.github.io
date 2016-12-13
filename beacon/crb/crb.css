@@ -72,7 +72,6 @@ body {
 #wrapperRestrictions {
     width: 600px;
     height: 760px;
-    background-color: #23234a;
     background-color: #26264E;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -102,7 +101,6 @@ body {
     padding-top: 18px;
     font-size: 14px;
     font-weight: 400;
-    color: #878fb0;
     color: #878EB1;
     cursor: pointer;
     letter-spacing: .8px;
@@ -532,10 +530,8 @@ body {
     background-color: rgba(0, 0, 0, .4);
 }
 
-.executeTrade,
-.followExecuteTrade {
+.popUp {
     width: 400px;
-    height: 420px;
     height: 396px;
     padding-left: 33px;
     background-color: #37375B;
@@ -544,6 +540,10 @@ body {
     z-index: 4;
     top: 82px;
     left: 100px;
+}
+
+.executeTrade {
+	height: 396px;
 }
 
 .followExecuteTrade {
@@ -669,11 +669,12 @@ body {
     height: 40px;
     color: #36365c;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     text-align: center;
     padding-top: 13px;
     border-radius: 8px;
+    letter-spacing: .4px;
 }
 
 #executeButton {
@@ -681,6 +682,7 @@ body {
     color: #36365c;
     position: relative;
     top: 0;
+    // font-size: 16px;
     left: 22px;
     left: 34px;
 }
@@ -779,7 +781,7 @@ body {
 .dropTrianglePopUp {
     position: relative;
     left: 307px;
-    top: -19px;
+    top: -21px;
     font-size: 21px;
     font-size: 21px;
     color: #eaeaea;
@@ -819,6 +821,15 @@ body {
 #popUpFollowDropDown {
     top: 252px;
 }
+
+li:first-child {
+	padding-top: 15px;
+}
+
+li:last-child {
+	padding-bottom: 15px;
+}
+
 
 li {
     padding: .7em 0 .7em .9em;
@@ -931,13 +942,9 @@ li:hover {
 #restrictionsPopUp {
     position: absolute;
     z-index: 6;
-    width: 300px;
     height: 250px;
-    background-color: #646485;
-    background-color: #37375B;
-    top: 100px;
-    left: 147px;
-    padding-top: 44px;
+    height: 280px;
+    padding-top: 60px;
     padding-left: 33px;
     border: 1px solid #616eab;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
@@ -950,7 +957,6 @@ li:hover {
     font-size: 16px;
     color: #fbfcfe;
     letter-spacing: .4px;
-    display: inline-block;
     margin-bottom: 27px;
 }
 
@@ -986,37 +992,28 @@ li:hover {
     top: 103px;
 }
 
-#cancelButton,
-#okButton {
-    display: inline-block;
-}
+// #cancelButton,
+// #okButton {
+//     display: inline-block;
+// }
 
 #cancelButton {
-    width: 100px;
-    height: 35px;
+    
     position: relative;
     top: 24px;
     left: 0;
-    font-size: 14px;
     color: #878eb1;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 8px;
-    border: 1px #646485 solid;
+    border: 1px solid #646485;
 }
 
 #okButton {
-    width: 100px;
-    height: 35px;
+   
     position: relative;
     top: 24px;
     left: 33px;
-    font-size: 14px;
+    
     color: white;
     text-align: center;
-    padding-top: 10px;
-    border-radius: 8px;
-    text-transform: uppercase;
     background-color: #394ad1;
 }
 
@@ -1046,3 +1043,8 @@ li:hover {
     color: #eaeaea;
     z-index: 3;
 }
+
+
+
+
+
