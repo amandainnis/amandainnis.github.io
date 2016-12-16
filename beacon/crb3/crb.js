@@ -128,12 +128,7 @@ $(document).ready(function(){
 	    
 		changeRowBuy(myID);
 
-		// $('#buy200').addClass('selected');
-		// $('#buy200 .band').addClass('bandWhite');
-		// $('.sellSection').removeClass('redText');
-		// $('.sellSection.selected .band').removeClass('bandWhite');
-		// $('#sell200').removeClass('selected');
-		// $('#row200 .quantitySection').removeClass('sellRed');
+		
 	})
 
  	textFlip('buy400', .345, .365, 160.345, 160.365);
