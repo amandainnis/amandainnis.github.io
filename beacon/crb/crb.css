@@ -187,6 +187,7 @@ body {
     margin-left: 18px;
     margin-left: 10px;
     margin-left: 14px;
+    min-width: 16px;
 }
 
 .side,
@@ -205,6 +206,7 @@ body {
 
 .quantityWrapper {
     margin-left: 14px;
+        min-width: 60px;
 }
 
 .quantity {
@@ -216,6 +218,7 @@ body {
 
 .NBBOwrapper {
     margin-left: 19px;
+        min-width: 100px;
 }
 
 .NBBO {
@@ -234,6 +237,7 @@ body {
 
 #spreadWrapper {
     width: 485px;
+    // height: 203px;
     margin: 24px auto 13px auto;
    
 }
@@ -243,6 +247,8 @@ body {
     width: 100%;
     height: 36px;
     margin-bottom: 5px;
+        height: 40px;
+            height: 36px;
 }
 
 .sellSection,
@@ -274,6 +280,7 @@ body {
 .miscSell,
 .miscBuy {
     width: 200px;
+    font-size: 17px;
     font-weight: 500;
     color: #5C5C7A;
     text-align: center;
@@ -281,6 +288,7 @@ body {
 
 .quantitySection,
 .quantityMisc {
+    font-size: 17px;
     font-weight: 400;
     color: #F9F9FD;
     letter-spacing: .5px;
@@ -687,6 +695,7 @@ body {
 .popUpdropDown {
     width: 334px;
     height: 40px;
+    // height: 44px;
     border: 1px #878fb0 solid;
         // border: 1px #e5e5f0 solid;
     color: white;
@@ -705,6 +714,7 @@ body {
     width: 125px;
     width: 150px;
     height: 40px;
+    // height: 44px;
     border: 1px #878fb0 solid;
     color: white;
     font-size: 13px;
@@ -718,14 +728,19 @@ body {
 }
 
 #doneButton {
+    width: 150px;
+    height: 40px;
     position: relative;
     top: 13px;
+    left: 184px;
     font-size: 14px;
     color: white;
     text-align: center;
+    padding-top: 13px;
     border-radius: 8px;
     text-transform: uppercase;
     background-color: #394ad1;
+    top: 21px;
 }
 
 .buttonsToFlipSides {
@@ -772,6 +787,7 @@ body {
 .dropTrianglePopUp {
     position: relative;
     left: 307px;
+    top: -19px;
     font-size: 21px;
     font-size: 21px;
     color: #eaeaea;
@@ -1048,3 +1064,245 @@ li:hover {
 
 
 
+
+
+/*////////////// new /////////////////*/
+
+// .tickerDetailsWrapper {
+//     display: inline-block;
+//     float: left;
+// }
+
+// .tickerDetails {
+//     margin-left: 26px;
+    
+//     position: relative;
+    
+//     margin-top: 80px;
+//         margin-left: 40px;
+          
+//     width: 520px;
+// }
+
+
+// .tickerWrapper {
+    
+    
+    
+//     background-color: #394679;
+//     background-color: #384298;
+//     background-color: #464f98;
+//     background-color: #445287;
+   
+    
+//     margin-left: 19px;
+//         height: 48px;
+//     width: 156px;
+//         margin-left: 10px;
+//             margin-left: 0;
+// }
+
+
+
+// .sideWrapper {
+//     margin-left: 18px;
+//     margin-left: 10px;
+//     margin-left: 14px;
+//         margin-left: 10px;
+//     height: 48px;
+//         margin-left: 10px;
+//         text-align: center;
+    
+//         width: 19px;
+//                 width: 24px;
+// }
+
+
+
+
+// .quantityWrapper {
+    
+//     margin-left: 14px; 
+//     margin-left: 5px;
+//         margin-left: 10px;
+//     width: 129px;
+
+//     text-align: center;
+//     height: 48px;
+ 
+//         width: 122px;
+//             width: 120px;
+//             width: 110px;
+// }
+
+
+
+// .NBBOwrapper {
+//     margin-left: 5px;
+//         margin-left: 10px;
+//     width: 190px;
+    
+//     text-align: center;
+//     height: 48px;
+//     width: 200px;
+   
+// }
+
+
+
+// #spreadWrapper {
+//     width: 500px;
+ 
+//     margin: 24px auto 13px auto;
+//     margin: 20px auto 13px auto;
+//     margin: 29px auto 13px auto;
+//     margin: 32px auto 0px auto;
+//     margin: 30px auto 0px auto;
+//         width: 520px;
+         
+//                 margin: 20px auto 0px auto;
+// }
+
+// .quantitySection, .quantityMisc {
+//     font-size: 18px;
+//     font-weight: 400;
+//     color: #F9F9FD;
+//     letter-spacing: .5px;
+//     width: 120px;
+//     text-align: center;
+   
+//     font-size: 16px;
+//      padding-right: 9px; 
+//     padding-right: 0;
+// }
+
+
+
+   
+
+//     .ticker {
+//     font-size: 38px;
+//     font-size: 34px;
+//     color: #FBFBFB;
+//     font-weight: 300;
+//     letter-spacing: 1px;
+//     position: relative;
+//     top: 21px;
+//     top: 3px;
+//     padding: 6px;
+//     text-align: center;
+//     font-size: 30px;
+// }
+
+
+
+// .side,
+// .quantity,
+// .NBBO {
+//     font-size: 31px;
+//     font-size: 28px;
+//     font-size: 26px;
+//         font-size: 24px;
+//         font-size: 22px;
+// }
+
+// .side {
+//     color: #21E0C1;
+//     position: relative;
+//     top: 3px;
+//         top: 13px;
+            
+  
+// }
+
+
+// .quantity {
+//     color: #FBFBFB;
+//     font-weight: 300;
+//     position: relative;
+//     top: 3px;
+//         top: 13px;
+  
+// }
+
+
+
+// .NBBO {
+//     font-weight: 300;
+//     position: relative;
+//     color: #707794;
+//         display: inline-block;
+//         top: 3px;
+//             top: 13px;
+// }
+
+// #pricerIconButton {
+//     margin-right: 33px;
+//         width: 33px;
+//     height: 33px;
+//     float: right;
+//     font-size: 16px;
+// }
+
+// .betweenSpreadData, .dataFieldsWrapper {
+//     width: 520px;
+//     }
+
+
+
+// .acceptButton {
+   
+//         margin: 40px auto 0;
+// }
+
+
+// .sellSection, .buySection, .miscSell, .miscBuy {
+//     width: 200px;
+//     font-size: 18px;
+//     font-weight: 500;
+//     color: #5C5C7A;
+//     text-align: center;
+//     font-size: 16px;
+// }
+
+
+
+// .ticker {
+//     font-size: 38px;
+//     font-size: 34px;
+//     color: #FBFBFB;
+//     font-weight: 300;
+//     letter-spacing: 1px;
+//     position: relative;
+//     top: 21px;
+//     top: 3px;
+//     padding: 6px;
+//     text-align: center;
+//     font-size: 30px;
+// }
+
+// .spreadRow {
+  
+//     width: 100%;
+//     height: 36px;
+//     margin-bottom: 5px;
+//         height: 34px;
+//     margin-bottom: 6px;
+//         height: 36px;
+//     margin-bottom: 6px;
+// }
+
+// .sellSection, .buySection, .miscSell, .miscBuy {
+//     width: 200px;
+//     font-size: 18px;
+//     font-weight: 500;
+//     color: #5C5C7A;
+//     text-align: center;
+//     font-size: 16px;
+// }
+
+// .sellSection, .buySection, .quantitySection, .miscSell, .miscBuy {
+//     background-color: #26264E;
+//     padding: 9px 0px;
+//     padding: 10px 0px;
+// }
