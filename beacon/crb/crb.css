@@ -164,21 +164,17 @@ body {
 }
 
 .ticker {
-    font-size: 38px;
     font-size: 34px;
     color: #FBFBFB;
     font-weight: 300;
     letter-spacing: 1px;
     position: relative;
-    top: 21px;
     top: 3px;
     padding: 6px;
     text-align: center;
 }
 
 .sideWrapper {
-    margin-left: 18px;
-    margin-left: 10px;
     margin-left: 14px;
     min-width: 16px;
 }
@@ -186,32 +182,30 @@ body {
 .side,
 .quantity,
 .NBBO {
-    font-size: 31px;
-    font-size: 28px;
     font-size: 26px;
+    font-size: 24px;
 }
 
 .side {
     color: #21E0C1;
     position: relative;
-    // top: 18px;
 }
 
 .quantityWrapper {
     margin-left: 14px;
-        min-width: 60px;
+    min-width: 60px;
 }
 
 .quantity {
     color: #FBFBFB;
     font-weight: 300;
     position: relative;
-    // top: 18px;
 }
 
 .NBBOwrapper {
     margin-left: 19px;
-        min-width: 100px;
+    min-width: 100px;
+        margin-left: 14px;
 }
 
 .NBBO {
@@ -236,12 +230,9 @@ body {
 }
 
 .spreadRow {
-    // background-color: #36365C;
     width: 100%;
-    height: 36px;
     margin-bottom: 5px;
-        height: 40px;
-            height: 36px;
+    height: 36px;
 }
 
 .sellSection,
@@ -272,11 +263,13 @@ body {
 .buySection,
 .miscSell,
 .miscBuy {
-    width: 200px;
+    
     font-size: 17px;
     font-weight: 500;
     color: #5C5C7A;
     text-align: center;
+        width: 192px;
+    // font-size: 18px;
 }
 
 .quantitySection,
@@ -285,14 +278,14 @@ body {
     font-weight: 400;
     color: #F9F9FD;
     letter-spacing: .5px;
-    width: 84px;
     text-align: right;
-    padding-right: 20px;
-        padding-right: 5px;
+    padding-right: 5px;
+        width: 100px;
+    // font-size: 18px;
 }
 
 .quantitySection.buyGreen {
-    background-color: #099E90;
+    
     background-color: rgba(9, 158, 144, 0.9);
     color: #fbfbfb;
     font-weight: 400;
@@ -308,7 +301,7 @@ body {
 }
 
 .buySection.selected {
-    background-color: #099E90;
+    
     background-color: rgba(9, 158, 144, 0.9);
     color: #fbfbfb;
     font-weight: 400;
@@ -316,7 +309,7 @@ body {
 }
 
 .sellSection.selected {
-    background-color: #FB7A78;
+    
     background-color: rgba(251, 122, 120, .9);
     color: #fbfbfb;
     font-weight: 400;
@@ -330,16 +323,17 @@ body {
 }
 
 .band {
-    width: 20px;
+   
     height: 2px;
     background-color: #5C5C7A;
     display: inline-block;
     margin: 5px 9px;
+    width: 16px;
 }
 
-.bandBright {
-    background-color: #818196;
-}
+// .bandBright {
+//     background-color: #818196;
+// }
 
 .bandWhite {
     background-color: #fbfbfb;
@@ -351,9 +345,9 @@ body {
     color: #F9F9FD;
     outline: none;
     border: none;
-    text-align: center;
+    // text-align: center;
     padding-top: 8px;
-    padding-right: 0;
+    // padding-right: 0;
     background-color: transparent;
     // border-bottom: 1px #dbdbdb solid;
     // margin-bottom: .5em;
@@ -383,7 +377,6 @@ body {
     width: 485px;
     margin: 20px auto 0 auto;
     padding: 20px 15px;
-    border: 2px solid #4659a0;
     border: 2px #364373 solid;
     border-bottom: none;
     position: relative;
@@ -395,7 +388,6 @@ body {
 }
 
 .horizontalLabel {
-    color: #646485;
     color: #878EB1;
     font-size: 13px;
 }
@@ -437,11 +429,9 @@ body {
 }
 
 .dataFieldsWrapper {
-    width: 475px;
+    
     width: 485px;
     height: 115px;
-    border: 2px solid #2d3862;
-    border: 2px solid #4659a0;
     border: 2px solid #364373;
     margin: 0 auto;
     padding: 10px 0 10px 15px;
@@ -508,7 +498,7 @@ body {
 .acceptButton {
     text-transform: uppercase;
     color: white;
-    background-color: #475bc7;
+   
     background-color: #394AD1;
     width: 154px;
     height: 40px;
