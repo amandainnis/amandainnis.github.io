@@ -234,7 +234,6 @@ body {
 
 #spreadWrapper {
     width: 485px;
-    height: 203px;
     margin: 24px auto 13px auto;
    
 }
@@ -275,7 +274,6 @@ body {
 .miscSell,
 .miscBuy {
     width: 200px;
-    font-size: 18px;
     font-weight: 500;
     color: #5C5C7A;
     text-align: center;
@@ -283,7 +281,6 @@ body {
 
 .quantitySection,
 .quantityMisc {
-    font-size: 18px;
     font-weight: 400;
     color: #F9F9FD;
     letter-spacing: .5px;
@@ -690,7 +687,6 @@ body {
 .popUpdropDown {
     width: 334px;
     height: 40px;
-    height: 44px;
     border: 1px #878fb0 solid;
         // border: 1px #e5e5f0 solid;
     color: white;
@@ -709,7 +705,6 @@ body {
     width: 125px;
     width: 150px;
     height: 40px;
-    height: 44px;
     border: 1px #878fb0 solid;
     color: white;
     font-size: 13px;
@@ -723,15 +718,11 @@ body {
 }
 
 #doneButton {
-    width: 100px;
-    height: 35px;
     position: relative;
     top: 13px;
-    left: 235px;
     font-size: 14px;
     color: white;
     text-align: center;
-    padding-top: 10px;
     border-radius: 8px;
     text-transform: uppercase;
     background-color: #394ad1;
@@ -781,7 +772,6 @@ body {
 .dropTrianglePopUp {
     position: relative;
     left: 307px;
-    top: -21px;
     font-size: 21px;
     font-size: 21px;
     color: #eaeaea;
@@ -1043,6 +1033,16 @@ li:hover {
     color: #eaeaea;
     z-index: 3;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
