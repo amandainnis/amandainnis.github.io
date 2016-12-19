@@ -117,9 +117,7 @@ body {
 .tickerDetails {
     margin-left: 38px;
     margin-top: 76px;
-    // margin-top: 59px;
     position: relative;
-    // border: 1px yellow solid;
 }
 
 #pricerIconButton {
@@ -159,14 +157,9 @@ body {
 }
 
 .tickerWrapper {
-    width: 163px;
     height: 56px;
     width: 164px;
-    background-color: #394679;
-    background-color: #384298;
-    background-color: #464f98;
     background-color: #445287;
-    margin-left: 21px;
     margin-left: 19px;
 }
 
@@ -295,6 +288,7 @@ body {
     width: 84px;
     text-align: right;
     padding-right: 20px;
+        padding-right: 5px;
 }
 
 .quantitySection.buyGreen {
