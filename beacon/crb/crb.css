@@ -84,7 +84,7 @@ body {
     position: absolute;
     top: 46px;
     left: 0;
-    padding: 15px 38px 0 45px;
+    padding: 15px 4px 0 45px;
 }
 
 .bar {
@@ -121,21 +121,20 @@ body {
 }
 
 #pricerIconButton {
-    background-color: #445287;
-    width: 38px;
-    height: 38px;
+    background-color: #364373;
+    background-color: #394ad1;
+    width: 30px;
+    height: 30px;
     float: right;
-    font-size: 19px;
+    font-size: 23px;
     color: #fbfbfb;
-    letter-spacing: .6px;
-    /* border: 1px #94a3e4 solid; */
-    margin-top: 6px;
-    margin-right: 10px;
-    margin-right: 51px;
+    margin-top: 5px;
+    text-align: center;
+    margin-right: 32px;
     border-radius: 50px;
-    padding-left: 11px;
-    padding-top: 9px;
-    padding-bottom: 8px;
+    /* padding-left: 3px; */
+    padding-top: 4px;
+    /* padding-bottom: 5px; */
     transition: .4s;
 }
 
@@ -143,6 +142,182 @@ body {
     background-color: #394AD1;
     transition: .4s;
 }
+
+#pricerTool {
+    width: 400px;
+    height: 396px;
+    padding-left: 33px;
+    background-color: #37375B;
+    border: 1px solid #37375B;
+    position: relative;
+    z-index: 4;
+    top: 82px;
+    left: 100px;
+    padding-right: 33px;
+   
+}
+
+.pricerTitle {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    // font-weight: 300;
+    letter-spacing: .4px;
+}
+
+
+
+#pricerTool .mdi-close {
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    float: right;
+    position: relative;
+    left: 23px;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+.pricerToolRow1 {
+    margin-top: 52px;
+}
+
+.pricerToolRow2 {
+    margin-top: 60px;
+}
+
+.pricerToolDetailsWrapper {
+    display: inline-block;
+}
+
+.pricerToolDetailsLabel {
+    position: relative;
+    top: -11px;
+    color: #878EB1;
+    font-size: 13px;
+}
+
+
+.pricerTickerWrapper {
+    margin-left: 20px;
+}
+
+.pricerQuantityWrapper {
+    margin-left: 20px;
+}
+
+.pricerClientWrapper {
+   
+}
+
+.pricerOrderIDWrapper {
+     margin-left: 20px;
+}
+
+
+#pricerToolSide, #pricerToolTicker, #pricerToolQuantity, #pricerToolClient, #pricerToolOrderID {
+    font-size: 14px;
+    color: white;
+    background-color: #646485;
+    padding: 12px 0 12px 9px;
+    
+    
+}
+
+#pricerToolSide {
+    min-width: 43px;
+    max-width: 43px;
+}
+
+#pricerToolQuantity, #pricerToolClient {
+    min-width: 90px;
+    max-width: 130px;
+}
+
+ #pricerToolTicker {
+    min-width: 90px;
+    max-width: 110px;
+    text-transform: uppercase;
+ }
+
+#pricerToolOrderID {
+    min-width: 177px;
+}
+
+
+.pricerToolInput {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 14px;
+    letter-spacing: .3px;
+    display: inherit;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.pricerToolInput:focus {
+    border: 1px #21e0c1 solid;
+}
+
+.pricerToolInput::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: white;
+}
+
+.pricerToolInput::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+.pricerToolInput:-ms-input-placeholder {
+    /* IE 10+ */
+    color: white;
+}
+
+.pricerToolInput:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+.pricerButton {
+        
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+    margin: 60px auto;
+    letter-spacing: .4px;
+    background-color: #009688;
+}
+
+
+#pricerToolTickerMenu {
+    width: 108px;
+    position: absolute;
+    left: 100px;
+    z-index: 5;
+    top: 150px;
+    background-color: #1f1f41;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+#pricerToolTickerMenu ul li {
+    text-transform: uppercase;
+}
+
+
+
+
+
 
 .tickerDetailsWrapper {
     display: inline-block;
@@ -155,6 +330,9 @@ body {
     top: 0px;
     top: -24px;
 }
+
+
+
 
 .tickerWrapper {
     height: 56px;
@@ -231,8 +409,10 @@ body {
 
 .spreadRow {
     width: 100%;
-    margin-bottom: 5px;
-    height: 36px;
+    margin-bottom: 15px;
+        margin-bottom: 10px;
+            margin-bottom: 12px;
+    // height: 36px;
 }
 
 .sellSection,
@@ -241,7 +421,7 @@ body {
 .miscSell,
 .miscBuy {
     background-color: #26264E;
-    padding: 9px 0px;
+    padding: 10px 0px;
 }
 
 .sellSection,
@@ -353,29 +533,29 @@ body {
     // margin-bottom: .5em;
 }
 
-::-webkit-input-placeholder {
+#quantityInput.quantityMisc::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #F9F9FD;
 }
 
-::-moz-placeholder {
+#quantityInput.quantityMisc::-moz-placeholder {
     /* Firefox 19+ */
     color: #F9F9FD;
 }
 
-:-ms-input-placeholder {
+#quantityInput.quantityMisc:-ms-input-placeholder {
     /* IE 10+ */
     color: #F9F9FD;
 }
 
-:-moz-placeholder {
+#quantityInput.quantityMisc:-moz-placeholder {
     /* Firefox 18- */
     color: #F9F9FD;
 }
 
 .betweenSpreadData {
     width: 485px;
-    margin: 20px auto 0 auto;
+    margin: 22px auto 0 auto;
     padding: 20px 15px;
     border: 2px #364373 solid;
     border-bottom: none;
@@ -399,34 +579,12 @@ body {
 .horizontalInfoField {
     color: #EAEAEA;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: .4px;
     display: inline-block;
     margin-left: 10px;
 }
 
-.rightIcons {
-    width: 96px;
-    float: right;
-}
-
-.edit {
-    color: #394AD1;
-    color: #42A4FF;
-    font-size: 20px;
-    position: relative;
-    top: 3px;
-}
-
-.archive {
-    color: #394AD1;
-    color: #42A4FF;
-    font-size: 13px;
-    letter-spacing: .4px;
-    position: relative;
-    top: -1px;
-    margin-left: 27px;
-}
 
 .dataFieldsWrapper {
     
@@ -500,232 +658,18 @@ body {
     color: white;
    
     background-color: #394AD1;
-    width: 154px;
+    width: 160px;
     height: 40px;
     border-radius: 8px;
     text-align: center;
     padding-top: 13px;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: .4px;
     margin: 36px auto 0;
 }
 
-#popUpBackground {
-    width: 600px;
-    height: 760px;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    background-color: rgba(0, 0, 0, .4);
-}
-
-.popUp {
-    width: 400px;
-    height: 396px;
-    padding-left: 33px;
-    background-color: #37375B;
-    border: 1px solid #8292D8;
-    position: relative;
-    z-index: 4;
-    top: 82px;
-    left: 100px;
-}
-
-.executeTrade {
-	height: 396px;
-}
-
-.followExecuteTrade {
-	height: 440px;
-	height: 464px;
-	height: 480px;
-}
-
-.popUpInfo {
-    width: 337px;
-    margin-top: 60px;
-}
-
-.popUpClient {
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 300;
-    color: #FBFCFE;
-}
-
-.popUpTicker {
-    color: #FBFCFE;
-    // font-weight: 300;
-    font-size: 40px;
-    letter-spacing: .4px;
-    // width: 160px;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-.popUpSide,
-.popUpQty {
-    font-size: 40px;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.popUpQty {
-    color: #FBFCFE;
-    font-weight: 300;
-}
 
 
-
-.popUp2menus {
-	margin-top: 20px;
-}
-
-.popUp2menuRows {
-	margin-top: 10px;
-}
-
-
-.popUpText {
-    font-size: 15px;
-    color: #c6cbe8;
-    margin-top: 28px;
-    letter-spacing: .4px;
-    margin-top: 44px;
-}
-
-.popUpPriceSet {
-    position: relative;
-    margin-top: 40px;
-    margin-top: 15px;
-}
-
-.popUpPriceChoose {
-    width: 334px;
-    height: 54px;
-    height: 48px;
-    height: 50px;
-    border-radius: 8px;
-    border: 1px #f9f9fd solid;
-    border: 1px #e5e5f0 solid;
-    color: white;
-    font-size: 17px;
-    padding-left: 10px;
-    outline: none;
-    background-color: transparent;
-    font-family: 'Roboto';
-}
-
-.popUpPricerLabel {
-    position: relative;
-    left: 34px;
-    top: -9px;
-    float: left;
-}
-
-.popUpExpire {
-    float: right;
-    position: relative;
-    top: 0;
-    left: -54px;
-    margin-top: 38px;
-}
-
-.popUpExpireTimeLabel {
-    position: relative;
-}
-
-.popUpExpireTime {
-    color: #f9f9fd;
-    color: #dedee6;
-    font-size: 16px;
-    padding-left: 8px;
-}
-
-.popUpExecuteButtons {
-    margin-top: 10px;
-}
-
-#popUpClose {
-    color: #878eb1;
-    border: 1px solid #646485;
-    position: relative;
-}
-
-.popUpButton {
-    float: left;
-    width: 150px;
-    height: 40px;
-    color: #36365c;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 13px;
-    border-radius: 8px;
-    letter-spacing: .4px;
-}
-
-#executeButton {
-    background-color: #F5A201;
-    color: #36365c;
-    position: relative;
-    top: 0;
-    // font-size: 16px;
-    left: 22px;
-    left: 34px;
-}
-
-.popUpdropDown {
-    width: 334px;
-    height: 40px;
-    // height: 44px;
-    border: 1px #878fb0 solid;
-        // border: 1px #e5e5f0 solid;
-    color: white;
-    font-size: 13px;
-    padding-top: 14px;
-    padding-left: 7px;
-    position: relative;
-    top: 14px;
-    top: 10px;
-    z-index: 4;
-}
-
-.restrictionsDropDown {
-    display: inline-block;
-    width: 120px;
-    width: 125px;
-    width: 150px;
-    height: 40px;
-    // height: 44px;
-    border: 1px #878fb0 solid;
-    color: white;
-    font-size: 13px;
-    padding-top: 14px;
-    padding-left: 7px;
-    position: relative;
-    top: 14px;
-    top: 10px;
-    margin-right: 5px;
-    z-index: 4;
-}
-
-#doneButton {
-    width: 150px;
-    height: 40px;
-    position: relative;
-    top: 13px;
-    left: 184px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding-top: 13px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    background-color: #394ad1;
-    top: 21px;
-}
 
 .buttonsToFlipSides {
     position: absolute;
@@ -748,6 +692,410 @@ body {
 
 #buySideVersion {
     color: #21E0C1;
+}
+
+
+
+.redText {
+    color: #FB7A78;
+    font-weight: 400;
+}
+
+.restrictionTopRow {
+    width: 100%;
+    height: 97px;
+}
+
+#tickerZone {
+    overflow-y: scroll;
+    height: 580px;
+}
+
+#tickerZone::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+#tickerZone::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+   background-color: #1f1f41;
+    // border-radius: 10px;
+}
+ 
+#tickerZone::-webkit-scrollbar-thumb {
+     background-color: #40406b;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.tile {
+    height: 42px;
+    float: left;
+    margin: 0px 28px 24px 6px;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    letter-spacing: .8px;
+    width: 97px;
+    text-transform: uppercase;
+
+    padding: 12px;
+    height: 36px;
+    font-size: 15px;
+
+
+    // margin: 0px 24px 24px 24px;
+    // width: 120px;
+    // height: 39px;
+    
+}
+
+.regular {
+    background-color: teal;
+    background-color: #646485;
+    
+    
+    background-color: #40406b;
+    background-color: #36365c;
+
+    // border-top: 2px #6673b7 solid;
+    // border-bottom: 2px #445287 solid;
+    // border-left: 1px #818196 solid;
+    // border-right: 1px #646485 solid;
+}
+
+.off {
+    background-color: blue;
+    background-color: rgba(251, 122, 120, .9);
+    // border: 1px solid red;
+}
+
+.wayOff {
+    background-color: #acb187;
+   background-color: #4357a4;
+        background-color: #009688;
+        background-color: #3F51B5;
+         background-color: #b4bf2b;
+    // background-color: rgba(180,191,43,.6);
+}
+
+.searchField {
+    width: 166px;
+    height: 35px;
+    background-color: #e7e7f2;
+    float: left;
+    margin-top: 26px;
+    margin-right: 16px;
+    margin-left: 2px;
+    border-radius: 21px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.searchField::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #535761;
+    text-transform: none;
+}
+
+.searchField::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #535761;
+    text-transform: none;
+}
+
+.searchField:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #535761;
+    text-transform: none;
+}
+
+.searchField:-moz-placeholder {
+    /* Firefox 18- */
+    color: #535761;
+    text-transform: none;
+}
+
+
+
+
+
+
+
+
+/*////////////// POP  POP  POP UP & DROP Down Section //////////////////////*/
+
+
+#pricerToolBackground, #popUpBackground {
+    width: 600px;
+    height: 760px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.popUp {
+    width: 400px;
+    height: 396px;
+    padding-left: 33px;
+    padding-right: 33px;
+    background-color: #37375B;
+    border: 1px solid #37375B;
+    position: relative;
+    z-index: 4;
+    top: 82px;
+    left: 100px;
+}
+
+.executeTrade {
+    height: 396px;
+}
+
+.followExecuteTrade {
+    height: 396px;
+}
+
+.popUpInfo {
+    width: 337px;
+    margin-top: 60px;
+}
+
+.popUpClient {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    color: #FBFCFE;
+        color: rgba(255, 255, 255, 0.9);
+}
+
+.popUpTicker {
+    color: #FBFCFE;
+        color: rgba(255, 255, 255, 0.9);
+    // font-weight: 300;
+    font-size: 32px;
+    letter-spacing: .4px;
+    font-weight: 300;
+    // width: 160px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.popUpSide,
+.popUpQty {
+    font-size: 32px;
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+.popUpQty {
+    color: #FBFCFE;
+        color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+
+
+.popUp2menus {
+    margin-top: 20px;
+}
+
+.popUp2menuRows {
+    margin-top: 10px;
+}
+
+
+.popUpText {
+    font-size: 15px;
+    color: rgba(249, 249, 253, 0.54);
+    margin-top: 28px;
+    letter-spacing: .4px;
+    margin-top: 60px;
+    font-weight: 300;
+}
+
+.popUpPriceSet {
+    position: relative;
+    margin-top: 40px;
+    margin-top: 15px;
+}
+
+.spinner {
+    position: absolute;
+    top: 0px;
+    left: 303px;
+    width: 34px;
+    font-size: 18px;
+    // z-index: 3;
+}
+
+
+
+.popUpPriceChoose {
+    width: 334px;
+    // height: 54px;
+    // height: 48px;
+    // height: 50px;
+    // border-radius: 8px;
+    border: 1px #f9f9fd solid;
+    border: 1px #e5e5f0 solid;
+    border: 1px transparent solid;
+    color: white;
+    font-size: 17px;
+    padding-left: 10px;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: white;
+    background-color: #646485;
+    padding: 12px 0 12px 9px;
+}
+
+.popUpPriceChoose:focus {
+
+    border: 1px orange solid;
+    border: 1px #21e0c1 solid;
+}
+
+
+input[type="number"].popUpPriceChoose::-webkit-outer-spin-button, 
+input[type="number"].popUpPriceChoose::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: url("spinner.png") no-repeat center center;
+    // background: #FFF url("200_s.gif") no-repeat center center;
+    background-color: transparent;
+    width: 10px;
+    border-left: none;
+    opacity: .5; /* shows Spin Buttons per default (Chrome >= 39) */
+    position: absolute;
+    top: 0;
+    right: 6px;
+    bottom: 0;
+    // z-index: 4;
+}
+input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:hover,
+input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active{
+    // box-shadow: 0 0 2px #0CF;
+    opacity: .8;
+}
+
+.popUpPricerLabel {
+    position: relative;
+    left: 34px;
+    top: -9px;
+    float: left;
+}
+
+.popUpExpire {
+        text-align: center;
+    /* background-color: darkolivegreen; */
+    /* width: 157px; */
+    margin: 38px auto 0;
+}
+
+.popUpExpireTimeLabel {
+    position: relative;
+}
+
+.popUpExpireTime {
+    color: #f9f9fd;
+    color: #dedee6;
+        color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+.popUpExecuteButtons {
+    margin-top: 10px;
+}
+
+#popUpClose {
+    float: right;
+    position: relative;
+    left: 23px;
+    font-size: 20px;
+    margin-top: 5px;
+        color: rgba(255, 255, 255, 0.9);
+}
+
+.popUpButton {
+ 
+    width: 150px;
+    height: 40px;
+    color: #36365c;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+    letter-spacing: .4px;
+}
+
+#executeButton {
+    background-color: #F5A201;
+    color: #36365c;
+    margin: 0 auto;
+}
+
+.popUpdropDown {
+    width: 334px;
+    height: 40px;
+    // height: 44px;
+    border: 1px #878fb0 solid;
+        // border: 1px #e5e5f0 solid;
+    color: white;
+        color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    padding-top: 14px;
+    padding-left: 7px;
+    position: relative;
+    top: 14px;
+    top: 10px;
+    z-index: 4;
+}
+
+
+
+.restrictionsDropDown {
+    display: inline-block;
+    width: 120px;
+    width: 125px;
+    width: 150px;
+    height: 40px;
+    // height: 44px;
+    border: 1px #7a83a6  solid;
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    padding-top: 14px;
+    padding-left: 7px;
+    position: relative;
+    top: 14px;
+    top: 10px;
+    margin-right: 5px;
+    z-index: 4;
+}
+
+#doneButton {
+    width: 150px;
+    height: 40px;
+    // position: relative;
+    // top: 13px;
+    // left: 184px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    background-color: #394ad1;
+        margin: 21px auto;
 }
 
 .dropDownMenu {
@@ -804,7 +1152,7 @@ body {
 }
 
 #popUpUrgencyDropDown {
-	top: 164px;
+    top: 164px;
     left: 33px;
 }
 
@@ -813,120 +1161,30 @@ body {
 }
 
 li:first-child {
-	padding-top: 15px;
+    padding-top: 15px;
 }
 
 li:last-child {
-	padding-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 
 li {
-    padding: .7em 0 .7em .9em;
+    padding: .7em .7em .7em 1em;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
+        color: #cecfd4;
 }
 
 li:hover {
-    background-color: #5f6687;
+    background-color: #40406b;
     cursor: pointer;
     color: #fbfcfe;
+
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
-}
-
-.redText {
-    color: #FB7A78;
-    font-weight: 400;
-}
-
-.restrictionTopRow {
-    width: 100%;
-    height: 90px;
-}
-
-.tile {
-    width: 140px;
-    height: 45px;
-    float: left;
-    margin: 12px 20px 12px 12px;
-    padding: 15px;
-    text-align: center;
-    font-size: 16px;
-    color: white;
-    // font-weight: 300;
-    letter-spacing: .4px;
-    letter-spacing: .8px;
-    width: 97px;
-    text-transform: uppercase;
-    // position: relative;
-}
-
-.regular {
-    background-color: teal;
-    background-color: #646485;
-    background-color: #36365c;
-    background-color: #445287;
-    background-color: #40406b;
-    // border-top: 2px #6673b7 solid;
-    // border-bottom: 2px #445287 solid;
-    // border-left: 1px #818196 solid;
-    // border-right: 1px #646485 solid;
-}
-
-.off {
-    background-color: blue;
-    background-color: rgba(251, 122, 120, .9);
-    // border: 1px solid red;
-}
-
-.wayOff {
-    background-color: #acb187;
-    background-color: #b4bf2b;
-    // background-color: rgba(180,191,43,.6);
-}
-
-.searchField {
-    width: 145px;
-    height: 38px;
-    background-color: #e7e7f2;
-    float: left;
-    margin-top: 23px;
-    margin-right: 30px;
-    margin-left: 0px;
-    border-radius: 21px;
-    outline: none;
-    border: none;
-    padding-left: 15px;
-    font-family: 'Roboto';
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-.searchField::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #535761;
-    text-transform: none;
-}
-
-.searchField::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #535761;
-    text-transform: none;
-}
-
-.searchField:-ms-input-placeholder {
-    /* IE 10+ */
-    color: #535761;
-    text-transform: none;
-}
-
-.searchField:-moz-placeholder {
-    /* Firefox 18- */
-    color: #535761;
-    text-transform: none;
 }
 
 #restrictionsPopUp {
@@ -936,7 +1194,8 @@ li:hover {
     height: 280px;
     padding-top: 60px;
     padding-left: 33px;
-    border: 1px solid #616eab;
+    padding-right: 33px;
+    // border: 1px solid #616eab;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
     //   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
     // -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
@@ -945,7 +1204,9 @@ li:hover {
 
 .turnOff {
     font-size: 16px;
-    color: #fbfcfe;
+    // color: #fbfcfe;
+    // font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
     letter-spacing: .4px;
     margin-bottom: 27px;
 }
@@ -982,26 +1243,9 @@ li:hover {
     top: 103px;
 }
 
-// #cancelButton,
-// #okButton {
-//     display: inline-block;
-// }
-
-#cancelButton {
-    
-    position: relative;
-    top: 24px;
-    left: 0;
-    color: #878eb1;
-    border: 1px solid #646485;
-}
 
 #okButton {
-   
-    position: relative;
-    top: 24px;
-    left: 33px;
-    
+    margin: 0 auto;
     color: white;
     text-align: center;
     background-color: #394ad1;
@@ -1037,256 +1281,17 @@ li:hover {
 
 
 
+#popUpMarketDropDown {
+    position: absolute;
+    left: 398px;
+    top: 73px;
+     z-index: 5;
+    color: #cecfd4;
+    width: 143px;
+    text-align: left;
+    background-color: #1f1f41;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*////////////// new /////////////////*/
-
-// .tickerDetailsWrapper {
-//     display: inline-block;
-//     float: left;
-// }
-
-// .tickerDetails {
-//     margin-left: 26px;
-    
-//     position: relative;
-    
-//     margin-top: 80px;
-//         margin-left: 40px;
-          
-//     width: 520px;
-// }
-
-
-// .tickerWrapper {
-    
-    
-    
-//     background-color: #394679;
-//     background-color: #384298;
-//     background-color: #464f98;
-//     background-color: #445287;
-   
-    
-//     margin-left: 19px;
-//         height: 48px;
-//     width: 156px;
-//         margin-left: 10px;
-//             margin-left: 0;
-// }
-
-
-
-// .sideWrapper {
-//     margin-left: 18px;
-//     margin-left: 10px;
-//     margin-left: 14px;
-//         margin-left: 10px;
-//     height: 48px;
-//         margin-left: 10px;
-//         text-align: center;
-    
-//         width: 19px;
-//                 width: 24px;
-// }
-
-
-
-
-// .quantityWrapper {
-    
-//     margin-left: 14px; 
-//     margin-left: 5px;
-//         margin-left: 10px;
-//     width: 129px;
-
-//     text-align: center;
-//     height: 48px;
- 
-//         width: 122px;
-//             width: 120px;
-//             width: 110px;
-// }
-
-
-
-// .NBBOwrapper {
-//     margin-left: 5px;
-//         margin-left: 10px;
-//     width: 190px;
-    
-//     text-align: center;
-//     height: 48px;
-//     width: 200px;
-   
-// }
-
-
-
-// #spreadWrapper {
-//     width: 500px;
- 
-//     margin: 24px auto 13px auto;
-//     margin: 20px auto 13px auto;
-//     margin: 29px auto 13px auto;
-//     margin: 32px auto 0px auto;
-//     margin: 30px auto 0px auto;
-//         width: 520px;
-         
-//                 margin: 20px auto 0px auto;
-// }
-
-// .quantitySection, .quantityMisc {
-//     font-size: 18px;
-//     font-weight: 400;
-//     color: #F9F9FD;
-//     letter-spacing: .5px;
-//     width: 120px;
-//     text-align: center;
-   
-//     font-size: 16px;
-//      padding-right: 9px; 
-//     padding-right: 0;
-// }
-
-
-
-   
-
-//     .ticker {
-//     font-size: 38px;
-//     font-size: 34px;
-//     color: #FBFBFB;
-//     font-weight: 300;
-//     letter-spacing: 1px;
-//     position: relative;
-//     top: 21px;
-//     top: 3px;
-//     padding: 6px;
-//     text-align: center;
-//     font-size: 30px;
-// }
-
-
-
-// .side,
-// .quantity,
-// .NBBO {
-//     font-size: 31px;
-//     font-size: 28px;
-//     font-size: 26px;
-//         font-size: 24px;
-//         font-size: 22px;
-// }
-
-// .side {
-//     color: #21E0C1;
-//     position: relative;
-//     top: 3px;
-//         top: 13px;
-            
-  
-// }
-
-
-// .quantity {
-//     color: #FBFBFB;
-//     font-weight: 300;
-//     position: relative;
-//     top: 3px;
-//         top: 13px;
-  
-// }
-
-
-
-// .NBBO {
-//     font-weight: 300;
-//     position: relative;
-//     color: #707794;
-//         display: inline-block;
-//         top: 3px;
-//             top: 13px;
-// }
-
-// #pricerIconButton {
-//     margin-right: 33px;
-//         width: 33px;
-//     height: 33px;
-//     float: right;
-//     font-size: 16px;
-// }
-
-// .betweenSpreadData, .dataFieldsWrapper {
-//     width: 520px;
-//     }
-
-
-
-// .acceptButton {
-   
-//         margin: 40px auto 0;
-// }
-
-
-// .sellSection, .buySection, .miscSell, .miscBuy {
-//     width: 200px;
-//     font-size: 18px;
-//     font-weight: 500;
-//     color: #5C5C7A;
-//     text-align: center;
-//     font-size: 16px;
-// }
-
-
-
-// .ticker {
-//     font-size: 38px;
-//     font-size: 34px;
-//     color: #FBFBFB;
-//     font-weight: 300;
-//     letter-spacing: 1px;
-//     position: relative;
-//     top: 21px;
-//     top: 3px;
-//     padding: 6px;
-//     text-align: center;
-//     font-size: 30px;
-// }
-
-// .spreadRow {
-  
-//     width: 100%;
-//     height: 36px;
-//     margin-bottom: 5px;
-//         height: 34px;
-//     margin-bottom: 6px;
-//         height: 36px;
-//     margin-bottom: 6px;
-// }
-
-// .sellSection, .buySection, .miscSell, .miscBuy {
-//     width: 200px;
-//     font-size: 18px;
-//     font-weight: 500;
-//     color: #5C5C7A;
-//     text-align: center;
-//     font-size: 16px;
-// }
-
-// .sellSection, .buySection, .quantitySection, .miscSell, .miscBuy {
-//     background-color: #26264E;
-//     padding: 9px 0px;
-//     padding: 10px 0px;
-// }

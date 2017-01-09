@@ -19,12 +19,52 @@
         <div class="bar">
             <div class="navigation">
                 <span id="TCA" class="selected">TCA</span>
-                <span id="History" class="notSelected">History</span>
-                <span id="Restrictions" class="notSelected">StockList</span>
+                <span id="History">History</span>
+                <span id="Restrictions">StockList</span>
             </div>
         </div>
         <!-- end of bar -->
-        <span id="pricerIconButton"><i class="mdi mdi-chart-line"></i></span>
+        <span id="pricerIconButton"><!-- <i class="mdi mdi-chart-line"></i> -->   <i class="mdi mdi-plus"></i></span>
+        <div id="pricerToolBackground">
+        <div id="pricerTool">
+            <i class="mdi mdi-close"></i>
+            <div class="pricerTitle">Pricer Tool</div>
+            <div class="pricerToolRow1">
+                <div class="pricerToolDetailsWrapper pricerSideWrapper">
+                    <div class="pricerToolDetailsLabel">Side</div>
+                    <input id="pricerToolSide" class="pricerToolInput" value="Buy">
+                </div>
+                <div class="pricerToolDetailsWrapper pricerTickerWrapper">
+                    <div class="pricerToolDetailsLabel">Symbol</div>
+                    <input id="pricerToolTicker" class="pricerToolInput" value="">
+                </div>
+                <div id="pricerToolTickerMenu"><ul></ul></div>
+                <div class="pricerToolDetailsWrapper pricerQuantityWrapper">
+                    <div class="pricerToolDetailsLabel">Quantity</div>
+                    <input id="pricerToolQuantity" class="pricerToolInput">
+                </div>
+               
+                
+            </div>
+            <!-- end pricerToolRow1 -->
+            <div class="pricerToolRow2">
+
+                <div class="pricerToolDetailsWrapper pricerClientWrapper">
+                    <div class="pricerToolDetailsLabel">Client</div>
+                    <input id="pricerToolClient" class="pricerToolInput">
+                </div>
+                <div class="pricerToolDetailsWrapper pricerOrderIDWrapper">
+                    <div class="pricerToolDetailsLabel">OrderID</div>
+                    <input id="pricerToolOrderID" class="pricerToolInput">
+                </div>
+            </div>
+             <!-- end pricerToolRow2 -->
+
+             <div class="pricerButton">price</div>
+        </div>
+        <!-- end of pricerTool -->
+        </div>
+        <!-- end of pricerToolBackground -->
         <div class="tickerDetails">
             <div class="tickerDetailsWrapper tickerWrapper">
                 <div class="tickerDetailsLabel">Symbol</div>
@@ -67,7 +107,7 @@
             </div>
             <div id="rowEnterQty" class="spreadRow clearfix">
                 <span id="sellMisc" class="miscSell"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
-                <input id="quantityInput" class="quantityMisc" placeholder="enter qty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter qty'"></input>
+                <input id="quantityInput" class="quantityMisc" placeholder="enter qty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter qty'">
                 <span id="buyMisc" class="miscBuy"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
             </div>
         </div>
@@ -81,7 +121,7 @@
                 <!-- <div class="verticalLabel">Expires</div> -->
                 <span class="horizontalLabel">Expires in</span>
                 <!-- <i class="mdi mdi-clock"></i> -->
-                <span class="horizontalInfoField">12:04:05</span>
+                <span id="currentTime" class="horizontalInfoField"></span>
             </div>
         </div>
         <div class="dataFieldsWrapper">
@@ -128,12 +168,14 @@
         </div>
         <div id="acceptButton" class="acceptButton">accept</div>
         <div id="popUpBackground">
+       
             <div id="popUp1" class="popUp executeTrade">
+             <i id="popUpClose" class="mdi mdi-close"></i>
                 <div class="popUpInfo">
                     <div class="popUpClient">blackrock</div>
-                    <div class="popUpTicker">AMZN</div>
+                    <div class="popUpTicker">AAPL.OQ</div>
                     <span class="popUpSide textGreen">B</span>
-                    <span class="popUpQty">200K</span>
+                    <span class="popUpQty">5,200,000</span>
                 </div>
                 <!-- end of popUpInfo -->
                 
@@ -144,6 +186,7 @@
                 <div class="popUpRow clearfix">
                     <div class="popUpPriceSet">
                         <!-- <span class="verticalLabel popUpPricerLabel">Pricer</span> -->
+                        <!-- <div class="spinner"><i class="mdi mdi-chevron-up"></i><i class="mdi mdi-chevron-down"></i></div> -->
                         <input type="number" class="popUpPriceChoose" step="0.01" value="160.11">
                     </div>
                 </div>
@@ -151,11 +194,11 @@
                 <div class="popUpRow clearfix">
                     <div class="popUpExpire">
                         <span class="horizontalLabel popUpExpireTimeLabel">Expires</span>
-                        <span class="popUpExpireTime">12:04:05</span>
+                        <span class="popUpExpireTime" id="time"></span>
                     </div>
                  </div>
                  <div class="popUpRow clearfix popUpExecuteButtons">
-                 	<div id="popUpClose" class="popUpButton">cancel</div>
+                 	
                     <div id="executeButton" class="popUpButton">execute</div>
                  </div>   
                     
@@ -165,9 +208,9 @@
             <div id="popUp2" class="popUp followExecuteTrade">
                 <div class="popUpInfo">
                     <div class="popUpClient">blackrock</div>
-                    <div class="popUpTicker">AMZN</div>
+                    <div class="popUpTicker">AAPL.OQ</div>
                     <span class="popUpSide textGreen">B</span>
-                    <span class="popUpQty">200K</span>
+                    <span class="popUpQty">5,200,000</span>
                 </div>
                 <!-- end of popUpInfo -->
                 <div class="popUpRow popUp2menus">
@@ -195,13 +238,13 @@
 	                        <li class="field4">Go away</li>
 	                    </ul>
                     </div>
-                    <div class="popUp2menuRows">
+                    <!-- <div class="popUp2menuRows">
 	                    <div class="dropDownMenu">
 	                        <div class="dropLabel">Amount</div>
 	                        <div id="amountDropTitle" class="popUpdropDown">Full amount</div>
 	                        <span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
 	                    </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- end of popup row2 -->
                 <div id="doneButton" class="doneButton">done</div>
@@ -212,7 +255,7 @@
         <div id="wrapperRestrictions">
             <div class="restrictionTopRow">
                 <!-- <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input> -->
-                <input id="searchTicker" class="searchField" placeholder="search first letter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search first letter'" value="">
+                <input id="searchTicker" class="searchField" placeholder="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search first letter'" value="">
                 <div class="dropDownMenu2">
                     <div class="dropLabel">Lists</div>
                     <div id="stockListList" class="restrictionsDropDown">IOI List</div>
@@ -223,35 +266,20 @@
                     <div id="stockListSort" class="restrictionsDropDown">Market Cap</div>
                     <span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
                 </div>
+
+                <ul id="popUpMarketDropDown">
+                        <li class="field1">Symbol</li>
+                        <li class="field2">Market Cap</li>
+                        <li class="field3">ADV</li>
+                        <li class="field4">Unclaimed</li>
+                        <li class="field5">Claimed by Trader</li>
+                        <li class="field6">Claimed by CRB</li>
+                    </ul>
             </div>
             <div id="tickerZone">
-                <!-- <div class="tile regular">AMZN</div>
-		        <div class="tile regular">LVLT</div>
-		        <div class="tile off">ORCL</div>
-		        <div class="tile regular">PBR</div>
-		        <div class="tile regular">AAPL</div>
-		         <div class="tile regular">GE</div>
-		        <div class="tile off">CUZ</div>
-		        <div class="tile regular">ABEV</div>
-		        <div class="tile regular">AMZN</div>
-		        <div class="tile off">HAL</div>
-		        <div class="tile regular">HOG</div>
-		        <div class="tile regular">ITUB</div>
-		        <div class="tile wayOff">CAH</div>
-		        <div class="tile regular">ECA</div>
-		        <div class="tile regular">FCX</div>
-		        <div class="tile regular">GE</div>
-		        <div class="tile off">CUZ</div>
-		        <div class="tile regular">DVA</div>
-		        <div class="tile regular">EW</div>
-		        <div class="tile regular">FCAU</div>
-		        <div class="tile regular">TWTR</div>
-		        <div class="tile wayOff">DZN</div>
-		        <div class="tile regular">GGB</div>
-		        <div class="tile regular">RAD</div>
-		        <div class="tile off">RIG</div>
-		        <div class="tile regular">TWLO</div>
-		        <div class="tile regular">EGO</div> -->
+                
+
+
             </div>
         </div>
         <!-- end of wrapper restrictions -->

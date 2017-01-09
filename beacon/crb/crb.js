@@ -1,6 +1,6 @@
 
-function textFlip(sectionID, cost1, cost2, price1, price2){
-	$('#'+ sectionID + '.buySection').on( "mouseenter", function() {
+function textFlip(sectionID, sectionKind, cost1, cost2, price1, price2){
+	$('#'+ sectionID + sectionKind).on( "mouseenter", function() {
 		$( '#'+ sectionID + ' .spread1' ).text(cost1);
 		$( '#'+ sectionID + ' .spread2' ).text(cost2);}).on("mouseleave", function() {
 			$( '#'+ sectionID + ' .spread1' ).text(price1);
@@ -36,6 +36,17 @@ function textFlip(sectionID, cost1, cost2, price1, price2){
           $('#'+ titleOfUl +' li').hide();
        }); 
 
+       $('#'+ titleOfUl +' .field5').click(function(){
+          var inputText = $(this).text();
+          $('#' + dropTitleID + '').text(inputText);
+          $('#'+ titleOfUl +' li').hide();
+       }); 
+
+       $('#'+ titleOfUl +' .field6').click(function(){
+          var inputText = $(this).text();
+          $('#' + dropTitleID + '').text(inputText);
+          $('#'+ titleOfUl +' li').hide();
+       }); 
 
  ;}
 
@@ -44,7 +55,7 @@ function textFlip(sectionID, cost1, cost2, price1, price2){
 
 var myID;
 
-
+var controlPressed = false;
 
 
 $(document).ready(function(){
@@ -53,10 +64,11 @@ $(document).ready(function(){
 	$('#popUp2').hide();
 	$('#popUpUrgencyDropDown li').hide();
 	$('#popUpFollowDropDown li').hide();
-
+	$('#pricerToolBackground').hide();
 
 	$('#backgroundRestrictions').hide();
 	$('#popUpRestrictionsDropDown li').hide();
+	$('#popUpMarketDropDown li').hide();
 	
 
 
@@ -65,16 +77,29 @@ $(document).ready(function(){
 
 	$('#TCA').click( function(){
 		$('#wrapperRestrictions').hide();
+		$('.navigation span').removeClass('selected');
+		$(this).addClass('selected');
 
 	})
 
 	$('#Restrictions').click( function(){
 		$('#wrapperRestrictions').show();
+		$('.navigation span').removeClass('selected');
+		$(this).addClass('selected');
 
 	})
 
 
-	
+	$('#pricerIconButton').on('click', function(){
+		$('#pricerToolBackground').show();
+		
+	});
+
+	$('#pricerTool .mdi-close').on('click', function(){
+		$('#pricerToolBackground').hide();
+		
+	});
+
 
 	$('#sellSideVersion').on('click', function(){
 		$('#buySideVersion').removeClass('selectedSide');
@@ -128,18 +153,18 @@ $(document).ready(function(){
 	    
 		changeRowBuy(myID);
 
-		// $('#buy200').addClass('selected');
-		// $('#buy200 .band').addClass('bandWhite');
-		// $('.sellSection').removeClass('redText');
-		// $('.sellSection.selected .band').removeClass('bandWhite');
-		// $('#sell200').removeClass('selected');
-		// $('#row200 .quantitySection').removeClass('sellRed');
+		
 	})
 
- 	textFlip('buy400', .345, .365, 160.345, 160.365);
- 	textFlip('buy200', .335, .364, 160.335, 160.364);
- 	textFlip('buy100', .325, .363, 160.325, 160.363);
- 	textFlip('buy50', .315, .361, 160.315, 160.361);
+ 	textFlip('buy400', '.buySection', .345, .365, 160.345, 160.365);
+ 	textFlip('buy200', '.buySection', .335, .364, 160.335, 160.364);
+ 	textFlip('buy100', '.buySection', .325, .363, 160.325, 160.363);
+ 	textFlip('buy50', '.buySection', .315, .361, 160.315, 160.361);
+
+ 	textFlip('sell400', '.sellSection', .345, .365, 160.345, 160.365);
+ 	textFlip('sell200', '.sellSection', .335, .364, 160.335, 160.364);
+ 	textFlip('sell100', '.sellSection', .325, .363, 160.325, 160.363);
+ 	textFlip('sell50', '.sellSection', .315, .361, 160.315, 160.361);
 
 
  	$('#orderID').on( "mouseenter", function() {
@@ -268,7 +293,7 @@ $(document).ready(function(){
 	});
 	
 
-	$('#pricerIconButton').on('click', function(){alert("This is reserved for the pricer tool")});
+	
 	
 	
 
@@ -317,7 +342,31 @@ $(document).ready(function(){
      		{ticker: "zbh", classification: "regular"},
             {ticker: "auy", classification: "regular"},
             {ticker: "baba", classification: "regular"},
-            {ticker: "bhi", classification: "wayOff"}   		
+            {ticker: "bhi", classification: "wayOff"}, 
+
+
+          	{ticker: "ptx", classification: "regular" },
+     		{ticker: "zfgn", classification: "regular"},
+     		{ticker: "pcrx", classification: "off"},
+     		{ticker: "qtnt", classification: "regular"},
+            {ticker: "cemp", classification: "regular"},
+            {ticker: "avgr", classification: "off"},
+            {ticker: "smrt", classification: "wayOff"},
+            {ticker: "apen", classification: "regular"},
+            {ticker: "orex", classification: "off"},
+     		{ticker: "icui", classification: "regular"},
+
+     		{ticker: "ftr", classification: "regular"},
+            {ticker: "fb", classification: "off"},
+            {ticker: "siri", classification: "regular"},
+     		{ticker: "qqq", classification: "regular"},
+     		{ticker: "msft", classification: "regular"},
+     		{ticker: "nvda", classification: "off"},
+            {ticker: "mu", classification: "regular"},
+            {ticker: "csco", classification: "regular"},
+            {ticker: "intc", classification: "off"},
+     		{ticker: "xiv", classification: "regular"}
+     		
      	];
 
 //DAVE search processTicker(tickerBoxArrayMaster[0])
@@ -354,7 +403,7 @@ $('#searchTicker').on('change', function(){
 
 		for (i = 0; i < arr.length; i++) {
 			var myString = arr[i].ticker;
-	       if (myString.charAt(0) == myInput){
+	       if (myString.charAt(0) == myInput || myString.charAt(0) == myInput.toLowerCase() ){
 	       	console.log(arr[i].ticker);
 	       }  
 	     }};
@@ -364,27 +413,100 @@ $('#searchTicker').on('change', function(){
 })
 
 
+$('#pricerToolTicker').on('change', function(){
+	var inputTick = $(this).val();
+	
+	inputTick.toUpperCase();
+	console.log(inputTick);
+	
+	 function findATicker(arr, myInput) {
 
-	// function findATicker(arr) {
+		for (i = 0; i < arr.length; i++) {
+			var myString = arr[i].ticker;
+	       if (myString.charAt(0) == myInput || myString.charAt(0) == myInput.toLowerCase() ){
+	       	$('#pricerToolTickerMenu ul').append("<li>" + arr[i].ticker + "</li>");
+	       	console.log(arr[i].ticker);
+	       	
+	       }  
+	     }};
 
-	// for (i = 0; i < arr.length; i++) {
-	// 	var myString = arr[i].ticker;
- //       if (myString.charAt(0) === 'A'){
- //       	console.log(arr[i].ticker);
- //       }  
- //     }};
-
- //     findATicker(stockListIOI);
-
-
-
-    
-
-
-	$('.tile.regular').on('click', function(){
-		$(this).toggleClass('off');
-			$('#backgroundRestrictions').show();
+     findATicker(stockListIOI, inputTick);
+     $('#pricerToolTickerMenu ul li').on('click', function(){
+		
+		var inputText = $(this).text();
+		$('#pricerToolTicker').val(inputText);
+		$('#pricerToolTickerMenu ul li').hide();
 	})
+
+	
+})
+
+
+
+
+
+    $(window).keydown(function(event){
+		if(event.which == 17 || event.which == 91) {
+			controlPressed = true;
+			console.log(controlPressed);
+		}
+	}).keyup(function(event){
+		if(event.which == 17 || event.which == 91) {
+			controlPressed = false;
+				if(selectedItems.length>0){
+
+					$('#backgroundRestrictions').show();
+					selectedItems=[];
+				}
+			console.log(controlPressed);
+		}
+	})
+
+	
+	selectedItems = [];
+
+	
+	$('.tile').on('click', function(event){
+		if($(this).hasClass('regular')) {
+			$(this).addClass('off');
+			$(this).removeClass('regular');
+			if (controlPressed == true){
+				selectedItems.push(event);
+			}
+			else
+			{
+				$('#backgroundRestrictions').show();
+			}
+			
+			
+			
+		}
+		else if($(this).hasClass('off')) {
+			$(this).addClass('regular');
+			$(this).removeClass('off');
+		}
+
+		
+		
+	})
+
+
+
+
+
+
+$('#pricerToolSide').on('click', function(event){
+		if($(this).val() == "Buy"){
+			$(this).val("Sell");
+		}
+		
+		else{$(this).val("Buy")}
+		
+		console.log($(this).val())
+	})
+
+	
+	// function triggerDropDown(dropTitleID, titleOfUl)
 
 
 	$('#turnOffDropTitle.popUpdropDown').click(function(){
@@ -393,10 +515,63 @@ $('#searchTicker').on('change', function(){
 
   });
 
+	$('#stockListSort.restrictionsDropDown').click(function(){
+    triggerDropDown('stockListSort', 'popUpMarketDropDown');
+
+
+  });
+
 
 	$('#okButton').on('click', function(){
 			$('#backgroundRestrictions').hide();
 	})
+
+
+
+
+
+
+
+
+
+function startTimer(duration, display) {
+    var timer = duration;
+    setInterval(function () {
+    	// parseInt the second parameter is base 10 format
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        //if minutes is less than 10 show a 0 in front
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var twelveMinutes = 60 * 12,
+        display = document.querySelector('#time');
+        display2 = document.querySelector('#currentTime');
+    startTimer(twelveMinutes, display);
+    startTimer(twelveMinutes, display2);
+};
+
+
+// function myTimer() {
+//     var d = new Date();
+//     document.getElementById("currentTime").innerHTML = d.toLocaleTimeString();
+// }
+
+// setInterval(myTimer, 1000);
+
+
+
+
 
 
 })
