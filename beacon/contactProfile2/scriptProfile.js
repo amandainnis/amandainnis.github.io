@@ -65,6 +65,7 @@ $(document).ready(function(){
 
 
   });
+  
   $('.leaveVoiceDrop').mouseover(function(){
     $('.ulTitle').addClass('blueSelection');
   });
