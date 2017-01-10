@@ -9,8 +9,15 @@ function textFlip(sectionID, sectionKind, cost1, cost2, price1, price2){
 
 }
 
+
+
  function triggerDropDown(dropTitleID, titleOfUl){
     $('#'+ titleOfUl +' li').show();
+
+    $('#'+ titleOfUl).on('mouseleave', function(){
+    	$('#'+ titleOfUl +' li').hide();
+    	
+    });
 
        $('#'+ titleOfUl +' .field1').click(function(){
           var inputText = $(this).text();
@@ -47,7 +54,10 @@ function textFlip(sectionID, sectionKind, cost1, cost2, price1, price2){
           $('#' + dropTitleID + '').text(inputText);
           $('#'+ titleOfUl +' li').hide();
        }); 
+       
 
+       
+    	
  ;}
 
 
@@ -271,7 +281,7 @@ $(document).ready(function(){
 
   });
 
-  
+
 
 
   $('#followDropTitle.popUpdropDown').click(function(){
@@ -301,12 +311,7 @@ $(document).ready(function(){
 
 
 		
-	// DAVE search function processTicker(ticker){
-    //     ///do something with your ticker
-    //     if(ticker.outgage ===1){
-
-    //     }
-    // }
+	
 
     var stockListIOI = [
             {ticker: "amzn", classification: "regular"},
@@ -369,9 +374,6 @@ $(document).ready(function(){
      		
      	];
 
-//DAVE search processTicker(tickerBoxArrayMaster[0])
-
-// <div class="tile regular">AMZN</div>
 
 function makeTickerTile(name, classification) {
        
@@ -413,9 +415,9 @@ $('#searchTicker').on('change', function(){
 })
 
 
+
 $('#pricerToolTicker').on('change', function(){
 	var inputTick = $(this).val();
-	
 	inputTick.toUpperCase();
 	console.log(inputTick);
 	
@@ -432,16 +434,28 @@ $('#pricerToolTicker').on('change', function(){
 
      findATicker(stockListIOI, inputTick);
      $('#pricerToolTickerMenu ul li').on('click', function(){
-		
 		var inputText = $(this).text();
 		$('#pricerToolTicker').val(inputText);
 		$('#pricerToolTickerMenu ul li').hide();
 	})
 
+
+     $('#pricerToolTickerMenu ul').on('mouseleave', function(){
+    	$('#pricerToolTickerMenu ul li').hide();
+    
+    });
 	
-})
+});
 
 
+
+
+
+
+$('#pricerButton').on('click', function(){
+		$('#pricerToolBackground').hide();
+		
+	});
 
 
 
