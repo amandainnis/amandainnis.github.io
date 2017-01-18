@@ -113,27 +113,162 @@ body {
 }
 
 .tickerDetails {
-    margin-left: 38px;
+   padding-left: 38px;
     margin-top: 76px;
+    margin-top: 82px;
     position: relative;
+        margin-top: 93px;
+            margin-top: 74px;
+           
+    // border-bottom: 1px orange solid;
 }
 
+#priceCostToggle {
+    position: absolute;
+    top: 62px;
+    left: 445px;
+                    
+    
+}
+
+.pricerToolLabel {
+    color: #dbdff0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+        top: -3px;
+    color: #878EB1;
+    font-size: 14px;
+}
+
+.pricerToolButton {
+    display: inline-block;
+   position: absolute;
+    left: 493px;
+    top: 13px;
+}
+
+.priceCostToggleLabel {
+    color: #dbdff0;
+    display: inline-block;
+  
+    position: relative;
+    top: -7px;
+    color: #878EB1;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+      width: 45px;
+    height: 23px;
+    width: 38px;
+    margin: 0 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  background-color: #646485;
+  background-color: #595982;
+      // background-color: #4a4a6f;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+      height: 15px;
+    width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  background-color: #c1c6e1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #394ad1;
+ background-color: #595982;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #394ad1;
+
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+// #pricerIconButton {
+//     background-color: #364373;
+//     background-color: #394ad1;
+//     width: 30px;
+//     height: 30px;
+//     float: right;
+//     font-size: 23px;
+//     color: #fbfbfb;
+//     margin-top: 5px;
+//     margin-top: 13px;
+//     text-align: center;
+//     margin-right: 32px;
+//     border-radius: 50px;
+//     padding-top: 4px;
+//     transition: .4s;
+// }
+
 #pricerIconButton {
-    background-color: #364373;
+        background-color: #364373;
     background-color: #394ad1;
-    width: 30px;
-    height: 30px;
-    float: right;
-    font-size: 23px;
+    width: 28px;
+    height: 28px;
+    /* float: right; */
+    display: inline-block;
+    position: relative;
+    // left: 538px;
+    // top: -9px;
+    font-size: 21px;
     color: #fbfbfb;
-    margin-top: 5px;
-    margin-top: 13px;
+    // margin-top: 5px;
+    // margin-top: -19px;
     text-align: center;
-    margin-right: 32px;
+    // margin-right: 32px;
     border-radius: 50px;
-    /* padding-left: 3px; */
     padding-top: 4px;
-    /* padding-bottom: 5px; */
     transition: .4s;
 }
 
@@ -142,17 +277,22 @@ body {
     transition: .4s;
 }
 
+
 #pricerTool {
-    width: 400px;
-    height: 396px;
+    width: 600px;
+    height: 198px;
     padding-left: 33px;
     background-color: #37375B;
-    border: 1px solid #37375B;
+        background-color: #292948;
+            background-color: #26264E;
+    border: 1px solid #26264E;
     position: relative;
     z-index: 4;
-    top: 82px;
-    left: 100px;
+    top: 55px;
+    left: 0;
     padding-right: 33px;
+        height: 245px;
+
 }
 
 .pricerTitle {
@@ -161,6 +301,10 @@ body {
     font-size: 16px;
     // font-weight: 300;
     letter-spacing: .4px;
+    color: #21e0c1;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #pricerTool .mdi-close {
@@ -173,8 +317,18 @@ body {
     margin-top: 5px;
 }
 
+.invalid {
+    position: relative;
+    left: 58px;
+    top: 8px;
+    color: rgba(251, 122, 120, .9);
+        left: 163px;
+}
+
 .pricerToolRow1 {
     margin-top: 52px;
+    margin-top: 35px;
+    margin-top: 67px;
 }
 
 .pricerToolRow2 {
@@ -192,19 +346,13 @@ body {
     font-size: 13px;
 }
 
-.pricerTickerWrapper {
-    margin-left: 20px;
+
+
+.pricerTickerWrapper, .pricerQuantityWrapper, .pricerClientWrapper, .pricerOrderIDWrapper {
+    margin-left: 12px;
 }
 
-.pricerQuantityWrapper {
-    margin-left: 20px;
-}
-
-.pricerClientWrapper {}
-
-.pricerOrderIDWrapper {
-    margin-left: 20px;
-}
+ 
 
 #pricerToolSide,
 #pricerToolTicker,
@@ -212,10 +360,18 @@ body {
 #pricerToolClient,
 #pricerToolOrderID {
     font-size: 14px;
-    color: white;
+    
     background-color: #646485;
+        background-color: #535376;
     padding: 12px 0 12px 9px;
 }
+
+
+#pricerToolSide, #pricerToolQuantity, #pricerToolClient {
+    color: white;
+}
+
+
 
 #pricerToolSide {
     min-width: 43px;
@@ -225,12 +381,12 @@ body {
 #pricerToolQuantity,
 #pricerToolClient {
     min-width: 90px;
-    max-width: 130px;
+    max-width: 110px;
 }
 
 #pricerToolTicker {
     min-width: 90px;
-    max-width: 110px;
+    max-width: 90px;
     text-transform: uppercase;
 }
 
@@ -276,26 +432,36 @@ body {
 }
 
 #pricerButton {
-    width: 150px;
+    width: 90px;
     height: 40px;
     color: white;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
+    display: inline-block;
     text-align: center;
     padding-top: 13px;
     border-radius: 8px;
-    margin: 60px auto;
+    margin-left: 40px;
     letter-spacing: .4px;
     background-color: #009688;
+        background-color: #394ad1;
+        background-color: transparent;
+            border: 1px solid #878fb0;
+    // border: 1px solid #009688;
 }
 
 #pricerToolTickerMenu {
-    width: 108px;
+
+    // width: 108px;
     position: absolute;
-    left: 100px;
+    // left: 100px;
     z-index: 5;
-    top: 150px;
+    // top: 150px;
+    width: 88px;
+    left: 92px;
+    top: 124px;
+        top: 170px;
     background-color: #1f1f41;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
@@ -316,6 +482,7 @@ body {
     position: absolute;
     top: 0px;
     top: -24px;
+        top: -12px;
 }
 
 .tickerWrapper {
@@ -346,6 +513,7 @@ body {
 .NBBO {
     font-size: 26px;
     font-size: 24px;
+    // top: -4px;
 }
 
 .side {
@@ -376,6 +544,19 @@ body {
     color: #707794;
 }
 
+.otherNBBO {
+    position: absolute;
+    left: 397px;
+    top: 44px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #dbdff0;
+    color: #fbfbfb;
+      color: rgba(255, 255, 255, 0.9);
+          color: #707794;
+             
+}
+
 .NBBOsell {
     color: #FB7A78;
 }
@@ -385,9 +566,13 @@ body {
 }
 
 #spreadWrapper {
-    width: 485px;
+    width: 484px;
     // height: 203px;
     margin: 24px auto 13px auto;
+    border: 2px solid #364373;
+        padding-top: 6px;
+            // margin: 38px auto 13px auto;
+                padding-top: 11px;
 }
 
 .spreadRow {
@@ -431,6 +616,7 @@ body {
     color: #5C5C7A;
     text-align: center;
     width: 192px;
+    width: 190px;
     // font-size: 18px;
 }
 
@@ -628,19 +814,38 @@ body {
     color: white;
 }
 
-.acceptButton {
+.bottomButtonRow {
+    margin: 36px auto 0;
+           width: 466px;
+    margin: 28px auto 0;
+        width: 308px;
+            width: 288px;
+}
+
+
+.bottomButtons {
     text-transform: uppercase;
     color: white;
-    background-color: #394AD1;
-    width: 160px;
+    width: 150px;
+        width: 140px;
     height: 40px;
     border-radius: 8px;
     text-align: center;
-    padding-top: 13px;
-    font-size: 14px;
+    padding-top: 14px;
+    font-size: 13px;
     letter-spacing: .4px;
-    margin: 36px auto 0;
+    display: inline-block;
 }
+.acceptButton {
+    background-color: #394AD1; 
+    margin-left: 5px;
+}
+
+.notTradedButton {
+    background-color: #36365c;
+    
+}
+
 
 .buttonsToFlipSides {
     position: absolute;
@@ -863,11 +1068,11 @@ body {
 }
 
 .popUp2menus {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .popUp2menuRows {
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .popUpText {
@@ -984,6 +1189,7 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 
 .popUpButton {
     width: 150px;
+        width: 140px;
     height: 40px;
     color: #36365c;
     text-transform: uppercase;
@@ -999,6 +1205,7 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     background-color: #F5A201;
     color: #36365c;
     margin: 0 auto;
+        margin: 46px auto;
 }
 
 .popUpdropDown {
@@ -1038,20 +1245,29 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     z-index: 4;
 }
 
+.colorDot {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    float: right;
+    border-radius: 50%;
+}
+
 #doneButton {
     width: 150px;
+        width: 140px;
     height: 40px;
     // position: relative;
     // top: 13px;
     // left: 184px;
-    font-size: 14px;
+    font-size: 13px;
     color: white;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 14px;
     border-radius: 8px;
     text-transform: uppercase;
     background-color: #394ad1;
-    margin: 21px auto;
+    margin: 40px auto;
 }
 
 .dropDownMenu {
@@ -1070,6 +1286,53 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     color: #878fb0;
     color: #9ca2c1;
 }
+
+.radioGroupLabel {
+    color: #878fb0;
+    color: #9ca2c1;
+    margin-bottom: 8px;
+}
+
+// input[type="radio"] {
+//     display: none;
+// }
+
+#popUp2 label {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #9ca2c1;
+}
+
+input[type=radio] + label {
+    color: #ccc;
+} 
+
+input[type=radio]:checked + label {
+    color: green;
+}
+
+// #popUp2 label:before {
+//     content: "";
+//     display: inline-block;
+//     width: 16px;
+//     height: 16px;
+//     margin-right: 10px;
+//     position: relative;
+//     left: 0;
+//     top: 3px;
+//     background-color: #dbdff0;
+//     border-radius: 8px;
+// }
+
+input[type=radio]:checked + label:before {
+    background-color: blue;
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
 
 .dropTrianglePopUp {
     position: relative;
@@ -1135,10 +1398,13 @@ li {
     color: #cecfd4;
 }
 
+.liColorPlain {
+    color: #cecfd4;
+}
+
 li:hover {
     background-color: #40406b;
     cursor: pointer;
-    color: #fbfcfe;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
@@ -1152,17 +1418,11 @@ li:hover {
     padding-top: 60px;
     padding-left: 33px;
     padding-right: 33px;
-    // border: 1px solid #616eab;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-    //   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
-    // -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
-    // -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1); 
 }
 
 .turnOff {
     font-size: 16px;
-    // color: #fbfcfe;
-    // font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: .4px;
     margin-bottom: 27px;
