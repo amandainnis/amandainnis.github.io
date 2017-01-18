@@ -119,8 +119,6 @@ body {
     position: relative;
         margin-top: 93px;
             margin-top: 74px;
-           
-    // border-bottom: 1px orange solid;
 }
 
 #priceCostToggle {
@@ -183,7 +181,7 @@ body {
   background-color: #ccc;
   background-color: #646485;
   background-color: #595982;
-      // background-color: #4a4a6f;
+     
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -234,22 +232,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-// #pricerIconButton {
-//     background-color: #364373;
-//     background-color: #394ad1;
-//     width: 30px;
-//     height: 30px;
-//     float: right;
-//     font-size: 23px;
-//     color: #fbfbfb;
-//     margin-top: 5px;
-//     margin-top: 13px;
-//     text-align: center;
-//     margin-right: 32px;
-//     border-radius: 50px;
-//     padding-top: 4px;
-//     transition: .4s;
-// }
+
 
 #pricerIconButton {
         background-color: #364373;
