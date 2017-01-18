@@ -329,9 +329,6 @@ $(document).ready(function(){
   ///////////////pop up 2////////////////
 
 
-$('#popUp2 label:before').on('click', function(){
-	
-})
 
 
 
@@ -631,22 +628,22 @@ $('#pricerToolSide').on('click', function(event){
 
 
 function startTimer(duration, display) {
-    var timer = duration;
-    setInterval(function () {
-    	// parseInt the second parameter is base 10 format
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+    // var timer = duration;
+    // setInterval(function () {
+    // 	// parseInt the second parameter is base 10 format
+    //     minutes = parseInt(timer / 60, 10);
+    //     seconds = parseInt(timer % 60, 10);
 
-        //if minutes is less than 10 show a 0 in front
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+    //     //if minutes is less than 10 show a 0 in front
+    //     minutes = minutes < 10 ? "0" + minutes : minutes;
+    //     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds;
+    //     display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
+    //     if (--timer < 0) {
+    //         timer = duration;
+    //     }
+    // }, 1000);
 }
 
 window.onload = function () {
