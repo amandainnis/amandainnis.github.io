@@ -185,6 +185,11 @@ body {
 .row .col {
   flex: 1;
   border-right: 1px aquamarine solid;
+  border-right: 1px rgba(0,0,0, .3) solid;
+}
+
+.row .col:last-child, .row.columnHeader .col {
+    border-right: 1px transparent solid;
 }
 
 .width_1of2 {
@@ -200,7 +205,7 @@ body {
     -webkit-flex: none!important;
     -ms-flex: none!important;
     flex: none!important;
-    width: 9.66%
+    width: 9.66%;
 }
 
 .daysSinceCol {
@@ -209,6 +214,14 @@ body {
     -ms-flex: none!important;
     flex: none!important;
     width: 5.66%;
+}
+
+.actionsCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 17%;
 }
 
 .col {
@@ -304,8 +317,18 @@ body {
     transition: .3s ease-in;
 }
 
-.mdi-phone,
-.mdi-email,
-.mdi-email-outline {
+.mdi-phone
+ {
     margin-left: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+

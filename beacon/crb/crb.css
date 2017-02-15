@@ -66,6 +66,52 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.buttonsToFlipSides {
+    position: absolute;
+    top: 42px;
+    left: 19px;
+}
+
+.flipSideButton {
+    width: 81px;
+    height: 35px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    background-color: #646485;
+}
+
+
+.flipSideButton2 {
+    width: 81px;
+    height: 33px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    background-color: #646485;
+    background-color: #aeadad;
+}
+
+
+.flipSideButton2.selectedSide
+  {
+    background-color: #456270;
+}
+
+.buttonSections {
+    display: inline-block;
+    padding: 10px 0;
+    border-top: 1px gray solid;
+}
+
+
 #wrapper,
 #wrapperRestrictions {
     width: 600px;
@@ -78,20 +124,43 @@ body {
 }
 
 #wrapperRestrictions {
-    height: 705px;
+    height: 675px;
     position: absolute;
-    top: 46px;
+    top: 76px;
     left: 0;
     padding: 15px 4px 0 45px;
 }
+.topHeader {
+    width: 100%;
+    height: 30px;
+    padding: 6px;
+    position: relative;
+    // background-color: #26264E;
+    // border-bottom: 1px #364373 solid;
+}
 
+.logo {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #0069CB;
+    border-radius: 50%;
+}
+
+.beaconLogoText {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    top: -1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .9);
+}
 .bar {
     width: 100%;
     height: 55px;
     border-top: 2px solid #364373;
     border-bottom: 2px solid #364373;
-    // background-color: #1f1f41;
-    // background-color: #151536;
+   
 }
 
 .navigation {
@@ -113,150 +182,125 @@ body {
 }
 
 .tickerDetails {
-   padding-left: 38px;
-    margin-top: 76px;
-    margin-top: 82px;
+    padding-left: 38px;
     position: relative;
-        margin-top: 93px;
-            margin-top: 74px;
+    margin-top: 58px;
 }
 
-#priceCostToggle {
+.priceCostToggle {
     position: absolute;
-    top: 62px;
+    top: 92px;
     left: 445px;
-                    
-    
 }
+
+
 
 .pricerToolLabel {
     color: #dbdff0;
     display: inline-block;
     padding: 3px;
     position: relative;
-        top: -3px;
+    top: -3px;
     color: #878EB1;
     font-size: 14px;
 }
 
 .pricerToolButton {
     display: inline-block;
-   position: absolute;
+    position: absolute;
     left: 493px;
-    top: 13px;
+    top: 43px;
 }
 
 .priceCostToggleLabel {
     color: #dbdff0;
     display: inline-block;
-  
     position: relative;
     top: -7px;
     color: #878EB1;
 }
 
+
 /* The switch - the box around the slider */
+
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 54px;
-  height: 28px;
-      width: 45px;
+    position: relative;
+    display: inline-block;
     height: 23px;
     width: 38px;
     margin: 0 5px;
 }
 
+
 /* Hide default HTML checkbox */
-.switch input {display:none;}
+
+.switch input {
+    display: none;
+}
+
 
 /* The slider */
+
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  background-color: #646485;
-  background-color: #595982;
-     
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-      height: 15px;
-    width: 15px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  background-color: #c1c6e1;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
- background-color: #394ad1;
- background-color: #595982;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #394ad1;
-
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-  -webkit-transform: translateX(22px);
-  -ms-transform: translateX(22px);
-  transform: translateX(22px);
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-
-
-#pricerIconButton {
-        background-color: #364373;
-    background-color: #394ad1;
-    width: 28px;
-    height: 28px;
-    /* float: right; */
-    display: inline-block;
-    position: relative;
-    // left: 538px;
-    // top: -9px;
-    font-size: 21px;
-    color: #fbfbfb;
-    // margin-top: 5px;
-    // margin-top: -19px;
-    text-align: center;
-    // margin-right: 32px;
-    border-radius: 50px;
-    padding-top: 4px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #595982;
+    -webkit-transition: .4s;
     transition: .4s;
 }
 
-#pricerIconButton:hover {
-    background-color: #394AD1;
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #c1c6e1;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #595982;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #394ad1;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#pricerIconButton, #pricerIconButtonEmea {
+    background-color: #394ad1;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    font-size: 21px;
+    color: #fbfbfb;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 4px;
     transition: .4s;
 }
 
@@ -265,17 +309,14 @@ input:checked + .slider:before {
     width: 600px;
     height: 198px;
     padding-left: 33px;
-    background-color: #37375B;
-        background-color: #292948;
-            background-color: #26264E;
+    background-color: #26264E;
     border: 1px solid #26264E;
     position: relative;
     z-index: 4;
     top: 55px;
     left: 0;
     padding-right: 33px;
-        height: 245px;
-
+    height: 245px;
 }
 
 .pricerTitle {
@@ -302,15 +343,12 @@ input:checked + .slider:before {
 
 .invalid {
     position: relative;
-    left: 58px;
     top: 8px;
     color: rgba(251, 122, 120, .9);
-        left: 163px;
+    left: 163px;
 }
 
 .pricerToolRow1 {
-    margin-top: 52px;
-    margin-top: 35px;
     margin-top: 67px;
 }
 
@@ -329,13 +367,12 @@ input:checked + .slider:before {
     font-size: 13px;
 }
 
-
-
-.pricerTickerWrapper, .pricerQuantityWrapper, .pricerClientWrapper, .pricerOrderIDWrapper {
+.pricerTickerWrapper,
+.pricerQuantityWrapper,
+.pricerClientWrapper,
+.pricerOrderIDWrapper {
     margin-left: 12px;
 }
-
- 
 
 #pricerToolSide,
 #pricerToolTicker,
@@ -343,18 +380,15 @@ input:checked + .slider:before {
 #pricerToolClient,
 #pricerToolOrderID {
     font-size: 14px;
-    
-    background-color: #646485;
-        background-color: #535376;
+    background-color: #535376;
     padding: 12px 0 12px 9px;
 }
 
-
-#pricerToolSide, #pricerToolQuantity, #pricerToolClient {
+#pricerToolSide,
+#pricerToolQuantity,
+#pricerToolClient {
     color: white;
 }
-
-
 
 #pricerToolSide {
     min-width: 43px;
@@ -427,24 +461,17 @@ input:checked + .slider:before {
     border-radius: 8px;
     margin-left: 40px;
     letter-spacing: .4px;
-    background-color: #009688;
-        background-color: #394ad1;
-        background-color: transparent;
-            border: 1px solid #878fb0;
+    background-color: transparent;
+    border: 1px solid #878fb0;
     // border: 1px solid #009688;
 }
 
 #pricerToolTickerMenu {
-
-    // width: 108px;
     position: absolute;
-    // left: 100px;
     z-index: 5;
-    // top: 150px;
     width: 88px;
     left: 92px;
-    top: 124px;
-        top: 170px;
+    top: 170px;
     background-color: #1f1f41;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
@@ -465,7 +492,7 @@ input:checked + .slider:before {
     position: absolute;
     top: 0px;
     top: -24px;
-        top: -12px;
+    top: -12px;
 }
 
 .tickerWrapper {
@@ -474,6 +501,7 @@ input:checked + .slider:before {
     background-color: #445287;
     margin-left: 19px;
 }
+
 
 .ticker {
     font-size: 34px;
@@ -486,6 +514,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 
+
 .sideWrapper {
     margin-left: 14px;
     min-width: 16px;
@@ -494,9 +523,7 @@ input:checked + .slider:before {
 .side,
 .quantity,
 .NBBO {
-    font-size: 26px;
     font-size: 24px;
-    // top: -4px;
 }
 
 .side {
@@ -527,18 +554,15 @@ input:checked + .slider:before {
     color: #707794;
 }
 
-.otherNBBO {
+.NBBOatQty {
     position: absolute;
     left: 397px;
     top: 44px;
     font-weight: 300;
     font-size: 16px;
-    color: #dbdff0;
-    color: #fbfbfb;
-      color: rgba(255, 255, 255, 0.9);
-          color: #707794;
-             
+    color: #707794;
 }
+
 
 .NBBOsell {
     color: #FB7A78;
@@ -548,22 +572,233 @@ input:checked + .slider:before {
     color: #21E0C1;
 }
 
-#spreadWrapper {
+#spreadWrapper, #spreadWrapperEmea {
     width: 484px;
-    // height: 203px;
     margin: 24px auto 13px auto;
     border: 2px solid #364373;
-        padding-top: 6px;
-            // margin: 38px auto 13px auto;
-                padding-top: 11px;
+    padding-top: 11px;
 }
+
+
+/* emea only */
+
+.BBGRICtoggle {
+    position: absolute;
+    top: 45px;
+    left: 345px;
+        left: 376px;
+}
+
+.priceCostToggleEmea {
+    position: absolute;
+    top: 92px;
+    left: 445px;
+}
+
+.tickerDetailsEmea {
+    padding-left: 38px;
+    position: relative;
+    margin-top: 58px;
+        margin-top: 65px;
+}
+
+.tickerWrapperEmea {
+    height: 52px;
+    width: 137px;
+    background-color: #445287;
+    margin-left: 19px;
+}
+
+.tickerEmea {
+    font-size: 32px;
+    color: #FBFBFB;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    top: 3px;
+    padding: 6px;
+    text-align: center;
+}
+
+.touchWrapper {
+    width: 484px;
+    margin: 24px auto 0px auto;
+    margin: 28px auto 0px auto;
+    border: 2px solid #364373;  
+    border-bottom: none;
+     padding: 15px 15px;
+}
+
+#spreadWrapperEmea {
+    margin: 17px auto 13px auto;
+    margin: 0px auto 13px auto;
+}
+
+
+.qtyAvailLabel {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .9);
+        letter-spacing: .3px
+}
+
+.qtyAvail {
+    display: inline-block;
+    font-size: 17px;
+     font-weight: 300;
+    color: rgba(255, 255, 255, .9);
+    float: right;
+}
+
+.PBBOatQty {
+    position: absolute;
+    left: 368px;
+    top: 44px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #707794;
+}
+
+.detailsWrapperDrawer {
+    margin-top: 20px;
+        margin-top: 37px;
+    width: 100%;
+   
+}
+
+.PBBOatQtyDrawer {
+    position: relative;
+    // left: 8px;
+    top: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #707794;
+}
+
+.betweenSpreadDataEmea {
+    width: 484px;
+    margin: 17px auto 0 auto;
+    padding: 15px 15px;
+    border: 2px #364373 solid;
+    border-bottom: none;
+    position: relative;
+}
+
+
+#pricerToolEmea {
+    width: 450px;
+    height: 198px;
+    padding-left: 33px;
+    background-color: #26264E;
+    border: 1px solid #26264E;
+    position: relative;
+    z-index: 4;
+    top: 55px;
+    left: 0;
+    padding-right: 33px;
+    height: 245px;
+    margin: 0 auto;
+}
+
+#pricerToolEmea.drawer {
+    height: 416px;
+}
+
+#pricerDrawer {
+    margin-top: 46px;
+    border-top: 2px #364373 solid;
+}
+
+.drawerLabel {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .9);
+    font-weight: 300;
+}
+
+.PBBOdrawer {
+    
+    font-size: 24px;
+    font-size: 17px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #707794;
+}
+
+.col_leftDrawer {
+    width: 23%;
+    float: left;
+}
+
+.col_rightDrawer {
+    width: 69%;
+    float: right;
+    text-align: center;
+}
+
+#pricerToolEmea .mdi-close {
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    float: right;
+    position: relative;
+    left: 23px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+#pricerButtonEmea {
+    width: 90px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+    margin-left: 68px;
+    letter-spacing: .4px;
+    background-color: transparent;
+    border: 1px solid #878fb0;
+    // border: 1px solid #009688;
+}
+
+.qtyButtonEmea {
+    // width: 90px;
+    // height: 40px;
+    
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size: 17px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    padding: 13px;
+    border-radius: 8px;
+   
+    letter-spacing: .4px;
+    background-color: transparent;
+    border: 1px solid #878fb0;
+    // border: 1px solid #009688;
+}
+
+.divider {
+    padding-left: 5px;
+    padding-right: 5px;
+        color: #707794;
+}
+/* end emea only */
+
+
+
+
 
 .spreadRow {
     width: 100%;
-    margin-bottom: 15px;
-    margin-bottom: 10px;
     margin-bottom: 12px;
-    // height: 36px;
 }
 
 .sellSection,
@@ -598,9 +833,7 @@ input:checked + .slider:before {
     font-weight: 500;
     color: #5C5C7A;
     text-align: center;
-    width: 192px;
     width: 190px;
-    // font-size: 18px;
 }
 
 .quantitySection,
@@ -612,7 +845,6 @@ input:checked + .slider:before {
     text-align: right;
     padding-right: 5px;
     width: 100px;
-    // font-size: 18px;
 }
 
 .quantitySection.buyGreen {
@@ -623,7 +855,6 @@ input:checked + .slider:before {
 }
 
 .quantitySection.sellRed {
-    background-color: #FB7A78;
     background-color: rgba(251, 122, 120, .9);
     color: #fbfbfb;
     font-weight: 400;
@@ -647,7 +878,6 @@ input:checked + .slider:before {
 .textGreen {
     color: #21E0C1;
     font-weight: 400;
-    // transition: .9s ease-in;
 }
 
 .band {
@@ -658,9 +888,7 @@ input:checked + .slider:before {
     width: 16px;
 }
 
-// .bandBright {
-//     background-color: #818196;
-// }
+
 .bandWhite {
     background-color: #fbfbfb;
 }
@@ -671,12 +899,8 @@ input:checked + .slider:before {
     color: #F9F9FD;
     outline: none;
     border: none;
-    // text-align: center;
     padding-top: 8px;
-    // padding-right: 0;
     background-color: transparent;
-    // border-bottom: 1px #dbdbdb solid;
-    // margin-bottom: .5em;
 }
 
 #quantityInput.quantityMisc::-webkit-input-placeholder {
@@ -700,8 +924,8 @@ input:checked + .slider:before {
 }
 
 .betweenSpreadData {
-    width: 485px;
-    margin: 22px auto 0 auto;
+    width: 484px;
+    margin: 17px auto 0 auto;
     padding: 20px 15px;
     border: 2px #364373 solid;
     border-bottom: none;
@@ -732,7 +956,7 @@ input:checked + .slider:before {
 }
 
 .dataFieldsWrapper {
-    width: 485px;
+    width: 484px;
     height: 115px;
     border: 2px solid #364373;
     margin: 0 auto;
@@ -744,7 +968,6 @@ input:checked + .slider:before {
 .colC {
     width: 31%;
     float: left;
-    // border: 1px yellow solid;
 }
 
 .colA,
@@ -798,56 +1021,32 @@ input:checked + .slider:before {
 }
 
 .bottomButtonRow {
-    margin: 36px auto 0;
-           width: 466px;
-    margin: 28px auto 0;
-        width: 308px;
-            width: 288px;
+    margin: 22px auto 0;
+    width: 288px;
 }
-
 
 .bottomButtons {
     text-transform: uppercase;
     color: white;
-    width: 150px;
-        width: 140px;
+    width: 140px;
     height: 40px;
     border-radius: 8px;
     text-align: center;
     padding-top: 14px;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: .4px;
     display: inline-block;
 }
+
 .acceptButton {
-    background-color: #394AD1; 
+    background-color: #394AD1;
     margin-left: 5px;
 }
 
 .notTradedButton {
     background-color: #36365c;
-    
 }
 
-
-.buttonsToFlipSides {
-    position: absolute;
-    top: 42px;
-    left: 19px;
-}
-
-.flipSideButton {
-    width: 81px;
-    height: 35px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 8px;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-    background-color: #646485;
-}
 
 #buySideVersion {
     color: #21E0C1;
@@ -865,7 +1064,7 @@ input:checked + .slider:before {
 
 #tickerZone {
     overflow-y: scroll;
-    height: 580px;
+    height: 559px;
 }
 
 #tickerZone::-webkit-scrollbar {
@@ -873,23 +1072,17 @@ input:checked + .slider:before {
 }
 
 #tickerZone::-webkit-scrollbar-track {
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     background-color: #1f1f41;
-    // border-radius: 10px;
 }
 
 #tickerZone::-webkit-scrollbar-thumb {
     background-color: #40406b;
-    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .tile {
-    height: 42px;
     float: left;
     margin: 0px 28px 24px 6px;
-    padding: 14px;
     text-align: center;
-    font-size: 16px;
     color: white;
     letter-spacing: .8px;
     width: 97px;
@@ -897,43 +1090,18 @@ input:checked + .slider:before {
     padding: 12px;
     height: 36px;
     font-size: 15px;
-    // margin: 0px 24px 24px 24px;
-    // width: 120px;
-    // height: 39px;
 }
 
 .regular {
-    background-color: teal;
-    background-color: #646485;
-    background-color: #40406b;
     background-color: #36365c;
-    // border-top: 2px #6673b7 solid;
-    // border-bottom: 2px #445287 solid;
-    // border-left: 1px #818196 solid;
-    // border-right: 1px #646485 solid;
 }
 
 .off {
-    background-color: blue;
-    background-color: rgba(251, 122, 120, .9);
-    background-color: #009688;
     background-color: rgba(27, 143, 132, 0.89);
-    // background-color: transparent;
-    // border: 1px solid rgba(27, 143, 132, 0.89);
-    // border: 1px solid red;
 }
 
 .wayOff {
-    background-color: #acb187;
-    background-color: #4357a4;
-    background-color: #009688;
-    background-color: #3F51B5;
-    background-color: #b4bf2b;
-    background-color: rgba(156, 39, 176, 0.55);
-    background-color: transparent;
-    background-color: #673AB7;
     background-color: #af8261;
-    // background-color: rgba(180,191,43,.6);
 }
 
 .searchField {
@@ -981,6 +1149,7 @@ input:checked + .slider:before {
 /*////////////// POP  POP  POP UP & DROP Down Section //////////////////////*/
 
 #pricerToolBackground,
+#pricerToolBackgroundEmea,
 #popUpBackground {
     width: 600px;
     height: 760px;
@@ -1020,18 +1189,14 @@ input:checked + .slider:before {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 300;
-    color: #FBFCFE;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .popUpTicker {
-    color: #FBFCFE;
     color: rgba(255, 255, 255, 0.9);
-    // font-weight: 300;
     font-size: 32px;
     letter-spacing: .4px;
     font-weight: 300;
-    // width: 160px;
     margin-top: 10px;
     display: inline-block;
 }
@@ -1045,7 +1210,6 @@ input:checked + .slider:before {
 }
 
 .popUpQty {
-    color: #FBFCFE;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
 }
@@ -1061,15 +1225,13 @@ input:checked + .slider:before {
 .popUpText {
     font-size: 15px;
     color: rgba(249, 249, 253, 0.54);
-    margin-top: 28px;
     letter-spacing: .4px;
-    margin-top: 60px;
+    margin-top: 65px;
     font-weight: 300;
 }
 
 .popUpPriceSet {
     position: relative;
-    margin-top: 40px;
     margin-top: 15px;
 }
 
@@ -1079,23 +1241,14 @@ input:checked + .slider:before {
     left: 303px;
     width: 34px;
     font-size: 18px;
-    // z-index: 3;
 }
 
 .popUpPriceChoose {
     width: 334px;
-    // height: 54px;
-    // height: 48px;
-    // height: 50px;
-    // border-radius: 8px;
-    border: 1px #f9f9fd solid;
-    border: 1px #e5e5f0 solid;
     border: 1px transparent solid;
     color: white;
-    font-size: 17px;
     padding-left: 10px;
     outline: none;
-    background-color: transparent;
     font-family: 'Roboto';
     font-size: 14px;
     color: white;
@@ -1104,7 +1257,6 @@ input:checked + .slider:before {
 }
 
 .popUpPriceChoose:focus {
-    border: 1px orange solid;
     border: 1px #21e0c1 solid;
 }
 
@@ -1112,22 +1264,18 @@ input[type="number"].popUpPriceChoose::-webkit-outer-spin-button,
 input[type="number"].popUpPriceChoose::-webkit-inner-spin-button {
     -webkit-appearance: none;
     background: url("spinner.png") no-repeat center center;
-    // background: #FFF url("200_s.gif") no-repeat center center;
     background-color: transparent;
     width: 10px;
     border-left: none;
     opacity: .5;
-    /* shows Spin Buttons per default (Chrome >= 39) */
     position: absolute;
     top: 0;
     right: 6px;
     bottom: 0;
-    // z-index: 4;
 }
 
 input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:hover,
 input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
-    // box-shadow: 0 0 2px #0CF;
     opacity: .8;
 }
 
@@ -1140,8 +1288,6 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 
 .popUpExpire {
     text-align: center;
-    /* background-color: darkolivegreen; */
-    /* width: 157px; */
     margin: 38px auto 0;
 }
 
@@ -1150,8 +1296,6 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 }
 
 .popUpExpireTime {
-    color: #f9f9fd;
-    color: #dedee6;
     color: rgba(255, 255, 255, 0.9);
     font-size: 16px;
     padding-left: 8px;
@@ -1171,8 +1315,7 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 }
 
 .popUpButton {
-    width: 150px;
-        width: 140px;
+    width: 140px;
     height: 40px;
     color: #36365c;
     text-transform: uppercase;
@@ -1187,42 +1330,32 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 #executeButton {
     background-color: #F5A201;
     color: #36365c;
-    margin: 0 auto;
-        margin: 46px auto;
+    margin: 58px auto;
 }
 
 .popUpdropDown {
     width: 334px;
     height: 40px;
-    // height: 44px;
     border: 1px #878fb0 solid;
-    // border: 1px #e5e5f0 solid;
-    color: white;
     color: rgba(255, 255, 255, 0.9);
     font-size: 13px;
     padding-top: 14px;
     padding-left: 7px;
     position: relative;
-    top: 14px;
     top: 10px;
     z-index: 4;
 }
 
 .restrictionsDropDown {
     display: inline-block;
-    width: 120px;
-    width: 125px;
     width: 150px;
     height: 40px;
-    // height: 44px;
     border: 1px #7a83a6 solid;
-    color: white;
     color: rgba(255, 255, 255, 0.9);
     font-size: 13px;
     padding-top: 14px;
     padding-left: 7px;
     position: relative;
-    top: 14px;
     top: 10px;
     margin-right: 5px;
     z-index: 4;
@@ -1237,13 +1370,9 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 }
 
 #doneButton {
-    width: 150px;
-        width: 140px;
+    width: 140px;
     height: 40px;
-    // position: relative;
-    // top: 13px;
-    // left: 184px;
-    font-size: 13px;
+    font-size: 14px;
     color: white;
     text-align: center;
     padding-top: 14px;
@@ -1261,24 +1390,18 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 .dropDownMenu2 {
     display: inline-block;
     width: 150px;
-    margin-right: 20px;
     margin-right: 10px;
 }
 
 .dropLabel {
-    color: #878fb0;
     color: #9ca2c1;
 }
 
 .radioGroupLabel {
-    color: #878fb0;
     color: #9ca2c1;
     margin-bottom: 8px;
 }
 
-// input[type="radio"] {
-//     display: none;
-// }
 
 #popUp2 label {
     display: inline-block;
@@ -1289,24 +1412,12 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 
 input[type=radio] + label {
     color: #ccc;
-} 
+}
 
 input[type=radio]:checked + label {
     color: green;
 }
 
-// #popUp2 label:before {
-//     content: "";
-//     display: inline-block;
-//     width: 16px;
-//     height: 16px;
-//     margin-right: 10px;
-//     position: relative;
-//     left: 0;
-//     top: 3px;
-//     background-color: #dbdff0;
-//     border-radius: 8px;
-// }
 
 input[type=radio]:checked + label:before {
     background-color: blue;
@@ -1316,12 +1427,10 @@ input[type=radio]:checked + label:before {
     line-height: 18px;
 }
 
-
 .dropTrianglePopUp {
     position: relative;
     left: 307px;
     top: -19px;
-    font-size: 21px;
     font-size: 21px;
     color: #eaeaea;
     z-index: 3;
@@ -1339,7 +1448,6 @@ input[type=radio]:checked + label:before {
 #popUpUrgencyDropDown,
 #popUpFollowDropDown {
     position: absolute;
-    /* display: inline-block; */
     z-index: 5;
     color: #cecfd4;
     width: 300px;
@@ -1348,7 +1456,6 @@ input[type=radio]:checked + label:before {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
-    // border: 1px #a7a7a7 solid;
 }
 
 #popUpUrgencyDropDown li,
@@ -1396,11 +1503,8 @@ li:hover {
 #restrictionsPopUp {
     position: absolute;
     z-index: 6;
-    height: 250px;
     height: 280px;
-    padding-top: 60px;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding: 60px 33px 0 33px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
@@ -1411,7 +1515,6 @@ li:hover {
     margin-bottom: 27px;
 }
 
-#turnOffDropTitle {}
 
 #backgroundRestrictions {
     width: 600px;
@@ -1425,7 +1528,6 @@ li:hover {
 
 #popUpRestrictionsDropDown {
     position: absolute;
-    /* display: inline-block; */
     top: 164px;
     z-index: 5;
     color: #cecfd4;
@@ -1435,7 +1537,6 @@ li:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
-    // border: 1px #a7a7a7 solid;
 }
 
 #popUpRestrictionsDropDown li {
@@ -1456,8 +1557,6 @@ li:hover {
 
 .widerDropDown {
     display: inline-block;
-    width: 120px;
-    width: 125px;
     width: 236px;
     height: 40px;
     border: 1px #878fb0 solid;
@@ -1466,7 +1565,6 @@ li:hover {
     padding-top: 14px;
     padding-left: 7px;
     position: relative;
-    top: 14px;
     top: 10px;
     margin-right: 5px;
     z-index: 4;
@@ -1493,4 +1591,48 @@ li:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/*/////////  new styles to make the tile page nicer   ////////*/
+
+.searchField {
+    height: 32px;
+}
+
+.restrictionsDropDown {
+    height: 38px;
+    top: 8px;
+    padding-top: 12px;
+}
+
+.restrictionTopRow {
+    height: 88px;
+}
+
+#wrapperRestrictions {
+    padding: 11px 4px 0 45px;
+    z-index: 2;
+}
+
+#tickerZone {
+    height: 572px;
+}
+
+
+.dropDownMenu2 {
+    margin-left: 162px;}
+
+
+.dropTriangleRegular {
+    top: -21px;
+    
+}
+
+
+#pricerTool {
+    z-index: 10;
 }

@@ -85,6 +85,7 @@ var myID;
 
 var controlPressed = false;
 var priceCostToggleBoolean = false;
+var priceCostToggleBooleanEmea = false;
 
 
 $(document).ready(function(){
@@ -94,6 +95,8 @@ $(document).ready(function(){
 	$('#popUpUrgencyDropDown li').hide();
 	$('#popUpFollowDropDown li').hide();
 	$('#pricerToolBackground').hide();
+	$('#pricerToolBackgroundEmea').hide();
+	$('#pricerDrawer').hide();
 
 	$('#backgroundRestrictions').hide();
 	$('#popUpRestrictionsDropDown li').hide();
@@ -140,6 +143,34 @@ $(document).ready(function(){
 	})
 
 
+///// EMEA  //////
+
+	$('#priceCostToggleInputEmea').on('click', function(){
+		priceCostToggleBooleanEmea = !priceCostToggleBooleanEmea;
+		if(priceCostToggleBooleanEmea){
+			console.log('checked');
+				textFlipCost('buy100', '.buySection', .325, .363);
+			 	textFlipCost('buy200', '.buySection', .335, .364);
+			 	textFlipCost('buy400', '.buySection', .345, .365);
+			 	
+			 	textFlipCost('sell100', '.sellSection', .325, .363);
+			 	textFlipCost('sell200', '.sellSection', .335, .364);
+			 	textFlipCost('sell400', '.sellSection', .345, .365);
+		}
+		else{
+			console.log('not checked');
+				textFlipPrice('buy100', '.buySection', 160.325, 160.363);
+				textFlipPrice('buy200', '.buySection', 160.335, 160.364);
+				textFlipPrice('buy400', '.buySection', 160.345, 160.365);
+			 	
+			 	textFlipPrice('sell100', '.sellSection', 160.325, 160.363);
+			 	textFlipPrice('sell200', '.sellSection', 160.335, 160.364);
+			 	textFlipPrice('sell400', '.sellSection', 160.345, 160.365); 
+
+
+			 }
+	})
+
 
 	$('#TCA').click( function(){
 		$('#wrapperRestrictions').hide();
@@ -161,8 +192,17 @@ $(document).ready(function(){
 		
 	});
 
+	$('#pricerIconButtonEmea').on('click', function(){
+		$('#pricerToolBackgroundEmea').show();
+		
+	});
+
 	$('#pricerTool .mdi-close').on('click', function(){
 		$('#pricerToolBackground').hide();
+		
+	});
+	$('#pricerToolEmea .mdi-close').on('click', function(){
+		$('#pricerToolBackgroundEmea').hide();
 		
 	});
 
@@ -180,7 +220,7 @@ $(document).ready(function(){
 		// $('.quantitySection').removeClass('buyGreen');
 		
 
-		$('#spreadWrapper').on('click', '.spreadRow', function(event) {
+		$('#spreadWrapper, #spreadWrapperEmea').on('click', '.spreadRow', function(event) {
 
 			    $('.spreadRow').removeClass('selectedRow');
 			    $(this).addClass('selectedRow');
@@ -210,7 +250,7 @@ $(document).ready(function(){
 		$('.quantitySection').removeClass('sellRed');
 		
 
-		$('#spreadWrapper').on('click', '.spreadRow', function(event) {
+		$('#spreadWrapper, #spreadWrapperEmea').on('click', '.spreadRow', function(event) {
 
 			    $('.spreadRow').removeClass('selectedRow');
 			    $(this).addClass('selectedRow');
@@ -284,7 +324,7 @@ $(document).ready(function(){
 		}
 	
 
-	$('#spreadWrapper').on('click', '.spreadRow', function(event) {
+	$('#spreadWrapper, #spreadWrapperEmea').on('click', '.spreadRow', function(event) {
 
 	    $('.spreadRow').removeClass('selectedRow');
 	    $(this).addClass('selectedRow');
@@ -478,7 +518,7 @@ $('#searchTicker').on('change', function(){
 
 
 
-$('#pricerToolTicker').on('change', function(){
+$('#pricerToolTicker').on('keypress', function(){
 	var inputTick = $(this).val();
 	inputTick.toUpperCase();
 	console.log(inputTick);
@@ -514,7 +554,10 @@ $('#pricerToolTicker').on('change', function(){
      $('#pricerToolTickerMenu ul li').on('click', function(){
 		var inputText = $(this).text();
 		console.log(this);
+		newClass = $(this).attr("class");
+		
 		$('#pricerToolTicker').val(inputText);
+		$('#pricerToolTicker').addClass(newClass);
 		$('#pricerToolTickerMenu ul li').hide();
 	})
 
@@ -529,11 +572,17 @@ $('#pricerToolTicker').on('change', function(){
 
 // returnElapsedColor(arr[i].days)
 
-
+// var class = $("img").attr("class");
+//  console.log(class);
 
 $('#pricerButton').on('click', function(){
 		$('#pricerToolBackground').hide();
 		
+	});
+
+$('#pricerButtonEmea').on('click', function(){
+		$('#pricerDrawer').show();
+		$('#pricerToolEmea').addClass('drawer');
 	});
 
 
@@ -648,10 +697,8 @@ function startTimer(duration, display) {
 
 window.onload = function () {
     var twelveMinutes = 60 * 12,
-        display = document.querySelector('#time');
-        display2 = document.querySelector('#currentTime');
+        display = document.querySelector('#currentTime');
     startTimer(twelveMinutes, display);
-    startTimer(twelveMinutes, display2);
 };
 
 

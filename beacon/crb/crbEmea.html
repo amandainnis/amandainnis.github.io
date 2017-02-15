@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="crb.css" />
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="crb.js"></script>
+    <title>EMEA CRB Pricer</title>
+</head>
+
+<body>
+    <div class="buttonsToFlipSides">
+        <div id="buySideVersion" class="flipSideButton selectedSide">buy</div>
+        <div id="sellSideVersion" class="flipSideButton redText">sell</div>
+        <!-- <div id="alternateView" class="flipSideButton">Alternate</div> -->
+
+        <br>
+        <br>
+        <span class="buttonSections">AMRS vs EMEA</span>
+        <div class="flipSideButton2"><a href='crb.html'>AMERS</a></div>
+        <div class="flipSideButton2 selectedSide"><a href='crbEmea.html'>EMEA</a></div>
+    </div>
+    <div id="wrapper">
+        <div class="topHeader">
+            <div class="logo"></div>
+            <span class="beaconLogoText">EMEA CRB Pricer</span>
+        </div>
+        <div class="bar">
+            <div class="navigation">
+                <span id="TCA" class="selected">TCA</span>
+                <span id="History">History</span>
+                <span id="Restrictions">StockList</span>
+            </div>
+            <div class="BBGRICtoggle">
+                <span class="priceCostToggleLabel">BBG</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <div id="BBGRIC" class="slider round"></div>
+                </label>
+                <span class="priceCostToggleLabel">RIC</span>
+            </div>
+
+            <div class="pricerToolButton">
+                <span class="pricerToolLabel">Pricer</span>
+                <span id="pricerIconButtonEmea"><!-- <i class="mdi mdi-chart-line"></i> -->   <i class="mdi mdi-plus"></i></span>
+            </div>
+        </div>
+        <!-- end of bar -->
+        <div class="priceCostToggleEmea">
+            <span class="priceCostToggleLabel">Price</span>
+            <label class="switch">
+                <input type="checkbox">
+                <div id="priceCostToggleInputEmea" class="slider round"></div>
+            </label>
+            <span class="priceCostToggleLabel">Spread</span>
+        </div>
+        <div id="pricerToolBackgroundEmea">
+            <div id="pricerToolEmea">
+                <i class="mdi mdi-close"></i>
+                <div class="pricerTitle">EMEA Pricer Tool</div>
+                <div class="pricerToolRow1">
+                    
+                    <div class="pricerToolDetailsWrapper pricerTickerWrapperEmea">
+                        <div class="pricerToolDetailsLabel">Symbol</div>
+                        <input id="pricerToolTicker" class="pricerToolInput" value="">
+                    </div>
+                    <div id="pricerToolTickerMenu">
+                        <ul></ul>
+                    </div>
+                   
+                    <div class="pricerToolDetailsWrapper pricerClientWrapper">
+                        <div class="pricerToolDetailsLabel">Client (Optional)</div>
+                        <input id="pricerToolClient" class="pricerToolInput">
+                    </div>
+                    <div id="pricerButtonEmea">price</div>
+                    <div id="pricerDrawer">
+                        <div class="detailsWrapperDrawer clearfix">
+                            <div class="col_leftDrawer">
+                                <div class="drawerLabel">PBBO</div>
+                            </div>
+                            <div class="col_rightDrawer">
+                                <div class="PBBOdrawer"><span class="NBBOsell">160.32</span> / <span class="NBBObuy">160.36</span></div>
+                                <div class="PBBOatQtyDrawer"><span>500,000</span> / <span>600,000</span></div>
+                            </div>
+                            
+                        </div>
+                        <!-- end detailsWrapperDrawer -->
+                        <div class="detailsWrapperDrawer clearfix">
+                            <div class="col_leftDrawer">
+                                <div class="drawerLabel">QtyAvailTouch</div>
+                            </div>
+                            <div class="col_rightDrawer">
+                                <div class="qtyButtonEmea"><span class="NBBOsell">2,500,000</span></div> <span class="divider">/</span>
+                                <div class="qtyButtonEmea">  <span class="NBBObuy">2,600,000</span></div>
+                                
+                            </div>
+                            
+                        </div>
+                        <!-- end detailsWrapperDrawer -->
+                        
+                    </div>
+                    <!-- end pricerDrawer -->
+                    
+                    
+                </div>
+                <!-- end pricerToolRow1 -->
+            </div>
+            <!-- end of pricerTool -->
+        </div>
+        <!-- end of pricerToolBackground -->
+        <div class="tickerDetailsEmea">
+            <div class="tickerDetailsWrapper tickerWrapperEmea">
+                <!-- <div class="tickerDetailsLabel">Symbol</div> -->
+                <div class="tickerEmea">BP.L</div>
+            </div>
+            <div class="tickerDetailsWrapper sideWrapper">
+                <!-- <div class="tickerDetailsLabel">Side</div> -->
+                <div id="buySellDoorway" class="side">B</div>
+            </div>
+            <div class="tickerDetailsWrapper quantityWrapper">
+                <div class="tickerDetailsLabel">Qty</div>
+                <div class="quantity">2,600,000</div>
+            </div>
+            <div class="tickerDetailsWrapper NBBOwrapper">
+                <div class="tickerDetailsLabel">PBBO</div>
+                <div class="NBBO"><span class="NBBOsell">160.32</span> / <span class="NBBObuy">160.36</span></div>
+            </div>
+            <div class="PBBOatQty"><span>500,000</span> / <span>600,000</span></div>
+        </div>
+        <!-- end of tickerDetails -->
+        <div class="touchWrapper">
+            <!-- <div class="spreadRow"> -->
+                <span class="qtyAvailLabel">QtyAvailTouch</span>
+                <span class="qtyAvail">2,500,000 / 2,600,000</span>
+           <!--  </div> -->
+        </div>
+        <div id="spreadWrapperEmea" class="clearfix">
+            <div id="row100" class="spreadRow selectedRow clearfix">
+                <span id="sell100" class="sellSection"><span class="spread1">160.325</span><span class="band"></span><span class="spread2">160.363</span></span>
+                <span class="quantitySection  buyGreen">2,600,000</span>
+                <span id="buy100" class="buySection selected"><span class="spread1">160.325</span><span class="band bandWhite"></span><span class="spread2">160.363</span></span>
+            </div>
+            <div id="row200" class="spreadRow clearfix">
+                <span id="sell200" class="sellSection"><span class="spread1">160.335</span><span class="band"></span><span class="spread2">160.364</span></span>
+                <span class="quantitySection">5,200,000</span>
+                <span id="buy200" class="buySection textGreen"><span class="spread1">160.335</span><span class="band"></span><span class="spread2">160.364</span></span>
+            </div>
+            <div id="row400" class="spreadRow clearfix">
+                <span id="sell400" class="sellSection"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
+                <span class="quantitySection">10,400,000</span>
+                <span id="buy400" class="buySection textGreen"><span class="spread1">160.345</span><span class="band"></span><span class="spread2">160.365</span></span>
+            </div>
+            
+            <div id="rowEnterQty" class="spreadRow clearfix">
+                <span id="sellMisc" class="miscSell"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
+                <input id="quantityInput" class="quantityMisc" placeholder="enter qty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter qty'">
+                <span id="buyMisc" class="miscBuy"><span class="spread1"></span><span class="band"></span><span class="spread2"></span></span>
+            </div>
+        </div>
+        <div class="betweenSpreadDataEmea clearfix">
+            <div class="clientLeft">
+                <!-- <div class="verticalLabel">Client</div> -->
+                <span class="horizontalLabel">Client</span>
+                <span class="horizontalInfoField">BLACKROCK</span>
+            </div>
+            <div class="expire">
+                <!-- <div class="verticalLabel">Expires</div> -->
+                <span class="horizontalLabel">Expires in</span>
+                <!-- <i class="mdi mdi-clock"></i> -->
+                <span id="currentTime" class="horizontalInfoField"></span>
+            </div>
+        </div>
+        <div class="dataFieldsWrapper">
+            <div class="colA">
+                <div class="dataRow">
+                    <span class="horizontalLabel">ADV</span>
+                    <span class="horizontalDataField">3M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">S/U</span>
+                    <span class="horizontalDataField">S</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Order Type</span>
+                    <span class="horizontalDataField">H</span>
+                </div>
+            </div>
+            <div class="colB">
+                <div class="dataRow">
+                    <span class="horizontalLabel">Vol</span>
+                    <span class="horizontalDataField">5M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Advt. Vol</span>
+                    <span class="horizontalDataField">4M</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Order ID</span>
+                    <span id="orderID" class="horizontalDataField">000255...
+                    <span id="orderIDHover">00025567G90DF45678</span>
+                    </span>
+                </div>
+            </div>
+            <div class="colC">
+                <div class="dataRow">
+                    <span class="horizontalLabel">TouchQty</span>
+                    <span class="horizontalDataField">5,000,000</span>
+                </div>
+                <div class="dataRow">
+                    <span class="horizontalLabel">Capacity</span>
+                    <span class="horizontalDataField">3M</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottomButtonRow">
+            <div id="notTraded" class="bottomButtons notTradedButton">missed</div>
+            <div id="acceptButton" class="bottomButtons acceptButton">accept</div>
+        </div>
+        <div id="popUpBackground">
+            <div id="popUp1" class="popUp executeTrade">
+                <i id="popUpClose" class="mdi mdi-close"></i>
+                <div class="popUpInfo">
+                    <div class="popUpClient">blackrock</div>
+                    <div class="popUpTicker">AAPL.OQ</div>
+                    <span class="popUpSide textGreen">B</span>
+                    <span class="popUpQty">5,200,000</span>
+                </div>
+                <!-- end of popUpInfo -->
+                <div class="popUpRow clearfix">
+                    <div class="popUpText">Range: 160.01 to 160.05</div>
+                </div>
+                <!-- end of popup row1 -->
+                <div class="popUpRow clearfix">
+                    <div class="popUpPriceSet">
+                        <!-- <span class="verticalLabel popUpPricerLabel">Pricer</span> -->
+                        <!-- <div class="spinner"><i class="mdi mdi-chevron-up"></i><i class="mdi mdi-chevron-down"></i></div> -->
+                        <input type="number" class="popUpPriceChoose" step="0.01" value="160.01">
+                    </div>
+                </div>
+                <!-- end of popup row2 -->
+                <div class="popUpRow clearfix">
+                    <!-- <div class="popUpExpire">
+                        <span class="horizontalLabel popUpExpireTimeLabel">Expires</span>
+                        <span class="popUpExpireTime" id="time"></span>
+                    </div> -->
+                </div>
+                <div class="popUpRow clearfix popUpExecuteButtons">
+                    <div id="executeButton" class="popUpButton">execute</div>
+                </div>
+            </div>
+            <!-- end of popUp1 -->
+            <div id="popUp2" class="popUp followExecuteTrade">
+                <div class="popUpInfo">
+                    <div class="popUpClient">blackrock</div>
+                    <div class="popUpTicker">AAPL.OQ</div>
+                    <span class="popUpSide textGreen">B</span>
+                    <span class="popUpQty">5,200,000</span>
+                </div>
+                <!-- end of popUpInfo -->
+                <div class="popUpRow popUp2menus">
+                    <form>
+                        <div class="radioGroupLabel">Urgency</div>
+                        <input id="urgentRadio" type="radio" name="urgency" value="urgent">
+                        <label for="urgentRadio">Urgent</label>
+                        <input id="notUrgentRadio" type="radio" name="urgency" value="notUrgent">
+                        <label for="notUrgentRadio">Not urgent</label>
+                </div>
+                <div class="popUp2menuRows">
+                    <div class="radioGroupLabel">Follow on</div>
+                    <input id="moreToCome" type="radio" name="followOn" value="moreToCome">
+                    <label for="moreToCome">More to come</label>
+                    <input id="noneRadio" type="radio" name="followOn" value="none">
+                    <label for="noneRadio">Done</label>
+                    <input id="noneRadio" type="radio" name="followOn" value="none">
+                    <label for="noneRadio">Don't know</label>
+                </div>
+                </form>
+                <!-- end of popup row2 -->
+                <div id="doneButton" class="doneButton">complete</div>
+            </div>
+            <!-- end of popUp1 -->
+        </div>
+        <!-- end of popupbackground -->
+        <div id="wrapperRestrictions">
+            <div class="restrictionTopRow">
+                <!-- <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input> -->
+                <input id="searchTicker" class="searchField" placeholder="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search'" value="">
+                <!-- <div class="dropDownMenu2">
+                    <div class="dropLabel">Lists</div>
+                    <div id="stockListList" class="restrictionsDropDown">IOI List</div>
+                    <span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
+                </div> -->
+                <div class="dropDownMenu2">
+                    <div class="dropLabel">Sort by</div>
+                    <div id="stockListSort" class="restrictionsDropDown">Market Cap</div>
+                    <span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
+                </div>
+                <ul id="popUpMarketDropDown">
+                    <li class="field1">Symbol</li>
+                    <li class="field2">Market cap</li>
+                    <li class="field3">ADV</li>
+                    <li class="field4">CRB eligible<span class="colorDot regular"></span></li>
+                    <li class="field5">Claimed by trader<span class="colorDot off"></span></li>
+                    <li class="field6">Restricted by CRB<span class="colorDot wayOff"></span></li>
+                </ul>
+            </div>
+            <div id="tickerZone">
+            </div>
+        </div>
+        <!-- end of wrapper restrictions -->
+        <div id="backgroundRestrictions">
+            <div id="restrictionsPopUp" class="popUp">
+                <div class="turnOff">Reason for Claim</div>
+                <div class="dropDownMenu">
+                    <div class="dropLabel">Reason</div>
+                    <div id="turnOffDropTitle" class="popUpdropDown">Earnings</div>
+                    <span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
+                </div>
+                <ul id="popUpRestrictionsDropDown">
+                    <li class="field1">News</li>
+                    <li class="field2">Earnings</li>
+                    <li class="field3">Building position</li>
+                    <li class="field4">Corporate action</li>
+                    <li class="field5">Block</li>
+                    <li class="field6">Crossing opportunity</li>
+                </ul>
+                <div class="bottomRowRestrictions">
+                    <div id="cancelButton" class="popUpButton">Cancel</div>
+                    <div id="okButton" class="popUpButton">ok</div>
+                </div>
+            </div>
+            <!-- end of popup -->
+        </div>
+    </div>
+    <!-- end of wrapper -->
+</body>
+
+</html>

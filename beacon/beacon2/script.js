@@ -17,7 +17,7 @@ var myContactsList = [
 
 
 function makeContactsList(last, first, company, segment, days, elapsedColor) {
-   		var newContact = $('<div class="row"> <div class="col nameCol">' + last + ', ' + first + '</div> <div class="col compCol">' + company + '</div><div class="col segmentCol">' + segment + '</div><div class="col daysSinceCol"><div class="timeElapsed ' + elapsedColor + '">'+ days +'</div></div><div class="col"> <div class="iconGang"><i class="mdi mdi-email-outline"></i><div class="ibChat"><img src="ib_chat_small.png"></div><i class="mdi mdi-phone"></i></div></div></div>');
+   		var newContact = $('<div class="row"> <div class="col nameCol">' + last + ', ' + first + '</div> <div class="col compCol">' + company + '</div><div class="col segmentCol">' + segment + '</div><div class="col daysSinceCol"><div class="timeElapsed ' + elapsedColor + '">'+ days +'</div></div><div class="col actionsCol"> <div class="iconGang"><i class="mdi mdi-email-outline"></i><div class="ibChat"><img src="ib_chat_small.png"></div><i class="mdi mdi-phone"></i></div></div></div>');
    		$('#contactList').append(newContact);
    		
    };
