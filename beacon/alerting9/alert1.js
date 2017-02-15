@@ -193,8 +193,108 @@ $(document).ready(function() {
 
     clientBoxArray = clientBoxArrayMaster;
 
+    var alertArray = [
+        { time: "2:00pm", client: "Alambicx", ticker: "AAPL", title: "price limit", urgent: "1", },
+         { time: "2:00pm", client: "Alambicx", ticker: "PBR", title: "order reject", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+          { time: "2:00pm", client: "Alambicx", ticker: "HOG", title: "order quantity", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "balyasnyx", ticker: "ITUB", title: "aggregate volume", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "caerusx", ticker: "GE", title: "aggregate volume", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "caerusx", ticker: "CUZ", title: "price limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "caerusx", ticker: "DVA", title: "order quantity", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "chlmnms", ticker: "FCAU", title: "volume limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "deshdma", ticker: "TWTR", title: "aggregate volume", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "deshdma", ticker: "XOM", title: "order quantity", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "deshdma", ticker: "JLUV", title: "price limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "grahamx", ticker: "FLOM", title: "price limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "hwcmdsa", ticker: "LUV", title: "order reject", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "jonedsa", ticker: "LVLT", title: "order reject", urgent: "1", message: "Lorem ipsum dolor ahmet."},
 
-    function makeTickerBox1(name, alertCount, urgency) {
+        { time: "2:00pm", client: "mbicxgen", ticker: "ORCL", title: "price notional", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "cgpyasnyx", ticker: "ABEV", title: "aggregate volume", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "rrrterusx", ticker: "AMZN", title: "aggregate volume", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "shlmnms", ticker: "HAL", title: "order quantity", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "deshdma", ticker: "CAH", title: "price notional", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "slaahamx", ticker: "ECA", title: "price limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "fonedsa", ticker: "FCX", title: "order reject", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "oocmdsa", title: "volume limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "alkdsa", title: "volume limit", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "allipwst", title: "order reject", urgent: "1", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "alydarx", title: "order quantity", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "amcedsa", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "aqrpropx5", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "arrowgrtx", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+
+        { time: "2:00pm", client: "brockst", title: "price limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "btigdsa", title: "aggregate volume", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "canteshx", title: "price limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "cantustp", title: "order reject", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "deepbltsx", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+
+        { time: "2:00pm", client: "everpnt", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "flowbvx6", title: "aggregate volume", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "govlanex", title: "aggregate volume", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "janexno", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "RIGTWLO", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "dalkdsa", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "ollipwst", title: "order reject", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "yilydarx", title: "order quantity", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "scrmcedsa", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "ghrpropx5", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "rowowgrt", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+
+        { time: "2:00pm", client: "ochakst", title: "price limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "qwgdsa", title: "aggregate volume", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "ganteshx", title: "price limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "nantustp", title: "order reject", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "deepbltsx", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+
+        { time: "2:00pm", client: "ppverpnt", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "blowbvx6", title: "aggregate volume", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+        { time: "2:00pm", client: "shovlanex", title: "aggregate volume", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "danexno", title: "volume limit", urgent: "0", message: "Lorem ipsum dolor ahmet."},
+
+        { time: "2:00pm", client: "vIGTWLO", title: "price notional", urgent: "0", message: "Lorem ipsum dolor ahmet."}
+
+    ];
+
+
+    // function makeTickerBox1(name, alertCount, urgency) {
+
+    //     var newTicker;
+    //     newTicker = $('<div class="summaryBoxStock" data-urgent=' + urgency + ' ><div class="stockBoxTitle">' + name + '</div><div class="numberSummaryBoxStock">' + alertCount + '</div></div>');
+    //     var urgNum = newTicker.data('urgent');
+    //     if (urgency == 0) {
+    //         newTicker.addClass('notUrgent');
+
+    //     } else if (urgency <= 8) {
+    //         newTicker.addClass('urgentLight');
+
+    //     } else if (urgency <= 18) {
+    //         newTicker.addClass('urgent');
+            
+    //     } else if (urgency > 18) {
+    //         newTicker.addClass('urgentExtreme');
+            
+    //     }
+
+
+    //     $('#tickerZone').append(newTicker);
+
+    // };
+
+function makeTickerBox1(name, alertCount, urgency) {
 
         var newTicker;
         newTicker = $('<div class="summaryBoxStock" data-urgent=' + urgency + ' ><div class="stockBoxTitle">' + name + '</div><div class="numberSummaryBoxStock">' + alertCount + '</div></div>');
@@ -202,14 +302,8 @@ $(document).ready(function() {
         if (urgency == 0) {
             newTicker.addClass('notUrgent');
 
-        } else if (urgency <= 8) {
-            newTicker.addClass('urgentLight');
-
-        } else if (urgency <= 18) {
+        } else {
             newTicker.addClass('urgent');
-            
-        } else if (urgency > 18) {
-            newTicker.addClass('urgentExtreme');
             
         }
 
@@ -217,7 +311,6 @@ $(document).ready(function() {
         $('#tickerZone').append(newTicker);
 
     };
-
     
    
 
@@ -233,6 +326,31 @@ $(document).ready(function() {
    sortOrder(tickerBoxArray);
    sortOrder(clientBoxArray);
 
+    // function makeClientBox1(name, alertCount, urgency) {
+
+    //     var newClient;
+    //     newClient = $('<div class="summaryBoxStock" data-urgent=' + urgency + ' ><div class="clientBoxTitle">' + name + '</div><div class="numberSummaryBoxClient">' + alertCount + '</div></div>');
+    //     var urgNum = newClient.data('urgent');
+    //     if (urgency == 0) {
+    //         newClient.addClass('notUrgent');
+
+    //     } else if (urgency <= 8) {
+    //         newClient.addClass('urgentLight');
+
+    //     } else if (urgency <= 18) {
+    //         newClient.addClass('urgent');
+            
+    //     } else if (urgency > 18) {
+    //         newClient.addClass('urgentExtreme');
+            
+    //     }
+
+    //     $('#clientZone').append(newClient);
+
+
+
+    // };
+
     function makeClientBox1(name, alertCount, urgency) {
 
         var newClient;
@@ -241,14 +359,8 @@ $(document).ready(function() {
         if (urgency == 0) {
             newClient.addClass('notUrgent');
 
-        } else if (urgency <= 8) {
-            newClient.addClass('urgentLight');
-
-        } else if (urgency <= 18) {
+        } else {
             newClient.addClass('urgent');
-            
-        } else if (urgency > 18) {
-            newClient.addClass('urgentExtreme');
             
         }
 
@@ -275,28 +387,10 @@ var myIDred;
 
  function iterateDisplay(arr) {
         for (i = 0; i < arr.length; i++) {
-            if (myIDred == 'cVersion') {
-                red1();
-            } else if (myIDred == 'dVersion') {
-                red2();
-            } else if (myIDred == 'eVersion') {
-                red3();
-            } else if (myIDred == 'hVersion') {
-                orange();
-            } else if (myIDred == 'jVersion') {
-                red3mono();
-            } else if (myIDred == 'kVersion') {
-                red4mono();
-            }
+            
             
             makeTickerBox1(arr[i].ticker, arr[i].number, arr[i].urgent);
-            
-            if (myIDlayout == 'fVersion') {
-                moreAlerts();
-            } else if (myIDlayout == 'gVersion') {
-                fewerAlerts();
-            }
-
+           
            
 
         }
@@ -325,9 +419,14 @@ $('#tickerZone, #clientZone').on('click', '.summaryBoxStock', function(){
     $(this).toggleClass('tileClicked');
 })
 
-$('.typeRow').on('click', function(){
+$('#cockpit').on('click', '.typeRow', function(){
     $(this).toggleClass('typeClicked');
 })
+
+
+// $('.typeRow').on('click', function(){
+//     $(this).toggleClass('typeClicked');
+// })
 
 
 
@@ -363,19 +462,7 @@ $('.typeRow').on('click', function(){
      function iterateDisplayClient(arr) {
         for (i = 0; i < arr.length; i++) {
             
-            if (myIDred == 'cVersion') {
-                red1();
-            } else if (myIDred == 'dVersion') {
-                red2();
-            } else if (myIDred == 'eVersion') {
-                red3();
-            } else if (myIDred == 'hVersion') {
-                orange();
-            } else if (myIDred == 'jVersion') {
-                red3mono();
-            } else if (myIDred == 'kVersion') {
-                red4mono();
-            }
+           
             
             makeClientBox1(arr[i].ticker, arr[i].number, arr[i].urgent);
             if (myIDlayout == 'fVersion') {
@@ -460,150 +547,7 @@ $('.typeRow').on('click', function(){
         $('.summaryBoxStock').css('margin-right', '19px');
     }
 
-    // more alerts
-    $('#fVersion').on('click', function() {
-        $('.flipSideButton3').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDlayout = this.id;
-        console.log(myIDlayout);
-        moreAlerts();
-
-    });
-
-    // fewer alerts
-    $('#gVersion').on('click', function() {
-        $('.flipSideButton3').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDlayout = this.id;
-        console.log(myIDlayout);
-        fewerAlerts();
-    });
-
-    // darker wrapper
-    $('#aVersion').on('click', function() {
-        $('.flipSideButton1').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDwrapper = this.id;
-        console.log(myIDwrapper);
-        $('#wrapper').removeClass('lighterWrapper');
-    });
-
-    // lighter wrapper
-    $('#bVersion').on('click', function() {
-        $('.flipSideButton1').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDwrapper = this.id;
-        console.log(myIDwrapper);
-        $('#wrapper').addClass('lighterWrapper');
-
-    });
-
     
-   
-function orange() {
-        $('*').removeClass('red2');
-        $('*').removeClass('red3');
-        $('*').removeClass('red1');
-        $('*').removeClass('red3mono');
-        $('.urgentLight, .urgent, .urgentExtreme, .row.urgentMarker, .urgText, .notUrgent').addClass('orange');
-    }
-
-function red2() {
-        $('*').removeClass('red3');
-        $('*').removeClass('red1');
-        $('*').removeClass('red3mono');
-        $('*').removeClass('orange');
-        $('.urgentLight, .urgent, .urgentExtreme, .row.urgentMarker, .urgText, .notUrgent').addClass('red2');
-}
-
-function red3() {
-        $('*').removeClass('red2');
-        $('*').removeClass('red1');
-        $('*').removeClass('red3mono');
-        $('*').removeClass('orange');
-        $('.urgentLight, .urgent, .urgentExtreme, .row.urgentMarker, .urgText').addClass('red3');
-
-}
-
-function red1() {
-        $('*').removeClass('red2');
-        $('*').removeClass('red3');
-        $('*').removeClass('red3mono');
-        $('*').removeClass('orange');
-        $('.urgentLight, .urgent, .urgentExtreme, .row.urgentMarker, .urgText').addClass('red1');
-
-}
-
-function red3mono() {
-        $('*').removeClass('red2');
-        $('*').removeClass('red3');
-        $('*').removeClass('red1');
-        $('*').removeClass('orange');
-        $('.urgentLight, .urgent, .urgentExtreme, .row.urgentMarker, .urgText').addClass('red3mono');
-
-}
-
-function red4mono() {
-        $('*').removeClass('red2');
-        $('*').removeClass('red3');
-        $('*').removeClass('red1');
-        $('*').removeClass('red3mono');
-        $('*').removeClass('orange');
-        // $('.urgentLight, .urgent, .urgentExtreme, .row.urgentMarker, .urgText').addClass('red4mono');
-
-}
-
-// darker gradation red
-    $('#cVersion').on('click', function() {
-        $('.flipSideButton2').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDred = this.id;
-        console.log(myIDred);
-        red1();
-
-    });
-
-
-     // pinker gradation red
-     $('#eVersion').on('click', function() {
-        $('.flipSideButton2').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDred = this.id;
-        console.log(myIDred);
-        red3();
-        
-    });
-
-
-    // crb-ish one red
-     $('#dVersion').on('click', function() {
-        $('.flipSideButton2').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDred = this.id;
-        console.log(myIDred);
-        red2();
-        
-    });
-
-     // orange one red
-     $('#hVersion').on('click', function() {
-        $('.flipSideButton2').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDred = this.id;
-        console.log(myIDred);
-        orange();
-        
-    });
-
-      // red3mono
-     $('#jVersion').on('click', function() {
-        $('.flipSideButton2').removeClass('selectedSide');
-        $(this).addClass('selectedSide');
-        myIDred = this.id;
-        console.log(myIDred);
-        red3mono();
-        
-    });
 
     // red4mono
      $('#kVersion').on('click', function() {
