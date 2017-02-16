@@ -252,12 +252,17 @@ body {
     margin-left: 10px;
 }
 
-.reset {
+#reset {
     display: inline-block;
     padding-top: 15px;
-    margin-left: 34px;
+    margin-left: 5px;
     letter-spacing: .6px;
     color: rgba(255, 255, 255, .9);
+    transition: .3s;
+}
+
+#reset.lowOpacity {
+    opacity: .4;
 }
 
 .sideBar {
@@ -347,7 +352,7 @@ body {
     // background-color: #e65e18;
 }
 
-.row.urgentMarker {
+.alertRowNew.urgentMarker .row {
     border-left: 10px solid #e24c5e;
     // border-left: 10px solid #e65e18;
 }
@@ -584,9 +589,12 @@ background-color: #5A6291;
 .title {
     color: rgba(255, 255, 255, .95);
     padding-right: 10px;
+    text-transform: capitalize;
 }
 
-
+.clientTicker {
+    text-transform: uppercase;
+}
 
 .actionsCol {
     -webkit-box-flex: 0!important;

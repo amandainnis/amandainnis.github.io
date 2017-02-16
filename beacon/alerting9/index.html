@@ -65,7 +65,7 @@
             </div>
 
             <i class="mdi mdi-menu"></i>
-            <span class="reset">Reset</span>
+            <span id="reset" class="lowOpacity">Clear filters</span>
             <input id="searchTicker" class="searchField" placeholder="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search'" value="">
 
             
@@ -144,10 +144,12 @@
             <div class="col">Message</div>
             <div class="col actionsCol">Actions</div>
         </div>
+        
+
         <div id="feed">
             <!-- end of row -->
-            <div class="alertRowNew">
-                <div class="row urgentMarker">
+            <div class="alertRowNew urgentMarker">
+                <div class="row">
                     <div class="col alertTimeCol"><span class="timerSinceAlert" id="timer1"></span></div>
                     
                     <div class="col messageCol"><span class="title">Price Limit</span>NINEPRPX2 - WAC (Sell) - Rejected Order Quantity: 100 - Mkt or Limit Price: 2.34 <i class="mdi mdi-emoticon-poop"></i></div>
@@ -158,8 +160,13 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew riskFeed">
-                <div class="row urgentMarker">
+           
+
+
+
+
+            <div class="alertRowNew urgentMarker">
+                <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">2:00pm</span></div>
                     
                     <div class="col messageCol"><span class="title">Order Quantity</span>PIMCOBG - IBM (Buy) - PendingNew Order Quantity: 2,000,000 - Last Shares: N/A</div>
@@ -170,8 +177,8 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew tradeFeed">
-                <div class="row urgentMarker">
+            <div class="alertRowNew urgentMarker">
+                <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">1:01pm</span></div>
                     
                     <div class="col messageCol"><span class="title">Aggregate Volume</span>IBCP Total Order Quantity: 9,753 - Day Vol: 7,354 - % Vol: 132.62</div>
@@ -182,8 +189,8 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew riskFeed">
-                <div class="row urgentMarker">
+            <div class="alertRowNew urgentMarker">
+                <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">12:01pm</span></div>
                    
                     
@@ -195,7 +202,7 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew tradeFeed">
+            <div class="alertRowNew urgentMarker">
                 <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">11:01am</span></div>
                     
@@ -208,7 +215,7 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew">
+            <div class="alertRowNew urgentMarker">
                 <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
                     
@@ -221,7 +228,7 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew riskFeed">
+            <div class="alertRowNew urgentMarker">
                 <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
                     
@@ -234,7 +241,7 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew tradeFeed">
+            <div class="alertRowNew urgentMarker">
                 <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
                    
@@ -247,7 +254,7 @@
                 </div>
             </div>
             <!-- end alertRowNew -->
-            <div class="alertRowNew riskFeed">
+            <!-- <div class="alertRowNew riskFeed">
                 <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
                     
@@ -258,9 +265,9 @@
                         <i class="mdi mdi-check"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- end alertRowNew -->
-            <div class="alertRowNew tradeFeed">
+            <!-- <div class="alertRowNew tradeFeed">
                 <div class="row">
                     <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
                     
@@ -271,7 +278,7 @@
                         <i class="mdi mdi-check"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- end alertRowNew -->
         </div>
         <!-- end of feed -->
