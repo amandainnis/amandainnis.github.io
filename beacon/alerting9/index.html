@@ -4,44 +4,39 @@
 <head>
     <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
     <link rel="stylesheet" type="text/css" href="style2.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="jquery-ui.css" /> -->
     <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <!-- <script type="text/javascript" src="jquery-ui.js"></script> -->
     <script type="text/javascript" src="alert1.js"></script>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 </head>
 
 <body>
     <div class="buttonsToFlipSides">
-        
-       <!--  <span class="buttonSections">WRAPPER COLOR</span>
-        <div id="aVersion" class="flipSideButton1 selectedSide">Darker</div>
-        <div id="bVersion" class="flipSideButton1">Lighter</div>
-        
+        <span class="buttonSections">NEW ALERT</span>
+        <div id="aVersion" class="flipSideButton1">New Alert</div>
+        <!-- <br>
         <br>
-        <br>
-        <span class="buttonSections">MONO RED SCHEMES</span>
-        <div id="dVersion" class="flipSideButton2">Red 2</div>
-        <div id="kVersion" class="flipSideButton2 selectedSide">Red 4</div>
-        <div id="hVersion" class="flipSideButton2">orange</div>
+        <span class="buttonSections">BORDER</span>
+        <div id="dVersion" class="flipSideButton2  selectedSide">None</div>
+        <div id="kVersion" class="flipSideButton2">borders1</div>
+        <div id="hVersion" class="flipSideButton2">borders2</div> -->
+        <!-- <div id="hVersion" class="flipSideButton2">orange</div>
         <div id="jVersion" class="flipSideButton2">Red3mono</div>
        
        <br>
         <br>
         <span class="buttonSections">GRADATION RED SCHEMES</span>
         <div id="cVersion" class="flipSideButton2">Red 1</div>
-        <div id="eVersion" class="flipSideButton2">Red 3</div>
+        <div id="eVersion" class="flipSideButton2">Red 3</div> -->
         <br>
-        <br> -->
+        <br>
         <span class="buttonSections">MISC</span>
         <div id="iVersion" class="flipSideButton4">Toasts</div>
-        
-
-        
-        
-        
         <!-- <div id="alternateView" class="flipSideButton">Alternate</div> -->
     </div>
-    <div id="wrapper">
+    <div id="wrapper" >
         <div class="topHeader">
             <div class="logo"></div>
             <span class="beaconLogoText">Beacon Alerting</span></div>
@@ -55,21 +50,14 @@
                
 
                 </span>
-
-
-
-
-                <div class= "upNumSurround"><div id="totalSummary2" class="upperNumDisplay total"></div>
-                <!-- <div id="urgentSummary2" class="upperNumDisplay urgText"></div> -->
+                <div class="upNumSurround">
+                    <div id="totalSummary2" class="upperNumDisplay total"></div>
+                    <!-- <div id="urgentSummary2" class="upperNumDisplay urgText"></div> -->
                 </div>
             </div>
-
             <i class="mdi mdi-menu"></i>
             <span id="reset" class="lowOpacity">Clear filters</span>
             <input id="searchTicker" class="searchField" placeholder="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search'" value="">
-
-            
-            
         </div>
         <!-- end of alert header -->
         <!-- begin cockpit -->
@@ -84,7 +72,7 @@
                     <div id="urgentSummary" class="typeRowAlerts"></div>
                 </div> -->
                 <div id="riskSummaryBox" class="typeRow">
-                    <span class="typeRowTitle">Risk</span>
+                    <span class="typeRowTitle">Revenu</span>
                     <div id="riskSummary" class="typeRowAlerts">41</div>
                 </div>
                 <div id="tradeSummaryBox" class="typeRow">
@@ -121,7 +109,6 @@
                 <div id="tickerZone">
                 </div>
                 <!-- end of tickerzon -->
-
             </div>
             <!-- end of stockpit -->
             <div id="clientpit">
@@ -135,184 +122,105 @@
             
             <i class="mdi mdi-arrow-expand"></i>
        </div>
- -->
-       
-        <div class="row columnHeader">
+ -->    
+        <div id="allFeed">
+        <i id="resizeButton" class="mdi mdi-drag-horizontal"></i>
+            <div class="row columnHeader">
             <div class="col alertTimeCol">Time</div>
-           
-            
             <div class="col">Message</div>
             <div class="col actionsCol">Actions</div>
         </div>
-        
-
         <div id="feed">
             <!-- end of row -->
-            <div class="alertRowNew urgentMarker">
+           <!--  <div id="14:01:34" class="alertRowNew urgentMarker">
                 <div class="row">
-                    <div class="col alertTimeCol"><span class="timerSinceAlert" id="timer1"></span></div>
-                    
-                    <div class="col messageCol"><span class="title">Price Limit</span>NINEPRPX2 - WAC (Sell) - Rejected Order Quantity: 100 - Mkt or Limit Price: 2.34 <i class="mdi mdi-emoticon-poop"></i></div>
+                    <div class="col alertTimeCol"><span class="timeOfAlert">14:01:34</span></div>
+                    <div class="col messageCol"><span class="title">Price Limit</span>NINEPRPX2 - <span class="stockSpan">WAC</span> (Sell) - Rejected Order Quantity: 100 - Mkt or Limit Price: 2.34 <i class="mdi mdi-emoticon-poop"></i></div>
                     <div class="col actionsCol">
                         <div class="gip">GIP</div>
                         <i class="mdi mdi-check"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- end alertRowNew -->
-           
-
-
-
-
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">2:00pm</span></div>
-                    
-                    <div class="col messageCol"><span class="title">Order Quantity</span>PIMCOBG - IBM (Buy) - PendingNew Order Quantity: 2,000,000 - Last Shares: N/A</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">1:01pm</span></div>
-                    
-                    <div class="col messageCol"><span class="title">Aggregate Volume</span>IBCP Total Order Quantity: 9,753 - Day Vol: 7,354 - % Vol: 132.62</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">12:01pm</span></div>
-                   
-                    
-                    <div class="col messageCol"><span class="title">Order Notional</span>CARMIGX - CX (Buy) - PartiallyFilled Order Quantity: 1,618,520 -Total Notional: 13,433,716</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">11:01am</span></div>
-                    
-                    
-                    <div class="col messageCol"><span class="title">Order Reject</span>MILLXWQK - REGN (Buy) Order Quantity: 300 - Reject Count: 6</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
-                    
             
-                    <div class="col messageCol"><span class="title">Price Limit</span>NINEPRPX2 - WAC (Sell) - Rejected Order Quantity: 100 - Mkt or Limit Price: 2.34</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
-                    
-                    
-                    <div class="col messageCol"><span class="title">Order Quantity</span>PIMCOBG - IBM (Buy) - PendingNew Order Quantity: 2,000,000 - Last Shares: N/A</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <div class="alertRowNew urgentMarker">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
-                   
-                   
-                    <div class="col messageCol"><span class="title">Aggregate Volume</span>IBCP Total Order Quantity: 9,753 - Day Vol: 7,354 - % Vol: 132.62</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div>
-            <!-- end alertRowNew -->
-            <!-- <div class="alertRowNew riskFeed">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
-                    
-
-                    <div class="col messageCol"><span class="title">Order Notional</span>CARMIGX - CX (Buy) - PartiallyFilled Order Quantity: 1,618,520 -Total Notional: 13,433,716</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div> -->
-            <!-- end alertRowNew -->
-            <!-- <div class="alertRowNew tradeFeed">
-                <div class="row">
-                    <div class="col alertTimeCol"><span class="timeOfAlert">2:01pm</span></div>
-                    
-                    
-                    <div class="col messageCol"><span class="title">Order Reject</span>MILLXWQK - REGN (Buy) Order Quantity: 300 - Reject Count: 6</div>
-                    <div class="col actionsCol">
-                        <div class="gip">GIP</div>
-                        <i class="mdi mdi-check"></i>
-                    </div>
-                </div>
-            </div> -->
-            <!-- end alertRowNew -->
+            
+            
+            
+            
+            
+         
         </div>
         <!-- end of feed -->
+            
+        </div>
+        
+        <div class="toast urgent sticky">
+          <!--   <i class="mdi mdi-bell-outline"></i> -->
+            <i class="mdi mdi-close"></i>
+            <span class="logoBell"><img src="alertingBell.png"/></span>
+            <div class="toastMsgWrapper">
+                <div class="toastTitle"> Order Reject</div>
+                <div class="toastMsg">MILLXWQK - REGN (Buy) Order Quantity: 300 - Reject Count: 6</div>
+                <div class="toastMoreInfo">
+                    <span class="timeOfAlert">14:01:33</span>
+                </div>
+            </div>
+            
+            <div class="actionsToast">
+                <div class="gip">GIP</div>
+                <i class="mdi mdi-check"></i>
+            </div>
+        </div>
+        <div class="toast fade">
+           
+            <i class="mdi mdi-close"></i>
+            <!-- <i class="mdi mdi-bell"></i> -->
+            <span class="logoBell"><img src="alertingBell.png"/></span>
+             <div class="toastMsgWrapper">
+                <div class="toastTitle"> Order Reject</div>
+                <div class="toastMsg">MILLXWQK - REGN (Buy) Order Quantity: 300 - Reject Count: 6</div>
+                <div class="toastMoreInfo">
+                    <span class="timeOfAlert">14:01:33</span>
+                </div>
+            </div>
+            <div class="actionsToast">
+                <div class="gip">GIP</div>
+                <i class="mdi mdi-check"></i>
+            </div>
+        </div>
 
-        <div id="sticky" class="toast">
-             <i class="mdi mdi-close"></i>
-            <div class="toastTitle">Order Reject - Order reject count exceeds threshold </div>
+
+
+
+        <!-- <div class="toast urgent sticky2">
+            
+            <i class="mdi mdi-close"></i>
+            <div class="toastTitle">Order Reject</div>
             <div class="toastMsg">MILLXWQK - REGN (Buy) Order Quantity: 300 - Reject Count: 6</div>
             <div class="toastMoreInfo">
-                <span>Risk</span>
-                <span class="timerSinceAlert">2:44s</span><span class="timeOfAlert">2:01pm</span>
                 
+                <span class="timeOfAlert">14:01:33</span>
             </div>
             <div class="actionsToast">
-                    <i class="mdi mdi-information-variant"></i>
-                    <i class="mdi mdi-open-in-new"></i>
-                    <i class="mdi mdi-check"></i>
-                </div>
+                <div class="gip">GIP</div>
+                <i class="mdi mdi-check"></i>
+            </div>
         </div>
-        <div id= "fade" class="toast">
+        <div class="toast fade2">
+            
             <i class="mdi mdi-close"></i>
-            <div class="toastTitle">Title</div>
-            <div class="toastMsg">Message</div>
+            <div class="toastTitle">Order Reject</div>
+            <div class="toastMsg">MILLXWQK - REGN (Buy) Order Quantity: 300 - Reject Count: 6</div>
             <div class="toastMoreInfo">
-                <span>Risk</span>
-                <span class="timerSinceAlert">2:44s</span><span class="timeOfAlert">2:01pm</span>
                 
+                <span class="timeOfAlert">14:01:33</span>
             </div>
             <div class="actionsToast">
-                    <i class="mdi mdi-information-variant"></i>
-                    <i class="mdi mdi-open-in-new"></i>
-                    <i class="mdi mdi-check"></i>
-                </div>
-        </div>
+                <div class="gip">GIP</div>
+                <i class="mdi mdi-check"></i>
+            </div>
+        </div> -->
     </div>
     <!-- end of wrapper -->
 </body>

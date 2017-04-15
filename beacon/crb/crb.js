@@ -86,7 +86,7 @@ var myID;
 var controlPressed = false;
 var priceCostToggleBoolean = false;
 var priceCostToggleBooleanEmea = false;
-
+var pricerSideToggleBoolean = false;
 
 $(document).ready(function(){
 
@@ -105,6 +105,9 @@ $(document).ready(function(){
 
 
 	$('#wrapperRestrictions').hide();
+	$('#wrapperHistory').hide();
+
+	
 
 	// $('#priceCostToggle').on('click', function(){
 	// 	priceCostToggleBoolean = !priceCostToggleBoolean;
@@ -142,7 +145,31 @@ $(document).ready(function(){
 			 	textFlipCost('sell50', '.sellSection', .315, .361);}
 	})
 
+	var pricerBuySell;
+	$('#pricerSideToggleInput').on('click', function(){
+		pricerSideToggleBoolean = !pricerSideToggleBoolean;
+		if(pricerSideToggleBoolean){
+			pricerBuySell = "sell";
+			$('#pricerSideToggle span').removeClass('selectedSide');
+			$('#pricerSell').addClass('selectedSide');
+		}
+		else {
+			pricerBuySell = "buy";
+			$('#pricerSideToggle span').removeClass('selectedSide');
+			$('#pricerBuy').addClass('selectedSide');
+		}
+		console.log(pricerBuySell);
+	})
 
+	// $('#pricerToolSide').on('click', function(event){
+	// 	if($(this).val() == "Buy"){
+	// 		$(this).val("Sell");
+	// 	}
+		
+	// 	else{$(this).val("Buy")}
+		
+	// 	console.log($(this).val())
+	// })
 ///// EMEA  //////
 
 	$('#priceCostToggleInputEmea').on('click', function(){
@@ -197,14 +224,7 @@ $(document).ready(function(){
 		
 	});
 
-	$('#pricerTool .mdi-close').on('click', function(){
-		$('#pricerToolBackground').hide();
-		
-	});
-	$('#pricerToolEmea .mdi-close').on('click', function(){
-		$('#pricerToolBackgroundEmea').hide();
-		
-	});
+	
 
 
 	$('#sellSideVersion').on('click', function(){
@@ -518,7 +538,7 @@ $('#searchTicker').on('change', function(){
 
 
 
-$('#pricerToolTicker').on('keypress', function(){
+$('#pricerToolTicker, #pricerToolTickerEmea').on('keypress', function(){
 	var inputTick = $(this).val();
 	inputTick.toUpperCase();
 	console.log(inputTick);
@@ -544,26 +564,26 @@ $('#pricerToolTicker').on('keypress', function(){
 		// returnRestrictionColor(arr[i].classification);
 			var myString = arr[i].ticker;
 	       if (myString.charAt(0) == myInput || myString.charAt(0) == myInput.toLowerCase() ){
-	       	$('#pricerToolTickerMenu ul').append("<li class=" + returnRestrictionColor(arr[i].classification) + ">" + arr[i].ticker + "</li>");
+	       	$('#pricerToolTickerMenu ul, #pricerToolTickerMenuEmea ul').append("<li class=" + returnRestrictionColor(arr[i].classification) + ">" + arr[i].ticker + "</li>");
 	       	console.log(arr[i].ticker);
 	       	
 	       }  
 	     }};
 
      findATicker(stockListIOI, inputTick);
-     $('#pricerToolTickerMenu ul li').on('click', function(){
+     $('#pricerToolTickerMenu ul li, #pricerToolTickerMenuEmea ul li').on('click', function(){
 		var inputText = $(this).text();
 		console.log(this);
 		newClass = $(this).attr("class");
 		
-		$('#pricerToolTicker').val(inputText);
-		$('#pricerToolTicker').addClass(newClass);
-		$('#pricerToolTickerMenu ul li').hide();
+		$('#pricerToolTicker, #pricerToolTickerEmea').val(inputText);
+		$('#pricerToolTicker, #pricerToolTickerEmea').addClass(newClass);
+		$('#pricerToolTickerMenu ul li, #pricerToolTickerMenuEmea ul li').hide();
 	})
 
 
-     $('#pricerToolTickerMenu ul').on('mouseleave', function(){
-    	$('#pricerToolTickerMenu ul li').hide();
+     $('#pricerToolTickerMenu ul, #pricerToolTickerMenuEmea ul').on('mouseleave', function(){
+    	$('#pricerToolTickerMenu ul li, #pricerToolTickerMenuEmea ul li').hide();
     
     });
 	
@@ -577,14 +597,40 @@ $('#pricerToolTicker').on('keypress', function(){
 
 $('#pricerButton').on('click', function(){
 		$('#pricerToolBackground').hide();
+		$('#pricerToolTicker').val('');
+		$('#pricerToolQuantity').val('');
+		$('#pricerToolClient').val('');
 		
 	});
 
-$('#pricerButtonEmea').on('click', function(){
+$('#pricerToolTickerEmea').on('click', function(){
 		$('#pricerDrawer').show();
 		$('#pricerToolEmea').addClass('drawer');
 	});
 
+$('.qtyButtonEmea').on('click', function(){
+	$('#pricerToolTickerEmea').val('');
+	$('#pricerToolClientEmea').val('');
+	$('#pricerDrawer').hide();
+	$('#pricerToolEmea').removeClass('drawer');
+	$('#pricerToolBackgroundEmea').hide();
+})
+
+$('#pricerTool .mdi-close').on('click', function(){
+	$('#pricerToolBackground').hide();
+	$('#pricerToolTicker').val('');
+	$('#pricerToolQuantity').val('');
+	$('#pricerToolClient').val('');
+	
+});
+$('#pricerToolEmea .mdi-close').on('click', function(){
+	$('#pricerToolTickerEmea').val('');
+		$('#pricerToolClientEmea').val('');
+		$('#pricerDrawer').hide();
+		$('#pricerToolEmea').removeClass('drawer');
+		$('#pricerToolBackgroundEmea').hide();
+	
+});
 
 
     $(window).keydown(function(event){
@@ -637,15 +683,7 @@ $('#pricerButtonEmea').on('click', function(){
 
 
 
-$('#pricerToolSide').on('click', function(event){
-		if($(this).val() == "Buy"){
-			$(this).val("Sell");
-		}
-		
-		else{$(this).val("Buy")}
-		
-		console.log($(this).val())
-	})
+
 
 	
 	// function triggerDropDown(dropTitleID, titleOfUl)

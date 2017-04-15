@@ -1,0 +1,41 @@
+	* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+        body {background-image: url("paper_bw_1.png");
+            background-repeat: no-repeat;
+            background-size: 100%;}
+
+
+        nav div{
+        	width: 100px;
+        	height: 85px;
+        	float: left;
+        	background: #e58c34;
+        	margin: 10px;
+        	text-align: center;
+        	line-height: 80px;
+        }
+
+        div#pv {
+        	width: 200px;
+        	margin: 0 auto;
+        	clear: both;}
+
+        h1 {
+        	background-image: url("paper-vomit.gif");
+        	background-repeat: no-repeat;
+            background-size: 100%;
+            width: 2em;
+            display: block;
+            margin: 0 50px;
+        } 
+
+        #move ul {
+        	display: none;
+        }
+
+        #move:hover ul{
+        	display: block;
+        }

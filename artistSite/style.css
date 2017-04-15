@@ -1,0 +1,275 @@
+
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+
+     
+     h1,
+  h2,
+  nav {
+      font-family: 'Source Code Pro';
+      /*or Droid Sans*/
+      font-weight: 700;
+  }
+  
+  body {
+      font-size: 14px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #menu {
+      cursor: pointer;
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
+  }
+  
+  nav {
+      position: fixed;
+      background-color: white;
+      padding: 15px;
+      text-align: right;
+      font-size: 16px;
+      letter-spacing: 1px;
+      z-index: 2;
+      right: 15px;
+      top: 0px;
+      transition: .3s;
+      -webkit-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+      -moz-box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+      box-shadow: 3px 3px 10px -4px rgba(0,0,0,0.35);
+  }
+
+  #navBar .mdi-close {
+    cursor: pointer;
+  }
+  
+  a {
+      color: gray;
+      text-decoration: none;
+  }
+
+
+  ul {
+    padding-top: 5px;
+  }
+  li {
+    color: gray;
+    padding: 5px;
+  }
+  
+  li:hover, a:hover {
+      color: orange;
+      cursor: pointer;
+  }
+  
+  li:active, a:active {
+      color: black;
+  }
+  
+  p {
+      font-family: 'Inconsolata';
+      text-align: left;
+  }
+  /*these are tags*/
+  
+  #wrapper {
+      // padding-top: 3%;
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+     position: relative;
+  }
+
+  #nameMenu {
+    padding-bottom: 13px;
+      padding-top: 15px;
+      margin: 0 auto;
+      width: 100%;
+      border-bottom: 1px solid gray;
+   
+  }
+  
+  h1 {
+      text-align: left;
+      
+      font-size: 28px;
+      
+      
+  }
+  
+  #homepageimage {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 15px;
+      /*margin-left: 10em;*/
+  }
+  
+  .homePageImageHolder {
+      height: 85%;
+  }
+  
+  #homepageimage .homePageImageHolder img {
+      height: 100%;
+  }
+ 
+
+ .imageDetails {
+    line-height: 1.2em;
+    padding-top: 14px;
+    font-size: 14px;
+    
+ }
+ .imageFacts {
+  padding-left: 15px;
+  color: gray;
+ }
+  
+  div.row {
+      width: 80%;
+      margin-right: 5%;
+      /* margin-bottom: 4%;   rare to specify height!!!!!!!!*/
+      border: 1px black solid;
+  }
+  
+  div.row#row2,
+  div.row#row3 {
+      clear: both;
+  }
+  
+  div.thumbs {
+      width: 20%;
+      margin-right: 5%;
+      margin-bottom: 4%;
+      float: left;
+  }
+  
+  div.thumbs img {
+      width: 100%;
+  }
+  /*  div imag is 100% of the parent element */
+  
+  body#digital_background {
+      background-image: url("images/pattern_trial.gif");
+  }
+  
+  #statement_wrapper {
+      height: 100%;
+      /*border: 1px solid black;*/
+      padding: 2%;
+      margin: 0 auto;
+  }
+  
+  .statement_text {
+      font-family: 'Inconsolata';
+      text-align: left;
+      font-size: .9em;
+      line-height: 1.2em;
+  }
+  
+  #right_column {
+      float: left;
+      width: 50%;
+      padding-left: 10%;
+      /*height: 600px;*/
+      /*overflow: scroll;*/
+  }
+  
+  footer {
+      background-color: white;
+      color: #dcdcdc;
+      clear: both;
+      text-align: center;
+      padding: 5px;
+      margin-top: 40px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+      #wrapper {
+          width: 90%;
+      }
+      
+      .homePageImageHolder {
+          width: 90%;
+          height: auto;
+          
+      }
+      
+      #homepageimage .homePageImageHolder img {
+          width: 100%;
+          height: auto;
+      }
+      
+  }
+  
+  @media only screen and (max-width: 500px) {
+      // #wrapper {
+      //     width: 95%;
+      // }
+
+      h1 {
+      font-size: 24px;
+ 
+  }
+
+    #menu {
+      top: 9px;
+    }
+      .homePageImageHolder {
+          // margin: 0 auto;
+
+      }
+      
+  }

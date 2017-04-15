@@ -108,6 +108,7 @@ body {
 	width: 100%;
 	background-color: #0069CB;
 	height: 50px;
+    position: relative;
 }
 
 // .flex-grid {
@@ -124,23 +125,36 @@ body {
 	width: 218px;
     height: 25px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50px;
     display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.searchIcon {
+    height: 15px;
     position: relative;
-    top: 7px;
-    left: 10px;
+    left: 9px;
+    top: 6px;
 }
 
 .links {
 	display: inline-block;
-	margin-left: 30px;
+	// margin-left: 5px;
+    font-size: 13px;
 }
 
 .topNavLink {
-	color: white;
+	color: rgba(255, 255, 255, .5);
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 20px;
+    letter-spacing: .4px;
 }
+
+.topNavLink.selected {
+    color: white;
+} 
 
 .titleHeader {
 	width: 100%;
@@ -158,10 +172,10 @@ body {
 
 .titleHeaderListMenu {
 	display: inline-block;
-	font-size: 14px;
-	border: 1px #bcbcbc solid;
-	padding: 10px;
-	margin-left: 10px;
+    font-size: 13px;
+    border: 1px #bcbcbc solid;
+    padding: 10px;
+    margin-top: 14px;
 }
 
 .columnHeader {
@@ -185,7 +199,7 @@ body {
 .row .col {
   flex: 1;
   border-right: 1px aquamarine solid;
-  border-right: 1px rgba(0,0,0, .3) solid;
+  border-right: 1px rgba(0,0,0, .2) solid;
 }
 
 .row .col:last-child, .row.columnHeader .col {
@@ -199,6 +213,7 @@ body {
     flex: none!important;
     width: 50%;
 }
+
 
 .segmentCol {
     -webkit-box-flex: 0!important;
@@ -226,6 +241,7 @@ body {
 
 .col {
 	margin-left: 10px;
+    padding-right: 5px;
 	white-space: nowrap;  
     overflow: hidden; 
 	text-overflow: ellipsis;
@@ -237,6 +253,14 @@ body {
 	letter-spacing: .3px;
 	// font-size: 13px;
 }
+.nameCol, .headerNameCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 26%;
+}
+
 
 .compCol {}
 
@@ -252,7 +276,7 @@ body {
 }
 
 .timeElapsed {
-    padding-top: 4px;
+    padding-top: 5px;
     border-radius: 8px;
     font-size: 11px;
     font-weight: 500;

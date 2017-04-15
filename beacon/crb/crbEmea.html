@@ -18,7 +18,7 @@
         <br>
         <br>
         <span class="buttonSections">AMRS vs EMEA</span>
-        <div class="flipSideButton2"><a href='crb.html'>AMERS</a></div>
+        <div class="flipSideButton2"><a href='index.html'>AMERS</a></div>
         <div class="flipSideButton2 selectedSide"><a href='crbEmea.html'>EMEA</a></div>
     </div>
     <div id="wrapper">
@@ -32,14 +32,14 @@
                 <span id="History">History</span>
                 <span id="Restrictions">StockList</span>
             </div>
-            <div class="BBGRICtoggle">
-                <span class="priceCostToggleLabel">BBG</span>
+            <!-- <div class="BBGRICtoggle">
+                <span class="priceCostToggleLabel">RIC</span>
                 <label class="switch">
                     <input type="checkbox">
                     <div id="BBGRIC" class="slider round"></div>
                 </label>
-                <span class="priceCostToggleLabel">RIC</span>
-            </div>
+                <span class="priceCostToggleLabel">BBG</span>
+            </div> -->
 
             <div class="pricerToolButton">
                 <span class="pricerToolLabel">Pricer</span>
@@ -63,17 +63,17 @@
                     
                     <div class="pricerToolDetailsWrapper pricerTickerWrapperEmea">
                         <div class="pricerToolDetailsLabel">Symbol</div>
-                        <input id="pricerToolTicker" class="pricerToolInput" value="">
+                        <input id="pricerToolTickerEmea" class="pricerToolInput" value="">
                     </div>
-                    <div id="pricerToolTickerMenu">
+                    <div id="pricerToolTickerMenuEmea">
                         <ul></ul>
                     </div>
                    
-                    <div class="pricerToolDetailsWrapper pricerClientWrapper">
+                    <div class="pricerToolDetailsWrapper pricerClientWrapperEmea">
                         <div class="pricerToolDetailsLabel">Client (Optional)</div>
-                        <input id="pricerToolClient" class="pricerToolInput">
+                        <input id="pricerToolClientEmea" class="pricerToolInput">
                     </div>
-                    <div id="pricerButtonEmea">price</div>
+                   <!--  <div id="pricerButtonEmea">p</div> -->
                     <div id="pricerDrawer">
                         <div class="detailsWrapperDrawer clearfix">
                             <div class="col_leftDrawer">
@@ -91,8 +91,8 @@
                                 <div class="drawerLabel">QtyAvailTouch</div>
                             </div>
                             <div class="col_rightDrawer">
-                                <div class="qtyButtonEmea"><span class="NBBOsell">2,500,000</span></div> <span class="divider">/</span>
-                                <div class="qtyButtonEmea">  <span class="NBBObuy">2,600,000</span></div>
+                                <div id="qtyButtonEmeaSell" class="qtyButtonEmea"><span>2,500,000</span></div> <span class="divider">/</span>
+                                <div id="qtyButtonEmeaBuy" class="qtyButtonEmea">  <span>2,600,000</span></div>
                                 
                             </div>
                             
@@ -112,7 +112,7 @@
         <div class="tickerDetailsEmea">
             <div class="tickerDetailsWrapper tickerWrapperEmea">
                 <!-- <div class="tickerDetailsLabel">Symbol</div> -->
-                <div class="tickerEmea">BP.L</div>
+                <div class="tickerEmea">AAPL.OQ</div>
             </div>
             <div class="tickerDetailsWrapper sideWrapper">
                 <!-- <div class="tickerDetailsLabel">Side</div> -->
@@ -120,11 +120,11 @@
             </div>
             <div class="tickerDetailsWrapper quantityWrapper">
                 <div class="tickerDetailsLabel">Qty</div>
-                <div class="quantity">2,600,000</div>
+                <div class="quantity">2,634,102</div>
             </div>
             <div class="tickerDetailsWrapper NBBOwrapper">
                 <div class="tickerDetailsLabel">PBBO</div>
-                <div class="NBBO"><span class="NBBOsell">160.32</span> / <span class="NBBObuy">160.36</span></div>
+                <div class="NBBO"><span class="NBBOsell">160.32</span> / <span class="NBBObuy">160.33</span></div>
             </div>
             <div class="PBBOatQty"><span>500,000</span> / <span>600,000</span></div>
         </div>
@@ -132,14 +132,17 @@
         <div class="touchWrapper">
             <!-- <div class="spreadRow"> -->
                 <span class="qtyAvailLabel">QtyAvailTouch</span>
-                <span class="qtyAvail">2,500,000 / 2,600,000</span>
+                <span class="qtyAvail">2,500,000 / 2,634,102</span>
            <!--  </div> -->
         </div>
         <div id="spreadWrapperEmea" class="clearfix">
             <div id="row100" class="spreadRow selectedRow clearfix">
-                <span id="sell100" class="sellSection"><span class="spread1">160.325</span><span class="band"></span><span class="spread2">160.363</span></span>
-                <span class="quantitySection  buyGreen">2,600,000</span>
-                <span id="buy100" class="buySection selected"><span class="spread1">160.325</span><span class="band bandWhite"></span><span class="spread2">160.363</span></span>
+                <!-- <span id="sell100" class="sellSection"><span class="spread1">160.325</span><span class="band"></span><span class="spread2">160.363</span></span>
+                <span class="quantitySection  buyGreen">2,634,102</span> -->
+                <span id="sell100" class="sellSection"><span class="spread1">160.321</span></span>
+                <span class="quantitySection  buyGreen">2,634,102</span>
+                <!-- <span id="buy100" class="buySection selected"><span class="spread1">160.325</span><span class="band bandWhite"></span><span class="spread2">160.363</span></span> -->
+                <span id="buy100" class="buySection selected"><span class="spread1">160.331</span></span>
             </div>
             <div id="row200" class="spreadRow clearfix">
                 <span id="sell200" class="sellSection"><span class="spread1">160.335</span><span class="band"></span><span class="spread2">160.364</span></span>
@@ -222,20 +225,29 @@
                 <i id="popUpClose" class="mdi mdi-close"></i>
                 <div class="popUpInfo">
                     <div class="popUpClient">blackrock</div>
-                    <div class="popUpTicker">AAPL.OQ</div>
+                    <div class="popUpTicker">BP.L</div>
                     <span class="popUpSide textGreen">B</span>
-                    <span class="popUpQty">5,200,000</span>
+                    <!-- <span class="popUpQty">5,200,000</span> -->
                 </div>
                 <!-- end of popUpInfo -->
-                <div class="popUpRow clearfix">
-                    <div class="popUpText">Range: 160.01 to 160.05</div>
+                <div class="popUpRow clearfix editQtyPopup">
+                    <div class="popUpText">Edit quantity (optional)</div>
                 </div>
                 <!-- end of popup row1 -->
                 <div class="popUpRow clearfix">
                     <div class="popUpPriceSet">
-                        <!-- <span class="verticalLabel popUpPricerLabel">Pricer</span> -->
-                        <!-- <div class="spinner"><i class="mdi mdi-chevron-up"></i><i class="mdi mdi-chevron-down"></i></div> -->
-                        <input type="number" class="popUpPriceChoose" step="0.01" value="160.01">
+                        
+                        <input type="number" class="popUpPriceChoose" step="1" value="5200000">
+                    </div>
+                </div>
+                <div class="popUpRow clearfix editPricePopup">
+                    <div class="popUpText">Price: 160.33</div>
+                </div>
+                <!-- end of popup row1 -->
+                <div class="popUpRow clearfix">
+                    <div class="popUpPriceSet">
+                        
+                        <input type="number" class="popUpPriceChoose" step="0.01" value="160.33">
                     </div>
                 </div>
                 <!-- end of popup row2 -->
@@ -265,23 +277,33 @@
                         <label for="urgentRadio">Urgent</label>
                         <input id="notUrgentRadio" type="radio" name="urgency" value="notUrgent">
                         <label for="notUrgentRadio">Not urgent</label>
+                        </form>
                 </div>
                 <div class="popUp2menuRows">
-                    <div class="radioGroupLabel">Follow on</div>
-                    <input id="moreToCome" type="radio" name="followOn" value="moreToCome">
-                    <label for="moreToCome">More to come</label>
-                    <input id="noneRadio" type="radio" name="followOn" value="none">
-                    <label for="noneRadio">Done</label>
-                    <input id="noneRadio" type="radio" name="followOn" value="none">
-                    <label for="noneRadio">Don't know</label>
-                </div>
-                </form>
+                     <form>
+                        <div class="radioGroupLabel">Follow on</div>
+                        <input id="moreToCome" type="radio" name="followOn" value="moreToCome">
+                        <label for="moreToCome">More to come</label>
+                        <input id="noneRadio" type="radio" name="followOn" value="none">
+                        <label for="noneRadio">Done</label>
+                        <input id="noneRadio" type="radio" name="followOn" value="none">
+                        <label for="noneRadio">Don't know</label>
+                    </form>
+                    </div>
+                
                 <!-- end of popup row2 -->
                 <div id="doneButton" class="doneButton">complete</div>
             </div>
             <!-- end of popUp1 -->
         </div>
         <!-- end of popupbackground -->
+        <div id="wrapperHistory">
+            <div class="restrictionTopRow">
+                <!-- <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input> -->
+                <input id="searchTicker" class="searchField" placeholder="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search'" value="">
+            </div>
+        </div>
+        <!-- end of wrapper restrictions -->
         <div id="wrapperRestrictions">
             <div class="restrictionTopRow">
                 <!-- <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input> -->
