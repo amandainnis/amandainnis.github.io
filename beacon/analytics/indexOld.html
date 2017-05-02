@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="googleChart.js"></script>
+    <title>Beacon Analytics</title>
+   <!--  <meta name="language" content="English" /> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="topHeader">
+            <div class="logo"><i class="mdi mdi-chart-areaspline"></i></div>
+            <span class="beaconLogoText">Beacon Analytics</span>
+        </div>
+        <!-- <div id="chart_bar_me">
+        <div class="chart_bar_meHeader">
+            <span class="axisLabel">y-axis</span>
+            <span class="axisOption">Stock</span>
+            <span class="axisLabel">Rank</span>
+            <span class="axisOptionRank">Top 25</span>
+            <span class="axisLabel">x-axis</span>
+            <span class="axisOption">Adv$</span>
+            </div>
+            <div class="chart_bar_meWrapper">
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar1"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">GOOG</div>
+                    <div class="hzBar bar2"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AMZN</div>
+                    <div class="hzBar bar3"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar4"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar5"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar6"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar7"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar8"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar9"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar10"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar11"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar12"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar13"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar14"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar15"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar16"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar17"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar18"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar19"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar20"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar21"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar22"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar23"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar24"></div>
+                </div>
+                <div class="bar_me">
+                    <div class="barLabel">AAPL</div>
+                    <div class="hzBar bar25"></div>
+                </div>
+            </div> -->
+        <!-- end wrapper -->
+        <!--  </div> -->
+        <div class="chartWrapper">
+            <div class="chart_bar_meHeader">
+                <!-- <span class="axisLabel">y-axis</span> -->
+                <!-- <span class="axisOption">Stock</span> -->
+                <span class="barHeaderTitle">Stock by Adv Price</span>
+
+                <span class="axisLabel">Rank</span>
+                <span class="axisOptionRank">Top 40</span>
+                <span class="axisLabel">x-axis</span>
+                <span class="axisOption">Adv$</span>
+            </div>
+            <div id="chart_div3" style="height: 660px;">
+            </div>
+        </div>
+        <!-- <div id="chart_div" style="height: 340px;"></div> -->
+        <div id="chart_negative" style="height: 340px;"></div>
+        <div id="piechart"></div>
+        <div id="chart_div_line"></div>
+        <div class="appTrialColors">
+            <div class="square square1">1 bar green</div>
+            <div class="square square2">2 grid line</div>
+            <div class="square square3">3 pie blue</div>
+            <div class="square square4">4 eaeaea</div>
+            <div class="square square5">5 pie </div>
+            <div class="square square6">6 pie</div>
+            <div class="square square7">7 pie and bar</div>
+              <div class="square square13">13 multibar</div>
+            <div class="square square8">8 pie purple</div>
+            <div class="square square9">9 table text</div>
+            <div class="square square10">10  line yellow</div>
+            <div class="square square11">11 line light blue</div>
+            <div class="square square12">12 bar yellow</div>
+          
+            <div class="square square14">14 bar lite blu</div>
+            <div class="square square15">15</div>
+        </div>
+        <!-- <div id="debug"></div> -->
+        <div class="tableWrapper clearfix">
+            <div class="tableTopRow clearfix">
+                Per Asset Signals
+            </div>
+            <div class="rowAnalyticsFlex columnHeaders">
+                <div class="col tickerCol">Ticker</div>
+                <div class="col priceColUS">Price US</div>
+                <div class="col priceColMid">Price Mid Local</div>
+                <div class="col bookImbalanceCol">Book Imbalance</div>
+                <div class="col bookImbalanceCol2">Book Imbalance 1</div>
+                <div class="col bookImbalanceCol3">Book Imbalance 5</div>
+                <div class="col bookImbalanceCol4">Book Imbalance 20</div>
+                <div class="col medSpread">Med Spread</div>
+                <div class="col adv$">Adv$</div>
+                <div class="col advShares">advShares</div>
+                <div class="col volatility21">volatility21</div>
+                <div class="col earningUp">earningUp</div>
+            </div>
+            <div id="tableAnalytics">
+                <div class="rowAnalyticsFlex">
+                    <div class="col tickerCol">GOOG</div>
+                    <div class="col priceColUS">$160.01</div>
+                    <div class="col priceColMid">50.015</div>
+                    <div class="col bookImbalanceCol">0.124568908555678996</div>
+                    <div class="col bookImbalanceCol2">0.40894137334632510</div>
+                    <div class="col bookImbalanceCol3">0.35566990715331636</div>
+                    <div class="col bookImbalanceCol4">0.65226806066336530</div>
+                    <div class="col medSpread">12000000</div>
+                    <div class="col adv$">27,546,896</div>
+                    <div class="col advShares">3,123,567</div>
+                    <div class="col volatility21">17.74</div>
+                    <div class="col earningUp">2017-04-19</div>
+                </div>
+            </div>
+            <!-- end tableAnalytics -->
+        </div>
+        <!-- end table wrapper -->
+        <!-- <div id="piechart" style="width: 900px; height: 500px;"></div> -->
+        <!-- <div id="chart_div2"></div> -->
+        <!-- <div id="chart_div3"></div> -->
+    </div>
+    <!-- end wrapper -->
+</body>
+
+</html>

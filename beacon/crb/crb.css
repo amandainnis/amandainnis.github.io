@@ -1834,12 +1834,29 @@ li:hover {
 }
 
 
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #15152f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #40406b;
+}
+
+
+
+
 .rowHistoryFlex {
     width: 100%;
-    padding: 10px 0 5px 0px;
+    padding: 10px 0 8px 0px;
     // padding-top: 2px;
     display: flex;
-    border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
     align-items: center;
 }
 
@@ -1848,9 +1865,63 @@ li:hover {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: .1px;
-    border-right: 1px rgba(255, 255, 255, 0.2) solid;
+    // border-right: 1px rgba(255, 255, 255, 0.1) solid;
     font-weight: 400;
-   padding-left: 5px;
+   padding-right: 5px;
+   text-align: right;
+}
+
+.rowHistoryFlex.columnHeaders .col {
+    flex: 1;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: .1px;
+    // border-right: 1px rgba(255, 255, 255, 0.1) solid;
+    font-weight: 400;
+   padding-right: 7px;
+   text-align: right;
+}
+
+.rowHistoryFlex .col.timeCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+        width: 13%;
+   
+}
+
+.rowHistoryFlex .col.tickerCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 16%;
+    text-align: left;
+    padding-left: 10px;
+   
+}
+
+.rowHistoryFlex .col.priceCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 15%;
+    // text-align: left;
+    padding-left: 10px;
+   
+}
+
+.rowHistoryFlex .col.clientCol {
+    // -webkit-box-flex: 0!important;
+    // -webkit-flex: none!important;
+    // -ms-flex: none!important;
+    // flex: none!important;
+    // width: 15%;
+    text-align: left;
+    padding-left: 10px;
+   
 }
 
 .rowHistoryFlex .col.sideCol {
@@ -1865,14 +1936,179 @@ li:hover {
     // text-align: right;
 }
 
+// .rowHistoryFlex .col.qtyCol, .rowHistoryFlex .col.priceCol {
+//     text-align: right;
+// } 
+
 .rowHistoryFlex .col.tradedCol {
     -webkit-box-flex: 0!important;
     -webkit-flex: none!important;
     -ms-flex: none!important;
     flex: none!important;
-        width: 6%;
+        width: 8%;
 
+    // font-weight: 500;
+    // text-align: right;
+}
+
+.historyTopRow {
+    height: 38px;
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+    font-size: 15px;
+    padding-top: 8px;
+    letter-spacing: .4px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+.rowAnalyticsFlex {
+    width: 100%;
+    padding: 10px 0 8px 0px;
+    padding: 9px 5px 9px 5px;
+    // padding-top: 2px;
+    display: flex;
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+    align-items: center;
+    padding: 10px 5px 10px 5px;
+    border-bottom: 1px #4a4a7e solid;
+    border-bottom: 1px transparent solid;
+}
+
+.rowAnalyticsFlex:nth-child(odd) {
+    background-color: #2e366c;
+    background-color: #32325c;
+}
+
+.rowAnalyticsFlex .col {
+    flex: 1;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: .1px;
+    border-right: 1px rgba(255, 255, 255, 0.1) solid;
+    // border-right: 1px solid transparent;
+    font-weight: 400;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: right;
+    color: #7791f2;
+    color: #92a7f2;
+    color: #68d1dc;
+    color: #90a1c1;
+    color: #9cb2db;
+    // color: #4DD0E1;
+    // color: #4DB6AC;
+}
+
+// .tableWrapper {
+//  background-color: #1f1f41;
+// }
+.rowAnalyticsFlex.columnHeaders {
+    padding-right: 17px;
+}
+
+.rowAnalyticsFlex .col.tickerCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 7%;
+    width: 15%;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.rowAnalyticsFlex .col.priceColUS,
+.rowAnalyticsFlex .col.priceColMid {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 15%;
+}
+
+// .rowAnalyticsFlex .col.volatility21,
+// .rowAnalyticsFlex .col.medSpread {
+//     -webkit-box-flex: 0!important;
+//     -webkit-flex: none!important;
+//     -ms-flex: none!important;
+//     flex: none!important;
+//     width: 6%;
+// }
+
+.rowAnalyticsFlex .col.sideCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 6%;
+    color: #21e0c1;
     font-weight: 500;
     // text-align: right;
 }
 
+// .rowAnalyticsFlex .col.bookImbalanceCol, .rowAnalyticsFlex .col.bookImbalanceCol2, .rowAnalyticsFlex .col.bookImbalanceCol3, .rowAnalyticsFlex .col.bookImbalanceCol4 {
+//       color: rgba(255, 255, 255, 0.5);
+// } 
+.rowAnalyticsFlex .col.tradedCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 8%;
+}
+
+.col {
+    // margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tableTopRow {
+    height: 37px;
+    background-color: #32325c;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    font-size: 13px;
+    padding-top: 13px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+
+.tableWrapper {
+    margin: 40px 0;
+    clear: both;
+    background-color: #26264e;
+}
+
+#tableAnalytics {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.rowAnalyticsFlex.columnHeaders .col {
+    flex: 1;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    // color: #009688;
+    // color: #8293f3;
+    letter-spacing: .1px;
+    // border-right: 1px rgba(255, 255, 255, 0.1) solid;
+    font-weight: 400;
+    padding-right: 7px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.rowAnalyticsFlex.columnHeaders .col.tickerCol {
+    text-align: left;
+    text-transform: none;
+}

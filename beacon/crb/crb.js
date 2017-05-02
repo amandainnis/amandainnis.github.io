@@ -105,7 +105,7 @@ $(document).ready(function(){
 
 
 	$('#wrapperRestrictions').hide();
-	$('#wrapperHistory').hide();
+	// $('#wrapperHistory').hide();
 
 	
 

@@ -1,0 +1,782 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,300,300italic,400,400italic,500,500italic,600,700,700italic,900,900italic';
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+.clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+		}
+
+* {
+	box-sizing: border-box;	
+}
+
+			
+body {
+    font-size: 12px;
+    background-color: #1f1f41;
+    // background-color: #26264E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    padding: 0 30px;
+}
+
+.topHeader {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    // background-color: #26264E;
+    // border-bottom: 1px #364373 solid;
+}
+
+.logo {
+    display: inline-block;
+    // width: 12px;
+    // height: 12px;
+    // background-color: #0069CB;
+    border-radius: 50%;
+}
+
+.mdi-chart-areaspline {
+    color: #009688;
+    color: #4db6ac;
+    color: #56d9cc;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.beaconLogoText {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    top: -1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .7);
+    color: #009688;
+    color: #4db6ac;
+    color: #fdfefe;
+}
+
+.appTrialColors {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    clear: both;
+    // background-color: #26264E;
+    // border-bottom: 1px #364373 solid;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    background-color: #009688;
+    border: 1px solid transparent;
+}
+
+.square1 {
+    background-color: #009688;
+}
+
+.square2 {
+    background-color: #00BCD4;
+    background-color: #2d4088;
+}
+
+.square3 {
+    background-color: #0069cb;
+}
+
+.square4 {
+    background-color: #905de8;
+    background-color: #D1C4E9;
+    background-color: #b241e4;
+    background-color: #9b41e4;
+    background-color: #EAEAEA;
+}
+
+.square5 {
+    background-color: #B39DDB;
+    background-color: #D1C4E9;
+    background-color: #cdb8f2;
+}
+
+.square6 {
+    background-color: #8d00cb;
+    background-color: #a984ea;
+}
+
+.square7 {
+    
+    background-color: #905de8;
+}
+
+.square8 {
+    background-color: #B39DDB;
+    background-color: #8d00cb;
+}
+
+.square9 {
+    background-color: #9575CD;
+    background-color: #9cb2db;
+}
+
+.square10 {
+    background-color: #cddc39;
+}
+
+.square11 {
+    background-color: #03a9f4;
+}
+
+.square12 {
+    background-color: #697da2;
+    background-color: #b3c033;
+
+}
+
+.square13 {
+    background-color: #813afd;
+}
+
+
+
+
+.square14 {
+    background-color: #039be5;
+}
+
+.square15 {
+    background-color: #33c09b;
+        background-color: #56d9cc;
+}
+
+
+.chartWrapper,
+#chart_div,
+#chart_negative,
+#piechart,
+#chart_div_line,
+#chart_bar_me,
+#debug {
+    float: left;
+    width: 47%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    // border: 1px #364373 solid;
+}
+
+#debug {
+    color: aquamarine;
+    line-height: 20px;
+}
+
+#debug span {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#chart_bar_me {
+    background-color: #303052;
+    background-color: #26264E;
+    height: 460px;
+}
+
+.chart_bar_meHeader {
+    background-color: #303052;
+    background-color: #32325c;
+    height: 42px;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.axisLabel {
+    display: inline-block;
+    color: #878EB1;
+    padding: 6px;
+    margin-right: 3px;
+}
+
+.axisOption,
+.axisOptionRank {
+    display: inline-block;
+    padding: 6px;
+    margin-right: 20px;
+    border: 1px #55558a solid;
+    width: 100px;
+    font-size: 11px;
+}
+
+.barHeaderTitle{
+    display: inline-block;
+    padding: 6px;
+    margin-right: 20px;
+    // border: 1px #55558a solid;
+    // width: 100px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+
+
+.axisOptionRank {
+    width: 70px;
+}
+
+.chart_bar_meWrapper {
+    // margin-left: 80px;
+    padding-top: 20px;
+    // padding-right: 20px;
+    margin: 0 5% 0 10%;
+}
+
+.bar_me {
+    width: 100%;
+    height: 12px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.barLabel {
+    position: absolute;
+    left: -48px;
+    top: 1px;
+    color: #eaeaea;
+    font-size: 10px;
+    text-align: right;
+    // background-color: yellow;
+    width: 40px;
+    transition: .3s;
+    color: #878EB1;
+}
+
+
+#chart_div2 {
+    background-color: black;
+    margin-top: 40px;
+    width: 500px;
+    height: 300px;
+}
+
+.rowAnalyticsFlex {
+    width: 100%;
+    padding: 10px 0 8px 0px;
+    padding: 9px 5px 9px 5px;
+    // padding-top: 2px;
+    display: flex;
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+    align-items: center;
+    padding: 10px 5px 10px 5px;
+    border-bottom: 1px #4a4a7e solid;
+    border-bottom: 1px transparent solid;
+}
+
+.rowAnalyticsFlex:nth-child(odd) {
+    background-color: #2e366c;
+    background-color: #32325c;
+}
+
+.rowAnalyticsFlex .col {
+    flex: 1;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: .1px;
+    border-right: 1px rgba(255, 255, 255, 0.1) solid;
+    border-right: 1px solid transparent;
+    font-weight: 400;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: right;
+    color: #7791f2;
+    color: #92a7f2;
+    color: #68d1dc;
+    color: #90a1c1;
+    color: #9cb2db;
+    // color: #4DD0E1;
+    // color: #4DB6AC;
+}
+
+// .tableWrapper {
+// 	background-color: #1f1f41;
+// }
+.rowAnalyticsFlex.columnHeaders {
+    padding-right: 15px;
+}
+
+.rowAnalyticsFlex .col.tickerCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 7%;
+    width: 6%;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.rowAnalyticsFlex .col.priceColUS,
+.rowAnalyticsFlex .col.priceColMid {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 6%;
+}
+
+.rowAnalyticsFlex .col.volatility21,
+.rowAnalyticsFlex .col.medSpread {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 6%;
+}
+
+.rowAnalyticsFlex .col.sideCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 6%;
+    color: #21e0c1;
+    font-weight: 500;
+    // text-align: right;
+}
+
+// .rowAnalyticsFlex .col.bookImbalanceCol, .rowAnalyticsFlex .col.bookImbalanceCol2, .rowAnalyticsFlex .col.bookImbalanceCol3, .rowAnalyticsFlex .col.bookImbalanceCol4 {
+//       color: rgba(255, 255, 255, 0.5);
+// } 
+.rowAnalyticsFlex .col.tradedCol {
+    -webkit-box-flex: 0!important;
+    -webkit-flex: none!important;
+    -ms-flex: none!important;
+    flex: none!important;
+    width: 8%;
+}
+
+.col {
+    // margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tableTopRow {
+    height: 37px;
+    background-color: #32325c;
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    font-size: 13px;
+    padding-top: 13px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+
+.tableWrapper {
+    margin: 40px 0;
+    clear: both;
+    background-color: #26264e;
+}
+
+#tableAnalytics {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.rowAnalyticsFlex.columnHeaders .col {
+    flex: 1;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    // color: #009688;
+    // color: #8293f3;
+    letter-spacing: .1px;
+    // border-right: 1px rgba(255, 255, 255, 0.1) solid;
+    font-weight: 400;
+    padding-right: 7px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.rowAnalyticsFlex.columnHeaders .col.tickerCol {
+    text-align: left;
+    text-transform: none;
+}
+
+
+/*  /////////  scrollbar  /////////////  */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #15152f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #40406b;
+}
+
+
+div.google-visualization-tooltip {
+    background-color: #3e3e6a;
+    border: 1px solid #55558a !important;
+    width: 150px;
+    font-size: 10px !important;
+    box-shadow: 7px 7px 5px 0px rgba(31, 31, 65, 0.75) !important;
+}
+
+div.google-visualization-tooltip ul li span {
+    color: white !important;
+    font-weight: 400 !important;
+}
+
+
+/*  //////////////////////// */
+
+#myPie1, #myPie2, #myPie3 {
+	width: 48%;
+	float: left;
+	padding-top: 20px;
+	    height: 249px;
+	position: relative;
+	    background-color: #26264e;
+}
+
+.pie {
+		position:absolute;
+		width:100px;
+		height:200px;
+		overflow:hidden;
+		left:150px;
+		-moz-transform-origin:left center;
+		-ms-transform-origin:left center;
+		-o-transform-origin:left center;
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+	}
+/*
+  unless the piece represents more than 50% of the whole chart.
+  then make it a square, and ensure the transform origin is
+  back in the center.
+
+  NOTE: since this is only ever a single piece, you could
+  move this to a piece specific rule and remove the extra class
+*/
+	.pie.big {
+		width:200px;
+		height:200px;
+		left:50px;
+		-moz-transform-origin:center center;
+		-ms-transform-origin:center center;
+		-o-transform-origin:center center;
+		-webkit-transform-origin:center center;
+		transform-origin:center center;
+	}
+/*
+  this is the actual visible part of the pie. 
+  Give it the same dimensions as the regular piece.
+  Use border radius make it a half circle.
+  move transform origin to the middle of the right side.
+  Push it out to the left of the containing box.
+*/
+	.pie:BEFORE {
+		content:"";
+		position:absolute;
+		width:100px;
+		height:200px;
+		left:-100px;
+		border-radius:100px 0 0 100px;
+		-moz-transform-origin:right center;
+		-ms-transform-origin:right center;
+		-o-transform-origin:right center;
+		-webkit-transform-origin:right center;
+		transform-origin:right center;
+		
+	}
+ /* if it's part of a big piece, bring it back into the square */
+	.pie.big:BEFORE {
+		left:0px;
+	}
+/* 
+  big pieces will also need a second semicircle, pointed in the
+  opposite direction to hide the first part behind.
+*/
+	.pie.big:AFTER {
+		content:"";
+		position:absolute;
+		width:100px;
+		height:200px;
+		left:100px;
+		border-radius:0 100px 100px 0;
+	}
+/*
+  add colour to each piece.
+*/
+	#myPie1 .pie:nth-of-type(1):BEFORE,
+	#myPie1 .pie:nth-of-type(1):AFTER {
+		background-color:#8d00cb;	
+	}
+	#myPie1 .pie:nth-of-type(2):AFTER,
+	#myPie1 .pie:nth-of-type(2):BEFORE {
+		background-color:#905de8;	
+		// background-color: #33c09b;
+	}
+	#myPie1 .pie:nth-of-type(3):AFTER,
+	#myPie1 .pie:nth-of-type(3):BEFORE {
+		background-color: #0069cb;	
+	}
+	#myPie1 .pie:nth-of-type(4):AFTER,
+	#myPie1 .pie:nth-of-type(4):BEFORE {
+		background-color:#a984ea;
+		 // background-color: #56d9cc;
+		 // background-color: #33c09b;	
+	}
+
+	#myPie1 .pie:nth-of-type(5):AFTER,
+	#myPie1 .pie:nth-of-type(5):BEFORE {
+		background-color:#cdb8f2;	
+	}
+
+/* */
+
+	#myPie2 .pie:nth-of-type(1):BEFORE,
+	#myPie2 .pie:nth-of-type(1):AFTER {
+		background-color:#8d00cb;
+		    background-color: #722fe8;	
+	}
+	#myPie2 .pie:nth-of-type(2):AFTER,
+	#myPie2 .pie:nth-of-type(2):BEFORE {
+		background-color:#905de8;
+		    background-color: #834ae8;	
+		// background-color: #33c09b;
+	}
+	#myPie2 .pie:nth-of-type(3):AFTER,
+	#myPie2 .pie:nth-of-type(3):BEFORE {
+		background-color: #0069cb;
+		    background-color: #9665ed;	
+	}
+	#myPie2 .pie:nth-of-type(4):AFTER,
+	#myPie2 .pie:nth-of-type(4):BEFORE {
+		background-color:#a984ea;
+		background-color: #a984ea;
+		 // background-color: #56d9cc;
+		 // background-color: #33c09b;	
+	}
+
+	#myPie2 .pie:nth-of-type(5):AFTER,
+	#myPie2 .pie:nth-of-type(5):BEFORE {
+		background-color:#cdb8f2;
+		    background-color: #bba0eb;	
+	}
+
+	/* */
+
+	#myPie3 .pie:nth-of-type(1):BEFORE,
+	#myPie3 .pie:nth-of-type(1):AFTER {
+		background-color:#8d00cb;
+		    background-color: #722fe8;
+
+	}
+	#myPie3 .pie:nth-of-type(2):AFTER,
+	#myPie3 .pie:nth-of-type(2):BEFORE {
+		background-color:#905de8;
+		    background-color: #834ae8;	
+		// background-color: #33c09b;
+	}
+	#myPie3 .pie:nth-of-type(3):AFTER,
+	#myPie3 .pie:nth-of-type(3):BEFORE {
+		background-color: #0069cb;
+		    background-color: #9665ed;	
+	}
+	#myPie3 .pie:nth-of-type(4):AFTER,
+	#myPie3 .pie:nth-of-type(4):BEFORE {
+		background-color:#a984ea;
+		background-color: #a984ea;
+		 // background-color: #56d9cc;
+		 // background-color: #33c09b;	
+	}
+
+	#myPie3 .pie:nth-of-type(5):AFTER,
+	#myPie3 .pie:nth-of-type(5):BEFORE {
+		background-color:#cdb8f2;
+		    background-color: #bba0eb;	
+	}
+/*
+  now rotate each piece based on their cumulative starting
+  position
+*/
+	.pie[data-start="30"]{
+		-moz-transform: rotate(30deg); /* Firefox */
+		-ms-transform: rotate(30deg); /* IE */
+		-webkit-transform: rotate(30deg); /* Safari and Chrome */
+		-o-transform: rotate(30deg); /* Opera */
+		transform:rotate(30deg);
+	}
+	.pie[data-start="60"]{
+		-moz-transform: rotate(60deg); /* Firefox */
+		-ms-transform: rotate(60deg); /* IE */
+		-webkit-transform: rotate(60deg); /* Safari and Chrome */
+		-o-transform: rotate(60deg); /* Opera */
+		transform:rotate(60deg);
+	}
+	.pie[data-start="100"]   {
+		-moz-transform: rotate(100deg); /* Firefox */
+		-ms-transform: rotate(100deg); /* IE */
+		-webkit-transform: rotate(100deg); /* Safari and Chrome */
+		-o-transform: rotate(100deg); /* Opera */
+		transform:rotate(100deg);
+	}
+
+	.pie[data-start="140"] {
+		-moz-transform: rotate(140deg); /* Firefox */
+		-ms-transform: rotate(140deg); /* IE */
+		-webkit-transform: rotate(140deg); /* Safari and Chrome */
+		-o-transform: rotate(140deg); /* Opera */
+		transform:rotate(140deg);
+	}
+
+.pie[data-start="31"] {
+		-moz-transform: rotate(31deg); /* Firefox */
+		-ms-transform: rotate(31deg); /* IE */
+		-webkit-transform: rotate(31deg); /* Safari and Chrome */
+		-o-transform: rotate(31deg); /* Opera */
+		transform:rotate(31deg);
+	}
+
+.pie[data-start="62"] {
+		-moz-transform: rotate(62deg); /* Firefox */
+		-ms-transform: rotate(62deg); /* IE */
+		-webkit-transform: rotate(62deg); /* Safari and Chrome */
+		-o-transform: rotate(62deg); /* Opera */
+		transform:rotate(62deg);
+	}
+
+.pie[data-start="103"] {
+		-moz-transform: rotate(103deg); /* Firefox */
+		-ms-transform: rotate(103deg); /* IE */
+		-webkit-transform: rotate(103deg); /* Safari and Chrome */
+		-o-transform: rotate(103deg); /* Opera */
+		transform:rotate(103deg);
+	}
+
+	.pie[data-start="144"] {
+		-moz-transform: rotate(144deg); /* Firefox */
+		-ms-transform: rotate(144deg); /* IE */
+		-webkit-transform: rotate(144deg); /* Safari and Chrome */
+		-o-transform: rotate(144deg); /* Opera */
+		transform:rotate(144deg);
+	}
+/*
+  and rotate the amount of the pie that's showing.
+
+  NOTE: add an extra degree to all but the final piece, 
+  to fill in unsightly gaps.
+*/
+	.pie[data-value="30"]:BEFORE {
+		-moz-transform: rotate(31deg); /* Firefox */
+		-ms-transform: rotate(31deg); /* IE */
+		-webkit-transform: rotate(31deg); /* Safari and Chrome */
+		-o-transform: rotate(31deg); /* Opera */
+		transform:rotate(31deg);
+		-moz-transform: rotate(30deg); /* Firefox */
+		-ms-transform: rotate(30deg); /* IE */
+		-webkit-transform: rotate(30deg); /* Safari and Chrome */
+		-o-transform: rotate(30deg); /* Opera */
+		transform:rotate(30deg);
+	}
+	.pie[data-value="40"]:BEFORE {
+		-moz-transform: rotate(41deg); /* Firefox */
+		-ms-transform: rotate(41deg); /* IE */
+		-webkit-transform: rotate(41deg); /* Safari and Chrome */
+		-o-transform: rotate(41deg); /* Opera */
+		transform:rotate(41deg);
+		-moz-transform: rotate(40deg); /* Firefox */
+		-ms-transform: rotate(40deg); /* IE */
+		-webkit-transform: rotate(40deg); /* Safari and Chrome */
+		-o-transform: rotate(40deg); /* Opera */
+		transform:rotate(40deg);
+	}
+	.pie[data-value="220"]:BEFORE {
+		-moz-transform: rotate(220deg); /* Firefox */
+		-ms-transform: rotate(220deg); /* IE */
+		-webkit-transform: rotate(220deg); /* Safari and Chrome */
+		-o-transform: rotate(220deg); /* Opera */
+		transform:rotate(220deg);
+	}
+
+	.pie[data-value="214"]:BEFORE {
+		-moz-transform: rotate(214deg); /* Firefox */
+		-ms-transform: rotate(214deg); /* IE */
+		-webkit-transform: rotate(214deg); /* Safari and Chrome */
+		-o-transform: rotate(214deg); /* Opera */
+		transform:rotate(214deg);
+	}
+/*
+NOTE: you could also apply custom classes (i.e. .s0 .v30)
+but if the CSS3 attr() function proposal ever gets implemented,
+then all the above custom piece rules could be replaced with
+the following:
+
+.pie[data-start] {
+   transform:rotate(attr(data-start,deg,0);
+}
+.pie[data-value]:BEFORE {
+   transform:rotate(attr(data-value,deg,0);
+}
+*/

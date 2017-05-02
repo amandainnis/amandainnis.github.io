@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="materialdesignicons.css">
+    <link rel="stylesheet" type="text/css" href="style3partial.css">
+   
+    <script type="text/javascript" src="jquery-2.2.4.js"></script>
+   
+    <script type="text/javascript" src="scriptProfile.js"></script>
+</head>
+<body>
+	<body>
+	    <!-- <div id="backgroundPrototype"> -->
+	        <div id="contactWrapper">
+	            <!-- <div class="bar">Contact Profile<i class="mdi mdi-close"></i></div> -->
+	            <div class="bar"><div class="profileNameText">Bobby Axelrod
+	            <i class="mdi mdi-information-variant"></i>
+
+	            </div>
+	            <!-- <i class="mdi mdi-dots-horizontal contactInfo"></i> -->
+	            <!-- <i class="mdi mdi-information-variant"></i> -->
+	            <!-- <i class="mdi mdi-account"></i> -->
+	            <!-- <span class="moreDetails">
+	            <i class="mdi mdi-arrow-bottom-left"></i> 
+	            details</span>
+	 -->
+	            <i class="mdi mdi-close"></i>
+
+
+	                <div class="companyTextBar">Axe Capital Investment Management, LLC</div>
+	               
+	               
+	                <div class="etlText">ETL Luke Bradford</div><span class="coverageText">Active</span><span class="segmentText">Gold</span>
+	                <div id="actionMenu">
+	                <i class="mdi mdi-dots-horizontal"></i>
+	               
+	                </div>
+	                <!-- end iconsProfile -->
+
+	            </div>
+	            
+	            <!-- <div class="profileBar">
+	                
+	          
+	            </div> -->
+	            <div id="actionButtonGroup">
+	                <div class="barMenu">
+	                    <i class="mdi mdi-close"></i>
+	                </div>
+	                <div class="actionMenuItem sendEmail">
+	                    <i class="mdi mdi-email"></i>
+	                </div>
+	                <div class="actionMenuItem sendIB">
+	                    <div class="ibChat"><img src="ib_chat_small.png"></div>
+	                </div>
+	                <div class="actionMenuItem" id="editContact2">
+	                    Edit Contact
+	                </div>
+	                <div class="actionMenuItem" id="eventCalendar">
+	                    Invite To Event
+	                </div>
+	                <div class="actionMenuItem" id="sendResearchButton">
+	                    Send Research</div>
+	                <div class="actionMenuItem" id="scheduleMeetingButton">
+	                    Schedule Mtg</div>
+	            </div>
+	            <div id="contactBizCard">
+	                <div class="barContact">
+	                    <i class="mdi mdi-pencil"></i>
+	                    <i class="mdi mdi-close"></i>
+	                </div>
+	                <div class="contactBizCardWrapper">
+	                    <div class="rowContactCard clearfix">
+	                        <div class="initialsWrapper">
+	                            <span class="initials">A</span>
+	                        </div>
+	                        <div class="profileWrapper">
+	                        
+	                            <div class="contactNameText">Bobby Axelrod</div>
+	                            <div class="contactCompanyText">Axe Capital Investment Management, LLC</div>
+	                        
+	                        
+	                            <div class="contactCompanyText">121 Madison Ave, New York, NY, 111111</div>
+	                        
+	                        </div>
+	                        
+	                            
+	                            
+	                    </div>
+
+
+	                    
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Work</div>
+	                        <div class="col infoCol">+1 212-867-5309</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Cell</div>
+	                        <div class="col infoCol">+1 917-867-5309</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Coverage</div>
+	                        <div class="col infoCol">Active</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">ETL</div>
+	                        <div class="col infoCol">Luke Bradford</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Segment</div>
+	                        <div class="col infoCol">Gold</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Email</div>
+	                        <div class="col infoCol">axelrod.robert@axecap.com</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Assistant</div>
+	                        <div class="col infoCol">Warren Buffett</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Assistant #</div>
+	                        <div class="col infoCol">+1 212-867-5309</div>
+	                    </div>
+	                    <div class="rowContactFlex">
+	                        <div class="col labelCol">Assistant @</div>
+	                        <div class="col infoCol">buffy.war@axecap.com</div>
+	                    </div>
+	                    <!-- <div class="rowInput clearfix">
+	                                <input class="enterSubject" placeholder="Enter Subject">
+	                        </div>   -->
+	                </div>
+	                <!-- end wrapper -->
+	            </div>
+	            <!-- end contact card -->
+	            <div class="callNotesBarParent">
+	                <div class="callNotesBar">
+	                    <span id="infoSectionTab" class="selected">Info</span><span id="callNotesTab">Call Notes</span>
+	                </div>
+	            </div>
+	            <div id="callNotesWrapper">
+	                <form>
+	                    <div class="rowInput clearfix">
+	                        <!-- <div class="inputWrapper"> -->
+	                        <div class="dropDownTextBox selectTitleTotal">
+	                            <span class="selectTitle">Outgoing Call</span><i class="mdi mdi-menu-down selectTitleChev"></i>
+	                        </div>
+	                        <ul id="selectMenu">
+	                            <li id="option1">Outgoing Call</li>
+	                            <li id="option2">Incoming Call</li>
+	                            <li id="option3">Voicemail</li>
+	                        </ul>
+	                        <div class="dropDownTextBox dateWithTriangle2">
+	                            <span id='date2'></span>
+	                            <i class="mdi mdi-calendar"></i>
+	                        </div>
+	                        <div id="fakeCalendar"></div>
+	                    </div>
+	                    <!-- end of divItsaRow -->
+	                    <div class="rowInput clearfix">
+	                        <input class="enterSubject" placeholder="Enter Subject">
+	                        <div class="dropDownTextBox durationTotal">
+	                            <span class="durationHour">Duration</span>
+	                            <i class="mdi mdi-clock"></i>
+	                            <!-- end of time div -->
+	                        </div>
+	                        <!-- end of duration -->
+	                    </div>
+	                    <!-- end of divItsaRow -->
+	                    <!-- <div class="rowInput clearfix">
+	                        <textarea class="textFieldWrapper" placeholder="Enter Call Notes"></textarea>
+	                    </div> -->
+	                    <!-- end of divItsaRow -->
+	                    <div class="rowInput clearfix">
+	                        <!-- <div class="outsideLabel">Notify</div> -->
+	                        <div class="inputWrapperChip clearfix">
+	                            <div class="labelSearch">
+	                                <div class="labelBesideChip">Attendees</div>
+	                                <img class="searchIcon" src="search.png">
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">Kat Nelson<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">Shane West<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">Steve Lonegan<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                        </div>
+	                        <!-- end of inputWrapper -->
+	                    </div>
+	                    <!-- end of divItsaRow -->
+	                    <div class="rowInput clearfix">
+	                        <!-- <div class="outsideLabel">Notify</div> -->
+	                        <div class="inputWrapperChip clearfix">
+	                            <div class="labelSearch">
+	                                <div class="labelBesideChip">Notify</div>
+	                                <img class="searchIcon" src="search.png">
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">Peter Shay<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">Anaelle Gamanho<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                        </div>
+	                        <!-- end of inputWrapper -->
+	                    </div>
+	                    <!-- end of divItsaRow -->
+	                    <div class="rowInput clearfix">
+	                        <!-- <div class="outsideLabel">Notify</div> -->
+	                        <div class="inputWrapperChip clearfix">
+	                            <div class="labelSearch">
+	                                <div class="labelBesideChip">Tickers</div>
+	                                <img class="searchIcon" src="search.png">
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">AMZN<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">AAPL<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                            <div class="emptyChipInput">
+	                                <div class="chip">BAC<i class="mdi mdi-close chipIcon"></i></div>
+	                            </div>
+	                        </div>
+	                        <!-- end of inputWrapper -->
+	                    </div>
+	                    <!-- end of divItsaRow -->
+	                    <div class="rowInput clearfix">
+	                        <i class="mdi mdi-plus"></i> Add notes
+	                    </div>
+	                </form>
+	            </div>
+	            <!-- end of callNotesWrapper -->
+	            <div id="infoWrapper">
+	                <div class="sectionBox readership">
+	                    <span class="sectionBoxTitle">Readership</span><i class="mdi mdi-chevron-right"></i>
+	                    <div class="textWrapper clearfix">
+	                        <span class="innerTextTitle"> HY Wire</span>
+	                        <br/>
+	                        <span class="innerTextSubtitle">Collateral Damage 1, A Recovery</span>
+	                        <br/>
+	                        <span class="innerTextThird">Contopoulos, George</span>
+	                        <br/>
+	                        <span class="innerTextBottom">Read 4 Days Ago</span>
+	                        <br/>
+	                    </div>
+	                    <!-- end of textWrapper -->
+	                </div>
+	                <!-- end of section readership -->
+	                <div class="sectionBox touchpoints">
+	                    <span class="sectionBoxTitle">Touchpoints</span><i class="mdi mdi-chevron-right"></i>
+	                    <div class="textWrapper clearfix">
+	                        <span class="innerTextTitle"> Jimmy McGill</span>
+	                        <br/>
+	                        <span class="innerTextSubtitle">Called Saul Goodwin</span>
+	                        <br/>
+	                        <span class="innerTextThird">Outgoing Call 00:05:11</span>
+	                        <br/>
+	                        <span class="innerTextBottom">Today</span>
+	                        <br/>
+	                    </div>
+	                    <!-- end of textWrapper -->
+	                </div>
+	                <!-- end of section touchpoints -->
+	                <div class="sectionBox securities">
+	                    <span class="sectionBoxTitle">Securities</span><i class="mdi mdi-chevron-right"></i>
+	                    <div class="textWrapper clearfix">
+	                        <span class="innerTextTitle"> GHJK HOAS PQSC MRTV</span>
+	                        <br/>
+	                        <!-- <span class="innerTextSubtitle">Collateral Damage 1, A Recovery</span> <br/>
+	                            <span class="innerTextThird">Contopoulos, George</span> <br/> -->
+	                        <span class="innerTextBottom">Last Updated 2 Days Ago</span>
+	                        <br/>
+	                    </div>
+	                    <!-- end of textWrapper -->
+	                </div>
+	                <!-- end of section securities -->
+	                <div class="sectionBox meetings">
+	                    <span class="sectionBoxTitle">Meetings</span><i class="mdi mdi-chevron-right"></i>
+	                    <div class="textWrapper clearfix">
+	                        <span class="innerTextTitle"> 2016 Consumer and Retail Tech Conference</span>
+	                        <br/>
+	                        <span class="innerTextSubtitle">New York</span>
+	                        <br/>
+	                        <span class="innerTextThird">14 Mar 2016</span>
+	                        <br/>
+	                        <span class="innerTextBottom"></span>
+	                        <br/>
+	                    </div>
+	                    <!-- end of textWrapper -->
+	                </div>
+	                <div class="rowInput clearfix">
+	                    <div class="textFieldWrapper">
+	                        <div class="outsideLabel">Personal Notes</div>
+	                        <input type="text" name="personal notes" value="He likes ham sandwiches and beer.  Loves the white sox.  Has a dog named Tino.">
+	                    </div>
+	                </div>
+	                <!-- end of section meetings -->
+	                <!--  <div class="notesBox clearfix">
+	                    <span id="sectionNotesTitle">Personal Notes</span>
+	                    <div id="notesWrapper">
+	                        <span class="notesText"> He likes ham sandwiches and beer.  Loves the white sox.  Has a dog named Tino.</span>
+	                    </div>
+	                
+	                </div> -->
+	                <!-- end of section notes -->
+	            </div>
+	            <div id="bottomBarCall">
+	                <div class="rowInput callingRow">
+	                    <div class="dropDownTextBox callNumber">
+	                        +1 212-867-5309
+	                        <i class="mdi mdi-menu-down"></i>
+	                    </div>
+	                    <div class="callButton">CALL</div>
+	                </div>
+	                <div id="afterCallPlaced" class="rowInput">
+	                    <div id="ulTitle" class="dropDownTextBox voiceDropTitle"><span>Default</span>
+	                        <i class="mdi mdi-menu-down"></i>
+	                    </div>
+	                    <i class="mdi mdi-microphone"></i>
+	                    <div class="dropDownTextBox emailDropTitle">
+	                        axelrod.robert@axecap.com
+	                        <i class="mdi mdi-menu-down"></i>
+	                    </div>
+	                </div>
+	                <ul class="voiceDropChoose">
+	                    <li id="mydefault">Default</li>
+	                    <li id="standard">Standard</li>
+	                    <li id="deluxe">Deluxe</li>
+	                    <li id="hypo">Hypo-Allergenic</li>
+	                </ul>
+	                <div class="rowInput">
+	                    <div class="contactButtonGroup">
+	                        <div class="contactButton lowOpacity">VOICEDROP</div>
+	                        <div class="contactButton lowOpacity">DROP EMAIL</div>
+	                        <div class="contactButton lowOpacity logNext">LOG & NEXT</div>
+	                    </div>
+	                </div>
+	            </div>
+	            <!-- <i id="callPhoneButton" class="mdi mdi-phone"></i> -->
+	            <div id="bottomBarEnd">
+	                <div class="rowInput callingRow">
+	                    <span class="counterText">05:13</span>
+	                    <div class="endCallButton">END CALL</div>
+	                </div>
+	                <!-- <div class="rowInput">
+	                    <div class="contactButtonGroup">
+	                        <div class="contactButton lowOpacity">VOICEDROP</div>
+	                        <div class="contactButton lowOpacity">DROP EMAIL</div>
+	                        <div class="contactButton logNext">LOG & NEXT</div>
+	                    </div>
+	                </div> -->
+	            </div>
+	        <!-- </div> -->
+	            <!-- end of contactWrapper -->
+
+</body>
+</html>

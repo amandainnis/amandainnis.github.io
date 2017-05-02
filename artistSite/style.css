@@ -128,7 +128,7 @@ table {
   #wrapper {
       // padding-top: 3%;
       width: 80%;
-      height: 100%;
+    
       margin: 0 auto;
      position: relative;
   }
@@ -150,18 +150,28 @@ table {
       
   }
   
-  #homepageimage {
+  .homepageimage {
       width: 100%;
       margin: 0 auto;
       padding-top: 15px;
       /*margin-left: 10em;*/
+  }
+
+
+  #recentWork {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .pageImage {
+    margin-top: 30px;
   }
   
   .homePageImageHolder {
       height: 85%;
   }
   
-  #homepageimage .homePageImageHolder img {
+  .homePageImageHolder img {
       height: 100%;
   }
  
@@ -247,7 +257,7 @@ table {
           
       }
       
-      #homepageimage .homePageImageHolder img {
+      .homepageimage .homePageImageHolder img {
           width: 100%;
           height: auto;
       }
