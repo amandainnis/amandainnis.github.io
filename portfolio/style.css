@@ -854,6 +854,18 @@ table {
         padding-bottom: 1em;
       
     }
+
+    h1 {
+        height: 2em;
+        font-family: 'Roboto';
+        font-weight: 100;
+        color: honeydew;
+        padding-top: 1.1em;
+        padding-bottom: .5em;
+        text-align: left;
+        font-size: 4em;
+        /*margin-left: 2.7em;*/
+    }
     
     #masttext {
         width: 90%;
@@ -933,7 +945,7 @@ table {
     #masthead {
         width: 100%;
         background-color: #1D91A2;
-        background-image: url("portfolio_duotone1sml5.png");
+        background-image: url("img/portfolio_duotone1sml5.png");
         background-repeat: no-repeat;
         background-size: 100%;
     }
