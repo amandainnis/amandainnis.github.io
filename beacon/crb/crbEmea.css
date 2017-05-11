@@ -86,6 +86,7 @@ body {
     cursor: pointer;
 }
 
+
 .flipSideButton2 {
     width: 81px;
     height: 33px;
@@ -100,7 +101,9 @@ body {
     cursor: pointer;
 }
 
-.flipSideButton2.selectedSide {
+
+.flipSideButton2.selectedSide
+  {
     background-color: #456270;
 }
 
@@ -111,12 +114,11 @@ body {
 }
 
 #wrapper {
-    height: 760px;
+   height: 760px; 
 }
 
 #wrapper,
-#wrapperRestrictions,
-#wrapperHistory {
+#wrapperRestrictions, #wrapperHistory {
     width: 600px;
     background-color: #26264E;
     overflow-y: hidden;
@@ -125,8 +127,7 @@ body {
     position: relative;
 }
 
-#wrapperRestrictions,
-#wrapperHistory {
+#wrapperRestrictions, #wrapperHistory {
     height: 675px;
     position: absolute;
     top: 76px;
@@ -144,6 +145,7 @@ body {
     height: 30px;
     padding: 6px;
     position: relative;
+   
 }
 
 .logo {
@@ -162,12 +164,12 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, .9);
 }
-
 .bar {
     width: 100%;
     height: 55px;
     border-top: 2px solid #364373;
     border-bottom: 2px solid #364373;
+   
 }
 
 .navigation {
@@ -199,6 +201,9 @@ body {
     top: 92px;
     left: 445px;
 }
+
+
+
 
 .pricerToolLabel {
     display: inline-block;
@@ -285,6 +290,8 @@ input:checked + .slider:before {
 }
 
 
+
+
 /* Rounded sliders */
 
 .slider.round {
@@ -297,8 +304,6 @@ input:checked + .slider:before {
 
 
 /* The slider */
-
-
 /* green background */
 
 #pricerSideToggle .slider {
@@ -316,7 +321,6 @@ input:checked + .slider:before {
 
 
 /* green button */
-
 #pricerSideToggle .slider:before {
     position: absolute;
     content: "";
@@ -327,21 +331,18 @@ input:checked + .slider:before {
     background-color: #c1c6e1;
     background-color: rgba(0, 150, 136, 1);
     background-color: rgb(2, 203, 184);
+    
     -webkit-transition: .4s;
     transition: .4s;
 }
 
-
 /* red button */
-
 #pricerSideToggle input:checked + .slider:before {
-    background-color: rgba(214, 88, 99, 1);
-    background-color: rgb(232, 82, 95);
+  background-color: rgba(214, 88, 99, 1);
+  background-color: rgb(232, 82, 95);
 }
-
-
+ 
 /* red background */
-
 #pricerSideToggle input:checked + .slider {
     background-color: #595982;
     background-color: rgba(214, 88, 99, .4);
@@ -365,6 +366,8 @@ input:checked + .slider:before {
 }
 
 
+
+
 /* Rounded sliders */
 
 #pricerSideToggle .slider.round {
@@ -374,6 +377,7 @@ input:checked + .slider:before {
 #pricerSideToggle .slider.round:before {
     border-radius: 50%;
 }
+
 
 .pricerSideToggleLabel {
     display: inline-block;
@@ -387,8 +391,8 @@ input:checked + .slider:before {
     color: rgba(255, 255, 255, 0.9);
 }
 
-#pricerIconButton,
-#pricerIconButtonEmea {
+
+#pricerIconButton, #pricerIconButtonEmea {
     background-color: #394ad1;
     width: 28px;
     height: 28px;
@@ -402,6 +406,7 @@ input:checked + .slider:before {
     transition: .4s;
     cursor: pointer;
 }
+
 
 #pricerTool {
     width: 600px;
@@ -470,7 +475,7 @@ input:checked + .slider:before {
 
 .pricerClientWrapperEmea {
     margin-left: 12px;
-    display: inline-block;
+    display: inline-block;   
 }
 
 #pricerToolSide,
@@ -492,8 +497,7 @@ input:checked + .slider:before {
     color: white;
 }
 
-#pricerToolSide,
-.pricerSideWrapper {
+#pricerToolSide, .pricerSideWrapper {
     min-width: 97px;
     max-width: 97px;
     position: relative;
@@ -506,12 +510,10 @@ input:checked + .slider:before {
     max-width: 98px;
 }
 
-#pricerToolClientEmea,
-#pricerToolTickerEmea {
+#pricerToolClientEmea, #pricerToolTickerEmea {
     min-width: 180px;
     max-width: 180px;
 }
-
 #pricerToolTickerEmea {
     text-transform: uppercase;
 }
@@ -521,6 +523,8 @@ input:checked + .slider:before {
     max-width: 80px;
     text-transform: uppercase;
 }
+
+
 
 #pricerToolOrderID {
     min-width: 177px;
@@ -579,10 +583,10 @@ input:checked + .slider:before {
     background-color: transparent;
     border: 1px solid #878fb0;
     cursor: pointer;
+ 
 }
 
-#pricerToolTickerMenu,
-#pricerToolTickerMenuEmea {
+#pricerToolTickerMenu, #pricerToolTickerMenuEmea {
     position: absolute;
     z-index: 5;
     width: 81px;
@@ -594,8 +598,7 @@ input:checked + .slider:before {
     -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-#pricerToolTickerMenu ul li,
-#pricerToolTickerMenuEmea ul li {
+#pricerToolTickerMenu ul li, #pricerToolTickerMenuEmea ul li {
     text-transform: uppercase;
 }
 
@@ -608,8 +611,9 @@ input:checked + .slider:before {
     display: inline-block;
 }
 
-.tickerDetailsLabel,
-.tickerDetailsLabel2 {
+
+
+.tickerDetailsLabel, .tickerDetailsLabel2  {
     color: #878EB1;
     font-size: 13px;
     position: absolute;
@@ -627,6 +631,7 @@ input:checked + .slider:before {
     margin-left: 19px;
 }
 
+
 .ticker {
     font-size: 34px;
     color: #FBFBFB;
@@ -638,6 +643,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 
+
 .sideWrapper {
     margin-left: 14px;
     min-width: 16px;
@@ -648,6 +654,7 @@ input:checked + .slider:before {
 .NBBO {
     font-size: 24px;
 }
+
 
 .side {
     color: #21E0C1;
@@ -665,34 +672,89 @@ input:checked + .slider:before {
     position: relative;
 }
 
-.NBBOwrapper {
+
+
+
+#spreadWrapperEmea {
+    width: 484px;
+    margin: 20px auto 20px auto;
+    padding-top: 11px;
+    padding-bottom: 21px;
+   
+}
+
+
+.tickerDetailsWrapperEmea {
+    display: inline-block;
+    position: relative;
+}
+
+.sideWrapperEmea {
+    margin-left: 10px;
+    min-width: 16px;
+}
+
+.PBBOwrapper {
     margin-left: 19px;
     min-width: 100px;
     margin-left: 14px;
+    position: relative;
 }
 
-.NBBO {
+.ADVwrapper {
+    min-width: 100px;
+    width: 30%;
+}
+
+.PBBOqtyWrapper {
+    width: 38%;
+}
+
+.advErv {
     font-weight: 300;
-    position: relative;
+    color: #707794;
+    font-size: 15px;
+   
+}
+
+.PBBO {
+    font-weight: 300;
     color: #707794;
 }
 
-.NBBOatQty {
-    position: absolute;
-    left: 397px;
-    top: 44px;
+
+
+
+.sideEmea {
+    color: #21E0C1;
+    position: relative;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .3s;
+    background-color: #364373;
+}
+
+
+.quantityEmea, .clientEmea {
+    color: #f4f4f6;
     font-weight: 300;
+    position: relative;
+}
+
+.quantityEmea,
+.clientEmea, .PBBO, .sideEmea {
+    font-size: 20px;
+}
+
+.PBBOatQty {
+    position: absolute;
+    left: 374px;
+    top: 70px;
     font-size: 16px;
     color: #707794;
 }
 
-#spreadWrapper {
-    width: 484px;
-    margin: 24px auto 13px auto;
-    border-bottom: 2px solid #364373;
-    border: 2px solid #364373;
-    padding-top: 11px;
-}
 
 .BBGRICtoggle {
     position: absolute;
@@ -700,11 +762,58 @@ input:checked + .slider:before {
     left: 376px;
 }
 
+.priceCostToggleEmea {
+    position: absolute;
+    top: 92px;
+    left: 445px;
+}
+
+.tickerDetailsEmea {
+    position: relative;
+    margin: 46px auto 0 auto;
+    width: 484px;
+    
+}
+
 .tickerClientWrapper {
     display: inline-block;
     padding-left: 9px;
     padding-top: 5px;
+
 }
+
+.tickerWrapperEmea {
+    height: 46px;
+    width: 141px;
+}
+
+.tickerEmea {
+    font-size: 26px;
+    color: #FBFBFB;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    top: 3px;
+    padding: 6px 5px;
+   
+}
+
+.touchWrapper {
+    width: 484px;
+    margin: 0px auto 0px auto;
+    border-bottom: 2px solid #364373;   
+
+}
+
+.touchRow1, .touchRow2 {
+    padding: 15px 15px;
+   
+}
+
+.touchRow2 {
+    border-top: 1px #364373 solid;
+}
+
 
 .qtyAvailLabel {
     display: inline-block;
@@ -721,13 +830,160 @@ input:checked + .slider:before {
     letter-spacing: .3px;
     color: rgba(255, 255, 255, 0.9);
     padding-bottom: 8px;
-    padding-left: 6px;
+    padding-left: 5px;
+    
 }
 
 .qtyAvail {
     display: inline-block;
     font-weight: 300;
     color: rgba(255, 255, 255, .9);
+    
+}
+
+
+.detailsWrapperDrawer {
+    margin-top: 20px;
+    margin-top: 37px;
+    width: 100%;
+   
+}
+
+.PBBOatQtyDrawer {
+    position: relative;
+    top: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #707794;
+}
+
+.betweenSpreadDataEmea {
+    width: 484px;
+    margin: 17px auto 0 auto;
+    padding: 15px 15px;
+    border: 2px #364373 solid;
+    border-bottom: none;
+    position: relative;
+}
+
+
+#pricerToolEmea {
+    width: 450px;
+    height: 198px;
+    padding-left: 33px;
+    background-color: #26264E;
+    border: 1px solid #26264E;
+    position: relative;
+    z-index: 4;
+    top: 55px;
+    left: 0;
+    padding-right: 33px;
+    height: 245px;
+    margin: 0 auto;
+}
+
+#pricerToolEmea.drawer {
+    height: 416px;
+}
+
+#pricerDrawer {
+    margin-top: 46px;
+    border-top: 2px #364373 solid;
+}
+
+.drawerLabel {
+    font-size: 14px;
+    color: rgba(255, 255, 255, .9);
+    font-weight: 300;
+}
+
+.PBBOdrawer {
+    font-size: 21px;
+    font-weight: 300;
+    color: #707794;
+}
+
+.col_leftDrawer {
+    width: 23%;
+    float: left;
+}
+
+.col_rightDrawer {
+    width: 69%;
+    float: right;
+    text-align: center;
+}
+
+#pricerToolEmea .mdi-close {
+    color: white;
+    color: rgba(255, 255, 255, 0.9);
+    float: right;
+    position: relative;
+    left: 23px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+#pricerButtonEmea {
+    width: 90px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+    margin-left: 68px;
+    letter-spacing: .4px;
+    background-color: transparent;
+    border: 1px solid #878fb0;
+    cursor: pointer;
+   
+}
+
+.qtyButtonEmea {
+    
+    color: white;
+    text-transform: uppercase;
+    
+    font-size: 17px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    padding: 13px;
+    border-radius: 8px;
+   
+    letter-spacing: .4px;
+    background-color: transparent;
+    border: 1px solid #878fb0;
+    cursor: pointer;
+   
+    transition: .3s;
+}
+
+#qtyButtonEmeaSell {
+    color: #FB7A78;
+}
+
+#qtyButtonEmeaSell:hover {
+    background-color: rgba(251, 122, 120, .9);
+    color: white;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+#qtyButtonEmeaBuy {
+    color: #21E0C1;
+}
+
+#qtyButtonEmeaBuy:hover {
+    background-color: rgba(9, 158, 144, 0.9);
+    color: white;
+    border: 1px solid transparent;
+    transition: .3s;
 }
 
 .divider {
@@ -736,6 +992,11 @@ input:checked + .slider:before {
     color: #707794;
 }
 
+
+#buySellPBBO {
+    display: inline-block;
+    padding-right: 5px;
+}
 .advPercentage {
     font-size: 17px;
     color: #5C5C7A;
@@ -747,6 +1008,30 @@ input:checked + .slider:before {
     float: left;
     padding: 10px 0px;
 }
+
+.quantitySectionEmea {
+    padding: 10px 15px 10px 0px;
+    background-color: #26264E;
+     cursor: pointer;
+     float: left;
+     font-size: 17px;
+    font-weight: 400;
+    color: #F9F9FD;
+    letter-spacing: .5px;
+    text-align: right;
+     width: 135px;
+    background-color: #36365c;
+}
+
+.bandEmea {
+    height: 2px;
+    background-color: #878fb0;
+    display: inline-block;
+    margin: 5px 10px;
+    width: 16px;
+}
+    
+
 
 #quantityInput2.quantityMiscEmea {
     font-size: 15px;
@@ -796,6 +1081,219 @@ input:checked + .slider:before {
     border: 1px #FB7A78 solid;
 }
 
+.buySellSectionEmea {
+    background-color: #26264E;
+    padding: 10px 0px 10px 33px;
+    cursor: pointer;
+    float: left;
+    font-size: 17px;
+    font-weight: 500;
+    color: #5C5C7A;
+    width: 205px !important;
+    text-align: left !important;
+    background-color: #36365c;
+}
+
+.quantitySectionEmea.selectedBuy,
+.buySellSectionEmea.selectedBuy {
+    background-color: rgba(9, 158, 144, 0.9);
+    color: #fbfbfb;
+    font-weight: 400;
+    transition: .4s ease-in;
+}
+
+.quantitySectionEmea.selectedSell,
+.buySellSectionEmea.selectedSell {
+    background-color: rgba(251, 122, 120, .8);
+    color: #fbfbfb;
+    font-weight: 400;
+    transition: .4s ease-in;
+}
+
+.miscBuySellEmea {
+    font-size: 17px;
+    font-weight: 500;
+    color: #5C5C7A;
+    text-align: left;
+    width: 205px;
+    display: inline-block;
+    padding: 10px 0px 10px 33px;
+    float: left;
+    background-color: #313d6b;
+        background-color: #36365c;
+}
+
+
+.IOIrow {
+    width: 100%;
+    padding: 8px 0 8px 15px;
+    padding: 15px 0 15px 15px;
+    border-bottom: 1px #364373 solid;
+}
+
+.IOIrow:last-child {
+    border-bottom: none;
+}
+
+.IOIfieldsWrapper {
+    width: 484px;
+    border: 2px solid #364373;
+    margin: 18px auto;
+    border-left: none;
+    border-right: none;
+}
+
+
+.colA_IOI{
+    width: 16%;
+    float: left;
+    font-size: 14px;
+}
+
+.colB_IOI,
+.colC_IOI,
+.colD_IOI {
+    
+    width: 28%;
+   
+    float: left;
+}
+
+
+
+.IOIdataField {
+    color: #EAEAEA;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .4px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.horizontalLabelEmea {
+    color: #878EB1;
+    font-size: 13px;
+}
+
+.IOIcolor {
+    color: #d2d060;
+    color: #e2e06f;
+}
+
+.pricerSideToggleEmea { 
+    position: absolute;
+    top: 92px;
+    left: 39px; 
+}
+
+
+
+.parametersInputEmeaDiv {
+    display: inline-block;
+}
+
+.parametersInputEmea {
+    width: 113px;
+    border: 1px transparent solid;
+    color: white;
+    padding-left: 10px;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: white;
+    background-color: #646485;
+    padding: 12px 0 12px 9px;
+    position: relative;
+}
+
+.parametersInputEmea:focus {
+    border: 1px #21e0c1 solid;
+}
+
+input[type="number"].parametersInputEmea::-webkit-outer-spin-button,
+input[type="number"].parametersInputEmea::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: url("spinner.png") no-repeat center center;
+    background-color: transparent;
+    width: 10px;
+    border-left: none;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    bottom: 0;
+}
+
+input[type="number"].parametersInputEmea::-webkit-inner-spin-button:hover,
+input[type="number"].parametersInputEmea::-webkit-inner-spin-button:active {
+    opacity: .8;
+}
+
+#parametersSaveButton {
+    width: 90px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    padding-top: 13px;
+    border-radius: 8px;
+    margin-left: 20px;
+    letter-spacing: .4px;
+    background-color: transparent;
+    border: 1px solid #878fb0;
+    cursor: pointer;
+}
+
+.parametersRow {
+    height: 38px;
+    color: rgba(255, 255, 255, .9);
+    font-size: 14px;
+    letter-spacing: .4px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.valuesLambda {
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+
+
+.parametersSaveDiv {
+    padding-left: 16px;
+    display: inline-block;
+}
+
+.sideToggleEmea {
+    cursor: pointer;
+
+}
+
+.horizontalInfoFieldEmea {
+    color: #EAEAEA;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: .4px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 .NBBOsell {
     color: #FB7A78;
 }
@@ -807,82 +1305,9 @@ input:checked + .slider:before {
 .spreadRow {
     width: 100%;
     margin-bottom: 12px;
+
 }
 
-.sellSection,
-.buySection,
-.quantitySection,
-.miscSell,
-.miscBuy {
-    background-color: #26264E;
-    padding: 10px 0px;
-    cursor: pointer;
-}
-
-.sellSection,
-.miscSell {
-    float: left;
-}
-
-.quantitySection,
-.quantityMisc {
-    float: left;
-}
-
-.buySection,
-.miscBuy {
-    float: left;
-}
-
-.sellSection,
-.buySection,
-.miscSell,
-.miscBuy {
-    font-size: 17px;
-    font-weight: 500;
-    color: #5C5C7A;
-    text-align: center;
-    width: 190px;
-}
-
-.quantitySection,
-.quantityMisc {
-    font-size: 17px;
-    font-weight: 400;
-    color: #F9F9FD;
-    letter-spacing: .5px;
-    text-align: right;
-    padding-right: 5px;
-    width: 100px;
-}
-
-.quantitySection.buyGreen {
-    background-color: rgba(9, 158, 144, 0.9);
-    color: #fbfbfb;
-    font-weight: 400;
-    transition: .4s ease-in;
-}
-
-.quantitySection.sellRed {
-    background-color: rgba(251, 122, 120, .9);
-    color: #fbfbfb;
-    font-weight: 400;
-    transition: .4s ease-in;
-}
-
-.buySection.selected {
-    background-color: rgba(9, 158, 144, 0.9);
-    color: #fbfbfb;
-    font-weight: 400;
-    transition: .4s ease-in;
-}
-
-.sellSection.selected {
-    background-color: rgba(251, 122, 120, .9);
-    color: #fbfbfb;
-    font-weight: 400;
-    transition: .4s ease-in;
-}
 
 .textGreen {
     color: #21E0C1;
@@ -896,6 +1321,7 @@ input:checked + .slider:before {
     margin: 5px 9px;
     width: 16px;
 }
+
 
 .bandWhite {
     background-color: #fbfbfb;
@@ -931,14 +1357,7 @@ input:checked + .slider:before {
     color: #F9F9FD;
 }
 
-.betweenSpreadData {
-    width: 484px;
-    margin: 17px auto 0 auto;
-    padding: 20px 15px;
-    border: 2px #364373 solid;
-    border-bottom: none;
-    position: relative;
-}
+
 
 .verticalLabel {
     color: #878EB1;
@@ -950,6 +1369,7 @@ input:checked + .slider:before {
     font-size: 13px;
 }
 
+
 .horizontalInfoField {
     color: #EAEAEA;
     font-weight: 300;
@@ -959,76 +1379,29 @@ input:checked + .slider:before {
     margin-left: 10px;
 }
 
-.dataFieldsWrapper {
-    width: 484px;
-    height: 115px;
-    border: 2px solid #364373;
-    margin: 0 auto;
-    padding: 10px 0 10px 15px;
-}
-
-.colA,
-.colB,
-.colC {
-    width: 31%;
-    float: left;
-}
-
-.colA,
-.colB {
-    margin-right: 15px;
-    border-right: 1px #364373 solid;
-}
-
-.dataRow {
-    width: 100%;
-    padding: 8px 0;
-}
-
-.horizontalDataField {
-    color: #EAEAEA;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: .4px;
-    display: inline-block;
-    margin-left: 5px;
-}
-
-#orderID {
-    position: relative;
-    transition: .9s ease-in;
-}
-
-#orderIDHover {
-    width: 160px;
-    height: 36px;
-    position: absolute;
-    top: -10px;
-    padding: 10px 5px;
-    z-index: 2;
-    background-color: #151536;
-    color: white;
-    transition: .9s ease-in;
-    display: none;
-}
 
 .clientLeft {
     float: left;
 }
 
-.expire {
-    float: right;
-}
 
 .white {
     color: white;
 }
 
-.bottomButtonRow {
-    /*margin: 31px auto 0;*/
-    margin: 23px auto 0 auto;
+
+.bottomButtonRowEmea {
+    margin: 59px 0 0 134px;
     width: 402px;
-    width: 239px;
+    position: absolute;
+    bottom: 46px;
+}
+    
+
+.expireEmea {
+    width: 135px;
+    display: inline-block;
+    margin-left: 14px;
 }
 
 .bottomButtons {
@@ -1079,10 +1452,10 @@ input:checked + .slider:before {
 
 .colorKeyParent {
     position: absolute;
-    /* top: -22px; */
     top: 9px;
     left: 180px;
 }
+
 
 #colorKey {
     display: inline-block;
@@ -1090,6 +1463,7 @@ input:checked + .slider:before {
     border-radius: 8px;
     cursor: pointer;
     transition: .3s;
+   
 }
 
 #colorKey:hover {
@@ -1097,8 +1471,7 @@ input:checked + .slider:before {
     transition: .3s;
 }
 
-.mdi-key-variant,
-.mdi-key {
+.mdi-key-variant, .mdi-key {
     color: #eaeaea;
     font-size: 17px;
 }
@@ -1146,6 +1519,7 @@ input:checked + .slider:before {
     height: 579px;
 }
 
+
 #tickerZone::-webkit-scrollbar {
     width: 12px;
 }
@@ -1169,6 +1543,7 @@ input:checked + .slider:before {
     padding: 12px;
     height: 36px;
     font-size: 15px;
+
 }
 
 .regular {
@@ -1200,6 +1575,8 @@ input:checked + .slider:before {
     text-transform: uppercase;
 }
 
+
+
 .searchField::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #535761;
@@ -1227,7 +1604,8 @@ input:checked + .slider:before {
 
 /*////////////// POP  POP  POP UP & DROP Down Section //////////////////////*/
 
-#pricerToolBackground,
+
+#pricerToolBackgroundEmea,
 #popUpBackground,
 #popUpBackground2 {
     width: 600px;
@@ -1238,6 +1616,7 @@ input:checked + .slider:before {
     background-color: rgba(0, 0, 0, .4);
 }
 
+#popUpBackground2 {display: none;}
 .dropdownMenuParent {
     position: relative;
 }
@@ -1260,10 +1639,12 @@ input:checked + .slider:before {
     left: 100px;
 }
 
-.executeTrade,
-.followExecuteTrade {
+
+.executeTrade, .followExecuteTrade {
     height: 429px;
 }
+
+
 
 .popUpInfo {
     width: 337px;
@@ -1299,6 +1680,7 @@ input:checked + .slider:before {
     font-weight: 300;
 }
 
+
 .popUp2menus {
     margin-top: 40px;
     margin-top: 48px;
@@ -1310,7 +1692,7 @@ input:checked + .slider:before {
 }
 
 .editQtyPopup {
-    margin-top: 30px;
+  margin-top: 30px;  
 }
 
 .editPricePopup {
@@ -1321,8 +1703,11 @@ input:checked + .slider:before {
     font-size: 15px;
     color: rgba(249, 249, 253, 0.54);
     letter-spacing: .4px;
+   
     font-weight: 300;
 }
+
+
 
 .popUpPriceSet {
     position: relative;
@@ -1423,11 +1808,11 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
 }
 
 .dropMenuCloseMissed {
-    margin-top: 50px;
+        margin-top: 50px;
 }
 
 .missedPopUp {
-    padding: 60px 33px 0 33px;
+        padding: 60px 33px 0 33px;
 }
 
 #popUpCloseRestrictions {
@@ -1441,7 +1826,10 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     cursor: pointer;
 }
 
+
+
 .popUpButton {
+    
     height: 40px;
     color: #36365c;
     text-transform: uppercase;
@@ -1491,6 +1879,10 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     z-index: 4;
 }
 
+
+
+
+
 .colorDot {
     width: 11px;
     height: 11px;
@@ -1498,6 +1890,8 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     float: right;
     border-radius: 50%;
 }
+
+
 
 #doneButton {
     width: 140px;
@@ -1536,12 +1930,17 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     margin-top: 20px;
 }
 
+
+
 .dropDownMenu2 {
     display: inline-block;
     width: 150px;
+  
     width: 200px;
+    
     cursor: pointer;
 }
+
 
 .dropLabel {
     color: #9ca2c1;
@@ -1565,6 +1964,8 @@ input[type="number"].popUpPriceChoose::-webkit-inner-spin-button:active {
     margin-right: 20px;
     color: rgba(249, 249, 253, 0.85);
 }
+ 
+
 
 input[type=radio] + label {
     color: #ccc;
@@ -1573,6 +1974,7 @@ input[type=radio] + label {
 input[type=radio]:checked + label {
     color: green;
 }
+
 
 input[type=radio]:checked + label:before {
     background-color: blue;
@@ -1669,6 +2071,7 @@ li:hover {
     margin-bottom: 27px;
 }
 
+
 #backgroundRestrictions {
     width: 600px;
     height: 760px;
@@ -1679,10 +2082,12 @@ li:hover {
     background-color: rgba(0, 0, 0, .4);
 }
 
-#popUpRestrictionsDropDown,
-#popUpMissedDropDown {
+
+
+#popUpRestrictionsDropDown, #popUpMissedDropDown {
     position: absolute;
     top: 64px;
+    
     z-index: 5;
     color: #cecfd4;
     width: 100%;
@@ -1693,6 +2098,10 @@ li:hover {
     -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
+
+
+
+
 #okButton {
     margin: 34px auto;
     color: white;
@@ -1701,6 +2110,8 @@ li:hover {
     cursor: pointer;
     width: 100px;
 }
+
+
 
 #popUpMarketDropDown {
     position: absolute;
@@ -1716,6 +2127,9 @@ li:hover {
     -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
+
+
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -1728,6 +2142,7 @@ li:hover {
     background-color: #40406b;
 }
 
+
 .emptyChipInput {
     display: inline-block;
     text-align: left;
@@ -1735,6 +2150,8 @@ li:hover {
     color: #9e9e9e;
     min-height: 20px;
 }
+
+
 
 .chipIcon.mdi-close {
     cursor: pointer;
@@ -1746,7 +2163,10 @@ li:hover {
     padding-left: 8px;
     color: white;
     font-size: 15px;
+    
 }
+
+
 
 .chip {
     display: inline-block;
@@ -1762,92 +2182,8 @@ li:hover {
     text-transform: uppercase;
 }
 
-.rowHistoryFlex {
-    width: 100%;
-    padding: 10px 0 8px 0px;
-    display: flex;
-    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
-    align-items: center;
-}
 
-.rowHistoryFlex .col {
-    flex: 1;
-    font-size: 13px;
-    letter-spacing: .1px;
-    color: rgb(156, 178, 219);
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 400;
-    padding-right: 5px;
-    text-align: right;
-    color: #878EB1;
-    color: #9ea5c7;
-}
 
-.rowHistoryFlex.columnHeaders .col {
-    flex: 1;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.4);
-    letter-spacing: .1px;
-    font-weight: 400;
-    padding-right: 7px;
-    text-align: right;
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.8);
-    /*color: #878EB1;*/
-}
-
-.rowHistoryFlex .col.timeCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 13%;
-}
-
-.rowHistoryFlex .col.tickerCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 16%;
-    text-align: left;
-    padding-left: 10px;
-    color: rgba(255, 255, 255, .9);
-}
-
-.rowHistoryFlex .col.priceCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 15%;
-    padding-left: 10px;
-}
-
-.rowHistoryFlex .col.clientCol {
-    text-align: left;
-    padding-left: 10px;
-}
-
-.rowHistoryFlex .col.sideCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 6%;
-    color: #21e0c1;
-    font-weight: 500;
-    /*// text-align: right;*/
-}
-
-.rowHistoryFlex .col.tradedCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 8%;
-    padding-right: 10px;
-}
 
 .historyTopRow {
     height: 27px;
@@ -1858,137 +2194,10 @@ li:hover {
     font-weight: 400;
 }
 
-.rowAnalyticsFlex {
-    width: 100%;
-    padding: 10px 0 8px 0px;
-    padding: 9px 5px 9px 5px;
-    display: flex;
-    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
-    align-items: center;
-    padding: 10px 5px 10px 5px;
-    border-bottom: 1px #4a4a7e solid;
-    border-bottom: 1px transparent solid;
-}
-
-.rowAnalyticsFlex:nth-child(odd) {
-    background-color: #2e366c;
-    background-color: #32325c;
-}
-
-.rowAnalyticsFlex .col {
-    flex: 1;
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.8);
-    letter-spacing: .1px;
-    border-right: 1px rgba(255, 255, 255, 0.1) solid;
-    font-weight: 400;
-    padding-right: 8px;
-    padding-left: 8px;
-    text-align: right;
-    color: #7791f2;
-    color: #92a7f2;
-    color: #68d1dc;
-    color: #90a1c1;
-    color: #9cb2db;
-}
-
-.rowAnalyticsFlex.columnHeaders {
-    padding-right: 17px;
-}
-
-.rowAnalyticsFlex .col.tickerCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 7%;
-    width: 15%;
-    text-align: left;
-    text-transform: uppercase;
-    color: white;
-}
-
-.rowAnalyticsFlex .col.priceColUS,
-.rowAnalyticsFlex .col.priceColMid {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 15%;
-}
-
-.rowAnalyticsFlex .col.sideCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 6%;
-    color: #21e0c1;
-    font-weight: 500;
-}
-
-.rowAnalyticsFlex .col.tradedCol {
-    -webkit-box-flex: 0!important;
-    -webkit-flex: none!important;
-    -ms-flex: none!important;
-    flex: none!important;
-    width: 8%;
-}
-
-.col {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.tableTopRow {
-    height: 37px;
-    background-color: #32325c;
-    color: rgba(255, 255, 255, .8);
-    text-align: center;
-    font-size: 13px;
-    padding-top: 13px;
-    letter-spacing: .4px;
-    font-weight: 400;
-}
-
-.tableWrapper {
-    margin: 40px 0;
-    clear: both;
-    background-color: #26264e;
-}
-
-#tableAnalytics {
-    max-height: 200px;
-    overflow-y: scroll;
-}
-
-.rowAnalyticsFlex.columnHeaders .col {
-    flex: 1;
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.9);
-    letter-spacing: .1px;
-    font-weight: 400;
-    padding-right: 7px;
-    text-align: right;
-    padding-top: 10px;
-}
-
-.rowAnalyticsFlex.columnHeaders .col.tickerCol {
-    text-align: left;
-    text-transform: none;
-}
 
 
-/*a cool gradient*/
 
-.someDiv {
-    background: rgba(54, 67, 115, 1);
-    background: -moz-linear-gradient(left, rgba(54, 67, 115, 1) 0%, rgba(38, 38, 78, 1) 39%, rgba(38, 38, 78, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(54, 67, 115, 1)), color-stop(39%, rgba(38, 38, 78, 1)), color-stop(100%, rgba(38, 38, 78, 1)));
-    background: -webkit-linear-gradient(left, rgba(54, 67, 115, 1) 0%, rgba(38, 38, 78, 1) 39%, rgba(38, 38, 78, 1) 100%);
-    background: -o-linear-gradient(left, rgba(54, 67, 115, 1) 0%, rgba(38, 38, 78, 1) 39%, rgba(38, 38, 78, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(54, 67, 115, 1) 0%, rgba(38, 38, 78, 1) 39%, rgba(38, 38, 78, 1) 100%);
-    background: linear-gradient(to right, rgba(54, 67, 115, 1) 0%, rgba(38, 38, 78, 1) 39%, rgba(38, 38, 78, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#364373', endColorstr='#26264e', GradientType=1);
-}
+
+
+
+

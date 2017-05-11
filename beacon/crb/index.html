@@ -9,12 +9,13 @@
     <title>CRB Pricer</title>
 </head>
 
+
+
 <body>
     <div class="buttonsToFlipSides">
         <div id="buySideVersion" class="flipSideButton selectedSide">buy</div>
         <div id="sellSideVersion" class="flipSideButton redText">sell</div>
         <!-- <div id="alternateView" class="flipSideButton">Alternate</div> -->
-
         <br>
         <br>
         <span class="buttonSections">AMRS vs EMEA</span>
@@ -52,24 +53,17 @@
                 <div class="pricerTitle">Pricer Tool</div>
                 <div class="pricerToolRow1">
                     <div class="pricerToolDetailsWrapper pricerSideWrapper">
-
-
-                    <div id="pricerSideToggle">
-                        <span id="pricerBuy" class="pricerSideToggleLabel selectedSide">Buy</span>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <div id="pricerSideToggleInput" class="slider round"></div>
-                        </label>
-                        <span id="pricerSell" class="pricerSideToggleLabel">Sell</span>
-                    </div>
+                        <div id="pricerSideToggle">
+                            <span id="pricerBuy" class="pricerSideToggleLabel selectedSide">Buy</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <div id="pricerSideToggleInput" class="slider round"></div>
+                            </label>
+                            <span id="pricerSell" class="pricerSideToggleLabel">Sell</span>
+                        </div>
                         <!-- <div class="pricerToolDetailsLabel">Side</div>
                         <input id="pricerToolSide" class="pricerToolInput" value="Buy"> -->
                     </div>
-                    
-
-                    
-
-
                     <div class="pricerToolDetailsWrapper pricerTickerWrapper">
                         <div class="pricerToolDetailsLabel">Symbol</div>
                         <input id="pricerToolTicker" class="pricerToolInput" value="">
@@ -88,7 +82,6 @@
                     <div id="pricerButton">price</div>
                     <!-- <div class="invalid">invalid number</div> -->
                 </div>
-                
                 <!-- end pricerToolRow1 -->
             </div>
             <!-- end of pricerTool -->
@@ -208,7 +201,6 @@
                     <div class="popUpTicker">AAPL.OQ</div>
                     <span class="popUpSide textGreen">B</span>
                     <!-- <span class="popUpQty">5,200,000</span> -->
-
                 </div>
                 <!-- end of popUpInfo -->
                 <div class="popUpRow clearfix editQtyPopup">
@@ -217,27 +209,21 @@
                 <!-- end of popup row1 -->
                 <div class="popUpRow clearfix">
                     <div class="popUpPriceSet">
-                        
                         <input type="number" class="popUpPriceChoose" step="1" value="5200000">
                     </div>
                 </div>
-
                 <div class="popUpRow clearfix editPricePopup">
                     <div class="popUpText">Range: 160.01 to 160.05</div>
                 </div>
                 <!-- end of popup row1 -->
                 <div class="popUpRow clearfix">
                     <div class="popUpPriceSet">
-                        
                         <input type="number" class="popUpPriceChoose" step="0.01" value="160.01">
                     </div>
                 </div>
                 <!-- end of popup row2 -->
                 <div class="popUpRow clearfix">
-                    <!-- <div class="popUpExpire">
-                        <span class="horizontalLabel popUpExpireTimeLabel">Expires</span>
-                        <span class="popUpExpireTime" id="time"></span>
-                    </div> -->
+                    
                 </div>
                 <div class="popUpRow clearfix popUpExecuteButtons">
                     <div id="executeButton" class="popUpButton">execute</div>
@@ -250,37 +236,10 @@
                     <div class="popUpTicker">AAPL.OQ</div>
                     <span class="popUpSide textGreen">B</span>
                     <span class="popUpQty">5,200,000</span>
-                </div>
-                <!-- end of popUpInfo -->
-                <div class="popUpRow popUp2menus">
-                    <form>
-                        <div class="radioGroupLabel">Urgency</div>
-                        <input id="urgentRadio" type="radio" name="urgency" value="urgent">
-                        <label for="urgentRadio">Urgent</label>
-                        <input id="notUrgentRadio" type="radio" name="urgency" value="notUrgent">
-                        <label for="notUrgentRadio">Not urgent</label>
-                        </form>
-                </div>
-                <div class="popUp2menuRows">
-                    <form>
-                        <div class="radioGroupLabel">Follow on</div>
-                        <input id="moreToCome" type="radio" name="followOn" value="moreToCome">
-                        <label for="moreToCome">More to come</label>
-                        <input id="noneRadio" type="radio" name="followOn" value="none">
-                        <label for="noneRadio">Done</label>
-                        <input id="noneRadio" type="radio" name="followOn" value="none">
-                        <label for="noneRadio">Don't know</label>
-                    </form>
-                    </div>
-                
-                <!-- end of popup row2 -->
-                <div id="doneButton" class="doneButton">complete</div>
-            </div>
-            <!-- end of popUp1 -->
         </div>
         <!-- end of popupbackground -->
         <div id="wrapperHistory">
-            <div class="tableWrapper clearfix">
+            <!-- <div class="tableWrapper clearfix">
             <div class="tableTopRow clearfix">
                 Per Asset Signals
             </div>
@@ -313,143 +272,116 @@
                     
                 </div>
             </div>
-            <!-- end tableAnalytics -->
-        </div>
-        <!-- end table wrapper -->
+            <!-end tableAnalytics -->
+            <!-- </div> -->
+            <!-- end table wrapper -->-->
             <div class="historyTopRow">
                 History 04/17/17
             </div>
             <div class="rowHistoryFlex columnHeaders">
-                 <div class="col timeCol">Time</div>
+                <div class="col timeCol">Time</div>
                 <div class="col tickerCol">Ticker</div>
                 <div class="col sideCol"></div>
                 <div class="col qtyCol">Quantity</div>
-               
                 <div class="col priceCol">Price</div>
                 <div class="col clientCol">Client</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Traded</div>
             </div>
             <div class="rowHistoryFlex">
-                 <div class="col timeCol">11:52:42</div>
+                <div class="col timeCol">11:52:42</div>
                 <div class="col tickerCol">GOOG</div>
                 <div class="col sideCol">B</div>
                 <div class="col qtyCol">100,000,000</div>
-               
                 <div class="col priceCol">160.015</div>
                 <div class="col clientCol">BLACKROCK</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Y</div>
             </div>
             <div class="rowHistoryFlex">
-                 <div class="col timeCol">11:52:42</div>
+                <div class="col timeCol">11:52:42</div>
                 <div class="col tickerCol">GOOG</div>
                 <div class="col sideCol">B</div>
                 <div class="col qtyCol">100,000,000</div>
-               
                 <div class="col priceCol">160.015</div>
                 <div class="col clientCol">BLACKROCK</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Y</div>
             </div>
             <div class="rowHistoryFlex">
-                 <div class="col timeCol">11:52:42</div>
+                <div class="col timeCol">11:52:42</div>
                 <div class="col tickerCol">GOOG</div>
                 <div class="col sideCol">B</div>
                 <div class="col qtyCol">100,000,000</div>
-               
                 <div class="col priceCol">160.015</div>
                 <div class="col clientCol">BLACKROCK</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Y</div>
             </div>
             <div class="rowHistoryFlex">
-                 <div class="col timeCol">11:52:42</div>
+                <div class="col timeCol">11:52:42</div>
                 <div class="col tickerCol">GOOG</div>
                 <div class="col sideCol">B</div>
                 <div class="col qtyCol">100,000,000</div>
-               
                 <div class="col priceCol">160.015</div>
                 <div class="col clientCol">BLACKROCK</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Y</div>
             </div>
             <div class="rowHistoryFlex">
-                 <div class="col timeCol">11:52:42</div>
+                <div class="col timeCol">11:52:42</div>
                 <div class="col tickerCol">GOOG</div>
                 <div class="col sideCol">B</div>
                 <div class="col qtyCol">100,000,000</div>
-               
                 <div class="col priceCol">160.015</div>
                 <div class="col clientCol">BLACKROCK</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Y</div>
             </div>
             <div class="rowHistoryFlex">
-                 <div class="col timeCol">11:52:42</div>
+                <div class="col timeCol">11:52:42</div>
                 <div class="col tickerCol">GOOG</div>
                 <div class="col sideCol">B</div>
                 <div class="col qtyCol">100,000,000</div>
-               
                 <div class="col priceCol">160.015</div>
                 <div class="col clientCol">BLACKROCK</div>
-             <!--    <div class="col urgencyCol">High</div> -->
+                <!--    <div class="col urgencyCol">High</div> -->
                 <div class="col tradedCol">Y</div>
             </div>
-                    
         </div>
         <div id="wrapperRestrictions">
             <div class="restrictionTopRow">
-                <!-- <input id="quantityInput" class="quantitySection" placeholder="enter qty"></input> -->
+               
                 <input id="searchTicker" class="searchField" placeholder="search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search'" value="">
-                <!-- <div class="dropDownMenu2">
-                    <div class="dropLabel">Lists</div>
-                    <div id="stockListList" class="restrictionsDropDown">IOI List</div>
-                    <span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
-                </div> -->
-                <div class="dropDownMenu2">
-                    <div class="dropLabel">Sort by</div>
-                    <div id="stockListSort" class="restrictionsDropDown">Market Cap</div>
-                    <span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
+                <div class="colorKeyParent">
+                    <div id="colorKey">
+                       
+                        <i class="mdi mdi-key"></i>
+                    </div>
+                    <div id="colorKeyList">
+                        <i id="popUpCloseColorKey" class="mdi mdi-close"></i>
+                        <div class="colorTitle">Color Key</div>
+                        <div class="colorList">CRB eligible<span class="colorDot regular"></span></div>
+                        <div class="colorList">Claimed by trader<span class="colorDot off"></span></div>
+                        <div class="colorList">Restricted by CRB<span class="colorDot wayOff"></span></div>
+                    </div>
                 </div>
-                <ul id="popUpMarketDropDown">
-                    <li class="field1">Symbol</li>
-                    <li class="field2">Market cap</li>
-                    <li class="field3">ADV</li>
-                    <li class="field4">CRB eligible<span class="colorDot regular"></span></li>
-                    <li class="field5">Claimed by trader<span class="colorDot off"></span></li>
-                    <li class="field6">Restricted by CRB<span class="colorDot wayOff"></span></li>
-                </ul>
+                
+               <div class="dropdownMenuParent dropMenuSortRestrictions">
+                   <div class="dropDownMenu2">
+                       <div class="dropLabel">Sort by</div>
+                       <div id="stockListSort" class="restrictionsDropDown">Market Cap</div>
+                       <span class="dropTriangleRegular"><i class="mdi mdi-menu-down"></i></span>
+                   </div>
+                   <ul id="popUpMarketDropDown">
+                       <li class="field1">Symbol</li>
+                       <li class="field2">Market cap</li>
+                       <li class="field3">ADV</li>
+                       <li class="field4">CRB eligible<span class="colorDot regular"></span></li>
+                       <li class="field5">Claimed by trader<span class="colorDot off"></span></li>
+                       <li class="field6">Restricted by CRB<span class="colorDot wayOff"></span></li>
+                   </ul>
+               </div>
+               <!-- end drop parent -->
             </div>
-            <div id="tickerZone">
-            </div>
-        </div>
-        <!-- end of wrapper restrictions -->
-        <div id="backgroundRestrictions">
-            <div id="restrictionsPopUp" class="popUp">
-                <div class="turnOff">Reason for Claim</div>
-                <div class="dropDownMenu">
-                    <div class="dropLabel">Reason</div>
-                    <div id="turnOffDropTitle" class="popUpdropDown">Earnings</div>
-                    <span class="dropTrianglePopUp"><i class="mdi mdi-menu-down"></i></span>
-                </div>
-                <ul id="popUpRestrictionsDropDown">
-                    <li class="field1">News</li>
-                    <li class="field2">Earnings</li>
-                    <li class="field3">Building position</li>
-                    <li class="field4">Corporate action</li>
-                    <li class="field5">Block</li>
-                    <li class="field6">Crossing opportunity</li>
-                </ul>
-                <div class="bottomRowRestrictions">
-                    <div id="cancelButton" class="popUpButton">Cancel</div>
-                    <div id="okButton" class="popUpButton">ok</div>
-                </div>
-            </div>
-            <!-- end of popup -->
-        </div>
-    </div>
-    <!-- end of wrapper -->
-</body>
-
-</html>
+            <!-- end top row -->
