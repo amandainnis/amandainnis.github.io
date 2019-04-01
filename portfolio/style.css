@@ -509,10 +509,10 @@ table {
     text-align: center;
     /*padding-left: 4em;*/
 }
-#portrait {
+.portrait {
     padding: 1em;
 }
-#portrait img:hover {
+.portrait img:hover {
     transition: box-shadow .2s;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -718,7 +718,7 @@ table {
                 padding: 1% 2.9% 1% 2.9%;
             }*/
     
-    #portrait {
+    .portrait {
         padding: .7em;
     }
     

@@ -176,7 +176,7 @@ a.bloc_p {
     color: #65FAC3;
 }
 
-#icon {
+#icon, .hamburger {
     cursor: pointer;
     position: fixed;
     width: 2em;
@@ -358,7 +358,15 @@ body#projects {
     /*	background: white;*/
     /*border-radius: 2%;*/
 }
-
+.pagestyle.finance {
+    background-color: white !important;
+}
+body#finance {
+    background-color: white;
+    font-size: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 h5 {
     font-family: 'Roboto Condensed';
     font-weight: 500;
