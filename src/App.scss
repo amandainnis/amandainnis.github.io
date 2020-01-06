@@ -1,0 +1,649 @@
+@import "./global-styles/variables";
+@import "./global-styles/global-vars.scss";
+@import "./global-styles/styleguide.scss";
+@import "./components/nav/nav.scss";
+@import "./components/alerting/alerting.scss";
+@import "./components/insightAnalytics/insightAnalytics.scss";
+@import "./components/crb/crb.scss";
+@import "./components/alphaCapture/alphaCapture.scss";
+@import "./components/icons-card/icons.scss";
+
+@import "./assets/fonts/graphit/MyFontsWebfontsKit.css";
+@import "./assets/fonts/sofia/MyFontsWebfontsKit.css";
+
+@import "../node_modules/typeface-open-sans/index.css";
+@import "../node_modules/@mdi/font/css/materialdesignicons.css";
+@import "./assets/aicon/style.css";
+
+// @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700|Source+Sans+Pro:300,400,600,700,900&display=swap');
+
+// font-family: 'Rosario', sans-serif;
+// font-family: 'Livvic', sans-serif;
+// font-family: 'Sarabun', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Niramit', sans-serif;
+.Graphit-Light {
+  font-family: Graphit-Light;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Graphit-Bold {
+  font-family: Graphit-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Graphit-Regular {
+  font-family: Graphit-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Graphit-Medium {
+  font-family: Graphit-Medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.SofiaPro-Bold {
+  font-family: SofiaPro-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.SofiaPro-Medium {
+  font-family: SofiaPro-Medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.SofiaPro-Regular {
+  font-family: SofiaPro-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.SofiaPro-SemiBold {
+  font-family: SofiaPro-SemiBold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.SofiaPro-Regularitalic {
+  font-family: SofiaPro-Regularitalic;
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @include Graphit-Light;
+// @include Graphit-Regular;
+// @include Graphit-Medium;
+// @include Graphit-Bold;
+// @include Sofia-Regular;
+// @include Sofia-Medium;
+// @include Sofia-Semibold;
+// @include Sofia-Bold;
+// @include Sofia-Italic;
+
+html {
+  font-size: 62.5%;
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-variable, sans-serif;
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.15;
+  // letter-spacing: .08rem;
+  overflow: hidden;
+}
+
+body {
+  background: var(--background-main);
+  color: $regular-text;
+  font-family: $font-variable, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// .navbar {
+//   display: flex;
+//   background-color: #09d3ac;
+//   height: 50px;
+//   padding: 15px;
+//   align-items: center;
+// }
+
+.inner-body {
+  // padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 50px);
+  scroll-behavior: smooth;
+  // scroll-snap-type: y mandatory;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #fff;
+  height: 16px;
+  padding: 0;
+  text-align: center;
+  width: 16px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.card-wrapper {
+  // padding: 3rem 0rem;
+  // margin: 2rem -2.5rem;
+  // padding: 3rem .8rem;
+  margin: 2rem 0rem;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  background-color: $financial-wrapper-bkgd;
+  // scroll-snap-align: start;
+}
+
+.portfolio-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.portfolio-card-wrapper {
+  margin: 1rem;
+
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 2rem);
+  }
+
+  @media screen and (min-width: 1001px) {
+    width: calc(50% - 2rem);
+  }
+  @media screen and (min-width: 1800px) {
+    width: calc(33.3% - 2rem);
+  }
+  .portfolio-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: cornsilk;
+    // padding: 3.5vw;
+    padding: 3.9vw 3.5vw 2rem 3.5vw;
+    flex-direction: column;
+
+    @media screen and (max-width: 700px) {
+      padding: 3rem 2rem 2rem 2rem;
+    }
+    @media screen and (min-width: 1400px) {
+      padding: 50px 50px 2rem 50px;
+    }
+    .text-section {
+      width: 100%;
+
+      .title {
+        font-size: 3.9vw;
+        // font-size: 3rem;
+        @include Sofia-Regular;
+        font-family: var(--lightSofiaBold-darkSofiaReg);
+        @media screen and (max-width: 800px) {
+          font-size: 38px;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 35px;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 32px;
+        }
+        @media screen and (min-width: 1400px) {
+          font-size: 54.6px;
+        }
+      }
+
+      .subtitle {
+        font-size: 1.8rem;
+        @include Sofia-Medium;
+        @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+          padding-top: 2px;
+        }
+      }
+    }
+
+    .blurb-thumb {
+      display: flex;
+      position: relative;
+      margin-top: 2rem;
+    }
+
+    .blurb {
+      font-size: 1.6rem;
+      margin-right: 2rem;
+      line-height: 1.4;
+      letter-spacing: 0.1px;
+      width: 50%;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        position: absolute;
+        padding: 2rem;
+        background-color: blanchedalmond;
+      }
+    }
+
+    .section-header {
+      @include Graphit-Light;
+    }
+
+    .thumb {
+      width: 100%;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+    .heading {
+      font-size: 2.5rem;
+      padding-top: 30px;
+    }
+    .role {
+      margin-top: 1rem;
+      .title {
+        margin-right: 12px;
+        color: #44c68a;
+        margin-bottom: 1rem;
+      }
+      // li {
+      //   padding: 0.3em 0px;
+      //   font-size: 15px;
+      // }
+    }
+    .second-title-mt {
+      margin-top: 50px;
+    }
+    .text-width {
+      max-width: 513px;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    // .quote {
+    //   font-size: 16px;
+    //   margin-top: 9px;
+    //   .text {
+    //     padding: 0.5em 0;
+    //   }
+    //   .author {
+    //     font-size: 12px;
+    //   }
+    // }
+    .info-footer {
+      margin-top: auto;
+      height: 65px;
+
+      display: flex;
+      flex-direction: column;
+      .buffer {
+        height: 25px;
+        // border-bottom: 1px solid var(--info-footer);
+      }
+      .inner-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2rem 0 0 0;
+      }
+      .info-icon {
+        border: 1px $regular-text solid;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        display: flex;
+        font-family: SofiaPro-Medium;
+        padding-top: 2px;
+        padding-left: 1px;
+        margin-right: -18px;
+        display: none;
+      }
+      .text {
+        font-family: SofiaPro-Medium;
+        font-size: 15px;
+        cursor: pointer;
+        // &:first-of-type {
+        //   padding-right: 2.5rem;
+        // }
+      }
+    }
+  }
+}
+
+.headline {
+  font-family: "Graphit-Regular";
+  font-size: 8.9vw;
+  padding: 8vw calc(3.5vw + 10px);
+  // scroll-snap-align: start;
+
+  @media screen and (max-width: 550px) {
+    font-size: 11vw;
+    padding: 22vw 3rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 119px;
+    padding: 112px 6rem;
+    margin: auto;
+    // width: 1274px;
+  }
+  // .asterisk {
+  //   margin-left: 0.1em;
+  // }
+}
+// .asterisk-explanation {
+//   font-size: 3.2rem;
+//   display: flex;
+//   .asterisk {
+//     margin-right: .2em;
+//   }
+// }
+.wrapper-padding {
+  padding-left: calc(3.5vw + 10px);
+  @media screen and (max-width: 550px) {
+    padding-left: 3rem;
+    font-size: 27px;
+    letter-spacing: 0.1px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding-left: 6rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: Graphit-Regular;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+
+  2% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  98% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinkDivUp {
+  animation: blinker 800ms cubic-bezier(0.4, 0, 1, 1) infinite;
+  // animation-iteration-count: 5;
+}
+
+.blinkDivUpPlain {
+  // background-color: $green-medium;
+  background-color: rgba(0, 186, 146, 0.9);
+  border-radius: 1px;
+  transition: 0.4s ease-in-out;
+}
+
+.delay-5 {
+  animation-delay: 5s;
+}
+
+.constants-info {
+  li {
+    span {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.loading-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 75% -52px;
+}
+
+.pie-svg-container {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 6px;
+  margin-bottom: 17px;
+}
+
+.panel-body {
+  padding: 10px 0px 10px 20px;
+}
+
+.line-chart-svg-container {
+  overflow: visible;
+}
+// .title {
+//     font-weight: 500;
+// }
+
+// .legend {
+//     width: 40%;
+// }
+
+.name-number-line {
+  padding: 8px 1px 0px 1px;
+  flex: 1;
+}
+.d3-tooltip {
+  background-color: white;
+  position: absolute; // color: $tooltip-text-color;
+  color: black; // font-weight: $tooltip-font-weight;
+  font-weight: 500; // top: 95px;
+  min-width: 100px;
+  z-index: 10;
+  display: flex;
+  opacity: 0;
+  @include popup-box-shadow;
+  .d3-tooltip-inner {
+    // background-color: $tooltip-background;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .border-class {
+    width: 4px;
+    // background-color: yellow;
+    align-self: stretch;
+  }
+}
+
+.legend {
+  font-family: SofiaPro-Medium;
+  .title {
+    font-weight: 500;
+    padding: 3px 0px;
+    @include no_overflow;
+  }
+}
+path.domain {
+  stroke: $label-text;
+  opacity: 0.5;
+}
+
+.tick {
+  line {
+    stroke: $label-text;
+  }
+  text {
+    letter-spacing: 1px;
+    fill: $label-text;
+    font-weight: 600;
+  }
+  &.selected {
+    text {
+      fill: $emphasis-text;
+      font-weight: 600;
+    }
+  }
+}
+
+.line {
+  fill: none;
+  // stroke-width: 1px;
+  stroke-width: 1.7px;
+  &.lineOne,
+  &.line0 {
+    stroke: aqua;
+  }
+  &.lineTwo,
+  &.line1 {
+    stroke: #b377ff;
+  }
+}
+.mouse-line {
+  stroke: var(--nav-link-inactive);
+  stroke-width: 1px;
+}
+.line-marker {
+  fill: $background-main;
+  stroke-width: 3px;
+  &.lineTwo,
+  &.line1 {
+    stroke: #be77ff;
+  }
+  &.lineOne,
+  &.line0 {
+    stroke: aqua;
+  }
+}
+
+.tooltipDiv {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .text-container {
+    display: flex;
+    margin-right: 24px;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  .value-text {
+    font-weight: 500;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    &.lineTwo,
+    &.line1 {
+      background-color: #be77ff;
+      height: 3px;
+      // border: 3px solid #be77ff;
+      // background-color: $background-main;
+    }
+    &.lineOne,
+    &.line0 {
+      height: 3px;
+      background-color: aqua;
+      // border: 3px solid aqua;
+      // background-color: $background-main;
+    }
+  }
+  .dash {
+    width: 10px;
+    height: 3px;
+    margin-right: 8px;
+  }
+  .square {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    &.lineTwo,
+    &.line1 {
+      background-color: #be77ff;
+    }
+    &.lineOne,
+    &.line0 {
+      background-color: aqua;
+    }
+  }
+}
+.underline-button {
+  border-bottom: 1px var(--regular-text) solid;
+  padding: 1rem 0 1px 0;
+  position: absolute;
+  right: 25px;
+  bottom: 23px;
+  cursor: pointer;
+}
+footer {
+  padding: 2rem;
+  .contact {
+    padding: 1.5rem 0;
+    cursor: pointer;
+    &:hover {
+      transition: 0.3s;
+      color: $blue-text;
+    }
+    h2 {
+      font-family: SofiaPro-Medium, sans-serif;
+    }
+    @media screen and (max-width: 550px) {
+      // border-top: 1px var(--regular-text) solid;
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
