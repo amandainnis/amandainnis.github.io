@@ -1,7 +1,8 @@
 {
-  "name": "board-app",
+  "name": "portfolio-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://amandainnis.github.io/",
   "dependencies": {
     "chroma": "0.0.1",
     "d3": "^5.14.2",
