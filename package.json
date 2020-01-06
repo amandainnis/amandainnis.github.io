@@ -6,6 +6,7 @@
   "dependencies": {
     "chroma": "0.0.1",
     "d3": "^5.14.2",
+    "gh-pages": "^2.1.1",
     "locomotive-scroll": "^3.2.5",
     "lodash": "^4.17.15",
     "mem": "^6.0.0",
@@ -20,6 +21,8 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
