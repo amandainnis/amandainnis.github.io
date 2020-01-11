@@ -240,23 +240,30 @@ button {
 //         transition: all 0.3s ease-in-out;
 //     }
 // }
-.text-icon-btn {
+.text-icon-btn,
+.text-icon-button {
   color: $icon-button-color;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: $font-variable, sans-serif;
-
-  i {
-    margin-left: 4px;
+  .text {
+    margin: 0 4px;
+  }
+  i,
+  [class^="aicon-"] {
     font-size: 20px;
     line-height: 1;
   }
 
   &:hover {
-    color: $regular-text;
-    transition: all 0.3s ease-in-out;
+    .text,
+    i,
+    [class^="aicon-"] {
+      color: $regular-text;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 

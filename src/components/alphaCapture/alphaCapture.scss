@@ -1,0 +1,12 @@
+.portfolio-card-wrapper {
+  .portfolio-card {
+    &.alpha-capture {
+      // @media screen and (max-width: 450px) {
+      //   // padding: 2.2rem 0.5rem 2.2rem 2rem;
+      // }
+      .line-marker {
+        fill: var(--alphaCap-bkgd);
+      }
+    }
+  }
+}

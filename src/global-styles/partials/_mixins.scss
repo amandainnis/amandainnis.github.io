@@ -1,0 +1,100 @@
+// @include  no-overflow;
+// dont forget padding!!!
+@mixin no-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; // padding-top: 4px;
+    // padding-bottom: 4px;
+}
+
+
+// @include nav-box-shadow;
+@mixin nav-box-shadow {
+    box-shadow: var(--nav-box-shadow);
+}
+
+
+// @include popup-box-shadow;
+@mixin popup-box-shadow {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+// @include dropdown-box-shadow;
+@mixin dropdown-box-shadow {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+// @include modal-popup-box-shadow;
+@mixin modal-popup-box-shadow {
+    box-shadow: 10px 11px 5px -5px rgba(0, 0, 0, 0.17);
+}
+
+
+
+
+// @include Graphit-Light;
+@mixin Graphit-Light {
+    font-family: Graphit-Light, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Graphit-Regular;
+@mixin Graphit-Regular {
+    font-family: Graphit-Regular, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Graphit-Medium;
+@mixin Graphit-Medium {
+    font-family: Graphit-Medium, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Graphit-Bold;
+@mixin Graphit-Bold {
+    font-family: Graphit-Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+// @include Sofia-Regular;
+@mixin Sofia-Regular {
+    font-family: SofiaPro-Regular, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Sofia-Medium;
+@mixin Sofia-Medium {
+    font-family: SofiaPro-Medium, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Sofia-Semibold;
+@mixin Sofia-Semibold {
+    font-family: SofiaPro-SemiBold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Sofia-Bold;
+@mixin Sofia-Bold {
+    font-family: SofiaPro-Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @include Sofia-Italic;
+@mixin Sofia-Italic {
+    font-family: SofiaPro-Regularitalic, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
