@@ -36,7 +36,7 @@ export default function Icons(props) {
             <div className="aicon-logout"></div>
             <div className="aicon-open"></div>
 
-            <div className="aicon-search"></div>
+            <div className="aicon-search-left"></div>
             <div className="aicon-comment"></div>
             <div className="aicon-trashcan"></div>
             <div className="aicon-menu"></div>
@@ -54,6 +54,10 @@ export default function Icons(props) {
             <div className="aicon-filter"></div>
             <div className="aicon-filter-slider"></div>
             <div className="aicon-filter-stack"></div>
+            <div className="aicon-paper"></div>
+            <div className="aicon-download"></div>
+            <div className="aicon-send"></div>
+            <div className="aicon-image-fill"></div>
           </div>
         </div>
       )}

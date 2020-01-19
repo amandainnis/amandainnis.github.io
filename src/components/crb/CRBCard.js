@@ -22,7 +22,8 @@ function CRBCard() {
 
   const tickerInputRef = createRef();
   const clientInputRef = createRef();
-  const quantityInputRef = createRef();
+  const quantityInputOutlineRef = createRef();
+
   const sliderRef1 = createRef();
   const sliderRef2 = createRef();
   const sliderRef3 = createRef();
@@ -39,6 +40,7 @@ function CRBCard() {
   const [clientTitle, setClientTitle] = useState(
     "Burgess Hill Investment Advisors Inc"
   );
+
   const [quantityInput, setQuantityInput] = useState("23,567");
   const [quantityError, setQuantityError] = useState("");
   const [tickerError, setTickerError] = useState("");
@@ -71,17 +73,19 @@ function CRBCard() {
       // console.log(myKeys);
       let myPrice = myData["Time Series (5min)"][myKeys[0]]["1. open"];
       setPrices(myPrice);
+      setIsLoading(false);
     } catch (err) {
       console.log(err);
       if (err == "TypeError: Failed to fetch") {
         setTickerError("Unable to fetch");
+        setTicker("");
       } else {
-        setTickerError("Not a Ticker");
+        setTicker("");
       }
       setTicker("");
       setPrice(null);
+      setIsLoading(false);
     }
-    setIsLoading(false);
   }
 
   function setPrices(myPrice) {
@@ -170,7 +174,7 @@ function CRBCard() {
         return myKey.symbol.startsWith(e.target.value.toUpperCase());
       });
       if (myResults < 1) {
-        myResults = [{ symbol: e.target.value, name: "Not found" }];
+        myResults = [{ symbol: e.target.value, name: "" }];
       }
       // console.log(myResults[0]);
       setTickerInput(e.target.value);
@@ -190,6 +194,11 @@ function CRBCard() {
     setTickerError("");
     setBuySell("");
     setQuantityInput("");
+  }
+  function eraseQtyInput() {
+    setQuantityInput("");
+    quantityInputOutlineRef.current.focus();
+    setBuySell("");
   }
   function eraseClient() {
     console.log(clientInputRef);
@@ -212,22 +221,16 @@ function CRBCard() {
     setTickerCompany(val.name);
     setTickerDDVisible(false);
     getPrice(val.symbol);
-    quantityInputRef.current.focus();
+    quantityInputOutlineRef.current.focus();
   }
   function handleQtyInput(e) {
     setQuantityInput(e.target.value);
   }
 
-  function eraseQtyInput() {
-    setQuantityInput("");
-    quantityInputRef.current.focus();
-    setBuySell("");
-  }
-
   function validate(e, input) {
     const alphaNum = /^[0-9a-zA-Z]+$/;
     const alpha = /^[a-zA-Z]+$/;
-    const numsSpaceComma = /^[0-9, ]+$/;
+    const numsSpaceComma = /^[0-9,]+$/;
 
     if (numsSpaceComma.test(e.target.value)) {
       console.log("accepted");
@@ -241,8 +244,11 @@ function CRBCard() {
   }
 
   function quantityBlur() {
-    if (quantityInput !== "") {
-      let getQuantity = parseInt(quantityInput.replace(/,/g, ""), 10);
+    const numsSpaceComma = /^[0-9,]+$/;
+
+    if (quantityInput !== "" && numsSpaceComma.test(quantityInput)) {
+      let getQuantity = quantityInput.replace(/\s/g, "");
+      getQuantity = parseInt(getQuantity.replace(/,/g, ""), 10);
       let getQuantityRegular = getQuantity * 1;
       setQuantityRegular(getQuantityRegular.toLocaleString("en"));
       let getQuantityHalf = Math.round(getQuantity / 2);
@@ -252,6 +258,7 @@ function CRBCard() {
       setQuantityInput(getQuantity.toLocaleString("en"));
     } else {
       setQuantityInput("");
+      setQuantityError("");
     }
   }
   function viewRole() {
@@ -301,7 +308,10 @@ function CRBCard() {
   const buySelection = buySell === "buy" ? "selected" : "";
   const sellSelection = buySell === "sell" ? "selected" : "";
   const disabledButtons =
-    tickerInput !== "" && quantityInput !== "" && price !== null
+    tickerInput !== "" &&
+    quantityInput !== "" &&
+    quantityError === "" &&
+    price !== null
       ? ""
       : "disabled";
   return (
@@ -388,7 +398,7 @@ function CRBCard() {
                     <input
                       id="qtyForTicker"
                       type="text"
-                      ref={quantityInputRef}
+                      ref={quantityInputOutlineRef}
                       className="input-style crb-input"
                       placeholder="quantity"
                       value={quantityInput}
@@ -473,16 +483,14 @@ function CRBCard() {
                       )}
                       {/* <Slider ref={sliderRef2} /> */}
                       <span className="dash"></span>
-                      {buySell == "buy" && (
-                        <span className="price-ladder end">
-                          {numPriceRegular}
-                        </span>
-                      )}
-                      {buySell == "sell" && (
-                        <span className="price-ladder end">
-                          {numPriceRegularLow}
-                        </span>
-                      )}
+
+                      <span className="price-ladder end">
+                        {buySell === "buy" ? (
+                          <>{numPriceRegular}</>
+                        ) : buySell === "sell" ? (
+                          <>{numPriceRegularLow}</>
+                        ) : null}
+                      </span>
                     </div>
                   </div>
                   <div className="flex-row">
