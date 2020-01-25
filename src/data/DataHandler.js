@@ -1,4 +1,7 @@
 import * as priceJson from "../data/priceData.json";
+import * as priceJsonMobile from "../data/priceDataMobile.json";
+import * as indexJsonMobile from "../data/indexDataMobile.json";
+
 import * as indexJson from "../data/spyData.json";
 import * as moment from "../../node_modules/moment/moment";
 
@@ -56,9 +59,9 @@ function sortACData(obj) {
   });
   return entriesArr;
 }
-function formatPriceData() {
-  let jsonPrice = sortACData(priceJson["Time Series (5min)"]);
-  let jsonIndex = sortACData(indexJson["Time Series (5min)"]);
+function formatPriceData(ticker, index) {
+  let jsonPrice = sortACData(ticker);
+  let jsonIndex = sortACData(index);
   let tempArr = [];
   for (let i = 0; i < jsonPrice.length; i++) {
     let niceDate = moment(jsonPrice[i][0]).format("DD MMM YYYY");
@@ -89,24 +92,42 @@ function formatPriceData() {
 }
 
 let startVals;
-function getStartVals() {
-  let jsonPrice = sortACData(priceJson["Time Series (5min)"]);
-  let jsonIndex = sortACData(indexJson["Time Series (5min)"]);
+let priceDataVar = priceJson["Time Series (5min)"];
+let indexDataVar = indexJson["Time Series (5min)"];
+// function getStartVals(priceDataVarTemp, indexDataVarTemp) {
+//   let jsonPrice = sortACData(priceDataVarTemp);
+//   let jsonIndex = sortACData(indexDataVarTemp);
+//   let tempStartVals = [];
+//   let price = Math.round(jsonPrice[0][1]["4. close"] * 100) / 100;
+//   let benchmark = Math.round(jsonIndex[0][1]["4. close"] * 100) / 100;
+//   // TODO :  store these values inside local storage
+//   tempStartVals.push({
+//     price: price,
+//     benchmark: benchmark
+//   });
+//   startVals = tempStartVals;
+//   return startVals;
+// }
+function getStartVals(priceDataVarTemp, indexDataVarTemp) {
+  let jsonPrice = sortACData(priceDataVarTemp);
+  let jsonIndex = sortACData(indexDataVarTemp);
   let tempStartVals = [];
   let price = Math.round(jsonPrice[0][1]["4. close"] * 100) / 100;
   let benchmark = Math.round(jsonIndex[0][1]["4. close"] * 100) / 100;
+  // TODO :  store these values inside local storage
 
-  tempStartVals.push({
-    price: price,
-    benchmark: benchmark
-  });
-  startVals = tempStartVals;
-  return startVals;
+  return [price, benchmark];
 }
-function formatAlphaCaptureData() {
-  getStartVals();
-  let jsonPrice = sortACData(priceJson["Time Series (5min)"]);
-  let jsonIndex = sortACData(indexJson["Time Series (5min)"]);
+
+function formatAlphaCaptureData(priceDataVarTemp, indexDataVarTemp) {
+  // TODO: use that const {thing, thing} = blah to assign locally and do that thing where you check if its in localstorage first
+  // getStartVals(priceDataVar, indexDataVar);
+  const [startValPrice, startValBenchmark] = getStartVals(
+    priceDataVarTemp,
+    indexDataVarTemp
+  );
+  let jsonPrice = sortACData(priceDataVarTemp);
+  let jsonIndex = sortACData(indexDataVarTemp);
   let tempArr = [];
 
   for (let i = 0; i < jsonPrice.length; i++) {
@@ -123,11 +144,10 @@ function formatAlphaCaptureData() {
     // moment(d).format("DD MMM");
 
     let pricePercent =
-      Math.round(((price - startVals[0].price) / startVals[0].price) * 10000) /
-      10000;
+      Math.round(((price - startValPrice) / startValPrice) * 10000) / 10000;
     let benchmarkPercent =
       Math.round(
-        ((benchmark - startVals[0].benchmark) / startVals[0].benchmark) * 10000
+        ((benchmark - startValBenchmark) / startValBenchmark) * 10000
       ) / 10000;
     tempArr.push({
       fullDate: jsonPrice[i][0],
@@ -146,7 +166,17 @@ function formatAlphaCaptureData() {
   return tempArr;
 }
 
-export const alphaCaptureChartData = formatAlphaCaptureData();
+export const alphaCaptureChartData = formatAlphaCaptureData(
+  priceJson["Time Series (5min)"],
+  indexJson["Time Series (5min)"]
+);
+export const alphaCaptureChartDataMobile = formatAlphaCaptureData(
+  priceJsonMobile["Time Series (60min)"],
+  indexJsonMobile["Time Series (60min)"]
+);
 console.log(alphaCaptureChartData);
-export const startValsConst = startVals;
-export const priceData = formatPriceData();
+// export const startValsConst = startVals;
+export const priceData = formatPriceData(
+  priceJson["Time Series (5min)"],
+  indexJson["Time Series (5min)"]
+);

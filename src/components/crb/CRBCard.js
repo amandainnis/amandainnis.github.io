@@ -282,9 +282,12 @@ function CRBCard() {
     quantityBlur();
   }, []);
 
-  let tempPrice = Math.round(price * 100) / 100;
+  // let tempPrice = Math.round(price * 100) / 100;
+  let tempPrice = priceRegular;
 
-  tempPrice = tempPrice.toLocaleString("en");
+  tempPrice = tempPrice.toLocaleString("en", {
+    minimumFractionDigits: 2
+  });
   const numPriceRegular = tempPrice.toLocaleString("en", {
     minimumFractionDigits: 2
   });
@@ -381,7 +384,8 @@ function CRBCard() {
                                   }}
                                   value={selectedTicker}
                                 >
-                                  {val.symbol} - {val.name}
+                                  <span className="ticker"> {val.symbol}</span>-{" "}
+                                  {val.name}
                                 </button>
                               </>
                             );

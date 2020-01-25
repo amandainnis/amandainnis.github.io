@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'aicon';
-  src:  url('fonts/aicon.eot?gwz9im');
-  src:  url('fonts/aicon.eot?gwz9im#iefix') format('embedded-opentype'),
-    url('fonts/aicon.woff2?gwz9im') format('woff2'),
-    url('fonts/aicon.ttf?gwz9im') format('truetype'),
-    url('fonts/aicon.woff?gwz9im') format('woff'),
-    url('fonts/aicon.svg?gwz9im#aicon') format('svg');
+  src:  url('fonts/aicon.eot?adoto8');
+  src:  url('fonts/aicon.eot?adoto8#iefix') format('embedded-opentype'),
+    url('fonts/aicon.woff2?adoto8') format('woff2'),
+    url('fonts/aicon.ttf?adoto8') format('truetype'),
+    url('fonts/aicon.woff?adoto8') format('woff'),
+    url('fonts/aicon.svg?adoto8#aicon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,18 +26,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.aicon-star10:before {
-  content: "\e949";
-}
-.aicon-star9:before {
-  content: "\e948";
-}
-.aicon-star7:before {
-  content: "\e93b";
-}
-.aicon-star8:before {
-  content: "\e946";
-}
 .aicon-arrow-down:before {
   content: "\e901";
 }
@@ -49,12 +37,6 @@
 }
 .aicon-arrow-up:before {
   content: "\e90c";
-}
-.aicon-calblank:before {
-  content: "\e92a";
-}
-.aicon-calblank2:before {
-  content: "\e92e";
 }
 .aicon-calendar:before {
   content: "\e92b";
@@ -155,9 +137,6 @@
 .aicon-image:before {
   content: "\e907";
 }
-.aicon-image-fill:before {
-  content: "\e935";
-}
 .aicon-logout:before {
   content: "\e918";
 }
@@ -173,14 +152,8 @@
 .aicon-paper:before {
   content: "\e940";
 }
-.aicon-paperclip1:before {
+.aicon-paperclip:before {
   content: "\e93c";
-}
-.aicon-paperclip2:before {
-  content: "\e93d";
-}
-.aicon-paperclip3:before {
-  content: "\e93e";
 }
 .aicon-person:before {
   content: "\e902";
@@ -188,10 +161,10 @@
 .aicon-plus-circle:before {
   content: "\e92d";
 }
-.aicon-plus2:before {
+.aicon-plus:before {
   content: "\e905";
 }
-.aicon-plus3:before {
+.aicon-plus-mini:before {
   content: "\e906";
 }
 .aicon-redo:before {
@@ -200,38 +173,20 @@
 .aicon-refresh:before {
   content: "\e929";
 }
-.aicon-search-left:before {
-  content: "\e92c";
+.aicon-search:before {
+  content: "\e92a";
 }
 .aicon-search-right:before {
-  content: "\e947";
+  content: "\e92c";
 }
 .aicon-send:before {
   content: "\e932";
 }
 .aicon-star:before {
-  content: "\e933";
-}
-.aicon-star-fill:before {
   content: "\e93a";
 }
-.aicon-star2:before {
-  content: "\e941";
-}
-.aicon-star21:before {
-  content: "\e93f";
-}
-.aicon-star3:before {
-  content: "\e942";
-}
-.aicon-star4:before {
-  content: "\e943";
-}
-.aicon-star5:before {
-  content: "\e944";
-}
-.aicon-star6:before {
-  content: "\e945";
+.aicon-star-fill:before {
+  content: "\e933";
 }
 .aicon-sun-fill:before {
   content: "\e924";
@@ -244,7 +199,4 @@
 }
 .aicon-undo:before {
   content: "\e938";
-}
-.aicon-undo1:before {
-  content: "\e939";
 }

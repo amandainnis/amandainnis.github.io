@@ -19,7 +19,8 @@ function App(props) {
   const homeRef = useRef();
   const [theme, setTheme] = useState(props.theme);
   const [activePage, setActivePage] = useState("home");
-  const [resize, setResize] = useState(null);
+  const [resize, setResize] = useState(false);
+  let winWidth = useRef(window.innerWidth);
 
   function generateVars(theme) {
     Object.keys(theme.properties).forEach(property => {
@@ -47,7 +48,8 @@ function App(props) {
     // none of these true falses are currently being used but could be used with debouncing?
     const myAwesomeTimeout = setTimeout(() => {
       setResize(false);
-      // console.log("i timed out", state);
+      winWidth.current = window.innerWidth;
+      console.log("winWidth", winWidth);
     }, 1000);
     setResize(prevState => {
       // console.log(prevState);
@@ -74,6 +76,7 @@ function App(props) {
       setMyTheme("dark");
     }
     // window.addEventListener("resize", handleResizeBetter.bind(this));
+    winWidth.current = window.innerWidth;
     window.addEventListener("resize", resizeFunction);
   }, []);
 
@@ -96,6 +99,7 @@ function App(props) {
           forwardRef={homeRef}
           isVisible={homeVisible}
           myResize={resize}
+          winWidth={winWidth.current}
         ></Home>
 
         <footer className="footer d-flex justify-content-end">

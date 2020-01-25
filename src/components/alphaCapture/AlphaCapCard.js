@@ -12,9 +12,14 @@ const data = {
   bkgd: "var(--alphaCap-bkgd)"
 };
 function AlphaCapCard(props) {
+  // let myDataStart =
+  //   props.winWidth < 600
+  //     ? DataHandler.alphaCaptureChartDataMobile
+  //     : DataHandler.alphaCaptureChartData;
   const [cardVisible, setCardVisible] = useState(true);
+  // let myData = useRef(myDataStart);
+  // const [myDataState, setMyDataState] = useState(myDataStart);
 
-  console.log(props);
   function percentFormatFn(d) {
     return Math.round(d * 10000) / 100 + "%";
   }
@@ -25,6 +30,16 @@ function AlphaCapCard(props) {
       setCardVisible(true);
     }
   }
+  // useEffect(() => {
+  //   let myDataStart =
+  //     props.winWidth < 600
+  //       ? DataHandler.alphaCaptureChartDataMobile
+  //       : DataHandler.alphaCaptureChartData;
+  //   myData.current = myDataStart;
+  //   setMyDataState(myDataStart);
+  //   console.log("resizing inside the effect", myDataStart);
+  // }, [props.resize]);
+
   return (
     <article
       className="portfolio-card alpha-capture"
@@ -36,26 +51,50 @@ function AlphaCapCard(props) {
             <h1 className="title">{data.title}</h1>
             <h4 className="subtitle">{data.subtitle}</h4>
           </div>
-          <LineChart
-            data={DataHandler.alphaCaptureChartData}
-            valueArray={[
-              {
-                dataKey: "pricePercent",
-                color: "#7f5ada",
-                marker: "#a07fef",
-                tooltipLabel: "AMZN %"
-              },
-              {
-                dataKey: "benchmarkPercent",
-                color: "#0da584", //"#93bb96"
-                marker: "#10d4a9", //"#aadeae"
-                tooltipLabel: "SPY %"
-              }
-            ]}
-            myID={"alphaCap"}
-            numberFormatFn={percentFormatFn}
-            resize={props.resize}
-          />
+          {props.winWidth < 600 && (
+            <LineChart
+              data={DataHandler.alphaCaptureChartDataMobile}
+              valueArray={[
+                {
+                  dataKey: "pricePercent",
+                  color: "#7f5ada",
+                  marker: "#a07fef",
+                  tooltipLabel: "AMZN %"
+                },
+                {
+                  dataKey: "benchmarkPercent",
+                  color: "#0da584", //"#93bb96"
+                  marker: "#10d4a9", //"#aadeae"
+                  tooltipLabel: "SPY %"
+                }
+              ]}
+              myID={"alphaCap"}
+              numberFormatFn={percentFormatFn}
+              resize={props.resize}
+            />
+          )}
+          {props.winWidth >= 600 && (
+            <LineChart
+              data={DataHandler.alphaCaptureChartData}
+              valueArray={[
+                {
+                  dataKey: "pricePercent",
+                  color: "#7f5ada",
+                  marker: "#a07fef",
+                  tooltipLabel: "AMZN %"
+                },
+                {
+                  dataKey: "benchmarkPercent",
+                  color: "#0da584", //"#93bb96"
+                  marker: "#10d4a9", //"#aadeae"
+                  tooltipLabel: "SPY %"
+                }
+              ]}
+              myID={"alphaCap"}
+              numberFormatFn={percentFormatFn}
+              resize={props.resize}
+            />
+          )}
         </div>
       )}
       {!cardVisible && (

@@ -9,19 +9,15 @@
 @import "./components/icons-card/icons.scss";
 
 @import "./assets/fonts/graphit/MyFontsWebfontsKit.css";
-// @import "./assets/fonts/sofia/MyFontsWebfontsKit.css";
-@import "./assets/fonts/sofia-lineadjust/stylesheet.css";
+@import "./assets/fonts/sofia/metrics-webfonts.css";
+
+// @import "./assets/fonts/Circular/Fonts/stylesheet.css";
+
+//Circular Book
+// Circular Std Bold
 
 @import "./assets/aicon/style.css";
 
-// @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700|Source+Sans+Pro:300,400,600,700,900&display=swap');
-
-// font-family: 'Rosario', sans-serif;
-// font-family: 'Livvic', sans-serif;
-// font-family: 'Sarabun', sans-serif;
-// font-family: 'Source Sans Pro', sans-serif;
-// font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Niramit', sans-serif;
 .Graphit-Light {
   font-family: Graphit-Light;
   font-weight: normal;
@@ -65,27 +61,39 @@
 }
 
 .SofiaPro-SemiBold {
-  font-family: SofiaPro-SemiBold;
+  @include Sofia-Semibold;
   font-weight: normal;
   font-style: normal;
 }
 
-.SofiaPro-Regularitalic {
-  font-family: SofiaPro-Regularitalic;
+.SofiaPro-Italic {
+  @include Sofia-Italic;
   font-weight: normal;
   font-style: normal;
 }
 
-// @include Graphit-Light;
-// @include Graphit-Regular;
-// @include Graphit-Medium;
-// @include Graphit-Bold;
-// @include Sofia-Regular;
-// @include Sofia-Medium;
-// @include Sofia-Semibold;
-// @include Sofia-Bold;
-// @include Sofia-Italic;
+// .Circular-Bold {
+//   @include Circular-Bold;
+// }
 
+// .Circular-Medium {
+//   @include Circular-Medium;
+// }
+
+// .Circular-Book {
+//   @include Circular-Book;
+// }
+
+// .Circular-SemiBold {
+//   @include Circular-Light;
+// }
+
+// .Circular-Italic {
+//   @include Circular-Italic;
+// }
+// .Circular-Regular {
+//   @include Circular-Regular;
+// }
 html {
   font-size: 62.5%;
   font-size: 10px;
@@ -102,15 +110,12 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.15;
   // letter-spacing: .08rem;
-  overflow: hidden;
-}
-
-body {
+  // overflow: hidden;
   background: var(--background-main);
   color: $regular-text;
-  font-family: $font-variable, sans-serif;
-  margin: 0;
   box-sizing: border-box;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 // .navbar {
@@ -121,47 +126,13 @@ body {
 //   align-items: center;
 // }
 
-.inner-body {
-  // padding: 20px;
-  overflow-y: auto;
-  height: calc(100vh - 50px);
-  scroll-behavior: smooth;
-  // scroll-snap-type: y mandatory;
-}
+// .inner-body {
 
-.status {
-  margin-bottom: 10px;
-}
+//   overflow-y: auto;
+//   height: calc(100vh - 50px);
+//   scroll-behavior: smooth;
 
-.board-row {
-  display: flex;
-}
-
-.square {
-  background: #fff;
-  height: 16px;
-  padding: 0;
-  text-align: center;
-  width: 16px;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
-.game {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.game-info {
-  margin-left: 20px;
-}
+// }
 
 .card-wrapper {
   // padding: 3rem 0rem;
@@ -207,7 +178,7 @@ body {
     flex-direction: column;
 
     @media screen and (max-width: 700px) {
-      padding: 3rem 2rem 2rem 2rem;
+      padding: 3rem 2.5rem 2rem 3rem;
     }
     @media screen and (min-width: 1400px) {
       padding: 50px 50px 2rem 50px;
@@ -216,18 +187,19 @@ body {
       width: 100%;
 
       .title {
-        font-size: 3.9vw;
-        // font-size: 3rem;
-        @include Sofia-Regular;
+        font-size: 3.5vw;
         font-family: var(--lightSofiaBold-darkSofiaReg);
-        @media screen and (max-width: 800px) {
-          font-size: 38px;
-        }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 1000px) {
           font-size: 35px;
         }
+        // @media screen and (max-width: 800px) {
+        //   font-size: 38px;
+        // }
+        // @media screen and (max-width: 600px) {
+        //   font-size: 35px;
+        // }
         @media screen and (max-width: 450px) {
-          font-size: 32px;
+          font-size: 33px;
         }
         @media screen and (min-width: 1400px) {
           font-size: 54.6px;
@@ -237,9 +209,11 @@ body {
       .subtitle {
         font-size: 1.8rem;
         @include Sofia-Medium;
+        padding-top: 5px;
         @media screen and (max-width: 450px) {
           font-size: 1.5rem;
-          padding-top: 2px;
+          padding-top: 6px;
+          letter-spacing: 0.4px;
         }
       }
     }
@@ -340,9 +314,11 @@ body {
         padding-left: 1px;
         margin-right: -18px;
         display: none;
+        // @include Circular-Medium;
         @include Sofia-Medium;
       }
       .text {
+        // @include Circular-Medium;
         @include Sofia-Medium;
         font-size: 15px;
         cursor: pointer;
@@ -355,9 +331,11 @@ body {
 }
 
 .headline {
-  font-family: "Graphit-Regular";
+  font-family: Graphit-Regular;
+  // font-family: "Circular-Regular";
   font-size: 8.9vw;
   padding: 8vw calc(3.5vw + 10px);
+  // letter-spacing: 0.015em;
   // scroll-snap-align: start;
 
   @media screen and (max-width: 550px) {
@@ -371,10 +349,6 @@ body {
     max-width: 1274px;
     // width: 1274px;
   }
-
-  // .asterisk {
-  //   margin-left: 0.1em;
-  // }
 }
 // .asterisk-explanation {
 //   font-size: 3.2rem;
@@ -639,7 +613,7 @@ footer {
       color: $blue-text;
     }
     h2 {
-      font-family: SofiaPro-Medium, sans-serif;
+      @include Sofia-Medium;
     }
     @media screen and (max-width: 550px) {
       // border-top: 1px var(--regular-text) solid;
