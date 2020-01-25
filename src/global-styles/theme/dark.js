@@ -167,6 +167,12 @@ export const DARK = {
     "--light800-dark700": 700,
     "--lightSofiaMed-darkSofiaReg": "SofiaPro-Regular",
     "--lightSofiaBold-darkSofiaReg": "SofiaPro-Regular",
+
+    "--lightCircularBook-darkCircularReg": "Circular-Regular",
+    "--lightCircularMed-darkCircularReg": "Circular-Regular",
+    "--lightCircularMed-darkCircularBook": "Circular-Book",
+    "--lightCircularBold-darkCircularBook": "Circular-Book",
+    "--lightCircularBold-darkCircularMedium": "Circular-Medium",
     "--radio-focus-offset": $BackgroundDarker,
     "--radio-focus": "rgba(40, 195, 255, 0.4)",
     "--checkbox-inner-check-color": $BackgroundMainDark,
@@ -189,7 +195,7 @@ export const DARK = {
 
     "--input-background": "rgba(255, 255, 255, 0.06)",
     "--input-border": "rgba(255, 255, 255, 0.09)",
-    "--placeholder-text": $SecondaryWhite,
+    "--placeholder-text": "rgba(255, 255, 255, 0.6)",
     "--code-background": "#2d3031",
     "--nav-border": "#575c5a",
     "--nav-box-shadow":

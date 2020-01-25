@@ -1,9 +1,10 @@
 .crb-title-row {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 1.3em;
   height: 35px;
   line-height: 1;
   align-items: center;
+  letter-spacing: 0.5px;
   .label-style {
     margin-right: 8px;
   }
@@ -65,6 +66,7 @@
   }
 }
 .crb-button {
+  font-family: Gilroy-ExtraBold;
   &.green {
     // height: 34px;
     width: 71px;
@@ -101,18 +103,24 @@
 
 .dropdown-container {
   &.crb {
-    background-color: var(--crb-bkgd);
+    background-color: var(--crb-dd);
     top: 35px;
+    font-size: 1.4rem;
+    .ticker {
+      @include Sofia-Bold;
+
+      margin-right: 3px;
+    }
     button {
       border: 1px transparent solid;
       margin-bottom: -1px;
       &:hover {
-        background-color: var(--crb-bkgd);
+        background-color: var(--crb-dd);
         border: 1px yellow solid;
       }
       &:active,
       &:focus {
-        background-color: var(--crb-bkgd);
+        background-color: var(--crb-dd);
         border: 1px yellow solid;
       }
     }
@@ -134,31 +142,35 @@
     font-size: 1.2rem;
   }
 }
-
+.quantity-section,
+.qty-section {
+  padding-left: 2px;
+}
 .ladder {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 5px;
 
   .flex-row {
     padding: 10px 0;
-    display: grid;
+    display: flex;
     grid-gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
     @media screen and (max-width: 450px) {
       grid-template-columns: 1fr 2fr;
     }
     .qty-section {
       color: $emphasis-text;
       font-variant-numeric: tabular-nums;
+      width: 34%;
     }
     .spread {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      @include Sofia-Semibold;
+      @include Sofia-Medium;
     }
     .dash {
-      margin: 0 10px;
+      margin: 0 16px;
       width: 16px;
       height: 2px;
       display: flex;

@@ -239,7 +239,10 @@ function Home(props) {
                 <InsightAnalyticsCard />
               </div>
               <div className="portfolio-card-wrapper">
-                <AlphaCapCard resize={props.myResize} />
+                <AlphaCapCard
+                  resize={props.myResize}
+                  winWidth={props.winWidth}
+                />
               </div>
               <div className="portfolio-card-wrapper">
                 <CRBCard />

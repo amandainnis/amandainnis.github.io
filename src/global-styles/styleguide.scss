@@ -84,7 +84,7 @@ h6 {
   letter-spacing: 0.5px;
   font-size: 1.2rem;
   padding: 0 1.2rem;
-  line-height: 1;
+  line-height: 1.1;
   height: 2.5em;
   text-transform: capitalize;
   font-family: sans-serif;
@@ -696,8 +696,12 @@ input::-moz-placeholder {
   line-height: normal !important;
   overflow: visible;
   font-size: 0.9em;
-  line-height: 0em;
+  @include Sofia-Italic;
 }
+// :-ms-input-placeholder,
+// :-moz-placeholder,
+// ::-moz-placeholder,
+// ::-webkit-input-placeholder
 .input-style {
   height: 2.5em;
   padding: 0px 0.45em 0px 0px;
@@ -722,14 +726,18 @@ input::-moz-placeholder {
     color: $placeholder-text;
     display: flex;
     align-items: center;
-    line-height: 1;
+    line-height: normal !important;
+    padding: 3px 0;
+
     @include Sofia-Italic;
   }
   ::placeholder {
     color: $placeholder-text;
     display: flex;
     align-items: center;
-    line-height: 1;
+    line-height: normal !important;
+    padding: 3px 0;
+
     @include Sofia-Italic;
   }
   a {
@@ -1444,7 +1452,7 @@ pre[class*="language-"] {
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  font-weight: $light600-dark400;
+
   font-size: 1.2rem;
 
   &.selected {
@@ -1462,7 +1470,7 @@ pre[class*="language-"] {
 ////////////////////////////////////////  TAGS *  TAGS *  TAGS *  TAGS * /////////////////////////
 .tag {
   font-size: 1.1rem;
-  font-weight: $light600-dark400;
+
   color: $regular-text;
   padding: 4px 8px;
   text-transform: capitalize;
