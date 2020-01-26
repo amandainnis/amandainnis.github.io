@@ -91,9 +91,6 @@ function formatPriceData(ticker, index) {
   return tempArr;
 }
 
-let startVals;
-let priceDataVar = priceJson["Time Series (5min)"];
-let indexDataVar = indexJson["Time Series (5min)"];
 // function getStartVals(priceDataVarTemp, indexDataVarTemp) {
 //   let jsonPrice = sortACData(priceDataVarTemp);
 //   let jsonIndex = sortACData(indexDataVarTemp);

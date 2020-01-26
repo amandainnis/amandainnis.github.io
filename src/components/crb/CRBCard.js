@@ -56,7 +56,7 @@ function CRBCard() {
   const [priceDoubleLow, setPriceDoubleLow] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [tickerDDVisible, setTickerDDVisible] = useState(false);
-  const [tickerDDReservoir, setTickerDDReservoir] = useState(StockData);
+  // const [tickerDDReservoir, setTickerDDReservoir] = useState(StockData);
   const [tickerDDFiltered, setTickerDDFiltered] = useState(null);
 
   const getTickerURL = ticker =>
