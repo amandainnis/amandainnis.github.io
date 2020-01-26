@@ -12,11 +12,11 @@ export default function LineChart(props) {
   const defaultHeight = 220;
   var containerElement;
   let YOYdiff;
-  const [chartData, setChartData] = useState(props.data);
+  // const [chartData, setChartData] = useState(props.data);
   // const [innerWidth, setInnerWidth] = useState();
-
-  const [valueArray, setValueArray] = useState(props.valueArray);
-
+  let chartData = props.data;
+  // const [valueArray, setValueArray] = useState(props.valueArray);
+  let valueArray = props.valueArray;
   // function getLineDiffValue(line0, lineTwo) {
   //   return line0 == null || lineTwo == null ? null : line0 - lineTwo;
   // }
