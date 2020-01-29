@@ -102,17 +102,27 @@ function App(props) {
           winWidth={winWidth.current}
         ></Home>
 
-        <footer className="footer d-flex justify-content-end">
+        <footer className="footer flex-column justify-content-end">
           {/* <img src={jiraPic} /> */}
-
-          <a
-            className="d-flex contact"
-            href="https://www.linkedin.com/in/amandainnis"
-            target="_"
-          >
-            {/* <span className="aicon-comment"></span> */}
-            <h2>Contact Me</h2>
-          </a>
+          <div className="flex-row">
+            <a
+              className="contact linkedin"
+              href="https://www.linkedin.com/in/amandainnis"
+              target="_"
+            >
+              {/* <span className="aicon-comment"></span> */}
+              {/* <h2>Contact Me</h2> */}
+              in
+            </a>
+            <a
+              className="contact email-icon"
+              href="mailto:amandainnis.design@gmail.com"
+            >
+              {" "}
+              <span className="aicon-email"></span>
+            </a>
+          </div>
+          <div className="email">amandainnis.design@gmail.com</div>
         </footer>
       </div>
     </div>

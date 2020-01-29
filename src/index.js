@@ -3,10 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import * as blah from "./";
 
 var darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
+// https://jross.me/updating-your-website-favicon-dynamically-with-dark-mode/
 function handleDarkmode(e) {
   var darkModeOn = e.matches; // true if dark mode is enabled
   var favicon = document.querySelector('link[rel="shortcut icon"]'); // get favicon-192.png element

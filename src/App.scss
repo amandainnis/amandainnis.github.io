@@ -133,7 +133,56 @@ body {
 //   scroll-behavior: smooth;
 
 // }
+.blurb {
+  width: 58%;
+  margin: auto;
+  font-size: 23px;
+  line-height: 1.5;
+  .title {
+    margin-top: 100px;
+  }
+  p {
+    margin-top: 2rem;
+  }
+}
+.email {
+  margin: 2rem;
+}
+.project-subtitle {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.title {
+  font-size: 3.5vw;
+  font-family: var(--lightSofiaBold-darkSofiaReg);
+  @media screen and (max-width: 1000px) {
+    font-size: 35px;
+  }
+  // @media screen and (max-width: 800px) {
+  //   font-size: 38px;
+  // }
+  // @media screen and (max-width: 600px) {
+  //   font-size: 35px;
+  // }
+  @media screen and (max-width: 450px) {
+    font-size: 33px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 54.6px;
+  }
+}
 
+.subtitle {
+  font-size: 1.8rem;
+  @include Sofia-Medium;
+  padding-top: 5px;
+  @media screen and (max-width: 450px) {
+    font-size: 1.5rem;
+    padding-top: 6px;
+    letter-spacing: 0.4px;
+  }
+}
 .card-wrapper {
   // padding: 3rem 0rem;
   // margin: 2rem -2.5rem;
@@ -185,37 +234,6 @@ body {
     }
     .text-section {
       width: 100%;
-
-      .title {
-        font-size: 3.5vw;
-        font-family: var(--lightSofiaBold-darkSofiaReg);
-        @media screen and (max-width: 1000px) {
-          font-size: 35px;
-        }
-        // @media screen and (max-width: 800px) {
-        //   font-size: 38px;
-        // }
-        // @media screen and (max-width: 600px) {
-        //   font-size: 35px;
-        // }
-        @media screen and (max-width: 450px) {
-          font-size: 33px;
-        }
-        @media screen and (min-width: 1400px) {
-          font-size: 54.6px;
-        }
-      }
-
-      .subtitle {
-        font-size: 1.8rem;
-        @include Sofia-Medium;
-        padding-top: 5px;
-        @media screen and (max-width: 450px) {
-          font-size: 1.5rem;
-          padding-top: 6px;
-          letter-spacing: 0.4px;
-        }
-      }
     }
 
     .blurb-thumb {
@@ -257,7 +275,7 @@ body {
     }
     .role {
       margin-top: 1rem;
-      .title {
+      .role-title {
         margin-right: 12px;
         color: #44c68a;
         margin-bottom: 1rem;
@@ -337,7 +355,7 @@ body {
   padding: 8vw calc(3.5vw + 10px);
   // letter-spacing: 0.015em;
   // scroll-snap-align: start;
-
+  margin-top: 50px;
   @media screen and (max-width: 550px) {
     font-size: 11vw;
     padding: 22vw 3rem;
@@ -484,7 +502,7 @@ h3 {
 
 .legend {
   @include Sofia-Medium;
-  .title {
+  .legend-title {
     font-weight: 500;
     padding: 3px 0px;
     @include no_overflow;
@@ -605,13 +623,58 @@ path.domain {
 }
 footer {
   padding: 2rem;
+  display: flex;
+  align-items: center;
   .contact {
-    padding: 1.5rem 0;
-    cursor: pointer;
-    &:hover {
-      transition: 0.3s;
-      color: $blue-text;
+    // border: 1px var(--real-estate) solid;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 28px;
+    margin-left: 1rem;
+    background-color: var(--contact-button-bkgd);
+    color: $emphasis-text;
+    border: 1px var(--contact-button-border) solid;
+
+    &.linkedin {
+      padding-bottom: 2px;
+      &:hover {
+        transition: 0.3s;
+        background-color: var(--linkedin-button-bkgd-hover);
+        color: var(--linkedin-button-text-hover);
+        border: 1px solid var(--linkedin-button-border-hover);
+      }
     }
+    &.email-icon {
+      &:hover {
+        transition: 0.3s;
+        background-color: var(--email-icon-button-bkgd-hover);
+        color: var(--email-icon-button-text-hover);
+        border: 1px solid var(--email-icon-button-border-hover);
+      }
+    }
+    // color: var(--emphasis-text);
+
+    // &.linkedin {
+    //   padding-bottom: 2px;
+    //   &:hover {
+    //     transition: 0.3s;
+    //     color: var(--blue-bold-med);
+    //     border-color: var(--blue-bold-med);
+    //   }
+    // }
+    // &.email-icon {
+    //   &:hover {
+    //     transition: 0.3s;
+    //     color: #ef5252;
+    //     border-color: #ef5252;
+    //   }
+    // }
     h2 {
       @include Sofia-Medium;
     }

@@ -90,12 +90,12 @@ function AlphaCapCard(props) {
           <div className="role">
             <div className="text-width">
               <div className="flex-row">
-                <span className="title">Prod Application: </span>UX, UI,
+                <span className="role-title">Prod Application: </span>UX, UI,
                 Angular, Highcharts customization, SCSS
               </div>
               <div className="flex-row">
-                <span className="title">Portfolio Spinoff: </span>Design, React,
-                D3.js (no highcharts!), SCSS
+                <span className="role-title">Portfolio Spinoff: </span>Design,
+                React, D3.js (no highcharts!), SCSS
               </div>
             </div>
           </div>

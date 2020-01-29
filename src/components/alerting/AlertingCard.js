@@ -46,7 +46,7 @@ function AlertingCard(props) {
             <div className="alert-row">
               <div className="flex-row" data={data[0].urgent}>
                 <div className="message-col">
-                  <span className="title">{data[0].title}</span>
+                  <span className="message-title">{data[0].title}</span>
                   <span className="client-ticker">
                     {data[0].client} - {data[0].ticker}
                   </span>
@@ -62,7 +62,7 @@ function AlertingCard(props) {
           <div className="alert-row">
             <div className="flex-row" data={data[1].urgent}>
               <div className="message-col">
-                <span className="title">{data[1].title}</span>
+                <span className="message-title">{data[1].title}</span>
                 <span className="client-ticker">
                   {data[1].client} - {data[1].ticker}
                 </span>
@@ -95,12 +95,12 @@ function AlertingCard(props) {
           <div className="role">
             <div className="text-width">
               <div className="flex-row">
-                <span className="title">Prod Application: </span>UX, UI, SCSS,
-                JQuery (prototype only)
+                <span className="role-title">Prod Application: </span>UX, UI,
+                SCSS, JQuery (prototype only)
               </div>
               <div className="flex-row">
-                <span className="title">Portfolio Spinoff: </span>Design, React,
-                SCSS
+                <span className="role-title">Portfolio Spinoff: </span>Design,
+                React, SCSS
               </div>
             </div>
           </div>
