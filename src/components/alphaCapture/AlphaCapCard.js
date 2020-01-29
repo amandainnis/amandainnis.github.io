@@ -16,6 +16,7 @@ function AlphaCapCard(props) {
     props.winWidth < 700
       ? DataHandler.alphaCaptureChartDataMobile
       : DataHandler.alphaCaptureChartData;
+  let xTicksVar = props.winWidth < 700 ? 3 : 5;
   const [cardVisible, setCardVisible] = useState(true);
   let myData = useRef(myDataStart);
 
@@ -30,11 +31,12 @@ function AlphaCapCard(props) {
     }
   }
   useEffect(() => {
-    let myDataStart =
+    myDataStart =
       props.winWidth < 700
         ? DataHandler.alphaCaptureChartDataMobile
         : DataHandler.alphaCaptureChartData;
     myData.current = myDataStart;
+    xTicksVar = props.winWidth < 700 ? 3 : 5;
     // setMyDataState(myDataStart);
     // console.log("resizing inside the effect", myDataStart);
   }, [props.resize]);
@@ -69,6 +71,7 @@ function AlphaCapCard(props) {
             myID={"alphaCap"}
             numberFormatFn={percentFormatFn}
             resize={props.resize}
+            xTicks={xTicksVar}
           />
         </div>
       )}

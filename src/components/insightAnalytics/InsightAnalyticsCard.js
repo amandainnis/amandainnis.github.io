@@ -165,7 +165,7 @@ function InsightAnalyticsCard(props) {
             <h1 className="title">{data.title}</h1>
             <h4 className="subtitle">{data.subtitle}</h4>
           </div>
-          <div className="flex-row">
+          <div className="analytics-wrapper">
             <div className="bar-graph-wrapper">
               <div className="bar-graph">
                 {/* {myData[0].val} */}

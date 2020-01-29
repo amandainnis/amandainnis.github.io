@@ -208,6 +208,7 @@ body {
   margin-top: 10px;
   font-size: 18px;
   line-height: 1.5;
+  padding-right: 20px;
 }
 .title {
   font-size: 3.5vw;
@@ -433,9 +434,9 @@ body {
 // }
 .wrapper-padding {
   padding-left: calc(3.5vw + 10px);
+  font-size: 18px;
   @media screen and (max-width: 550px) {
     padding-left: 3rem;
-    font-size: 27px;
     letter-spacing: 0.1px;
   }
   @media screen and (min-width: 1400px) {

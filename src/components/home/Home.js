@@ -28,6 +28,7 @@ function Home(props) {
   const [scrollAmount, setScrollAmount] = useState(0);
   const [alertingActive, setAlertingActive] = useState(null);
   const [isVisible, setIsVisible] = useState(true);
+  let windowWidth = props.winWidth;
 
   const bodyRef = useRef();
   const alertingRef = useRef();
@@ -157,6 +158,7 @@ function Home(props) {
   useEffect(() => {
     console.log("i am resizing");
     setScrollingConstants();
+    windowWidth = props.winWidth;
   }, [props.myResize]);
   // using this to handleRouting
   // static function getDerivedStateFromProps(nextProps, prevState) {
@@ -254,9 +256,17 @@ function Home(props) {
               </h5>
             </div>
 
+            {props.winWidth < 600 && (
+              <div className="wrapper-padding mb-2">
+                Best viewing experience is on desktop
+              </div>
+            )}
             <div className="portfolio-container">
               <div className="portfolio-card-wrapper">
-                <InsightAnalyticsCard />
+                <InsightAnalyticsCard
+                  resize={props.myResize}
+                  winWidth={props.winWidth}
+                />
               </div>
               <div className="portfolio-card-wrapper">
                 <AlphaCapCard
@@ -264,6 +274,7 @@ function Home(props) {
                   winWidth={props.winWidth}
                 />
               </div>
+
               <div className="portfolio-card-wrapper">
                 <CRBCard />
               </div>

@@ -20,6 +20,8 @@ export default function LineChart(props) {
   // function getLineDiffValue(line0, lineTwo) {
   //   return line0 == null || lineTwo == null ? null : line0 - lineTwo;
   // }
+
+  let xTicks = props.xTicks || 5;
   function getYOYdiffColor(YOY) {
     if (YOY < 0) {
       return "YOYred";
@@ -81,10 +83,10 @@ export default function LineChart(props) {
 
     let xAxis = d3
       .axisBottom(x)
-      .ticks(5)
       .tickFormat(function(d) {
         return chartData[d].niceDateAbbrev;
       })
+      .ticks(xTicks)
       .tickPadding(6);
 
     let yAxis = d3
