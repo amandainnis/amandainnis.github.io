@@ -242,10 +242,6 @@ function Home(props) {
               <h1 className="section-header title">Projects</h1>
 
               <h5 className="project-subtitle">
-<<<<<<< HEAD
-                Coded, mock-up samples from financial design work using Alpha
-                Vantage api. More available upon request.
-=======
                 Below are coded, mock-up samples from financial design work
                 using Alpha Vantage api. Since most of my work isn't public,{" "}
                 <a
@@ -255,7 +251,6 @@ function Home(props) {
                   email me
                 </a>
                 for pdf of complete portfolio.
->>>>>>> prod
               </h5>
             </div>
 
