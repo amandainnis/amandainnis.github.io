@@ -2,6 +2,8 @@ import React, { useEffect, createRef, useState } from "react";
 import * as Common from "../reusable/common";
 import CardFooter from "../reusable/Card-Footer";
 const imgInsightAnalytics = require("../../assets/images/drilldown_client-thumb.png");
+const imgCodeweek = require("../../assets/images/codeweek-sml.jpeg");
+
 const data = {
   id: 1,
   img: imgInsightAnalytics,
@@ -232,7 +234,9 @@ function InsightAnalyticsCard(props) {
                           backgroundColor: res.color
                         }}
                       ></div>
-                      <div className="title cursor-pointer">{res.name}</div>
+                      <div className="legend-title cursor-pointer">
+                        {res.name}
+                      </div>
                     </div>
                   );
                 })}
@@ -246,11 +250,14 @@ function InsightAnalyticsCard(props) {
             <h1 className="title">About</h1>
           </div>
           <div className="role">
-            <div className="text-width">
-              It began as an award-winning 2019 hackathon project, of which I
-              was the project manager, sole designer and one of the developers.
-              It was later picked up by another group in the bank and grew into
-              a production application
+            <div className="flex-row">
+              <img className="codeweek" src={imgCodeweek} />
+              <div className="text-width">
+                It began as an award-winning 2019 hackathon project, of which I
+                was the project manager, sole designer and one of the
+                developers. It was later picked up by another group in the bank
+                and grew into a production application.
+              </div>
             </div>
           </div>
           <div className="text-section">
@@ -260,12 +267,12 @@ function InsightAnalyticsCard(props) {
           <div className="role">
             <div className="text-width">
               <div className="flex-row">
-                <span className="title">Prod Application: </span>UX, UI,
+                <span className="role-title">Prod Application: </span>UX, UI,
                 Angular, D3.js, SCSS
               </div>
               <div className="flex-row">
-                <span className="title">Portfolio Spinoff: </span>Design, React,
-                D3.js, SCSS
+                <span className="role-title">Portfolio Spinoff: </span>Design,
+                React, D3.js, SCSS
               </div>
             </div>
           </div>

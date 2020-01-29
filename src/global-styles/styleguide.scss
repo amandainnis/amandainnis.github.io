@@ -647,11 +647,14 @@ ng-select {
 .navbar {
   display: flex;
   align-items: center;
-  // background-color: $navbar-bkgd;
+  background-color: $background-main;
   height: 50px;
   // @include nav-box-shadow;
   padding: 0 1.5rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: $zindex-sticky;
   border-bottom: 1px solid var(--nav-border);
 
   .nav-link {

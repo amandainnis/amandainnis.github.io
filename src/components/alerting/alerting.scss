@@ -16,7 +16,7 @@
   flex-direction: column;
   font-family: sans-serif;
 
-  .title {
+  .tile-title {
     font-size: 1.6rem;
     letter-spacing: 0.5px;
     @include Sofia-Bold;
@@ -52,7 +52,7 @@
     padding: 6px 9px;
   }
 
-  .title {
+  .message-title {
     text-transform: capitalize;
     color: var(--alerting-title-text);
     @include Sofia-Bold;

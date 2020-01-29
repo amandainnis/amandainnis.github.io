@@ -10,7 +10,7 @@ function Tile(props) {
         backgroundColor: props.data.bkgd
       }}
     >
-      <div className="title">{props.data.title}</div>
+      <div className="tile-title">{props.data.title}</div>
       <div className="number">{props.data.number}</div>
     </div>
   );

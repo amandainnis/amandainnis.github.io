@@ -233,7 +233,15 @@ function Home(props) {
                 </li>
               </ul>
             </div> */}
-            <h1 className="wrapper-padding section-header">Projects</h1>
+            <div className="wrapper-padding  d-flex flex-column">
+              <h1 className="section-header title">Projects</h1>
+
+              <h5 className="project-subtitle">
+                Coded, mock-up samples from financial design work using Alpha
+                Vantage api. More available upon request.
+              </h5>
+            </div>
+
             <div className="portfolio-container">
               <div className="portfolio-card-wrapper">
                 <InsightAnalyticsCard />
@@ -252,6 +260,26 @@ function Home(props) {
               </div>
               <div className="portfolio-card-wrapper">
                 <Icons />
+              </div>
+
+              <div className="blurb">
+                <div className="title">My Process</div>
+                <p>
+                  I believe in the complete design experience: UX strategy,
+                  wireframes, HTML, CSS, JS. After planning the UI in Sketch, I
+                  finalize my ideas in code. If I can't see it happening in the
+                  browser, I can't sign off on it. In the past, this meant
+                  creating a protoype to show users and get feedback or to show
+                  other devs how I want the UI to function. Lately, it has meant
+                  working alongside other devs to create applications.
+                </p>
+
+                <p>
+                  Skills include: user experience design, strategy, layout,
+                  wireframes, high fidelity mockups, icon making, interaction
+                  design, CSS, SCSS, CSS-variables and theming, intermediate
+                  JavaScript (JQuery, Angular, React)
+                </p>
               </div>
               {/* jon added the squiggly so it immediately renders */}
             </div>

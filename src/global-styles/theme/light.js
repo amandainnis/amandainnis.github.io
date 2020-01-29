@@ -207,6 +207,14 @@ export const LIGHT = {
     "--utilities": "#27d0bf", //"#4BE4D5",
 
     "--ag-zebra": $GrayVerySubtle,
-    "--animation-cell-change": "#A0dfac"
+    "--animation-cell-change": "#A0dfac",
+    "--contact-button-bkgd": "#e2ee57",
+    "--contact-button-border": "transparent",
+    "--linkedin-button-bkgd-hover": "var(--blue-bold-med)",
+    "--linkedin-button-text-hover": "white",
+    "--linkedin-button-border-hover": "transparent",
+    "--email-icon-button-bkgd-hover": "#ef5252",
+    "--email-icon-button-text-hover": "white",
+    "--email-icon-button-border-hover": "transparent"
   }
 };

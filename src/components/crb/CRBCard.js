@@ -547,12 +547,12 @@ function CRBCard() {
           <div className="role">
             <div className="text-width">
               <div className="flex-row">
-                <span className="title">Prod Application: </span>UX, UI, SCSS,
-                JQuery (prototype only)
+                <span className="role-title">Prod Application: </span>UX, UI,
+                SCSS, JQuery (prototype only)
               </div>
               <div className="flex-row">
-                <span className="title">Portfolio Spinoff: </span>Design, React,
-                SCSS
+                <span className="role-title">Portfolio Spinoff: </span>Design,
+                React, SCSS
               </div>
             </div>
           </div>
