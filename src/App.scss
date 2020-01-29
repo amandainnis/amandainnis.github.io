@@ -134,9 +134,59 @@ body {
 
 // }
 .blurb {
-  width: 58%;
+  .design-test-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    .design-test {
+      width: 100%;
+    }
+    .design-test-text {
+      position: absolute;
+      top: 50%;
+      @include Sofia-Italic;
+      font-size: 21px;
+    }
+  }
+  .cls-1 {
+    fill: none;
+    stroke: var(--real-estate);
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+  }
+  .cls-2 {
+    fill: var(--real-estate);
+  }
+  .cls-3 {
+    fill: var(--healthcare);
+  }
+  .cls-4 {
+    fill: var(--utilities);
+  }
+  .cls-5 {
+    fill: var(--comm-services);
+  }
+  width: 60%;
+  font-size: 20px;
   margin: auto;
-  font-size: 23px;
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+    font-size: 20px;
+    margin: auto;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    font-size: 16px;
+    margin: 20px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 58%;
+    font-size: 23px;
+    margin: auto;
+  }
+
   line-height: 1.5;
   .title {
     margin-top: 100px;
@@ -145,6 +195,11 @@ body {
     margin-top: 2rem;
   }
 }
+
+.uxProcess {
+  width: 50px;
+}
+
 .email {
   margin: 2rem;
 }
@@ -152,6 +207,7 @@ body {
   margin-bottom: 30px;
   margin-top: 10px;
   font-size: 18px;
+  line-height: 1.5;
 }
 .title {
   font-size: 3.5vw;

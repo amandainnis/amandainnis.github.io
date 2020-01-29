@@ -16,6 +16,11 @@ import * as Common from "../reusable/common";
 import LineChartCV from "../reusable/LineChartCV";
 import LineChart from "../reusable/LineChart";
 import LineChartIndexOf from "../reusable/LineChartIndexOf";
+const uxProcess = require("../../assets/images/uxProcess.png");
+const designTest = require("../../assets/design-test.svg");
+
+const designTest1 = require("../../assets/design-test1.svg");
+const designTest1b = require("../../assets/design-test1b.svg");
 
 function Home(props) {
   // somehow without this use state on scroll amount, the component does not re render the values of the refs
@@ -237,8 +242,20 @@ function Home(props) {
               <h1 className="section-header title">Projects</h1>
 
               <h5 className="project-subtitle">
+<<<<<<< HEAD
                 Coded, mock-up samples from financial design work using Alpha
                 Vantage api. More available upon request.
+=======
+                Below are coded, mock-up samples from financial design work
+                using Alpha Vantage api. Since most of my work isn't public,{" "}
+                <a
+                  className="text mr-1"
+                  href="mailto:amandainnis.design@gmail.com"
+                >
+                  email me
+                </a>
+                for pdf of complete portfolio.
+>>>>>>> prod
               </h5>
             </div>
 
@@ -264,14 +281,64 @@ function Home(props) {
 
               <div className="blurb">
                 <div className="title">My Process</div>
+                {/* <img className="uxProcess" src={uxProcess} /> */}
+                <div className="flex-row">
+                  {/* <img className="uxProcess" src={designTest1} /> */}
+                  {/* <img className="uxProcess" src={designTest1b} /> */}
+                  <div className="design-test-wrapper">
+                    {/* <img className="design-test" src={designTest} /> */}
+                    <svg className="design-test" viewBox="0 0 411 324">
+                      <path
+                        className="cls-1"
+                        d="M315,258.16A182.35,182.35,0,0,1,79.4,274.46"
+                      />
+                      <polygon
+                        className="cls-2"
+                        points="309.45 255.15 321 252 317.95 263.57 309.45 255.15"
+                      />
+                      <path
+                        className="cls-1"
+                        d="M170,25.25A182.75,182.75,0,0,1,381.42,86"
+                      />
+                      <polygon
+                        className="cls-2"
+                        points="173.85 30.17 162 28.53 169.35 19.09 173.85 30.17"
+                      />
+                      <path
+                        className="cls-3"
+                        d="M368,199.91h26v-4H368Zm26-73H376v6h18Zm-26,67h26v-4H368Zm24-50h-6a2,2,0,0,0-2,2v1a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2v-1A2,2,0,0,0,392,143.91Zm-24,38h26v-4H368Zm0,6h26v-4H368Zm0,18h26v-4H368Zm-17-18h12v-4H351Zm41,26H378a2,2,0,0,0-2,2v1a2,2,0,0,0,2,2h14a2,2,0,0,0,2-2v-1A2,2,0,0,0,392,213.91Zm-21,0H357a2,2,0,0,0-2,2v1a2,2,0,0,0,2,2h14a2,2,0,0,0,2-2v-1A2,2,0,0,0,371,213.91Zm-8-36H351v4h12Zm-12,28h12v-4H351Zm0-6h12v-4H351Zm0-6h12v-4H351Zm43-28H334v2h60Zm-48,30H334v4h12Zm0-6H334v4h12Zm0-6H334v4h12Zm-10,35h14a2,2,0,0,0,2-2v-1a2,2,0,0,0-2-2H336a2,2,0,0,0-2,2v1A2,2,0,0,0,336,218.91ZM328,110V230h72V110Zm71,119H329V111h70Zm-53-27.09H334v4h12Zm0-24H334v4h12ZM362,144a2,2,0,0,0-2,2v1a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2v-1a2,2,0,0,0-2-2Zm0-25.06H334v5h28Zm10,27v1a2,2,0,0,0,2,2h6a2,2,0,0,0,2-2v-1a2,2,0,0,0-2-2h-6A2,2,0,0,0,372,145.91Zm-17-13h18v-6H355Zm12,3H334v2h33Zm-15-9H334v6h18Zm42,35H334v2h60Z"
+                      />
+                      <path
+                        className="cls-4"
+                        d="M41,86H59V66H41ZM30,55H59V53H30ZM45,96.5H27a3,3,0,0,0,0,6H45a3,3,0,0,0,0-6ZM37,41a3,3,0,0,0,3,3H56a3,3,0,0,0,0-6H40A3,3,0,0,0,37,41ZM27,66V86h9V66Zm0-13H13v2H27Zm4-20.85H47V28H31ZM8,14v96H64V14Zm55,95.08H9V14.92H63ZM22,66H13V86h9ZM35,22H13v2H35Zm-6,6H13v4.15H29Z"
+                      />
+                      <path
+                        className="cls-5"
+                        d="M114,38a3,3,0,0,0,0,6h16a3,3,0,0,0,0-6Zm5,32a3,3,0,0,0,0-6H101a3,3,0,0,0,0,6Zm14-42.15H119v4h14Zm-30,4h14v-4H103ZM115,100h18V80H115Zm-14,0h9V80h-9ZM82,14v96h56V14Zm55,95H83V15h54ZM96,80H87v20h9Zm5-52.15H87v4h14ZM133,54H87v2h46ZM110,22H87v2h23Z"
+                      />
+                    </svg>
+                    <h4 className="design-test-text">Design, Test, Refine</h4>
+                  </div>
+                </div>
                 <p>
-                  I believe in the complete design experience: UX strategy,
-                  wireframes, HTML, CSS, JS. After planning the UI in Sketch, I
-                  finalize my ideas in code. If I can't see it happening in the
-                  browser, I can't sign off on it. In the past, this meant
-                  creating a protoype to show users and get feedback or to show
-                  other devs how I want the UI to function. Lately, it has meant
-                  working alongside other devs to create applications.
+                  I bring a unique set of skills to my profession: I research,
+                  strategize and create an intuitive user experience. After
+                  planning the UI in Sketch, I finalize my designs in code
+                  (HTML, SCSS, React or Angular). If I can't see it happening in
+                  the browser, I can't sign off on it.
+                </p>
+                <p>
+                  In the past, this meant creating a protoype to show users in
+                  order to get feedback or to show other devs how I want the UI
+                  to function. Lately, it has meant working alongside other devs
+                  to create applications.
+                </p>
+                <p>
+                  I love what I do. I look at my craft with enjoyment,
+                  discipline and hunger to learn more and build more. If I’m not
+                  working on designing, building or user-testing a website, I’m
+                  on stack overflow unraveling a problem or on YouTube watching
+                  a coding tutorial.
                 </p>
 
                 <p>
