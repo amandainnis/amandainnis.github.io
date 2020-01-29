@@ -168,11 +168,6 @@ export const DARK = {
     "--lightSofiaMed-darkSofiaReg": "SofiaPro-Regular",
     "--lightSofiaBold-darkSofiaReg": "SofiaPro-Regular",
 
-    "--lightCircularBook-darkCircularReg": "Circular-Regular",
-    "--lightCircularMed-darkCircularReg": "Circular-Regular",
-    "--lightCircularMed-darkCircularBook": "Circular-Book",
-    "--lightCircularBold-darkCircularBook": "Circular-Book",
-    "--lightCircularBold-darkCircularMedium": "Circular-Medium",
     "--radio-focus-offset": $BackgroundDarker,
     "--radio-focus": "rgba(40, 195, 255, 0.4)",
     "--checkbox-inner-check-color": $BackgroundMainDark,
@@ -245,6 +240,8 @@ export const DARK = {
     "--linkedin-button-border-hover": "var(--blue-bold-med)",
     "--email-icon-button-bkgd-hover": "transparent",
     "--email-icon-button-text-hover": "#ef5252",
-    "--email-icon-button-border-hover": "#ef5252"
+    "--email-icon-button-border-hover": "#ef5252",
+    "--wireframe1": "var(--utilities)",
+    "--wireframe2": "var(--comm-services)"
   }
 };

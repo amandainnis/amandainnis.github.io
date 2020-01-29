@@ -138,11 +138,6 @@ export const LIGHT = {
     "--light800-dark700": 800,
     "--lightSofiaMed-darkSofiaReg": "SofiaPro-Medium",
     "--lightSofiaBold-darkSofiaReg": "SofiaPro-Bold",
-    "--lightCircularBook-darkCircularReg": "Circular-Book",
-    "--lightCircularMed-darkCircularReg": "Circular-Medium",
-    "--lightCircularMed-darkCircularBook": "Circular-Medium",
-    "--lightCircularBold-darkCircularBook": "Circular-Bold",
-    "--lightCircularBold-darkCircularMedium": "Circular-Bold",
 
     "--radio-focus-offset": "white",
     "--radio-focus": "rgba(88, 162, 253, 0.28)",
@@ -215,6 +210,8 @@ export const LIGHT = {
     "--linkedin-button-border-hover": "transparent",
     "--email-icon-button-bkgd-hover": "#ef5252",
     "--email-icon-button-text-hover": "white",
-    "--email-icon-button-border-hover": "transparent"
+    "--email-icon-button-border-hover": "transparent",
+    "--wireframe1": "#8986a2",
+    "--wireframe2": "#6c9679"
   }
 };

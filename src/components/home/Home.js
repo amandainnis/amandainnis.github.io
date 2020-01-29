@@ -242,15 +242,15 @@ function Home(props) {
               <h1 className="section-header title">Projects</h1>
 
               <h5 className="project-subtitle">
-                Below are coded, mock-up samples from financial design work.
-                Most of my work isn't public,
+                Below are coded, mock-up samples from my financial design work.
+                Since most of my work isn't public, please
                 <a
-                  className="text mr-1"
+                  className="text ml-1 mr-1"
                   href="mailto:amandainnis.design@gmail.com"
                 >
                   email me
                 </a>
-                for complete portfolio.
+                for my complete portfolio.
               </h5>
             </div>
 
