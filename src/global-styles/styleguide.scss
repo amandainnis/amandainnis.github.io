@@ -51,11 +51,14 @@ h6 {
 }
 
 a {
-  color: $blue-text;
-  text-decoration: none;
-
-  &:hover {
-    color: $blue-text;
+  &.text {
+    color: $green-text;
+    text-decoration: none;
+    font-family: var(--lightSofiaBold-darkSofiaReg);
+    &:hover {
+      color: $green-text;
+      text-decoration: underline;
+    }
   }
 
   &:-webkit-any-link {
