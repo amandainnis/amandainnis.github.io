@@ -44,8 +44,7 @@ function Home(props) {
     const scrollHeight = bodyRef.current.scrollHeight;
     const clientHeight = bodyRef.current.clientHeight;
     const bodyOffset = bodyRef.current.offsetTop;
-    const visibleArea =
-      bodyRef.current.clientHeight + bodyRef.current.offsetTop;
+    const visibleArea = bodyRef.current.clientHeight + bodyRef.current.offsetTop;
     const scrollAmount = bodyRef.current.scrollTop;
     const alertingOffset = alertingRef.current.offsetTop;
 
@@ -73,12 +72,7 @@ function Home(props) {
     changeMe.current.classList.add(myClass);
   }
 
-  function setActiveAlerting(
-    cardOffsetFromState,
-    visibleArea,
-    scrollAmount,
-    myTimeout
-  ) {
+  function setActiveAlerting(cardOffsetFromState, visibleArea, scrollAmount, myTimeout) {
     // this tests if the thing is in view
     // if (scrollAmount > cardOffsetFromState - visibleArea) {
     //   // passes it to child
@@ -107,16 +101,10 @@ function Home(props) {
     setScrollAmount(bodyRef.current.scrollTop);
 
     console.log(bodyRef.current.scrollTop, scrollAmountRef.current);
-    if (
-      prevScrollAmountRef.current < scrollAmountRef.current &&
-      !iAmScrollingDown
-    ) {
+    if (prevScrollAmountRef.current < scrollAmountRef.current && !iAmScrollingDown) {
       setIAmScrollingDown(true);
       // console.log('iAmScrollingDown', iAmScrollingDown)
-    } else if (
-      prevScrollAmountRef.current > scrollAmountRef.current &&
-      iAmScrollingDown
-    ) {
+    } else if (prevScrollAmountRef.current > scrollAmountRef.current && iAmScrollingDown) {
       setIAmScrollingDown(false);
       // console.log('iAmScrollingDown', iAmScrollingDown)
     }
@@ -178,10 +166,9 @@ function Home(props) {
       {isVisible && (
         <div
           // onScroll={handleScrollBetter}
-          ref={bodyRef}
-        >
+          ref={bodyRef}>
           <div className="headline">
-            Hi, I'm Amanda Innis, a designer &amp; creative technologist
+            Hi, I'm Amanda Innis, a UI designer &amp; UX strategist
             {/* <span className="asterisk">*</span> */}
           </div>
           {/* <div className="wrapper-padding asterisk-explanation">
@@ -244,12 +231,9 @@ function Home(props) {
               <h1 className="section-header title">Projects</h1>
 
               <h5 className="project-subtitle">
-                Below are coded, mock-up samples from my financial design work.
-                Since most of my work isn't public, please
-                <a
-                  className="text ml-1 mr-1"
-                  href="mailto:amandainnis.design@gmail.com"
-                >
+                Below are coded, mock-up samples from my financial design work. Since most of my
+                work isn't public, please
+                <a className="text ml-1 mr-1" href="mailto:amandainnis.design@gmail.com">
                   email me
                 </a>
                 for my complete portfolio.
@@ -257,22 +241,14 @@ function Home(props) {
             </div>
 
             {props.winWidth < 600 && (
-              <div className="wrapper-padding mb-2">
-                Best viewing experience is on desktop
-              </div>
+              <div className="wrapper-padding mb-2">Best viewing experience is on desktop</div>
             )}
             <div className="portfolio-container">
               <div className="portfolio-card-wrapper">
-                <InsightAnalyticsCard
-                  resize={props.myResize}
-                  winWidth={props.winWidth}
-                />
+                <InsightAnalyticsCard resize={props.myResize} winWidth={props.winWidth} />
               </div>
               <div className="portfolio-card-wrapper">
-                <AlphaCapCard
-                  resize={props.myResize}
-                  winWidth={props.winWidth}
-                />
+                <AlphaCapCard resize={props.myResize} winWidth={props.winWidth} />
               </div>
 
               <div className="portfolio-card-wrapper">
@@ -294,18 +270,12 @@ function Home(props) {
                   <div className="design-test-wrapper">
                     {/* <img className="design-test" src={designTest} /> */}
                     <svg className="design-test" viewBox="0 0 411 324">
-                      <path
-                        className="cls-1"
-                        d="M315,258.16A182.35,182.35,0,0,1,79.4,274.46"
-                      />
+                      <path className="cls-1" d="M315,258.16A182.35,182.35,0,0,1,79.4,274.46" />
                       <polygon
                         className="cls-2"
                         points="309.45 255.15 321 252 317.95 263.57 309.45 255.15"
                       />
-                      <path
-                        className="cls-1"
-                        d="M170,25.25A182.75,182.75,0,0,1,381.42,86"
-                      />
+                      <path className="cls-1" d="M170,25.25A182.75,182.75,0,0,1,381.42,86" />
                       <polygon
                         className="cls-2"
                         points="173.85 30.17 162 28.53 169.35 19.09 173.85 30.17"
@@ -327,31 +297,26 @@ function Home(props) {
                   </div>
                 </div>
                 <p>
-                  I bring a unique set of skills to my profession: I research,
-                  strategize and create an intuitive user experience. After
-                  planning the UI in Sketch, I finalize my designs in code
-                  (HTML, SCSS, React or Angular). If I can't see it happening in
-                  the browser, I can't sign off on it.
+                  Buzzwords: UX / UI / Product Design / Interaction Design. Yeah, I do all of that.
+                </p>
+                <p>Coding abilities: yes, but it's not my primary role.</p>
+                <p>
+                  In the past, I have used my hybrid skills to design and create a coded protoype to
+                  get user feedback or to show other devs how I want the UI to function. Lately, it
+                  has meant handing devs my XD prototypes and then helping them finish the CSS on
+                  their branch.
                 </p>
                 <p>
-                  In the past, this meant creating a protoype to show users in
-                  order to get feedback or to show other devs how I want the UI
-                  to function. Lately, it has meant working alongside other devs
-                  to create applications.
-                </p>
-                <p>
-                  I love what I do. I look at my craft with enjoyment,
-                  discipline and hunger to learn more and build more. If I’m not
-                  working on designing, building or user-testing a website, I’m
-                  on stack overflow unraveling a problem or on YouTube watching
-                  a coding tutorial.
+                  I love what I do. I look at my craft with enjoyment, discipline and hunger to
+                  learn more and build more. If I’m not working on designing, building or
+                  user-testing a website, I’m on stack overflow unraveling a problem or on YouTube
+                  watching a tutorial.
                 </p>
 
                 <p>
-                  Skills include: user experience design, strategy, layout,
-                  wireframes, high fidelity mockups, icon making, interaction
-                  design, CSS, SCSS, CSS-variables and theming, intermediate
-                  JavaScript (JQuery, Angular, React)
+                  Skills include: user experience design, strategy, layout, wireframes, high
+                  fidelity mockups, icon making, interaction design, CSS, SCSS, CSS-variables and
+                  theming, intermediate JavaScript (JQuery, Angular, React)
                 </p>
               </div>
               {/* jon added the squiggly so it immediately renders */}
