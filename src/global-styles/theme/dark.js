@@ -167,6 +167,7 @@ export const DARK = {
     "--light800-dark700": 700,
     "--lightSofiaMed-darkSofiaReg": "SofiaPro-Regular",
     "--lightSofiaBold-darkSofiaReg": "SofiaPro-Regular",
+    "--lightSofiaBold-darkSofiaMed": "SofiaPro-Medium",
 
     "--radio-focus-offset": $BackgroundDarker,
     "--radio-focus": "rgba(40, 195, 255, 0.4)",

@@ -133,54 +133,70 @@ body {
 //   scroll-behavior: smooth;
 
 // }
+
+.process-wrapper {
+  margin-top: 60px;
+}
+
 .blurb {
   .design-test-wrapper {
     width: 100%;
     max-width: 400px;
     margin: auto;
     position: relative;
+
     .design-test {
       width: 100%;
     }
+
     .design-test-text {
       position: absolute;
       top: 50%;
       @include Sofia-Italic;
       font-size: 21px;
     }
+
+    .cls-1 {
+      fill: none;
+      stroke: var(--real-estate);
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 3px;
+    }
+
+    .cls-2 {
+      fill: var(--real-estate);
+    }
+
+    .cls-3 {
+      fill: var(--healthcare);
+    }
+
+    .cls-4 {
+      fill: var(--wireframe1);
+    }
+
+    .cls-5 {
+      fill: var(--wireframe2);
+    }
   }
-  .cls-1 {
-    fill: none;
-    stroke: var(--real-estate);
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    stroke-width: 3px;
-  }
-  .cls-2 {
-    fill: var(--real-estate);
-  }
-  .cls-3 {
-    fill: var(--healthcare);
-  }
-  .cls-4 {
-    fill: var(--wireframe1);
-  }
-  .cls-5 {
-    fill: var(--wireframe2);
-  }
+
   width: 60%;
   font-size: 20px;
   margin: auto;
+
   @media screen and (max-width: 1000px) {
     width: 80%;
     font-size: 20px;
     margin: auto;
   }
+
   @media screen and (max-width: 500px) {
-    width: 100%;
+    width: calc(100% - 40px);
     font-size: 16px;
     margin: 20px;
   }
+
   @media screen and (min-width: 1400px) {
     width: 58%;
     font-size: 23px;
@@ -188,11 +204,104 @@ body {
   }
 
   line-height: 1.5;
-  .title {
-    margin-top: 100px;
+
+  .blurb-title {
+    font-size: 21px;
+    /* text-transform: uppercase; */
+    background-color: #3f3646;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 4px 20px;
+    margin-bottom: 26px;
+    width: 159px;
   }
+
+  .title {
+    margin-top: 40px;
+
+    @media screen and (max-width: 500px) {
+      margin-top: 0px;
+    }
+  }
+
   p {
     margin-top: 2rem;
+  }
+}
+
+.user-research-wrapper {
+  width: 100%;
+
+  svg {
+    width: 19%;
+  }
+
+  .userResearch1 {
+    .cls-1 {
+      fill: #29abe2;
+      fill: #29ade4b3;
+      stroke: none;
+    }
+
+    .cls-2 {
+      fill: #f3eae4;
+      fill: #ead090;
+    }
+
+    .cls-3 {
+      fill: #22b573;
+      fill: #159a5d;
+    }
+
+    .cls-4 {
+      fill: #e07894;
+    }
+
+    .cls-5 {
+      fill: #e1cbbc;
+      fill: #c7af74;
+    }
+
+    .cls-6 {
+      fill: #775b46;
+      fill: #6b551e;
+    }
+  }
+
+  .userResearch2 {
+    .circle-class {
+      fill: var(--background-main);
+      stroke: var(--wireframe2);
+    }
+
+    .cls-1 {
+      fill: #22b573;
+      fill: var(--wireframe2);
+    }
+
+    .cls-2 {
+      fill: #ab8365;
+      fill: #92684a;
+    }
+
+    .cls-3 {
+      fill: #cd9d79;
+      fill: #b78966;
+    }
+
+    .cls-4 {
+      fill: #d3775e;
+    }
+
+    .cls-5 {
+      fill: #8d6a4f;
+      fill: #654730;
+    }
+
+    .cls-6 {
+      fill: #514238;
+      fill: #4c3a09;
+    }
   }
 }
 
@@ -203,6 +312,7 @@ body {
 .email {
   margin: 2rem;
 }
+
 .project-subtitle {
   margin-bottom: 30px;
   margin-top: 10px;
@@ -210,12 +320,15 @@ body {
   line-height: 1.5;
   padding-right: 20px;
 }
+
 .title {
   font-size: 3.5vw;
   font-family: var(--lightSofiaBold-darkSofiaReg);
+
   @media screen and (max-width: 1000px) {
     font-size: 35px;
   }
+
   // @media screen and (max-width: 800px) {
   //   font-size: 38px;
   // }
@@ -225,6 +338,7 @@ body {
   @media screen and (max-width: 450px) {
     font-size: 33px;
   }
+
   @media screen and (min-width: 1400px) {
     font-size: 54.6px;
   }
@@ -234,12 +348,14 @@ body {
   font-size: 1.8rem;
   @include Sofia-Medium;
   padding-top: 5px;
+
   @media screen and (max-width: 450px) {
     font-size: 1.5rem;
     padding-top: 6px;
     letter-spacing: 0.4px;
   }
 }
+
 .card-wrapper {
   // padding: 3rem 0rem;
   // margin: 2rem -2.5rem;
@@ -260,6 +376,11 @@ body {
 .portfolio-container {
   flex-wrap: wrap;
   display: flex;
+}
+
+.section-header {
+  // @include Graphit-Light;
+  margin-top: 100px;
 }
 
 .portfolio-card-wrapper {
@@ -286,9 +407,11 @@ body {
     @media screen and (max-width: 700px) {
       padding: 3rem 2.5rem 2rem 3rem;
     }
+
     @media screen and (min-width: 1400px) {
       padding: 50px 50px 2rem 50px;
     }
+
     .text-section {
       width: 100%;
     }
@@ -314,10 +437,6 @@ body {
       }
     }
 
-    .section-header {
-      @include Graphit-Light;
-    }
-
     .thumb {
       width: 100%;
       flex-shrink: 0;
@@ -326,30 +445,37 @@ body {
         width: 100%;
       }
     }
+
     .heading {
       font-size: 2.5rem;
       padding-top: 30px;
     }
+
     .role {
       margin-top: 1rem;
+
       .role-title {
         margin-right: 12px;
         color: #44c68a;
         margin-bottom: 1rem;
       }
+
       // li {
       //   padding: 0.3em 0px;
       //   font-size: 15px;
       // }
     }
+
     .second-title-mt {
       margin-top: 50px;
     }
+
     .text-width {
       max-width: 513px;
       line-height: 1.5;
       font-size: 16px;
     }
+
     // .quote {
     //   font-size: 16px;
     //   margin-top: 9px;
@@ -366,15 +492,18 @@ body {
 
       display: flex;
       flex-direction: column;
+
       .buffer {
         height: 25px;
         // border-bottom: 1px solid var(--info-footer);
       }
+
       .inner-wrapper {
         display: flex;
         justify-content: flex-end;
         padding: 2rem 0 0 0;
       }
+
       .info-icon {
         border: 1px $regular-text solid;
         border-radius: 50px;
@@ -392,6 +521,7 @@ body {
         // @include Circular-Medium;
         @include Sofia-Medium;
       }
+
       .text {
         // @include Circular-Medium;
         @include Sofia-Medium;
@@ -413,18 +543,21 @@ body {
   // letter-spacing: 0.015em;
   // scroll-snap-align: start;
   margin-top: 50px;
+
   @media screen and (max-width: 550px) {
     font-size: 11vw;
     padding: 22vw 3rem;
   }
+
   @media screen and (min-width: 1400px) {
-    font-size: 119px;
+    font-size: 7vw;
     padding: 112px 6rem;
     margin: auto;
     max-width: 1274px;
     // width: 1274px;
   }
 }
+
 // .asterisk-explanation {
 //   font-size: 3.2rem;
 //   display: flex;
@@ -435,10 +568,12 @@ body {
 .wrapper-padding {
   padding-left: calc(3.5vw + 10px);
   font-size: 18px;
+
   @media screen and (max-width: 550px) {
-    padding-left: 3rem;
-    letter-spacing: 0.1px;
+    padding-left: 2rem;
+    // letter-spacing: 0.1px;
   }
+
   @media screen and (min-width: 1400px) {
     padding-left: 6rem;
   }
@@ -448,6 +583,10 @@ h1,
 h2,
 h3 {
   font-family: Graphit-Regular;
+}
+
+.slow-transition {
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes blinker {
@@ -519,6 +658,7 @@ h3 {
 .line-chart-svg-container {
   overflow: visible;
 }
+
 // .title {
 //     font-weight: 500;
 // }
@@ -531,6 +671,7 @@ h3 {
   padding: 8px 1px 0px 1px;
   flex: 1;
 }
+
 .d3-tooltip {
   background-color: white;
   position: absolute; // color: $tooltip-text-color;
@@ -541,6 +682,7 @@ h3 {
   display: flex;
   opacity: 0;
   @include popup-box-shadow;
+
   .d3-tooltip-inner {
     // background-color: $tooltip-background;
     width: 100%;
@@ -550,6 +692,7 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+
   .border-class {
     width: 4px;
     // background-color: yellow;
@@ -559,12 +702,14 @@ h3 {
 
 .legend {
   @include Sofia-Medium;
+
   .legend-title {
     font-weight: 500;
     padding: 3px 0px;
     @include no_overflow;
   }
 }
+
 path.domain {
   stroke: $label-text;
   opacity: 0.5;
@@ -574,11 +719,13 @@ path.domain {
   line {
     stroke: $label-text;
   }
+
   text {
     letter-spacing: 1px;
     fill: $label-text;
     font-weight: 600;
   }
+
   &.selected {
     text {
       fill: $emphasis-text;
@@ -591,26 +738,32 @@ path.domain {
   fill: none;
   // stroke-width: 1px;
   stroke-width: 1.7px;
+
   &.lineOne,
   &.line0 {
     stroke: aqua;
   }
+
   &.lineTwo,
   &.line1 {
     stroke: #b377ff;
   }
 }
+
 .mouse-line {
   stroke: var(--nav-link-inactive);
   stroke-width: 1px;
 }
+
 .line-marker {
   fill: $background-main;
   stroke-width: 3px;
+
   &.lineTwo,
   &.line1 {
     stroke: #be77ff;
   }
+
   &.lineOne,
   &.line0 {
     stroke: aqua;
@@ -622,6 +775,7 @@ path.domain {
   height: 30px;
   display: flex;
   flex-wrap: wrap;
+
   .text-container {
     display: flex;
     margin-right: 24px;
@@ -629,13 +783,16 @@ path.domain {
     font-size: 1.4rem;
     line-height: 1.5;
   }
+
   .value-text {
     font-weight: 500;
   }
+
   .dot {
     width: 10px;
     height: 10px;
     margin-right: 8px;
+
     &.lineTwo,
     &.line1 {
       background-color: #be77ff;
@@ -643,6 +800,7 @@ path.domain {
       // border: 3px solid #be77ff;
       // background-color: $background-main;
     }
+
     &.lineOne,
     &.line0 {
       height: 3px;
@@ -651,25 +809,30 @@ path.domain {
       // background-color: $background-main;
     }
   }
+
   .dash {
     width: 10px;
     height: 3px;
     margin-right: 8px;
   }
+
   .square {
     width: 10px;
     height: 10px;
     margin-right: 6px;
+
     &.lineTwo,
     &.line1 {
       background-color: #be77ff;
     }
+
     &.lineOne,
     &.line0 {
       background-color: aqua;
     }
   }
 }
+
 .underline-button {
   border-bottom: 1px var(--regular-text) solid;
   padding: 1rem 0 1px 0;
@@ -678,10 +841,12 @@ path.domain {
   bottom: 23px;
   cursor: pointer;
 }
+
 footer {
   padding: 2rem;
   display: flex;
   align-items: center;
+
   .contact {
     // border: 1px var(--real-estate) solid;
 
@@ -700,6 +865,7 @@ footer {
 
     &.linkedin {
       padding-bottom: 2px;
+
       &:hover {
         transition: 0.3s;
         background-color: var(--linkedin-button-bkgd-hover);
@@ -707,6 +873,7 @@ footer {
         border: 1px solid var(--linkedin-button-border-hover);
       }
     }
+
     &.email-icon {
       &:hover {
         transition: 0.3s;
@@ -715,6 +882,7 @@ footer {
         border: 1px solid var(--email-icon-button-border-hover);
       }
     }
+
     // color: var(--emphasis-text);
 
     // &.linkedin {
@@ -735,7 +903,9 @@ footer {
     h2 {
       @include Sofia-Medium;
     }
+
     @media screen and (max-width: 550px) {
+
       // border-top: 1px var(--regular-text) solid;
       h2 {
         font-size: 16px;

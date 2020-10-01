@@ -7,13 +7,14 @@ import { DARK } from "./global-styles/theme/dark";
 import { LIGHT } from "./global-styles/theme/light";
 
 import Home from "./components/home/Home";
-const jiraPic = require("./assets/jira-pic.png");
+// const jiraPic = require("./assets/images/jira-pic.png");
 // https://reactjs.org/docs/faq-functions.html#how-can-i-prevent-a-function-from-being-called-too-quickly-or-too-many-times-in-a-row
 
 // https://dev.to/gabe_ragland/debouncing-with-react-hooks-jci
 
 function App(props) {
   // defaultTheme = "light";
+
   const dark = DARK;
   const light = LIGHT;
   const homeRef = useRef();
@@ -24,10 +25,7 @@ function App(props) {
 
   function generateVars(theme) {
     Object.keys(theme.properties).forEach(property => {
-      document.documentElement.style.setProperty(
-        property,
-        theme.properties[property]
-      );
+      document.documentElement.style.setProperty(property, theme.properties[property]);
     });
   }
 
@@ -99,8 +97,7 @@ function App(props) {
           forwardRef={homeRef}
           isVisible={homeVisible}
           myResize={resize}
-          winWidth={winWidth.current}
-        ></Home>
+          winWidth={winWidth.current}></Home>
 
         <footer className="footer flex-column justify-content-end">
           {/* <img src={jiraPic} /> */}
@@ -108,16 +105,12 @@ function App(props) {
             <a
               className="contact linkedin"
               href="https://www.linkedin.com/in/amandainnis"
-              target="_"
-            >
+              target="_">
               {/* <span className="aicon-comment"></span> */}
               {/* <h2>Contact Me</h2> */}
               in
             </a>
-            <a
-              className="contact email-icon"
-              href="mailto:amandainnis.design@gmail.com"
-            >
+            <a className="contact email-icon" href="mailto:amandainnis.design@gmail.com">
               {" "}
               <span className="aicon-email"></span>
             </a>
