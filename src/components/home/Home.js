@@ -374,6 +374,7 @@ function Home(props) {
                   designs in code (HTML, SCSS, React or Angular). If I can't see it happening in the
                   browser, I can't sign off on it.
                 </p>
+                <p>Coding abilities: yes, but it's not my primary role.</p>
                 <p>
                   In the past, this meant creating a protoype to show users in order to get feedback
                   or to show other devs how I want the UI to function. Lately, it has meant working
