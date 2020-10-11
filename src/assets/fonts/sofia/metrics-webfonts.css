@@ -37,34 +37,29 @@
 @font-face {
   font-family: "SofiaPro-Bold";
   src: url("webfonts/SofiaPro-BoldMetrics.woff2") format("woff2"),
-    url("webfonts/SofiaPro-BoldMetrics.woff") format("woff"),
-    url("webfonts/SofiaPro-BoldMetrics.ttf") format("truetype");
+    url("webfonts/SofiaPro-BoldMetrics.woff") format("woff");
 }
 
 @font-face {
   font-family: "SofiaPro-Medium";
   src: url("webfonts/SofiaPro-MediumMetrics.woff2") format("woff2"),
-    url("webfonts/SofiaPro-MediumMetrics.woff") format("woff"),
-    url("webfonts/SofiaPro-MediumMetrics.ttf") format("truetype");
+    url("webfonts/SofiaPro-MediumMetrics.woff") format("woff");
 }
 
 @font-face {
   font-family: "SofiaPro-Regular";
   src: url("webfonts/SofiaPro-RegularMetrics.woff2") format("woff2"),
-    url("webfonts/SofiaPro-RegularMetrics.woff") format("woff"),
-    url("webfonts/SofiaPro-RegularMetrics.ttf") format("truetype");
+    url("webfonts/SofiaPro-RegularMetrics.woff") format("woff");
 }
 
 @font-face {
   font-family: "SofiaPro-SemiBold";
   src: url("webfonts/SofiaPro-SemiBoldMetrics.woff2") format("woff2"),
-    url("webfonts/SofiaPro-SemiBoldMetrics.woff") format("woff"),
-    url("webfonts/SofiaPro-SemiBoldMetrics.ttf") format("truetype");
+    url("webfonts/SofiaPro-SemiBoldMetrics.woff") format("woff");
 }
 
 @font-face {
   font-family: "SofiaPro-Regularitalic";
   src: url("webfonts/SofiaPro-RegularitalicMetrics.woff2") format("woff2"),
-    url("webfonts/SofiaPro-RegularitalicMetrics.woff") format("woff"),
-    url("webfonts/SofiaPro-RegularitalicMetrics.ttf") format("truetype");
+    url("webfonts/SofiaPro-RegularitalicMetrics.woff") format("woff");
 }

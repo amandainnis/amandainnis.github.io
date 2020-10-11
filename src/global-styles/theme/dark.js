@@ -14,19 +14,6 @@ const $GrayVerySubtle = "#242627"; // '#3c3d42' #2f3746 // #646669
 const $PrimaryGray = "#888e99";
 const $LabelGray = $GrayBold;
 
-// const $BlueBold = '#59A2FD';  //'#44d5fd'; // '#56D3FF'; //
-// const $BlueBoldMedium = '#2B89FF'; //'#0d9cc3'; // '#188ECB'; //
-// const $BlueMedium = '#2969BB'; //'#0676a0'; // '#1372AD'; //
-// const $BlueMediumSubtle = '#14519e'; //'#4A7EC0'; //'#066487'; // '#0C6096'; //
-// const $BlueSubtle = '#194C8E'; //'#134B65'; // '#144A74'; //'rgba(0, 170, 251, 0.32)';
-// const $BlueVerySubtle = '#1B3F6B'; //'#173A4B'; // '#173E5B'; //'rgba(0, 170, 251, 0.2)';
-// const $BlueBold = '#44d5fd'; // '#56D3FF'; //
-// const $BlueBoldMedium = '#0d9cc3'; // '#188ECB'; //
-// const $BlueMedium = '#0676a0'; // '#1372AD'; //
-// const $BlueMediumSubtle = '#066487'; //'#066487'; // '#0C6096'; //
-// const $BlueSubtle = '#134B65'; // '#144A74'; //'rgba(0, 170, 251, 0.32)';
-// const $BlueVerySubtle = '#173A4B'; // '#173E5B'; //'rgba(0, 170, 251, 0.2)';
-
 const $BlueBold = "#2BB6FF"; // '#56D3FF'; //
 const $BlueBoldMedium = "#17a0e8"; // '#188ECB'; //
 const $BlueMedium = "#056CAA"; // '#1372AD'; //
@@ -34,12 +21,6 @@ const $BlueMediumSubtle = "#01579b"; //'#075D8E'; //'#066487'; // '#0C6096'; //
 const $BlueSubtle = "#004c7d"; // '#144A74'; //'rgba(0, 170, 251, 0.32)';
 const $BlueVerySubtle = "#163146"; // '#173E5B'; //'rgba(0, 170, 251, 0.2)';
 
-// const $CoolerBlueBold = '#7cb7ff';
-// const $CoolerBlueBoldMed = '#57A1FC';
-// const $CoolerBlueMedium = '#166faf';
-// const $CoolerBlueMedSubtle = '#266c9e';
-// const $CoolerBlueSubtle = '#235a82';
-// const $CoolerBlueVerySubtle = '#164669';
 const $CoolerBlueBold = "#7cb7ff";
 const $CoolerBlueBoldMed = "#57A1FC";
 const $CoolerBlueMedium = "#166faf";
@@ -71,32 +52,6 @@ const $RedMed = "#fd5c5b";
 const $Disabled = "rgba(204, 204, 204, 0.15)";
 const $BackgroundMainDark = "#1d1f20";
 const $BackgroundDarker = "#070808"; //#323338
-
-// $heatMapRed1: #cd5b81;
-// $heatMapRed2: #8D4F69;
-// $heatMapRed3: #524053;
-// $heatMapGreen1: #009E7C;
-// $heatMapGreen2: #197062;
-// $heatMapGreen3: #235454;
-// $comm-services: #0C9174;
-// $con-discretionary:#E4668A;
-// $con-staples: #F3BD63;
-// $energy: #58A2FD;
-// $financials: #13727C;
-// $healthcare: #D98BA5;
-// $industrials: #2A78D8;
-// $info-tech: #9D60DC;
-// $materials: #FFA610;
-// $real-estate: #8982A2;
-// $utilities: #4BE4D5;
-// $execSvcs: #0c9174;
-// $line-chart-mouse-line: $primary-gray;
-// $opt-group-background: #4e586b;
-// $CVthisYearBar: #7a4bb3;
-// $CVthisYearBarHighlight: #a65efd;
-// $red-background: #cd5f80;
-// $blue-background: #4A7EC0;
-// $entity-background: #8a2be2;
 
 // SCROLLBAR ////////////
 
@@ -167,6 +122,7 @@ export const DARK = {
     "--light800-dark700": 700,
     "--lightSofiaMed-darkSofiaReg": "SofiaPro-Regular",
     "--lightSofiaBold-darkSofiaReg": "SofiaPro-Regular",
+    "--lightSofiaBold-darkSofiaMed": "SofiaPro-Medium",
 
     "--radio-focus-offset": $BackgroundDarker,
     "--radio-focus": "rgba(40, 195, 255, 0.4)",
@@ -193,8 +149,7 @@ export const DARK = {
     "--placeholder-text": "rgba(255, 255, 255, 0.6)",
     "--code-background": "#2d3031",
     "--nav-border": "#575c5a",
-    "--nav-box-shadow":
-      "0px 0px 6px 0px rgba(0, 0, 0, 0.46), 0px 4px 9px 0 rgba(0, 0, 0, 0.58)",
+    "--nav-box-shadow": "0px 0px 6px 0px rgba(0, 0, 0, 0.46), 0px 4px 9px 0 rgba(0, 0, 0, 0.58)",
 
     "--scrollbar-track-thumb": $ScrollbarTrackThumb,
     "--scrollbar-track-thumb-hover": $ScrollbarTrackThumbHover,
@@ -242,6 +197,6 @@ export const DARK = {
     "--email-icon-button-text-hover": "#ef5252",
     "--email-icon-button-border-hover": "#ef5252",
     "--wireframe1": "var(--utilities)",
-    "--wireframe2": "var(--comm-services)"
-  }
+    "--wireframe2": "rgb(168 149 198 / 78%)",
+  },
 };

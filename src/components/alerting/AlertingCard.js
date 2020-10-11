@@ -9,7 +9,9 @@ const myData = [
   { title: "RRTWQ", number: 55, bkgd: "var(--alerting-red-bkgd)" },
   { title: "AAQPR", number: 15, bkgd: "var(--alerting-red-bkgd)" },
   { title: "NNNTRP", number: 32, bkgd: "var(--alerting-orange-background)" },
-  { title: "JSOR", number: 17, bkgd: "var(--alerting-orange-background)" }
+  { title: "JSOR", number: 17, bkgd: "var(--alerting-orange-background)" },
+  { title: "MLOP", number: 11, bkgd: "var(--alerting-orange-background)" },
+  { title: "UWQL", number: 8, bkgd: "var(--alerting-orange-background)" }
 ];
 function AlertingCard(props) {
   const [generalData, setGeneralData] = useState(alertingData);

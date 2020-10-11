@@ -7,41 +7,33 @@ import { DARK } from "./global-styles/theme/dark";
 import { LIGHT } from "./global-styles/theme/light";
 
 import Home from "./components/home/Home";
-const jiraPic = require("./assets/jira-pic.png");
+// const jiraPic = require("./assets/images/jira-pic.png");
 // https://reactjs.org/docs/faq-functions.html#how-can-i-prevent-a-function-from-being-called-too-quickly-or-too-many-times-in-a-row
 
 // https://dev.to/gabe_ragland/debouncing-with-react-hooks-jci
 
 function App(props) {
   // defaultTheme = "light";
-  const dark = DARK;
-  const light = LIGHT;
+
   const homeRef = useRef();
   const [theme, setTheme] = useState(props.theme);
   const [activePage, setActivePage] = useState("home");
   const [resize, setResize] = useState(false);
   let winWidth = useRef(window.innerWidth);
 
-  function generateVars(theme) {
-    Object.keys(theme.properties).forEach(property => {
-      document.documentElement.style.setProperty(
-        property,
-        theme.properties[property]
-      );
-    });
-  }
+  // function generateVars(theme) {
+  //   Object.keys(theme.properties).forEach(property => {
+  //     document.documentElement.style.setProperty(property, theme.properties[property]);
+  //   });
+  // }
 
   function setMyTheme(theme) {
     console.log(theme);
     localStorage.setItem("theme", theme);
     if (theme === "light") {
       setTheme("light");
-      // Object.assign(light.properties, appLight.properties);
-      generateVars(light);
     } else {
       setTheme("dark");
-      // Object.assign(dark.properties, appDark.properties);
-      generateVars(dark);
     }
   }
   function resizeFunction() {
@@ -72,12 +64,17 @@ function App(props) {
     console.log("mounted");
     if (theme === "light") {
       setMyTheme("light");
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
     } else {
       setMyTheme("dark");
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
     }
     // window.addEventListener("resize", handleResizeBetter.bind(this));
     winWidth.current = window.innerWidth;
     window.addEventListener("resize", resizeFunction);
+ 
   }, []);
 
   // function componentWillUnmount() {
@@ -88,7 +85,8 @@ function App(props) {
   let homeVisible = activePage === "home" ? true : false;
 
   return (
-    <div className={"theme-" + theme}>
+    // className={theme + "-theme"}
+    <div >
       <Nav
         myTheme={theme}
         setMyTheme={thm => setMyTheme(thm)}
@@ -99,8 +97,7 @@ function App(props) {
           forwardRef={homeRef}
           isVisible={homeVisible}
           myResize={resize}
-          winWidth={winWidth.current}
-        ></Home>
+          winWidth={winWidth.current}></Home>
 
         <footer className="footer flex-column justify-content-end">
           {/* <img src={jiraPic} /> */}
@@ -108,16 +105,10 @@ function App(props) {
             <a
               className="contact linkedin"
               href="https://www.linkedin.com/in/amandainnis"
-              target="_"
-            >
-              {/* <span className="aicon-comment"></span> */}
-              {/* <h2>Contact Me</h2> */}
+              target="_">
               in
             </a>
-            <a
-              className="contact email-icon"
-              href="mailto:amandainnis.design@gmail.com"
-            >
+            <a className="contact email-icon" href="mailto:amandainnis.design@gmail.com">
               {" "}
               <span className="aicon-email"></span>
             </a>

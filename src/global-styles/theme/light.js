@@ -138,6 +138,7 @@ export const LIGHT = {
     "--light800-dark700": 800,
     "--lightSofiaMed-darkSofiaReg": "SofiaPro-Medium",
     "--lightSofiaBold-darkSofiaReg": "SofiaPro-Bold",
+    "--lightSofiaBold-darkSofiaMed": "SofiaPro-Bold",
 
     "--radio-focus-offset": "white",
     "--radio-focus": "rgba(88, 162, 253, 0.28)",
@@ -148,8 +149,8 @@ export const LIGHT = {
     "--checkbox-subtle-focus": $BlueMediumSubtle,
     "--dropdown-background": "white",
     "--inner-check-subtle": $Black,
-    "--outline-btn-text-gray": $GrayBoldMedium,
-    "--outline-btn-border-gray": $GrayMediumSubtle,
+    "--outline-btn-text-gray": "#7D8288",
+    "--outline-btn-border-gray": "#ABB1BB",
     "--outline-btn-text-accent": $BlueMedium,
     "--outline-btn-border-accent": $BlueMediumSubtle,
     "--outline-btn-border-green": $GreenBoldMed,
@@ -160,7 +161,7 @@ export const LIGHT = {
     "--icon-button-color": $GrayBoldMedium,
 
     "--input-background": "rgba(255, 255, 255, 0.66)",
-    "--input-border": "rgba(0, 0, 0, 0.11)",
+    "--input-border": "rgba(9, 11, 12, 0.18)",
     "--placeholder-text": $GrayMedium,
     "--code-background": "#393a3c",
     "--nav-border": "#c9cbca",

@@ -22,6 +22,7 @@ function handleDarkmode(e) {
     largeFavicon.href = "/logo192-light.png";
   }
 }
+
 handleDarkmode(darkModeMediaQuery);
 darkModeMediaQuery.addListener(handleDarkmode);
 let themeCache = localStorage.getItem("theme") || "dark";
