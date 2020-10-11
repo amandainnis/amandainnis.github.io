@@ -1,33 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f4efe4a.chunk.css",
-    "main.js": "/static/js/main.97ba8c43.chunk.js",
-    "main.js.map": "/static/js/main.97ba8c43.chunk.js.map",
+    "main.css": "/static/css/main.b72a77b4.chunk.css",
+    "main.js": "/static/js/main.8de2bb1f.chunk.js",
+    "main.js.map": "/static/js/main.8de2bb1f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c3e8af0c.js",
     "runtime-main.js.map": "/static/js/runtime-main.c3e8af0c.js.map",
-    "static/js/2.7e993108.chunk.js": "/static/js/2.7e993108.chunk.js",
-    "static/js/2.7e993108.chunk.js.map": "/static/js/2.7e993108.chunk.js.map",
+    "static/js/2.f0c4cc9a.chunk.js": "/static/js/2.f0c4cc9a.chunk.js",
+    "static/js/2.f0c4cc9a.chunk.js.map": "/static/js/2.f0c4cc9a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d32df082d8f28d30f866224be738bebf.js": "/precache-manifest.d32df082d8f28d30f866224be738bebf.js",
+    "precache-manifest.8a379978aed460c019525b2c20525754.js": "/precache-manifest.8a379978aed460c019525b2c20525754.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8f4efe4a.chunk.css.map": "/static/css/main.8f4efe4a.chunk.css.map",
-    "static/js/2.7e993108.chunk.js.LICENSE.txt": "/static/js/2.7e993108.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/aicon.f6f7d92e.woff",
+    "static/css/main.b72a77b4.chunk.css.map": "/static/css/main.b72a77b4.chunk.css.map",
+    "static/js/2.f0c4cc9a.chunk.js.LICENSE.txt": "/static/js/2.f0c4cc9a.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/aicon.8ea209e1.ttf",
     "static/media/alerting.png": "/static/media/alerting.39a30e35.png",
     "static/media/alphaCapture.png": "/static/media/alphaCapture.b5053b34.png",
     "static/media/codeweek-sml.jpeg": "/static/media/codeweek-sml.51710cdc.jpeg",
     "static/media/crb-img.png": "/static/media/crb-img.7f8b0cc9.png",
-    "static/media/design-test.svg": "/static/media/design-test.831b3576.svg",
-    "static/media/design-test1.svg": "/static/media/design-test1.190d785c.svg",
-    "static/media/design-test1b.svg": "/static/media/design-test1b.85b79f8f.svg",
-    "static/media/drilldown_client-thumb.png": "/static/media/drilldown_client-thumb.cc4d618c.png",
-    "static/media/jira-pic.png": "/static/media/jira-pic.e1eb1327.png",
-    "static/media/uxProcess.png": "/static/media/uxProcess.4257d9d3.png"
+    "static/media/drilldown_client-thumb.png": "/static/media/drilldown_client-thumb.cc4d618c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c3e8af0c.js",
-    "static/js/2.7e993108.chunk.js",
-    "static/css/main.8f4efe4a.chunk.css",
-    "static/js/main.97ba8c43.chunk.js"
+    "static/js/2.f0c4cc9a.chunk.js",
+    "static/css/main.b72a77b4.chunk.css",
+    "static/js/main.8de2bb1f.chunk.js"
   ]
 }
