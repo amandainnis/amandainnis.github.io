@@ -551,27 +551,26 @@ body {
     font-size: 7vw;
     padding: 112px 6rem;
     margin: auto;
-    max-width: 1309px;
+    max-width: 1500px;
 
   }
 
-  @media screen and (min-width: 2300px) {
-    font-size: 164.92px;
+  @media screen and (min-width: 1800px) {
+    font-size: 143px;
     padding: 112px 6rem;
     margin: auto;
-    max-width: 1309px;
+  }
+
+  @media screen and (min-width: 2400px) {
+    font-size: 159px;
+    padding: 112px 6rem;
+    margin: auto;
+    max-width: 1652px;
 
   }
 
 }
 
-// .asterisk-explanation {
-//   font-size: 3.2rem;
-//   display: flex;
-//   .asterisk {
-//     margin-right: .2em;
-//   }
-// }
 .wrapper-padding {
   padding-left: calc(3.5vw + 10px);
   padding-right: calc(3.5vw + 10px);
@@ -922,30 +921,13 @@ footer {
       }
     }
 
-    // color: var(--emphasis-text);
-
-    // &.linkedin {
-    //   padding-bottom: 2px;
-    //   &:hover {
-    //     transition: 0.3s;
-    //     color: var(--blue-bold-med);
-    //     border-color: var(--blue-bold-med);
-    //   }
-    // }
-    // &.email-icon {
-    //   &:hover {
-    //     transition: 0.3s;
-    //     color: #ef5252;
-    //     border-color: #ef5252;
-    //   }
-    // }
     h2 {
       @include Sofia-Medium;
     }
 
     @media screen and (max-width: 550px) {
 
-      // border-top: 1px var(--regular-text) solid;
+
       h2 {
         font-size: 16px;
       }
