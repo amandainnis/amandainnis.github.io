@@ -3,8 +3,6 @@ import React, { useEffect, useState, useRef } from "react";
 
 import "./App.scss";
 import Nav from "./components/nav/nav";
-import { DARK } from "./global-styles/theme/dark";
-import { LIGHT } from "./global-styles/theme/light";
 
 import Home from "./components/home/Home";
 // const jiraPic = require("./assets/images/jira-pic.png");
