@@ -2,7 +2,16 @@ import React from "react";
 function Nav(props) {
   console.log("nav props", props);
   function toggleTheme(theme) {
-    props.setMyTheme(theme === "light" ? "dark" : "light");
+    // props.setMyTheme(theme === "light" ? "dark" : "light");
+    if (theme === "dark") {
+      props.setMyTheme("light");
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
+    } else {
+      props.setMyTheme("dark");
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+    }
   }
 
   return (

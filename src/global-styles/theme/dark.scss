@@ -1,0 +1,283 @@
+.dark-theme {
+
+  // GRAYS
+  --gray-600: rgba(250, 251, 255, 0.65);
+  --gray-500: rgba(250, 251, 255, 0.47);
+  --gray-400: rgba(250, 251, 255, 0.25);
+  --gray-300: rgba(250, 251, 255, 0.14);
+  --gray-200: rgba(250, 251, 255, 0.07);
+  --gray-100: rgba(250, 251, 255, 0.04);
+
+
+  --blue-600: hsla(193, 90%, 47%, 1);
+  --blue-500: hsla(195, 90%, 39%, 1);
+  --blue-400: hsla(197, 93%, 33%, 1);
+  --blue-300: hsla(197, 96%, 28%, 1);
+  --blue-200: hsla(197, 96%, 22%, 1);
+  --blue-100: hsla(199, 100%, 32%, .2);
+  --accent-blue: var(--blue-600);
+  --accent-blue-bolder: hsla(193, 100%, 55%, 1);
+  --blue-bg-data: hsla(195, 85%, 36%, 1);
+
+
+
+
+  // const $GreenBold = "#3affa5"; 
+  // const $GreenBoldMed = "#46cc8f";
+  // const $GreenMedium = "#159A5D"; 
+  // const $GreenMedSubtle = "#008C63";
+  // const $GreenSubtle = "#00654E"; 
+  // const $GreenVerySubtle = "#004232";
+
+
+
+  // GREENS
+
+  --green-600: hsl(153, 100%, 61); //#2cd386;
+  --green-500: hsl(153, 57%, 54%); //#46cc8f;
+  --green-400: hsl(152, 76%, 34%); //#008C63;
+  --green-300: #008C63; //#00654E;
+  --green-200: #00654E; //#0c4236;
+  --green-100: #004232; //#02352c; //#11352d;
+  --accent-green: var(--green-600);
+
+  --green-600: hsla(160, 87%, 44%, 1); //#2cd386;
+  --green-500: hsla(160, 88%, 39%, 1); //#46cc8f;
+  --green-400: hsl(161, 89%, 34%); //#008C63;
+  --green-300: hsl(161, 85%, 28%); //#00654E;
+  --green-200: hsl(162, 93%, 20%); //#0c4236;
+  --green-100: hsl(162, 77%, 14%); //#02352c; //#11352d;
+  --accent-green: var(--green-600);
+
+  // YELLOW GREENS
+  --yellow-green-600: hsl(69, 90%, 50%);
+  --yellow-green-500: hsl(69, 90%, 44%);
+  --yellow-green-400: hsl(69, 90%, 38%);
+  --yellow-green-300: hsl(69, 90%, 34%);
+  --yellow-green-200: hsl(69, 79%, 26%);
+  --yellow-green-100: hsl(69, 54%, 22%);
+
+  // ORANGE
+  --orange-600: hsl(37, 90%, 51%);
+  --orange-500: hsl(37, 90%, 46%);
+  --orange-400: hsl(37, 93%, 42%);
+  --orange-300: hsl(36, 90%, 35%);
+  --orange-200: hsl(35, 90%, 30%);
+  --orange-100: hsl(35, 90%, 23%);
+  --accent-orange: var(--orange-600);
+
+  // REDORANGE
+  --red-orange-600: hsl(16, 79%, 54%);
+  --red-orange-500: hsl(16, 63%, 50%);
+  --red-orange-400: hsl(16, 58%, 46%);
+  --red-orange-300: hsl(16, 58%, 41%);
+  --red-orange-200: hsl(16, 58%, 33%);
+  --red-orange-100: hsl(16, 52%, 24%);
+
+  // PURPLES
+  --purple-600: hsl(271, 86%, 62%); // #FC5879; //#fe586b;
+  --purple-500: hsl(271, 63%, 54%);
+  --purple-400: hsl(271, 46%, 48%);
+  --purple-300: hsl(271, 44%, 41%);
+  --purple-200: hsl(271, 37%, 33%);
+  --purple-100: hsl(271, 37%, 25%);
+  --accent-purple: var(--purple-600);
+
+
+  // UNIQUES
+  --red-purple: #da7fa7;
+  --cool-gray: #616271;
+  --gray-purple: hsl(271, 14%, 45%);
+  // #693A95
+
+  // REDS
+  --red-600: hsl(348, 86%, 62%); // #FC5879; //#fe586b;
+  --red-500: hsl(346, 63%, 54%);
+  --red-400: hsl(345, 55%, 48%);
+  --red-300: hsl(345, 51%, 41%);
+  --red-200: hsl(345, 44%, 33%);
+  --red-100: hsl(345, 34%, 25%);
+  --accent-red: var(--red-600);
+
+  //COOLER BLUES
+  --cooler-blue-600: hsl(205, 90%, 69%);
+  --cooler-blue-500: hsl(205, 90%, 59%);
+  --cooler-blue-400: hsl(205, 81%, 44%);
+  --cooler-blue-300: hsl(205, 85%, 32%);
+  --cooler-blue-200: hsl(205, 75%, 26%);
+  --cooler-blue-100: hsl(205, 56%, 23%);
+
+  // BACKGROUND-COLORS
+  --background-main: rgb(31, 33, 34);
+  --background-darkest: rgb(16, 18, 19);
+  --background-subtle: var(--background-main);
+  --sidebar-header: rgba(201, 206, 207, 0.07) 0%, rgba(201, 206, 207, 0.04) 50%, rgba(201, 206, 207, 0) 100%;
+  --code-background: #2d3031;
+
+  // BORDERS, LAYOUT
+  --border-color: rgba(250, 251, 255, 0.1);
+  --ag-border-color: hsl(195 4% 18% / 1);
+  --pivot-border-color: rgba(250, 251, 255, 0.08);
+  --border-subtle: rgba(250, 251, 255, 0.06);
+  --border-emphasis: var(--gray-400);
+
+  // BOX-SHADOW
+  --subtle-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.58), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  --strong-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.26), 0px 4px 9px 0 rgba(0, 0, 0, 0.38);
+
+  // BUTTONS
+  --outline-btn-text-gray: var(--gray-600);
+  --outline-btn-border-gray: #545b5f;
+  --outline-btn-text-accent: hsla(193, 100%, 55%, 1);
+  --outline-btn-border-accent: var(--blue-600);
+  --outline-btn-background: transparent;
+  --solid-btn-background-gray: rgb(86, 89, 88);
+  --solid-btn-background-accent: var(--blue-300);
+  --solid-btn-background-accent-hvr: var(--blue-500);
+  --pipe-btn: var(--gray-500);
+  --solid-btn-background-red: var(--red-300);
+  --solid-btn-background-red-hvr: var(--red-500);
+  --solid-btn-background-green: var(--green-300); //hsl(155, 47%, 47%);
+  --solid-btn-background-green-hvr: var(--green-400);
+  --outline-btn-border-green: var(--green-500);
+
+
+
+  // CHIP
+  --chip-background: var(--blue-300);
+  --chip-text: var(--regular-text);
+
+  // DROPDOWN / FILTER
+  --dropdown-background: #2c2e2f; //rgba(45, 48, 48, 1);
+  --dropdown-box-shadow: var(--subtle-box-shadow);
+  --dropdown-control-label: var(--gray-500);
+  --dropdown-border-color: #3a3d3e;
+  --dropdown-control-background: rgba(250, 251, 255, 0.03);
+
+  // EXPANSION PANEL
+  --expansion-header: rgba(250, 251, 255, 0.09);
+
+  // ICON
+  --icon-color: var(--gray-600);
+
+  // INPUT
+  --input-background: rgba(250, 251, 255, 0.03);
+  --input-border: rgba(250, 251, 255, 0.09);
+  --placeholder-text: var(--regular-text);
+
+  --select-text: rgba(250, 251, 255, 0.74);
+  --select-background: rgba(250, 251, 255, 0.05);
+  --select-options-background: rgb(54, 57, 58);
+
+
+  // INPUT, CHECKBOX-RADIO
+  --radio-focus-offset: var(--background-main);
+  --radio-focus: hsla(197, 99%, 39%, 0.4); //rgba(40, 195, 255, 0.4);
+  --checkbox-inner-check-color: var(--background-main);
+  --checkbox-radio-border-color: rgba(250, 251, 255, 0.35);
+  --checkbox-background: hsla(194, 92%, 48%, 1);
+
+  // MODAL
+  --modal-background: hsla(200, 5%, 14%, 1);
+
+  // NAV
+  --nav-box-shadow: var(--strong-box-shadow);
+  --navbar-bkgd: #111212;
+
+  --nav-border: #575c5a;
+  --nav-box-shadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.46), 0px 4px 9px 0 rgba(0, 0, 0, 0.58)";
+  --nav-link-inactive: #a2a7aa;
+
+  // FOOTER
+  --footer-bkgd: #111212;
+  --footer-text: rgba(255, 255, 255, .5);
+
+  // ROW
+  --row-hover: hsl(197deg 90% 36% / 0.15); //hsla(210, 4%, 91%, 0.07);
+  --selected-row: hsl(197deg 90% 36% / 30%);
+
+  // SCROLLBAR
+  --scrollbar-track-thumb: rgba(250, 251, 255, 0.17);
+  --scrollbar-track-thumb-hover: rgba(250, 251, 255, 0.27);
+  --scrollbar-track: rgba(250, 251, 255, 0.05);
+
+  // TEXT
+  --emphasis-text: white;
+  --regular-text: rgba(255, 255, 255, .9);
+  --inverse-text: rgba(250, 251, 255, 0.55);
+  --blue-text: var(--accent-blue-bolder);
+  --green-text: var(--green-600); //hsl(155, 96%, 46%);
+  --label-text: rgba(250, 251, 255, 0.55);
+  --red-text: var(--red-600);
+  --grid-blue-text: #5ad5f6;
+  --light600-dark400: 400;
+  --light600-dark300: 300;
+  --light400-dark300: 300;
+  --light700-dark600: 600;
+  --light800-dark700: 700;
+  --lightSofiaMed-darkSofiaReg: "SofiaPro-Regular";
+  --lightSofiaBold-darkSofiaReg: "SofiaPro-Regular";
+  --lightSofiaBold-darkSofiaMed: "SofiaPro-Medium";
+
+
+  // TOGGLE
+  --toggle-text-inactive: var(--gray-500);
+  --toggle-background: var(--gray-400);
+  --toggle-button: #e4e6e6;
+
+  // TOOLTIP
+  --tooltip-background: #ecece5;
+  --tooltip-background: #3e3f41;
+  --tooltip-background: hsl(197, 72%, 34%);
+  --tooltip-label: rgba(250, 251, 255, 0.55);
+  --tooltip-text: white;
+
+
+
+
+  // APP
+  --analytics-bkgd: #3f3646; //#463b4f,
+  --alphaCap-bkgd: #2e3233; //#415458, //#4e6786
+  --crb-bkgd: #37395a;
+  --alerting-bkgd: #3b3b44;
+  --alerting-red-bkgd: rgb(218, 76, 76);
+  --alerting-orange-background: #e77901;
+  --alerting-title-text: #fba123;
+  --icon-card-bkgd: #1e5045;
+  --info-footer: rgba(255, 255, 255, 0.14);
+  --loader: white;
+  --crb-btn-bkgd: transparent;
+  --crb-dd: #484a71;
+  --crb-btn-border: #46cc8f;
+  --crb-btn-text: #3affa5;
+  --crb-btn-hover: #159573;
+  --crb-btn-red-bkgd: transparent; //$GreenMedium,
+  --crb-btn-red-border: #fd5c5b;
+  --crb-btn-red-text: #ff6b6a;
+  --crb-btn-red-hover: #c94959; // this should be actual hover#ff6b6a,
+
+  --comm-services: #0d8a6f; //#009C5D,
+  --con-discretionary: #da5969; //#e36262, //#F85F5E, //#ab3bb3, //rgb(214, 86, 86), //#E4668A,
+  --con-staples: #FBAB3B; //#F3BD63,
+  --energy: #9ECA00; //#58A2FD,
+  --financials: #007B85;
+  --healthcare: #E59BB4; //#D98BA5,
+  --industrials: #486ADC;
+  --info-tech: #9757FA; //#9D60DC,
+  --materials: #E77803;
+  --real-estate: #A895C6; //#8982A2
+  --utilities: #9c813b; //#4BE4D5
+
+
+  --contact-button-bkgd: transparent;
+  --contact-button-border: var(--real-estate);
+  --linkedin-button-bkgd-hover: transparent;
+  --linkedin-button-text-hover: var(--blue-500);
+  --linkedin-button-border-hover: var(--blue-500);
+  --email-icon-button-bkgd-hover: transparent;
+  --email-icon-button-text-hover: #ef5252;
+  --email-icon-button-border-hover: #ef5252;
+  --wireframe1: var(--utilities);
+  --wireframe2: rgb(168 149 198 / 78%);
+
+}

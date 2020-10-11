@@ -15,31 +15,25 @@ import Home from "./components/home/Home";
 function App(props) {
   // defaultTheme = "light";
 
-  const dark = DARK;
-  const light = LIGHT;
   const homeRef = useRef();
   const [theme, setTheme] = useState(props.theme);
   const [activePage, setActivePage] = useState("home");
   const [resize, setResize] = useState(false);
   let winWidth = useRef(window.innerWidth);
 
-  function generateVars(theme) {
-    Object.keys(theme.properties).forEach(property => {
-      document.documentElement.style.setProperty(property, theme.properties[property]);
-    });
-  }
+  // function generateVars(theme) {
+  //   Object.keys(theme.properties).forEach(property => {
+  //     document.documentElement.style.setProperty(property, theme.properties[property]);
+  //   });
+  // }
 
   function setMyTheme(theme) {
     console.log(theme);
     localStorage.setItem("theme", theme);
     if (theme === "light") {
       setTheme("light");
-      // Object.assign(light.properties, appLight.properties);
-      generateVars(light);
     } else {
       setTheme("dark");
-      // Object.assign(dark.properties, appDark.properties);
-      generateVars(dark);
     }
   }
   function resizeFunction() {
@@ -70,12 +64,17 @@ function App(props) {
     console.log("mounted");
     if (theme === "light") {
       setMyTheme("light");
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
     } else {
       setMyTheme("dark");
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
     }
     // window.addEventListener("resize", handleResizeBetter.bind(this));
     winWidth.current = window.innerWidth;
     window.addEventListener("resize", resizeFunction);
+ 
   }, []);
 
   // function componentWillUnmount() {
@@ -86,7 +85,8 @@ function App(props) {
   let homeVisible = activePage === "home" ? true : false;
 
   return (
-    <div className={"theme-" + theme}>
+    // className={theme + "-theme"}
+    <div >
       <Nav
         myTheme={theme}
         setMyTheme={thm => setMyTheme(thm)}
@@ -106,8 +106,6 @@ function App(props) {
               className="contact linkedin"
               href="https://www.linkedin.com/in/amandainnis"
               target="_">
-              {/* <span className="aicon-comment"></span> */}
-              {/* <h2>Contact Me</h2> */}
               in
             </a>
             <a className="contact email-icon" href="mailto:amandainnis.design@gmail.com">

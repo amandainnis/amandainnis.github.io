@@ -1,0 +1,265 @@
+$YellowOrange : #FFCA41;
+$YellowOrangeBold : #DFB525;
+$LTYellow : #F1DEAC;
+
+
+.light-theme {
+  // GRAYS
+  --gray-600: rgba(29, 42, 48, 0.5);
+  --gray-500: rgba(29, 42, 48, 0.4);
+  --gray-400: rgba(29, 42, 48, 0.3);
+  --gray-300: rgba(29, 42, 48, 0.2);
+  --gray-200: rgba(29, 42, 48, 0.1);
+  --gray-100: rgba(29, 42, 48, 0.05);
+
+
+  // BLUES
+  --blue-600: hsl(196, 100%, 34%);
+  --blue-500: hsl(196, 71%, 45%);
+  --blue-400: hsl(196, 90%, 47%);
+  --blue-300: hsl(196, 88%, 70%);
+  --blue-200: hsla(196, 89%, 83%, 1);
+  --blue-100: hsl(196, 92%, 92%);
+  --accent-blue: var(--blue-400);
+  --accent-blue-bolder: #00AEEF;
+  --blue-bg-data: #41ACD0;
+
+  // GREENS
+  --green-600: hsl(168, 75%, 32%); //hsla(160, 75%, 32%, 1);
+  --green-500: hsl(168, 76%, 37%); //hsl(160, 69%, 37%);
+  --green-400: hsl(168, 76%, 42%); //hsl(160deg 58% 45%);
+  --green-300: hsl(168, 55%, 55%); // hsla(160, 47%, 55%, 1);
+  --green-200: hsl(168, 55%, 76%); // hsla(160, 47%, 76%, 1);
+  --green-100: hsl(168, 54%, 86%);
+  --accent-green: var(--green-500);
+
+  // YELLOW GREENS
+  --yellow-green-600: hsl(60, 100%, 37%);
+  --yellow-green-500: hsl(60, 83%, 44%);
+  --yellow-green-400: hsl(60, 76%, 53%);
+  --yellow-green-300: hsl(60, 82%, 63%);
+  --yellow-green-200: hsl(60, 82%, 73%);
+  --yellow-green-100: hsl(60, 82%, 83%);
+
+  // ORANGE
+  --orange-600: hsl(37, 100%, 46%);
+  --orange-500: hsl(37, 90%, 51%);
+  --orange-400: hsl(37, 88%, 57%);
+  --orange-300: hsl(37, 97%, 63%);
+  --orange-200: hsl(37, 100%, 68%);
+  --orange-100: hsl(37, 100%, 78%);
+  --accent-orange: var(--orange-500);
+
+  // PURPLES
+  --purple-600: hsl(271, 45%, 50%); // #FC5879; //#fe586b;
+  --purple-500: hsl(271, 50%, 57%);
+  --purple-400: hsl(271, 57%, 62%);
+  --purple-300: hsl(271, 44%, 67%);
+  --purple-200: hsl(271, 31%, 71%);
+  --purple-100: hsl(271, 45%, 88%);
+  --accent-purple: var(--purple-600);
+
+
+  // UNIQUES
+  --red-purple: #ca89b6;
+  --cool-gray: #9395A5;
+  --gray-purple: hsl(271, 14%, 45%);
+
+  // REDS
+  --red-600: hsl(350deg 79% 48%); // #BE1E2D;
+  --red-500: hsl(350deg 79% 53%);
+  --red-400: hsl(350deg 76% 60%);
+  --red-300: hsl(350deg 76% 64%);
+  --red-200: hsl(350deg 73% 76%);
+  --red-100: hsl(350deg 73% 89%);
+  --accent-red: hsl(350deg 90% 58%);
+
+  // REDORANGE
+  --red-orange-600: hsl(16, 82%, 56%);
+  --red-orange-500: hsl(16, 98%, 60%);
+  --red-orange-400: hsl(16, 85%, 64%);
+  --red-orange-300: hsl(16, 85%, 69%);
+  --red-orange-200: hsl(16, 83%, 73%);
+  --red-orange-100: hsl(16, 83%, 81%);
+
+  // COOLER BLUES
+  --cooler-blue-600: #166faf;
+  --cooler-blue-500: #2295e0;
+  --cooler-blue-400: #44b5ff;
+  --cooler-blue-300: #81c3f3;
+  --cooler-blue-200: #b5e0ff;
+  --cooler-blue-100: #e0f3ff;
+
+  // BACKGROUND-COLORS
+  --background-main: #fcfdfd; //#f9fafa
+  --background-darkest: #f4f6f6;
+  --background-subtle: var(--gray-100);
+  --sidebar-header: rgba(236, 238, 238, 1) 0%, rgba(252, 253, 253, 1) 100%;
+  --code-background: #393a3c;
+
+  // BORDERS, LAYOUT
+  --border-color: rgba(28, 37, 47, 0.15);
+  --ag-border-color: hsl(180 9% 91% / 1);
+  --pivot-border-color: rgba(29, 42, 48, 0.12);
+  --border-subtle: rgba(29, 42, 48, 0.09);
+  --border-emphasis: var(--gray-500);
+
+  // BOX-SHADOW
+  --subtle-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.13), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  --strong-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.09), 0px 4px 9px 0 rgba(0, 0, 0, 0.1);
+
+  // BUTTONS
+  --outline-btn-text-gray: var(--gray-600);
+  --outline-btn-border-gray: var(--gray-300);
+  --outline-btn-text-accent: var(--blue-400);
+  --outline-btn-border-accent: var(--blue-300);
+  --outline-btn-background: transparent;
+  --solid-btn-background-gray: hsl(221, 9%, 65%);
+  --solid-btn-background-accent: var(--blue-400);
+  --solid-btn-background-accent-hvr: var(--blue-500);
+  --pipe-btn: var(--gray-500);
+  --solid-btn-background-red: var(--red-400);
+  --solid-btn-background-red-hvr: var(--red-500);
+  --solid-btn-background-green: var(--green-400);
+  --solid-btn-background-green-hvr: var(--green-500);
+  --outline-btn-border-green: var(--green-500);
+
+  // CHIP
+  --chip-background: hsl(196deg 100% 85%);
+  --chip-text: var(--regular-text);
+
+  // DROPDOWN / FILTER
+  --dropdown-background: white;
+  --dropdown-box-shadow: var(--subtle-box-shadow);
+  --dropdown-control-label: var(--gray-500);
+  --dropdown-border-color: rgba(29, 42, 48, 0.05);
+
+  // EXPANSION PANEL
+  --expansion-header: rgba(29, 42, 48, 0.07);
+
+  // ICON
+  --icon-color: var(--gray-500);
+
+  // INPUT
+  --input-background: rgba(255, 255, 255, 0.66);
+  --input-border: rgba(29, 42, 48, 0.15);
+  --placeholder-text: var(--gray-400);
+  --select-background: rgba(29, 42, 48, 0.05);
+  --select-text: var(--gray-600);
+  --select-options-background: white;
+
+
+  // INPUT, CHECKBOX-RADIO
+  --radio-focus-offset: white;
+  --radio-focus: rgba(88, 162, 253, 0.28);
+  --checkbox-radio-border-color: var(--gray-300);
+  --checkbox-inner-check-color: white;
+  --checkbox-background: var(--blue-400);
+  --input-border-focus: var(--accent-blue);
+
+  // MODAL
+  --modal-background: white; //rgba(45, 48, 48, 1);
+
+  // NAV
+  --nav-box-shadow: var(--strong-box-shadow);
+  --navbar-bkgd: #313332;
+
+  --nav-border: #c9cbca;
+  --nav-box-shadow:
+    "0px 0px 6px 0px rgba(0, 0, 0, 0.09), 0px 4px 9px 0 rgba(0, 0, 0, 0.1)";
+  --nav-link-inactive: #9b9ba5;
+
+  // FOOTER
+  --footer-bkgd: #313332;
+  --footer-text: rgba(255, 255, 255, .5);
+
+  // ROW
+  --row-hover: hsl(196 92% 96% / 1); //hsla(210, 4%, 91%, 0.40);
+  --selected-row: hsl(196 92% 92% / 1); //hsla(196, 92%, 96%, 1);
+
+  // SCROLLBAR
+  --scrollbar-track-thumb: rgba(0, 0, 0, .09);
+  --scrollbar-track-thumb-hover: rgba(0, 0, 0, .16);
+  --scrollbar-track: rgba(0, 0, 0, 0.03);
+
+  // TEXT
+  --emphasis-text: black;
+  --regular-text: hsla(220, 3%, 27%, 1);
+  --inverse-text: rgba(255, 255, 255, .9);
+  --label-text: rgba(29, 42, 48, 0.4);
+  --blue-text: var(--blue-400);
+  --green-text: var(--green-600);
+  // --green-text: var(--green-600);
+  --red-text: var(--red-600);
+  --grid-blue-text: #008cbc;
+
+  --light600-dark400: 600;
+  --light600-dark300: 600;
+  --light400-dark300: 400;
+  --light700-dark600: 700;
+  --light800-dark700: 800;
+  --lightSofiaMed-darkSofiaReg: "SofiaPro-Medium";
+  --lightSofiaBold-darkSofiaReg: "SofiaPro-Bold";
+  --lightSofiaBold-darkSofiaMed: "SofiaPro-Bold";
+
+  // TOGGLE
+  --toggle-text-inactive: var(--gray-500);
+  --toggle-background: var(--gray-300);
+  --toggle-button: white;
+
+  // TOOLTIP
+  --tooltip-background: #262a2b;
+  --tooltip-label: rgba(250, 251, 255, 0.55);
+  --tooltip-text: white;
+
+
+
+  // APP
+
+  --analytics-bkgd: #F0F4C3; //#f27c7c,
+  --alphaCap-bkgd: #fbd8d8; //#498fe6,
+  --crb-bkgd: antiquewhite; //#e2e2e2,
+  --alerting-bkgd: #c8e4d0; //#dde4df, //#9a90ae
+  --alerting-red-bkgd: rgb(255, 130, 130);
+  --alerting-orange-background: #fdb338;
+  --alerting-title-text: #333333;
+  --icon-card-bkgd: #d9d6f0;
+  --info-footer: rgba(0, 0, 0, 0.14);
+  --loader: rgba(0, 0, 0, .6);
+  --crb-dd: #fdf9f4;
+  --crb-btn-bkgd: transparent; //$GreenMedium,
+  --crb-btn-border: #1abc9c;
+  --crb-btn-text: #13997d;
+  --crb-btn-hover: #17a589;
+  --crb-btn-red-bkgd: transparent; //$GreenMedium,
+  --crb-btn-red-border: #fd5c5b;
+  --crb-btn-red-text: #f04746;
+  --crb-btn-red-hover: #f66767;
+  --comm-services: #1abc9c; //#0C9174,
+  --con-discretionary: rgb(255, 126, 80); //#E4668A,
+  --con-staples: #cd853f; //#F3BD63,
+  --energy: #02aef1; //#58A2FD,
+  --financials: #5db977; //#13727C,
+  --healthcare: #D98BA5;
+  --industrials: #2A78D8;
+  --info-tech: #997edc; //#9D60DC,
+  --materials: #FFA610;
+  --real-estate: #c3b935; //#8982A2,
+  --utilities: #27d0bf; //#4BE4D5,
+
+  --ag-zebra: $GrayVerySubtle;
+  --animation-cell-change: #A0dfac;
+  --contact-button-bkgd: #e2ee57;
+  --contact-button-border: transparent;
+  --linkedin-button-bkgd-hover: var(--blue-500);
+  --linkedin-button-text-hover: white;
+  --linkedin-button-border-hover: transparent;
+  --email-icon-button-bkgd-hover: #ef5252;
+  --email-icon-button-text-hover: white;
+  --email-icon-button-border-hover: transparent;
+  --wireframe1: #8986a2;
+  --wireframe2: #6c9679;
+
+}
+
+;

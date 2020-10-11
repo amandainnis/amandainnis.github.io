@@ -1,4 +1,6 @@
 @import "./partials/_reset";
+@import "./theme/light";
+@import "./theme/dark";
 
 *,
 *::before,
@@ -19,39 +21,39 @@ small {
 }
 
 h1 {
-  font-size: 3.2rem; // color: red;
-  // font-family: $lightDemi-darkNormal;
+  font-size: 3.2rem;
   letter-spacing: 0.01em;
   display: flex;
 }
 
 h2 {
-  font-size: 2.5rem; // font-family: $lightDemi-darkNormal;
+  font-size: 2.5rem;
   letter-spacing: 0.01em;
 }
 
 h3 {
-  font-size: 2.1rem; // font-weight: $light600-dark400;
+  font-size: 2.1rem;
   letter-spacing: $wide-letter-spacing;
 }
 
 h4 {
-  font-size: 1.7rem; // font-weight: $light600-dark400;
+  font-size: 1.7rem;
   letter-spacing: $wide-letter-spacing;
 }
 
 h5 {
-  font-size: 1.4rem; // font-weight: $light600-dark400;
+  font-size: 1.4rem;
   letter-spacing: $wide-letter-spacing;
 }
 
 h6 {
-  font-size: 1.2rem; // font-weight: $light600-dark400;
+  font-size: 1.2rem;
   letter-spacing: $wide-letter-spacing;
 }
 
 a {
   text-decoration: none;
+
   // & > *:after {
   //   text-decoration: none;
   // }
@@ -59,6 +61,7 @@ a {
     color: $green-text;
     text-decoration: none;
     font-family: var(--lightSofiaBold-darkSofiaReg);
+
     &:hover {
       color: $green-text;
       text-decoration: underline;
@@ -97,6 +100,7 @@ h6 {
   font-family: sans-serif;
   @include Sofia-Medium;
   transition: all 0.3s ease-in-out;
+
   &:disabled {
     opacity: 0.4;
     pointer-events: none;
@@ -167,13 +171,13 @@ button {
     }
 
     &.green {
-      color: $green-bold;
+      color: var(--green-600);
       border: 1px solid $outline-btn-border-green;
 
       &:hover {
         color: white;
-        background-color: $green-medium;
-        border: 1px solid $green-medium;
+        background-color: var(--green-400);
+        border: 1px solid var(--green-400);
       }
 
       &:disabled {
@@ -181,7 +185,7 @@ button {
         cursor: auto;
 
         &:hover {
-          color: $green-bold;
+          color: var(--green-600);
           border: 1px solid $outline-btn-border-green;
         }
       }
@@ -255,9 +259,11 @@ button {
   align-items: center;
   justify-content: center;
   font-family: $font-variable, sans-serif;
+
   .text {
     margin: 0 4px;
   }
+
   i,
   [class^="aicon-"] {
     font-size: 20px;
@@ -265,6 +271,7 @@ button {
   }
 
   &:hover {
+
     .text,
     i,
     [class^="aicon-"] {
@@ -281,7 +288,7 @@ button {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: $gray-medium;
+  background-color: var(--gray-400);
   cursor: pointer;
 
   i {
@@ -294,43 +301,43 @@ button {
 ///////////////////////////////// COLORS * COLORS * COLORS * COLORS * /////////////////////////
 ///////////////////////////////// COLORS * COLORS * COLORS * COLORS * /////////////////////////
 .gray-bold {
-  background-color: $gray-bold;
-  fill: $gray-bold;
+  background-color: var(--gray-600);
+  fill: var(--gray-600);
 }
 
 .gray-bold-med {
-  background-color: $gray-bold-med;
-  fill: $gray-bold-med;
+  background-color: var(--gray-500);
+  fill: var(--gray-500);
 }
 
 .gray-medium {
-  background-color: $gray-medium;
-  fill: $gray-medium;
+  background-color: var(--gray-400);
+  fill: var(--gray-400);
 }
 
 .gray-med-subtle {
-  background-color: $gray-med-subtle;
-  fill: $gray-med-subtle;
+  background-color: var(--gray-300);
+  fill: var(--gray-300);
 }
 
 .gray-subtle {
-  background-color: $gray-subtle;
-  fill: $gray-subtle;
+  background-color: var(--gray-200);
+  fill: var(--gray-200);
 }
 
 .gray-very-subtle {
-  background-color: $gray-very-subtle;
-  fill: $gray-very-subtle;
+  background-color: var(--gray-100);
+  fill: var(--gray-100);
 }
 
 .blue-bold {
-  background-color: $blue-bold;
-  fill: $blue-bold;
+  background-color: var(--accent-blue);
+  fill: var(--accent-blue);
 }
 
 .blue-bold-med {
-  background-color: $blue-bold-med;
-  fill: $blue-bold-med;
+  background-color: var(--accent-blue)-med;
+  fill: var(--accent-blue)-med;
 }
 
 .blue-medium {
@@ -344,13 +351,13 @@ button {
 }
 
 .green-bold {
-  background-color: $green-bold;
-  fill: $green-bold;
+  background-color: var(--green-600);
+  fill: var(--green-600);
 }
 
 .green-medium {
-  background-color: $green-medium;
-  fill: $green-medium;
+  background-color: var(--green-400);
+  fill: var(--green-400);
 }
 
 .green-subtle {
@@ -359,48 +366,11 @@ button {
 }
 
 .red-bold {
-  background-color: $red-bold;
-  fill: $red-bold;
+  background-color: var(--accent-red);
+  fill: var(--accent-red);
 }
 
-// .comm-services {
-//     background-color: $comm-services;
-// }
-// .con-discretionary {
-//     background-color: $con-discretionary;
-// }
-// .con-staples {
-//     background-color: $con-staples;
-// }
-// .energy {
-//     background-color: $energy;
-// }
-// .financials {
-//     background-color: $financials;
-// }
 
-// .healthcare {
-//     background-color: $healthcare;
-// }
-// .industrials {
-//     background-color: $industrials;
-// }
-// .info-tech {
-//     background-color: $info-tech;
-// }
-// .materials {
-//     background-color: $materials;
-// }
-// .real-estate {
-//     background-color: $real-estate;
-// }
-// .utilities {
-//     background-color: $utilities;
-// }
-
-// .execSvcs {
-//     background-color: $execSvcs;
-// }
 
 //////////////////////////////////////// DROPDOWN * DROPDOWN * DROPDOWN * DROPDOWN * /////////////////////////
 .dropdown-menu-parent {
@@ -422,12 +392,12 @@ button {
 
   &:focus {
     outline: none;
-    border: 1px $blue-bold solid;
+    border: 1px var(--aceent-blue) solid;
   }
 
   &:active {
     outline: none;
-    border: 1px $blue-bold solid;
+    border: 1px var(--aceent-blue) solid;
   }
 
   &.dropdown-div-transparent {
@@ -457,14 +427,6 @@ button {
     justify-content: flex-end;
     align-self: center;
   }
-
-  .mdi-menu-down {
-    color: $gray-bold;
-    font-size: 23px;
-    display: flex;
-    justify-content: flex-end;
-    align-self: center;
-  }
 }
 
 button {
@@ -483,12 +445,12 @@ button {
 
     &:focus {
       outline: none;
-      border: 1px $blue-bold solid;
+      border: 1px var(--accent-blue) solid;
     }
 
     &:active {
       outline: none;
-      border: 1px $blue-bold solid;
+      border: 1px var(--accent-blue) solid;
     }
 
     &.dropdown-div-transparent {
@@ -511,14 +473,6 @@ button {
     }
 
     svg {
-      justify-content: flex-end;
-      align-self: center;
-    }
-
-    .mdi-menu-down {
-      color: $gray-bold;
-      font-size: 23px;
-      display: flex;
       justify-content: flex-end;
       align-self: center;
     }
@@ -657,7 +611,7 @@ ng-select {
   background-color: $background-main;
   height: 50px;
   // @include nav-box-shadow;
-  padding: 0 2rem;
+  padding: 0 3rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -700,6 +654,7 @@ ng-select {
     cursor: pointer;
   }
 }
+
 input::placeholder,
 input::-webkit-input-placeholder,
 input::-moz-placeholder {
@@ -708,10 +663,8 @@ input::-moz-placeholder {
   font-size: 0.9em;
   @include Sofia-Italic;
 }
-// :-ms-input-placeholder,
-// :-moz-placeholder,
-// ::-moz-placeholder,
-// ::-webkit-input-placeholder
+
+
 .input-style {
   height: 2.5em;
   padding: 0px 0.45em 0px 0px;
@@ -721,9 +674,7 @@ input::-moz-placeholder {
   background-color: $input-background;
   border: 1px $input-border solid;
   color: $regular-text;
-  font-size: 1.2rem; // font-weight: $light600-dark400;
-  // font-family: $font-variable;
-  // letter-spacing: $regular-letter-spacing;
+  font-size: 1.2rem;
   border-radius: 1px; //
   width: 100%;
   letter-spacing: 0.04em;
@@ -741,6 +692,7 @@ input::-moz-placeholder {
 
     @include Sofia-Italic;
   }
+
   ::placeholder {
     color: $placeholder-text;
     display: flex;
@@ -750,20 +702,22 @@ input::-moz-placeholder {
 
     @include Sofia-Italic;
   }
+
   a {
     color: $blue-text;
     text-decoration: none;
+
     &:after {
       text-decoration: none;
     }
   }
 
   &:active {
-    border: 1px $blue-bold solid;
+    border: 1px var(--accent-blue) solid;
   }
 
   &:focus {
-    border: 1px $blue-bold solid;
+    border: 1px var(--accent-blue) solid;
   }
 
   // &.restricted {
@@ -810,33 +764,18 @@ textarea {
     flex-direction: row;
   }
 
-  // &.display-label-aligned-with-input {
-  //     .displayInfo {
-  //         height: 36px;
-  //         display: flex;
-  //         align-items: center;
-  //         flex-wrap: wrap;
-  //     }
-  // }
-
-  // &.display-label-normal {
-  //     .displayInfo {
-  //         height: 30px;
-  //         display: flex;
-  //         align-items: center;
-  //     }
-  // }
-
   &.radio-checkbox-input {
     .label-style {
       padding-bottom: 0px;
     }
   }
 }
+
 .error-message {
   padding-top: 5px;
   color: $red-text;
 }
+
 ///////////////////////////////// LABEL TEXT * LABEL TEXT * LABEL TEXT * LABEL TEXT * /////////////////////////
 .horizontal-info,
 .info-text {
@@ -913,6 +852,7 @@ ul {
     }
   }
 }
+
 //////////////////////////////////////// POPUP POPUP POPUP POPUP /////////////////////////
 .modal-background {
   background-color: rgba(0, 0, 0, 0.6);
@@ -925,21 +865,25 @@ ul {
   position: absolute;
   top: 0px;
   left: 0px;
+
   &.top-align {
     .popup {
       top: 82px;
     }
   }
+
   &.vertical-center-align {
     .popup {
       // top: 82px;
       align-items: center;
     }
   }
+
   .popup {
     position: absolute;
     top: 82px;
   }
+
   form {
     &.form-popup {
       position: absolute;
@@ -947,6 +891,7 @@ ul {
       top: 82px;
       display: flex !important;
       justify-content: center;
+
       .popup {
         position: absolute;
         top: 0;
@@ -971,6 +916,7 @@ ul {
   top: 0px;
   padding: 10px 0px 5px 0px;
   @include popup-box-shadow;
+
   li {
     padding: 0 15px;
     height: 25px;
@@ -981,6 +927,7 @@ ul {
     font-weight: $lightSofiaBold-darkSofiaMed;
 
     cursor: pointer;
+
     &:hover {
       color: $emphasis-text;
       background-color: $selected-row;
@@ -1001,16 +948,19 @@ ul {
   z-index: $zindex-popup;
   border: 1px $popup-border solid;
   @include popup-box-shadow;
+
   form {
     display: flex;
     flex-direction: column;
     height: inherit;
   }
+
   footer {
     height: 70px;
     display: flex;
     padding: 0 25px;
     align-items: center;
+
     &.flex-end {
       justify-content: flex-end;
     }
@@ -1033,11 +983,13 @@ ul {
     color: $gray-bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
     &:hover {
       color: $regular-text;
       transition: all 0.3s ease-in-out;
     }
   }
+
   .mdi-close {
     font-size: 21px;
   }
@@ -1118,13 +1070,13 @@ ul {
     margin: 0;
   }
 
-  input[type="radio"]:checked ~ label::before {
-    background-color: $blue-bold;
+  input[type="radio"]:checked~label::before {
+    background-color: var(--accent-blue);
     background-color: $input-background;
     border: 2px $checkbox-background solid;
   }
 
-  input[type="radio"]:checked ~ label .inner-check {
+  input[type="radio"]:checked~label .inner-check {
     position: absolute;
     left: 4px;
     width: 8px;
@@ -1133,15 +1085,15 @@ ul {
     background-color: $checkbox-background;
   }
 
-  input[type="radio"]:focus ~ label::before {
+  input[type="radio"]:focus~label::before {
     border: 2px $checkbox-background solid;
   }
 
-  input[type="radio"]:hover ~ label::before {
+  input[type="radio"]:hover~label::before {
     border: 2px $checkbox-background solid;
   }
 
-  input[type="radio"]:active ~ label::before {
+  input[type="radio"]:active~label::before {
     background-color: $input-background;
     border: 2px $checkbox-background solid;
 
@@ -1155,7 +1107,7 @@ ul {
     }
   }
 
-  input[type="radio"]:focus ~ label::before {
+  input[type="radio"]:focus~label::before {
     box-shadow: 0 0 0 1px $radio-focus-offset, 0 0 0 0.2rem $radio-focus;
   }
 }
@@ -1166,62 +1118,63 @@ input:focus {
 }
 
 .radio-group {
+
   // min-width: 180px;
   label {
     &.radio-green {
       &::before {
-        border: 2px $green-bold solid !important;
+        border: 2px var(--green-600) solid !important;
       }
     }
 
     &.radio-red {
       &::before {
-        border: 2px $red-bold solid !important;
+        border: 2px var(--accent-red) solid !important;
       }
     }
   }
 
-  input[type="radio"]:hover ~ label.radio-red::before {
-    border: 2px $red-bold solid !important;
+  input[type="radio"]:hover~label.radio-red::before {
+    border: 2px var(--accent-red) solid !important;
   }
 
-  input[type="radio"]:hover ~ label.radio-green::before {
-    border: 2px $green-bold solid !important;
+  input[type="radio"]:hover~label.radio-green::before {
+    border: 2px var(--green-600) solid !important;
   }
 
-  input[type="radio"]:checked ~ label.radio-red::before {
-    // background-color: $red-bold !important;
-    border: 2px $red-bold solid !important;
+  input[type="radio"]:checked~label.radio-red::before {
+    // background-color: var(--accent-red) !important;
+    border: 2px var(--accent-red) solid !important;
   }
 
-  input[type="radio"]:checked ~ label.radio-red .inner-check {
+  input[type="radio"]:checked~label.radio-red .inner-check {
     position: absolute;
     left: 4px;
     width: 8px;
     height: 8px;
     border-radius: 50px;
-    background-color: $red-bold;
+    background-color: var(--accent-red);
   }
 
-  input[type="radio"]:checked ~ label.radio-green::before {
-    border: 2px $green-bold solid !important;
+  input[type="radio"]:checked~label.radio-green::before {
+    border: 2px var(--green-600) solid !important;
   }
 
-  input[type="radio"]:checked ~ label.radio-green .inner-check {
+  input[type="radio"]:checked~label.radio-green .inner-check {
     position: absolute;
     left: 4px;
     width: 8px;
     height: 8px;
     border-radius: 50px;
-    background-color: $green-bold;
+    background-color: var(--green-600);
   }
 
-  input[type="radio"]:active ~ label.radio-red::before {
-    background-color: $red-bold;
+  input[type="radio"]:active~label.radio-red::before {
+    background-color: var(--accent-red);
   }
 
-  input[type="radio"]:active ~ label.radio-green::before {
-    background-color: $green-bold;
+  input[type="radio"]:active~label.radio-green::before {
+    background-color: var(--green-600);
   }
 }
 
@@ -1340,22 +1293,22 @@ input:focus {
       opacity: 0;
     }
 
-    input[type="checkbox"]:focus ~ .checkbox {
+    input[type="checkbox"]:focus~.checkbox {
       box-shadow: 0 0 0 1px $radio-focus-offset, 0 0 0 0.2rem $radio-focus;
       border: 2px $checkbox-background solid;
     }
 
-    input[type="checkbox"]:checked ~ .checkbox {
+    input[type="checkbox"]:checked~.checkbox {
       // border: 2px solid $radio-blue;
       background-color: $checkbox-background;
       border: 2px $checkbox-background solid;
     }
 
-    input[type="checkbox"]:checked ~ .checkbox::before {
+    input[type="checkbox"]:checked~.checkbox::before {
       background-color: $checkbox-background;
     }
 
-    input[type="checkbox"]:checked ~ .checkbox .inner-check {
+    input[type="checkbox"]:checked~.checkbox .inner-check {
       margin-bottom: 3.5px;
       width: 6px;
       height: 10.5px;
@@ -1604,7 +1557,7 @@ pre[class*="language-"] {
   font-size: 1.2rem;
 
   &.selected {
-    border-bottom: 2px solid $blue-bold;
+    border-bottom: 2px solid var(--accent-blue);
     color: $emphasis-text;
   }
 }
@@ -1622,7 +1575,7 @@ pre[class*="language-"] {
   color: $regular-text;
   padding: 4px 8px;
   text-transform: capitalize;
-  background-color: var(--green-medium);
+  background-color: var(--green-400);
 }
 
 ////////////////////////////////////////  TEXT *  TEXT *  TEXT *  TEXT * /////////////////////////
@@ -1633,8 +1586,8 @@ pre[class*="language-"] {
 }
 
 .divider-heading {
-  background-color: $gray-subtle;
-  color: $gray-bold;
+  background-color: var(--gray-200);
+  color: var(--gray-600);
   padding: 0.8rem 0;
 }
 
@@ -1722,7 +1675,7 @@ app-donut-one {
 
     .selected {
       color: $emphasis-text; // font-weight: $light500-dark400;
-      border-bottom: 2px $blue-bold solid;
+      border-bottom: 2px var(--accent-blue) solid;
     }
 
     .sort-arrow-wrapper {
@@ -1731,7 +1684,7 @@ app-donut-one {
       display: inline-block;
 
       .nav-sort-arrow {
-        color: $blue-bold;
+        color: var(--accent-blue);
         font-size: 16px;
         padding-left: 6px;
         position: absolute;

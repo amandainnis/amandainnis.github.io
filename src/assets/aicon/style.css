@@ -1,11 +1,10 @@
 @font-face {
   font-family: 'aicon';
-  src:  url('fonts/aicon.eot?adoto8');
-  src:  url('fonts/aicon.eot?adoto8#iefix') format('embedded-opentype'),
-    url('fonts/aicon.woff2?adoto8') format('woff2'),
-    url('fonts/aicon.ttf?adoto8') format('truetype'),
-    url('fonts/aicon.woff?adoto8') format('woff'),
-    url('fonts/aicon.svg?adoto8#aicon') format('svg');
+  src:
+    url('fonts/aicon.woff2?pn8hus') format('woff2'),
+    url('fonts/aicon.ttf?pn8hus') format('truetype'),
+    url('fonts/aicon.woff?pn8hus') format('woff'),
+    url('fonts/aicon.svg?pn8hus#aicon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -14,7 +13,7 @@
 [class^="aicon-"], [class*=" aicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'aicon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,6 +25,72 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.aicon-cloud-upload:before {
+  content: "\e990";
+}
+.aicon-play:before {
+  content: "\e991";
+}
+.aicon-pause:before {
+  content: "\e992";
+}
+.aicon-triangle-down:before {
+  content: "\e98e";
+}
+.aicon-triangle-up:before {
+  content: "\e98f";
+}
+.aicon-resizer:before {
+  content: "\e98c";
+}
+.aicon-minus-circle:before {
+  content: "\e98b";
+}
+.aicon-arrows-drag:before {
+  content: "\e98a";
+}
+.aicon-home7:before {
+  content: "\e989";
+}
+.aicon-home4:before {
+  content: "\e982";
+}
+.aicon-home5:before {
+  content: "\e983";
+}
+.aicon-home6:before {
+  content: "\e984";
+}
+.aicon-home3:before {
+  content: "\e985";
+}
+.aicon-home1:before {
+  content: "\e986";
+}
+.aicon-home2:before {
+  content: "\e987";
+}
+.aicon-contract:before {
+  content: "\e988";
+}
+.aicon-sidebar:before {
+  content: "\e977";
+}
+.aicon-group-contractor:before {
+  content: "\e97e";
+}
+.aicon-group-expander:before {
+  content: "\e97f";
+}
+.aicon-list:before {
+  content: "\e980";
+}
+.aicon-area-chart:before {
+  content: "\e981";
+}
+.aicon-hierarchy:before {
+  content: "\e98d";
+}
 .aicon-arrow-down:before {
   content: "\e901";
 }
@@ -38,11 +103,53 @@
 .aicon-arrow-up:before {
   content: "\e90c";
 }
+.aicon-arrows-back-forth:before {
+  content: "\e959";
+}
+.aicon-bell:before {
+  content: "\e95a";
+}
+.aicon-bell-fill:before {
+  content: "\e967";
+}
+.aicon-bell-fill2:before {
+  content: "\e96a";
+}
+.aicon-bell-fill3:before {
+  content: "\e966";
+}
+.aicon-bookmark:before {
+  content: "\e91b";
+}
+.aicon-bookmark-fill:before {
+  content: "\e948";
+}
+.aicon-briefcase:before {
+  content: "\e92e";
+}
+.aicon-calculate-delta:before {
+  content: "\e96e";
+}
+.aicon-calculate-n:before {
+  content: "\e931";
+}
+.aicon-calculate-percent:before {
+  content: "\e93d";
+}
+.aicon-calculate-plus-minus:before {
+  content: "\e964";
+}
+.aicon-calculator:before {
+  content: "\e97c";
+}
+.aicon-calculator-outline:before {
+  content: "\e97d";
+}
 .aicon-calendar:before {
   content: "\e92b";
 }
-.aicon-calendar-blank:before {
-  content: "\e931";
+.aicon-calendar-blank2:before {
+  content: "\e968";
 }
 .aicon-calendar-check:before {
   content: "\e92f";
@@ -50,11 +157,29 @@
 .aicon-calendar-day:before {
   content: "\e930";
 }
+.aicon-chart-arrow:before {
+  content: "\e96d";
+}
 .aicon-check:before {
   content: "\e917";
 }
+.aicon-check-circle:before {
+  content: "\e905";
+}
+.aicon-check-for-checkbox:before {
+  content: "\e972";
+}
 .aicon-check-mini:before {
   content: "\e90f";
+}
+.aicon-checkbox-checked:before {
+  content: "\e96b";
+}
+.aicon-checkbox-indeterminate:before {
+  content: "\e96c";
+}
+.aicon-checkbox-unchecked:before {
+  content: "\e974";
 }
 .aicon-chevron-double-left:before {
   content: "\e90d";
@@ -64,6 +189,9 @@
 }
 .aicon-chevron-down:before {
   content: "\e911";
+}
+.aicon-chevron-down2:before {
+  content: "\e973";
 }
 .aicon-chevron-left:before {
   content: "\e912";
@@ -77,14 +205,20 @@
 .aicon-circle:before {
   content: "\e916";
 }
-.aicon-close:before {
-  content: "\e903";
+.aicon-clock:before {
+  content: "\e975";
 }
-.aicon-close2:before {
-  content: "\e91b";
+.aicon-close:before {
+  content: "\e906";
+}
+.aicon-close-circle:before {
+  content: "\e971";
 }
 .aicon-cloud:before {
   content: "\e928";
+}
+.aicon-cloud-download:before {
+  content: "\e93f";
 }
 .aicon-cog:before {
   content: "\e919";
@@ -95,11 +229,32 @@
 .aicon-comment:before {
   content: "\e900";
 }
+.aicon-comment-blank-fill:before {
+  content: "\e963";
+}
+.aicon-comment-blank-outline:before {
+  content: "\e976";
+}
 .aicon-comment-hide:before {
   content: "\e91c";
 }
 .aicon-copy:before {
   content: "\e910";
+}
+.aicon-credit-card:before {
+  content: "\e939";
+}
+.aicon-database:before {
+  content: "\e965";
+}
+.aicon-dollar:before {
+  content: "\e958";
+}
+.aicon-donut-fill:before {
+  content: "\e95c";
+}
+.aicon-donut-outline:before {
+  content: "\e95d";
 }
 .aicon-dots-horizontal:before {
   content: "\e90a";
@@ -119,8 +274,17 @@
 .aicon-email:before {
   content: "\e904";
 }
+.aicon-error:before {
+  content: "\e955";
+}
 .aicon-expand:before {
   content: "\e927";
+}
+.aicon-eye:before {
+  content: "\e97b";
+}
+.aicon-eye-private:before {
+  content: "\e97a";
 }
 .aicon-filter:before {
   content: "\e91d";
@@ -134,8 +298,71 @@
 .aicon-filter-stack:before {
   content: "\e926";
 }
+.aicon-format-code:before {
+  content: "\e94f";
+}
+.aicon-format-csv:before {
+  content: "\e96f";
+}
+.aicon-format-excel:before {
+  content: "\e952";
+}
+.aicon-format-excel-fill:before {
+  content: "\e950";
+}
+.aicon-format-jpg:before {
+  content: "\e95f";
+}
+.aicon-format-pdf:before {
+  content: "\e94d";
+}
+.aicon-format-pdf-fill:before {
+  content: "\e94c";
+}
+.aicon-format-png:before {
+  content: "\e960";
+}
+.aicon-format-text:before {
+  content: "\e93e";
+}
+.aicon-format-word:before {
+  content: "\e94b";
+}
+.aicon-format-word-fill:before {
+  content: "\e945";
+}
+.aicon-format-xls:before {
+  content: "\e970";
+}
+.aicon-grid:before {
+  content: "\e979";
+}
+.aicon-hand-pointing:before {
+  content: "\e94e";
+}
+.aicon-horizontal-bar:before {
+  content: "\e957";
+}
 .aicon-image:before {
   content: "\e907";
+}
+.aicon-info:before {
+  content: "\e93b";
+}
+.aicon-institution:before {
+  content: "\e953";
+}
+.aicon-investor:before {
+  content: "\e954";
+}
+.aicon-line-chart:before {
+  content: "\e95e";
+}
+.aicon-line-chart-points:before {
+  content: "\e949";
+}
+.aicon-lock:before {
+  content: "\e956";
 }
 .aicon-logout:before {
   content: "\e918";
@@ -155,23 +382,47 @@
 .aicon-paperclip:before {
   content: "\e93c";
 }
+.aicon-people:before {
+  content: "\e947";
+}
 .aicon-person:before {
   content: "\e902";
 }
-.aicon-plus-circle:before {
-  content: "\e92d";
+.aicon-person-fill:before {
+  content: "\e942";
+}
+.aicon-piechart:before {
+  content: "\e961";
+}
+.aicon-piechart-fill:before {
+  content: "\e962";
+}
+.aicon-piechart-pattern:before {
+  content: "\e95b";
+}
+.aicon-plant:before {
+  content: "\e944";
 }
 .aicon-plus:before {
-  content: "\e905";
+  content: "\e903";
 }
-.aicon-plus-mini:before {
-  content: "\e906";
+.aicon-plus-circle:before {
+  content: "\e929";
 }
 .aicon-redo:before {
   content: "\e936";
 }
 .aicon-refresh:before {
-  content: "\e929";
+  content: "\e92d";
+}
+.aicon-report:before {
+  content: "\e946";
+}
+.aicon-row-groups:before {
+  content: "\e978";
+}
+.aicon-ruler:before {
+  content: "\e969";
 }
 .aicon-search:before {
   content: "\e92a";
@@ -181,6 +432,9 @@
 }
 .aicon-send:before {
   content: "\e932";
+}
+.aicon-smiley:before {
+  content: "\e935";
 }
 .aicon-star:before {
   content: "\e93a";
@@ -194,9 +448,21 @@
 .aicon-sun-outline:before {
   content: "\e925";
 }
+.aicon-transaction:before {
+  content: "\e943";
+}
 .aicon-trashcan:before {
   content: "\e937";
 }
 .aicon-undo:before {
   content: "\e938";
+}
+.aicon-vertical-bar:before {
+  content: "\e941";
+}
+.aicon-vertical-stacked-bar:before {
+  content: "\e94a";
+}
+.aicon-vertical-stacked-bar2:before {
+  content: "\e951";
 }

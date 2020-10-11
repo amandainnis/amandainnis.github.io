@@ -59,6 +59,18 @@ export default function Icons(props) {
             <div className="aicon-send"></div>
             <div className="aicon-image"></div>
             <div className="aicon-paperclip"></div>
+            <div className="aicon-area-chart"></div>
+            <div className="aicon-bookmark"></div>
+            <div className="aicon-briefcase"></div>
+            <div className="aicon-calculator"></div>
+            <div className="aicon-clock"></div>
+            <div className="aicon-credit-card"></div>
+            <div className="aicon-ruler"></div>
+            <div className="aicon-donut-fill"></div>
+            <div className="aicon-hand-pointing"></div>
+            <div className="aicon-error"></div>
+            <div className="aicon-people"></div>
+            <div className="aicon-plus-circle"></div>
           </div>
         </div>
       )}
