@@ -2,17 +2,9 @@ import React from "react";
 
 import AlertingDivs from "../components/alerting/AlertingDivs";
 
-const imgInsightAnalytics = require("../assets/images/drilldown_client-thumb.png");
-// const imgInsightAnalyticsDesktop = require("../images/insight-analytics-desktop.png");
-
-const imgCRB = require("../assets/images/crb-img.png");
-const imgAlphaCap = require("../assets/images/alphaCapture.png");
-const imgAlerting = require("../assets/images/alerting.png");
-
 const portfolioData = [
   {
     id: 1,
-    img: imgInsightAnalytics,
     title: "Insight Analytics",
     subtitle: "A Client Data Dashboard",
     blurb: [
@@ -28,7 +20,6 @@ const portfolioData = [
   },
   {
     id: 2,
-    img: imgAlphaCap,
     title: "Alpha Capture",
     subtitle: "A Trade Idea Tracker",
     blurb: [""],
@@ -41,7 +32,6 @@ const portfolioData = [
   },
   {
     id: 3,
-    img: imgCRB,
     title: "CRB Pricer",
     subtitle: "Central Risk Book Pricing and Trade Execution",
     blurb: [""],
@@ -54,7 +44,6 @@ const portfolioData = [
   },
   {
     id: 4,
-    img: imgAlerting,
     title: "Alerting",
     subtitle: "Client and Ticker Alerts for Traders",
     blurb: [""],

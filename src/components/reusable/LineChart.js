@@ -1,13 +1,13 @@
 import React, { createRef, useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-import * as moment from "moment";
+import moment from "moment";
 
 // each charted value has a display name for tooltip
 // tooltip may or may not have a charted value
 // each line takes a
 export default function LineChart(props) {
-  const chart = createRef();
+  const chart = useRef(null);
   let innerWidth;
   const defaultHeight = 220;
   var containerElement;
@@ -55,23 +55,24 @@ export default function LineChart(props) {
 
   function createChart(chartData, myArrayOfKeys, myID, numberFormatFn) {
     containerElement = chart.current;
-    innerWidth = chart.current.clientWidth;
+    if (!containerElement) {
+      return;
+    }
+    innerWidth = containerElement.clientWidth;
+    if (innerWidth < 10) {
+      return;
+    }
 
     containerElement.innerHTML = "";
     let tempMinMax = getMaxVal(chartData, myArrayOfKeys);
     let minVal = tempMinMax.min;
     let maxVal = tempMinMax.max;
     // let currentMonth = getCurrentMonth();
-    let margin = { top: 20, right: 60, bottom: 0, left: 10 };
+    let margin = { top: 20, right: 56, bottom: 0, left: 8 };
     //////////////////////// Establish the reused vals and the bound functions  ////////////////////////
-    let width = Number.isNaN(
-      parseInt(d3.select(containerElement).style("width"))
-    )
-      ? 0
-      : parseInt(d3.select(containerElement).style("width")) -
-        margin.left -
-        margin.right;
+    let width = Math.max(0, innerWidth - margin.left - margin.right);
     let height = 300 - margin.top;
+    const svgHeight = height + margin.top + margin.bottom + 40;
     let justBisect = d3.bisector(d => chartData.indexOf(d)).left;
 
     //////////////////////// Set the scales  ////////////////////////
@@ -129,7 +130,9 @@ export default function LineChart(props) {
       .attr("class", "line-chart-svg-container")
       .attr("id", myID)
       .attr("width", "100%")
-      .attr("height", height + margin.top + margin.bottom + 40)
+      .attr("height", svgHeight)
+      .attr("viewBox", `0 0 ${innerWidth} ${svgHeight}`)
+      .attr("preserveAspectRatio", "xMidYMid meet")
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -164,7 +167,7 @@ export default function LineChart(props) {
 
     CVsvg.append("g")
       .attr("class", "yAxis")
-      .attr("transform", "translate(" + (width + 6) + ",0)")
+      .attr("transform", "translate(" + width + ",0)")
       .call(yAxis);
 
     CVsvg.append("g")
@@ -299,7 +302,7 @@ export default function LineChart(props) {
           );
         });
 
-        dateText.text(d.niceDate + ", " + d.niceTime);
+        dateText.text(d.niceTime ? d.niceDate + ", " + d.niceTime : d.niceDate);
 
         d3.select(`#${myID} .mouse-line`).attr("y2", height);
       })
@@ -339,7 +342,7 @@ export default function LineChart(props) {
 
       d3.select(`#${myID}Tooltip #lineTextConst${myID}${index}`).text(myText);
     });
-    dateText.text(d.niceDate + ", " + d.niceTime);
+    dateText.text(d.niceTime ? d.niceDate + ", " + d.niceTime : d.niceDate);
     // // YOYText.text(YOYdiff);
     // // YOYText.attr("class", YOYdiffColor);
 
@@ -347,10 +350,45 @@ export default function LineChart(props) {
   }
 
   useEffect(() => {
-    createChart(chartData, valueArray, props.myID, props.numberFormatFn);
-  }, []);
-  useEffect(() => {
-    createChart(chartData, valueArray, props.myID, props.numberFormatFn);
-  }, [props.resize]);
-  return <div ref={chart}></div>;
+    const node = chart.current;
+    if (!node) {
+      return;
+    }
+
+    let lastWidth = -1;
+    const draw = () => {
+      const nextWidth = node.clientWidth;
+      if (nextWidth < 10) {
+        return;
+      }
+      if (Math.abs(nextWidth - lastWidth) < 1 && lastWidth > 0) {
+        return;
+      }
+      lastWidth = nextWidth;
+      createChart(chartData, valueArray, props.myID, props.numberFormatFn);
+    };
+
+    draw();
+
+    if (typeof ResizeObserver === "undefined") {
+      return;
+    }
+
+    let frame = null;
+    const observer = new ResizeObserver(() => {
+      if (frame) {
+        cancelAnimationFrame(frame);
+      }
+      frame = requestAnimationFrame(draw);
+    });
+    observer.observe(node);
+
+    return () => {
+      if (frame) {
+        cancelAnimationFrame(frame);
+      }
+      observer.disconnect();
+    };
+  }, [props.resize, props.myID, props.xTicks, chartData, valueArray]);
+  return <div className="line-chart" ref={chart}></div>;
 }

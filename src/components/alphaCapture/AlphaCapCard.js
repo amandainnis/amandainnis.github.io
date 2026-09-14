@@ -1,24 +1,25 @@
-import React, { useState, useRef, useEffect, createRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import * as DataHandler from "../../data/DataHandler";
 import LineChart from "../reusable/LineChart";
 import CardFooter from "../reusable/Card-Footer";
-const imgAlphaCap = require("../../assets/images/alphaCapture.png");
 const data = {
   id: 2,
-  img: imgAlphaCap,
   title: "Alpha Capture",
   subtitle: "A Trade Idea Tracker",
   blurb: [""],
   bkgd: "var(--alphaCap-bkgd)"
 };
+function jsonFallback(winWidth) {
+  return winWidth < 700
+    ? DataHandler.alphaCaptureChartDataMobile
+    : DataHandler.alphaCaptureChartData;
+}
+
 function AlphaCapCard(props) {
-  let myDataStart =
-    props.winWidth < 700
-      ? DataHandler.alphaCaptureChartDataMobile
-      : DataHandler.alphaCaptureChartData;
   let xTicksVar = props.winWidth < 700 ? 3 : 5;
   const [cardVisible, setCardVisible] = useState(true);
-  let myData = useRef(myDataStart);
+  const [chartData, setChartData] = useState(() => jsonFallback(props.winWidth));
+  const usingLiveData = useRef(false);
 
   function percentFormatFn(d) {
     return Math.round(d * 10000) / 100 + "%";
@@ -31,15 +32,31 @@ function AlphaCapCard(props) {
     }
   }
   useEffect(() => {
-    myDataStart =
-      props.winWidth < 700
-        ? DataHandler.alphaCaptureChartDataMobile
-        : DataHandler.alphaCaptureChartData;
-    myData.current = myDataStart;
+    let cancelled = false;
+    DataHandler.fetchAlphaCaptureDailyData()
+      .then(liveData => {
+        if (!cancelled && liveData && liveData.length) {
+          usingLiveData.current = true;
+          setChartData(liveData);
+        }
+      })
+      .catch(err => {
+        console.log(err);
+        if (!cancelled) {
+          setChartData(jsonFallback(props.winWidth));
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+  useEffect(() => {
     xTicksVar = props.winWidth < 700 ? 3 : 5;
-    // setMyDataState(myDataStart);
-    // console.log("resizing inside the effect", myDataStart);
-  }, [props.resize]);
+    if (usingLiveData.current) {
+      return;
+    }
+    setChartData(jsonFallback(props.winWidth));
+  }, [props.winWidth]);
 
   return (
     <article
@@ -53,7 +70,7 @@ function AlphaCapCard(props) {
             <h4 className="subtitle">{data.subtitle}</h4>
           </div>
           <LineChart
-            data={myData.current}
+            data={chartData}
             valueArray={[
               {
                 dataKey: "pricePercent",

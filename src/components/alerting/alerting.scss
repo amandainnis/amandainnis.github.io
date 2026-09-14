@@ -30,6 +30,57 @@
   }
 }
 
+.dark-theme .tile.blinkDivUp {
+  background-color: #f0ff4c !important;
+  color: #333;
+}
+
+@keyframes restoreTileFade {
+  0% {
+    opacity: 1;
+    background-color: #f0ff4c;
+    color: #333;
+  }
+
+  2% {
+    opacity: 0.9;
+    background-color: #f0ff4c;
+    color: #333;
+  }
+
+  49.9% {
+    opacity: 0;
+    background-color: #f0ff4c;
+    color: #333;
+  }
+
+  50% {
+    opacity: 0;
+    background-color: var(--alerting-orange-background);
+    color: var(--regular-text);
+  }
+
+  98% {
+    opacity: 0.9;
+    background-color: var(--alerting-orange-background);
+    color: var(--regular-text);
+  }
+
+  100% {
+    opacity: 1;
+    background-color: var(--alerting-orange-background);
+    color: var(--regular-text);
+  }
+}
+
+.dark-theme .tile.tile-restore {
+  animation: restoreTileFade 800ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
+.light-theme .tile.tile-restore {
+  animation: blinker 800ms cubic-bezier(0.4, 0, 1, 1) both;
+}
+
 .alert-row-section {
   //   border-top: 1px $input-border solid;
   margin-top: 2rem;

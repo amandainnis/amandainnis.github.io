@@ -1,12 +1,11 @@
 import React, { useEffect, createRef, useState } from "react";
 import * as Common from "../reusable/common";
+import * as DataHandler from "../../data/DataHandler";
 import CardFooter from "../reusable/Card-Footer";
-const imgInsightAnalytics = require("../../assets/images/drilldown_client-thumb.png");
 const imgCodeweek = require("../../assets/images/codeweek-sml.jpeg");
 
 const data = {
   id: 1,
-  img: imgInsightAnalytics,
   title: "Analytics",
   subtitle: "A Client Data Dashboard",
   blurb: [
@@ -17,23 +16,9 @@ const data = {
 };
 const backupPlan = [
   {
-    "Rank A: Real-Time Performance": {
-      "Consumer Discretionary": "1.57",
-      "Communication Services": "1.43",
-      Energy: "1.31",
-      Materials: "1.30",
-      Industrials: "1.16",
-      "Information Technology": "1.06",
-      Financials: "0.77",
-      "Real Estate": "0.22",
-      "Health Care": "-0.33",
-      "Consumer Staples": "-0.48",
-      Utilities: "-0.88"
-    }
+    "Rank A: Real-Time Performance": DataHandler.sectorPerformanceBackupData
   }
 ];
-const sectorUrl =
-  "https://www.alphavantage.co/query?function=SECTOR&apikey=NKT90SOYWKFBP04F";
 
 function InsightAnalyticsCard(props) {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,15 +28,14 @@ function InsightAnalyticsCard(props) {
 
   async function asyncFetch() {
     try {
-      const res = await fetch(sectorUrl);
-      const myData = await res.json();
-      let reformattedData = addWidth(myData["Rank A: Real-Time Performance"]);
+      const myData = await DataHandler.fetchSectorPerformance();
+      let reformattedData = addWidth(myData);
       // console.log(reformattedData);
       setIsLoading(false);
       setSectorData(reformattedData);
     } catch (err) {
       console.log(err);
-      let reformattedData = addWidthRandom(
+      let reformattedData = addWidth(
         backupPlan[0]["Rank A: Real-Time Performance"]
       );
       setIsLoading(false);

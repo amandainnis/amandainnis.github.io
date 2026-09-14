@@ -1,7 +1,7 @@
 import React, { createRef, useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 import * as DataHandler from "../../data/DataHandler";
-import * as moment from "moment";
+import moment from "moment";
 
 export default function LineChartOG() {
   const lineChartData = [

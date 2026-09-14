@@ -1,5 +1,8 @@
 .portfolio-card-wrapper {
   .portfolio-card {
+    min-width: 0;
+    overflow: hidden;
+
     &.alpha-capture {
       // @media screen and (max-width: 450px) {
       //   // padding: 2.2rem 0.5rem 2.2rem 2rem;

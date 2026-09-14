@@ -2,12 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import IsLoading from "../reusable/IsLoading";
 import * as Common from "../reusable/common";
 import StockData from "../../data/stock_data";
-import ClientData from "../../data/clientData";
+import { ClientData } from "../../data/clientData";
 
-const imgCRB = require("../../assets/images/crb-img.png");
 const data = {
   id: 3,
-  img: imgCRB,
   title: "Pricer",
   subtitle: "Stock Pricing and Trade Execution",
   blurb: [""],
@@ -38,7 +36,7 @@ function CRBApp() {
   const [tickerDDFiltered, setTickerDDFiltered] = useState(null);
 
   const getTickerURL = ticker =>
-    `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${ticker}&interval=5min&outputsize=full&apikey=NKT90SOYWKFBP04F`;
+    `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&outputsize=compact&apikey=8Z47EGJAL65KUCJW`;
 
   function fetchTicker(ticker) {
     return fetch(getTickerURL(ticker))
@@ -80,13 +78,13 @@ function CRBApp() {
   const resolveFetchedTicker = ticker => {
     setIsLoading(true);
     fetchTicker(ticker).then(res => {
-      let myKeys;
-
-      if (res !== undefined && res["Time Series (5min)"] !== undefined) {
-        console.log(res);
-        myKeys = Object.keys(res["Time Series (5min)"]);
+      const series = res && res["Time Series (Daily)"];
+      const dates = series ? Object.keys(series) : [];
+      const latest = dates.length ? series[dates[0]] : null;
+      const dailyPrice = latest && (latest["4. close"] || latest["1. open"]);
+      if (dailyPrice) {
         setIsLoading(false);
-        setPrice(res["Time Series (5min)"][myKeys[0]]["1. open"]);
+        setPrice(dailyPrice);
       } else {
         setIsLoading(false);
         setTicker("Not a Ticker");

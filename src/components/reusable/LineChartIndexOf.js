@@ -1,7 +1,7 @@
 import React, { createRef, useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-import * as moment from "moment";
+import moment from "moment";
 
 // each charted value has a display name for tooltip
 // tooltip may or may not have a charted value

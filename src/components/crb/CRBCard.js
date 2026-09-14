@@ -1,15 +1,14 @@
 import React, { useState, useRef, useEffect, createRef } from "react";
 import IsLoading from "../reusable/IsLoading";
 import * as Common from "../reusable/common";
+import * as DataHandler from "../../data/DataHandler";
 import StockData from "../../data/stock_data";
-import ClientData from "../../data/clientData";
+import { ClientData } from "../../data/clientData";
 import CardFooter from "../reusable/Card-Footer";
 import Slider from "./Slider";
 
-const imgCRB = require("../../assets/images/crb-img.png");
 const data = {
   id: 3,
-  img: imgCRB,
   title: "Pricer",
   subtitle: "Stock Pricing and Trade Execution",
   blurb: [""],
@@ -59,31 +58,22 @@ function CRBCard() {
   // const [tickerDDReservoir, setTickerDDReservoir] = useState(StockData);
   const [tickerDDFiltered, setTickerDDFiltered] = useState(null);
 
-  const getTickerURL = ticker =>
-    `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${ticker}&interval=5min&outputsize=full&apikey=NKT90SOYWKFBP04F`;
-
   async function asyncFetch(ticker) {
     try {
-      let preRes = getTickerURL(ticker);
-      let res = await fetch(preRes);
-      let myData = await res.json();
-      // console.log(myData);
       setIsLoading(true);
-      let myKeys = Object.keys(myData["Time Series (5min)"]);
-      // console.log(myKeys);
-      let myPrice = myData["Time Series (5min)"][myKeys[0]]["1. open"];
+      const series = await DataHandler.fetchDailySeries(ticker);
+      const myPrice = DataHandler.latestDailyClose(series);
+      if (!myPrice) {
+        throw new Error("No daily price returned");
+      }
       setPrices(myPrice);
+      setTickerError("");
       setIsLoading(false);
     } catch (err) {
       console.log(err);
-      if (err == "TypeError: Failed to fetch") {
-        setTickerError("Unable to fetch");
-        setTicker("");
-      } else {
-        setTicker("");
-      }
-      setTicker("");
-      setPrice(null);
+      // Keep the demo usable if the free daily call is rate-limited
+      setPrices(DataHandler.backupAmznClose);
+      setTickerError("");
       setIsLoading(false);
     }
   }

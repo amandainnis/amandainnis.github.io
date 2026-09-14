@@ -30,6 +30,7 @@ function Home(props) {
   const alphaRef = useRef();
   const crbRef = useRef();
   const alertingRef = useRef();
+  const iconsRef = useRef();
   const changeMeRef = useRef();
 
   const scrollAmountRef = useRef(0);
@@ -128,62 +129,37 @@ function Home(props) {
   // }
 
 
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-    document.body.style.setProperty('--insight-scroll', window.pageYOffset / (insightRef.current.offsetTop - window.innerHeight));
-    scrollDownClassTranslate(insightRef, getComputedStyle(document.body).getPropertyValue("--scroll"));
-    scrollDownClassTranslate(insightRef, getComputedStyle(document.body).getPropertyValue("--insight-scroll"));
-    // console.log("i am current scroll y", currentScrollY);
-    if (prevScrollY.current < currentScrollY && !iAmScrollingDown.current) {
-      iAmScrollingDown.current = true;
-      console.log("iAmScrollingDown", iAmScrollingDown.current, currentScrollY);
-    } else if (prevScrollY.current > currentScrollY && iAmScrollingDown.current) {
-      iAmScrollingDown.current = false;
-      console.log("iAmScrollingup", iAmScrollingDown.current, currentScrollY);
-    } else if (iAmScrollingDown.current) {
-      console.log('scrolling-down', alphaRef.current.offsetTop, currentScrollY);
-  
-      if ((insightRef.current.offsetTop - currentScrollY) < 1000) {
-        scrollDownClassAdd(insightRef, "unpause");
-        // console.log('insight')
-      } 
-      if ((alphaRef.current.offsetTop - currentScrollY) < 800) {
-        scrollDownClassAdd(alphaRef, "unpause");
-        // console.log('alpha')
-      }
-      if ((alphaRef.current.offsetTop - currentScrollY) < 600) {
-        scrollDownClassAdd(crbRef, "unpause");
-        // console.log('crb')
-      }
-      if ((alertingRef.current.offsetTop - currentScrollY) < 400) {
-        scrollDownClassAdd(alertingRef, "unpause");
-        // setActiveAlerting(5000);
-        // console.log('alerting')
-      }
-    }
-    // else if (!iAmScrollingDown.current) {
-    //   console.log('scrolling up', alphaRef.current.offsetTop, currentScrollY);
-    //   if (insightRef.current.offsetTop - currentScrollY < 1000) {
-    //     // scrollDownClassAdd(insightRef, "unpause");
-    //     insightRef.current.classList.remove("unpause");
-    //     // console.log('insight')
-    //     scrollDownClassTranslate(insightRef, getComputedStyle(document.body).getPropertyValue("--scroll"));
-    //     scrollDownClassTranslate(insightRef, getComputedStyle(document.body).getPropertyValue("--insight-scroll"));
-    //   } 
-    //   if ((alphaRef.current.offsetTop - currentScrollY) < 800) {
-    //     // scrollDownClassAdd(alphaRef, "unpause");
-    //     alphaRef.current.classList.remove("unpause");
-    //   }
-    // }
-    prevScrollY.current = currentScrollY;
-
-  };
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    // https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [true]);
+    const cards = [insightRef, alphaRef, crbRef, alertingRef, iconsRef]
+      .map((ref) => ref.current)
+      .filter(Boolean);
+
+    if (!cards.length || typeof IntersectionObserver === "undefined") {
+      cards.forEach((card) => card.classList.add("unpause"));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          entry.target.classList.add("unpause");
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        root: null,
+        threshold: 0,
+        // Start the slide when the card reaches the lower part of the viewport
+        rootMargin: "0px 0px -18% 0px",
+      }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, []);
 
 
 
@@ -199,7 +175,7 @@ function Home(props) {
         <div ref={bodyRef} className="scroll-class">
           <div className="headline-wrapper">
             <div className="headline">
-              Hi, I'm Amanda Innis, a product designer and front-end stylist
+              Hi, I'm Amanda Innis, a product designer, strategist, and maker
             </div>
           </div>
 
@@ -234,7 +210,7 @@ function Home(props) {
                 <CRBCard />
               </div>
               <div className="portfolio-card-wrapper slideLeftClass" ref={alertingRef}>
-                <AlertingCard active={alertingActive} />
+                <AlertingCard />
               </div>
               <div className="portfolio-card-wrapper">
                 <Icons />
@@ -244,13 +220,12 @@ function Home(props) {
               <div className="blurb">
                 <div className="title">About Me</div>
                 <p>
-                  I started in painting and teaching art and then transitioned to UX / UI design after an immersive class at General Assembly. While there, I discovered how similar UX is to teaching:  you have to think from another person's perspective in order to guide them through a process.  This is what UX is to me: bringing perspective and process to a visual format.
+                I am a Product Designer with skills in complex, information-dense UX design, user flows, Figma architecture and components, wireframing, icon design, and interaction design. My career has been in financial services but I enjoy making tools for clients who want an intuitive look at datasets. 
+                
                 </p>
+                <p>I used to code my prototypes (before 2020) in HTML, SCSS, and light JavaScript. My current process includes prototyping in Figma or Cursor.</p>
                 <p>
-                  I bring a unique set of skills to my profession: I research, strategize and create
-                  an intuitive user experience. After planning the UI in Sketch or Adobe XD, I prefer to finalize my
-                  designs in code (HTML, SCSS, React or Angular). If I can't see it happening in the
-                  browser, I can't sign off on it.
+                In my free time, I play with my daughter and dog, bake, and explore local trails.
                 </p>
                 <br></br>
               </div>

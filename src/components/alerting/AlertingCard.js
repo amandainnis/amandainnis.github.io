@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // import AlertingDivs from "./AlertingDivs";
 import Tile from "./Tile";
@@ -18,6 +18,53 @@ function AlertingCard(props) {
   const [tileData, setTileData] = useState(myData);
   const [data, setData] = useState(alertArray);
   const [cardVisible, setCardVisible] = useState(true);
+  const [jsorPhase, setJsorPhase] = useState("idle");
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const node = cardRef.current;
+    if (!node) {
+      return;
+    }
+    if (typeof IntersectionObserver === "undefined") {
+      setTileData(prev =>
+        prev.map(tile =>
+          tile.title === "JSOR" ? { ...tile, number: 18 } : tile
+        )
+      );
+      setJsorPhase("blink");
+      return;
+    }
+
+    let timeoutId = null;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        timeoutId = window.setTimeout(() => {
+          setTileData(prev =>
+            prev.map(tile =>
+              tile.title === "JSOR" ? { ...tile, number: 18 } : tile
+            )
+          );
+          setJsorPhase("blink");
+        }, 450);
+        observer.unobserve(node);
+      },
+      {
+        root: null,
+        threshold: 0.25,
+        rootMargin: "0px 0px -18% 0px"
+      }
+    );
+
+    observer.observe(node);
+    return () => {
+      window.clearTimeout(timeoutId);
+      observer.disconnect();
+    };
+  }, []);
 
   // console.log("state of alerting", this.props);
   function viewRole() {
@@ -29,6 +76,7 @@ function AlertingCard(props) {
   }
   return (
     <article
+      ref={cardRef}
       className="portfolio-card"
       style={{ backgroundColor: generalData.bkgd }}
     >
@@ -40,7 +88,20 @@ function AlertingCard(props) {
           </div>
           <div className="css-grid-tile-wrapper">
             {tileData.map((alert, i) => {
-              return <Tile key={i} data={alert} active={props.active} />;
+              return (
+                <Tile
+                  key={i}
+                  data={alert}
+                  active={jsorPhase === "blink" && alert.title === "JSOR"}
+                  restoring={jsorPhase === "restore" && alert.title === "JSOR"}
+                  onAnimationEnd={() => {
+                    if (alert.title !== "JSOR") {
+                      return;
+                    }
+                    setJsorPhase(prev => (prev === "blink" ? "restore" : "idle"));
+                  }}
+                />
+              );
             })}
           </div>
 
