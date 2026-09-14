@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.791abbf3.css",
-    "main.js": "/static/js/main.19555497.js",
+    "main.css": "/static/css/main.ec1dc5c2.css",
+    "main.js": "/static/js/main.0b7c2a56.js",
     "static/media/codeweek-sml.jpeg": "/static/media/codeweek-sml.3787d068a234a6deb676.jpeg",
     "static/media/aicon.svg?pn8hus": "/static/media/aicon.551e381e189395841a32.svg",
     "static/media/SofiaPro-MediumMetrics.woff": "/static/media/SofiaPro-MediumMetrics.bbf84713baf4aeaa55ac.woff",
@@ -26,11 +26,11 @@
     "static/media/aicon.ttf?pn8hus": "/static/media/aicon.eeb95e06f70bd9bed578.ttf",
     "static/media/aicon.woff2?pn8hus": "/static/media/aicon.d1a60f21e499e6236265.woff2",
     "index.html": "/index.html",
-    "main.791abbf3.css.map": "/static/css/main.791abbf3.css.map",
-    "main.19555497.js.map": "/static/js/main.19555497.js.map"
+    "main.ec1dc5c2.css.map": "/static/css/main.ec1dc5c2.css.map",
+    "main.0b7c2a56.js.map": "/static/js/main.0b7c2a56.js.map"
   },
   "entrypoints": [
-    "static/css/main.791abbf3.css",
-    "static/js/main.19555497.js"
+    "static/css/main.ec1dc5c2.css",
+    "static/js/main.0b7c2a56.js"
   ]
 }
